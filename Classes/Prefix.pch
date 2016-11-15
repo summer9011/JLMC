@@ -1,0 +1,82 @@
+//
+// Prefix header
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+
+//sdk
+    #import <RongIMKit/RongIMKit.h>
+
+    #import <SDWebImage/SDImageCache.h>
+    #import <SDWebImage/UIButton+WebCache.h>
+    #import <SDWebImage/UIImageView+WebCache.h>
+
+    #import "SessionNetwork.h"
+    #import "UIViewController+Hud.h"
+
+    #import "GradientColorButton.h"
+
+    #import "BaseNaviVC.h"
+
+//Model
+    #import "FileManager.h"
+    #import "User.h"
+    #import "Config.h"
+    #import "Market.h"
+    #import "Order.h"
+    #import "Spirit.h"
+
+#endif
+
+#include "Preprocessor.h"
+#include "UnityTrampolineConfigure.h"
+#include "UnityInterface.h"
+
+#ifndef __OBJC__
+	#if USE_IL2CPP_PCH
+		#include "il2cpp_precompiled_header.h"
+	#endif
+#endif
+
+#ifndef TARGET_IPHONE_SIMULATOR
+	#define TARGET_IPHONE_SIMULATOR 0
+#endif
+
+#define printf_console printf
+
+
+//Domain
+#define APIDomain @"http://112.124.33.134/api"
+
+//Key
+#define RCIM_AppKey @"sfci50a7c5ahi"
+#define AMap_ApiKey @"677a6786de1c5a1500839c787d66ff6b"
+
+#define AliyunOSS_Key @"LTAIifKTW6pWHHbb"
+#define AliyunOSS_Secret @"XC43Rv4xq1gc06pcv69XXjr2FNxhTe"
+#define AliyunOSS_Endpoint @"elf-pictures.oss-cn-hangzhou.aliyuncs.com"
+#define AliyunOSS_Bucket @"elf-pictures"
+
+//Color
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+
+//Key - UnityKey
+#define UnityObj [@"NativeMessageReceive" UTF8String]
+#define UnityMethod [@"MessagesReceive" UTF8String]
+
+#define UnityMySpirit [@"MySpirit" UTF8String]
+#define UnityMyImage [@"MyImage" UTF8String]
+#define UnityMyCatch [@"Catch" UTF8String]
+
+//Key - UserDefaults
+#define UserDefaults_Voice @"UserDefaults_Voice"
+#define UserDefaults_Shack @"UserDefaults_Shack"
+
+//Key - Notification
+#define Notification_Login @"Notification_Login"
+#define Notification_Logout @"Notification_Logout"
+

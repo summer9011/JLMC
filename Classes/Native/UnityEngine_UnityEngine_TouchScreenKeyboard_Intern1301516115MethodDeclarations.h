@@ -1,0 +1,33 @@
+﻿#pragma once
+
+#include "il2cpp-config.h"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+#include <stdint.h>
+#include <assert.h>
+#include <exception>
+
+
+#include "codegen/il2cpp-codegen.h"
+
+
+// Methods for marshaling
+struct TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115;
+struct TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115_marshaled_pinvoke;
+
+extern "C" void TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115_marshal_pinvoke(const TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115& unmarshaled, TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115_marshaled_pinvoke& marshaled);
+extern "C" void TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115_marshal_pinvoke_back(const TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115_marshaled_pinvoke& marshaled, TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115& unmarshaled);
+extern "C" void TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115_marshal_pinvoke_cleanup(TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115_marshaled_pinvoke& marshaled);
+
+// Methods for marshaling
+struct TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115;
+struct TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115_marshaled_com;
+
+extern "C" void TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115_marshal_com(const TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115& unmarshaled, TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115_marshaled_com& marshaled);
+extern "C" void TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115_marshal_com_back(const TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115_marshaled_com& marshaled, TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115& unmarshaled);
+extern "C" void TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115_marshal_com_cleanup(TouchScreenKeyboard_InternalConstructorHelperArguments_t1301516115_marshaled_com& marshaled);

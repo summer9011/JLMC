@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>玩转精灵</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>AppIcon57x57.png</string>
+		<string>AppIcon57x57@2x.png</string>
+		<string>AppIcon60x60@2x.png</string>
+		<string>AppIcon72x72@2x~ipad.png</string>
+		<string>AppIcon72x72~ipad.png</string>
+		<string>AppIcon76x76@2x~ipad.png</string>
+		<string>AppIcon76x76~ipad.png</string>
+	</array>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>sinaweibo</string>
+		<string>sinaweibohd</string>
+		<string>sinaweibosso</string>
+		<string>sinaweibohdsso</string>
+		<string>weibosdk</string>
+		<string>weibosdk2.5</string>
+		<string>wechat</string>
+		<string>weixin</string>
+		<string>mqzoneopensdk</string>
+		<string>mqzoneopensdkapi</string>
+		<string>mqzoneopensdkapi19</string>
+		<string>mqzoneopensdkapiV2</string>
+		<string>mqqOpensdkSSoLogin</string>
+		<string>mqqopensdkapiV2</string>
+		<string>mqqopensdkapiV3</string>
+		<string>wtloginmqq2</string>
+		<string>mqqapi</string>
+		<string>mqqwpa</string>
+		<string>mqzone</string>
+		<string>mqq</string>
+		<string>mqqopensdkapiV4</string>
+		<string>alipay</string>
+		<string>alipays</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>此 App 需要您的同意才能访问媒体库</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>此 App 需要您的同意才能读取蓝牙信息</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>此 App 需要您的同意才能读取日历</string>
+	<key>NSCameraUsageDescription</key>
+	<string>此 App 需要您的同意才能使用相机</string>
+	<key>NSContactsUsageDescription</key>
+	<string>此 App 需要您的同意才能读取通讯录信息</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>此 App 需要开启定位功能</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>此 App 需要您的同意才能使用麦克风</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>此 App 需要您的同意才能读取照片信息</string>
+	<key>UIApplicationExitsOnSuspend</key>
+	<false/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName~ipad</key>
+	<string>LaunchScreen-iPad</string>
+	<key>UILaunchStoryboardName~iphone</key>
+	<string>LaunchScreen-iPhone</string>
+	<key>UIPrerenderedIcon</key>
+	<false/>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UIRequiresPersistentWiFi</key>
+	<false/>
+	<key>UIStatusBarHidden</key>
+	<false/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>Unity_LoadingActivityIndicatorStyle</key>
+	<integer>-1</integer>
+</dict>
+</plist>
