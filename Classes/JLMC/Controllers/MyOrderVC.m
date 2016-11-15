@@ -11,6 +11,8 @@
 #import "MyOrderCell.h"
 #import "MJRefresh.h"
 
+#import "MyOrderDetailVC.h"
+
 #import "UnityAppController.h"
 
 @interface MyOrderVC ()
@@ -130,7 +132,10 @@ static NSString *CellIdentifier = @"MyOrderCell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSDictionary *dic = self.dataArr[indexPath.row];
     
-    NSLog(@"%@", dic);
+    MyOrderDetailVC *detailVC = [[MyOrderDetailVC alloc] initWithNibName:@"MyOrderDetailVC" bundle:nil];
+    detailVC.orderID = [dic[@"id"] integerValue];
+    
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 /*

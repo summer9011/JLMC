@@ -18,15 +18,17 @@ typedef void(^ConfigCompleteBlock)(BOOL success, NSString *errStr);
 + (NSArray *)getNewestLocalCacheIcons;
 
 /**
- 获取App的Config
+ 获取平台的配置信息
  
  @param complete 请求完成回调
  */
-+ (void)getAppConfigWithCompleteBlock:(ConfigCompleteBlock)complete;
++ (void)getSysParamWithCompleteBlock:(ConfigCompleteBlock)complete;
 
 /**
- 获取App的当前链接到AIP
+ 获取App的主页图标列表
+ 
+ @param complete 请求完成回调
  */
-+ (NSString *)getIP;
++ (void)getMainPageIconListWithCompleteBlock:(ConfigCompleteBlock)complete;
 
 @end

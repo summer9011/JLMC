@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RechargeVC">
             <connections>
+                <outlet property="rechargeBtn" destination="YK1-dN-bir" id="laU-gx-fRx"/>
+                <outlet property="rechargeBtnConsTop" destination="eyS-ir-uca" id="JxN-yB-9QV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +20,25 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YK1-dN-bir" customClass="GradientColorButton">
+                    <rect key="frame" x="40" y="200" width="295" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="eV5-cZ-Us7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="立即充值"/>
+                    <connections>
+                        <action selector="doRechargeAction:" destination="-1" eventType="touchUpInside" id="pqw-Lt-Vwt"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YK1-dN-bir" secondAttribute="trailing" constant="40" id="H1z-gt-gW2"/>
+                <constraint firstItem="YK1-dN-bir" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="eyS-ir-uca"/>
+                <constraint firstItem="YK1-dN-bir" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="jkW-KJ-cbV"/>
+            </constraints>
         </view>
     </objects>
 </document>

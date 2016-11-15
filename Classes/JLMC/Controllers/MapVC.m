@@ -28,6 +28,7 @@
 #import "RankListVC.h"
 
 #import "MenuView.h"
+#import "ShareView.h"
 
 @interface MapVC () <MenuViewDelegate, MAMapViewDelegate>
 
@@ -274,7 +275,7 @@
 - (void)loadIcons {
     __weak MapVC *weakSelf = self;
     
-    [Config getAppConfigWithCompleteBlock:^(BOOL success, NSString *errStr) {
+    [Config getMainPageIconListWithCompleteBlock:^(BOOL success, NSString *errStr) {
         if (success) {
             [weakSelf reloadIcons];
         }
@@ -385,6 +386,10 @@
             break;
         case MenuItemGameCircle: {
             NSLog(@"游戏圈");
+            
+            ShareView *shareView = [ShareView sharedView];
+            shareView.dele = self;
+            [shareView showInView:self.view];
         }
             break;
         case MenuItemRank: {

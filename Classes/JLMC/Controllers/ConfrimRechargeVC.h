@@ -10,4 +10,7 @@
 
 @interface ConfrimRechargeVC : BaseVC
 
+@property (nonatomic, assign) NSUInteger price;
+@property (nonatomic, assign) NSUInteger goldPrice;
+
 @end

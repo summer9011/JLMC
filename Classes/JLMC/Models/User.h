@@ -205,6 +205,15 @@ static NSString *UserInfoAvatar         =       @"avatar";
 + (void)getVerifyCodeWithPhone:(NSString *)phone smstype:(SmsCodeType)type completeBlock:(UserCompleteBlock)complete;
 
 /**
+ 获取语音验证码
+ 
+ @param phone 手机号码
+ @param type 获取验证码类型（注册0、支付1、忘记密码2、修改支付密码3）
+ @param complete 请求完成回调
+ */
++ (void)getVoiceCodeWithPhone:(NSString *)phone smstype:(SmsCodeType)type completeBlock:(UserCompleteBlock)complete;
+
+/**
  登录融云
  */
 + (void)loginRCIM;

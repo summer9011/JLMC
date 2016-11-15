@@ -352,6 +352,24 @@ static NSString *CoderKeyCoins      =   @"CoderKeyCoins";
     }];
 }
 
++ (void)getVoiceCodeWithPhone:(NSString *)phone smstype:(SmsCodeType)type completeBlock:(UserCompleteBlock)complete {
+    NSDictionary *params = @{
+                             @"cellphone": phone,
+                             @"voicetype": @(type)
+                             };
+    
+    [[SessionNetwork defaultNetwork] getURL:@"/misc/getSmsCode" params:params completePercent:nil success:^(id response) {
+        if (complete) {
+            complete(YES, nil, nil);
+        }
+        
+    } failure:^(NSUInteger errorCode, NSString *errorMsg) {
+        if (complete) {
+            complete(NO, nil, errorMsg);
+        }
+    }];
+}
+
 + (void)loginRCIM {
     UnityAppController *appController = (UnityAppController *)[UIApplication sharedApplication].delegate;
     

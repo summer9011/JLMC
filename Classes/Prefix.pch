@@ -52,12 +52,14 @@
 
 //Key
 #define RCIM_AppKey @"sfci50a7c5ahi"
-#define AMap_ApiKey @"677a6786de1c5a1500839c787d66ff6b"
+#define AMap_ApiKey @"b676a8a442fe485d24fb043ad041cc28"
 
 #define AliyunOSS_Key @"LTAIifKTW6pWHHbb"
 #define AliyunOSS_Secret @"XC43Rv4xq1gc06pcv69XXjr2FNxhTe"
 #define AliyunOSS_Endpoint @"elf-pictures.oss-cn-hangzhou.aliyuncs.com"
 #define AliyunOSS_Bucket @"elf-pictures"
+
+#define WeChat_AppID @"wxdcfc4fcdf5140d6f"
 
 //Color
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
