@@ -80,7 +80,6 @@
     self.verifyCodeSendBtn.layer.masksToBounds = YES;
     self.verifyCodeSendBtn.layer.cornerRadius = 4.f;
     
-    self.forgotBtn.layer.masksToBounds = YES;
     self.forgotBtn.layer.cornerRadius = 24.f;
 }
 

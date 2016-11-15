@@ -11,6 +11,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameShopVC">
             <connections>
+                <outlet property="backArrowImageView" destination="4E1-OK-BPV" id="V9W-Fy-YAi"/>
+                <outlet property="backBtn" destination="5tY-DX-9LI" id="0my-oA-ZkZ"/>
+                <outlet property="backgroundImageView" destination="dUp-UM-JwN" id="Qjk-sP-KxP"/>
+                <outlet property="collectionView" destination="MmH-NN-RGI" id="eOv-sz-Oq9"/>
+                <outlet property="flowLayout" destination="F8Z-Zq-MuV" id="flL-YF-mc4"/>
+                <outlet property="myOrderBtn" destination="MDR-FY-B9k" id="vB9-BI-V2D"/>
+                <outlet property="titleLabel" destination="elk-Gw-9il" id="ehj-jy-VoN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -42,14 +49,24 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <state key="normal" title="我的订单"/>
+                    <connections>
+                        <action selector="goMyOrderAction:" destination="-1" eventType="touchUpInside" id="d6w-76-3kA"/>
+                    </connections>
                 </button>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0g-hc-S8Q">
-                    <rect key="frame" x="14" y="60" width="347" height="40"/>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="PmM-TB-ibe"/>
-                    </constraints>
-                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MmH-NN-RGI">
+                    <rect key="frame" x="14" y="119" width="347" height="548"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="F8Z-Zq-MuV">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="80"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="A3p-Q6-EjE"/>
+                        <outlet property="delegate" destination="-1" id="lGV-uN-tXf"/>
+                    </connections>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -57,19 +74,20 @@
                 <constraint firstItem="dUp-UM-JwN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2Ta-gK-qfn"/>
                 <constraint firstAttribute="trailing" secondItem="dUp-UM-JwN" secondAttribute="trailing" id="4oB-Xd-41o"/>
                 <constraint firstAttribute="trailing" secondItem="MDR-FY-B9k" secondAttribute="trailing" id="84o-KB-oQP"/>
-                <constraint firstAttribute="trailing" secondItem="q0g-hc-S8Q" secondAttribute="trailing" constant="14" id="8g6-3U-go7"/>
                 <constraint firstItem="4E1-OK-BPV" firstAttribute="leading" secondItem="5tY-DX-9LI" secondAttribute="leading" constant="10" id="CZl-vt-BMh"/>
                 <constraint firstItem="4E1-OK-BPV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="Gf5-Ks-M6m"/>
+                <constraint firstItem="MmH-NN-RGI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="119" id="L0A-aw-jtN"/>
                 <constraint firstItem="elk-Gw-9il" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PWA-3l-bah"/>
                 <constraint firstItem="4E1-OK-BPV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="Qfu-e2-64C"/>
                 <constraint firstItem="4E1-OK-BPV" firstAttribute="trailing" secondItem="5tY-DX-9LI" secondAttribute="trailing" constant="-10" id="YJm-t9-slB"/>
                 <constraint firstItem="4E1-OK-BPV" firstAttribute="top" secondItem="5tY-DX-9LI" secondAttribute="top" constant="10" id="ci6-Mo-oJd"/>
-                <constraint firstItem="q0g-hc-S8Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="hYL-JO-GOu"/>
                 <constraint firstItem="MDR-FY-B9k" firstAttribute="centerY" secondItem="elk-Gw-9il" secondAttribute="centerY" id="ipN-pY-9AP"/>
-                <constraint firstItem="q0g-hc-S8Q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="jT1-N8-vu0"/>
                 <constraint firstAttribute="bottom" secondItem="dUp-UM-JwN" secondAttribute="bottom" id="jlG-NB-byo"/>
+                <constraint firstAttribute="trailing" secondItem="MmH-NN-RGI" secondAttribute="trailing" constant="14" id="oCY-i2-AyI"/>
                 <constraint firstItem="elk-Gw-9il" firstAttribute="centerY" secondItem="4E1-OK-BPV" secondAttribute="centerY" id="oOw-N8-4H6"/>
                 <constraint firstItem="dUp-UM-JwN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uDf-Zg-RCw"/>
+                <constraint firstAttribute="bottom" secondItem="MmH-NN-RGI" secondAttribute="bottom" id="xOd-HV-2bF"/>
+                <constraint firstItem="MmH-NN-RGI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="yvu-SD-E2p"/>
             </constraints>
         </view>
     </objects>

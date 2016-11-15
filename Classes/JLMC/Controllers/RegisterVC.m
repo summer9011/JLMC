@@ -98,7 +98,6 @@
     self.verifyCodeSendBtn.layer.masksToBounds = YES;
     self.verifyCodeSendBtn.layer.cornerRadius = 4.f;
     
-    self.registerBtn.layer.masksToBounds = YES;
     self.registerBtn.layer.cornerRadius = 24.f;
     
     self.userAgreementLabel.userInteractionEnabled = YES;

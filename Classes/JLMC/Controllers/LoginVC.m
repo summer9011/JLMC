@@ -81,7 +81,6 @@
     self.avatarView.layer.borderWidth = 4.f;
     self.avatarView.layer.borderColor = [UIColor colorWithWhite:0 alpha:0.15].CGColor;
     
-    self.loginBtn.layer.masksToBounds = YES;
     self.loginBtn.layer.cornerRadius = 24.f;
     
     self.registerBtn.layer.masksToBounds = YES;

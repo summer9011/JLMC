@@ -35,6 +35,7 @@
 - (void)addLayer {
     CGRect screenRect = [UIScreen mainScreen].bounds;
     
+    self.layer.masksToBounds = YES;
     self.layer.borderWidth = 1.f;
     self.layer.borderColor = RGB(63, 112, 238).CGColor;
     

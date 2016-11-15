@@ -57,6 +57,24 @@
 		6E43A5E51DBF9316006549B4 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E43A5E21DBF9316006549B4 /* Main.xcassets */; };
 		6E43A5E81DBFA486006549B4 /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E43A5E71DBFA486006549B4 /* MenuButton.m */; };
 		6E43A5EB1DBFA49B006549B4 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E43A5EA1DBFA49B006549B4 /* MenuView.m */; };
+		6E5F7D0B1DDAB49300A28655 /* MyOrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7D091DDAB49300A28655 /* MyOrderVC.m */; };
+		6E5F7D0C1DDAB49300A28655 /* MyOrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7D0A1DDAB49300A28655 /* MyOrderVC.xib */; };
+		6E5F7D101DDAB4A100A28655 /* GoodDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7D0E1DDAB4A100A28655 /* GoodDetailVC.m */; };
+		6E5F7D111DDAB4A100A28655 /* GoodDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7D0F1DDAB4A100A28655 /* GoodDetailVC.xib */; };
+		6E5F7D141DDAB66300A28655 /* BuyPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7D131DDAB66300A28655 /* BuyPopView.m */; };
+		6E5F7D161DDAB67100A28655 /* BuyPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7D151DDAB67100A28655 /* BuyPopView.xib */; };
+		6E5F7D1D1DDAB6A100A28655 /* ConfirmBuyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7D1B1DDAB6A100A28655 /* ConfirmBuyVC.m */; };
+		6E5F7D1E1DDAB6A100A28655 /* ConfirmBuyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7D1C1DDAB6A100A28655 /* ConfirmBuyVC.xib */; };
+		6E5F7D221DDAB6DC00A28655 /* RechargeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7D201DDAB6DC00A28655 /* RechargeVC.m */; };
+		6E5F7D231DDAB6DC00A28655 /* RechargeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7D211DDAB6DC00A28655 /* RechargeVC.xib */; };
+		6E5F7D271DDAB6EE00A28655 /* ConfrimRechargeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7D251DDAB6ED00A28655 /* ConfrimRechargeVC.m */; };
+		6E5F7D281DDAB6EE00A28655 /* ConfrimRechargeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7D261DDAB6EE00A28655 /* ConfrimRechargeVC.xib */; };
+		6E5F7D2B1DDAB7DE00A28655 /* TypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7D2A1DDAB7DE00A28655 /* TypeView.m */; };
+		6E5F7D2D1DDAB7E800A28655 /* TypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7D2C1DDAB7E800A28655 /* TypeView.xib */; };
+		6E5F7D311DDAC21C00A28655 /* MarketHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7D2F1DDAC21C00A28655 /* MarketHeaderView.m */; };
+		6E5F7D321DDAC21C00A28655 /* MarketHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7D301DDAC21C00A28655 /* MarketHeaderView.xib */; };
+		6E5F7D361DDAC23E00A28655 /* MarketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7D341DDAC23E00A28655 /* MarketCell.m */; };
+		6E5F7D371DDAC23E00A28655 /* MarketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7D351DDAC23E00A28655 /* MarketCell.xib */; };
 		6E6AB5481DC70013003A086C /* TTTAttributedLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6AB5461DC6FFF1003A086C /* TTTAttributedLabel.framework */; };
 		6E6AB5491DC70013003A086C /* TTTAttributedLabel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6AB5461DC6FFF1003A086C /* TTTAttributedLabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E6AB54C1DC71455003A086C /* GradientColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6AB54B1DC71455003A086C /* GradientColorButton.m */; };
@@ -366,6 +384,33 @@
 		6E43A5E71DBFA486006549B4 /* MenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuButton.m; sourceTree = "<group>"; };
 		6E43A5E91DBFA49B006549B4 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
 		6E43A5EA1DBFA49B006549B4 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
+		6E5F7D081DDAB49300A28655 /* MyOrderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderVC.h; sourceTree = "<group>"; };
+		6E5F7D091DDAB49300A28655 /* MyOrderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderVC.m; sourceTree = "<group>"; };
+		6E5F7D0A1DDAB49300A28655 /* MyOrderVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrderVC.xib; sourceTree = "<group>"; };
+		6E5F7D0D1DDAB4A100A28655 /* GoodDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodDetailVC.h; sourceTree = "<group>"; };
+		6E5F7D0E1DDAB4A100A28655 /* GoodDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodDetailVC.m; sourceTree = "<group>"; };
+		6E5F7D0F1DDAB4A100A28655 /* GoodDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoodDetailVC.xib; sourceTree = "<group>"; };
+		6E5F7D121DDAB66300A28655 /* BuyPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyPopView.h; sourceTree = "<group>"; };
+		6E5F7D131DDAB66300A28655 /* BuyPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyPopView.m; sourceTree = "<group>"; };
+		6E5F7D151DDAB67100A28655 /* BuyPopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyPopView.xib; sourceTree = "<group>"; };
+		6E5F7D1A1DDAB6A100A28655 /* ConfirmBuyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmBuyVC.h; sourceTree = "<group>"; };
+		6E5F7D1B1DDAB6A100A28655 /* ConfirmBuyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmBuyVC.m; sourceTree = "<group>"; };
+		6E5F7D1C1DDAB6A100A28655 /* ConfirmBuyVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmBuyVC.xib; sourceTree = "<group>"; };
+		6E5F7D1F1DDAB6DC00A28655 /* RechargeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeVC.h; sourceTree = "<group>"; };
+		6E5F7D201DDAB6DC00A28655 /* RechargeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeVC.m; sourceTree = "<group>"; };
+		6E5F7D211DDAB6DC00A28655 /* RechargeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RechargeVC.xib; sourceTree = "<group>"; };
+		6E5F7D241DDAB6ED00A28655 /* ConfrimRechargeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfrimRechargeVC.h; sourceTree = "<group>"; };
+		6E5F7D251DDAB6ED00A28655 /* ConfrimRechargeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfrimRechargeVC.m; sourceTree = "<group>"; };
+		6E5F7D261DDAB6EE00A28655 /* ConfrimRechargeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfrimRechargeVC.xib; sourceTree = "<group>"; };
+		6E5F7D291DDAB7DE00A28655 /* TypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeView.h; sourceTree = "<group>"; };
+		6E5F7D2A1DDAB7DE00A28655 /* TypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeView.m; sourceTree = "<group>"; };
+		6E5F7D2C1DDAB7E800A28655 /* TypeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeView.xib; sourceTree = "<group>"; };
+		6E5F7D2E1DDAC21C00A28655 /* MarketHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketHeaderView.h; sourceTree = "<group>"; };
+		6E5F7D2F1DDAC21C00A28655 /* MarketHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketHeaderView.m; sourceTree = "<group>"; };
+		6E5F7D301DDAC21C00A28655 /* MarketHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarketHeaderView.xib; sourceTree = "<group>"; };
+		6E5F7D331DDAC23E00A28655 /* MarketCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketCell.h; sourceTree = "<group>"; };
+		6E5F7D341DDAC23E00A28655 /* MarketCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketCell.m; sourceTree = "<group>"; };
+		6E5F7D351DDAC23E00A28655 /* MarketCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarketCell.xib; sourceTree = "<group>"; };
 		6E6AB5461DC6FFF1003A086C /* TTTAttributedLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TTTAttributedLabel.framework; sourceTree = "<group>"; };
 		6E6AB54A1DC71455003A086C /* GradientColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientColorButton.h; sourceTree = "<group>"; };
 		6E6AB54B1DC71455003A086C /* GradientColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientColorButton.m; sourceTree = "<group>"; };
@@ -927,6 +972,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		6E5F7D8F1DDAE81A00A28655 /* ShopCell */ = {
+			isa = PBXGroup;
+			children = (
+				6E5F7D291DDAB7DE00A28655 /* TypeView.h */,
+				6E5F7D2A1DDAB7DE00A28655 /* TypeView.m */,
+				6E5F7D2C1DDAB7E800A28655 /* TypeView.xib */,
+				6E5F7D2E1DDAC21C00A28655 /* MarketHeaderView.h */,
+				6E5F7D2F1DDAC21C00A28655 /* MarketHeaderView.m */,
+				6E5F7D301DDAC21C00A28655 /* MarketHeaderView.xib */,
+				6E5F7D331DDAC23E00A28655 /* MarketCell.h */,
+				6E5F7D341DDAC23E00A28655 /* MarketCell.m */,
+				6E5F7D351DDAC23E00A28655 /* MarketCell.xib */,
+			);
+			name = ShopCell;
+			sourceTree = "<group>";
+		};
 		6E6AB5451DC6FFF1003A086C /* TTAttributedLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -1438,9 +1499,28 @@
 		6EA9B4BC1DBB258900206E4E /* GameShop */ = {
 			isa = PBXGroup;
 			children = (
+				6E5F7D8F1DDAE81A00A28655 /* ShopCell */,
 				6EA9B4BD1DBB259A00206E4E /* GameShopVC.h */,
 				6EA9B4BE1DBB259A00206E4E /* GameShopVC.m */,
 				6EA9B4BF1DBB259A00206E4E /* GameShopVC.xib */,
+				6E5F7D0D1DDAB4A100A28655 /* GoodDetailVC.h */,
+				6E5F7D0E1DDAB4A100A28655 /* GoodDetailVC.m */,
+				6E5F7D0F1DDAB4A100A28655 /* GoodDetailVC.xib */,
+				6E5F7D121DDAB66300A28655 /* BuyPopView.h */,
+				6E5F7D131DDAB66300A28655 /* BuyPopView.m */,
+				6E5F7D151DDAB67100A28655 /* BuyPopView.xib */,
+				6E5F7D1A1DDAB6A100A28655 /* ConfirmBuyVC.h */,
+				6E5F7D1B1DDAB6A100A28655 /* ConfirmBuyVC.m */,
+				6E5F7D1C1DDAB6A100A28655 /* ConfirmBuyVC.xib */,
+				6E5F7D1F1DDAB6DC00A28655 /* RechargeVC.h */,
+				6E5F7D201DDAB6DC00A28655 /* RechargeVC.m */,
+				6E5F7D211DDAB6DC00A28655 /* RechargeVC.xib */,
+				6E5F7D241DDAB6ED00A28655 /* ConfrimRechargeVC.h */,
+				6E5F7D251DDAB6ED00A28655 /* ConfrimRechargeVC.m */,
+				6E5F7D261DDAB6EE00A28655 /* ConfrimRechargeVC.xib */,
+				6E5F7D081DDAB49300A28655 /* MyOrderVC.h */,
+				6E5F7D091DDAB49300A28655 /* MyOrderVC.m */,
+				6E5F7D0A1DDAB49300A28655 /* MyOrderVC.xib */,
 			);
 			name = GameShop;
 			sourceTree = "<group>";
@@ -1680,15 +1760,19 @@
 				6EA9B47B1DB903C100206E4E /* WeiboSDK.bundle in Resources */,
 				6EA9B4B51DBB22CE00206E4E /* ExchangeMyJoinedVC.xib in Resources */,
 				6EA9B2F91DB8E21200206E4E /* AlipaySDK.bundle in Resources */,
+				6E5F7D161DDAB67100A28655 /* BuyPopView.xib in Resources */,
+				6E5F7D111DDAB4A100A28655 /* GoodDetailVC.xib in Resources */,
 				6E87012B1DBBAE0600FE7691 /* SetNickNameVC.xib in Resources */,
 				6E9C86A71DC2FE09005AF102 /* MJRefresh.bundle in Resources */,
 				6EA9B42E1DB8EB8A00206E4E /* RCConfig.plist in Resources */,
 				6E9C86C21DC32274005AF102 /* AMap.bundle in Resources */,
 				6EA9B4801DB903C100206E4E /* ShareSDK.bundle in Resources */,
 				6E7C743B1DCA1CCF00115630 /* ChooseSexVC.xib in Resources */,
+				6E5F7D371DDAC23E00A28655 /* MarketCell.xib in Resources */,
 				AA31BF971B55660D0013FB1B /* Data in Resources */,
 				6E272AB21DDAAB610049082A /* Market.xcassets in Resources */,
 				6E8701261DBBAA1500FE7691 /* RealNameAuthVC.xib in Resources */,
+				6E5F7D1E1DDAB6A100A28655 /* ConfirmBuyVC.xib in Resources */,
 				6E0912B31DCF04B500C66E9E /* NearbyVC.xib in Resources */,
 				6EA9B4BB1DBB250B00206E4E /* MyBackpackVC.xib in Resources */,
 				6E0912AE1DCF008400C66E9E /* MapAnno.xcassets in Resources */,
@@ -1702,6 +1786,8 @@
 				6EA9AF221DB89A1400206E4E /* SettingVC.xib in Resources */,
 				6EA9B4761DB903C100206E4E /* ShareSDKUI.bundle in Resources */,
 				6E88A34E1DD9EB760006104C /* CartoonAvatarCell.xib in Resources */,
+				6E5F7D321DDAC21C00A28655 /* MarketHeaderView.xib in Resources */,
+				6E5F7D0C1DDAB49300A28655 /* MyOrderVC.xib in Resources */,
 				6E87011E1DBB848700FE7691 /* MeVC.xib in Resources */,
 				6E88A3491DD9EA3D0006104C /* ChooseCartoonVC.xib in Resources */,
 				6E8701191DBB844200FE7691 /* AboutVC.xib in Resources */,
@@ -1709,11 +1795,14 @@
 				6E9C86CD1DC33BA0005AF102 /* UserAgreementViewController.xib in Resources */,
 				6E43A5E31DBF9316006549B4 /* Common.xcassets in Resources */,
 				D61247B6BD1C9B1B77D66981 /* LaunchScreen-iPhone.xib in Resources */,
+				6E5F7D281DDAB6EE00A28655 /* ConfrimRechargeVC.xib in Resources */,
 				6EA9B42C1DB8EB8A00206E4E /* RongCloudKit.strings in Resources */,
 				E6074A31805F21944E822E88 /* LaunchScreen-iPhonePortrait.png in Resources */,
 				639D412D802D3B5F73C49A6A /* LaunchScreen-iPhoneLandscape.png in Resources */,
 				6EA9B4C71DBB26C700206E4E /* RankListVC.xib in Resources */,
 				6EA9B47D1DB903C100206E4E /* read_me.txt in Resources */,
+				6E5F7D2D1DDAB7E800A28655 /* TypeView.xib in Resources */,
+				6E5F7D231DDAB6DC00A28655 /* RechargeVC.xib in Resources */,
 				CA9C4A5080DD6F07A9855DAA /* LaunchScreen-iPad.xib in Resources */,
 				6EA9B4301DB8EB8A00206E4E /* RongCloud.bundle in Resources */,
 				6EA9B4941DBB1FED00206E4E /* ForgetPwdVC.xib in Resources */,
@@ -1767,6 +1856,7 @@
 				8A3EDDC81615B7C1001839E9 /* SplashScreen.mm in Sources */,
 				8AC71EC419E7FBA90027502F /* OrientationSupport.mm in Sources */,
 				8A9FCB131617295F00C05364 /* ActivityIndicator.mm in Sources */,
+				6E5F7D311DDAC21C00A28655 /* MarketHeaderView.m in Sources */,
 				8A8D90DA1A274A7800456C4E /* UnityAppController+UnityInterface.mm in Sources */,
 				6E9C869B1DC2FE09005AF102 /* MJRefreshComponent.m in Sources */,
 				8AA5D80217ABE9AF007B9910 /* UnityAppController+Rendering.mm in Sources */,
@@ -1774,13 +1864,16 @@
 				8A0FED491649699200E9727D /* EAGLContextHelper.mm in Sources */,
 				AAFE69D219F187C200638316 /* UnityViewControllerListener.mm in Sources */,
 				6EA9B4981DBB202B00206E4E /* MyFriendVC.m in Sources */,
+				6E5F7D0B1DDAB49300A28655 /* MyOrderVC.m in Sources */,
 				8A1FFFAD16512A9000DD0934 /* GlesHelper.mm in Sources */,
 				8A5E0B9116849D1800CBB6FE /* DisplayManager.mm in Sources */,
 				8A367F5B16A6D36F0012ED11 /* CVTextureCache.mm in Sources */,
 				6E9C86991DC2FE09005AF102 /* MJRefreshAutoFooter.m in Sources */,
 				6E9C86A51DC2FE09005AF102 /* MJRefreshNormalHeader.m in Sources */,
 				1859EA9B19214E7B0022C3D3 /* MetalHelper.mm in Sources */,
+				6E5F7D221DDAB6DC00A28655 /* RechargeVC.m in Sources */,
 				6E9C86A81DC2FE09005AF102 /* MJRefreshConst.m in Sources */,
+				6E5F7D101DDAB4A100A28655 /* GoodDetailVC.m in Sources */,
 				8A16150C1A8E4362006FA788 /* FullScreenVideoPlayer.mm in Sources */,
 				6EA9B48E1DBB1FDB00206E4E /* RegisterVC.m in Sources */,
 				FC85CCBB16C3ED8000BAF7C7 /* CrashReporter.mm in Sources */,
@@ -1795,6 +1888,7 @@
 				6ED224591DC986AE00E0FA36 /* Spirit.m in Sources */,
 				8A851BAA16FB3AD000E911DB /* UnityAppController.mm in Sources */,
 				6E9C86AC1DC2FE09005AF102 /* UIView+MJExtension.m in Sources */,
+				6E5F7D141DDAB66300A28655 /* BuyPopView.m in Sources */,
 				6EA9AF171DB8978F00206E4E /* LoginVC.m in Sources */,
 				6E87012A1DBBAE0600FE7691 /* SetNickNameVC.m in Sources */,
 				8AC74A9519B47FEF00019D38 /* AVCapture.mm in Sources */,
@@ -1803,6 +1897,7 @@
 				8A6137141A10BCA200059EDF /* ObjCRuntime.mm in Sources */,
 				6EA9B4851DB9C25100206E4E /* ConversationListVC.m in Sources */,
 				6E88A3481DD9EA3D0006104C /* ChooseCartoonVC.m in Sources */,
+				6E5F7D1D1DDAB6A100A28655 /* ConfirmBuyVC.m in Sources */,
 				6E6AB54F1DC7357E003A086C /* NSString+Validate.m in Sources */,
 				AA8F4B6A1BD917A10024E7E3 /* UnityViewControllerBaseTV.mm in Sources */,
 				8ADCE38B19C87177006F04F6 /* CameraCapture.mm in Sources */,
@@ -1847,6 +1942,7 @@
 				962F44FE8FDD77C656C8C5C0 /* Bulk_mscorlib_1.cpp in Sources */,
 				416348798030C311B658A617 /* Bulk_mscorlib_2.cpp in Sources */,
 				6E43A5E81DBFA486006549B4 /* MenuButton.m in Sources */,
+				6E5F7D271DDAB6EE00A28655 /* ConfrimRechargeVC.m in Sources */,
 				B0F74EDC80F0EDFADA776944 /* Bulk_mscorlib_3.cpp in Sources */,
 				BE014FA1804C3580565B12F1 /* Bulk_mscorlib_4.cpp in Sources */,
 				6E9C86A31DC2FE09005AF102 /* MJRefreshBackStateFooter.m in Sources */,
@@ -1879,10 +1975,12 @@
 				6EA9B4C61DBB26C700206E4E /* RankListVC.m in Sources */,
 				6E3C13281DC773FE00912F7D /* Config.m in Sources */,
 				6E8701211DBB9F2600FE7691 /* BaseVC.m in Sources */,
+				6E5F7D2B1DDAB7DE00A28655 /* TypeView.m in Sources */,
 				C670422CA7D33268947C4C66 /* Il2CppGenericInstDefinitions.cpp in Sources */,
 				6E9C86A41DC2FE09005AF102 /* MJRefreshGifHeader.m in Sources */,
 				541644708CC46A1545B6B9ED /* Il2CppGenericMethodDefinitions.cpp in Sources */,
 				6E7C743A1DCA1CCF00115630 /* ChooseSexVC.m in Sources */,
+				6E5F7D361DDAC23E00A28655 /* MarketCell.m in Sources */,
 				6E43A5EB1DBFA49B006549B4 /* MenuView.m in Sources */,
 				6E6AB54C1DC71455003A086C /* GradientColorButton.m in Sources */,
 				717D4A869B38093FC282D983 /* Il2CppGenericMethodPointerTable.cpp in Sources */,

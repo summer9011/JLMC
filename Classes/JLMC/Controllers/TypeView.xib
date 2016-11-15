@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TypeView">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUb-mk-sDz">
+                    <rect key="frame" x="30" y="0.0" width="88" height="54"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="捕捉类">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="doChangeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="RbV-m3-ra6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUg-vV-UDZ">
+                    <rect key="frame" x="148" y="0.0" width="88" height="54"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="养成类">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="doChangeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="MxW-i5-V2O"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOP-vI-SdA">
+                    <rect key="frame" x="266" y="0.0" width="88" height="54"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="吸引类">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="doChangeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="UKS-wk-LRf"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HvN-W9-gGQ">
+                    <rect key="frame" x="0.0" y="53.5" width="384" height="0.5"/>
+                    <color key="backgroundColor" red="0.85882352941176465" green="0.87058823529411766" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="aIb-Id-11f"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DIb-pj-dqc" userLabel="line">
+                    <rect key="frame" x="0.0" y="52" width="80" height="2"/>
+                    <color key="backgroundColor" red="0.33333333333333331" green="0.52549019607843139" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="8fN-g5-aX1"/>
+                        <constraint firstAttribute="width" constant="80" id="ye8-rY-ZBE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="OOP-vI-SdA" secondAttribute="trailing" constant="30" id="60u-Ga-Pra"/>
+                <constraint firstAttribute="trailing" secondItem="HvN-W9-gGQ" secondAttribute="trailing" id="7iH-iG-T1H"/>
+                <constraint firstAttribute="bottom" secondItem="xUg-vV-UDZ" secondAttribute="bottom" id="9EB-7W-Ynn"/>
+                <constraint firstItem="OOP-vI-SdA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9pg-Qz-WI1"/>
+                <constraint firstItem="OOP-vI-SdA" firstAttribute="leading" secondItem="xUg-vV-UDZ" secondAttribute="trailing" constant="30" id="Dxd-dP-dJK"/>
+                <constraint firstAttribute="bottom" secondItem="HvN-W9-gGQ" secondAttribute="bottom" id="I3p-2O-EZy"/>
+                <constraint firstItem="xUg-vV-UDZ" firstAttribute="leading" secondItem="UUb-mk-sDz" secondAttribute="trailing" constant="30" id="KWb-me-jg1"/>
+                <constraint firstAttribute="bottom" secondItem="UUb-mk-sDz" secondAttribute="bottom" id="PJM-ID-Vfh"/>
+                <constraint firstAttribute="bottom" secondItem="OOP-vI-SdA" secondAttribute="bottom" id="SLW-ZG-74u"/>
+                <constraint firstItem="HvN-W9-gGQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TGg-M0-0MM"/>
+                <constraint firstItem="UUb-mk-sDz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Wb3-Az-The"/>
+                <constraint firstItem="xUg-vV-UDZ" firstAttribute="width" secondItem="UUb-mk-sDz" secondAttribute="width" id="XZU-r9-6lB"/>
+                <constraint firstItem="DIb-pj-dqc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Z9q-B2-qoW"/>
+                <constraint firstItem="OOP-vI-SdA" firstAttribute="width" secondItem="UUb-mk-sDz" secondAttribute="width" id="aXP-Db-ZPi"/>
+                <constraint firstItem="UUb-mk-sDz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="cKK-aC-gWO"/>
+                <constraint firstItem="xUg-vV-UDZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="osN-UP-1p6"/>
+                <constraint firstAttribute="bottom" secondItem="DIb-pj-dqc" secondAttribute="bottom" id="xXv-U3-6dT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="attachBtn" destination="OOP-vI-SdA" id="Qvb-CR-neM"/>
+                <outlet property="catchBtn" destination="UUb-mk-sDz" id="HfM-M9-tX3"/>
+                <outlet property="feedBtn" destination="xUg-vV-UDZ" id="GBs-Wp-Mxd"/>
+                <outlet property="line" destination="DIb-pj-dqc" id="K11-Jr-01k"/>
+                <outlet property="lineConsLeading" destination="Z9q-B2-qoW" id="fev-RK-R7r"/>
+                <outlet property="lineConsWidth" destination="ye8-rY-ZBE" id="z3R-eg-sFI"/>
+            </connections>
+            <point key="canvasLocation" x="38" y="-252"/>
+        </view>
+    </objects>
+</document>
