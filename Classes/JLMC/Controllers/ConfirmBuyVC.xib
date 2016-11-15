@@ -1,12 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmBuyVC">
             <connections>
+                <outlet property="confirmTableView" destination="Asg-pG-Ri8" id="zvR-AT-fVd"/>
+                <outlet property="confrimBtn" destination="bXi-OV-KCi" id="Jjr-mC-2ee"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +20,38 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Asg-pG-Ri8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="chW-FD-rvG"/>
+                        <outlet property="delegate" destination="-1" id="BGm-ZG-rc0"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXi-OV-KCi" customClass="GradientColorButton">
+                    <rect key="frame" x="0.0" y="619" width="375" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="3gN-D5-P8d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="确认付款"/>
+                    <connections>
+                        <action selector="doBuyAction:" destination="-1" eventType="touchUpInside" id="gKN-CB-K19"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bXi-OV-KCi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Dig-br-fUS"/>
+                <constraint firstAttribute="trailing" secondItem="Asg-pG-Ri8" secondAttribute="trailing" id="UtC-Tn-b8g"/>
+                <constraint firstAttribute="trailing" secondItem="bXi-OV-KCi" secondAttribute="trailing" id="YBi-SW-ApK"/>
+                <constraint firstItem="bXi-OV-KCi" firstAttribute="top" secondItem="Asg-pG-Ri8" secondAttribute="bottom" id="fYZ-KV-BAl"/>
+                <constraint firstItem="Asg-pG-Ri8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uIh-IE-CBf"/>
+                <constraint firstAttribute="bottom" secondItem="bXi-OV-KCi" secondAttribute="bottom" id="w07-kQ-H0Z"/>
+                <constraint firstItem="Asg-pG-Ri8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wmg-hq-l14"/>
+            </constraints>
+            <point key="canvasLocation" x="98.5" y="54.5"/>
         </view>
     </objects>
 </document>

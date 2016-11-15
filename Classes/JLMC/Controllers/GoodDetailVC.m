@@ -66,7 +66,7 @@
     [self.goodImageView sd_setImageWithURL:[NSURL URLWithString:self.goodInfo[@"image"]]];
     self.nameLabel.text = [NSString stringWithFormat:@"商品名称: %@", self.goodInfo[@"name"]];
     self.useLabel.text = [NSString stringWithFormat:@"商品用途: %@", self.goodInfo[@"features"]];
-    self.nameLabel.text = [NSString stringWithFormat:@"商品价格: %@金币", self.goodInfo[@"price"]];
+    self.priceLabel.text = [NSString stringWithFormat:@"商品价格: %@金币", self.goodInfo[@"price"]];
 }
 
 - (void)loadData {

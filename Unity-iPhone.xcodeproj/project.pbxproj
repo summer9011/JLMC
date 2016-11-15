@@ -97,6 +97,12 @@
 		6E88A3491DD9EA3D0006104C /* ChooseCartoonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E88A3471DD9EA3D0006104C /* ChooseCartoonVC.xib */; };
 		6E88A34D1DD9EB760006104C /* CartoonAvatarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E88A34B1DD9EB760006104C /* CartoonAvatarCell.m */; };
 		6E88A34E1DD9EB760006104C /* CartoonAvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E88A34C1DD9EB760006104C /* CartoonAvatarCell.xib */; };
+		6E9503231DDB362500692605 /* ConfrimBuyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9503211DDB362500692605 /* ConfrimBuyCell.m */; };
+		6E9503241DDB362500692605 /* ConfrimBuyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E9503221DDB362500692605 /* ConfrimBuyCell.xib */; };
+		6E9503271DDB364200692605 /* ConfrimBuyTotalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9503261DDB364200692605 /* ConfrimBuyTotalView.m */; };
+		6E9503291DDB365600692605 /* ConfrimBuyTotalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E9503281DDB365600692605 /* ConfrimBuyTotalView.xib */; };
+		6E95032E1DDB3FF300692605 /* MyOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E95032C1DDB3FF300692605 /* MyOrderCell.m */; };
+		6E95032F1DDB3FF300692605 /* MyOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E95032D1DDB3FF300692605 /* MyOrderCell.xib */; };
 		6E9C86681DC2FC58005AF102 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9C86661DC2FBAE005AF102 /* MBProgressHUD.framework */; };
 		6E9C86691DC2FC58005AF102 /* MBProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9C86661DC2FBAE005AF102 /* MBProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E9C86991DC2FE09005AF102 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C866D1DC2FE09005AF102 /* MJRefreshAutoFooter.m */; };
@@ -443,6 +449,15 @@
 		6E88A34A1DD9EB760006104C /* CartoonAvatarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartoonAvatarCell.h; sourceTree = "<group>"; };
 		6E88A34B1DD9EB760006104C /* CartoonAvatarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartoonAvatarCell.m; sourceTree = "<group>"; };
 		6E88A34C1DD9EB760006104C /* CartoonAvatarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartoonAvatarCell.xib; sourceTree = "<group>"; };
+		6E9503201DDB362500692605 /* ConfrimBuyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfrimBuyCell.h; sourceTree = "<group>"; };
+		6E9503211DDB362500692605 /* ConfrimBuyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfrimBuyCell.m; sourceTree = "<group>"; };
+		6E9503221DDB362500692605 /* ConfrimBuyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfrimBuyCell.xib; sourceTree = "<group>"; };
+		6E9503251DDB364200692605 /* ConfrimBuyTotalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfrimBuyTotalView.h; sourceTree = "<group>"; };
+		6E9503261DDB364200692605 /* ConfrimBuyTotalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfrimBuyTotalView.m; sourceTree = "<group>"; };
+		6E9503281DDB365600692605 /* ConfrimBuyTotalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfrimBuyTotalView.xib; sourceTree = "<group>"; };
+		6E95032B1DDB3FF300692605 /* MyOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderCell.h; sourceTree = "<group>"; };
+		6E95032C1DDB3FF300692605 /* MyOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderCell.m; sourceTree = "<group>"; };
+		6E95032D1DDB3FF300692605 /* MyOrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrderCell.xib; sourceTree = "<group>"; };
 		6E9C86661DC2FBAE005AF102 /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = "<group>"; };
 		6E9C866C1DC2FE09005AF102 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		6E9C866D1DC2FE09005AF102 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
@@ -1007,6 +1022,19 @@
 			name = Category;
 			sourceTree = "<group>";
 		};
+		6E95032A1DDB3D5800692605 /* ConfirmBuyCell */ = {
+			isa = PBXGroup;
+			children = (
+				6E9503201DDB362500692605 /* ConfrimBuyCell.h */,
+				6E9503211DDB362500692605 /* ConfrimBuyCell.m */,
+				6E9503221DDB362500692605 /* ConfrimBuyCell.xib */,
+				6E9503251DDB364200692605 /* ConfrimBuyTotalView.h */,
+				6E9503261DDB364200692605 /* ConfrimBuyTotalView.m */,
+				6E9503281DDB365600692605 /* ConfrimBuyTotalView.xib */,
+			);
+			name = ConfirmBuyCell;
+			sourceTree = "<group>";
+		};
 		6E9C86651DC2FBAE005AF102 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -1499,6 +1527,7 @@
 		6EA9B4BC1DBB258900206E4E /* GameShop */ = {
 			isa = PBXGroup;
 			children = (
+				6E95032A1DDB3D5800692605 /* ConfirmBuyCell */,
 				6E5F7D8F1DDAE81A00A28655 /* ShopCell */,
 				6EA9B4BD1DBB259A00206E4E /* GameShopVC.h */,
 				6EA9B4BE1DBB259A00206E4E /* GameShopVC.m */,
@@ -1521,6 +1550,9 @@
 				6E5F7D081DDAB49300A28655 /* MyOrderVC.h */,
 				6E5F7D091DDAB49300A28655 /* MyOrderVC.m */,
 				6E5F7D0A1DDAB49300A28655 /* MyOrderVC.xib */,
+				6E95032B1DDB3FF300692605 /* MyOrderCell.h */,
+				6E95032C1DDB3FF300692605 /* MyOrderCell.m */,
+				6E95032D1DDB3FF300692605 /* MyOrderCell.xib */,
 			);
 			name = GameShop;
 			sourceTree = "<group>";
@@ -1763,6 +1795,7 @@
 				6E5F7D161DDAB67100A28655 /* BuyPopView.xib in Resources */,
 				6E5F7D111DDAB4A100A28655 /* GoodDetailVC.xib in Resources */,
 				6E87012B1DBBAE0600FE7691 /* SetNickNameVC.xib in Resources */,
+				6E9503241DDB362500692605 /* ConfrimBuyCell.xib in Resources */,
 				6E9C86A71DC2FE09005AF102 /* MJRefresh.bundle in Resources */,
 				6EA9B42E1DB8EB8A00206E4E /* RCConfig.plist in Resources */,
 				6E9C86C21DC32274005AF102 /* AMap.bundle in Resources */,
@@ -1771,6 +1804,7 @@
 				6E5F7D371DDAC23E00A28655 /* MarketCell.xib in Resources */,
 				AA31BF971B55660D0013FB1B /* Data in Resources */,
 				6E272AB21DDAAB610049082A /* Market.xcassets in Resources */,
+				6E9503291DDB365600692605 /* ConfrimBuyTotalView.xib in Resources */,
 				6E8701261DBBAA1500FE7691 /* RealNameAuthVC.xib in Resources */,
 				6E5F7D1E1DDAB6A100A28655 /* ConfirmBuyVC.xib in Resources */,
 				6E0912B31DCF04B500C66E9E /* NearbyVC.xib in Resources */,
@@ -1805,6 +1839,7 @@
 				6E5F7D231DDAB6DC00A28655 /* RechargeVC.xib in Resources */,
 				CA9C4A5080DD6F07A9855DAA /* LaunchScreen-iPad.xib in Resources */,
 				6EA9B4301DB8EB8A00206E4E /* RongCloud.bundle in Resources */,
+				6E95032F1DDB3FF300692605 /* MyOrderCell.xib in Resources */,
 				6EA9B4941DBB1FED00206E4E /* ForgetPwdVC.xib in Resources */,
 				6EA9B4C11DBB259A00206E4E /* GameShopVC.xib in Resources */,
 				6E43A5E41DBF9316006549B4 /* Login.xcassets in Resources */,
@@ -1953,6 +1988,7 @@
 				6E0912A11DCE200300C66E9E /* Bulk_Assembly-CSharp_0.cpp in Sources */,
 				6EA9AF211DB89A1400206E4E /* SettingVC.m in Sources */,
 				C2A344F691828A6CF5B3E5DC /* Bulk_mscorlib_7.cpp in Sources */,
+				6E95032E1DDB3FF300692605 /* MyOrderCell.m in Sources */,
 				6E3C132B1DC77DA900912F7D /* FileManager.m in Sources */,
 				6E88A34D1DD9EB760006104C /* CartoonAvatarCell.m in Sources */,
 				8B35432283B166A0E6329B9F /* GenericMethods0.cpp in Sources */,
@@ -1960,6 +1996,7 @@
 				6E9C86A01DC2FE09005AF102 /* MJRefreshAutoStateFooter.m in Sources */,
 				E2844B699A67767722C056EB /* Il2CppAttributes.cpp in Sources */,
 				6EA9B4A01DBB213000206E4E /* ExchangeMarketVC.m in Sources */,
+				6E9503231DDB362500692605 /* ConfrimBuyCell.m in Sources */,
 				6EA9B4BA1DBB250B00206E4E /* MyBackpackVC.m in Sources */,
 				6E0912A31DCE200300C66E9E /* Bulk_Assembly-CSharp_2.cpp in Sources */,
 				6EA9B4891DBAF59E00206E4E /* SheetListView.m in Sources */,
@@ -1967,6 +2004,7 @@
 				6E9C86AB1DC2FE09005AF102 /* UIScrollView+MJRefresh.m in Sources */,
 				6E0912AB1DCECE4200C66E9E /* MapVC.m in Sources */,
 				E7344E8583F6BC5A9AA2768E /* Il2CppCodeRegistration.cpp in Sources */,
+				6E9503271DDB364200692605 /* ConfrimBuyTotalView.m in Sources */,
 				BD994FAD87F4CD67C1D9AA1E /* Il2CppCompilerCalculateTypeValuesTable.cpp in Sources */,
 				293240449FB36A698230F63D /* Il2CppDelegateWrappersManagedToNativeTable.cpp in Sources */,
 				6EA9B49C1DBB20E800206E4E /* BaseTabbarVC.m in Sources */,
