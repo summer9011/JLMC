@@ -10,4 +10,7 @@
 
 @interface ConfirmBuyVC : BaseVC
 
+@property (nonatomic, copy) NSDictionary *goodInfo;
+@property (nonatomic, assign) NSUInteger number;
+
 @end

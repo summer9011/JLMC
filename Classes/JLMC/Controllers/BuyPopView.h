@@ -18,4 +18,8 @@
 
 @property (nonatomic, weak) id<BuyPopViewDelegate> dele;
 
+- (void)showIn:(UIView *)parentView;
+
+- (void)hide;
+
 @end

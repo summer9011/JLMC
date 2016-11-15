@@ -11,7 +11,7 @@
 
 #import "BuyPopView.h"
 
-@interface GoodDetailVC ()
+@interface GoodDetailVC () <BuyPopViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *backArrowImageView;
@@ -90,7 +90,20 @@
 - (IBAction)doBuyAction:(id)sender {
     if (self.popView == nil) {
         self.popView = [[NSBundle mainBundle] loadNibNamed:@"BuyPopView" owner:nil options:nil].firstObject;
+        self.popView.dele = self;
     }
+    
+    [self.popView showIn:self.view];
+}
+
+#pragma mark - BuyPopViewDelegate
+
+- (void)didBuyGood:(NSUInteger)goodCount {
+    ConfirmBuyVC *confirmBuyVC = [[ConfirmBuyVC alloc] initWithNibName:@"ConfirmBuyVC" bundle:nil];
+    confirmBuyVC.goodInfo = self.goodInfo;
+    confirmBuyVC.number = goodCount;
+    
+    [self.navigationController pushViewController:confirmBuyVC animated:YES];
 }
 
 /*
