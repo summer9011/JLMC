@@ -57,6 +57,13 @@
 		6E43A5E51DBF9316006549B4 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E43A5E21DBF9316006549B4 /* Main.xcassets */; };
 		6E43A5E81DBFA486006549B4 /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E43A5E71DBFA486006549B4 /* MenuButton.m */; };
 		6E43A5EB1DBFA49B006549B4 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E43A5EA1DBFA49B006549B4 /* MenuView.m */; };
+		6E484D491DDC1C6400174A02 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E484D3C1DDC1C6400174A02 /* TAAbstractDotView.m */; };
+		6E484D4A1DDC1C6400174A02 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E484D3E1DDC1C6400174A02 /* TAAnimatedDotView.m */; };
+		6E484D4B1DDC1C6400174A02 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E484D401DDC1C6400174A02 /* TADotView.m */; };
+		6E484D4C1DDC1C6400174A02 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E484D421DDC1C6400174A02 /* TAPageControl.m */; };
+		6E484D4D1DDC1C6400174A02 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E484D441DDC1C6400174A02 /* SDCollectionViewCell.m */; };
+		6E484D4E1DDC1C6400174A02 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E484D461DDC1C6400174A02 /* SDCycleScrollView.m */; };
+		6E484D4F1DDC1C6400174A02 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E484D481DDC1C6400174A02 /* UIView+SDExtension.m */; };
 		6E5F7D0B1DDAB49300A28655 /* MyOrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7D091DDAB49300A28655 /* MyOrderVC.m */; };
 		6E5F7D0C1DDAB49300A28655 /* MyOrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7D0A1DDAB49300A28655 /* MyOrderVC.xib */; };
 		6E5F7D101DDAB4A100A28655 /* GoodDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7D0E1DDAB4A100A28655 /* GoodDetailVC.m */; };
@@ -398,6 +405,20 @@
 		6E43A5E71DBFA486006549B4 /* MenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuButton.m; sourceTree = "<group>"; };
 		6E43A5E91DBFA49B006549B4 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
 		6E43A5EA1DBFA49B006549B4 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
+		6E484D3B1DDC1C6400174A02 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		6E484D3C1DDC1C6400174A02 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		6E484D3D1DDC1C6400174A02 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		6E484D3E1DDC1C6400174A02 /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		6E484D3F1DDC1C6400174A02 /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		6E484D401DDC1C6400174A02 /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		6E484D411DDC1C6400174A02 /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		6E484D421DDC1C6400174A02 /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		6E484D431DDC1C6400174A02 /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		6E484D441DDC1C6400174A02 /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		6E484D451DDC1C6400174A02 /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		6E484D461DDC1C6400174A02 /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		6E484D471DDC1C6400174A02 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		6E484D481DDC1C6400174A02 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
 		6E5F7D081DDAB49300A28655 /* MyOrderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderVC.h; sourceTree = "<group>"; };
 		6E5F7D091DDAB49300A28655 /* MyOrderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderVC.m; sourceTree = "<group>"; };
 		6E5F7D0A1DDAB49300A28655 /* MyOrderVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrderVC.xib; sourceTree = "<group>"; };
@@ -1007,6 +1028,35 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		6E484D391DDC1C6400174A02 /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				6E484D3A1DDC1C6400174A02 /* PageControl */,
+				6E484D431DDC1C6400174A02 /* SDCollectionViewCell.h */,
+				6E484D441DDC1C6400174A02 /* SDCollectionViewCell.m */,
+				6E484D451DDC1C6400174A02 /* SDCycleScrollView.h */,
+				6E484D461DDC1C6400174A02 /* SDCycleScrollView.m */,
+				6E484D471DDC1C6400174A02 /* UIView+SDExtension.h */,
+				6E484D481DDC1C6400174A02 /* UIView+SDExtension.m */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		6E484D3A1DDC1C6400174A02 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				6E484D3B1DDC1C6400174A02 /* TAAbstractDotView.h */,
+				6E484D3C1DDC1C6400174A02 /* TAAbstractDotView.m */,
+				6E484D3D1DDC1C6400174A02 /* TAAnimatedDotView.h */,
+				6E484D3E1DDC1C6400174A02 /* TAAnimatedDotView.m */,
+				6E484D3F1DDC1C6400174A02 /* TADotView.h */,
+				6E484D401DDC1C6400174A02 /* TADotView.m */,
+				6E484D411DDC1C6400174A02 /* TAPageControl.h */,
+				6E484D421DDC1C6400174A02 /* TAPageControl.m */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
 		6E5F7D8F1DDAE81A00A28655 /* ShopCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1216,6 +1266,7 @@
 				6E9C86B51DC3178C005AF102 /* SDWebImage */,
 				6E9C86BA1DC32236005AF102 /* AMap */,
 				6E6AB5451DC6FFF1003A086C /* TTAttributedLabel */,
+				6E484D391DDC1C6400174A02 /* SDCycleScrollView */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -1931,6 +1982,7 @@
 				8A8D90DA1A274A7800456C4E /* UnityAppController+UnityInterface.mm in Sources */,
 				6E9C869B1DC2FE09005AF102 /* MJRefreshComponent.m in Sources */,
 				8AA5D80217ABE9AF007B9910 /* UnityAppController+Rendering.mm in Sources */,
+				6E484D4E1DDC1C6400174A02 /* SDCycleScrollView.m in Sources */,
 				8A142DC61636943E00DD87CA /* Keyboard.mm in Sources */,
 				8A0FED491649699200E9727D /* EAGLContextHelper.mm in Sources */,
 				AAFE69D219F187C200638316 /* UnityViewControllerListener.mm in Sources */,
@@ -1946,6 +1998,7 @@
 				6E9C86A81DC2FE09005AF102 /* MJRefreshConst.m in Sources */,
 				6E5F7D101DDAB4A100A28655 /* GoodDetailVC.m in Sources */,
 				8A16150C1A8E4362006FA788 /* FullScreenVideoPlayer.mm in Sources */,
+				6E484D4B1DDC1C6400174A02 /* TADotView.m in Sources */,
 				6EA9B48E1DBB1FDB00206E4E /* RegisterVC.m in Sources */,
 				FC85CCBB16C3ED8000BAF7C7 /* CrashReporter.mm in Sources */,
 				8AB3CB3E16D390BB00697AD5 /* VideoPlayer.mm in Sources */,
@@ -1984,6 +2037,7 @@
 				6E9C869F1DC2FE09005AF102 /* MJRefreshAutoNormalFooter.m in Sources */,
 				999475201A7BC3AE00178130 /* UnityAdsUnityWrapper.mm in Sources */,
 				AA8F4B691BD917A10024E7E3 /* UnityViewControllerBaseiOS.mm in Sources */,
+				6E484D4F1DDC1C6400174A02 /* UIView+SDExtension.m in Sources */,
 				6EA9B4931DBB1FED00206E4E /* ForgetPwdVC.m in Sources */,
 				8AF7755D1799329100341121 /* LifeCycleListener.mm in Sources */,
 				6E8701181DBB844200FE7691 /* AboutVC.m in Sources */,
@@ -1994,6 +2048,7 @@
 				6E9C86A21DC2FE09005AF102 /* MJRefreshBackNormalFooter.m in Sources */,
 				AAC3E38D1A68945900F6174A /* RegisterFeatures.cpp in Sources */,
 				8ACB801C177081D4005D0019 /* DeviceSettings.mm in Sources */,
+				6E484D4A1DDC1C6400174A02 /* TAAnimatedDotView.m in Sources */,
 				03F528631B447098000F4FB8 /* Il2CppOptions.cpp in Sources */,
 				1AB549EC88C20C97634A62F7 /* Bulk_Generics_0.cpp in Sources */,
 				810442E3A76E809EE5BCC9D7 /* Bulk_Generics_1.cpp in Sources */,
@@ -2062,6 +2117,7 @@
 				6E6AB54C1DC71455003A086C /* GradientColorButton.m in Sources */,
 				717D4A869B38093FC282D983 /* Il2CppGenericMethodPointerTable.cpp in Sources */,
 				6E95033C1DDB595700692605 /* ShareView.m in Sources */,
+				6E484D491DDC1C6400174A02 /* TAAbstractDotView.m in Sources */,
 				8C4D4CA5B392B44884511ACB /* Il2CppGenericMethodTable.cpp in Sources */,
 				8D97450A8351098988989111 /* Il2CppInvokerTable.cpp in Sources */,
 				6E6AB5521DC736D6003A086C /* UIViewController+Hud.m in Sources */,
@@ -2071,7 +2127,9 @@
 				04D64C799414561D1838F9C1 /* Il2CppMetadataUsage.cpp in Sources */,
 				78CA4747B175BA3D53D8D0AD /* Il2CppMethodPointerTable.cpp in Sources */,
 				A2784F22ADC6F18CB27A27D1 /* Il2CppTypeDefinitions.cpp in Sources */,
+				6E484D4D1DDC1C6400174A02 /* SDCollectionViewCell.m in Sources */,
 				B7E547E5898E1144B9E4ADC2 /* UnityClassRegistration.cpp in Sources */,
+				6E484D4C1DDC1C6400174A02 /* TAPageControl.m in Sources */,
 				D13745D8BF8A3D2219715004 /* UnityICallRegistration.cpp in Sources */,
 				6E9C869C1DC2FE09005AF102 /* MJRefreshFooter.m in Sources */,
 			);

@@ -36,7 +36,8 @@
         if (dic == nil || [dic isEqual:[NSNull null]] || dic.count == 0) {
             complete(NO, nil);
         } else {
-            NSLog(@"getSysParamWithCompleteBlock %@", dic);
+            [[NSUserDefaults standardUserDefaults] setObject:dic forKey:UserDefaults_Config];
+            [[NSUserDefaults standardUserDefaults] synchronize];
             
             complete(YES, nil);
         }

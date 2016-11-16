@@ -9,9 +9,7 @@
 //sdk
     #import <RongIMKit/RongIMKit.h>
 
-    #import <SDWebImage/SDImageCache.h>
-    #import <SDWebImage/UIButton+WebCache.h>
-    #import <SDWebImage/UIImageView+WebCache.h>
+    #import <SDWebImage/SDWebImage.h>
 
     #import "SessionNetwork.h"
     #import "UIViewController+Hud.h"
@@ -79,6 +77,14 @@
 //Key - UserDefaults
 #define UserDefaults_Voice @"UserDefaults_Voice"
 #define UserDefaults_Shack @"UserDefaults_Shack"
+
+#define UserDefaults_Config @"UserDefaults_Config"
+
+#define UserDefaults_Config_hotline @"hotline"
+#define UserDefaults_Config_refreshInterval @"refreshInterval"
+#define UserDefaults_Config_refreshDistance @"refreshDistance"
+#define UserDefaults_Config_elfCatchDistance @"elfCatchDistance"
+#define UserDefaults_Config_splyReceiveDistance @"splyReceiveDistance"
 
 //Key - Notification
 #define Notification_Login @"Notification_Login"

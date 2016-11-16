@@ -33,8 +33,6 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    NSLog(@"NearbyVC viewWillAppear:");
-    
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     
     if (self.mapView) {
@@ -45,8 +43,6 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    NSLog(@"NearbyVC viewDidAppear:");
-    
     self.mapView.showsUserLocation = YES;
     self.mapView.userTrackingMode = MAUserTrackingModeFollow;
     
@@ -56,17 +52,9 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     
-    NSLog(@"NearbyVC viewWillDisappear:");
-    
     if (self.mapView) {
         self.mapView.delegate = nil;
     }
-}
-
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
-    
-    NSLog(@"NearbyVC viewDidDisappear:");
 }
 
 - (void)didReceiveMemoryWarning {

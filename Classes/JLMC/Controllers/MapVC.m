@@ -47,6 +47,7 @@
 @property (nonatomic, weak) UILabel         *timeCountLabel;
 
 @property (nonatomic, strong) CADisplayLink *displayLink;
+@property (nonatomic, assign) NSUInteger reLoadCount;
 
 @property (nonatomic, weak) MAMapView       *mapView;
 @property (nonatomic, strong) MAAnnotationView *userLocationAnnotationView;
@@ -68,7 +69,9 @@
     [self addMenu];
     [self addNearby];
     
-    [self loadIcons];
+    [self reloadIcons];
+    
+//    [self loadIcons];
     
     //默认为隐藏
     self.redPoint.hidden = YES;
@@ -77,8 +80,6 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    NSLog(@"MapVC viewWillAppear:");
-    
     if (self.mapView) {
         self.mapView.delegate = self;
     }
@@ -86,8 +87,6 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
-    NSLog(@"MapVC viewDidAppear:");
     
     self.mapView.showsUserLocation = YES;
     self.mapView.userTrackingMode = MAUserTrackingModeFollow;
@@ -98,17 +97,9 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     
-    NSLog(@"MapVC viewWillDisappear:");
-    
     if (self.mapView) {
         self.mapView.delegate = nil;
     }
-}
-
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
-    
-    NSLog(@"MapVC viewDidDisappear:");
 }
 
 - (void)didReceiveMemoryWarning {
@@ -306,6 +297,10 @@
     [self presentViewController:naviVC animated:YES completion:nil];
 }
 
+- (void)loadData {
+    
+}
+
 #pragma mark - MenuViewDelegate
 
 - (void)didSelectedMenuItem:(MenuItemType)type {
@@ -441,6 +436,8 @@
 }
 
 - (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation {
+    NSLog(@"userLocation %@", userLocation);
+    
     if (updatingLocation && self.userLocationAnnotationView != nil) {
         [self.mapView setCenterCoordinate:userLocation.location.coordinate animated:YES];
     }

@@ -263,6 +263,8 @@ extern "C" void UnityRequestQuit()
     //注册第三方模块
     [self registerLib];
     
+    [self loadConfig];
+    
     return YES;
 }
 
@@ -380,6 +382,10 @@ extern "C" void UnityRequestQuit()
     [[SDImageCache sharedImageCache] addReadOnlyCachePath:bundledPath];
     
     [AMapServices sharedServices].apiKey = AMap_ApiKey;
+}
+
+- (void)loadConfig {
+    [Config getSysParamWithCompleteBlock:nil];
 }
 
 #pragma mark - ShareViewDelegate
