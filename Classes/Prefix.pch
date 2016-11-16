@@ -7,6 +7,9 @@
 	#import <UIKit/UIKit.h>
 
 //sdk
+    #import <AMapFoundationKit/AMapFoundationKit.h>
+    #import <MAMapKit/MAMapKit.h>
+
     #import <RongIMKit/RongIMKit.h>
 
     #import <SDWebImage/SDWebImage.h>
@@ -85,6 +88,7 @@
 #define UserDefaults_Config_refreshDistance @"refreshDistance"
 #define UserDefaults_Config_elfCatchDistance @"elfCatchDistance"
 #define UserDefaults_Config_splyReceiveDistance @"splyReceiveDistance"
+#define UserDefaults_Config_stepsInterval @"stepsInterval"
 
 //Key - Notification
 #define Notification_Login @"Notification_Login"

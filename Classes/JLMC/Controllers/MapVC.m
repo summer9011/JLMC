@@ -8,9 +8,6 @@
 
 #import "MapVC.h"
 
-#import <AMapFoundationKit/AMapFoundationKit.h>
-#import <MAMapKit/MAMapKit.h>
-
 #import "UnityAppController.h"
 
 #import "SettingVC.h"
@@ -45,9 +42,6 @@
 @property (nonatomic, weak) UIImageView     *timeCountView;
 @property (nonatomic, weak) CAShapeLayer    *circleLayer;
 @property (nonatomic, weak) UILabel         *timeCountLabel;
-
-@property (nonatomic, strong) CADisplayLink *displayLink;
-@property (nonatomic, assign) NSUInteger reLoadCount;
 
 @property (nonatomic, weak) MAMapView       *mapView;
 @property (nonatomic, strong) MAAnnotationView *userLocationAnnotationView;
@@ -297,10 +291,6 @@
     [self presentViewController:naviVC animated:YES completion:nil];
 }
 
-- (void)loadData {
-    
-}
-
 #pragma mark - MenuViewDelegate
 
 - (void)didSelectedMenuItem:(MenuItemType)type {
@@ -436,9 +426,9 @@
 }
 
 - (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation {
-    NSLog(@"userLocation %@", userLocation);
-    
     if (updatingLocation && self.userLocationAnnotationView != nil) {
+        NSLog(@"userLocation %f, %f", userLocation.location.coordinate.longitude, userLocation.location.coordinate.latitude);
+        
         [self.mapView setCenterCoordinate:userLocation.location.coordinate animated:YES];
     }
 }

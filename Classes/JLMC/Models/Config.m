@@ -34,12 +34,16 @@
         NSDictionary *dic = response;
         
         if (dic == nil || [dic isEqual:[NSNull null]] || dic.count == 0) {
-            complete(NO, nil);
+            if (complete) {
+                complete(NO, nil);
+            }
         } else {
             [[NSUserDefaults standardUserDefaults] setObject:dic forKey:UserDefaults_Config];
             [[NSUserDefaults standardUserDefaults] synchronize];
             
-            complete(YES, nil);
+            if (complete) {
+                complete(YES, nil);
+            }
         }
     } failure:^(NSUInteger errorCode, NSString *errorMsg) {
         if (complete) {

@@ -4,10 +4,12 @@
 
 #include "PluginBase/RenderPluginDelegate.h"
 
+#import <CoreLocation/CoreLocation.h>
+
 @class UnityView;
 @class DisplayConnection;
 
-@interface UnityAppController : NSObject<UIApplicationDelegate, ShareViewDelegate>
+@interface UnityAppController : NSObject<UIApplicationDelegate, ShareViewDelegate, CLLocationManagerDelegate>
 {
     UnityView*			_unityView;
     CADisplayLink*		_displayLink;
@@ -77,6 +79,31 @@
  运动进度 0.0～1.0
  */
 @property (nonatomic, assign) CGFloat                       movementProgress;
+
+/**
+ 定位Manager
+ */
+@property (nonatomic, strong) CLLocationManager             *locationManager;
+
+/**
+ 附近的精灵
+ */
+@property (nonatomic, strong) NSMutableArray                *nearbyElfArr;
+
+/**
+ 附近的补给站
+ */
+@property (nonatomic, strong) NSMutableArray                *nearbyNormalSplyArr;
+
+/**
+ 附近的商家认领的补给站
+ */
+@property (nonatomic, strong) NSMutableArray                *nearbyPersonalSplyArr;
+
+/**
+ 附近的用户
+ */
+@property (nonatomic, strong) NSMutableArray                *nearbyUserArr;
 
 @end
 

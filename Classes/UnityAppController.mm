@@ -13,8 +13,6 @@
 #import <OpenGLES/ES2/gl.h>
 #import <OpenGLES/ES2/glext.h>
 
-#import <AMapFoundationKit/AMapFoundationKit.h>
-
 #import "MapVC.h"
 #import "LoginVC.h"
 #import "MyBackpackVC.h"
@@ -263,7 +261,15 @@ extern "C" void UnityRequestQuit()
     //注册第三方模块
     [self registerLib];
     
+    //加载配置信息
     [self loadConfig];
+    
+    self.nearbyElfArr = [NSMutableArray array];
+    self.nearbyNormalSplyArr = [NSMutableArray array];
+    self.nearbyPersonalSplyArr = [NSMutableArray array];
+    self.nearbyUserArr = [NSMutableArray array];
+    
+    [self startLocationManager];
     
     return YES;
 }
@@ -385,7 +391,44 @@ extern "C" void UnityRequestQuit()
 }
 
 - (void)loadConfig {
-    [Config getSysParamWithCompleteBlock:nil];
+    __weak UnityAppController *weakSelf = self;
+    
+    [Config getSysParamWithCompleteBlock:^(BOOL success, NSString *errStr) {
+        if (success) {
+            [weakSelf startLocationManager];
+        }
+    }];
+}
+
+- (void)startLocationManager {
+    if ([CLLocationManager locationServicesEnabled]) {
+        self.locationManager = [[CLLocationManager alloc] init];
+        self.locationManager.delegate = self;
+        
+        NSDictionary *configDic = [[NSUserDefaults standardUserDefaults] dictionaryForKey:UserDefaults_Config];
+        
+        self.locationManager.distanceFilter = [configDic[UserDefaults_Config_refreshDistance] floatValue];
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
+        
+        [self.locationManager startUpdatingLocation];
+        
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提醒" message:@"请在设置中检查网络和定位是否开启" delegate:nil cancelButtonTitle:@"好" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+}
+
+- (void)loadData:(CLLocation *)location {
+    
+}
+
+#pragma mark - CLLocationManagerDelegate
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
+    [self loadData:locations.firstObject];
+    
+    CLLocation *location = locations.firstObject;
+    NSLog(@"didUpdateLocations: longitude %f, latitude %f", location.coordinate.longitude, location.coordinate.latitude);
 }
 
 #pragma mark - ShareViewDelegate

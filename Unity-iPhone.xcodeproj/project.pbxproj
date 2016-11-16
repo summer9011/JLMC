@@ -783,6 +783,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5692F3DD0FA9D8E500EBA2F1 /* CoreLocation.framework in Frameworks */,
 				6E7F798F1DC8CBDE00CC8796 /* libresolv.tbd in Frameworks */,
 				6E9C86C61DC3233A005AF102 /* AdSupport.framework in Frameworks */,
 				6E9C86C41DC32316005AF102 /* libstdc++.6.0.9.tbd in Frameworks */,
@@ -824,7 +825,6 @@
 				6E6AB5481DC70013003A086C /* TTTAttributedLabel.framework in Frameworks */,
 				56FD43960ED4745200FE3770 /* CFNetwork.framework in Frameworks */,
 				56B7959B1442E0F20026B3DD /* CoreGraphics.framework in Frameworks */,
-				5692F3DD0FA9D8E500EBA2F1 /* CoreLocation.framework in Frameworks */,
 				7F36C11113C5C673007FBDD9 /* CoreMedia.framework in Frameworks */,
 				56B7960F1442E1770026B3DD /* CoreMotion.framework in Frameworks */,
 				6EA9B2FB1DB8E21200206E4E /* libpingpp+alipay.a in Frameworks */,
