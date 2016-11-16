@@ -153,7 +153,14 @@ static NSString *CellIdentifier = @"MarketCell";
     NSDictionary *dic = self.dataArr[indexPath.row];
     
     [cell.goodImageView sd_setImageWithURL:[NSURL URLWithString:dic[@"image"]]];
-    cell.goodInfoLabel.text = [NSString stringWithFormat:@"%@ +%@", dic[@"name"], dic[@"efficiency"]];
+    
+    if ([self.currentType isEqualToString:MarketGoodCatch]) {
+        cell.goodInfoLabel.text = [NSString stringWithFormat:@"%@", dic[@"name"]];
+        
+    } else {
+        cell.goodInfoLabel.text = [NSString stringWithFormat:@"%@ +%@", dic[@"name"], dic[@"efficiency"]];
+    }
+    
     cell.goodPriceLabel.text = [NSString stringWithFormat:@"%@", dic[@"price"]];
     
     return cell;

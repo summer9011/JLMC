@@ -39,7 +39,7 @@ static NSString *UserInfoAvatar         =       @"avatar";          //头像
 static NSString *APINameRegister        =       @"register";        //API注册
 static NSString *APINameCatchElf        =       @"catchElf";        //API获取精灵
 static NSString *APINameFeedElf         =       @"feedElf";         //API升级成功
-static NSStrnig *APINamerealNameAuth    =       @"realNameAuth";    //API实名认证
+static NSString *APINamerealNameAuth    =       @"realNameAuth";    //API实名认证
 
 @interface User : NSObject <NSCoding>
 

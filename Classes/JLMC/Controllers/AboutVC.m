@@ -10,6 +10,8 @@
 
 @interface AboutVC ()
 
+@property (weak, nonatomic) IBOutlet UILabel *versonLabel;
+
 @end
 
 @implementation AboutVC
@@ -18,7 +20,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.title = @"关于玩转精灵";
+    self.title = @"关于";
+    
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    NSString *app_Version = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
+    NSString *app_build = [infoDictionary objectForKey:@"CFBundleVersion"];
+    
+    self.versonLabel.text = [NSString stringWithFormat:@"玩转精灵v%@.%@", app_Version, app_build];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

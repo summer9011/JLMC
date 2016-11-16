@@ -29,6 +29,8 @@
 
 #import "MenuView.h"
 
+#import "SupplyDetailVC.h"
+
 @interface MapVC () <MenuViewDelegate, MAMapViewDelegate>
 
 @property (nonatomic, weak) UIButton        *menuBtn;

@@ -75,6 +75,8 @@
 		6E5F7D321DDAC21C00A28655 /* MarketHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7D301DDAC21C00A28655 /* MarketHeaderView.xib */; };
 		6E5F7D361DDAC23E00A28655 /* MarketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7D341DDAC23E00A28655 /* MarketCell.m */; };
 		6E5F7D371DDAC23E00A28655 /* MarketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7D351DDAC23E00A28655 /* MarketCell.xib */; };
+		6E5F7D971DDBFA3600A28655 /* SupplyDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7D951DDBFA3600A28655 /* SupplyDetailVC.m */; };
+		6E5F7D981DDBFA3600A28655 /* SupplyDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7D961DDBFA3600A28655 /* SupplyDetailVC.xib */; };
 		6E6AB5481DC70013003A086C /* TTTAttributedLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6AB5461DC6FFF1003A086C /* TTTAttributedLabel.framework */; };
 		6E6AB5491DC70013003A086C /* TTTAttributedLabel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6AB5461DC6FFF1003A086C /* TTTAttributedLabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E6AB54C1DC71455003A086C /* GradientColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6AB54B1DC71455003A086C /* GradientColorButton.m */; };
@@ -423,6 +425,9 @@
 		6E5F7D331DDAC23E00A28655 /* MarketCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketCell.h; sourceTree = "<group>"; };
 		6E5F7D341DDAC23E00A28655 /* MarketCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketCell.m; sourceTree = "<group>"; };
 		6E5F7D351DDAC23E00A28655 /* MarketCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarketCell.xib; sourceTree = "<group>"; };
+		6E5F7D941DDBFA3600A28655 /* SupplyDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupplyDetailVC.h; sourceTree = "<group>"; };
+		6E5F7D951DDBFA3600A28655 /* SupplyDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupplyDetailVC.m; sourceTree = "<group>"; };
+		6E5F7D961DDBFA3600A28655 /* SupplyDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SupplyDetailVC.xib; sourceTree = "<group>"; };
 		6E6AB5461DC6FFF1003A086C /* TTTAttributedLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TTTAttributedLabel.framework; sourceTree = "<group>"; };
 		6E6AB54A1DC71455003A086C /* GradientColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientColorButton.h; sourceTree = "<group>"; };
 		6E6AB54B1DC71455003A086C /* GradientColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientColorButton.m; sourceTree = "<group>"; };
@@ -1277,6 +1282,9 @@
 				6E8701271DBBAE0600FE7691 /* SetNickNameVC.h */,
 				6E8701281DBBAE0600FE7691 /* SetNickNameVC.m */,
 				6E8701291DBBAE0600FE7691 /* SetNickNameVC.xib */,
+				6E5F7D941DDBFA3600A28655 /* SupplyDetailVC.h */,
+				6E5F7D951DDBFA3600A28655 /* SupplyDetailVC.m */,
+				6E5F7D961DDBFA3600A28655 /* SupplyDetailVC.xib */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -1873,6 +1881,7 @@
 				6E9503341DDB473C00692605 /* RechargeItemView.xib in Resources */,
 				CB2C47BEB355E5E4F437CBD2 /* LaunchScreen-iPad.png in Resources */,
 				6EA9B47E1DB903C100206E4E /* README.txt in Resources */,
+				6E5F7D981DDBFA3600A28655 /* SupplyDetailVC.xib in Resources */,
 				6EA9B3DF1DB8E21200206E4E /* Pingpp.bundle in Resources */,
 				6E9503391DDB4D9400692605 /* MyOrderDetailVC.xib in Resources */,
 			);
@@ -2045,6 +2054,7 @@
 				6E5F7D2B1DDAB7DE00A28655 /* TypeView.m in Sources */,
 				C670422CA7D33268947C4C66 /* Il2CppGenericInstDefinitions.cpp in Sources */,
 				6E9C86A41DC2FE09005AF102 /* MJRefreshGifHeader.m in Sources */,
+				6E5F7D971DDBFA3600A28655 /* SupplyDetailVC.m in Sources */,
 				541644708CC46A1545B6B9ED /* Il2CppGenericMethodDefinitions.cpp in Sources */,
 				6E7C743A1DCA1CCF00115630 /* ChooseSexVC.m in Sources */,
 				6E5F7D361DDAC23E00A28655 /* MarketCell.m in Sources */,

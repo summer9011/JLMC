@@ -11,6 +11,9 @@
 #import "MeVC.h"
 #import "AboutVC.h"
 
+#import "UnityAppController.h"
+#import "LoginVC.h"
+
 @interface SettingVC ()
 
 @property (weak, nonatomic) IBOutlet UITableView *settingTable;
@@ -225,7 +228,10 @@
     } else if (indexPath.row == 8) {
         [User logout];
         
-        [self doBackAction];
+        LoginVC *loginVC = [[LoginVC alloc] initWithNibName:@"LoginVC" bundle:nil];
+        BaseNaviVC *naviVC = [[BaseNaviVC alloc] initWithRootViewController:loginVC];
+        GetAppController().window.rootViewController = naviVC;
+        [GetAppController().window makeKeyAndVisible];
     }
 }
 
