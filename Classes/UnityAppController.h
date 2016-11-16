@@ -85,6 +85,18 @@
  */
 @property (nonatomic, strong) CLLocationManager             *locationManager;
 
+@property (nonatomic, assign) BOOL                          isStartLoad;
+
+/**
+ 附近定时获取
+ */
+@property (nonatomic, strong) CADisplayLink                 *nearbyLink;
+
+/**
+ 定时器Count
+ */
+@property (nonatomic, assign) NSUInteger                    nearbyCount;
+
 /**
  附近的精灵
  */
@@ -104,6 +116,8 @@
  附近的用户
  */
 @property (nonatomic, strong) NSMutableArray                *nearbyUserArr;
+
+- (void)loadData:(CLLocation *)location;
 
 @end
 

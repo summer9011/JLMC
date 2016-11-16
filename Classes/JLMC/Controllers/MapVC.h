@@ -10,4 +10,8 @@
 
 @interface MapVC : BaseVC
 
+@property (nonatomic, strong) CLLocation *userLocation;
+
+@property (nonatomic, assign) NSInteger selectedElfId;
+
 @end

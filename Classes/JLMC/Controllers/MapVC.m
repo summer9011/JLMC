@@ -28,6 +28,13 @@
 
 #import "SupplyDetailVC.h"
 
+#import "ElfAnno.h"
+#import "SupplyAnno.h"
+
+#import "ElfAnnoView.h"
+#import "SupplyAnnoView.h"
+#import "UserAnnoView.h"
+
 @interface MapVC () <MenuViewDelegate, MAMapViewDelegate>
 
 @property (nonatomic, weak) UIButton        *menuBtn;
@@ -54,8 +61,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadIcons) name:Notification_LoadIcons object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadNearbyElf) name:Notification_NearbyElf object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadNearbySupply) name:Notification_NearbySupply object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadNearbyPersonalSupply) name:Notification_NearbyPersonalSupply object:nil];
+    
     [GetAppController() addObserver:self forKeyPath:@"haveNearbyPlayer" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
     [GetAppController() addObserver:self forKeyPath:@"movementProgress" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+    
+    self.userLocation = nil;
+    self.selectedElfId = 0;
     
     [self addMapView];
     [self addMovement];
@@ -65,7 +80,9 @@
     
     [self reloadIcons];
     
-//    [self loadIcons];
+    [self reloadNearbyElf];
+    [self reloadNearbySupply];
+    [self reloadNearbyPersonalSupply];
     
     //默认为隐藏
     self.redPoint.hidden = YES;
@@ -103,6 +120,11 @@
 
 - (void)dealloc {
     self.mapView = nil;
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:Notification_LoadIcons object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:Notification_NearbyElf object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:Notification_NearbySupply object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:Notification_NearbyPersonalSupply object:nil];
     
     [GetAppController() removeObserver:self forKeyPath:@"haveNearbyPlayer"];
     [GetAppController() removeObserver:self forKeyPath:@"movementProgress"];
@@ -222,7 +244,6 @@
     menuBtn.adjustsImageWhenHighlighted = NO;
     menuBtn.adjustsImageWhenDisabled = NO;
     menuBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
-    [menuBtn setImage:[UIImage imageNamed:@"SyMenuIcon"] forState:UIControlStateNormal];
     [menuBtn addTarget:self action:@selector(showMenuList) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:menuBtn];
@@ -241,7 +262,6 @@
     nearbyBtn.adjustsImageWhenHighlighted = NO;
     nearbyBtn.adjustsImageWhenDisabled = NO;
     nearbyBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
-    [nearbyBtn setImage:[UIImage imageNamed:@"StNearbyIcon"] forState:UIControlStateNormal];
     [nearbyBtn addTarget:self action:@selector(showNearby) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:nearbyBtn];
@@ -258,16 +278,6 @@
     self.redPoint = redPoint;
 }
 
-- (void)loadIcons {
-    __weak MapVC *weakSelf = self;
-    
-    [Config getMainPageIconListWithCompleteBlock:^(BOOL success, NSString *errStr) {
-        if (success) {
-            [weakSelf reloadIcons];
-        }
-    }];
-}
-
 - (void)reloadIcons {
     NSArray *iconArr = [Config getNewestLocalCacheIcons];
     
@@ -276,6 +286,9 @@
         [self.nearbyBtn sd_setImageWithURL:[NSURL URLWithString:iconArr[1][@"icon"]] forState:UIControlStateNormal];
         
         [[MenuView sharedMenuView] reloadIcons:[iconArr subarrayWithRange:NSMakeRange(2, iconArr.count - 2)]];
+    } else {
+        [self.menuBtn setImage:[UIImage imageNamed:@"SyMenuIcon"] forState:UIControlStateNormal];
+        [self.nearbyBtn setImage:[UIImage imageNamed:@"StNearbyIcon"] forState:UIControlStateNormal];
     }
 }
 
@@ -289,6 +302,77 @@
     BaseNaviVC *naviVC = [[BaseNaviVC alloc] initWithRootViewController:nearbyVC];
     
     [self presentViewController:naviVC animated:YES completion:nil];
+}
+
+- (void)reloadNearbyElf {
+    NSMutableArray *elfAnnoArr = [NSMutableArray array];
+    
+    for (NSDictionary *elf in GetAppController().nearbyElfArr) {
+        ElfAnno *anno = [[ElfAnno alloc] init];
+        anno.coordinate = CLLocationCoordinate2DMake([elf[@"lat"] doubleValue], [elf[@"lng"] doubleValue]);
+        anno.title = [NSString stringWithFormat:@"%@", elf[@"name"]];
+        anno.elfDic = elf;
+        
+        [elfAnnoArr addObject:anno];
+    }
+    
+    NSMutableArray *removeArr = [NSMutableArray array];
+    for (id <MAAnnotation> anno in self.mapView.annotations) {
+        if ([anno isKindOfClass:[ElfAnno class]]) {
+            [removeArr addObject:anno];
+        }
+    }
+    
+    [self.mapView removeAnnotations:removeArr];
+    [self.mapView addAnnotations:elfAnnoArr];
+}
+
+- (void)reloadNearbySupply {
+    NSMutableArray *supplyArr = [NSMutableArray array];
+    
+    for (NSDictionary *supply in GetAppController().nearbyNormalSplyArr) {
+        SupplyAnno *anno = [[SupplyAnno alloc] init];
+        anno.coordinate = CLLocationCoordinate2DMake([supply[@"lat"] doubleValue], [supply[@"lng"] doubleValue]);
+        anno.title = [NSString stringWithFormat:@"%@", supply[@"name"]];
+        anno.supplyDic = supply;
+        anno.isPrivate = NO;
+        
+        [supplyArr addObject:anno];
+    }
+    
+    NSMutableArray *removeArr = [NSMutableArray array];
+    for (id <MAAnnotation> anno in self.mapView.annotations) {
+        if ([anno isKindOfClass:[SupplyAnno class]] && !((SupplyAnno *)anno).isPrivate) {
+            [removeArr addObject:anno];
+        }
+    }
+    
+    [self.mapView removeAnnotations:removeArr];
+    [self.mapView addAnnotations:supplyArr];
+}
+
+- (void)reloadNearbyPersonalSupply {
+    NSMutableArray *personalSupplyArr = [NSMutableArray array];
+    
+    for (NSDictionary *personalSupply in GetAppController().nearbyNormalSplyArr) {
+        SupplyAnno *anno = [[SupplyAnno alloc] init];
+        anno.coordinate = CLLocationCoordinate2DMake([personalSupply[@"lat"] doubleValue], [personalSupply[@"lng"] doubleValue]);
+        anno.title = [NSString stringWithFormat:@"%@", personalSupply[@"name"]];
+        anno.supplyDic = personalSupply;
+        anno.isPrivate = YES;
+        
+        [personalSupplyArr addObject:anno];
+    }
+    
+    NSMutableArray *removeArr = [NSMutableArray array];
+    for (id <MAAnnotation> anno in self.mapView.annotations) {
+        if ([anno isKindOfClass:[SupplyAnno class]] && ((SupplyAnno *)anno).isPrivate) {
+            [removeArr addObject:anno];
+        }
+    }
+    
+    [self.mapView removeAnnotations:removeArr];
+    [self.mapView addAnnotations:personalSupplyArr];
 }
 
 #pragma mark - MenuViewDelegate
@@ -406,20 +490,45 @@
 }
 
 - (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation {
-    /* 自定义userLocation对应的annotationView. */
     if ([annotation isKindOfClass:[MAUserLocation class]]) {
-        static NSString *userLocationStyleReuseIndetifier = @"userLocationStyleReuseIndetifier";
-        MAAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:userLocationStyleReuseIndetifier];
-        if (annotationView == nil) {
-            annotationView = [[MAAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:userLocationStyleReuseIndetifier];
+        static NSString *UserIdentifier = @"UserIdentifier";
+        
+        UserAnnoView *annoView = (UserAnnoView *)[mapView dequeueReusableAnnotationViewWithIdentifier:UserIdentifier];
+        if (annoView == nil) {
+            annoView = [[UserAnnoView alloc] initWithAnnotation:annotation reuseIdentifier:UserIdentifier];
         }
         
-        annotationView.image = [UIImage imageNamed:@"UserAnno"];
-        annotationView.centerOffset = CGPointMake(0, -44);
+        annoView.imageStr = GetAppController().loginUser.avatar;
         
-        self.userLocationAnnotationView = annotationView;
+        self.userLocationAnnotationView = annoView;
         
-        return annotationView;
+        return annoView;
+    } else if ([annotation isKindOfClass:[ElfAnno class]]) {
+        static NSString *ElfIdentifier = @"ElfIdentifier";
+        
+        ElfAnnoView *annoView = (ElfAnnoView *)[mapView dequeueReusableAnnotationViewWithIdentifier:ElfIdentifier];
+        if (annoView == nil) {
+            annoView = [[ElfAnnoView alloc] initWithAnnotation:annotation reuseIdentifier:ElfIdentifier];
+        }
+        
+        ElfAnno *elfAnno = (ElfAnno *)annotation;
+        annoView.imageStr = elfAnno.elfDic[@"image"];
+        
+        return annoView;
+        
+    } else if ([annotation isKindOfClass:[SupplyAnno class]]) {
+        static NSString *SupplyIdentifier = @"SupplyIdentifier";
+        
+        SupplyAnnoView *annoView = (SupplyAnnoView *)[mapView dequeueReusableAnnotationViewWithIdentifier:SupplyIdentifier];
+        if (annoView == nil) {
+            annoView = [[SupplyAnnoView alloc] initWithAnnotation:annotation reuseIdentifier:SupplyIdentifier];
+        }
+        
+        SupplyAnno *supplyAnno = (SupplyAnno *)annotation;
+        annoView.imageStr = supplyAnno.supplyDic[@"icon"];
+        
+        return annoView;
+        
     }
     
     return nil;
@@ -427,14 +536,54 @@
 
 - (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation {
     if (updatingLocation && self.userLocationAnnotationView != nil) {
-        NSLog(@"userLocation %f, %f", userLocation.location.coordinate.longitude, userLocation.location.coordinate.latitude);
+        self.userLocation = userLocation.location;
         
         [self.mapView setCenterCoordinate:userLocation.location.coordinate animated:YES];
     }
 }
 
 - (void)mapView:(MAMapView *)mapView didSelectAnnotationView:(MAAnnotationView *)view {
-    NSLog(@"选中 AnnoView %@", view);
+    [mapView deselectAnnotation:view.annotation animated:YES];
+    
+    NSLog(@"选中 annotation %@", view.annotation);
+    
+    NSDictionary *configDic = [[NSUserDefaults standardUserDefaults] dictionaryForKey:UserDefaults_Config];
+    
+    if ([view.annotation isKindOfClass:[ElfAnno class]]) {
+        BOOL isInsdie = MACircleContainsCoordinate(self.userLocation.coordinate, view.annotation.coordinate, [configDic[UserDefaults_Config_elfCatchDistance] floatValue]);
+        NSLog(@"elf inside %d", isInsdie);
+        
+        if (isInsdie) {
+            ElfAnno *elfAnno = (ElfAnno *)view.annotation;
+            self.selectedElfId = [elfAnno.elfDic[@"poiElfId"] integerValue];
+            
+            UnityPause(NO);
+            
+            UnitySendMessage(UnityObj, UnityMethod, UnityMyCatch);
+            
+            BaseNaviVC *naviVC = [[BaseNaviVC alloc] initWithRootViewController:GetAppController().tmpUnityVC];
+            [self presentViewController:naviVC animated:YES completion:nil];
+        }
+        
+        
+    } else if ([view.annotation isKindOfClass:[SupplyAnno class]]) {
+        BOOL isInsdie = MACircleContainsCoordinate(self.userLocation.coordinate, view.annotation.coordinate, [configDic[UserDefaults_Config_splyReceiveDistance] floatValue]);
+        NSLog(@"supply inside %d", isInsdie);
+        
+        if (isInsdie) {
+            SupplyAnno *supplyAnno = (SupplyAnno *)view.annotation;
+            
+            SupplyDetailVC *supplyVC = [[SupplyDetailVC alloc] initWithNibName:@"SupplyDetailVC" bundle:nil];
+            supplyVC.splyId = [NSString stringWithFormat:@"%@", supplyAnno.supplyDic[@"id"]];
+            supplyVC.splyWeight = [NSString stringWithFormat:@"%@", supplyAnno.supplyDic[@"poiweight"]];
+            supplyVC.isPrivate = supplyAnno.isPrivate;
+            
+            BaseNaviVC *naviVC = [[BaseNaviVC alloc] initWithRootViewController:supplyVC];
+            [self presentViewController:naviVC animated:YES completion:nil];
+            
+        }
+        
+    }
 }
 
 #pragma mark - KVO

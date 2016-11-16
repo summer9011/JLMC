@@ -74,8 +74,8 @@
 #define UnityMethod [@"MessagesReceive" UTF8String]
 
 #define UnityMySpirit [@"MultiPlatformFunction_MainView#MySpirit" UTF8String]
-#define UnityMyImage [@"MyImage" UTF8String]
-#define UnityMyCatch [@"Catch" UTF8String]
+#define UnityMyImage [@"MultiPlatformFunction_MainView#MyImage" UTF8String]
+#define UnityMyCatch [@"MultiPlatformFunction_MainView#Catch" UTF8String]
 
 //Key - UserDefaults
 #define UserDefaults_Voice @"UserDefaults_Voice"
@@ -91,6 +91,13 @@
 #define UserDefaults_Config_stepsInterval @"stepsInterval"
 
 //Key - Notification
+#define Notification_LoadIcons @"Notification_LoadIcons"
+
 #define Notification_Login @"Notification_Login"
 #define Notification_Logout @"Notification_Logout"
+
+#define Notification_NearbyElf @"Notification_NearbyElf"
+#define Notification_NearbySupply @"Notification_NearbySupply"
+#define Notification_NearbyPersonalSupply @"Notification_NearbyPersonalSupply"
+#define Notification_NearbyUser @"Notification_NearbyUser"
 

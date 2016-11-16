@@ -10,4 +10,8 @@
 
 @interface SupplyDetailVC : BaseVC
 
+@property (nonatomic, copy) NSString *splyId;
+@property (nonatomic, copy) NSString *splyWeight;
+@property (nonatomic, assign) BOOL isPrivate;
+
 @end

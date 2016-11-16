@@ -118,6 +118,12 @@
 		6E9503391DDB4D9400692605 /* MyOrderDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E9503371DDB4D9400692605 /* MyOrderDetailVC.xib */; };
 		6E95033C1DDB595700692605 /* ShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E95033B1DDB595700692605 /* ShareView.m */; };
 		6E95033E1DDB597000692605 /* ShareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E95033D1DDB597000692605 /* ShareView.xib */; };
+		6E9503411DDCA60300692605 /* ElfAnnoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9503401DDCA60300692605 /* ElfAnnoView.m */; };
+		6E9503441DDCA73000692605 /* ElfAnno.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9503431DDCA73000692605 /* ElfAnno.m */; };
+		6E9503471DDCA83400692605 /* SupplyAnno.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9503461DDCA83400692605 /* SupplyAnno.m */; };
+		6E95034A1DDCA87000692605 /* UserAnno.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9503491DDCA87000692605 /* UserAnno.m */; };
+		6E95034D1DDCAA1900692605 /* SupplyAnnoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E95034C1DDCAA1900692605 /* SupplyAnnoView.m */; };
+		6E9503501DDCAAC600692605 /* UserAnnoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E95034F1DDCAAC600692605 /* UserAnnoView.m */; };
 		6E9C86681DC2FC58005AF102 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9C86661DC2FBAE005AF102 /* MBProgressHUD.framework */; };
 		6E9C86691DC2FC58005AF102 /* MBProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9C86661DC2FBAE005AF102 /* MBProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E9C86991DC2FE09005AF102 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C866D1DC2FE09005AF102 /* MJRefreshAutoFooter.m */; };
@@ -499,6 +505,18 @@
 		6E95033A1DDB595700692605 /* ShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareView.h; sourceTree = "<group>"; };
 		6E95033B1DDB595700692605 /* ShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareView.m; sourceTree = "<group>"; };
 		6E95033D1DDB597000692605 /* ShareView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareView.xib; sourceTree = "<group>"; };
+		6E95033F1DDCA60300692605 /* ElfAnnoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElfAnnoView.h; sourceTree = "<group>"; };
+		6E9503401DDCA60300692605 /* ElfAnnoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElfAnnoView.m; sourceTree = "<group>"; };
+		6E9503421DDCA73000692605 /* ElfAnno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElfAnno.h; sourceTree = "<group>"; };
+		6E9503431DDCA73000692605 /* ElfAnno.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElfAnno.m; sourceTree = "<group>"; };
+		6E9503451DDCA83400692605 /* SupplyAnno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupplyAnno.h; sourceTree = "<group>"; };
+		6E9503461DDCA83400692605 /* SupplyAnno.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupplyAnno.m; sourceTree = "<group>"; };
+		6E9503481DDCA87000692605 /* UserAnno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAnno.h; sourceTree = "<group>"; };
+		6E9503491DDCA87000692605 /* UserAnno.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAnno.m; sourceTree = "<group>"; };
+		6E95034B1DDCAA1900692605 /* SupplyAnnoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupplyAnnoView.h; sourceTree = "<group>"; };
+		6E95034C1DDCAA1900692605 /* SupplyAnnoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupplyAnnoView.m; sourceTree = "<group>"; };
+		6E95034E1DDCAAC600692605 /* UserAnnoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAnnoView.h; sourceTree = "<group>"; };
+		6E95034F1DDCAAC600692605 /* UserAnnoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAnnoView.m; sourceTree = "<group>"; };
 		6E9C86661DC2FBAE005AF102 /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = "<group>"; };
 		6E9C866C1DC2FE09005AF102 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		6E9C866D1DC2FE09005AF102 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
@@ -1105,6 +1123,25 @@
 			name = ConfirmBuyCell;
 			sourceTree = "<group>";
 		};
+		6E9503511DDCAACE00692605 /* Anno */ = {
+			isa = PBXGroup;
+			children = (
+				6E9503421DDCA73000692605 /* ElfAnno.h */,
+				6E9503431DDCA73000692605 /* ElfAnno.m */,
+				6E95033F1DDCA60300692605 /* ElfAnnoView.h */,
+				6E9503401DDCA60300692605 /* ElfAnnoView.m */,
+				6E9503451DDCA83400692605 /* SupplyAnno.h */,
+				6E9503461DDCA83400692605 /* SupplyAnno.m */,
+				6E95034B1DDCAA1900692605 /* SupplyAnnoView.h */,
+				6E95034C1DDCAA1900692605 /* SupplyAnnoView.m */,
+				6E9503481DDCA87000692605 /* UserAnno.h */,
+				6E9503491DDCA87000692605 /* UserAnno.m */,
+				6E95034E1DDCAAC600692605 /* UserAnnoView.h */,
+				6E95034F1DDCAAC600692605 /* UserAnnoView.m */,
+			);
+			name = Anno;
+			sourceTree = "<group>";
+		};
 		6E9C86651DC2FBAE005AF102 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -1317,6 +1354,7 @@
 				6E0912AF1DCF04B500C66E9E /* NearbyVC.h */,
 				6E0912B01DCF04B500C66E9E /* NearbyVC.m */,
 				6E0912B11DCF04B500C66E9E /* NearbyVC.xib */,
+				6E9503511DDCAACE00692605 /* Anno */,
 				6E9FBCC81DC1E60700AB6141 /* MainList */,
 				6EA9AF1E1DB89A1400206E4E /* SettingVC.h */,
 				6EA9AF1F1DB89A1400206E4E /* SettingVC.m */,
@@ -1981,9 +2019,11 @@
 				6E5F7D311DDAC21C00A28655 /* MarketHeaderView.m in Sources */,
 				8A8D90DA1A274A7800456C4E /* UnityAppController+UnityInterface.mm in Sources */,
 				6E9C869B1DC2FE09005AF102 /* MJRefreshComponent.m in Sources */,
+				6E9503501DDCAAC600692605 /* UserAnnoView.m in Sources */,
 				8AA5D80217ABE9AF007B9910 /* UnityAppController+Rendering.mm in Sources */,
 				6E484D4E1DDC1C6400174A02 /* SDCycleScrollView.m in Sources */,
 				8A142DC61636943E00DD87CA /* Keyboard.mm in Sources */,
+				6E95034D1DDCAA1900692605 /* SupplyAnnoView.m in Sources */,
 				8A0FED491649699200E9727D /* EAGLContextHelper.mm in Sources */,
 				AAFE69D219F187C200638316 /* UnityViewControllerListener.mm in Sources */,
 				6EA9B4981DBB202B00206E4E /* MyFriendVC.m in Sources */,
@@ -1995,6 +2035,7 @@
 				6E9C86A51DC2FE09005AF102 /* MJRefreshNormalHeader.m in Sources */,
 				1859EA9B19214E7B0022C3D3 /* MetalHelper.mm in Sources */,
 				6E5F7D221DDAB6DC00A28655 /* RechargeVC.m in Sources */,
+				6E9503411DDCA60300692605 /* ElfAnnoView.m in Sources */,
 				6E9C86A81DC2FE09005AF102 /* MJRefreshConst.m in Sources */,
 				6E5F7D101DDAB4A100A28655 /* GoodDetailVC.m in Sources */,
 				8A16150C1A8E4362006FA788 /* FullScreenVideoPlayer.mm in Sources */,
@@ -2004,6 +2045,7 @@
 				8AB3CB3E16D390BB00697AD5 /* VideoPlayer.mm in Sources */,
 				6EA9B4C01DBB259A00206E4E /* GameShopVC.m in Sources */,
 				6E0912A61DCE200300C66E9E /* Bulk_UnityEngine_2.cpp in Sources */,
+				6E95034A1DDCA87000692605 /* UserAnno.m in Sources */,
 				8A2AA93516E0978D001FB470 /* CMVideoSampling.mm in Sources */,
 				6E9503321DDB472C00692605 /* RechargeItemView.m in Sources */,
 				8A851BA716FB2F6D00E911DB /* UnityView.mm in Sources */,
@@ -2022,6 +2064,7 @@
 				8A6720A519EEB905006C92E0 /* InternalProfiler.cpp in Sources */,
 				8A6137141A10BCA200059EDF /* ObjCRuntime.mm in Sources */,
 				6EA9B4851DB9C25100206E4E /* ConversationListVC.m in Sources */,
+				6E9503441DDCA73000692605 /* ElfAnno.m in Sources */,
 				6E88A3481DD9EA3D0006104C /* ChooseCartoonVC.m in Sources */,
 				6E5F7D1D1DDAB6A100A28655 /* ConfirmBuyVC.m in Sources */,
 				6E6AB54F1DC7357E003A086C /* NSString+Validate.m in Sources */,
@@ -2071,6 +2114,7 @@
 				416348798030C311B658A617 /* Bulk_mscorlib_2.cpp in Sources */,
 				6E43A5E81DBFA486006549B4 /* MenuButton.m in Sources */,
 				6E5F7D271DDAB6EE00A28655 /* ConfrimRechargeVC.m in Sources */,
+				6E9503471DDCA83400692605 /* SupplyAnno.m in Sources */,
 				B0F74EDC80F0EDFADA776944 /* Bulk_mscorlib_3.cpp in Sources */,
 				BE014FA1804C3580565B12F1 /* Bulk_mscorlib_4.cpp in Sources */,
 				6E9C86A31DC2FE09005AF102 /* MJRefreshBackStateFooter.m in Sources */,

@@ -8,8 +8,14 @@
 
 #import "NearbyVC.h"
 
+#import "UnityAppController.h"
+
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import <MAMapKit/MAMapKit.h>
+
+#import "UserAnno.h"
+
+#import "UserAnnoView.h"
 
 @interface NearbyVC () <MAMapViewDelegate>
 
@@ -23,6 +29,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadNearbyUser) name:Notification_NearbyUser object:nil];
     
     self.title = @"附近玩家";
     
@@ -64,6 +72,8 @@
 
 - (void)dealloc {
     self.mapView = nil;
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:Notification_NearbyUser object:nil];
 }
 
 - (void)addMapView {
@@ -80,6 +90,29 @@
     [self.view addSubview:mapView];
     
     self.mapView = mapView;
+}
+
+- (void)reloadNearbyUser {
+    NSMutableArray *userAnnoArr = [NSMutableArray array];
+    
+    for (NSDictionary *user in GetAppController().nearbyUserArr) {
+        UserAnno *anno = [[UserAnno alloc] init];
+        anno.coordinate = CLLocationCoordinate2DMake([user[@"lat"] doubleValue], [user[@"lng"] doubleValue]);
+        anno.title = [NSString stringWithFormat:@"%@", user[@"name"]];
+        anno.userDic = user;
+        
+        [userAnnoArr addObject:anno];
+    }
+    
+    NSMutableArray *removeArr = [NSMutableArray array];
+    for (id <MAAnnotation> anno in self.mapView.annotations) {
+        if ([anno isKindOfClass:[UserAnno class]]) {
+            [removeArr addObject:anno];
+        }
+    }
+    
+    [self.mapView removeAnnotations:removeArr];
+    [self.mapView addAnnotations:userAnnoArr];
 }
 
 #pragma mark - MAMapViewDelegate
@@ -100,20 +133,32 @@
 }
 
 - (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation {
-    /* 自定义userLocation对应的annotationView. */
     if ([annotation isKindOfClass:[MAUserLocation class]]) {
-        static NSString *userLocationStyleReuseIndetifier = @"userLocationStyleReuseIndetifier";
-        MAAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:userLocationStyleReuseIndetifier];
-        if (annotationView == nil) {
-            annotationView = [[MAAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:userLocationStyleReuseIndetifier];
+        static NSString *UserIdentifier = @"UserIdentifier";
+        
+        UserAnnoView *annoView = (UserAnnoView *)[mapView dequeueReusableAnnotationViewWithIdentifier:UserIdentifier];
+        if (annoView == nil) {
+            annoView = [[UserAnnoView alloc] initWithAnnotation:annotation reuseIdentifier:UserIdentifier];
         }
         
-        annotationView.image = [UIImage imageNamed:@"UserAnno"];
-        annotationView.centerOffset = CGPointMake(0, -44);
+        annoView.imageStr = GetAppController().loginUser.avatar;
         
-        self.userLocationAnnotationView = annotationView;
+        self.userLocationAnnotationView = annoView;
         
-        return annotationView;
+        return annoView;
+    } else if ([annotation isKindOfClass:[UserAnno class]]) {
+        static NSString *NearbyUserIdentifier = @"NearbyUserIdentifier";
+        
+        UserAnnoView *annoView = (UserAnnoView *)[mapView dequeueReusableAnnotationViewWithIdentifier:NearbyUserIdentifier];
+        if (annoView == nil) {
+            annoView = [[UserAnnoView alloc] initWithAnnotation:annotation reuseIdentifier:NearbyUserIdentifier];
+        }
+        
+        UserAnno *userAnno = (UserAnno *)annotation;
+        annoView.imageStr = userAnno.userDic[@"image"];
+        
+        return annoView;
+        
     }
     
     return nil;
@@ -126,7 +171,15 @@
 }
 
 - (void)mapView:(MAMapView *)mapView didSelectAnnotationView:(MAAnnotationView *)view {
-    NSLog(@"选中 AnnoView %@", view);
+    [mapView deselectAnnotation:view.annotation animated:YES];
+    
+    NSLog(@"选中 annotation %@", view.annotation);
+    
+    if ([view.annotation isKindOfClass:[UserAnno class]]) {
+        UserAnno *userAnno = (UserAnno *)view.annotation;
+        
+        NSLog(@"进入User %@", userAnno.userDic);
+    }
 }
 
 /*

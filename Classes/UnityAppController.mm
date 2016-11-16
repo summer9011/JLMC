@@ -269,6 +269,8 @@ extern "C" void UnityRequestQuit()
     self.nearbyPersonalSplyArr = [NSMutableArray array];
     self.nearbyUserArr = [NSMutableArray array];
     
+    self.isStartLoad = NO;
+    [self startTimeLink];
     [self startLocationManager];
     
     return YES;
@@ -398,6 +400,34 @@ extern "C" void UnityRequestQuit()
             [weakSelf startLocationManager];
         }
     }];
+    
+    [Config getMainPageIconListWithCompleteBlock:^(BOOL success, NSString *errStr) {
+        if (success) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:Notification_LoadIcons object:nil];
+        }
+    }];
+}
+
+- (void)startTimeLink {
+    self.nearbyCount = 0;
+    self.nearbyLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(reloadTimeCount)];
+    self.nearbyLink.frameInterval = 60;
+    
+    [self.nearbyLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+}
+
+- (void)reloadTimeCount {
+    self.nearbyCount ++;
+    
+    NSDictionary *configDic = [[NSUserDefaults standardUserDefaults] dictionaryForKey:UserDefaults_Config];
+    if (self.isStartLoad && self.nearbyCount >= [configDic[UserDefaults_Config_refreshInterval] integerValue] * 60) {
+        if ([self.rootViewController isKindOfClass:[MapVC class]]) {
+            MapVC *mapVC = (MapVC *)self.rootViewController;
+            if (mapVC.userLocation) {
+                [self loadData:mapVC.userLocation];
+            }
+        }
+    }
 }
 
 - (void)startLocationManager {
@@ -419,7 +449,43 @@ extern "C" void UnityRequestQuit()
 }
 
 - (void)loadData:(CLLocation *)location {
+    self.isStartLoad = YES;
+    self.nearbyCount = 0;
     
+    __weak UnityAppController *weakSelf = self;
+    
+    NSString *longitude = [NSString stringWithFormat:@"%f", location.coordinate.longitude];
+    NSString *latitude = [NSString stringWithFormat:@"%f", location.coordinate.latitude];
+    
+    [Spirit getNearbyElfListWithLongitude:longitude latitude:latitude completeBlock:^(BOOL success, id response, NSString *errStr) {
+        if (success) {
+            [weakSelf.nearbyElfArr removeAllObjects];
+            [weakSelf.nearbyElfArr addObjectsFromArray:response];
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:Notification_NearbyElf object:nil];
+        }
+        
+    }];
+    
+    [Spirit getNearbySupplyListWithLongitude:longitude latitude:latitude completeBlock:^(BOOL success, id response, NSString *errStr) {
+        if (success) {
+            [weakSelf.nearbyNormalSplyArr removeAllObjects];
+            [weakSelf.nearbyNormalSplyArr addObjectsFromArray:response];
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:Notification_NearbySupply object:nil];
+        }
+        
+    }];
+    
+    [Spirit getNearbyPersonalSupplyListWithLongitude:longitude latitude:latitude completeBlock:^(BOOL success, id response, NSString *errStr) {
+        if (success) {
+            [weakSelf.nearbyPersonalSplyArr removeAllObjects];
+            [weakSelf.nearbyPersonalSplyArr addObjectsFromArray:response];
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:Notification_NearbyPersonalSupply object:nil];
+        }
+        
+    }];
 }
 
 #pragma mark - CLLocationManagerDelegate
@@ -582,5 +648,12 @@ extern "C" void	ShowShareView() {
 
 //获取地图POI上的精灵ID
 extern "C" long	getPoiElfId() {
-    return 10;
+    long elfId = 0;
+    
+    if ([GetAppController().rootViewController isKindOfClass:[MapVC class]]) {
+        MapVC *mapVC = (MapVC *)GetAppController().rootViewController;
+        elfId = mapVC.selectedElfId;
+    }
+    
+    return elfId;
 }
