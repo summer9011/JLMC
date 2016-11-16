@@ -382,6 +382,8 @@ extern "C" void UnityRequestQuit()
     [AMapServices sharedServices].apiKey = AMap_ApiKey;
 }
 
+#pragma mark - ShareViewDelegate
+
 @end
 
 
@@ -524,7 +526,9 @@ extern "C" void	PushToMarketController() {
 
 //显示分享模块
 extern "C" void	ShowShareView() {
-    NSLog(@"显示分享模块");
+    ShareView *shareView = [ShareView singleShareView];
+    shareView.dele = GetAppController();
+    [shareView showInView:GetAppController().rootViewController.view];
 }
 
 //获取地图POI上的精灵ID

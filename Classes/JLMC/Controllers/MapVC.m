@@ -28,7 +28,6 @@
 #import "RankListVC.h"
 
 #import "MenuView.h"
-#import "ShareView.h"
 
 @interface MapVC () <MenuViewDelegate, MAMapViewDelegate>
 
@@ -386,10 +385,6 @@
             break;
         case MenuItemGameCircle: {
             NSLog(@"游戏圈");
-            
-            ShareView *shareView = [ShareView sharedView];
-            shareView.dele = self;
-            [shareView showInView:self.view];
         }
             break;
         case MenuItemRank: {

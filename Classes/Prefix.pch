@@ -20,6 +20,8 @@
 
     #import "BaseNaviVC.h"
 
+    #import "ShareView.h"
+
 //Model
     #import "FileManager.h"
     #import "User.h"
@@ -70,7 +72,7 @@
 #define UnityObj [@"NativeMessageReceive" UTF8String]
 #define UnityMethod [@"MessagesReceive" UTF8String]
 
-#define UnityMySpirit [@"MySpirit" UTF8String]
+#define UnityMySpirit [@"MultiPlatformFunction_MainView#MySpirit" UTF8String]
 #define UnityMyImage [@"MyImage" UTF8String]
 #define UnityMyCatch [@"Catch" UTF8String]
 

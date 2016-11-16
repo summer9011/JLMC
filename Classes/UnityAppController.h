@@ -7,7 +7,7 @@
 @class UnityView;
 @class DisplayConnection;
 
-@interface UnityAppController : NSObject<UIApplicationDelegate>
+@interface UnityAppController : NSObject<UIApplicationDelegate, ShareViewDelegate>
 {
     UnityView*			_unityView;
     CADisplayLink*		_displayLink;

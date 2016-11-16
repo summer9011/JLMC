@@ -51,7 +51,7 @@
     }
 }
 
-+ (ShareView *)sharedView {
++ (ShareView *)singleShareView {
     ShareView *tmpView = [[NSBundle mainBundle] loadNibNamed:@"ShareView" owner:nil options:nil].firstObject;
     tmpView.frame = [UIScreen mainScreen].bounds;
     

@@ -31,10 +31,15 @@ static NSString *UserSexFemale          =       @"female";          //女
 static NSString *UserStatusActive       =       @"active";          //可用
 static NSString *UserStatusInactive     =       @"inactive";        //不可用
 
-static NSString *UserInfoNickname       =       @"nickname";
-static NSString *UserInfoAge            =       @"age";
-static NSString *UserInfoSex            =       @"sex";
-static NSString *UserInfoAvatar         =       @"avatar";
+static NSString *UserInfoNickname       =       @"nickname";        //昵称
+static NSString *UserInfoAge            =       @"age";             //年龄
+static NSString *UserInfoSex            =       @"sex";             //性别
+static NSString *UserInfoAvatar         =       @"avatar";          //头像
+
+static NSString *APINameRegister        =       @"register";        //API注册
+static NSString *APINameCatchElf        =       @"catchElf";        //API获取精灵
+static NSString *APINameFeedElf         =       @"feedElf";         //API升级成功
+static NSStrnig *APINamerealNameAuth    =       @"realNameAuth";    //API实名认证
 
 @interface User : NSObject <NSCoding>
 
@@ -104,17 +109,8 @@ static NSString *UserInfoAvatar         =       @"avatar";
 + (BOOL)isUserLogin;
 
 /**
- 用户登录
-
- @param phone 手机号码
- @param pwd 密码
- @param complete 请求完成回调
- */
-+ (void)loginWithPhone:(NSString *)phone password:(NSString *)pwd completeBlock:(UserCompleteBlock)complete;
-
-/**
  用户注册
-
+ 
  @param phone 手机号码
  @param pwd 密码
  @param verifyCode 验证码
@@ -125,19 +121,22 @@ static NSString *UserInfoAvatar         =       @"avatar";
 + (void)registerWithPhone:(NSString *)phone password:(NSString *)pwd verifyCode:(NSString *)verifyCode nickname:(NSString *)nickname sex:(NSString *)sex completeBlock:(UserCompleteBlock)complete;
 
 /**
- 退出登录
- */
-+ (void)logout;
-
-/**
- 找回密码
-
- @param phone 手机号码
- @param newPwd 新密码
- @param verifyCode 验证码
+ API接口成功调用后能获取相关的奖励物品
+ 
+ @param userId 用户Id
+ @param apiName API名称
  @param complete 请求完成回调
  */
-+ (void)forgotPwdWithPhone:(NSString *)phone newPwd:(NSString *)newPwd verifyCode:(NSString *)verifyCode completeBlock:(UserCompleteBlock)complete;
++ (void)apiGiftWithUserId:(NSUInteger)userId apiName:(NSString *)apiName completeBlock:(UserCompleteBlock)complete;
+
+/**
+ 用户登录
+
+ @param phone 手机号码
+ @param pwd 密码
+ @param complete 请求完成回调
+ */
++ (void)loginWithPhone:(NSString *)phone password:(NSString *)pwd completeBlock:(UserCompleteBlock)complete;
 
 /**
  获取用户信息
@@ -168,6 +167,16 @@ static NSString *UserInfoAvatar         =       @"avatar";
 + (void)userInfoUpdateWithUserId:(NSUInteger)userId type:(NSString *)type value:(NSString *)value completeBlock:(UserCompleteBlock)complete;
 
 /**
+ 找回密码
+
+ @param phone 手机号码
+ @param newPwd 新密码
+ @param verifyCode 验证码
+ @param complete 请求完成回调
+ */
++ (void)forgotPwdWithPhone:(NSString *)phone newPwd:(NSString *)newPwd verifyCode:(NSString *)verifyCode completeBlock:(UserCompleteBlock)complete;
+
+/**
  提交实名认证
  
  @param userId 用户Id
@@ -196,6 +205,34 @@ static NSString *UserInfoAvatar         =       @"avatar";
 + (void)getCartoonImageListWithCompleteBlock:(UserCompleteBlock)complete;
 
 /**
+ 获取卡券列表
+ 
+ @param userId 用户Id
+ @param page 页数, 0为第一页
+ @param perPage 每页数量
+ @param complete 请求完成回调
+ */
++ (void)getCouponListWithUserId:(NSUInteger)userId page:(NSUInteger)page perPage:(NSUInteger)perPage completeBlock:(UserCompleteBlock)complete;
+
+/**
+ 获取卡券信息
+ 
+ @param userId 用户Id
+ @param couponId 卡券Id
+ @param complete 请求完成回调
+ */
++ (void)getCouponInfoWithUseId:(NSUInteger)userId couponId:(NSUInteger)couponId completeBlock:(UserCompleteBlock)complete;
+
+/**
+ 打开卡券，卡券打开后只能消费，不能在跳蚤市场售卖
+ 
+ @param userId 用户Id
+ @param couponId 卡券Id
+ @param complete 请求完成回调
+ */
++ (void)useCouponWithUseId:(NSUInteger)userId couponId:(NSUInteger)couponId completeBlock:(UserCompleteBlock)complete;
+
+/**
  获取验证码
  
  @param phone 手机号码
@@ -217,5 +254,10 @@ static NSString *UserInfoAvatar         =       @"avatar";
  登录融云
  */
 + (void)loginRCIM;
+
+/**
+ 退出登录
+ */
++ (void)logout;
 
 @end

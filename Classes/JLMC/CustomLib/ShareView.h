@@ -16,7 +16,7 @@
 
 @property (nonatomic, weak) id<ShareViewDelegate> dele;
 
-+ (ShareView *)sharedView;
++ (ShareView *)singleShareView;
 
 - (void)showInView:(UIView *)parentView;
 

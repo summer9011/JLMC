@@ -54,14 +54,25 @@ static NSString *SupplyTypePublic       =       @"public";
 + (void)getPersonalSupplyDetailWithUserId:(NSUInteger)userId splyId:(NSString *)splyId splyWeight:(NSString *)splyWeight completeBlock:(SpiritCompleteBlock)complete;
 
 /**
- 接受补给
+ 领取补给站物品
  
  @param userId 用户Id
  @param splyId 补给站Id
- @param type 补给站烈性
+ @param splyWeight 补给站热度，取poiweight值
  @param complete 请求完成回调
  */
-+ (void)receiveSupplyGiftWithUserId:(NSUInteger)userId splyId:(NSString *)splyId type:(NSString *)type completeBlock:(SpiritCompleteBlock)complete;
++ (void)receiveSupplyGiftWithUserId:(NSUInteger)userId splyId:(NSString *)splyId splyWeight:(NSString *)splyWeight completeBlock:(SpiritCompleteBlock)complete;
+
+/**
+ 领取认领补给站物品
+ 
+ @param userId 用户Id
+ @param splyId 补给站Id
+ @param splyWeight 补给站热度，取poiweight值
+ @param hasCoupon 补给站是否卡券可领取（根据补给站物品详情接口判断），1：有，0：否
+ @param complete 请求完成回调
+ */
++ (void)receivePersonalSupplyGiftWithUserId:(NSUInteger)userId splyId:(NSString *)splyId splyWeight:(NSString *)splyWeight hasCoupon:(BOOL)hasCoupon completeBlock:(SpiritCompleteBlock)complete;
 
 /**
  获取周边精灵列表
@@ -73,12 +84,12 @@ static NSString *SupplyTypePublic       =       @"public";
 + (void)getNearbyElfListWithLongitude:(NSString *)longitude latitude:(NSString *)latitude completeBlock:(SpiritCompleteBlock)complete;
 
 /**
- 获取精灵详情
+ 获取附近精灵详情
  
- @param elfId 精灵Id
+ @param poiElfId 周边产生的精灵编号，捕捉和获取精灵详情时提交的id
  @param complete 请求完成回调
  */
-+ (void)getElfDetailWithElfId:(NSUInteger)elfId completeBlock:(SpiritCompleteBlock)complete;
++ (void)getNearbyElfDetailWithPoiElfId:(NSUInteger)poiElfId completeBlock:(SpiritCompleteBlock)complete;
 
 /**
  获取拥有的不同类型精灵商品列表
@@ -106,12 +117,11 @@ static NSString *SupplyTypePublic       =       @"public";
  
  @param userId 用户Id
  @param elfId 精灵Id
- @param level 精灵等级
  @param catchId 捕捉器商品Id
  @param aim 瞄准率，取值范围1-10
  @param complete 请求完成回调
  */
-+ (void)catchElfWithUserId:(NSUInteger)userId elfId:(NSUInteger)elfId level:(NSString *)level catchId:(NSUInteger)catchId aim:(NSUInteger)aim completeBlock:(SpiritCompleteBlock)complete;
++ (void)catchElfWithUserId:(NSUInteger)userId elfId:(NSUInteger)elfId catchId:(NSUInteger)catchId aim:(NSUInteger)aim completeBlock:(SpiritCompleteBlock)complete;
 
 /**
  获取我的精灵列表

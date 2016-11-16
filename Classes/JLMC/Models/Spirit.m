@@ -84,14 +84,34 @@
     }];
 }
 
-+ (void)receiveSupplyGiftWithUserId:(NSUInteger)userId splyId:(NSString *)splyId type:(NSString *)type completeBlock:(SpiritCompleteBlock)complete {
++ (void)receiveSupplyGiftWithUserId:(NSUInteger)userId splyId:(NSString *)splyId splyWeight:(NSString *)splyWeight completeBlock:(SpiritCompleteBlock)complete {
     NSDictionary *params = @{
                              @"userId": @(userId),
                              @"splyId": splyId,
-                             @"type": type
+                             @"splyWeight": splyWeight
                              };
     
     [[SessionNetwork defaultNetwork] postURL:@"/sply/receiveSupplyGift" params:params completePercent:nil success:^(id response) {
+        if (complete) {
+            complete(YES, nil, nil);
+        }
+        
+    } failure:^(NSUInteger errorCode, NSString *errorMsg) {
+        if (complete) {
+            complete(NO, nil, errorMsg);
+        }
+    }];
+}
+
++ (void)receivePersonalSupplyGiftWithUserId:(NSUInteger)userId splyId:(NSString *)splyId splyWeight:(NSString *)splyWeight hasCoupon:(BOOL)hasCoupon completeBlock:(SpiritCompleteBlock)complete {
+    NSDictionary *params = @{
+                             @"userId": @(userId),
+                             @"splyId": splyId,
+                             @"splyWeight": splyWeight,
+                             @"hasCoupon": @(hasCoupon)
+                             };
+    
+    [[SessionNetwork defaultNetwork] postURL:@"/sply/receivePersonalSupplyGift" params:params completePercent:nil success:^(id response) {
         if (complete) {
             complete(YES, nil, nil);
         }
@@ -121,12 +141,12 @@
     }];
 }
 
-+ (void)getElfDetailWithElfId:(NSUInteger)elfId completeBlock:(SpiritCompleteBlock)complete {
++ (void)getNearbyElfDetailWithPoiElfId:(NSUInteger)poiElfId completeBlock:(SpiritCompleteBlock)complete {
     NSDictionary *params = @{
-                             @"elfId": @(elfId)
+                             @"poiElfId": @(poiElfId)
                              };
     
-    [[SessionNetwork defaultNetwork] getURL:@"/elf/getElfDetail" params:params completePercent:nil success:^(id response) {
+    [[SessionNetwork defaultNetwork] getURL:@"/elf/getNearbyElfDetail" params:params completePercent:nil success:^(id response) {
         if (complete) {
             complete(YES, response, nil);
         }
@@ -177,11 +197,10 @@
     }];
 }
 
-+ (void)catchElfWithUserId:(NSUInteger)userId elfId:(NSUInteger)elfId level:(NSString *)level catchId:(NSUInteger)catchId aim:(NSUInteger)aim completeBlock:(SpiritCompleteBlock)complete {
++ (void)catchElfWithUserId:(NSUInteger)userId elfId:(NSUInteger)elfId catchId:(NSUInteger)catchId aim:(NSUInteger)aim completeBlock:(SpiritCompleteBlock)complete {
     NSDictionary *params = @{
                              @"userId": @(userId),
                              @"elfId": @(elfId),
-                             @"level": level,
                              @"catchId": @(catchId),
                              @"aim": @(aim)
                              };

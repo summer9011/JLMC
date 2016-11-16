@@ -98,35 +98,6 @@ static NSString *CoderKeyCoins      =   @"CoderKeyCoins";
     }
 }
 
-+ (void)loginWithPhone:(NSString *)phone password:(NSString *)pwd completeBlock:(UserCompleteBlock)complete {
-    NSDictionary *params = @{
-                             @"loginname": phone,
-                             @"password": pwd
-                             };
-    
-    [[SessionNetwork defaultNetwork] postURL:@"/user/login" params:params completePercent:nil success:^(id response) {
-        NSLog(@"登录成功");
-        
-        NSString *userId = response[@"id"];
-        //登录成功后获取用户信息
-        [User getUserInfoWithUserId:[userId integerValue] completeBlock:^(BOOL success, id response, NSString *errStr) {
-            if (success) {
-                [User loginSuccessAction];
-            }
-            
-            if (complete) {
-                complete(success, response, errStr);
-            }
-            
-        }];
-        
-    } failure:^(NSUInteger errorCode, NSString *errorMsg) {
-        if (complete) {
-            complete(NO, nil, errorMsg);
-        }
-    }];
-}
-
 + (void)registerWithPhone:(NSString *)phone password:(NSString *)pwd verifyCode:(NSString *)verifyCode nickname:(NSString *)nickname sex:(NSString *)sex completeBlock:(UserCompleteBlock)complete {
     NSDictionary *params = @{
                              @"loginname": phone,
@@ -159,34 +130,45 @@ static NSString *CoderKeyCoins      =   @"CoderKeyCoins";
     }];
 }
 
-+ (void)loginSuccessAction {
-    [User loginRCIM];
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:Notification_Login object:nil userInfo:nil];
-}
-
-+ (void)logout {
-    UnityAppController *appController = (UnityAppController *)[UIApplication sharedApplication].delegate;
-    
-    [[RCIM sharedRCIM] logout];
-    
-    appController.loginUser = nil;
-    [User deleteUserFile];
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:Notification_Logout object:nil userInfo:nil];
-}
-
-+ (void)forgotPwdWithPhone:(NSString *)phone newPwd:(NSString *)newPwd verifyCode:(NSString *)verifyCode completeBlock:(UserCompleteBlock)complete {
++ (void)apiGiftWithUserId:(NSUInteger)userId apiName:(NSString *)apiName completeBlock:(UserCompleteBlock)complete {
     NSDictionary *params = @{
-                             @"loginname": phone,
-                             @"password": newPwd,
-                             @"smscode": verifyCode
+                             @"userId": @(userId),
+                             @"apiName": apiName
                              };
     
-    [[SessionNetwork defaultNetwork] postURL:@"/user/passwordForget" params:params completePercent:nil success:^(id response) {
+    [[SessionNetwork defaultNetwork] postURL:@"/user/apiGift" params:params completePercent:nil success:^(id response) {
         if (complete) {
-            complete(YES, nil, nil);
+            complete(YES, response[@"list"], nil);
         }
+        
+    } failure:^(NSUInteger errorCode, NSString *errorMsg) {
+        if (complete) {
+            complete(NO, nil, errorMsg);
+        }
+    }];
+}
+
++ (void)loginWithPhone:(NSString *)phone password:(NSString *)pwd completeBlock:(UserCompleteBlock)complete {
+    NSDictionary *params = @{
+                             @"loginname": phone,
+                             @"password": pwd
+                             };
+    
+    [[SessionNetwork defaultNetwork] postURL:@"/user/login" params:params completePercent:nil success:^(id response) {
+        NSLog(@"登录成功");
+        
+        NSString *userId = response[@"id"];
+        //登录成功后获取用户信息
+        [User getUserInfoWithUserId:[userId integerValue] completeBlock:^(BOOL success, id response, NSString *errStr) {
+            if (success) {
+                [User loginSuccessAction];
+            }
+            
+            if (complete) {
+                complete(success, response, errStr);
+            }
+            
+        }];
         
     } failure:^(NSUInteger errorCode, NSString *errorMsg) {
         if (complete) {
@@ -282,6 +264,25 @@ static NSString *CoderKeyCoins      =   @"CoderKeyCoins";
     }];
 }
 
++ (void)forgotPwdWithPhone:(NSString *)phone newPwd:(NSString *)newPwd verifyCode:(NSString *)verifyCode completeBlock:(UserCompleteBlock)complete {
+    NSDictionary *params = @{
+                             @"loginname": phone,
+                             @"password": newPwd,
+                             @"smscode": verifyCode
+                             };
+    
+    [[SessionNetwork defaultNetwork] postURL:@"/user/passwordForget" params:params completePercent:nil success:^(id response) {
+        if (complete) {
+            complete(YES, nil, nil);
+        }
+        
+    } failure:^(NSUInteger errorCode, NSString *errorMsg) {
+        if (complete) {
+            complete(NO, nil, errorMsg);
+        }
+    }];
+}
+
 + (void)realNameAuthWithUserId:(NSUInteger)userId realname:(NSString *)realname idNo:(NSString *)idNo idCardFace:(NSString *)idCardFace idCardBack:(NSString *)idCardBack idCardHand:(NSString *)idCardHand completeBlock:(UserCompleteBlock)complete {
     NSDictionary *params = @{
                              @"userId": @(userId),
@@ -325,6 +326,61 @@ static NSString *CoderKeyCoins      =   @"CoderKeyCoins";
     [[SessionNetwork defaultNetwork] getURL:@"/user/getCartoonImageList" params:nil completePercent:nil success:^(id response) {
         if (complete) {
             complete(YES, response[@"list"], nil);
+        }
+        
+    } failure:^(NSUInteger errorCode, NSString *errorMsg) {
+        if (complete) {
+            complete(NO, nil, errorMsg);
+        }
+    }];
+}
+
++ (void)getCouponListWithUserId:(NSUInteger)userId page:(NSUInteger)page perPage:(NSUInteger)perPage completeBlock:(UserCompleteBlock)complete {
+    NSDictionary *params = @{
+                             @"userId": @(userId),
+                             @"pageIndex": @(page),
+                             @"countPerPage": @(perPage)
+                             };
+    
+    [[SessionNetwork defaultNetwork] getURL:@"/user/getCouponList" params:params completePercent:nil success:^(id response) {
+        if (complete) {
+            complete(YES, response, nil);
+        }
+        
+    } failure:^(NSUInteger errorCode, NSString *errorMsg) {
+        if (complete) {
+            complete(NO, nil, errorMsg);
+        }
+    }];
+}
+
++ (void)getCouponInfoWithUseId:(NSUInteger)userId couponId:(NSUInteger)couponId completeBlock:(UserCompleteBlock)complete {
+    NSDictionary *params = @{
+                             @"userId": @(userId),
+                             @"couponId": @(couponId)
+                             };
+    
+    [[SessionNetwork defaultNetwork] getURL:@"/user/getCouponInfo" params:params completePercent:nil success:^(id response) {
+        if (complete) {
+            complete(YES, response, nil);
+        }
+        
+    } failure:^(NSUInteger errorCode, NSString *errorMsg) {
+        if (complete) {
+            complete(NO, nil, errorMsg);
+        }
+    }];
+}
+
++ (void)useCouponWithUseId:(NSUInteger)userId couponId:(NSUInteger)couponId completeBlock:(UserCompleteBlock)complete {
+    NSDictionary *params = @{
+                             @"userId": @(userId),
+                             @"couponId": @(couponId)
+                             };
+    
+    [[SessionNetwork defaultNetwork] postURL:@"/user/useCoupon" params:params completePercent:nil success:^(id response) {
+        if (complete) {
+            complete(YES, nil, nil);
         }
         
     } failure:^(NSUInteger errorCode, NSString *errorMsg) {
@@ -386,6 +442,23 @@ static NSString *CoderKeyCoins      =   @"CoderKeyCoins";
         NSLog(@"token错误");
         
     }];
+}
+
++ (void)logout {
+    UnityAppController *appController = (UnityAppController *)[UIApplication sharedApplication].delegate;
+    
+    [[RCIM sharedRCIM] logout];
+    
+    appController.loginUser = nil;
+    [User deleteUserFile];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:Notification_Logout object:nil userInfo:nil];
+}
+
++ (void)loginSuccessAction {
+    [User loginRCIM];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:Notification_Login object:nil userInfo:nil];
 }
 
 #pragma mark - NSCoding
