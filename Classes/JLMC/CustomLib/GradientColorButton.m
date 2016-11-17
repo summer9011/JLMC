@@ -12,6 +12,8 @@
 
 @property (nonatomic, weak) CAGradientLayer *gradientLayer;
 
+@property (nonatomic, weak) CALayer *whiteLayer;
+
 @end
 
 @implementation GradientColorButton
@@ -50,6 +52,21 @@
     [self.layer addSublayer:layer];
     
     self.gradientLayer = layer;
+    
+    CALayer *whiteLayer = [[CALayer alloc] init];
+    whiteLayer.frame = CGRectMake(0, 0, CGRectGetWidth(screenRect), CGRectGetHeight(screenRect));
+    whiteLayer.backgroundColor = [UIColor colorWithWhite:1 alpha:0.3].CGColor;
+    [self.layer addSublayer:whiteLayer];
+    
+    self.whiteLayer = whiteLayer;
+    
+    self.whiteLayer.hidden = YES;
+}
+
+- (void)setEnabled:(BOOL)enabled {
+    [super setEnabled:enabled];
+    
+    self.whiteLayer.hidden = enabled;
 }
 
 @end
