@@ -64,6 +64,8 @@
 		6E484D4D1DDC1C6400174A02 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E484D441DDC1C6400174A02 /* SDCollectionViewCell.m */; };
 		6E484D4E1DDC1C6400174A02 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E484D461DDC1C6400174A02 /* SDCycleScrollView.m */; };
 		6E484D4F1DDC1C6400174A02 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E484D481DDC1C6400174A02 /* UIView+SDExtension.m */; };
+		6E484D521DDD3A2900174A02 /* SupplyItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E484D511DDD3A2900174A02 /* SupplyItemView.m */; };
+		6E484D541DDD3A3D00174A02 /* SupplyItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E484D531DDD3A3D00174A02 /* SupplyItemView.xib */; };
 		6E5F7D0B1DDAB49300A28655 /* MyOrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7D091DDAB49300A28655 /* MyOrderVC.m */; };
 		6E5F7D0C1DDAB49300A28655 /* MyOrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7D0A1DDAB49300A28655 /* MyOrderVC.xib */; };
 		6E5F7D101DDAB4A100A28655 /* GoodDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7D0E1DDAB4A100A28655 /* GoodDetailVC.m */; };
@@ -425,6 +427,9 @@
 		6E484D461DDC1C6400174A02 /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
 		6E484D471DDC1C6400174A02 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
 		6E484D481DDC1C6400174A02 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		6E484D501DDD3A2900174A02 /* SupplyItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupplyItemView.h; sourceTree = "<group>"; };
+		6E484D511DDD3A2900174A02 /* SupplyItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupplyItemView.m; sourceTree = "<group>"; };
+		6E484D531DDD3A3D00174A02 /* SupplyItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SupplyItemView.xib; sourceTree = "<group>"; };
 		6E5F7D081DDAB49300A28655 /* MyOrderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderVC.h; sourceTree = "<group>"; };
 		6E5F7D091DDAB49300A28655 /* MyOrderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderVC.m; sourceTree = "<group>"; };
 		6E5F7D0A1DDAB49300A28655 /* MyOrderVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrderVC.xib; sourceTree = "<group>"; };
@@ -1075,6 +1080,44 @@
 			path = PageControl;
 			sourceTree = "<group>";
 		};
+		6E484D551DDD3A6E00174A02 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				6E87011A1DBB848700FE7691 /* MeVC.h */,
+				6E87011B1DBB848700FE7691 /* MeVC.m */,
+				6E87011C1DBB848700FE7691 /* MeVC.xib */,
+				6E8701221DBBAA1500FE7691 /* RealNameAuthVC.h */,
+				6E8701231DBBAA1500FE7691 /* RealNameAuthVC.m */,
+				6E8701241DBBAA1500FE7691 /* RealNameAuthVC.xib */,
+				6E8701271DBBAE0600FE7691 /* SetNickNameVC.h */,
+				6E8701281DBBAE0600FE7691 /* SetNickNameVC.m */,
+				6E8701291DBBAE0600FE7691 /* SetNickNameVC.xib */,
+				6E88A3451DD9EA3D0006104C /* ChooseCartoonVC.h */,
+				6E88A3461DD9EA3D0006104C /* ChooseCartoonVC.m */,
+				6E88A3471DD9EA3D0006104C /* ChooseCartoonVC.xib */,
+				6E88A34A1DD9EB760006104C /* CartoonAvatarCell.h */,
+				6E88A34B1DD9EB760006104C /* CartoonAvatarCell.m */,
+				6E88A34C1DD9EB760006104C /* CartoonAvatarCell.xib */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		6E484D561DDD3E0400174A02 /* Recharge */ = {
+			isa = PBXGroup;
+			children = (
+				6E5F7D1F1DDAB6DC00A28655 /* RechargeVC.h */,
+				6E5F7D201DDAB6DC00A28655 /* RechargeVC.m */,
+				6E5F7D211DDAB6DC00A28655 /* RechargeVC.xib */,
+				6E9503301DDB472C00692605 /* RechargeItemView.h */,
+				6E9503311DDB472C00692605 /* RechargeItemView.m */,
+				6E9503331DDB473C00692605 /* RechargeItemView.xib */,
+				6E5F7D241DDAB6ED00A28655 /* ConfrimRechargeVC.h */,
+				6E5F7D251DDAB6ED00A28655 /* ConfrimRechargeVC.m */,
+				6E5F7D261DDAB6EE00A28655 /* ConfrimRechargeVC.xib */,
+			);
+			name = Recharge;
+			sourceTree = "<group>";
+		};
 		6E5F7D8F1DDAE81A00A28655 /* ShopCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1316,11 +1359,13 @@
 				6E87011F1DBB9F2600FE7691 /* BaseVC.h */,
 				6E8701201DBB9F2600FE7691 /* BaseVC.m */,
 				6EA9AF241DB89AF700206E4E /* Login */,
+				6E484D551DDD3A6E00174A02 /* User */,
 				6EA9AF231DB89AF000206E4E /* Main */,
 				6EA9B4821DB9C1DE00206E4E /* Chat */,
 				6EA9B48A1DBB1FB800206E4E /* ExchangeMarket */,
 				6EA9B4B61DBB24BA00206E4E /* MyBackpack */,
 				6EA9B4BC1DBB258900206E4E /* GameShop */,
+				6E484D561DDD3E0400174A02 /* Recharge */,
 				6EA9B4C21DBB26AB00206E4E /* Rank */,
 			);
 			path = Controllers;
@@ -1362,18 +1407,12 @@
 				6E8701151DBB844200FE7691 /* AboutVC.h */,
 				6E8701161DBB844200FE7691 /* AboutVC.m */,
 				6E8701171DBB844200FE7691 /* AboutVC.xib */,
-				6E87011A1DBB848700FE7691 /* MeVC.h */,
-				6E87011B1DBB848700FE7691 /* MeVC.m */,
-				6E87011C1DBB848700FE7691 /* MeVC.xib */,
-				6E8701221DBBAA1500FE7691 /* RealNameAuthVC.h */,
-				6E8701231DBBAA1500FE7691 /* RealNameAuthVC.m */,
-				6E8701241DBBAA1500FE7691 /* RealNameAuthVC.xib */,
-				6E8701271DBBAE0600FE7691 /* SetNickNameVC.h */,
-				6E8701281DBBAE0600FE7691 /* SetNickNameVC.m */,
-				6E8701291DBBAE0600FE7691 /* SetNickNameVC.xib */,
 				6E5F7D941DDBFA3600A28655 /* SupplyDetailVC.h */,
 				6E5F7D951DDBFA3600A28655 /* SupplyDetailVC.m */,
 				6E5F7D961DDBFA3600A28655 /* SupplyDetailVC.xib */,
+				6E484D501DDD3A2900174A02 /* SupplyItemView.h */,
+				6E484D511DDD3A2900174A02 /* SupplyItemView.m */,
+				6E484D531DDD3A3D00174A02 /* SupplyItemView.xib */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -1396,12 +1435,6 @@
 				6EA9B4901DBB1FED00206E4E /* ForgetPwdVC.h */,
 				6EA9B4911DBB1FED00206E4E /* ForgetPwdVC.m */,
 				6EA9B4921DBB1FED00206E4E /* ForgetPwdVC.xib */,
-				6E88A3451DD9EA3D0006104C /* ChooseCartoonVC.h */,
-				6E88A3461DD9EA3D0006104C /* ChooseCartoonVC.m */,
-				6E88A3471DD9EA3D0006104C /* ChooseCartoonVC.xib */,
-				6E88A34A1DD9EB760006104C /* CartoonAvatarCell.h */,
-				6E88A34B1DD9EB760006104C /* CartoonAvatarCell.m */,
-				6E88A34C1DD9EB760006104C /* CartoonAvatarCell.xib */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -1656,15 +1689,6 @@
 				6E5F7D1A1DDAB6A100A28655 /* ConfirmBuyVC.h */,
 				6E5F7D1B1DDAB6A100A28655 /* ConfirmBuyVC.m */,
 				6E5F7D1C1DDAB6A100A28655 /* ConfirmBuyVC.xib */,
-				6E5F7D1F1DDAB6DC00A28655 /* RechargeVC.h */,
-				6E5F7D201DDAB6DC00A28655 /* RechargeVC.m */,
-				6E5F7D211DDAB6DC00A28655 /* RechargeVC.xib */,
-				6E9503301DDB472C00692605 /* RechargeItemView.h */,
-				6E9503311DDB472C00692605 /* RechargeItemView.m */,
-				6E9503331DDB473C00692605 /* RechargeItemView.xib */,
-				6E5F7D241DDAB6ED00A28655 /* ConfrimRechargeVC.h */,
-				6E5F7D251DDAB6ED00A28655 /* ConfrimRechargeVC.m */,
-				6E5F7D261DDAB6EE00A28655 /* ConfrimRechargeVC.xib */,
 				6E5F7D081DDAB49300A28655 /* MyOrderVC.h */,
 				6E5F7D091DDAB49300A28655 /* MyOrderVC.m */,
 				6E5F7D0A1DDAB49300A28655 /* MyOrderVC.xib */,
@@ -1968,6 +1992,7 @@
 				6EA9B4A11DBB213000206E4E /* ExchangeMarketVC.xib in Resources */,
 				6EA9AF181DB8978F00206E4E /* LoginVC.xib in Resources */,
 				6E9503341DDB473C00692605 /* RechargeItemView.xib in Resources */,
+				6E484D541DDD3A3D00174A02 /* SupplyItemView.xib in Resources */,
 				CB2C47BEB355E5E4F437CBD2 /* LaunchScreen-iPad.png in Resources */,
 				6EA9B47E1DB903C100206E4E /* README.txt in Resources */,
 				6E5F7D981DDBFA3600A28655 /* SupplyDetailVC.xib in Resources */,
@@ -2171,6 +2196,7 @@
 				04D64C799414561D1838F9C1 /* Il2CppMetadataUsage.cpp in Sources */,
 				78CA4747B175BA3D53D8D0AD /* Il2CppMethodPointerTable.cpp in Sources */,
 				A2784F22ADC6F18CB27A27D1 /* Il2CppTypeDefinitions.cpp in Sources */,
+				6E484D521DDD3A2900174A02 /* SupplyItemView.m in Sources */,
 				6E484D4D1DDC1C6400174A02 /* SDCollectionViewCell.m in Sources */,
 				B7E547E5898E1144B9E4ADC2 /* UnityClassRegistration.cpp in Sources */,
 				6E484D4C1DDC1C6400174A02 /* TAPageControl.m in Sources */,

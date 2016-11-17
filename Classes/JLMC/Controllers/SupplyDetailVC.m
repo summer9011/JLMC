@@ -9,6 +9,8 @@
 #import "SupplyDetailVC.h"
 #import "SDCycleScrollView.h"
 
+#import "SupplyItemView.h"
+
 #import "UnityAppController.h"
 
 @interface SupplyDetailVC () <SDCycleScrollViewDelegate>
@@ -19,8 +21,11 @@
 @property (weak, nonatomic) IBOutlet UIView *scrollContentView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *scrollContentViewConsHeight;
 
-@property (weak, nonatomic) IBOutlet UIButton *supplyBtn;
+@property (weak, nonatomic) IBOutlet GradientColorButton *supplyBtn;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *supplyBtnConsTop;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *supplyBtnConsHeight;
+
+@property (nonatomic, weak) SDCycleScrollView *cycleView;
 
 @property (nonatomic, strong) NSDictionary *supplyInfo;
 
@@ -42,6 +47,11 @@
     [super viewWillAppear:animated];
     
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    
+    if (self.cycleView) {
+        [self.cycleView adjustWhenControllerViewWillAppera];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,6 +61,7 @@
 
 - (void)setupUI {
     self.view.frame = [UIScreen mainScreen].bounds;
+    
     self.supplyBtn.layer.cornerRadius = 24.f;
 }
 
@@ -64,17 +75,47 @@
         }
     }
     
-    SDCycleScrollView *cycleView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 200) delegate:self placeholderImage:nil];
+    SDCycleScrollView *cycleView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 240) delegate:self placeholderImage:nil];
     cycleView.imageURLStringsGroup = bannerImageArr;
+    cycleView.bannerImageViewContentMode = UIViewContentModeScaleAspectFill;
+    cycleView.currentPageDotColor = [UIColor whiteColor];
+    cycleView.pageDotColor = [UIColor lightGrayColor];
     
     [self.headerView addSubview:cycleView];
     
+    self.cycleView = cycleView;
+    
+    
+    CGFloat itemCount = 3;
+    CGFloat offsetY = 40;
+    CGFloat itemWidth = [UIScreen mainScreen].bounds.size.width/(CGFloat)itemCount;
+    CGFloat itemHeight = itemWidth + 20;
+    
+    int i = 0;
+    
     NSArray *goodArr = self.supplyInfo[@"list"];
+    for (NSDictionary *good in goodArr) {
+        NSUInteger row = i/itemCount;
+        NSUInteger line = i - row * itemCount;
+        
+        SupplyItemView *itemView = [[NSBundle mainBundle] loadNibNamed:@"SupplyItemView" owner:nil options:nil].firstObject;
+        itemView.frame = CGRectMake(itemWidth * line, offsetY + itemHeight * row, itemWidth, itemHeight);
+        [itemView.itemImageView sd_setImageWithURL:[NSURL URLWithString:good[@"image"]]];
+        itemView.itemLabel.text = [NSString stringWithFormat:@"%@ x%@", good[@"name"], good[@"count"]];
+        
+        [self.scrollContentView addSubview:itemView];
+        
+        i++;
+    }
     
+    NSString *status = self.supplyInfo[@"receiveStatus"];
+    self.supplyBtn.enabled = ![status isEqualToString:SupplyReceiveStatusReceived];
     
+    self.supplyBtnConsTop.constant = offsetY + itemHeight * (goodArr.count/itemCount + 1) + 20;
+    self.scrollContentViewConsHeight.constant = self.supplyBtnConsTop.constant + self.supplyBtnConsHeight.constant + 40;
+    self.scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.view.frame), self.scrollContentViewConsHeight.constant);
     
-    self.supplyBtnConsTop.constant = 300;
-    
+    [self.view layoutIfNeeded];
 }
 
 - (void)loadData {

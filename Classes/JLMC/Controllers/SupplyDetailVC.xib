@@ -15,7 +15,8 @@
                 <outlet property="scrollContentView" destination="LTj-TF-fLW" id="Fsh-o5-nIq"/>
                 <outlet property="scrollContentViewConsHeight" destination="fMF-Qb-HWa" id="FfE-MT-aKf"/>
                 <outlet property="scrollView" destination="xmV-rB-14Z" id="SaM-1B-6On"/>
-                <outlet property="supplyBtn" destination="1NJ-ca-OBR" id="2mA-3F-qBM"/>
+                <outlet property="supplyBtn" destination="1NJ-ca-OBR" id="GgH-2n-NQZ"/>
+                <outlet property="supplyBtnConsHeight" destination="4zN-iH-QwM" id="qNz-8k-DXO"/>
                 <outlet property="supplyBtnConsTop" destination="Agm-8x-7Dn" id="rSI-nT-TYp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -26,14 +27,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZQ-TB-fot">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="200" id="tt0-An-R5L"/>
+                        <constraint firstAttribute="height" constant="240" id="tt0-An-R5L"/>
                     </constraints>
                 </view>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xmV-rB-14Z">
-                    <rect key="frame" x="0.0" y="210" width="375" height="457"/>
+                    <rect key="frame" x="0.0" y="250" width="375" height="417"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LTj-TF-fLW">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
@@ -51,7 +52,7 @@
                                     <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1NJ-ca-OBR">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1NJ-ca-OBR" customClass="GradientColorButton">
                                     <rect key="frame" x="40" y="200" width="295" height="48"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="48" id="4zN-iH-QwM"/>

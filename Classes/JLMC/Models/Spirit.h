@@ -13,6 +13,9 @@ typedef void(^SpiritCompleteBlock)(BOOL success, id response, NSString *errStr);
 static NSString *SupplyTypePersonal     =       @"personal";
 static NSString *SupplyTypePublic       =       @"public";
 
+static NSString *SupplyReceiveStatusUnreceived = @"unreceived";
+static NSString *SupplyReceiveStatusReceived = @"received";
+
 @interface Spirit : NSObject
 
 /**

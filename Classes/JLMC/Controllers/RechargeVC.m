@@ -49,7 +49,7 @@
     
     CGFloat offsetY = 64 + 20;
     CGFloat width = (CGRectGetWidth(self.view.frame) - 15 * 4)/3.f;
-    CGFloat height = 80;
+    CGFloat height = 60;
     
     RechargeItemView *itemView5 = [[NSBundle mainBundle] loadNibNamed:@"RechargeItemView" owner:nil options:nil].firstObject;
     itemView5.frame = CGRectMake(15, offsetY, width, height);
