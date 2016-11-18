@@ -84,6 +84,8 @@
     [self reloadNearbySupply];
     [self reloadNearbyPersonalSupply];
     
+    [self reloadMovement];
+    
     //默认为隐藏
     self.redPoint.hidden = YES;
 }
@@ -325,6 +327,7 @@
     
     [self.mapView removeAnnotations:removeArr];
     [self.mapView addAnnotations:elfAnnoArr];
+    
 }
 
 - (void)reloadNearbySupply {
@@ -349,12 +352,13 @@
     
     [self.mapView removeAnnotations:removeArr];
     [self.mapView addAnnotations:supplyArr];
+    
 }
 
 - (void)reloadNearbyPersonalSupply {
     NSMutableArray *personalSupplyArr = [NSMutableArray array];
     
-    for (NSDictionary *personalSupply in GetAppController().nearbyNormalSplyArr) {
+    for (NSDictionary *personalSupply in GetAppController().nearbyPersonalSplyArr) {
         SupplyAnno *anno = [[SupplyAnno alloc] init];
         anno.coordinate = CLLocationCoordinate2DMake([personalSupply[@"lat"] doubleValue], [personalSupply[@"lng"] doubleValue]);
         anno.title = [NSString stringWithFormat:@"%@", personalSupply[@"name"]];
@@ -373,6 +377,12 @@
     
     [self.mapView removeAnnotations:removeArr];
     [self.mapView addAnnotations:personalSupplyArr];
+    
+}
+
+- (void)reloadMovement {
+    CGFloat layerWidth = CGRectGetWidth(self.movementView.frame) * GetAppController().movementProgress;
+    self.progressLayer.bounds = CGRectMake(self.progressLayer.bounds.origin.x, self.progressLayer.bounds.origin.y, layerWidth, self.progressLayer.bounds.size.height);
 }
 
 #pragma mark - MenuViewDelegate
@@ -587,9 +597,7 @@
         self.redPoint.hidden = !GetAppController().haveNearbyPlayer;
         
     } else if ([keyPath isEqualToString:@"movementProgress"]) {
-        CGFloat layerWidth = CGRectGetWidth(self.movementView.frame) * GetAppController().movementProgress;
-        self.progressLayer.bounds = CGRectMake(self.progressLayer.bounds.origin.x, self.progressLayer.bounds.origin.y, layerWidth, self.progressLayer.bounds.size.height);
-        
+        [self reloadMovement];
     }
     
 }

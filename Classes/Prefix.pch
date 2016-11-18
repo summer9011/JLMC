@@ -81,6 +81,11 @@
 #define UserDefaults_Voice @"UserDefaults_Voice"
 #define UserDefaults_Shack @"UserDefaults_Shack"
 
+#define UserDefaults_TodayStepPercent @"UserDefaults_TodayStepPercent"
+
+#define UserDefaults_TodayStepPercent_Time @"UserDefaults_TodayStepPercent_Time"
+#define UserDefaults_TodayStepPercent_Percent @"UserDefaults_TodayStepPercent_Percent"
+
 #define UserDefaults_Config @"UserDefaults_Config"
 
 #define UserDefaults_Config_hotline @"hotline"

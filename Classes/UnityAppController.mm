@@ -264,6 +264,10 @@ extern "C" void UnityRequestQuit()
     //加载配置信息
     [self loadConfig];
     
+    //获取缓存的步数进度
+    self.movementProgress = 0;
+    [self getStep];
+    
     self.nearbyElfArr = [NSMutableArray array];
     self.nearbyNormalSplyArr = [NSMutableArray array];
     self.nearbyPersonalSplyArr = [NSMutableArray array];
@@ -271,7 +275,6 @@ extern "C" void UnityRequestQuit()
     
     self.isStartLoad = NO;
     [self startTimeLink];
-    [self startLocationManager];
     
     return YES;
 }
@@ -285,6 +288,8 @@ extern "C" void UnityRequestQuit()
 {
     ::printf("-> applicationWillEnterForeground()\n");
     
+    [self saveStep];
+    
     // applicationWillEnterForeground: might sometimes arrive *before* actually initing unity (e.g. locking on startup)
     if(_unityAppReady)
     {
@@ -296,6 +301,8 @@ extern "C" void UnityRequestQuit()
 - (void)applicationDidBecomeActive:(UIApplication*)application
 {
     ::printf("-> applicationDidBecomeActive()\n");
+    
+    [self getStep];
     
     if(_snapshotView)
     {
@@ -363,6 +370,8 @@ extern "C" void UnityRequestQuit()
 {
     ::printf("-> applicationWillTerminate()\n");
     
+    [self saveStep];
+    
     Profiler_UninitProfiler();
     UnityCleanup();
     
@@ -398,6 +407,7 @@ extern "C" void UnityRequestQuit()
     [Config getSysParamWithCompleteBlock:^(BOOL success, NSString *errStr) {
         if (success) {
             [weakSelf startLocationManager];
+            [weakSelf startDailyStepCount];
         }
     }];
     
@@ -448,6 +458,10 @@ extern "C" void UnityRequestQuit()
     }
 }
 
+- (void)startDailyStepCount {
+    
+}
+
 - (void)loadData:(CLLocation *)location {
     self.isStartLoad = YES;
     self.nearbyCount = 0;
@@ -486,6 +500,32 @@ extern "C" void UnityRequestQuit()
         }
         
     }];
+}
+
+- (void)getStep {
+    NSDictionary *todayStepDic = [[NSUserDefaults standardUserDefaults] dictionaryForKey:UserDefaults_TodayStepPercent];
+    if (todayStepDic) {
+        NSDate *date = todayStepDic[UserDefaults_TodayStepPercent_Time];
+        NSDate *todayDate = [NSDate date];
+        
+        NSString *stepDateStr = [date.description substringWithRange:NSMakeRange(0, 10)];
+        NSString *todayDateStr = [todayDate.description substringWithRange:NSMakeRange(0, 10)];
+        
+        if ([todayDateStr isEqualToString:stepDateStr]) {
+            self.movementProgress = [todayStepDic[UserDefaults_TodayStepPercent_Percent] floatValue];
+        }
+        
+    }
+}
+
+- (void)saveStep {
+    NSDictionary *stepDic = @{
+                              UserDefaults_TodayStepPercent_Time: [NSDate date],
+                              UserDefaults_TodayStepPercent_Percent: @(self.movementProgress)
+                              };
+    
+    [[NSUserDefaults standardUserDefaults] setObject:stepDic forKey:UserDefaults_TodayStepPercent];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 #pragma mark - CLLocationManagerDelegate
@@ -656,4 +696,12 @@ extern "C" long	getPoiElfId() {
     }
     
     return elfId;
+}
+
+//获取抓捕器ID
+extern "C" long	getCatchId() {
+    long catchId = 1;
+    
+    
+    return catchId;
 }
