@@ -86,9 +86,8 @@
 #define UserDefaults_Config_hotline @"hotline"
 #define UserDefaults_Config_refreshInterval @"refreshInterval"
 #define UserDefaults_Config_refreshDistance @"refreshDistance"
-#define UserDefaults_Config_elfCatchDistance @"elfCatchDistance"
-#define UserDefaults_Config_splyReceiveDistance @"splyReceiveDistance"
 #define UserDefaults_Config_stepsInterval @"stepsInterval"
+#define UserDefaults_Config_dailyTopSteps @"dailyTopSteps"
 
 //Key - Notification
 #define Notification_LoadIcons @"Notification_LoadIcons"

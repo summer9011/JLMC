@@ -66,6 +66,9 @@
 		6E484D4F1DDC1C6400174A02 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E484D481DDC1C6400174A02 /* UIView+SDExtension.m */; };
 		6E484D521DDD3A2900174A02 /* SupplyItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E484D511DDD3A2900174A02 /* SupplyItemView.m */; };
 		6E484D541DDD3A3D00174A02 /* SupplyItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E484D531DDD3A3D00174A02 /* SupplyItemView.xib */; };
+		6E484D691DDE8FE700174A02 /* WebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E484D671DDE8FE700174A02 /* WebViewVC.m */; };
+		6E484D6A1DDE8FE700174A02 /* WebViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E484D681DDE8FE700174A02 /* WebViewVC.xib */; };
+		6E484D6C1DDE906E00174A02 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E484D6B1DDE906E00174A02 /* WebKit.framework */; };
 		6E5F7D0B1DDAB49300A28655 /* MyOrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7D091DDAB49300A28655 /* MyOrderVC.m */; };
 		6E5F7D0C1DDAB49300A28655 /* MyOrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7D0A1DDAB49300A28655 /* MyOrderVC.xib */; };
 		6E5F7D101DDAB4A100A28655 /* GoodDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7D0E1DDAB4A100A28655 /* GoodDetailVC.m */; };
@@ -430,6 +433,10 @@
 		6E484D501DDD3A2900174A02 /* SupplyItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupplyItemView.h; sourceTree = "<group>"; };
 		6E484D511DDD3A2900174A02 /* SupplyItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupplyItemView.m; sourceTree = "<group>"; };
 		6E484D531DDD3A3D00174A02 /* SupplyItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SupplyItemView.xib; sourceTree = "<group>"; };
+		6E484D661DDE8FE700174A02 /* WebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewVC.h; sourceTree = "<group>"; };
+		6E484D671DDE8FE700174A02 /* WebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewVC.m; sourceTree = "<group>"; };
+		6E484D681DDE8FE700174A02 /* WebViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewVC.xib; sourceTree = "<group>"; };
+		6E484D6B1DDE906E00174A02 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		6E5F7D081DDAB49300A28655 /* MyOrderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderVC.h; sourceTree = "<group>"; };
 		6E5F7D091DDAB49300A28655 /* MyOrderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderVC.m; sourceTree = "<group>"; };
 		6E5F7D0A1DDAB49300A28655 /* MyOrderVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrderVC.xib; sourceTree = "<group>"; };
@@ -806,6 +813,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E484D6C1DDE906E00174A02 /* WebKit.framework in Frameworks */,
 				5692F3DD0FA9D8E500EBA2F1 /* CoreLocation.framework in Frameworks */,
 				6E7F798F1DC8CBDE00CC8796 /* libresolv.tbd in Frameworks */,
 				6E9C86C61DC3233A005AF102 /* AdSupport.framework in Frameworks */,
@@ -920,6 +928,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6E484D6B1DDE906E00174A02 /* WebKit.framework */,
 				6E7F798E1DC8CBDE00CC8796 /* libresolv.tbd */,
 				6E9C86C51DC3233A005AF102 /* AdSupport.framework */,
 				6E9C86C31DC32316005AF102 /* libstdc++.6.0.9.tbd */,
@@ -1116,6 +1125,22 @@
 				6E5F7D261DDAB6EE00A28655 /* ConfrimRechargeVC.xib */,
 			);
 			name = Recharge;
+			sourceTree = "<group>";
+		};
+		6E484D651DDE8FBF00174A02 /* Supply */ = {
+			isa = PBXGroup;
+			children = (
+				6E5F7D941DDBFA3600A28655 /* SupplyDetailVC.h */,
+				6E5F7D951DDBFA3600A28655 /* SupplyDetailVC.m */,
+				6E5F7D961DDBFA3600A28655 /* SupplyDetailVC.xib */,
+				6E484D501DDD3A2900174A02 /* SupplyItemView.h */,
+				6E484D511DDD3A2900174A02 /* SupplyItemView.m */,
+				6E484D531DDD3A3D00174A02 /* SupplyItemView.xib */,
+				6E484D661DDE8FE700174A02 /* WebViewVC.h */,
+				6E484D671DDE8FE700174A02 /* WebViewVC.m */,
+				6E484D681DDE8FE700174A02 /* WebViewVC.xib */,
+			);
+			name = Supply;
 			sourceTree = "<group>";
 		};
 		6E5F7D8F1DDAE81A00A28655 /* ShopCell */ = {
@@ -1361,6 +1386,7 @@
 				6EA9AF241DB89AF700206E4E /* Login */,
 				6E484D551DDD3A6E00174A02 /* User */,
 				6EA9AF231DB89AF000206E4E /* Main */,
+				6E484D651DDE8FBF00174A02 /* Supply */,
 				6EA9B4821DB9C1DE00206E4E /* Chat */,
 				6EA9B48A1DBB1FB800206E4E /* ExchangeMarket */,
 				6EA9B4B61DBB24BA00206E4E /* MyBackpack */,
@@ -1407,12 +1433,6 @@
 				6E8701151DBB844200FE7691 /* AboutVC.h */,
 				6E8701161DBB844200FE7691 /* AboutVC.m */,
 				6E8701171DBB844200FE7691 /* AboutVC.xib */,
-				6E5F7D941DDBFA3600A28655 /* SupplyDetailVC.h */,
-				6E5F7D951DDBFA3600A28655 /* SupplyDetailVC.m */,
-				6E5F7D961DDBFA3600A28655 /* SupplyDetailVC.xib */,
-				6E484D501DDD3A2900174A02 /* SupplyItemView.h */,
-				6E484D511DDD3A2900174A02 /* SupplyItemView.m */,
-				6E484D531DDD3A3D00174A02 /* SupplyItemView.xib */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -1958,6 +1978,7 @@
 				6EA9B42B1DB8EB8A00206E4E /* Emoji.plist in Resources */,
 				6E0912AC1DCECE4200C66E9E /* MapVC.xib in Resources */,
 				6EA9B4991DBB202B00206E4E /* MyFriendVC.xib in Resources */,
+				6E484D6A1DDE8FE700174A02 /* WebViewVC.xib in Resources */,
 				6EA9B48F1DBB1FDB00206E4E /* RegisterVC.xib in Resources */,
 				6EA9B4B01DBB22BF00206E4E /* ExchangeMyStartedVC.xib in Resources */,
 				56C56C9817D6015200616839 /* Images.xcassets in Resources */,
@@ -2085,6 +2106,7 @@
 				6EA9AF171DB8978F00206E4E /* LoginVC.m in Sources */,
 				6E87012A1DBBAE0600FE7691 /* SetNickNameVC.m in Sources */,
 				8AC74A9519B47FEF00019D38 /* AVCapture.mm in Sources */,
+				6E484D691DDE8FE700174A02 /* WebViewVC.m in Sources */,
 				6E9C86AA1DC2FE09005AF102 /* UIScrollView+MJExtension.m in Sources */,
 				8A6720A519EEB905006C92E0 /* InternalProfiler.cpp in Sources */,
 				8A6137141A10BCA200059EDF /* ObjCRuntime.mm in Sources */,

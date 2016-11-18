@@ -547,14 +547,10 @@
     
     NSLog(@"选中 annotation %@", view.annotation);
     
-    NSDictionary *configDic = [[NSUserDefaults standardUserDefaults] dictionaryForKey:UserDefaults_Config];
-    
     if ([view.annotation isKindOfClass:[ElfAnno class]]) {
-        BOOL isInsdie = MACircleContainsCoordinate(self.userLocation.coordinate, view.annotation.coordinate, [configDic[UserDefaults_Config_elfCatchDistance] floatValue]);
-        NSLog(@"elf inside %d", isInsdie);
+        ElfAnno *elfAnno = (ElfAnno *)view.annotation;
         
-        if (isInsdie) {
-            ElfAnno *elfAnno = (ElfAnno *)view.annotation;
+        if ([elfAnno.elfDic[@"canCatch"] boolValue]) {
             self.selectedElfId = [elfAnno.elfDic[@"poiElfId"] integerValue];
             
             UnityPause(NO);
@@ -567,12 +563,9 @@
         
         
     } else if ([view.annotation isKindOfClass:[SupplyAnno class]]) {
-        BOOL isInsdie = MACircleContainsCoordinate(self.userLocation.coordinate, view.annotation.coordinate, [configDic[UserDefaults_Config_splyReceiveDistance] floatValue]);
-        NSLog(@"supply inside %d", isInsdie);
+        SupplyAnno *supplyAnno = (SupplyAnno *)view.annotation;
         
-        if (isInsdie) {
-            SupplyAnno *supplyAnno = (SupplyAnno *)view.annotation;
-            
+        if ([supplyAnno.supplyDic[@"canReceive"] boolValue]) {
             SupplyDetailVC *supplyVC = [[SupplyDetailVC alloc] initWithNibName:@"SupplyDetailVC" bundle:nil];
             supplyVC.splyId = [NSString stringWithFormat:@"%@", supplyAnno.supplyDic[@"id"]];
             supplyVC.splyWeight = [NSString stringWithFormat:@"%@", supplyAnno.supplyDic[@"poiweight"]];

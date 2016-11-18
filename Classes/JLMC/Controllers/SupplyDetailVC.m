@@ -13,6 +13,8 @@
 
 #import "UnityAppController.h"
 
+#import "WebViewVC.h"
+
 @interface SupplyDetailVC () <SDCycleScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *headerView;
@@ -153,6 +155,10 @@
 }
 
 - (IBAction)doSupplyAction:(id)sender {
+    if (self.supplyInfo == nil) {
+        return;
+    }
+    
     [self hud_showLoadingWithMsg:@"正在领取..."];
     
     __weak SupplyDetailVC *weakSelf = self;
@@ -192,7 +198,16 @@
 #pragma mark - SDCycleScrollViewDelegate
 
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index {
-    NSLog(@"cycleScrollView:didSelectItemAtIndex: %ld", index);
+    NSArray *bannerArr = self.supplyInfo[@"banner"];
+    NSDictionary *banner = bannerArr[index];
+    
+    WebViewVC *webView = [[WebViewVC alloc] initWithNibName:@"WebViewVC" bundle:nil];
+    webView.isURL = NO;
+    webView.webTitle = [NSString stringWithFormat:@"%@", banner[@"name"]];
+    webView.webContent = [NSString stringWithFormat:@"%@", banner[@"content"]];
+    
+    [self.navigationController pushViewController:webView animated:YES];
+    
 }
 
 /*

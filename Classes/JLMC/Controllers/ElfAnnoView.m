@@ -19,7 +19,6 @@
 - (id)initWithAnnotation:(id<MAAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithAnnotation:annotation reuseIdentifier:reuseIdentifier];
     if (self) {
-        self.image = [UIImage imageNamed:@"UserAnno"];
         self.centerOffset = CGPointMake(0, -24);
     }
     
