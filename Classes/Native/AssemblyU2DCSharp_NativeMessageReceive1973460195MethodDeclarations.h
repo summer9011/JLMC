@@ -27,4 +27,4 @@ extern "C"  void NativeMessageReceive_Start_m2510235682 (NativeMessageReceive_t1
 // System.Void NativeMessageReceive::Update()
 extern "C"  void NativeMessageReceive_Update_m3406222031 (NativeMessageReceive_t1973460195 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void NativeMessageReceive::MessagesReceive(System.String)
-extern "C"  void NativeMessageReceive_MessagesReceive_m3776591799 (NativeMessageReceive_t1973460195 * __this, String_t* ___scenesName, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void NativeMessageReceive_MessagesReceive_m3776591799 (NativeMessageReceive_t1973460195 * __this, String_t* ___arg, const MethodInfo* method) IL2CPP_METHOD_ATTR;

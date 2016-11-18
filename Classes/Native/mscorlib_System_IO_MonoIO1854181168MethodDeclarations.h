@@ -42,6 +42,8 @@ extern "C"  Exception_t1145979430 * MonoIO_GetException_m2577367044 (Il2CppObjec
 extern "C"  Exception_t1145979430 * MonoIO_GetException_m957022672 (Il2CppObject * __this /* static, unused */, String_t* ___path, int32_t ___error, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.IO.MonoIO::CreateDirectory(System.String,System.IO.MonoIOError&)
 extern "C"  bool MonoIO_CreateDirectory_m379525469 (Il2CppObject * __this /* static, unused */, String_t* ___path, int32_t* ___error, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.IO.MonoIO::RemoveDirectory(System.String,System.IO.MonoIOError&)
+extern "C"  bool MonoIO_RemoveDirectory_m3495601603 (Il2CppObject * __this /* static, unused */, String_t* ___path, int32_t* ___error, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String[] System.IO.MonoIO::GetFileSystemEntries(System.String,System.String,System.Int32,System.Int32,System.IO.MonoIOError&)
 extern "C"  StringU5BU5D_t3764931161* MonoIO_GetFileSystemEntries_m3422848968 (Il2CppObject * __this /* static, unused */, String_t* ___path, String_t* ___path_with_pattern, int32_t ___attrs, int32_t ___mask, int32_t* ___error, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.IO.MonoIO::GetCurrentDirectory(System.IO.MonoIOError&)
@@ -52,10 +54,14 @@ extern "C"  bool MonoIO_DeleteFile_m3273821223 (Il2CppObject * __this /* static,
 extern "C"  int32_t MonoIO_GetFileAttributes_m2061483138 (Il2CppObject * __this /* static, unused */, String_t* ___path, int32_t* ___error, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.IO.MonoFileType System.IO.MonoIO::GetFileType(System.IntPtr,System.IO.MonoIOError&)
 extern "C"  int32_t MonoIO_GetFileType_m3310262429 (Il2CppObject * __this /* static, unused */, IntPtr_t ___handle, int32_t* ___error, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.IO.MonoIO::Exists(System.String,System.IO.MonoIOError&)
+extern "C"  bool MonoIO_Exists_m3221338122 (Il2CppObject * __this /* static, unused */, String_t* ___path, int32_t* ___error, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.IO.MonoIO::ExistsFile(System.String,System.IO.MonoIOError&)
 extern "C"  bool MonoIO_ExistsFile_m1421941572 (Il2CppObject * __this /* static, unused */, String_t* ___path, int32_t* ___error, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.IO.MonoIO::ExistsDirectory(System.String,System.IO.MonoIOError&)
 extern "C"  bool MonoIO_ExistsDirectory_m3152546909 (Il2CppObject * __this /* static, unused */, String_t* ___path, int32_t* ___error, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.IO.MonoIO::ExistsSymlink(System.String,System.IO.MonoIOError&)
+extern "C"  bool MonoIO_ExistsSymlink_m2976617763 (Il2CppObject * __this /* static, unused */, String_t* ___path, int32_t* ___error, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.IO.MonoIO::GetFileStat(System.String,System.IO.MonoIOStat&,System.IO.MonoIOError&)
 extern "C"  bool MonoIO_GetFileStat_m3146995842 (Il2CppObject * __this /* static, unused */, String_t* ___path, MonoIOStat_t720308222 * ___stat, int32_t* ___error, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.IntPtr System.IO.MonoIO::Open(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.IO.FileOptions,System.IO.MonoIOError&)

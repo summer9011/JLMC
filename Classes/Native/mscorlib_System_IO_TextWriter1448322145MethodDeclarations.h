@@ -18,10 +18,13 @@ struct TextWriter_t1448322145;
 struct CharU5BU5D_t1685951112;
 // System.String
 struct String_t;
+// System.Object
+struct Il2CppObject;
 
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_IO_TextWriter1448322145.h"
 #include "mscorlib_System_String1967731336.h"
+#include "mscorlib_System_Object707969140.h"
 
 // System.Void System.IO.TextWriter::.ctor()
 extern "C"  void TextWriter__ctor_m2225796097 (TextWriter_t1448322145 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -45,7 +48,11 @@ extern "C"  void TextWriter_Write_m3202446297 (TextWriter_t1448322145 * __this, 
 extern "C"  void TextWriter_Write_m576684782 (TextWriter_t1448322145 * __this, String_t* ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.TextWriter::Write(System.Char[],System.Int32,System.Int32)
 extern "C"  void TextWriter_Write_m3244403173 (TextWriter_t1448322145 * __this, CharU5BU5D_t1685951112* ___buffer, int32_t ___index, int32_t ___count, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.IO.TextWriter::Write(System.String,System.Object,System.Object)
+extern "C"  void TextWriter_Write_m3807416046 (TextWriter_t1448322145 * __this, String_t* ___format, Il2CppObject * ___arg0, Il2CppObject * ___arg1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.TextWriter::WriteLine()
 extern "C"  void TextWriter_WriteLine_m116198862 (TextWriter_t1448322145 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.TextWriter::WriteLine(System.String)
 extern "C"  void TextWriter_WriteLine_m1754475888 (TextWriter_t1448322145 * __this, String_t* ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.IO.TextWriter::WriteLine(System.String,System.Object,System.Object)
+extern "C"  void TextWriter_WriteLine_m4002581872 (TextWriter_t1448322145 * __this, String_t* ___format, Il2CppObject * ___arg0, Il2CppObject * ___arg1, const MethodInfo* method) IL2CPP_METHOD_ATTR;

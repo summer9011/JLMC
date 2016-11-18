@@ -27,6 +27,10 @@ extern "C"  void Vector3__ctor_m2638739322 (Vector3_t465617797 * __this, float _
 extern "C"  void Vector3__ctor_m2720820983 (Vector3_t465617797 * __this, float ___x, float ___y, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Vector3::Lerp(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
 extern "C"  Vector3_t465617797  Vector3_Lerp_m2935648359 (Il2CppObject * __this /* static, unused */, Vector3_t465617797  ___a, Vector3_t465617797  ___b, float ___t, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Vector3::get_Item(System.Int32)
+extern "C"  float Vector3_get_Item_m3616014016 (Vector3_t465617797 * __this, int32_t ___index, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Vector3::set_Item(System.Int32,System.Single)
+extern "C"  void Vector3_set_Item_m499708011 (Vector3_t465617797 * __this, int32_t ___index, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Vector3::Scale(UnityEngine.Vector3,UnityEngine.Vector3)
 extern "C"  Vector3_t465617797  Vector3_Scale_m1087116865 (Il2CppObject * __this /* static, unused */, Vector3_t465617797  ___a, Vector3_t465617797  ___b, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Vector3::Scale(UnityEngine.Vector3)

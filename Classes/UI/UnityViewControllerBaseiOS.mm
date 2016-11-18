@@ -103,8 +103,6 @@ static void ViewWillTransitionToSize_DefaultImpl(id self_, SEL _cmd, CGSize size
 {
 	[super viewWillAppear:animated];
 	AppController_SendUnityViewControllerNotification(kUnityViewWillAppear);
-    
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 @end
 

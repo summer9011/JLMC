@@ -92,6 +92,10 @@ extern "C"  bool Double_Parse_m1617409931 (Il2CppObject * __this /* static, unus
 extern "C"  bool Double_TryParseStringConstant_m2585405703 (Il2CppObject * __this /* static, unused */, String_t* ___format, String_t* ___s, int32_t ___start, int32_t ___end, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Double::ParseImpl(System.Byte*,System.Double&)
 extern "C"  bool Double_ParseImpl_m2833623002 (Il2CppObject * __this /* static, unused */, uint8_t* ___byte_ptr, double* ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Double::TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Double&)
+extern "C"  bool Double_TryParse_m815528105 (Il2CppObject * __this /* static, unused */, String_t* ___s, int32_t ___style, Il2CppObject * ___provider, double* ___result, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Double::TryParse(System.String,System.Double&)
+extern "C"  bool Double_TryParse_m3252018994 (Il2CppObject * __this /* static, unused */, String_t* ___s, double* ___result, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Double::ToString()
 extern "C"  String_t* Double_ToString_m1864290157 (double* __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Double::ToString(System.IFormatProvider)

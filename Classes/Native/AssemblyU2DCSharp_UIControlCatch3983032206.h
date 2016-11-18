@@ -10,6 +10,8 @@
 
 #include <stdint.h>
 
+// UnityEngine.GameObject
+struct GameObject_t1366199518;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour774292115.h"
 
@@ -27,6 +29,10 @@ public:
 	bool ___switchFlagOfImage_2;
 	// System.Boolean UIControlCatch::switchFlagOfName
 	bool ___switchFlagOfName_3;
+	// System.Boolean UIControlCatch::switchFlagOfScence
+	bool ___switchFlagOfScence_4;
+	// UnityEngine.GameObject UIControlCatch::mGameManager
+	GameObject_t1366199518 * ___mGameManager_5;
 
 public:
 	inline static int32_t get_offset_of_switchFlagOfImage_2() { return static_cast<int32_t>(offsetof(UIControlCatch_t3983032206, ___switchFlagOfImage_2)); }
@@ -43,6 +49,23 @@ public:
 	inline void set_switchFlagOfName_3(bool value)
 	{
 		___switchFlagOfName_3 = value;
+	}
+
+	inline static int32_t get_offset_of_switchFlagOfScence_4() { return static_cast<int32_t>(offsetof(UIControlCatch_t3983032206, ___switchFlagOfScence_4)); }
+	inline bool get_switchFlagOfScence_4() const { return ___switchFlagOfScence_4; }
+	inline bool* get_address_of_switchFlagOfScence_4() { return &___switchFlagOfScence_4; }
+	inline void set_switchFlagOfScence_4(bool value)
+	{
+		___switchFlagOfScence_4 = value;
+	}
+
+	inline static int32_t get_offset_of_mGameManager_5() { return static_cast<int32_t>(offsetof(UIControlCatch_t3983032206, ___mGameManager_5)); }
+	inline GameObject_t1366199518 * get_mGameManager_5() const { return ___mGameManager_5; }
+	inline GameObject_t1366199518 ** get_address_of_mGameManager_5() { return &___mGameManager_5; }
+	inline void set_mGameManager_5(GameObject_t1366199518 * value)
+	{
+		___mGameManager_5 = value;
+		Il2CppCodeGenWriteBarrier(&___mGameManager_5, value);
 	}
 };
 

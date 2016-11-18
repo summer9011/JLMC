@@ -39,6 +39,6 @@
 // System.Void System.Collections.Generic.Dictionary`2/ValueCollection<System.String,System.String>::CopyTo(TValue[],System.Int32)
 #define ValueCollection_CopyTo_m3122946079(__this, ___array, ___index, method) ((  void (*) (ValueCollection_t1457077276 *, StringU5BU5D_t3764931161*, int32_t, const MethodInfo*))ValueCollection_CopyTo_m927881183_gshared)(__this, ___array, ___index, method)
 // System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2/ValueCollection<System.String,System.String>::GetEnumerator()
-#define ValueCollection_GetEnumerator_m403845348(__this, method) ((  Enumerator_t2077041646  (*) (ValueCollection_t1457077276 *, const MethodInfo*))ValueCollection_GetEnumerator_m401908452_gshared)(__this, method)
+#define ValueCollection_GetEnumerator_m403845348(__this, method) ((  Enumerator_t2077041647  (*) (ValueCollection_t1457077276 *, const MethodInfo*))ValueCollection_GetEnumerator_m401908452_gshared)(__this, method)
 // System.Int32 System.Collections.Generic.Dictionary`2/ValueCollection<System.String,System.String>::get_Count()
 #define ValueCollection_get_Count_m3514284897(__this, method) ((  int32_t (*) (ValueCollection_t1457077276 *, const MethodInfo*))ValueCollection_get_Count_m3718352161_gshared)(__this, method)

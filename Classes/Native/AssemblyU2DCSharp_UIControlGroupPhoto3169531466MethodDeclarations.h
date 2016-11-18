@@ -21,5 +21,9 @@ struct UIControlGroupPhoto_t3169531466;
 extern "C"  void UIControlGroupPhoto__ctor_m2080371059 (UIControlGroupPhoto_t3169531466 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UIControlGroupPhoto::Start()
 extern "C"  void UIControlGroupPhoto_Start_m2818056911 (UIControlGroupPhoto_t3169531466 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UIControlGroupPhoto::Update()
-extern "C"  void UIControlGroupPhoto_Update_m3021618232 (UIControlGroupPhoto_t3169531466 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UIControlGroupPhoto::OnClick_Back()
+extern "C"  void UIControlGroupPhoto_OnClick_Back_m220732570 (UIControlGroupPhoto_t3169531466 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UIControlGroupPhoto::OnClick_Share()
+extern "C"  void UIControlGroupPhoto_OnClick_Share_m3850013686 (UIControlGroupPhoto_t3169531466 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UIControlGroupPhoto::OnClick_TakePhoto()
+extern "C"  void UIControlGroupPhoto_OnClick_TakePhoto_m3373802380 (UIControlGroupPhoto_t3169531466 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

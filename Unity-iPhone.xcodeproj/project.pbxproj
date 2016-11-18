@@ -69,6 +69,11 @@
 		6E484D691DDE8FE700174A02 /* WebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E484D671DDE8FE700174A02 /* WebViewVC.m */; };
 		6E484D6A1DDE8FE700174A02 /* WebViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E484D681DDE8FE700174A02 /* WebViewVC.xib */; };
 		6E484D6C1DDE906E00174A02 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E484D6B1DDE906E00174A02 /* WebKit.framework */; };
+		6E484ED01DDEF2FF00174A02 /* Bulk_Assembly-CSharp_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E484ECD1DDEF2FF00174A02 /* Bulk_Assembly-CSharp_3.cpp */; };
+		6E484ED11DDEF2FF00174A02 /* Bulk_EasyAR.Unity_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E484ECE1DDEF2FF00174A02 /* Bulk_EasyAR.Unity_0.cpp */; };
+		6E484ED21DDEF2FF00174A02 /* Il2CppPInvokerWrapperTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E484ECF1DDEF2FF00174A02 /* Il2CppPInvokerWrapperTable.cpp */; };
+		6E484ED71DDEF33800174A02 /* EasyARAppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E484ED51DDEF33800174A02 /* EasyARAppController.mm */; };
+		6E484ED81DDEF33800174A02 /* libEasyARUnity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E484ED61DDEF33800174A02 /* libEasyARUnity.a */; };
 		6E5F7D0B1DDAB49300A28655 /* MyOrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7D091DDAB49300A28655 /* MyOrderVC.m */; };
 		6E5F7D0C1DDAB49300A28655 /* MyOrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7D0A1DDAB49300A28655 /* MyOrderVC.xib */; };
 		6E5F7D101DDAB4A100A28655 /* GoodDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7D0E1DDAB4A100A28655 /* GoodDetailVC.m */; };
@@ -437,6 +442,11 @@
 		6E484D671DDE8FE700174A02 /* WebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewVC.m; sourceTree = "<group>"; };
 		6E484D681DDE8FE700174A02 /* WebViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewVC.xib; sourceTree = "<group>"; };
 		6E484D6B1DDE906E00174A02 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		6E484ECD1DDEF2FF00174A02 /* Bulk_Assembly-CSharp_3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Bulk_Assembly-CSharp_3.cpp"; sourceTree = "<group>"; };
+		6E484ECE1DDEF2FF00174A02 /* Bulk_EasyAR.Unity_0.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bulk_EasyAR.Unity_0.cpp; sourceTree = "<group>"; };
+		6E484ECF1DDEF2FF00174A02 /* Il2CppPInvokerWrapperTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Il2CppPInvokerWrapperTable.cpp; sourceTree = "<group>"; };
+		6E484ED51DDEF33800174A02 /* EasyARAppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EasyARAppController.mm; sourceTree = "<group>"; };
+		6E484ED61DDEF33800174A02 /* libEasyARUnity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEasyARUnity.a; sourceTree = "<group>"; };
 		6E5F7D081DDAB49300A28655 /* MyOrderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderVC.h; sourceTree = "<group>"; };
 		6E5F7D091DDAB49300A28655 /* MyOrderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderVC.m; sourceTree = "<group>"; };
 		6E5F7D0A1DDAB49300A28655 /* MyOrderVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrderVC.xib; sourceTree = "<group>"; };
@@ -870,6 +880,7 @@
 				6E9C86BF1DC32236005AF102 /* AMapSearchKit.framework in Frameworks */,
 				83B2570B0E62FF8A00468741 /* QuartzCore.framework in Frameworks */,
 				56BCBA390FCF049A0030C3B2 /* SystemConfiguration.framework in Frameworks */,
+				6E484ED81DDEF33800174A02 /* libEasyARUnity.a in Frameworks */,
 				6EA9B4811DB903C100206E4E /* ShareSDKConnector.framework in Frameworks */,
 				830B5C110E5ED4C100C7819F /* UIKit.framework in Frameworks */,
 				83B2574F0E63025400468741 /* libiconv.2.dylib in Frameworks */,
@@ -974,6 +985,9 @@
 		2CAD4CF09E607DC7704A24F8 /* Native */ = {
 			isa = PBXGroup;
 			children = (
+				6E484ECD1DDEF2FF00174A02 /* Bulk_Assembly-CSharp_3.cpp */,
+				6E484ECE1DDEF2FF00174A02 /* Bulk_EasyAR.Unity_0.cpp */,
+				6E484ECF1DDEF2FF00174A02 /* Il2CppPInvokerWrapperTable.cpp */,
 				6E09129B1DCE200300C66E9E /* Bulk_Assembly-CSharp_0.cpp */,
 				6E09129C1DCE200300C66E9E /* Bulk_Assembly-CSharp_1.cpp */,
 				6E09129D1DCE200300C66E9E /* Bulk_Assembly-CSharp_2.cpp */,
@@ -1141,6 +1155,23 @@
 				6E484D681DDE8FE700174A02 /* WebViewVC.xib */,
 			);
 			name = Supply;
+			sourceTree = "<group>";
+		};
+		6E484ED31DDEF33800174A02 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				6E484ED41DDEF33800174A02 /* iOS */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		6E484ED41DDEF33800174A02 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6E484ED51DDEF33800174A02 /* EasyARAppController.mm */,
+				6E484ED61DDEF33800174A02 /* libEasyARUnity.a */,
+			);
+			path = iOS;
 			sourceTree = "<group>";
 		};
 		6E5F7D8F1DDAE81A00A28655 /* ShopCell */ = {
@@ -1853,6 +1884,7 @@
 		D8A1C7220E80637F000160D3 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				6E484ED31DDEF33800174A02 /* Plugins */,
 				AAC3E38B1A68945900F6174A /* RegisterFeatures.cpp */,
 				AAC3E38C1A68945900F6174A /* RegisterFeatures.h */,
 				D8A1C7240E80637F000160D3 /* RegisterMonoModules.cpp */,
@@ -2057,6 +2089,7 @@
 				6ED2245C1DC98E6C00E0FA36 /* Order.m in Sources */,
 				D82DCFC30E8000A5005D6AD8 /* main.mm in Sources */,
 				D8A1C7280E80637F000160D3 /* RegisterMonoModules.cpp in Sources */,
+				6E484ED01DDEF2FF00174A02 /* Bulk_Assembly-CSharp_3.cpp in Sources */,
 				8AA568AE1827DD79004969C7 /* WWWConnection.mm in Sources */,
 				56DBF99D15E3CDC9007A4A8D /* iPhone_Sensors.mm in Sources */,
 				8A3EDDC81615B7C1001839E9 /* SplashScreen.mm in Sources */,
@@ -2072,6 +2105,7 @@
 				6E95034D1DDCAA1900692605 /* SupplyAnnoView.m in Sources */,
 				8A0FED491649699200E9727D /* EAGLContextHelper.mm in Sources */,
 				AAFE69D219F187C200638316 /* UnityViewControllerListener.mm in Sources */,
+				6E484ED71DDEF33800174A02 /* EasyARAppController.mm in Sources */,
 				6EA9B4981DBB202B00206E4E /* MyFriendVC.m in Sources */,
 				6E5F7D0B1DDAB49300A28655 /* MyOrderVC.m in Sources */,
 				8A1FFFAD16512A9000DD0934 /* GlesHelper.mm in Sources */,
@@ -2156,6 +2190,7 @@
 				2E29457FAA22BE6055112631 /* Bulk_UnityEngine_0.cpp in Sources */,
 				DFFA41208FF313C5B83B8D96 /* Bulk_UnityEngine_1.cpp in Sources */,
 				6EA9B4AF1DBB22BF00206E4E /* ExchangeMyStartedVC.m in Sources */,
+				6E484ED21DDEF2FF00174A02 /* Il2CppPInvokerWrapperTable.cpp in Sources */,
 				B789480FACA8E9641029F964 /* Bulk_mscorlib_0.cpp in Sources */,
 				962F44FE8FDD77C656C8C5C0 /* Bulk_mscorlib_1.cpp in Sources */,
 				416348798030C311B658A617 /* Bulk_mscorlib_2.cpp in Sources */,
@@ -2216,6 +2251,7 @@
 				5B944D0B9F339A83F71CE5E4 /* Il2CppMetadataRegistration.cpp in Sources */,
 				6E9C86CC1DC33BA0005AF102 /* UserAgreementViewController.m in Sources */,
 				04D64C799414561D1838F9C1 /* Il2CppMetadataUsage.cpp in Sources */,
+				6E484ED11DDEF2FF00174A02 /* Bulk_EasyAR.Unity_0.cpp in Sources */,
 				78CA4747B175BA3D53D8D0AD /* Il2CppMethodPointerTable.cpp in Sources */,
 				A2784F22ADC6F18CB27A27D1 /* Il2CppTypeDefinitions.cpp in Sources */,
 				6E484D521DDD3A2900174A02 /* SupplyItemView.m in Sources */,
@@ -2286,7 +2322,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = MA4AJ762F2;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries",
@@ -2346,6 +2382,7 @@
 					"$(PROJECT_DIR)/Classes/JLMC/Lib/pingpp",
 					"$(PROJECT_DIR)/Classes/JLMC/Lib/pingpp/One",
 					"$(PROJECT_DIR)/Classes/JLMC/Lib/Rong_Cloud_iOS_IMKit_SDK_v2_7_3_stable",
+					"$(PROJECT_DIR)/Libraries/Plugins/iOS",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DINIT_SCRIPTING_BACKEND=1";
@@ -2387,7 +2424,7 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = MA4AJ762F2;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries",
@@ -2444,6 +2481,7 @@
 					"$(PROJECT_DIR)/Classes/JLMC/Lib/pingpp",
 					"$(PROJECT_DIR)/Classes/JLMC/Lib/pingpp/One",
 					"$(PROJECT_DIR)/Classes/JLMC/Lib/Rong_Cloud_iOS_IMKit_SDK_v2_7_3_stable",
+					"$(PROJECT_DIR)/Libraries/Plugins/iOS",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DINIT_SCRIPTING_BACKEND=1";

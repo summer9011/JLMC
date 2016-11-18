@@ -208,12 +208,6 @@ extern const Il2CppGenericInst GenInst__ConstructorInfo_t3459493955_0_0_0 = { 1,
 extern const Il2CppType IntPtr_t_0_0_0;
 static const Il2CppType* GenInst_IntPtr_t_0_0_0_Types[] = { &IntPtr_t_0_0_0 };
 extern const Il2CppGenericInst GenInst_IntPtr_t_0_0_0 = { 1, GenInst_IntPtr_t_0_0_0_Types };
-extern const Il2CppType TableRange_t736649775_0_0_0;
-static const Il2CppType* GenInst_TableRange_t736649775_0_0_0_Types[] = { &TableRange_t736649775_0_0_0 };
-extern const Il2CppGenericInst GenInst_TableRange_t736649775_0_0_0 = { 1, GenInst_TableRange_t736649775_0_0_0_Types };
-extern const Il2CppType TailoringInfo_t291714550_0_0_0;
-static const Il2CppType* GenInst_TailoringInfo_t291714550_0_0_0_Types[] = { &TailoringInfo_t291714550_0_0_0 };
-extern const Il2CppGenericInst GenInst_TailoringInfo_t291714550_0_0_0 = { 1, GenInst_TailoringInfo_t291714550_0_0_0_Types };
 static const Il2CppType* GenInst_String_t_0_0_0_Int32_t1448170597_0_0_0_Types[] = { &String_t_0_0_0, &Int32_t1448170597_0_0_0 };
 extern const Il2CppGenericInst GenInst_String_t_0_0_0_Int32_t1448170597_0_0_0 = { 2, GenInst_String_t_0_0_0_Int32_t1448170597_0_0_0_Types };
 static const Il2CppType* GenInst_Il2CppObject_0_0_0_Int32_t1448170597_0_0_0_Types[] = { &Il2CppObject_0_0_0, &Int32_t1448170597_0_0_0 };
@@ -224,6 +218,8 @@ extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2684549329_0_0_0 = { 1, G
 extern const Il2CppType Link_t2119410749_0_0_0;
 static const Il2CppType* GenInst_Link_t2119410749_0_0_0_Types[] = { &Link_t2119410749_0_0_0 };
 extern const Il2CppGenericInst GenInst_Link_t2119410749_0_0_0 = { 1, GenInst_Link_t2119410749_0_0_0_Types };
+static const Il2CppType* GenInst_Il2CppObject_0_0_0_Int32_t1448170597_0_0_0_Il2CppObject_0_0_0_Types[] = { &Il2CppObject_0_0_0, &Int32_t1448170597_0_0_0, &Il2CppObject_0_0_0 };
+extern const Il2CppGenericInst GenInst_Il2CppObject_0_0_0_Int32_t1448170597_0_0_0_Il2CppObject_0_0_0 = { 3, GenInst_Il2CppObject_0_0_0_Int32_t1448170597_0_0_0_Il2CppObject_0_0_0_Types };
 static const Il2CppType* GenInst_Il2CppObject_0_0_0_Int32_t1448170597_0_0_0_Int32_t1448170597_0_0_0_Types[] = { &Il2CppObject_0_0_0, &Int32_t1448170597_0_0_0, &Int32_t1448170597_0_0_0 };
 extern const Il2CppGenericInst GenInst_Il2CppObject_0_0_0_Int32_t1448170597_0_0_0_Int32_t1448170597_0_0_0 = { 3, GenInst_Il2CppObject_0_0_0_Int32_t1448170597_0_0_0_Int32_t1448170597_0_0_0_Types };
 extern const Il2CppType DictionaryEntry_t1445113794_0_0_0;
@@ -238,6 +234,12 @@ extern const Il2CppGenericInst GenInst_String_t_0_0_0_Int32_t1448170597_0_0_0_Di
 extern const Il2CppType KeyValuePair_2_t2817472493_0_0_0;
 static const Il2CppType* GenInst_KeyValuePair_2_t2817472493_0_0_0_Types[] = { &KeyValuePair_2_t2817472493_0_0_0 };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2817472493_0_0_0 = { 1, GenInst_KeyValuePair_2_t2817472493_0_0_0_Types };
+extern const Il2CppType TableRange_t736649775_0_0_0;
+static const Il2CppType* GenInst_TableRange_t736649775_0_0_0_Types[] = { &TableRange_t736649775_0_0_0 };
+extern const Il2CppGenericInst GenInst_TableRange_t736649775_0_0_0 = { 1, GenInst_TableRange_t736649775_0_0_0_Types };
+extern const Il2CppType TailoringInfo_t291714550_0_0_0;
+static const Il2CppType* GenInst_TailoringInfo_t291714550_0_0_0_Types[] = { &TailoringInfo_t291714550_0_0_0 };
+extern const Il2CppGenericInst GenInst_TailoringInfo_t291714550_0_0_0 = { 1, GenInst_TailoringInfo_t291714550_0_0_0_Types };
 extern const Il2CppType Contraction_t3730568393_0_0_0;
 static const Il2CppType* GenInst_Contraction_t3730568393_0_0_0_Types[] = { &Contraction_t3730568393_0_0_0 };
 extern const Il2CppGenericInst GenInst_Contraction_t3730568393_0_0_0 = { 1, GenInst_Contraction_t3730568393_0_0_0_Types };
@@ -428,6 +430,8 @@ extern const Il2CppGenericInst GenInst_Il2CppObject_0_0_0_Boolean_t3143194569_0_
 extern const Il2CppType KeyValuePair_2_t84606005_0_0_0;
 static const Il2CppType* GenInst_KeyValuePair_2_t84606005_0_0_0_Types[] = { &KeyValuePair_2_t84606005_0_0_0 };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t84606005_0_0_0 = { 1, GenInst_KeyValuePair_2_t84606005_0_0_0_Types };
+static const Il2CppType* GenInst_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0_Il2CppObject_0_0_0_Types[] = { &Il2CppObject_0_0_0, &Boolean_t3143194569_0_0_0, &Il2CppObject_0_0_0 };
+extern const Il2CppGenericInst GenInst_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0_Il2CppObject_0_0_0 = { 3, GenInst_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0_Il2CppObject_0_0_0_Types };
 static const Il2CppType* GenInst_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0_Boolean_t3143194569_0_0_0_Types[] = { &Il2CppObject_0_0_0, &Boolean_t3143194569_0_0_0, &Boolean_t3143194569_0_0_0 };
 extern const Il2CppGenericInst GenInst_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0_Boolean_t3143194569_0_0_0 = { 3, GenInst_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0_Boolean_t3143194569_0_0_0_Types };
 static const Il2CppType* GenInst_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0_DictionaryEntry_t1445113794_0_0_0_Types[] = { &Il2CppObject_0_0_0, &Boolean_t3143194569_0_0_0, &DictionaryEntry_t1445113794_0_0_0 };
@@ -460,6 +464,8 @@ extern const Il2CppGenericInst GenInst_Mark_t1456433074_0_0_0 = { 1, GenInst_Mar
 extern const Il2CppType UriScheme_t2756911945_0_0_0;
 static const Il2CppType* GenInst_UriScheme_t2756911945_0_0_0_Types[] = { &UriScheme_t2756911945_0_0_0 };
 extern const Il2CppGenericInst GenInst_UriScheme_t2756911945_0_0_0 = { 1, GenInst_UriScheme_t2756911945_0_0_0_Types };
+static const Il2CppType* GenInst_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Types[] = { &Il2CppObject_0_0_0, &Il2CppObject_0_0_0, &Il2CppObject_0_0_0, &Il2CppObject_0_0_0 };
+extern const Il2CppGenericInst GenInst_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0 = { 4, GenInst_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Types };
 extern const Il2CppType BigInteger_t3893714978_0_0_0;
 static const Il2CppType* GenInst_BigInteger_t3893714978_0_0_0_Types[] = { &BigInteger_t3893714978_0_0_0 };
 extern const Il2CppGenericInst GenInst_BigInteger_t3893714978_0_0_0 = { 1, GenInst_BigInteger_t3893714978_0_0_0_Types };
@@ -581,6 +587,9 @@ extern const Il2CppGenericInst GenInst_Collider2D_t445179443_0_0_0 = { 1, GenIns
 extern const Il2CppType ContactPoint2D_t15882733_0_0_0;
 static const Il2CppType* GenInst_ContactPoint2D_t15882733_0_0_0_Types[] = { &ContactPoint2D_t15882733_0_0_0 };
 extern const Il2CppGenericInst GenInst_ContactPoint2D_t15882733_0_0_0 = { 1, GenInst_ContactPoint2D_t15882733_0_0_0_Types };
+extern const Il2CppType WebCamDevice_t138406174_0_0_0;
+static const Il2CppType* GenInst_WebCamDevice_t138406174_0_0_0_Types[] = { &WebCamDevice_t138406174_0_0_0 };
+extern const Il2CppGenericInst GenInst_WebCamDevice_t138406174_0_0_0 = { 1, GenInst_WebCamDevice_t138406174_0_0_0_Types };
 extern const Il2CppType Font_t2560754878_0_0_0;
 static const Il2CppType* GenInst_Font_t2560754878_0_0_0_Types[] = { &Font_t2560754878_0_0_0 };
 extern const Il2CppGenericInst GenInst_Font_t2560754878_0_0_0 = { 1, GenInst_Font_t2560754878_0_0_0_Types };
@@ -595,6 +604,8 @@ extern const Il2CppGenericInst GenInst_Int32_t1448170597_0_0_0_Il2CppObject_0_0_
 extern const Il2CppType KeyValuePair_2_t1627747851_0_0_0;
 static const Il2CppType* GenInst_KeyValuePair_2_t1627747851_0_0_0_Types[] = { &KeyValuePair_2_t1627747851_0_0_0 };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t1627747851_0_0_0 = { 1, GenInst_KeyValuePair_2_t1627747851_0_0_0_Types };
+static const Il2CppType* GenInst_Int32_t1448170597_0_0_0_Il2CppObject_0_0_0_Int32_t1448170597_0_0_0_Types[] = { &Int32_t1448170597_0_0_0, &Il2CppObject_0_0_0, &Int32_t1448170597_0_0_0 };
+extern const Il2CppGenericInst GenInst_Int32_t1448170597_0_0_0_Il2CppObject_0_0_0_Int32_t1448170597_0_0_0 = { 3, GenInst_Int32_t1448170597_0_0_0_Il2CppObject_0_0_0_Int32_t1448170597_0_0_0_Types };
 static const Il2CppType* GenInst_Int32_t1448170597_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Types[] = { &Int32_t1448170597_0_0_0, &Il2CppObject_0_0_0, &Il2CppObject_0_0_0 };
 extern const Il2CppGenericInst GenInst_Int32_t1448170597_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0 = { 3, GenInst_Int32_t1448170597_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Types };
 static const Il2CppType* GenInst_Int32_t1448170597_0_0_0_Il2CppObject_0_0_0_DictionaryEntry_t1445113794_0_0_0_Types[] = { &Int32_t1448170597_0_0_0, &Il2CppObject_0_0_0, &DictionaryEntry_t1445113794_0_0_0 };
@@ -643,17 +654,125 @@ extern const Il2CppGenericInst GenInst_PersistentCall_t569761779_0_0_0 = { 1, Ge
 extern const Il2CppType BaseInvokableCall_t1711298336_0_0_0;
 static const Il2CppType* GenInst_BaseInvokableCall_t1711298336_0_0_0_Types[] = { &BaseInvokableCall_t1711298336_0_0_0 };
 extern const Il2CppGenericInst GenInst_BaseInvokableCall_t1711298336_0_0_0 = { 1, GenInst_BaseInvokableCall_t1711298336_0_0_0_Types };
-static const Il2CppType* GenInst_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Types[] = { &Il2CppObject_0_0_0, &Il2CppObject_0_0_0, &Il2CppObject_0_0_0, &Il2CppObject_0_0_0 };
-extern const Il2CppGenericInst GenInst_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0 = { 4, GenInst_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Types };
+extern const Il2CppType Vector2I_t2584456199_0_0_0;
+static const Il2CppType* GenInst_Vector2I_t2584456199_0_0_0_Types[] = { &Vector2I_t2584456199_0_0_0 };
+extern const Il2CppGenericInst GenInst_Vector2I_t2584456199_0_0_0 = { 1, GenInst_Vector2I_t2584456199_0_0_0_Types };
+extern const Il2CppType AugmentedTarget_t3213708220_0_0_0;
+static const Il2CppType* GenInst_AugmentedTarget_t3213708220_0_0_0_Types[] = { &AugmentedTarget_t3213708220_0_0_0 };
+extern const Il2CppGenericInst GenInst_AugmentedTarget_t3213708220_0_0_0 = { 1, GenInst_AugmentedTarget_t3213708220_0_0_0_Types };
+extern const Il2CppType ImageTracker_t3850277562_0_0_0;
+static const Il2CppType* GenInst_IntPtr_t_0_0_0_ImageTracker_t3850277562_0_0_0_Types[] = { &IntPtr_t_0_0_0, &ImageTracker_t3850277562_0_0_0 };
+extern const Il2CppGenericInst GenInst_IntPtr_t_0_0_0_ImageTracker_t3850277562_0_0_0 = { 2, GenInst_IntPtr_t_0_0_0_ImageTracker_t3850277562_0_0_0_Types };
+static const Il2CppType* GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0_Types[] = { &IntPtr_t_0_0_0, &Il2CppObject_0_0_0 };
+extern const Il2CppGenericInst GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0_Types };
+extern const Il2CppType KeyValuePair_2_t2181304024_0_0_0;
+static const Il2CppType* GenInst_KeyValuePair_2_t2181304024_0_0_0_Types[] = { &KeyValuePair_2_t2181304024_0_0_0 };
+extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2181304024_0_0_0 = { 1, GenInst_KeyValuePair_2_t2181304024_0_0_0_Types };
+static const Il2CppType* GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0_IntPtr_t_0_0_0_Types[] = { &IntPtr_t_0_0_0, &Il2CppObject_0_0_0, &IntPtr_t_0_0_0 };
+extern const Il2CppGenericInst GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0_IntPtr_t_0_0_0 = { 3, GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0_IntPtr_t_0_0_0_Types };
+static const Il2CppType* GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Types[] = { &IntPtr_t_0_0_0, &Il2CppObject_0_0_0, &Il2CppObject_0_0_0 };
+extern const Il2CppGenericInst GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0 = { 3, GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Types };
+static const Il2CppType* GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0_DictionaryEntry_t1445113794_0_0_0_Types[] = { &IntPtr_t_0_0_0, &Il2CppObject_0_0_0, &DictionaryEntry_t1445113794_0_0_0 };
+extern const Il2CppGenericInst GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0_DictionaryEntry_t1445113794_0_0_0 = { 3, GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0_DictionaryEntry_t1445113794_0_0_0_Types };
+static const Il2CppType* GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0_KeyValuePair_2_t2181304024_0_0_0_Types[] = { &IntPtr_t_0_0_0, &Il2CppObject_0_0_0, &KeyValuePair_2_t2181304024_0_0_0 };
+extern const Il2CppGenericInst GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0_KeyValuePair_2_t2181304024_0_0_0 = { 3, GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0_KeyValuePair_2_t2181304024_0_0_0_Types };
+static const Il2CppType* GenInst_IntPtr_t_0_0_0_ImageTracker_t3850277562_0_0_0_DictionaryEntry_t1445113794_0_0_0_Types[] = { &IntPtr_t_0_0_0, &ImageTracker_t3850277562_0_0_0, &DictionaryEntry_t1445113794_0_0_0 };
+extern const Il2CppGenericInst GenInst_IntPtr_t_0_0_0_ImageTracker_t3850277562_0_0_0_DictionaryEntry_t1445113794_0_0_0 = { 3, GenInst_IntPtr_t_0_0_0_ImageTracker_t3850277562_0_0_0_DictionaryEntry_t1445113794_0_0_0_Types };
+extern const Il2CppType KeyValuePair_2_t1028645150_0_0_0;
+static const Il2CppType* GenInst_KeyValuePair_2_t1028645150_0_0_0_Types[] = { &KeyValuePair_2_t1028645150_0_0_0 };
+extern const Il2CppGenericInst GenInst_KeyValuePair_2_t1028645150_0_0_0 = { 1, GenInst_KeyValuePair_2_t1028645150_0_0_0_Types };
+extern const Il2CppType Target_t2319079912_0_0_0;
+static const Il2CppType* GenInst_ImageTracker_t3850277562_0_0_0_Target_t2319079912_0_0_0_Boolean_t3143194569_0_0_0_Types[] = { &ImageTracker_t3850277562_0_0_0, &Target_t2319079912_0_0_0, &Boolean_t3143194569_0_0_0 };
+extern const Il2CppGenericInst GenInst_ImageTracker_t3850277562_0_0_0_Target_t2319079912_0_0_0_Boolean_t3143194569_0_0_0 = { 3, GenInst_ImageTracker_t3850277562_0_0_0_Target_t2319079912_0_0_0_Boolean_t3143194569_0_0_0_Types };
+static const Il2CppType* GenInst_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0_Types[] = { &Il2CppObject_0_0_0, &Il2CppObject_0_0_0, &Boolean_t3143194569_0_0_0 };
+extern const Il2CppGenericInst GenInst_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0 = { 3, GenInst_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0_Types };
+static const Il2CppType* GenInst_Target_t2319079912_0_0_0_Types[] = { &Target_t2319079912_0_0_0 };
+extern const Il2CppGenericInst GenInst_Target_t2319079912_0_0_0 = { 1, GenInst_Target_t2319079912_0_0_0_Types };
+extern const Il2CppType VideoPlayer_t4150865119_0_0_0;
+static const Il2CppType* GenInst_IntPtr_t_0_0_0_VideoPlayer_t4150865119_0_0_0_Types[] = { &IntPtr_t_0_0_0, &VideoPlayer_t4150865119_0_0_0 };
+extern const Il2CppGenericInst GenInst_IntPtr_t_0_0_0_VideoPlayer_t4150865119_0_0_0 = { 2, GenInst_IntPtr_t_0_0_0_VideoPlayer_t4150865119_0_0_0_Types };
+static const Il2CppType* GenInst_IntPtr_t_0_0_0_VideoPlayer_t4150865119_0_0_0_DictionaryEntry_t1445113794_0_0_0_Types[] = { &IntPtr_t_0_0_0, &VideoPlayer_t4150865119_0_0_0, &DictionaryEntry_t1445113794_0_0_0 };
+extern const Il2CppGenericInst GenInst_IntPtr_t_0_0_0_VideoPlayer_t4150865119_0_0_0_DictionaryEntry_t1445113794_0_0_0 = { 3, GenInst_IntPtr_t_0_0_0_VideoPlayer_t4150865119_0_0_0_DictionaryEntry_t1445113794_0_0_0_Types };
+extern const Il2CppType KeyValuePair_2_t1329232707_0_0_0;
+static const Il2CppType* GenInst_KeyValuePair_2_t1329232707_0_0_0_Types[] = { &KeyValuePair_2_t1329232707_0_0_0 };
+extern const Il2CppGenericInst GenInst_KeyValuePair_2_t1329232707_0_0_0 = { 1, GenInst_KeyValuePair_2_t1329232707_0_0_0_Types };
+extern const Il2CppType PlayerStatus_t2767287061_0_0_0;
+static const Il2CppType* GenInst_VideoPlayer_t4150865119_0_0_0_PlayerStatus_t2767287061_0_0_0_Types[] = { &VideoPlayer_t4150865119_0_0_0, &PlayerStatus_t2767287061_0_0_0 };
+extern const Il2CppGenericInst GenInst_VideoPlayer_t4150865119_0_0_0_PlayerStatus_t2767287061_0_0_0 = { 2, GenInst_VideoPlayer_t4150865119_0_0_0_PlayerStatus_t2767287061_0_0_0_Types };
+static const Il2CppType* GenInst_Il2CppObject_0_0_0_PlayerStatus_t2767287061_0_0_0_Types[] = { &Il2CppObject_0_0_0, &PlayerStatus_t2767287061_0_0_0 };
+extern const Il2CppGenericInst GenInst_Il2CppObject_0_0_0_PlayerStatus_t2767287061_0_0_0 = { 2, GenInst_Il2CppObject_0_0_0_PlayerStatus_t2767287061_0_0_0_Types };
+extern const Il2CppType AugmenterBaseBehaviour_t2200604009_0_0_0;
+extern const Il2CppType Texture2D_t3575456220_0_0_0;
+static const Il2CppType* GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_Texture2D_t3575456220_0_0_0_Types[] = { &AugmenterBaseBehaviour_t2200604009_0_0_0, &Texture2D_t3575456220_0_0_0 };
+extern const Il2CppGenericInst GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_Texture2D_t3575456220_0_0_0 = { 2, GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_Texture2D_t3575456220_0_0_0_Types };
+extern const Il2CppType Frame_t97434328_0_0_0;
+static const Il2CppType* GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_Frame_t97434328_0_0_0_Types[] = { &AugmenterBaseBehaviour_t2200604009_0_0_0, &Frame_t97434328_0_0_0 };
+extern const Il2CppGenericInst GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_Frame_t97434328_0_0_0 = { 2, GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_Frame_t97434328_0_0_0_Types };
+extern const Il2CppType ImageTargetBaseBehaviour_t1600490913_0_0_0;
+static const Il2CppType* GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_ImageTargetBaseBehaviour_t1600490913_0_0_0_Target_t2319079912_0_0_0_Types[] = { &AugmenterBaseBehaviour_t2200604009_0_0_0, &ImageTargetBaseBehaviour_t1600490913_0_0_0, &Target_t2319079912_0_0_0 };
+extern const Il2CppGenericInst GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_ImageTargetBaseBehaviour_t1600490913_0_0_0_Target_t2319079912_0_0_0 = { 3, GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_ImageTargetBaseBehaviour_t1600490913_0_0_0_Target_t2319079912_0_0_0_Types };
+static const Il2CppType* GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_String_t_0_0_0_Types[] = { &AugmenterBaseBehaviour_t2200604009_0_0_0, &String_t_0_0_0 };
+extern const Il2CppGenericInst GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_String_t_0_0_0 = { 2, GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_String_t_0_0_0_Types };
+static const Il2CppType* GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_Boolean_t3143194569_0_0_0_Types[] = { &AugmenterBaseBehaviour_t2200604009_0_0_0, &Boolean_t3143194569_0_0_0 };
+extern const Il2CppGenericInst GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_Boolean_t3143194569_0_0_0 = { 2, GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_Boolean_t3143194569_0_0_0_Types };
+extern const Il2CppType RenderCameraBaseBehaviour_t972179658_0_0_0;
+static const Il2CppType* GenInst_RenderCameraBaseBehaviour_t972179658_0_0_0_Types[] = { &RenderCameraBaseBehaviour_t972179658_0_0_0 };
+extern const Il2CppGenericInst GenInst_RenderCameraBaseBehaviour_t972179658_0_0_0 = { 1, GenInst_RenderCameraBaseBehaviour_t972179658_0_0_0_Types };
+extern const Il2CppType MonoBehaviour_t774292115_0_0_0;
+static const Il2CppType* GenInst_MonoBehaviour_t774292115_0_0_0_Types[] = { &MonoBehaviour_t774292115_0_0_0 };
+extern const Il2CppGenericInst GenInst_MonoBehaviour_t774292115_0_0_0 = { 1, GenInst_MonoBehaviour_t774292115_0_0_0_Types };
+extern const Il2CppType DeviceAbstractBehaviour_t4065891864_0_0_0;
+static const Il2CppType* GenInst_DeviceAbstractBehaviour_t4065891864_0_0_0_Boolean_t3143194569_0_0_0_Types[] = { &DeviceAbstractBehaviour_t4065891864_0_0_0, &Boolean_t3143194569_0_0_0 };
+extern const Il2CppGenericInst GenInst_DeviceAbstractBehaviour_t4065891864_0_0_0_Boolean_t3143194569_0_0_0 = { 2, GenInst_DeviceAbstractBehaviour_t4065891864_0_0_0_Boolean_t3143194569_0_0_0_Types };
+static const Il2CppType* GenInst_Int32_t1448170597_0_0_0_Target_t2319079912_0_0_0_Types[] = { &Int32_t1448170597_0_0_0, &Target_t2319079912_0_0_0 };
+extern const Il2CppGenericInst GenInst_Int32_t1448170597_0_0_0_Target_t2319079912_0_0_0 = { 2, GenInst_Int32_t1448170597_0_0_0_Target_t2319079912_0_0_0_Types };
+static const Il2CppType* GenInst_Int32_t1448170597_0_0_0_Target_t2319079912_0_0_0_DictionaryEntry_t1445113794_0_0_0_Types[] = { &Int32_t1448170597_0_0_0, &Target_t2319079912_0_0_0, &DictionaryEntry_t1445113794_0_0_0 };
+extern const Il2CppGenericInst GenInst_Int32_t1448170597_0_0_0_Target_t2319079912_0_0_0_DictionaryEntry_t1445113794_0_0_0 = { 3, GenInst_Int32_t1448170597_0_0_0_Target_t2319079912_0_0_0_DictionaryEntry_t1445113794_0_0_0_Types };
+extern const Il2CppType KeyValuePair_2_t3238858623_0_0_0;
+static const Il2CppType* GenInst_KeyValuePair_2_t3238858623_0_0_0_Types[] = { &KeyValuePair_2_t3238858623_0_0_0 };
+extern const Il2CppGenericInst GenInst_KeyValuePair_2_t3238858623_0_0_0 = { 1, GenInst_KeyValuePair_2_t3238858623_0_0_0_Types };
+extern const Il2CppType KeyValuePair_2_t4219269031_0_0_0;
+static const Il2CppType* GenInst_KeyValuePair_2_t4219269031_0_0_0_Types[] = { &KeyValuePair_2_t4219269031_0_0_0 };
+extern const Il2CppGenericInst GenInst_KeyValuePair_2_t4219269031_0_0_0 = { 1, GenInst_KeyValuePair_2_t4219269031_0_0_0_Types };
+static const Il2CppType* GenInst_ImageTargetBaseBehaviour_t1600490913_0_0_0_AugmentedTarget_t3213708220_0_0_0_Types[] = { &ImageTargetBaseBehaviour_t1600490913_0_0_0, &AugmentedTarget_t3213708220_0_0_0 };
+extern const Il2CppGenericInst GenInst_ImageTargetBaseBehaviour_t1600490913_0_0_0_AugmentedTarget_t3213708220_0_0_0 = { 2, GenInst_ImageTargetBaseBehaviour_t1600490913_0_0_0_AugmentedTarget_t3213708220_0_0_0_Types };
+extern const Il2CppType DeviceUserAbstractBehaviour_t2556350275_0_0_0;
+static const Il2CppType* GenInst_DeviceUserAbstractBehaviour_t2556350275_0_0_0_DeviceAbstractBehaviour_t4065891864_0_0_0_Types[] = { &DeviceUserAbstractBehaviour_t2556350275_0_0_0, &DeviceAbstractBehaviour_t4065891864_0_0_0 };
+extern const Il2CppGenericInst GenInst_DeviceUserAbstractBehaviour_t2556350275_0_0_0_DeviceAbstractBehaviour_t4065891864_0_0_0 = { 2, GenInst_DeviceUserAbstractBehaviour_t2556350275_0_0_0_DeviceAbstractBehaviour_t4065891864_0_0_0_Types };
+static const Il2CppType* GenInst_DeviceUserAbstractBehaviour_t2556350275_0_0_0_Types[] = { &DeviceUserAbstractBehaviour_t2556350275_0_0_0 };
+extern const Il2CppGenericInst GenInst_DeviceUserAbstractBehaviour_t2556350275_0_0_0 = { 1, GenInst_DeviceUserAbstractBehaviour_t2556350275_0_0_0_Types };
+extern const Il2CppType ImageTrackerBaseBehaviour_t2136520886_0_0_0;
+static const Il2CppType* GenInst_ImageTrackerBaseBehaviour_t2136520886_0_0_0_Types[] = { &ImageTrackerBaseBehaviour_t2136520886_0_0_0 };
+extern const Il2CppGenericInst GenInst_ImageTrackerBaseBehaviour_t2136520886_0_0_0 = { 1, GenInst_ImageTrackerBaseBehaviour_t2136520886_0_0_0_Types };
+static const Il2CppType* GenInst_Int32_t1448170597_0_0_0_ImageTargetBaseBehaviour_t1600490913_0_0_0_Types[] = { &Int32_t1448170597_0_0_0, &ImageTargetBaseBehaviour_t1600490913_0_0_0 };
+extern const Il2CppGenericInst GenInst_Int32_t1448170597_0_0_0_ImageTargetBaseBehaviour_t1600490913_0_0_0 = { 2, GenInst_Int32_t1448170597_0_0_0_ImageTargetBaseBehaviour_t1600490913_0_0_0_Types };
+static const Il2CppType* GenInst_Int32_t1448170597_0_0_0_ImageTargetBaseBehaviour_t1600490913_0_0_0_DictionaryEntry_t1445113794_0_0_0_Types[] = { &Int32_t1448170597_0_0_0, &ImageTargetBaseBehaviour_t1600490913_0_0_0, &DictionaryEntry_t1445113794_0_0_0 };
+extern const Il2CppGenericInst GenInst_Int32_t1448170597_0_0_0_ImageTargetBaseBehaviour_t1600490913_0_0_0_DictionaryEntry_t1445113794_0_0_0 = { 3, GenInst_Int32_t1448170597_0_0_0_ImageTargetBaseBehaviour_t1600490913_0_0_0_DictionaryEntry_t1445113794_0_0_0_Types };
+extern const Il2CppType KeyValuePair_2_t2520269624_0_0_0;
+static const Il2CppType* GenInst_KeyValuePair_2_t2520269624_0_0_0_Types[] = { &KeyValuePair_2_t2520269624_0_0_0 };
+extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2520269624_0_0_0 = { 1, GenInst_KeyValuePair_2_t2520269624_0_0_0_Types };
+static const Il2CppType* GenInst_ImageTargetBaseBehaviour_t1600490913_0_0_0_Types[] = { &ImageTargetBaseBehaviour_t1600490913_0_0_0 };
+extern const Il2CppGenericInst GenInst_ImageTargetBaseBehaviour_t1600490913_0_0_0 = { 1, GenInst_ImageTargetBaseBehaviour_t1600490913_0_0_0_Types };
+static const Il2CppType* GenInst_ImageTargetBaseBehaviour_t1600490913_0_0_0_ImageTrackerBaseBehaviour_t2136520886_0_0_0_Boolean_t3143194569_0_0_0_Types[] = { &ImageTargetBaseBehaviour_t1600490913_0_0_0, &ImageTrackerBaseBehaviour_t2136520886_0_0_0, &Boolean_t3143194569_0_0_0 };
+extern const Il2CppGenericInst GenInst_ImageTargetBaseBehaviour_t1600490913_0_0_0_ImageTrackerBaseBehaviour_t2136520886_0_0_0_Boolean_t3143194569_0_0_0 = { 3, GenInst_ImageTargetBaseBehaviour_t1600490913_0_0_0_ImageTrackerBaseBehaviour_t2136520886_0_0_0_Boolean_t3143194569_0_0_0_Types };
+static const Il2CppType* GenInst_ImageTrackerBaseBehaviour_t2136520886_0_0_0_ImageTargetBaseBehaviour_t1600490913_0_0_0_Target_t2319079912_0_0_0_Boolean_t3143194569_0_0_0_Types[] = { &ImageTrackerBaseBehaviour_t2136520886_0_0_0, &ImageTargetBaseBehaviour_t1600490913_0_0_0, &Target_t2319079912_0_0_0, &Boolean_t3143194569_0_0_0 };
+extern const Il2CppGenericInst GenInst_ImageTrackerBaseBehaviour_t2136520886_0_0_0_ImageTargetBaseBehaviour_t1600490913_0_0_0_Target_t2319079912_0_0_0_Boolean_t3143194569_0_0_0 = { 4, GenInst_ImageTrackerBaseBehaviour_t2136520886_0_0_0_ImageTargetBaseBehaviour_t1600490913_0_0_0_Target_t2319079912_0_0_0_Boolean_t3143194569_0_0_0_Types };
+static const Il2CppType* GenInst_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0_Types[] = { &Il2CppObject_0_0_0, &Il2CppObject_0_0_0, &Il2CppObject_0_0_0, &Boolean_t3143194569_0_0_0 };
+extern const Il2CppGenericInst GenInst_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0 = { 4, GenInst_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0_Types };
+extern const Il2CppType RealityPlaneBaseBehaviour_t1656126547_0_0_0;
+static const Il2CppType* GenInst_RealityPlaneBaseBehaviour_t1656126547_0_0_0_Types[] = { &RealityPlaneBaseBehaviour_t1656126547_0_0_0 };
+extern const Il2CppGenericInst GenInst_RealityPlaneBaseBehaviour_t1656126547_0_0_0 = { 1, GenInst_RealityPlaneBaseBehaviour_t1656126547_0_0_0_Types };
+extern const Il2CppType CameraDeviceBaseBehaviour_t273615152_0_0_0;
+static const Il2CppType* GenInst_CameraDeviceBaseBehaviour_t273615152_0_0_0_Types[] = { &CameraDeviceBaseBehaviour_t273615152_0_0_0 };
+extern const Il2CppGenericInst GenInst_CameraDeviceBaseBehaviour_t273615152_0_0_0 = { 1, GenInst_CameraDeviceBaseBehaviour_t273615152_0_0_0_Types };
+static const Il2CppType* GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_Types[] = { &AugmenterBaseBehaviour_t2200604009_0_0_0 };
+extern const Il2CppGenericInst GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0 = { 1, GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_Types };
 extern const Il2CppType InvBaseItem_t3744336511_0_0_0;
 static const Il2CppType* GenInst_InvBaseItem_t3744336511_0_0_0_Types[] = { &InvBaseItem_t3744336511_0_0_0 };
 extern const Il2CppGenericInst GenInst_InvBaseItem_t3744336511_0_0_0 = { 1, GenInst_InvBaseItem_t3744336511_0_0_0_Types };
 extern const Il2CppType InvDatabase_t2993806330_0_0_0;
 static const Il2CppType* GenInst_InvDatabase_t2993806330_0_0_0_Types[] = { &InvDatabase_t2993806330_0_0_0 };
 extern const Il2CppGenericInst GenInst_InvDatabase_t2993806330_0_0_0 = { 1, GenInst_InvDatabase_t2993806330_0_0_0_Types };
-extern const Il2CppType MonoBehaviour_t774292115_0_0_0;
-static const Il2CppType* GenInst_MonoBehaviour_t774292115_0_0_0_Types[] = { &MonoBehaviour_t774292115_0_0_0 };
-extern const Il2CppGenericInst GenInst_MonoBehaviour_t774292115_0_0_0 = { 1, GenInst_MonoBehaviour_t774292115_0_0_0_Types };
 extern const Il2CppType InvStat_t3409229249_0_0_0;
 static const Il2CppType* GenInst_InvStat_t3409229249_0_0_0_Types[] = { &InvStat_t3409229249_0_0_0 };
 extern const Il2CppGenericInst GenInst_InvStat_t3409229249_0_0_0 = { 1, GenInst_InvStat_t3409229249_0_0_0_Types };
@@ -796,6 +915,35 @@ extern const Il2CppGenericInst GenInst_KeyValuePair_2_t1252866079_0_0_0 = { 1, G
 extern const Il2CppType Paragraph_t3320658422_0_0_0;
 static const Il2CppType* GenInst_Paragraph_t3320658422_0_0_0_Types[] = { &Paragraph_t3320658422_0_0_0 };
 extern const Il2CppGenericInst GenInst_Paragraph_t3320658422_0_0_0 = { 1, GenInst_Paragraph_t3320658422_0_0_0_Types };
+extern const Il2CppType AssetBundle_t945621937_0_0_0;
+static const Il2CppType* GenInst_String_t_0_0_0_AssetBundle_t945621937_0_0_0_Types[] = { &String_t_0_0_0, &AssetBundle_t945621937_0_0_0 };
+extern const Il2CppGenericInst GenInst_String_t_0_0_0_AssetBundle_t945621937_0_0_0 = { 2, GenInst_String_t_0_0_0_AssetBundle_t945621937_0_0_0_Types };
+static const Il2CppType* GenInst_String_t_0_0_0_AssetBundle_t945621937_0_0_0_DictionaryEntry_t1445113794_0_0_0_Types[] = { &String_t_0_0_0, &AssetBundle_t945621937_0_0_0, &DictionaryEntry_t1445113794_0_0_0 };
+extern const Il2CppGenericInst GenInst_String_t_0_0_0_AssetBundle_t945621937_0_0_0_DictionaryEntry_t1445113794_0_0_0 = { 3, GenInst_String_t_0_0_0_AssetBundle_t945621937_0_0_0_DictionaryEntry_t1445113794_0_0_0_Types };
+extern const Il2CppType KeyValuePair_2_t2314923833_0_0_0;
+static const Il2CppType* GenInst_KeyValuePair_2_t2314923833_0_0_0_Types[] = { &KeyValuePair_2_t2314923833_0_0_0 };
+extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2314923833_0_0_0 = { 1, GenInst_KeyValuePair_2_t2314923833_0_0_0_Types };
+static const Il2CppType* GenInst_String_t_0_0_0_GameObject_t1366199518_0_0_0_Types[] = { &String_t_0_0_0, &GameObject_t1366199518_0_0_0 };
+extern const Il2CppGenericInst GenInst_String_t_0_0_0_GameObject_t1366199518_0_0_0 = { 2, GenInst_String_t_0_0_0_GameObject_t1366199518_0_0_0_Types };
+static const Il2CppType* GenInst_String_t_0_0_0_GameObject_t1366199518_0_0_0_DictionaryEntry_t1445113794_0_0_0_Types[] = { &String_t_0_0_0, &GameObject_t1366199518_0_0_0, &DictionaryEntry_t1445113794_0_0_0 };
+extern const Il2CppGenericInst GenInst_String_t_0_0_0_GameObject_t1366199518_0_0_0_DictionaryEntry_t1445113794_0_0_0 = { 3, GenInst_String_t_0_0_0_GameObject_t1366199518_0_0_0_DictionaryEntry_t1445113794_0_0_0_Types };
+extern const Il2CppType KeyValuePair_2_t2735501414_0_0_0;
+static const Il2CppType* GenInst_KeyValuePair_2_t2735501414_0_0_0_Types[] = { &KeyValuePair_2_t2735501414_0_0_0 };
+extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2735501414_0_0_0 = { 1, GenInst_KeyValuePair_2_t2735501414_0_0_0_Types };
+extern const Il2CppType JSONNode_t1109731523_0_0_0;
+static const Il2CppType* GenInst_JSONNode_t1109731523_0_0_0_Types[] = { &JSONNode_t1109731523_0_0_0 };
+extern const Il2CppGenericInst GenInst_JSONNode_t1109731523_0_0_0 = { 1, GenInst_JSONNode_t1109731523_0_0_0_Types };
+static const Il2CppType* GenInst_String_t_0_0_0_JSONNode_t1109731523_0_0_0_Types[] = { &String_t_0_0_0, &JSONNode_t1109731523_0_0_0 };
+extern const Il2CppGenericInst GenInst_String_t_0_0_0_JSONNode_t1109731523_0_0_0 = { 2, GenInst_String_t_0_0_0_JSONNode_t1109731523_0_0_0_Types };
+static const Il2CppType* GenInst_String_t_0_0_0_JSONNode_t1109731523_0_0_0_DictionaryEntry_t1445113794_0_0_0_Types[] = { &String_t_0_0_0, &JSONNode_t1109731523_0_0_0, &DictionaryEntry_t1445113794_0_0_0 };
+extern const Il2CppGenericInst GenInst_String_t_0_0_0_JSONNode_t1109731523_0_0_0_DictionaryEntry_t1445113794_0_0_0 = { 3, GenInst_String_t_0_0_0_JSONNode_t1109731523_0_0_0_DictionaryEntry_t1445113794_0_0_0_Types };
+extern const Il2CppType KeyValuePair_2_t2479033419_0_0_0;
+static const Il2CppType* GenInst_KeyValuePair_2_t2479033419_0_0_0_Types[] = { &KeyValuePair_2_t2479033419_0_0_0 };
+extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2479033419_0_0_0 = { 1, GenInst_KeyValuePair_2_t2479033419_0_0_0_Types };
+static const Il2CppType* GenInst_KeyValuePair_2_t2479033419_0_0_0_Boolean_t3143194569_0_0_0_Types[] = { &KeyValuePair_2_t2479033419_0_0_0, &Boolean_t3143194569_0_0_0 };
+extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2479033419_0_0_0_Boolean_t3143194569_0_0_0 = { 2, GenInst_KeyValuePair_2_t2479033419_0_0_0_Boolean_t3143194569_0_0_0_Types };
+static const Il2CppType* GenInst_KeyValuePair_2_t1944347872_0_0_0_Boolean_t3143194569_0_0_0_Types[] = { &KeyValuePair_2_t1944347872_0_0_0, &Boolean_t3143194569_0_0_0 };
+extern const Il2CppGenericInst GenInst_KeyValuePair_2_t1944347872_0_0_0_Boolean_t3143194569_0_0_0 = { 2, GenInst_KeyValuePair_2_t1944347872_0_0_0_Boolean_t3143194569_0_0_0_Types };
 extern const Il2CppType IEnumerable_1_t1515280975_gp_0_0_0_0;
 static const Il2CppType* GenInst_IEnumerable_1_t1515280975_gp_0_0_0_0_Types[] = { &IEnumerable_1_t1515280975_gp_0_0_0_0 };
 extern const Il2CppGenericInst GenInst_IEnumerable_1_t1515280975_gp_0_0_0_0 = { 1, GenInst_IEnumerable_1_t1515280975_gp_0_0_0_0_Types };
@@ -991,18 +1139,34 @@ extern const Il2CppGenericInst GenInst_Enumerator_t3188879113_gp_0_0_0_0_Enumera
 extern const Il2CppType KeyValuePair_2_t4237323293_0_0_0;
 static const Il2CppType* GenInst_KeyValuePair_2_t4237323293_0_0_0_Types[] = { &KeyValuePair_2_t4237323293_0_0_0 };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t4237323293_0_0_0 = { 1, GenInst_KeyValuePair_2_t4237323293_0_0_0_Types };
+extern const Il2CppType KeyCollection_t1676215791_gp_0_0_0_0;
+extern const Il2CppType KeyCollection_t1676215791_gp_1_0_0_0;
+static const Il2CppType* GenInst_KeyCollection_t1676215791_gp_0_0_0_0_KeyCollection_t1676215791_gp_1_0_0_0_Types[] = { &KeyCollection_t1676215791_gp_0_0_0_0, &KeyCollection_t1676215791_gp_1_0_0_0 };
+extern const Il2CppGenericInst GenInst_KeyCollection_t1676215791_gp_0_0_0_0_KeyCollection_t1676215791_gp_1_0_0_0 = { 2, GenInst_KeyCollection_t1676215791_gp_0_0_0_0_KeyCollection_t1676215791_gp_1_0_0_0_Types };
+static const Il2CppType* GenInst_KeyCollection_t1676215791_gp_0_0_0_0_Types[] = { &KeyCollection_t1676215791_gp_0_0_0_0 };
+extern const Il2CppGenericInst GenInst_KeyCollection_t1676215791_gp_0_0_0_0 = { 1, GenInst_KeyCollection_t1676215791_gp_0_0_0_0_Types };
+extern const Il2CppType Enumerator_t3188879114_gp_0_0_0_0;
+extern const Il2CppType Enumerator_t3188879114_gp_1_0_0_0;
+static const Il2CppType* GenInst_Enumerator_t3188879114_gp_0_0_0_0_Enumerator_t3188879114_gp_1_0_0_0_Types[] = { &Enumerator_t3188879114_gp_0_0_0_0, &Enumerator_t3188879114_gp_1_0_0_0 };
+extern const Il2CppGenericInst GenInst_Enumerator_t3188879114_gp_0_0_0_0_Enumerator_t3188879114_gp_1_0_0_0 = { 2, GenInst_Enumerator_t3188879114_gp_0_0_0_0_Enumerator_t3188879114_gp_1_0_0_0_Types };
+static const Il2CppType* GenInst_Enumerator_t3188879114_gp_0_0_0_0_Types[] = { &Enumerator_t3188879114_gp_0_0_0_0 };
+extern const Il2CppGenericInst GenInst_Enumerator_t3188879114_gp_0_0_0_0 = { 1, GenInst_Enumerator_t3188879114_gp_0_0_0_0_Types };
+static const Il2CppType* GenInst_KeyCollection_t1676215791_gp_0_0_0_0_KeyCollection_t1676215791_gp_1_0_0_0_KeyCollection_t1676215791_gp_0_0_0_0_Types[] = { &KeyCollection_t1676215791_gp_0_0_0_0, &KeyCollection_t1676215791_gp_1_0_0_0, &KeyCollection_t1676215791_gp_0_0_0_0 };
+extern const Il2CppGenericInst GenInst_KeyCollection_t1676215791_gp_0_0_0_0_KeyCollection_t1676215791_gp_1_0_0_0_KeyCollection_t1676215791_gp_0_0_0_0 = { 3, GenInst_KeyCollection_t1676215791_gp_0_0_0_0_KeyCollection_t1676215791_gp_1_0_0_0_KeyCollection_t1676215791_gp_0_0_0_0_Types };
+static const Il2CppType* GenInst_KeyCollection_t1676215791_gp_0_0_0_0_KeyCollection_t1676215791_gp_0_0_0_0_Types[] = { &KeyCollection_t1676215791_gp_0_0_0_0, &KeyCollection_t1676215791_gp_0_0_0_0 };
+extern const Il2CppGenericInst GenInst_KeyCollection_t1676215791_gp_0_0_0_0_KeyCollection_t1676215791_gp_0_0_0_0 = { 2, GenInst_KeyCollection_t1676215791_gp_0_0_0_0_KeyCollection_t1676215791_gp_0_0_0_0_Types };
 extern const Il2CppType ValueCollection_t547226759_gp_0_0_0_0;
 extern const Il2CppType ValueCollection_t547226759_gp_1_0_0_0;
 static const Il2CppType* GenInst_ValueCollection_t547226759_gp_0_0_0_0_ValueCollection_t547226759_gp_1_0_0_0_Types[] = { &ValueCollection_t547226759_gp_0_0_0_0, &ValueCollection_t547226759_gp_1_0_0_0 };
 extern const Il2CppGenericInst GenInst_ValueCollection_t547226759_gp_0_0_0_0_ValueCollection_t547226759_gp_1_0_0_0 = { 2, GenInst_ValueCollection_t547226759_gp_0_0_0_0_ValueCollection_t547226759_gp_1_0_0_0_Types };
 static const Il2CppType* GenInst_ValueCollection_t547226759_gp_1_0_0_0_Types[] = { &ValueCollection_t547226759_gp_1_0_0_0 };
 extern const Il2CppGenericInst GenInst_ValueCollection_t547226759_gp_1_0_0_0 = { 1, GenInst_ValueCollection_t547226759_gp_1_0_0_0_Types };
-extern const Il2CppType Enumerator_t3188879114_gp_0_0_0_0;
-extern const Il2CppType Enumerator_t3188879114_gp_1_0_0_0;
-static const Il2CppType* GenInst_Enumerator_t3188879114_gp_0_0_0_0_Enumerator_t3188879114_gp_1_0_0_0_Types[] = { &Enumerator_t3188879114_gp_0_0_0_0, &Enumerator_t3188879114_gp_1_0_0_0 };
-extern const Il2CppGenericInst GenInst_Enumerator_t3188879114_gp_0_0_0_0_Enumerator_t3188879114_gp_1_0_0_0 = { 2, GenInst_Enumerator_t3188879114_gp_0_0_0_0_Enumerator_t3188879114_gp_1_0_0_0_Types };
-static const Il2CppType* GenInst_Enumerator_t3188879114_gp_1_0_0_0_Types[] = { &Enumerator_t3188879114_gp_1_0_0_0 };
-extern const Il2CppGenericInst GenInst_Enumerator_t3188879114_gp_1_0_0_0 = { 1, GenInst_Enumerator_t3188879114_gp_1_0_0_0_Types };
+extern const Il2CppType Enumerator_t3188879115_gp_0_0_0_0;
+extern const Il2CppType Enumerator_t3188879115_gp_1_0_0_0;
+static const Il2CppType* GenInst_Enumerator_t3188879115_gp_0_0_0_0_Enumerator_t3188879115_gp_1_0_0_0_Types[] = { &Enumerator_t3188879115_gp_0_0_0_0, &Enumerator_t3188879115_gp_1_0_0_0 };
+extern const Il2CppGenericInst GenInst_Enumerator_t3188879115_gp_0_0_0_0_Enumerator_t3188879115_gp_1_0_0_0 = { 2, GenInst_Enumerator_t3188879115_gp_0_0_0_0_Enumerator_t3188879115_gp_1_0_0_0_Types };
+static const Il2CppType* GenInst_Enumerator_t3188879115_gp_1_0_0_0_Types[] = { &Enumerator_t3188879115_gp_1_0_0_0 };
+extern const Il2CppGenericInst GenInst_Enumerator_t3188879115_gp_1_0_0_0 = { 1, GenInst_Enumerator_t3188879115_gp_1_0_0_0_Types };
 static const Il2CppType* GenInst_ValueCollection_t547226759_gp_0_0_0_0_ValueCollection_t547226759_gp_1_0_0_0_ValueCollection_t547226759_gp_1_0_0_0_Types[] = { &ValueCollection_t547226759_gp_0_0_0_0, &ValueCollection_t547226759_gp_1_0_0_0, &ValueCollection_t547226759_gp_1_0_0_0 };
 extern const Il2CppGenericInst GenInst_ValueCollection_t547226759_gp_0_0_0_0_ValueCollection_t547226759_gp_1_0_0_0_ValueCollection_t547226759_gp_1_0_0_0 = { 3, GenInst_ValueCollection_t547226759_gp_0_0_0_0_ValueCollection_t547226759_gp_1_0_0_0_ValueCollection_t547226759_gp_1_0_0_0_Types };
 static const Il2CppType* GenInst_ValueCollection_t547226759_gp_1_0_0_0_ValueCollection_t547226759_gp_1_0_0_0_Types[] = { &ValueCollection_t547226759_gp_1_0_0_0, &ValueCollection_t547226759_gp_1_0_0_0 };
@@ -1038,9 +1202,9 @@ extern const Il2CppGenericInst GenInst_KeyValuePair_2_t3482176515_gp_0_0_0_0_Key
 extern const Il2CppType List_1_t1454039258_gp_0_0_0_0;
 static const Il2CppType* GenInst_List_1_t1454039258_gp_0_0_0_0_Types[] = { &List_1_t1454039258_gp_0_0_0_0 };
 extern const Il2CppGenericInst GenInst_List_1_t1454039258_gp_0_0_0_0 = { 1, GenInst_List_1_t1454039258_gp_0_0_0_0_Types };
-extern const Il2CppType Enumerator_t3188879115_gp_0_0_0_0;
-static const Il2CppType* GenInst_Enumerator_t3188879115_gp_0_0_0_0_Types[] = { &Enumerator_t3188879115_gp_0_0_0_0 };
-extern const Il2CppGenericInst GenInst_Enumerator_t3188879115_gp_0_0_0_0 = { 1, GenInst_Enumerator_t3188879115_gp_0_0_0_0_Types };
+extern const Il2CppType Enumerator_t3188879116_gp_0_0_0_0;
+static const Il2CppType* GenInst_Enumerator_t3188879116_gp_0_0_0_0_Types[] = { &Enumerator_t3188879116_gp_0_0_0_0 };
+extern const Il2CppGenericInst GenInst_Enumerator_t3188879116_gp_0_0_0_0 = { 1, GenInst_Enumerator_t3188879116_gp_0_0_0_0_Types };
 extern const Il2CppType Collection_1_t144455481_gp_0_0_0_0;
 static const Il2CppType* GenInst_Collection_1_t144455481_gp_0_0_0_0_Types[] = { &Collection_1_t144455481_gp_0_0_0_0 };
 extern const Il2CppGenericInst GenInst_Collection_1_t144455481_gp_0_0_0_0 = { 1, GenInst_Collection_1_t144455481_gp_0_0_0_0_Types };
@@ -1057,9 +1221,36 @@ extern const Il2CppGenericInst GenInst_MonoProperty_StaticGetterAdapterFrame_m12
 extern const Il2CppType Stack_1_t891184666_gp_0_0_0_0;
 static const Il2CppType* GenInst_Stack_1_t891184666_gp_0_0_0_0_Types[] = { &Stack_1_t891184666_gp_0_0_0_0 };
 extern const Il2CppGenericInst GenInst_Stack_1_t891184666_gp_0_0_0_0 = { 1, GenInst_Stack_1_t891184666_gp_0_0_0_0_Types };
-extern const Il2CppType Enumerator_t3188879116_gp_0_0_0_0;
-static const Il2CppType* GenInst_Enumerator_t3188879116_gp_0_0_0_0_Types[] = { &Enumerator_t3188879116_gp_0_0_0_0 };
-extern const Il2CppGenericInst GenInst_Enumerator_t3188879116_gp_0_0_0_0 = { 1, GenInst_Enumerator_t3188879116_gp_0_0_0_0_Types };
+extern const Il2CppType Enumerator_t3188879117_gp_0_0_0_0;
+static const Il2CppType* GenInst_Enumerator_t3188879117_gp_0_0_0_0_Types[] = { &Enumerator_t3188879117_gp_0_0_0_0 };
+extern const Il2CppGenericInst GenInst_Enumerator_t3188879117_gp_0_0_0_0 = { 1, GenInst_Enumerator_t3188879117_gp_0_0_0_0_Types };
+extern const Il2CppType Enumerable_ElementAt_m258442918_gp_0_0_0_0;
+static const Il2CppType* GenInst_Enumerable_ElementAt_m258442918_gp_0_0_0_0_Types[] = { &Enumerable_ElementAt_m258442918_gp_0_0_0_0 };
+extern const Il2CppGenericInst GenInst_Enumerable_ElementAt_m258442918_gp_0_0_0_0 = { 1, GenInst_Enumerable_ElementAt_m258442918_gp_0_0_0_0_Types };
+extern const Il2CppType Enumerable_ElementAt_m714932326_gp_0_0_0_0;
+static const Il2CppType* GenInst_Enumerable_ElementAt_m714932326_gp_0_0_0_0_Types[] = { &Enumerable_ElementAt_m714932326_gp_0_0_0_0 };
+extern const Il2CppGenericInst GenInst_Enumerable_ElementAt_m714932326_gp_0_0_0_0 = { 1, GenInst_Enumerable_ElementAt_m714932326_gp_0_0_0_0_Types };
+extern const Il2CppType Enumerable_First_m1693250038_gp_0_0_0_0;
+static const Il2CppType* GenInst_Enumerable_First_m1693250038_gp_0_0_0_0_Types[] = { &Enumerable_First_m1693250038_gp_0_0_0_0 };
+extern const Il2CppGenericInst GenInst_Enumerable_First_m1693250038_gp_0_0_0_0 = { 1, GenInst_Enumerable_First_m1693250038_gp_0_0_0_0_Types };
+extern const Il2CppType Enumerable_ToList_m261161385_gp_0_0_0_0;
+static const Il2CppType* GenInst_Enumerable_ToList_m261161385_gp_0_0_0_0_Types[] = { &Enumerable_ToList_m261161385_gp_0_0_0_0 };
+extern const Il2CppGenericInst GenInst_Enumerable_ToList_m261161385_gp_0_0_0_0 = { 1, GenInst_Enumerable_ToList_m261161385_gp_0_0_0_0_Types };
+extern const Il2CppType Enumerable_Where_m2409552823_gp_0_0_0_0;
+static const Il2CppType* GenInst_Enumerable_Where_m2409552823_gp_0_0_0_0_Types[] = { &Enumerable_Where_m2409552823_gp_0_0_0_0 };
+extern const Il2CppGenericInst GenInst_Enumerable_Where_m2409552823_gp_0_0_0_0 = { 1, GenInst_Enumerable_Where_m2409552823_gp_0_0_0_0_Types };
+static const Il2CppType* GenInst_Enumerable_Where_m2409552823_gp_0_0_0_0_Boolean_t3143194569_0_0_0_Types[] = { &Enumerable_Where_m2409552823_gp_0_0_0_0, &Boolean_t3143194569_0_0_0 };
+extern const Il2CppGenericInst GenInst_Enumerable_Where_m2409552823_gp_0_0_0_0_Boolean_t3143194569_0_0_0 = { 2, GenInst_Enumerable_Where_m2409552823_gp_0_0_0_0_Boolean_t3143194569_0_0_0_Types };
+extern const Il2CppType Enumerable_CreateWhereIterator_m2714912225_gp_0_0_0_0;
+static const Il2CppType* GenInst_Enumerable_CreateWhereIterator_m2714912225_gp_0_0_0_0_Types[] = { &Enumerable_CreateWhereIterator_m2714912225_gp_0_0_0_0 };
+extern const Il2CppGenericInst GenInst_Enumerable_CreateWhereIterator_m2714912225_gp_0_0_0_0 = { 1, GenInst_Enumerable_CreateWhereIterator_m2714912225_gp_0_0_0_0_Types };
+static const Il2CppType* GenInst_Enumerable_CreateWhereIterator_m2714912225_gp_0_0_0_0_Boolean_t3143194569_0_0_0_Types[] = { &Enumerable_CreateWhereIterator_m2714912225_gp_0_0_0_0, &Boolean_t3143194569_0_0_0 };
+extern const Il2CppGenericInst GenInst_Enumerable_CreateWhereIterator_m2714912225_gp_0_0_0_0_Boolean_t3143194569_0_0_0 = { 2, GenInst_Enumerable_CreateWhereIterator_m2714912225_gp_0_0_0_0_Boolean_t3143194569_0_0_0_Types };
+extern const Il2CppType U3CCreateWhereIteratorU3Ec__Iterator1D_1_t4162367772_gp_0_0_0_0;
+static const Il2CppType* GenInst_U3CCreateWhereIteratorU3Ec__Iterator1D_1_t4162367772_gp_0_0_0_0_Types[] = { &U3CCreateWhereIteratorU3Ec__Iterator1D_1_t4162367772_gp_0_0_0_0 };
+extern const Il2CppGenericInst GenInst_U3CCreateWhereIteratorU3Ec__Iterator1D_1_t4162367772_gp_0_0_0_0 = { 1, GenInst_U3CCreateWhereIteratorU3Ec__Iterator1D_1_t4162367772_gp_0_0_0_0_Types };
+static const Il2CppType* GenInst_U3CCreateWhereIteratorU3Ec__Iterator1D_1_t4162367772_gp_0_0_0_0_Boolean_t3143194569_0_0_0_Types[] = { &U3CCreateWhereIteratorU3Ec__Iterator1D_1_t4162367772_gp_0_0_0_0, &Boolean_t3143194569_0_0_0 };
+extern const Il2CppGenericInst GenInst_U3CCreateWhereIteratorU3Ec__Iterator1D_1_t4162367772_gp_0_0_0_0_Boolean_t3143194569_0_0_0 = { 2, GenInst_U3CCreateWhereIteratorU3Ec__Iterator1D_1_t4162367772_gp_0_0_0_0_Boolean_t3143194569_0_0_0_Types };
 extern const Il2CppType Object_FindObjectsOfType_m894835059_gp_0_0_0_0;
 static const Il2CppType* GenInst_Object_FindObjectsOfType_m894835059_gp_0_0_0_0_Types[] = { &Object_FindObjectsOfType_m894835059_gp_0_0_0_0 };
 extern const Il2CppGenericInst GenInst_Object_FindObjectsOfType_m894835059_gp_0_0_0_0 = { 1, GenInst_Object_FindObjectsOfType_m894835059_gp_0_0_0_0_Types };
@@ -1093,6 +1284,9 @@ extern const Il2CppGenericInst GenInst_Component_GetComponents_m3990064736_gp_0_
 extern const Il2CppType Component_GetComponents_m2051523689_gp_0_0_0_0;
 static const Il2CppType* GenInst_Component_GetComponents_m2051523689_gp_0_0_0_0_Types[] = { &Component_GetComponents_m2051523689_gp_0_0_0_0 };
 extern const Il2CppGenericInst GenInst_Component_GetComponents_m2051523689_gp_0_0_0_0 = { 1, GenInst_Component_GetComponents_m2051523689_gp_0_0_0_0_Types };
+extern const Il2CppType GameObject_GetComponentInChildren_m3844288190_gp_0_0_0_0;
+static const Il2CppType* GenInst_GameObject_GetComponentInChildren_m3844288190_gp_0_0_0_0_Types[] = { &GameObject_GetComponentInChildren_m3844288190_gp_0_0_0_0 };
+extern const Il2CppGenericInst GenInst_GameObject_GetComponentInChildren_m3844288190_gp_0_0_0_0 = { 1, GenInst_GameObject_GetComponentInChildren_m3844288190_gp_0_0_0_0_Types };
 extern const Il2CppType GameObject_GetComponentsInChildren_m1933507101_gp_0_0_0_0;
 static const Il2CppType* GenInst_GameObject_GetComponentsInChildren_m1933507101_gp_0_0_0_0_Types[] = { &GameObject_GetComponentsInChildren_m1933507101_gp_0_0_0_0 };
 extern const Il2CppGenericInst GenInst_GameObject_GetComponentsInChildren_m1933507101_gp_0_0_0_0 = { 1, GenInst_GameObject_GetComponentsInChildren_m1933507101_gp_0_0_0_0_Types };
@@ -1174,12 +1368,30 @@ extern const Il2CppGenericInst GenInst_AndroidNativeFunction_CallNativeFunctionF
 extern const Il2CppType GUILayer_t1686820861_0_0_0;
 static const Il2CppType* GenInst_GUILayer_t1686820861_0_0_0_Types[] = { &GUILayer_t1686820861_0_0_0 };
 extern const Il2CppGenericInst GenInst_GUILayer_t1686820861_0_0_0 = { 1, GenInst_GUILayer_t1686820861_0_0_0_Types };
+extern const Il2CppType Renderer_t2715231144_0_0_0;
+static const Il2CppType* GenInst_Renderer_t2715231144_0_0_0_Types[] = { &Renderer_t2715231144_0_0_0 };
+extern const Il2CppGenericInst GenInst_Renderer_t2715231144_0_0_0 = { 1, GenInst_Renderer_t2715231144_0_0_0_Types };
+extern const Il2CppType MeshFilter_t3840334098_0_0_0;
+static const Il2CppType* GenInst_MeshFilter_t3840334098_0_0_0_Types[] = { &MeshFilter_t3840334098_0_0_0 };
+extern const Il2CppGenericInst GenInst_MeshFilter_t3840334098_0_0_0 = { 1, GenInst_MeshFilter_t3840334098_0_0_0_Types };
+extern const Il2CppType TextMesh_t3293161711_0_0_0;
+static const Il2CppType* GenInst_TextMesh_t3293161711_0_0_0_Types[] = { &TextMesh_t3293161711_0_0_0 };
+extern const Il2CppGenericInst GenInst_TextMesh_t3293161711_0_0_0 = { 1, GenInst_TextMesh_t3293161711_0_0_0_Types };
 extern const Il2CppType ActiveAnimation_t4137610604_0_0_0;
 static const Il2CppType* GenInst_ActiveAnimation_t4137610604_0_0_0_Types[] = { &ActiveAnimation_t4137610604_0_0_0 };
 extern const Il2CppGenericInst GenInst_ActiveAnimation_t4137610604_0_0_0 = { 1, GenInst_ActiveAnimation_t4137610604_0_0_0_Types };
+extern const Il2CppType AssetLoad_t3126280200_0_0_0;
+static const Il2CppType* GenInst_AssetLoad_t3126280200_0_0_0_Types[] = { &AssetLoad_t3126280200_0_0_0 };
+extern const Il2CppGenericInst GenInst_AssetLoad_t3126280200_0_0_0 = { 1, GenInst_AssetLoad_t3126280200_0_0_0_Types };
+extern const Il2CppType CatchQuan_t830316542_0_0_0;
+static const Il2CppType* GenInst_CatchQuan_t830316542_0_0_0_Types[] = { &CatchQuan_t830316542_0_0_0 };
+extern const Il2CppGenericInst GenInst_CatchQuan_t830316542_0_0_0 = { 1, GenInst_CatchQuan_t830316542_0_0_0_Types };
 extern const Il2CppType UIInput_t860674234_0_0_0;
 static const Il2CppType* GenInst_UIInput_t860674234_0_0_0_Types[] = { &UIInput_t860674234_0_0_0 };
 extern const Il2CppGenericInst GenInst_UIInput_t860674234_0_0_0 = { 1, GenInst_UIInput_t860674234_0_0_0_Types };
+extern const Il2CppType FilesManager_t2291984574_0_0_0;
+static const Il2CppType* GenInst_FilesManager_t2291984574_0_0_0_Types[] = { &FilesManager_t2291984574_0_0_0 };
+extern const Il2CppGenericInst GenInst_FilesManager_t2291984574_0_0_0 = { 1, GenInst_FilesManager_t2291984574_0_0_0_Types };
 extern const Il2CppType UITexture_t2537039969_0_0_0;
 static const Il2CppType* GenInst_UITexture_t2537039969_0_0_0_Types[] = { &UITexture_t2537039969_0_0_0 };
 extern const Il2CppGenericInst GenInst_UITexture_t2537039969_0_0_0 = { 1, GenInst_UITexture_t2537039969_0_0_0_Types };
@@ -1189,15 +1401,39 @@ extern const Il2CppGenericInst GenInst_InvEquipment_t384603053_0_0_0 = { 1, GenI
 extern const Il2CppType ExampleDragDropSurface_t2585250672_0_0_0;
 static const Il2CppType* GenInst_ExampleDragDropSurface_t2585250672_0_0_0_Types[] = { &ExampleDragDropSurface_t2585250672_0_0_0 };
 extern const Il2CppGenericInst GenInst_ExampleDragDropSurface_t2585250672_0_0_0 = { 1, GenInst_ExampleDragDropSurface_t2585250672_0_0_0_Types };
-extern const Il2CppType Renderer_t2715231144_0_0_0;
-static const Il2CppType* GenInst_Renderer_t2715231144_0_0_0_Types[] = { &Renderer_t2715231144_0_0_0 };
-extern const Il2CppGenericInst GenInst_Renderer_t2715231144_0_0_0 = { 1, GenInst_Renderer_t2715231144_0_0_0_Types };
+extern const Il2CppType MySpriteDecMain_t1599878596_0_0_0;
+static const Il2CppType* GenInst_MySpriteDecMain_t1599878596_0_0_0_Types[] = { &MySpriteDecMain_t1599878596_0_0_0 };
+extern const Il2CppGenericInst GenInst_MySpriteDecMain_t1599878596_0_0_0 = { 1, GenInst_MySpriteDecMain_t1599878596_0_0_0_Types };
+extern const Il2CppType GoodsItem_t1184035003_0_0_0;
+static const Il2CppType* GenInst_GoodsItem_t1184035003_0_0_0_Types[] = { &GoodsItem_t1184035003_0_0_0 };
+extern const Il2CppGenericInst GenInst_GoodsItem_t1184035003_0_0_0 = { 1, GenInst_GoodsItem_t1184035003_0_0_0_Types };
+extern const Il2CppType UIGrid_t2420180906_0_0_0;
+static const Il2CppType* GenInst_UIGrid_t2420180906_0_0_0_Types[] = { &UIGrid_t2420180906_0_0_0 };
+extern const Il2CppGenericInst GenInst_UIGrid_t2420180906_0_0_0 = { 1, GenInst_UIGrid_t2420180906_0_0_0_Types };
+extern const Il2CppType MobileCamera_t1503681139_0_0_0;
+static const Il2CppType* GenInst_MobileCamera_t1503681139_0_0_0_Types[] = { &MobileCamera_t1503681139_0_0_0 };
+extern const Il2CppGenericInst GenInst_MobileCamera_t1503681139_0_0_0 = { 1, GenInst_MobileCamera_t1503681139_0_0_0_Types };
 extern const Il2CppType UIPopupList_t109953940_0_0_0;
 static const Il2CppType* GenInst_UIPopupList_t109953940_0_0_0_Types[] = { &UIPopupList_t109953940_0_0_0 };
 extern const Il2CppGenericInst GenInst_UIPopupList_t109953940_0_0_0 = { 1, GenInst_UIPopupList_t109953940_0_0_0_Types };
 extern const Il2CppType TextAsset_t4025741140_0_0_0;
 static const Il2CppType* GenInst_TextAsset_t4025741140_0_0_0_Types[] = { &TextAsset_t4025741140_0_0_0 };
 extern const Il2CppGenericInst GenInst_TextAsset_t4025741140_0_0_0 = { 1, GenInst_TextAsset_t4025741140_0_0_0_Types };
+extern const Il2CppType UIList_t3918749454_0_0_0;
+static const Il2CppType* GenInst_UIList_t3918749454_0_0_0_Types[] = { &UIList_t3918749454_0_0_0 };
+extern const Il2CppGenericInst GenInst_UIList_t3918749454_0_0_0 = { 1, GenInst_UIList_t3918749454_0_0_0_Types };
+extern const Il2CppType UISlider_t2191058247_0_0_0;
+static const Il2CppType* GenInst_UISlider_t2191058247_0_0_0_Types[] = { &UISlider_t2191058247_0_0_0 };
+extern const Il2CppGenericInst GenInst_UISlider_t2191058247_0_0_0 = { 1, GenInst_UISlider_t2191058247_0_0_0_Types };
+extern const Il2CppType GiftsItem_t1274332604_0_0_0;
+static const Il2CppType* GenInst_GiftsItem_t1274332604_0_0_0_Types[] = { &GiftsItem_t1274332604_0_0_0 };
+extern const Il2CppGenericInst GenInst_GiftsItem_t1274332604_0_0_0 = { 1, GenInst_GiftsItem_t1274332604_0_0_0_Types };
+extern const Il2CppType UIControlMySpirit_t24001844_0_0_0;
+static const Il2CppType* GenInst_UIControlMySpirit_t24001844_0_0_0_Types[] = { &UIControlMySpirit_t24001844_0_0_0 };
+extern const Il2CppGenericInst GenInst_UIControlMySpirit_t24001844_0_0_0 = { 1, GenInst_UIControlMySpirit_t24001844_0_0_0_Types };
+extern const Il2CppType MySpriteItem_t3317553624_0_0_0;
+static const Il2CppType* GenInst_MySpriteItem_t3317553624_0_0_0_Types[] = { &MySpriteItem_t3317553624_0_0_0 };
+extern const Il2CppGenericInst GenInst_MySpriteItem_t3317553624_0_0_0 = { 1, GenInst_MySpriteItem_t3317553624_0_0_0_Types };
 extern const Il2CppType NGUIDebug_t1735550160_0_0_0;
 static const Il2CppType* GenInst_NGUIDebug_t1735550160_0_0_0_Types[] = { &NGUIDebug_t1735550160_0_0_0 };
 extern const Il2CppGenericInst GenInst_NGUIDebug_t1735550160_0_0_0 = { 1, GenInst_NGUIDebug_t1735550160_0_0_0_Types };
@@ -1270,15 +1506,18 @@ extern const Il2CppGenericInst GenInst_TweenWidth_t511657453_0_0_0 = { 1, GenIns
 extern const Il2CppType UI2DSprite_t1082505957_0_0_0;
 static const Il2CppType* GenInst_UI2DSprite_t1082505957_0_0_0_Types[] = { &UI2DSprite_t1082505957_0_0_0 };
 extern const Il2CppGenericInst GenInst_UI2DSprite_t1082505957_0_0_0 = { 1, GenInst_UI2DSprite_t1082505957_0_0_0_Types };
-extern const Il2CppType UIGrid_t2420180906_0_0_0;
-static const Il2CppType* GenInst_UIGrid_t2420180906_0_0_0_Types[] = { &UIGrid_t2420180906_0_0_0 };
-extern const Il2CppGenericInst GenInst_UIGrid_t2420180906_0_0_0 = { 1, GenInst_UIGrid_t2420180906_0_0_0_Types };
 extern const Il2CppType UIWrapContent_t1931723019_0_0_0;
 static const Il2CppType* GenInst_UIWrapContent_t1931723019_0_0_0_Types[] = { &UIWrapContent_t1931723019_0_0_0 };
 extern const Il2CppGenericInst GenInst_UIWrapContent_t1931723019_0_0_0 = { 1, GenInst_UIWrapContent_t1931723019_0_0_0_Types };
 extern const Il2CppType UICenterOnChild_t1687745660_0_0_0;
 static const Il2CppType* GenInst_UICenterOnChild_t1687745660_0_0_0_Types[] = { &UICenterOnChild_t1687745660_0_0_0 };
 extern const Il2CppGenericInst GenInst_UICenterOnChild_t1687745660_0_0_0 = { 1, GenInst_UICenterOnChild_t1687745660_0_0_0_Types };
+extern const Il2CppType CatchMain_t3787564590_0_0_0;
+static const Il2CppType* GenInst_CatchMain_t3787564590_0_0_0_Types[] = { &CatchMain_t3787564590_0_0_0 };
+extern const Il2CppGenericInst GenInst_CatchMain_t3787564590_0_0_0 = { 1, GenInst_CatchMain_t3787564590_0_0_0_Types };
+extern const Il2CppType GroupPhotoMain_t323661952_0_0_0;
+static const Il2CppType* GenInst_GroupPhotoMain_t323661952_0_0_0_Types[] = { &GroupPhotoMain_t323661952_0_0_0 };
+extern const Il2CppGenericInst GenInst_GroupPhotoMain_t323661952_0_0_0 = { 1, GenInst_GroupPhotoMain_t323661952_0_0_0_Types };
 extern const Il2CppType UIDraggableCamera_t2562792962_0_0_0;
 static const Il2CppType* GenInst_UIDraggableCamera_t2562792962_0_0_0_Types[] = { &UIDraggableCamera_t2562792962_0_0_0 };
 extern const Il2CppGenericInst GenInst_UIDraggableCamera_t2562792962_0_0_0 = { 1, GenInst_UIDraggableCamera_t2562792962_0_0_0_Types };
@@ -1291,9 +1530,6 @@ extern const Il2CppGenericInst GenInst_UIDragDropItem_t4109477862_0_0_0 = { 1, G
 extern const Il2CppType UIDragDropContainer_t4036588756_0_0_0;
 static const Il2CppType* GenInst_UIDragDropContainer_t4036588756_0_0_0_Types[] = { &UIDragDropContainer_t4036588756_0_0_0 };
 extern const Il2CppGenericInst GenInst_UIDragDropContainer_t4036588756_0_0_0 = { 1, GenInst_UIDragDropContainer_t4036588756_0_0_0_Types };
-extern const Il2CppType MeshFilter_t3840334098_0_0_0;
-static const Il2CppType* GenInst_MeshFilter_t3840334098_0_0_0_Types[] = { &MeshFilter_t3840334098_0_0_0 };
-extern const Il2CppGenericInst GenInst_MeshFilter_t3840334098_0_0_0 = { 1, GenInst_MeshFilter_t3840334098_0_0_0_Types };
 extern const Il2CppType MeshRenderer_t2660348527_0_0_0;
 static const Il2CppType* GenInst_MeshRenderer_t2660348527_0_0_0_Types[] = { &MeshRenderer_t2660348527_0_0_0 };
 extern const Il2CppGenericInst GenInst_MeshRenderer_t2660348527_0_0_0 = { 1, GenInst_MeshRenderer_t2660348527_0_0_0_Types };
@@ -1312,9 +1548,8 @@ extern const Il2CppGenericInst GenInst_UIOrthoCamera_t1890393437_0_0_0 = { 1, Ge
 extern const Il2CppType UIProgressBar_t3824507790_0_0_0;
 static const Il2CppType* GenInst_UIProgressBar_t3824507790_0_0_0_Types[] = { &UIProgressBar_t3824507790_0_0_0 };
 extern const Il2CppGenericInst GenInst_UIProgressBar_t3824507790_0_0_0 = { 1, GenInst_UIProgressBar_t3824507790_0_0_0_Types };
-extern const Il2CppType UISlider_t2191058247_0_0_0;
-static const Il2CppType* GenInst_UISlider_t2191058247_0_0_0_Types[] = { &UISlider_t2191058247_0_0_0 };
-extern const Il2CppGenericInst GenInst_UISlider_t2191058247_0_0_0 = { 1, GenInst_UISlider_t2191058247_0_0_0_Types };
+static const Il2CppType* GenInst_KeyValuePair_2_t1944347872_0_0_0_KeyValuePair_2_t1944347872_0_0_0_Types[] = { &KeyValuePair_2_t1944347872_0_0_0, &KeyValuePair_2_t1944347872_0_0_0 };
+extern const Il2CppGenericInst GenInst_KeyValuePair_2_t1944347872_0_0_0_KeyValuePair_2_t1944347872_0_0_0 = { 2, GenInst_KeyValuePair_2_t1944347872_0_0_0_KeyValuePair_2_t1944347872_0_0_0_Types };
 static const Il2CppType* GenInst_Int32_t1448170597_0_0_0_Int32_t1448170597_0_0_0_Types[] = { &Int32_t1448170597_0_0_0, &Int32_t1448170597_0_0_0 };
 extern const Il2CppGenericInst GenInst_Int32_t1448170597_0_0_0_Int32_t1448170597_0_0_0 = { 2, GenInst_Int32_t1448170597_0_0_0_Int32_t1448170597_0_0_0_Types };
 static const Il2CppType* GenInst_CustomAttributeNamedArgument_t3611510553_0_0_0_CustomAttributeNamedArgument_t3611510553_0_0_0_Types[] = { &CustomAttributeNamedArgument_t3611510553_0_0_0, &CustomAttributeNamedArgument_t3611510553_0_0_0 };
@@ -1325,6 +1560,12 @@ static const Il2CppType* GenInst_KeyValuePair_2_t1627747851_0_0_0_KeyValuePair_2
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t1627747851_0_0_0_KeyValuePair_2_t1627747851_0_0_0 = { 2, GenInst_KeyValuePair_2_t1627747851_0_0_0_KeyValuePair_2_t1627747851_0_0_0_Types };
 static const Il2CppType* GenInst_KeyValuePair_2_t1627747851_0_0_0_Il2CppObject_0_0_0_Types[] = { &KeyValuePair_2_t1627747851_0_0_0, &Il2CppObject_0_0_0 };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t1627747851_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t1627747851_0_0_0_Il2CppObject_0_0_0_Types };
+static const Il2CppType* GenInst_KeyValuePair_2_t2181304024_0_0_0_KeyValuePair_2_t2181304024_0_0_0_Types[] = { &KeyValuePair_2_t2181304024_0_0_0, &KeyValuePair_2_t2181304024_0_0_0 };
+extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2181304024_0_0_0_KeyValuePair_2_t2181304024_0_0_0 = { 2, GenInst_KeyValuePair_2_t2181304024_0_0_0_KeyValuePair_2_t2181304024_0_0_0_Types };
+static const Il2CppType* GenInst_KeyValuePair_2_t2181304024_0_0_0_Il2CppObject_0_0_0_Types[] = { &KeyValuePair_2_t2181304024_0_0_0, &Il2CppObject_0_0_0 };
+extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2181304024_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t2181304024_0_0_0_Il2CppObject_0_0_0_Types };
+static const Il2CppType* GenInst_IntPtr_t_0_0_0_IntPtr_t_0_0_0_Types[] = { &IntPtr_t_0_0_0, &IntPtr_t_0_0_0 };
+extern const Il2CppGenericInst GenInst_IntPtr_t_0_0_0_IntPtr_t_0_0_0 = { 2, GenInst_IntPtr_t_0_0_0_IntPtr_t_0_0_0_Types };
 static const Il2CppType* GenInst_Boolean_t3143194569_0_0_0_Boolean_t3143194569_0_0_0_Types[] = { &Boolean_t3143194569_0_0_0, &Boolean_t3143194569_0_0_0 };
 extern const Il2CppGenericInst GenInst_Boolean_t3143194569_0_0_0_Boolean_t3143194569_0_0_0 = { 2, GenInst_Boolean_t3143194569_0_0_0_Boolean_t3143194569_0_0_0_Types };
 static const Il2CppType* GenInst_Boolean_t3143194569_0_0_0_Il2CppObject_0_0_0_Types[] = { &Boolean_t3143194569_0_0_0, &Il2CppObject_0_0_0 };
@@ -1337,11 +1578,9 @@ static const Il2CppType* GenInst_KeyValuePair_2_t2684549329_0_0_0_KeyValuePair_2
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2684549329_0_0_0_KeyValuePair_2_t2684549329_0_0_0 = { 2, GenInst_KeyValuePair_2_t2684549329_0_0_0_KeyValuePair_2_t2684549329_0_0_0_Types };
 static const Il2CppType* GenInst_KeyValuePair_2_t2684549329_0_0_0_Il2CppObject_0_0_0_Types[] = { &KeyValuePair_2_t2684549329_0_0_0, &Il2CppObject_0_0_0 };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2684549329_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t2684549329_0_0_0_Il2CppObject_0_0_0_Types };
-static const Il2CppType* GenInst_KeyValuePair_2_t1944347872_0_0_0_KeyValuePair_2_t1944347872_0_0_0_Types[] = { &KeyValuePair_2_t1944347872_0_0_0, &KeyValuePair_2_t1944347872_0_0_0 };
-extern const Il2CppGenericInst GenInst_KeyValuePair_2_t1944347872_0_0_0_KeyValuePair_2_t1944347872_0_0_0 = { 2, GenInst_KeyValuePair_2_t1944347872_0_0_0_KeyValuePair_2_t1944347872_0_0_0_Types };
 static const Il2CppType* GenInst_KeyValuePair_2_t1944347872_0_0_0_Il2CppObject_0_0_0_Types[] = { &KeyValuePair_2_t1944347872_0_0_0, &Il2CppObject_0_0_0 };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t1944347872_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t1944347872_0_0_0_Il2CppObject_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[459] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[552] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t1448170597_0_0_0,
@@ -1409,18 +1648,19 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[459] =
 	&GenInst_ConstructorInfo_t2856386896_0_0_0,
 	&GenInst__ConstructorInfo_t3459493955_0_0_0,
 	&GenInst_IntPtr_t_0_0_0,
-	&GenInst_TableRange_t736649775_0_0_0,
-	&GenInst_TailoringInfo_t291714550_0_0_0,
 	&GenInst_String_t_0_0_0_Int32_t1448170597_0_0_0,
 	&GenInst_Il2CppObject_0_0_0_Int32_t1448170597_0_0_0,
 	&GenInst_KeyValuePair_2_t2684549329_0_0_0,
 	&GenInst_Link_t2119410749_0_0_0,
+	&GenInst_Il2CppObject_0_0_0_Int32_t1448170597_0_0_0_Il2CppObject_0_0_0,
 	&GenInst_Il2CppObject_0_0_0_Int32_t1448170597_0_0_0_Int32_t1448170597_0_0_0,
 	&GenInst_Il2CppObject_0_0_0_Int32_t1448170597_0_0_0_DictionaryEntry_t1445113794_0_0_0,
 	&GenInst_DictionaryEntry_t1445113794_0_0_0,
 	&GenInst_Il2CppObject_0_0_0_Int32_t1448170597_0_0_0_KeyValuePair_2_t2684549329_0_0_0,
 	&GenInst_String_t_0_0_0_Int32_t1448170597_0_0_0_DictionaryEntry_t1445113794_0_0_0,
 	&GenInst_KeyValuePair_2_t2817472493_0_0_0,
+	&GenInst_TableRange_t736649775_0_0_0,
+	&GenInst_TailoringInfo_t291714550_0_0_0,
 	&GenInst_Contraction_t3730568393_0_0_0,
 	&GenInst_Level2Map_t3361696243_0_0_0,
 	&GenInst_BigInteger_t3893714977_0_0_0,
@@ -1486,6 +1726,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[459] =
 	&GenInst_String_t_0_0_0_Boolean_t3143194569_0_0_0,
 	&GenInst_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0,
 	&GenInst_KeyValuePair_2_t84606005_0_0_0,
+	&GenInst_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0_Il2CppObject_0_0_0,
 	&GenInst_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0_Boolean_t3143194569_0_0_0,
 	&GenInst_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0_DictionaryEntry_t1445113794_0_0_0,
 	&GenInst_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0_KeyValuePair_2_t84606005_0_0_0,
@@ -1498,6 +1739,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[459] =
 	&GenInst_Group_t2901181876_0_0_0,
 	&GenInst_Mark_t1456433074_0_0_0,
 	&GenInst_UriScheme_t2756911945_0_0_0,
+	&GenInst_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0,
 	&GenInst_BigInteger_t3893714978_0_0_0,
 	&GenInst_ByteU5BU5D_t3835026402_0_0_0,
 	&GenInst_ClientCertificateType_t2011017009_0_0_0,
@@ -1539,11 +1781,13 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[459] =
 	&GenInst_Rigidbody2D_t2088154582_0_0_0,
 	&GenInst_Collider2D_t445179443_0_0_0,
 	&GenInst_ContactPoint2D_t15882733_0_0_0,
+	&GenInst_WebCamDevice_t138406174_0_0_0,
 	&GenInst_Font_t2560754878_0_0_0,
 	&GenInst_GUILayoutOption_t2722935253_0_0_0,
 	&GenInst_Int32_t1448170597_0_0_0_LayoutCache_t4083183608_0_0_0,
 	&GenInst_Int32_t1448170597_0_0_0_Il2CppObject_0_0_0,
 	&GenInst_KeyValuePair_2_t1627747851_0_0_0,
+	&GenInst_Int32_t1448170597_0_0_0_Il2CppObject_0_0_0_Int32_t1448170597_0_0_0,
 	&GenInst_Int32_t1448170597_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0,
 	&GenInst_Int32_t1448170597_0_0_0_Il2CppObject_0_0_0_DictionaryEntry_t1445113794_0_0_0,
 	&GenInst_Int32_t1448170597_0_0_0_Il2CppObject_0_0_0_KeyValuePair_2_t1627747851_0_0_0,
@@ -1562,10 +1806,53 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[459] =
 	&GenInst_HitInfo_t2547655281_0_0_0,
 	&GenInst_PersistentCall_t569761779_0_0_0,
 	&GenInst_BaseInvokableCall_t1711298336_0_0_0,
-	&GenInst_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0,
+	&GenInst_Vector2I_t2584456199_0_0_0,
+	&GenInst_AugmentedTarget_t3213708220_0_0_0,
+	&GenInst_IntPtr_t_0_0_0_ImageTracker_t3850277562_0_0_0,
+	&GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0,
+	&GenInst_KeyValuePair_2_t2181304024_0_0_0,
+	&GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0_IntPtr_t_0_0_0,
+	&GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0,
+	&GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0_DictionaryEntry_t1445113794_0_0_0,
+	&GenInst_IntPtr_t_0_0_0_Il2CppObject_0_0_0_KeyValuePair_2_t2181304024_0_0_0,
+	&GenInst_IntPtr_t_0_0_0_ImageTracker_t3850277562_0_0_0_DictionaryEntry_t1445113794_0_0_0,
+	&GenInst_KeyValuePair_2_t1028645150_0_0_0,
+	&GenInst_ImageTracker_t3850277562_0_0_0_Target_t2319079912_0_0_0_Boolean_t3143194569_0_0_0,
+	&GenInst_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0,
+	&GenInst_Target_t2319079912_0_0_0,
+	&GenInst_IntPtr_t_0_0_0_VideoPlayer_t4150865119_0_0_0,
+	&GenInst_IntPtr_t_0_0_0_VideoPlayer_t4150865119_0_0_0_DictionaryEntry_t1445113794_0_0_0,
+	&GenInst_KeyValuePair_2_t1329232707_0_0_0,
+	&GenInst_VideoPlayer_t4150865119_0_0_0_PlayerStatus_t2767287061_0_0_0,
+	&GenInst_Il2CppObject_0_0_0_PlayerStatus_t2767287061_0_0_0,
+	&GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_Texture2D_t3575456220_0_0_0,
+	&GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_Frame_t97434328_0_0_0,
+	&GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_ImageTargetBaseBehaviour_t1600490913_0_0_0_Target_t2319079912_0_0_0,
+	&GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_String_t_0_0_0,
+	&GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0_Boolean_t3143194569_0_0_0,
+	&GenInst_RenderCameraBaseBehaviour_t972179658_0_0_0,
+	&GenInst_MonoBehaviour_t774292115_0_0_0,
+	&GenInst_DeviceAbstractBehaviour_t4065891864_0_0_0_Boolean_t3143194569_0_0_0,
+	&GenInst_Int32_t1448170597_0_0_0_Target_t2319079912_0_0_0,
+	&GenInst_Int32_t1448170597_0_0_0_Target_t2319079912_0_0_0_DictionaryEntry_t1445113794_0_0_0,
+	&GenInst_KeyValuePair_2_t3238858623_0_0_0,
+	&GenInst_KeyValuePair_2_t4219269031_0_0_0,
+	&GenInst_ImageTargetBaseBehaviour_t1600490913_0_0_0_AugmentedTarget_t3213708220_0_0_0,
+	&GenInst_DeviceUserAbstractBehaviour_t2556350275_0_0_0_DeviceAbstractBehaviour_t4065891864_0_0_0,
+	&GenInst_DeviceUserAbstractBehaviour_t2556350275_0_0_0,
+	&GenInst_ImageTrackerBaseBehaviour_t2136520886_0_0_0,
+	&GenInst_Int32_t1448170597_0_0_0_ImageTargetBaseBehaviour_t1600490913_0_0_0,
+	&GenInst_Int32_t1448170597_0_0_0_ImageTargetBaseBehaviour_t1600490913_0_0_0_DictionaryEntry_t1445113794_0_0_0,
+	&GenInst_KeyValuePair_2_t2520269624_0_0_0,
+	&GenInst_ImageTargetBaseBehaviour_t1600490913_0_0_0,
+	&GenInst_ImageTargetBaseBehaviour_t1600490913_0_0_0_ImageTrackerBaseBehaviour_t2136520886_0_0_0_Boolean_t3143194569_0_0_0,
+	&GenInst_ImageTrackerBaseBehaviour_t2136520886_0_0_0_ImageTargetBaseBehaviour_t1600490913_0_0_0_Target_t2319079912_0_0_0_Boolean_t3143194569_0_0_0,
+	&GenInst_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Il2CppObject_0_0_0_Boolean_t3143194569_0_0_0,
+	&GenInst_RealityPlaneBaseBehaviour_t1656126547_0_0_0,
+	&GenInst_CameraDeviceBaseBehaviour_t273615152_0_0_0,
+	&GenInst_AugmenterBaseBehaviour_t2200604009_0_0_0,
 	&GenInst_InvBaseItem_t3744336511_0_0_0,
 	&GenInst_InvDatabase_t2993806330_0_0_0,
-	&GenInst_MonoBehaviour_t774292115_0_0_0,
 	&GenInst_InvStat_t3409229249_0_0_0,
 	&GenInst_InvGameItem_t2091536978_0_0_0,
 	&GenInst_InvAttachmentPoint_t1179389824_0_0_0,
@@ -1615,6 +1902,18 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[459] =
 	&GenInst_Font_t2560754878_0_0_0_Int32_t1448170597_0_0_0_DictionaryEntry_t1445113794_0_0_0,
 	&GenInst_KeyValuePair_2_t1252866079_0_0_0,
 	&GenInst_Paragraph_t3320658422_0_0_0,
+	&GenInst_String_t_0_0_0_AssetBundle_t945621937_0_0_0,
+	&GenInst_String_t_0_0_0_AssetBundle_t945621937_0_0_0_DictionaryEntry_t1445113794_0_0_0,
+	&GenInst_KeyValuePair_2_t2314923833_0_0_0,
+	&GenInst_String_t_0_0_0_GameObject_t1366199518_0_0_0,
+	&GenInst_String_t_0_0_0_GameObject_t1366199518_0_0_0_DictionaryEntry_t1445113794_0_0_0,
+	&GenInst_KeyValuePair_2_t2735501414_0_0_0,
+	&GenInst_JSONNode_t1109731523_0_0_0,
+	&GenInst_String_t_0_0_0_JSONNode_t1109731523_0_0_0,
+	&GenInst_String_t_0_0_0_JSONNode_t1109731523_0_0_0_DictionaryEntry_t1445113794_0_0_0,
+	&GenInst_KeyValuePair_2_t2479033419_0_0_0,
+	&GenInst_KeyValuePair_2_t2479033419_0_0_0_Boolean_t3143194569_0_0_0,
+	&GenInst_KeyValuePair_2_t1944347872_0_0_0_Boolean_t3143194569_0_0_0,
 	&GenInst_IEnumerable_1_t1515280975_gp_0_0_0_0,
 	&GenInst_Array_InternalArray__IEnumerable_GetEnumerator_m2949663298_gp_0_0_0_0,
 	&GenInst_Array_Sort_m1730553742_gp_0_0_0_0_Array_Sort_m1730553742_gp_0_0_0_0,
@@ -1680,10 +1979,16 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[459] =
 	&GenInst_ShimEnumerator_t793745345_gp_0_0_0_0_ShimEnumerator_t793745345_gp_1_0_0_0,
 	&GenInst_Enumerator_t3188879113_gp_0_0_0_0_Enumerator_t3188879113_gp_1_0_0_0,
 	&GenInst_KeyValuePair_2_t4237323293_0_0_0,
+	&GenInst_KeyCollection_t1676215791_gp_0_0_0_0_KeyCollection_t1676215791_gp_1_0_0_0,
+	&GenInst_KeyCollection_t1676215791_gp_0_0_0_0,
+	&GenInst_Enumerator_t3188879114_gp_0_0_0_0_Enumerator_t3188879114_gp_1_0_0_0,
+	&GenInst_Enumerator_t3188879114_gp_0_0_0_0,
+	&GenInst_KeyCollection_t1676215791_gp_0_0_0_0_KeyCollection_t1676215791_gp_1_0_0_0_KeyCollection_t1676215791_gp_0_0_0_0,
+	&GenInst_KeyCollection_t1676215791_gp_0_0_0_0_KeyCollection_t1676215791_gp_0_0_0_0,
 	&GenInst_ValueCollection_t547226759_gp_0_0_0_0_ValueCollection_t547226759_gp_1_0_0_0,
 	&GenInst_ValueCollection_t547226759_gp_1_0_0_0,
-	&GenInst_Enumerator_t3188879114_gp_0_0_0_0_Enumerator_t3188879114_gp_1_0_0_0,
-	&GenInst_Enumerator_t3188879114_gp_1_0_0_0,
+	&GenInst_Enumerator_t3188879115_gp_0_0_0_0_Enumerator_t3188879115_gp_1_0_0_0,
+	&GenInst_Enumerator_t3188879115_gp_1_0_0_0,
 	&GenInst_ValueCollection_t547226759_gp_0_0_0_0_ValueCollection_t547226759_gp_1_0_0_0_ValueCollection_t547226759_gp_1_0_0_0,
 	&GenInst_ValueCollection_t547226759_gp_1_0_0_0_ValueCollection_t547226759_gp_1_0_0_0,
 	&GenInst_DictionaryEntry_t1445113794_0_0_0_DictionaryEntry_t1445113794_0_0_0,
@@ -1697,13 +2002,23 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[459] =
 	&GenInst_IDictionary_2_t3108676762_gp_0_0_0_0_IDictionary_2_t3108676762_gp_1_0_0_0,
 	&GenInst_KeyValuePair_2_t3482176515_gp_0_0_0_0_KeyValuePair_2_t3482176515_gp_1_0_0_0,
 	&GenInst_List_1_t1454039258_gp_0_0_0_0,
-	&GenInst_Enumerator_t3188879115_gp_0_0_0_0,
+	&GenInst_Enumerator_t3188879116_gp_0_0_0_0,
 	&GenInst_Collection_1_t144455481_gp_0_0_0_0,
 	&GenInst_ReadOnlyCollection_1_t4065907811_gp_0_0_0_0,
 	&GenInst_MonoProperty_GetterAdapterFrame_m4157835592_gp_0_0_0_0_MonoProperty_GetterAdapterFrame_m4157835592_gp_1_0_0_0,
 	&GenInst_MonoProperty_StaticGetterAdapterFrame_m1249362843_gp_0_0_0_0,
 	&GenInst_Stack_1_t891184666_gp_0_0_0_0,
-	&GenInst_Enumerator_t3188879116_gp_0_0_0_0,
+	&GenInst_Enumerator_t3188879117_gp_0_0_0_0,
+	&GenInst_Enumerable_ElementAt_m258442918_gp_0_0_0_0,
+	&GenInst_Enumerable_ElementAt_m714932326_gp_0_0_0_0,
+	&GenInst_Enumerable_First_m1693250038_gp_0_0_0_0,
+	&GenInst_Enumerable_ToList_m261161385_gp_0_0_0_0,
+	&GenInst_Enumerable_Where_m2409552823_gp_0_0_0_0,
+	&GenInst_Enumerable_Where_m2409552823_gp_0_0_0_0_Boolean_t3143194569_0_0_0,
+	&GenInst_Enumerable_CreateWhereIterator_m2714912225_gp_0_0_0_0,
+	&GenInst_Enumerable_CreateWhereIterator_m2714912225_gp_0_0_0_0_Boolean_t3143194569_0_0_0,
+	&GenInst_U3CCreateWhereIteratorU3Ec__Iterator1D_1_t4162367772_gp_0_0_0_0,
+	&GenInst_U3CCreateWhereIteratorU3Ec__Iterator1D_1_t4162367772_gp_0_0_0_0_Boolean_t3143194569_0_0_0,
 	&GenInst_Object_FindObjectsOfType_m894835059_gp_0_0_0_0,
 	&GenInst_Component_GetComponentInChildren_m3417738402_gp_0_0_0_0,
 	&GenInst_Component_GetComponentsInChildren_m1286417916_gp_0_0_0_0,
@@ -1715,6 +2030,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[459] =
 	&GenInst_Component_GetComponentsInParent_m1600202230_gp_0_0_0_0,
 	&GenInst_Component_GetComponents_m3990064736_gp_0_0_0_0,
 	&GenInst_Component_GetComponents_m2051523689_gp_0_0_0_0,
+	&GenInst_GameObject_GetComponentInChildren_m3844288190_gp_0_0_0_0,
 	&GenInst_GameObject_GetComponentsInChildren_m1933507101_gp_0_0_0_0,
 	&GenInst_GameObject_GetComponentsInChildren_m4124793869_gp_0_0_0_0,
 	&GenInst_GameObject_GetComponentsInParent_m4177085118_gp_0_0_0_0,
@@ -1742,14 +2058,28 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[459] =
 	&GenInst_UITweener_Begin_m1126580952_gp_0_0_0_0,
 	&GenInst_AndroidNativeFunction_CallNativeFunctionForUnityPlayer_m1864003730_gp_0_0_0_0,
 	&GenInst_GUILayer_t1686820861_0_0_0,
+	&GenInst_Renderer_t2715231144_0_0_0,
+	&GenInst_MeshFilter_t3840334098_0_0_0,
+	&GenInst_TextMesh_t3293161711_0_0_0,
 	&GenInst_ActiveAnimation_t4137610604_0_0_0,
+	&GenInst_AssetLoad_t3126280200_0_0_0,
+	&GenInst_CatchQuan_t830316542_0_0_0,
 	&GenInst_UIInput_t860674234_0_0_0,
+	&GenInst_FilesManager_t2291984574_0_0_0,
 	&GenInst_UITexture_t2537039969_0_0_0,
 	&GenInst_InvEquipment_t384603053_0_0_0,
 	&GenInst_ExampleDragDropSurface_t2585250672_0_0_0,
-	&GenInst_Renderer_t2715231144_0_0_0,
+	&GenInst_MySpriteDecMain_t1599878596_0_0_0,
+	&GenInst_GoodsItem_t1184035003_0_0_0,
+	&GenInst_UIGrid_t2420180906_0_0_0,
+	&GenInst_MobileCamera_t1503681139_0_0_0,
 	&GenInst_UIPopupList_t109953940_0_0_0,
 	&GenInst_TextAsset_t4025741140_0_0_0,
+	&GenInst_UIList_t3918749454_0_0_0,
+	&GenInst_UISlider_t2191058247_0_0_0,
+	&GenInst_GiftsItem_t1274332604_0_0_0,
+	&GenInst_UIControlMySpirit_t24001844_0_0_0,
+	&GenInst_MySpriteItem_t3317553624_0_0_0,
 	&GenInst_NGUIDebug_t1735550160_0_0_0,
 	&GenInst_AudioSource_t585923902_0_0_0,
 	&GenInst_BoxCollider2D_t2914288752_0_0_0,
@@ -1774,32 +2104,34 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[459] =
 	&GenInst_TweenVolume_t1729630735_0_0_0,
 	&GenInst_TweenWidth_t511657453_0_0_0,
 	&GenInst_UI2DSprite_t1082505957_0_0_0,
-	&GenInst_UIGrid_t2420180906_0_0_0,
 	&GenInst_UIWrapContent_t1931723019_0_0_0,
 	&GenInst_UICenterOnChild_t1687745660_0_0_0,
+	&GenInst_CatchMain_t3787564590_0_0_0,
+	&GenInst_GroupPhotoMain_t323661952_0_0_0,
 	&GenInst_UIDraggableCamera_t2562792962_0_0_0,
 	&GenInst_UIDragScrollView_t2942595320_0_0_0,
 	&GenInst_UIDragDropItem_t4109477862_0_0_0,
 	&GenInst_UIDragDropContainer_t4036588756_0_0_0,
-	&GenInst_MeshFilter_t3840334098_0_0_0,
 	&GenInst_MeshRenderer_t2660348527_0_0_0,
 	&GenInst_UIEventListener_t3982099366_0_0_0,
 	&GenInst_UIStorageSlot_t2374452303_0_0_0,
 	&GenInst_Animator_t2442207934_0_0_0,
 	&GenInst_UIOrthoCamera_t1890393437_0_0_0,
 	&GenInst_UIProgressBar_t3824507790_0_0_0,
-	&GenInst_UISlider_t2191058247_0_0_0,
+	&GenInst_KeyValuePair_2_t1944347872_0_0_0_KeyValuePair_2_t1944347872_0_0_0,
 	&GenInst_Int32_t1448170597_0_0_0_Int32_t1448170597_0_0_0,
 	&GenInst_CustomAttributeNamedArgument_t3611510553_0_0_0_CustomAttributeNamedArgument_t3611510553_0_0_0,
 	&GenInst_CustomAttributeTypedArgument_t4043223540_0_0_0_CustomAttributeTypedArgument_t4043223540_0_0_0,
 	&GenInst_KeyValuePair_2_t1627747851_0_0_0_KeyValuePair_2_t1627747851_0_0_0,
 	&GenInst_KeyValuePair_2_t1627747851_0_0_0_Il2CppObject_0_0_0,
+	&GenInst_KeyValuePair_2_t2181304024_0_0_0_KeyValuePair_2_t2181304024_0_0_0,
+	&GenInst_KeyValuePair_2_t2181304024_0_0_0_Il2CppObject_0_0_0,
+	&GenInst_IntPtr_t_0_0_0_IntPtr_t_0_0_0,
 	&GenInst_Boolean_t3143194569_0_0_0_Boolean_t3143194569_0_0_0,
 	&GenInst_Boolean_t3143194569_0_0_0_Il2CppObject_0_0_0,
 	&GenInst_KeyValuePair_2_t84606005_0_0_0_KeyValuePair_2_t84606005_0_0_0,
 	&GenInst_KeyValuePair_2_t84606005_0_0_0_Il2CppObject_0_0_0,
 	&GenInst_KeyValuePair_2_t2684549329_0_0_0_KeyValuePair_2_t2684549329_0_0_0,
 	&GenInst_KeyValuePair_2_t2684549329_0_0_0_Il2CppObject_0_0_0,
-	&GenInst_KeyValuePair_2_t1944347872_0_0_0_KeyValuePair_2_t1944347872_0_0_0,
 	&GenInst_KeyValuePair_2_t1944347872_0_0_0_Il2CppObject_0_0_0,
 };

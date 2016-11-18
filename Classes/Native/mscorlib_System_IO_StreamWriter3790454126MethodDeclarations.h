@@ -28,6 +28,8 @@ struct String_t;
 #include "mscorlib_System_Text_Encoding2125916575.h"
 #include "mscorlib_System_String1967731336.h"
 
+// System.Void System.IO.StreamWriter::.ctor(System.IO.Stream)
+extern "C"  void StreamWriter__ctor_m3847064531 (StreamWriter_t3790454126 * __this, Stream_t2768948945 * ___stream, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.StreamWriter::.ctor(System.IO.Stream,System.Text.Encoding)
 extern "C"  void StreamWriter__ctor_m3823607994 (StreamWriter_t3790454126 * __this, Stream_t2768948945 * ___stream, Encoding_t2125916575 * ___encoding, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.StreamWriter::.ctor(System.IO.Stream,System.Text.Encoding,System.Int32)

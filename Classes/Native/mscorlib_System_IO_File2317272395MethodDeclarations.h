@@ -39,5 +39,9 @@ extern "C"  FileStream_t4109615879 * File_Open_m1543461971 (Il2CppObject * __thi
 extern "C"  FileStream_t4109615879 * File_OpenRead_m132329087 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.IO.StreamReader System.IO.File::OpenText(System.String)
 extern "C"  StreamReader_t3810211700 * File_OpenText_m4058508963 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.IO.FileStream System.IO.File::OpenWrite(System.String)
+extern "C"  FileStream_t4109615879 * File_OpenWrite_m3037731260 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Byte[] System.IO.File::ReadAllBytes(System.String)
 extern "C"  ByteU5BU5D_t3835026402* File_ReadAllBytes_m4085527721 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.IO.File::WriteAllBytes(System.String,System.Byte[])
+extern "C"  void File_WriteAllBytes_m677793349 (Il2CppObject * __this /* static, unused */, String_t* ___path, ByteU5BU5D_t3835026402* ___bytes, const MethodInfo* method) IL2CPP_METHOD_ATTR;

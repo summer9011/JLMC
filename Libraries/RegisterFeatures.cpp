@@ -6,7 +6,7 @@ extern bool gEnableStylusTouch;
 
 void RegisterFeatures()
 {
-    gEnableGyroscope = false;
+    gEnableGyroscope = true;
     gEnableStylusTouch = false;
 }
 

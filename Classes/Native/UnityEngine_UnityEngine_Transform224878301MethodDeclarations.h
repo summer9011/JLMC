@@ -71,6 +71,10 @@ extern "C"  void Transform_set_parent_m3281327839 (Transform_t224878301 * __this
 extern "C"  Transform_t224878301 * Transform_get_parentInternal_m927919099 (Transform_t224878301 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::set_parentInternal(UnityEngine.Transform)
 extern "C"  void Transform_set_parentInternal_m4124721022 (Transform_t224878301 * __this, Transform_t224878301 * ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::SetParent(UnityEngine.Transform)
+extern "C"  void Transform_SetParent_m4124909910 (Transform_t224878301 * __this, Transform_t224878301 * ___parent, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::SetParent(UnityEngine.Transform,System.Boolean)
+extern "C"  void Transform_SetParent_m1963830867 (Transform_t224878301 * __this, Transform_t224878301 * ___parent, bool ___worldPositionStays, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Matrix4x4 UnityEngine.Transform::get_worldToLocalMatrix()
 extern "C"  Matrix4x4_t1261955742  Transform_get_worldToLocalMatrix_m3299477436 (Transform_t224878301 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::INTERNAL_get_worldToLocalMatrix(UnityEngine.Matrix4x4&)

@@ -30,6 +30,8 @@ struct CharU5BU5D_t1685951112;
 
 // System.Void System.IO.StreamReader::.ctor()
 extern "C"  void StreamReader__ctor_m4193167698 (StreamReader_t3810211700 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.IO.StreamReader::.ctor(System.IO.Stream)
+extern "C"  void StreamReader__ctor_m1780435609 (StreamReader_t3810211700 * __this, Stream_t2768948945 * ___stream, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.StreamReader::.ctor(System.IO.Stream,System.Text.Encoding)
 extern "C"  void StreamReader__ctor_m1475856354 (StreamReader_t3810211700 * __this, Stream_t2768948945 * ___stream, Encoding_t2125916575 * ___encoding, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.StreamReader::.ctor(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Int32)

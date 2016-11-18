@@ -39,6 +39,6 @@
 // System.Void System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,BMGlyph>::CopyTo(TValue[],System.Int32)
 #define ValueCollection_CopyTo_m517115043(__this, ___array, ___index, method) ((  void (*) (ValueCollection_t2943319586 *, BMGlyphU5BU5D_t2563989670*, int32_t, const MethodInfo*))ValueCollection_CopyTo_m1460341186_gshared)(__this, ___array, ___index, method)
 // System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,BMGlyph>::GetEnumerator()
-#define ValueCollection_GetEnumerator_m63392328(__this, method) ((  Enumerator_t3563283956  (*) (ValueCollection_t2943319586 *, const MethodInfo*))ValueCollection_GetEnumerator_m941805197_gshared)(__this, method)
+#define ValueCollection_GetEnumerator_m63392328(__this, method) ((  Enumerator_t3563283957  (*) (ValueCollection_t2943319586 *, const MethodInfo*))ValueCollection_GetEnumerator_m941805197_gshared)(__this, method)
 // System.Int32 System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,BMGlyph>::get_Count()
 #define ValueCollection_get_Count_m949882369(__this, method) ((  int32_t (*) (ValueCollection_t2943319586 *, const MethodInfo*))ValueCollection_get_Count_m90930038_gshared)(__this, method)

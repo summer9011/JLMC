@@ -32,6 +32,8 @@ extern "C"  void CaseInsensitiveHashCodeProvider__ctor_m3775398833 (CaseInsensit
 extern "C"  void CaseInsensitiveHashCodeProvider__ctor_m2400899367 (CaseInsensitiveHashCodeProvider_t1525063517 * __this, CultureInfo_t634113868 * ___culture, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.CaseInsensitiveHashCodeProvider::.cctor()
 extern "C"  void CaseInsensitiveHashCodeProvider__cctor_m2638678306 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Collections.CaseInsensitiveHashCodeProvider System.Collections.CaseInsensitiveHashCodeProvider::get_Default()
+extern "C"  CaseInsensitiveHashCodeProvider_t1525063517 * CaseInsensitiveHashCodeProvider_get_Default_m545513541 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Collections.CaseInsensitiveHashCodeProvider::AreEqual(System.Globalization.CultureInfo,System.Globalization.CultureInfo)
 extern "C"  bool CaseInsensitiveHashCodeProvider_AreEqual_m2456617355 (Il2CppObject * __this /* static, unused */, CultureInfo_t634113868 * ___a, CultureInfo_t634113868 * ___b, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Collections.CaseInsensitiveHashCodeProvider::AreEqual(System.Globalization.TextInfo,System.Globalization.CultureInfo)

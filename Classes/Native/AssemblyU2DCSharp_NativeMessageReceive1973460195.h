@@ -44,17 +44,17 @@ public:
 struct NativeMessageReceive_t1973460195_StaticFields
 {
 public:
-	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> NativeMessageReceive::<>f__switch$map5
-	Dictionary_2_t4260152181 * ___U3CU3Ef__switchU24map5_3;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> NativeMessageReceive::<>f__switch$map7
+	Dictionary_2_t4260152181 * ___U3CU3Ef__switchU24map7_3;
 
 public:
-	inline static int32_t get_offset_of_U3CU3Ef__switchU24map5_3() { return static_cast<int32_t>(offsetof(NativeMessageReceive_t1973460195_StaticFields, ___U3CU3Ef__switchU24map5_3)); }
-	inline Dictionary_2_t4260152181 * get_U3CU3Ef__switchU24map5_3() const { return ___U3CU3Ef__switchU24map5_3; }
-	inline Dictionary_2_t4260152181 ** get_address_of_U3CU3Ef__switchU24map5_3() { return &___U3CU3Ef__switchU24map5_3; }
-	inline void set_U3CU3Ef__switchU24map5_3(Dictionary_2_t4260152181 * value)
+	inline static int32_t get_offset_of_U3CU3Ef__switchU24map7_3() { return static_cast<int32_t>(offsetof(NativeMessageReceive_t1973460195_StaticFields, ___U3CU3Ef__switchU24map7_3)); }
+	inline Dictionary_2_t4260152181 * get_U3CU3Ef__switchU24map7_3() const { return ___U3CU3Ef__switchU24map7_3; }
+	inline Dictionary_2_t4260152181 ** get_address_of_U3CU3Ef__switchU24map7_3() { return &___U3CU3Ef__switchU24map7_3; }
+	inline void set_U3CU3Ef__switchU24map7_3(Dictionary_2_t4260152181 * value)
 	{
-		___U3CU3Ef__switchU24map5_3 = value;
-		Il2CppCodeGenWriteBarrier(&___U3CU3Ef__switchU24map5_3, value);
+		___U3CU3Ef__switchU24map7_3 = value;
+		Il2CppCodeGenWriteBarrier(&___U3CU3Ef__switchU24map7_3, value);
 	}
 };
 

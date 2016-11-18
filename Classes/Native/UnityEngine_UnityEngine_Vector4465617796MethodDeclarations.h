@@ -20,6 +20,7 @@ struct String_t;
 #include "codegen/il2cpp-codegen.h"
 #include "UnityEngine_UnityEngine_Vector4465617796.h"
 #include "mscorlib_System_Object707969140.h"
+#include "UnityEngine_UnityEngine_Vector3465617797.h"
 #include "UnityEngine_UnityEngine_Vector2465617798.h"
 
 // System.Void UnityEngine.Vector4::.ctor(System.Single,System.Single,System.Single,System.Single)
@@ -44,6 +45,8 @@ extern "C"  Vector4_t465617796  Vector4_op_Multiply_m3204903356 (Il2CppObject * 
 extern "C"  bool Vector4_op_Equality_m1825453464 (Il2CppObject * __this /* static, unused */, Vector4_t465617796  ___lhs, Vector4_t465617796  ___rhs, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Vector4::op_Inequality(UnityEngine.Vector4,UnityEngine.Vector4)
 extern "C"  bool Vector4_op_Inequality_m1143290655 (Il2CppObject * __this /* static, unused */, Vector4_t465617796  ___lhs, Vector4_t465617796  ___rhs, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Vector4::op_Implicit(UnityEngine.Vector4)
+extern "C"  Vector3_t465617797  Vector4_op_Implicit_m1902992875 (Il2CppObject * __this /* static, unused */, Vector4_t465617796  ___v, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector4 UnityEngine.Vector4::op_Implicit(UnityEngine.Vector2)
 extern "C"  Vector4_t465617796  Vector4_op_Implicit_m2625404180 (Il2CppObject * __this /* static, unused */, Vector2_t465617798  ___v, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 

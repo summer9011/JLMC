@@ -20,11 +20,16 @@ struct Material_t2197338622;
 struct MaterialU5BU5D_t3666204747;
 
 #include "codegen/il2cpp-codegen.h"
+#include "UnityEngine_UnityEngine_Material2197338622.h"
 
+// System.Void UnityEngine.Renderer::set_enabled(System.Boolean)
+extern "C"  void Renderer_set_enabled_m142717579 (Renderer_t2715231144 * __this, bool ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Material UnityEngine.Renderer::get_material()
 extern "C"  Material_t2197338622 * Renderer_get_material_m2553789785 (Renderer_t2715231144 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Material UnityEngine.Renderer::get_sharedMaterial()
 extern "C"  Material_t2197338622 * Renderer_get_sharedMaterial_m155010392 (Renderer_t2715231144 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Renderer::set_sharedMaterial(UnityEngine.Material)
+extern "C"  void Renderer_set_sharedMaterial_m391095487 (Renderer_t2715231144 * __this, Material_t2197338622 * ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Renderer::set_sharedMaterials(UnityEngine.Material[])
 extern "C"  void Renderer_set_sharedMaterials_m2669445156 (Renderer_t2715231144 * __this, MaterialU5BU5D_t3666204747* ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Renderer::get_sortingOrder()

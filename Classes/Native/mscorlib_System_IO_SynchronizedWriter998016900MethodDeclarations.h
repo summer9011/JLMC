@@ -20,10 +20,13 @@ struct TextWriter_t1448322145;
 struct CharU5BU5D_t1685951112;
 // System.String
 struct String_t;
+// System.Object
+struct Il2CppObject;
 
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_IO_TextWriter1448322145.h"
 #include "mscorlib_System_String1967731336.h"
+#include "mscorlib_System_Object707969140.h"
 
 // System.Void System.IO.SynchronizedWriter::.ctor(System.IO.TextWriter,System.Boolean)
 extern "C"  void SynchronizedWriter__ctor_m3807976982 (SynchronizedWriter_t998016900 * __this, TextWriter_t1448322145 * ___writer, bool ___neverClose, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -39,7 +42,11 @@ extern "C"  void SynchronizedWriter_Write_m269261988 (SynchronizedWriter_t998016
 extern "C"  void SynchronizedWriter_Write_m1924840393 (SynchronizedWriter_t998016900 * __this, String_t* ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.SynchronizedWriter::Write(System.Char[],System.Int32,System.Int32)
 extern "C"  void SynchronizedWriter_Write_m3986949870 (SynchronizedWriter_t998016900 * __this, CharU5BU5D_t1685951112* ___buffer, int32_t ___index, int32_t ___count, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.IO.SynchronizedWriter::Write(System.String,System.Object,System.Object)
+extern "C"  void SynchronizedWriter_Write_m4052085001 (SynchronizedWriter_t998016900 * __this, String_t* ___format, Il2CppObject * ___arg0, Il2CppObject * ___arg1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.SynchronizedWriter::WriteLine()
 extern "C"  void SynchronizedWriter_WriteLine_m2959837929 (SynchronizedWriter_t998016900 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.SynchronizedWriter::WriteLine(System.String)
 extern "C"  void SynchronizedWriter_WriteLine_m1575974363 (SynchronizedWriter_t998016900 * __this, String_t* ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.IO.SynchronizedWriter::WriteLine(System.String,System.Object,System.Object)
+extern "C"  void SynchronizedWriter_WriteLine_m3145308443 (SynchronizedWriter_t998016900 * __this, String_t* ___format, Il2CppObject * ___arg0, Il2CppObject * ___arg1, const MethodInfo* method) IL2CPP_METHOD_ATTR;

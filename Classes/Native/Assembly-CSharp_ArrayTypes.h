@@ -71,6 +71,8 @@ struct MouseOrTouch_t858607851;
 struct BMSymbol_t1865486779;
 // UITextList/Paragraph
 struct Paragraph_t3320658422;
+// LitJson.JSONNode
+struct JSONNode_t1109731523;
 
 #include "mscorlib_System_Array4136897760.h"
 #include "AssemblyU2DCSharp_InvBaseItem3744336511.h"
@@ -106,6 +108,7 @@ struct Paragraph_t3320658422;
 #include "AssemblyU2DCSharp_UICamera_DepthEntry2425649371.h"
 #include "AssemblyU2DCSharp_BMSymbol1865486779.h"
 #include "AssemblyU2DCSharp_UITextList_Paragraph3320658422.h"
+#include "AssemblyU2DCSharp_LitJson_JSONNode1109731523.h"
 
 #pragma once
 // InvBaseItem[]
@@ -596,6 +599,21 @@ public:
 	inline Paragraph_t3320658422 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline Paragraph_t3320658422 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, Paragraph_t3320658422 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// LitJson.JSONNode[]
+struct JSONNodeU5BU5D_t1006847186  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) JSONNode_t1109731523 * m_Items[1];
+
+public:
+	inline JSONNode_t1109731523 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline JSONNode_t1109731523 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, JSONNode_t1109731523 * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);

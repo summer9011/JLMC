@@ -22,14 +22,20 @@ struct CharU5BU5D_t1685951112;
 
 // System.Void System.IO.Path::.cctor()
 extern "C"  void Path__cctor_m3685888661 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.IO.Path::ChangeExtension(System.String,System.String)
+extern "C"  String_t* Path_ChangeExtension_m4087688358 (Il2CppObject * __this /* static, unused */, String_t* ___path, String_t* ___extension, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.IO.Path::Combine(System.String,System.String)
 extern "C"  String_t* Path_Combine_m3185811654 (Il2CppObject * __this /* static, unused */, String_t* ___path1, String_t* ___path2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.IO.Path::CleanPath(System.String)
 extern "C"  String_t* Path_CleanPath_m2294719205 (Il2CppObject * __this /* static, unused */, String_t* ___s, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.IO.Path::GetDirectoryName(System.String)
 extern "C"  String_t* Path_GetDirectoryName_m260633861 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.IO.Path::GetExtension(System.String)
+extern "C"  String_t* Path_GetExtension_m740668066 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.IO.Path::GetFileName(System.String)
 extern "C"  String_t* Path_GetFileName_m893210218 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.IO.Path::GetFileNameWithoutExtension(System.String)
+extern "C"  String_t* Path_GetFileNameWithoutExtension_m2541641063 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.IO.Path::GetFullPath(System.String)
 extern "C"  String_t* Path_GetFullPath_m840307057 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.IO.Path::WindowsDriveAdjustment(System.String)
@@ -44,6 +50,8 @@ extern "C"  String_t* Path_GetPathRoot_m1269357080 (Il2CppObject * __this /* sta
 extern "C"  bool Path_IsPathRooted_m1347207448 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Char[] System.IO.Path::GetInvalidPathChars()
 extern "C"  CharU5BU5D_t1685951112* Path_GetInvalidPathChars_m1312878345 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 System.IO.Path::findExtension(System.String)
+extern "C"  int32_t Path_findExtension_m3026593172 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.IO.Path::GetServerAndShare(System.String)
 extern "C"  String_t* Path_GetServerAndShare_m2968974124 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.IO.Path::SameRoot(System.String,System.String)

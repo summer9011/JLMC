@@ -65,8 +65,8 @@ extern "C"  Il2CppObject * ValueCollection_System_Collections_ICollection_get_Sy
 extern "C"  void ValueCollection_CopyTo_m2713467670_gshared (ValueCollection_t804593373 * __this, Int32U5BU5D_t3315407976* ___array, int32_t ___index, const MethodInfo* method);
 #define ValueCollection_CopyTo_m2713467670(__this, ___array, ___index, method) ((  void (*) (ValueCollection_t804593373 *, Int32U5BU5D_t3315407976*, int32_t, const MethodInfo*))ValueCollection_CopyTo_m2713467670_gshared)(__this, ___array, ___index, method)
 // System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2/ValueCollection<System.Object,System.Int32>::GetEnumerator()
-extern "C"  Enumerator_t1424557742  ValueCollection_GetEnumerator_m988596833_gshared (ValueCollection_t804593373 * __this, const MethodInfo* method);
-#define ValueCollection_GetEnumerator_m988596833(__this, method) ((  Enumerator_t1424557742  (*) (ValueCollection_t804593373 *, const MethodInfo*))ValueCollection_GetEnumerator_m988596833_gshared)(__this, method)
+extern "C"  Enumerator_t1424557744  ValueCollection_GetEnumerator_m988596833_gshared (ValueCollection_t804593373 * __this, const MethodInfo* method);
+#define ValueCollection_GetEnumerator_m988596833(__this, method) ((  Enumerator_t1424557744  (*) (ValueCollection_t804593373 *, const MethodInfo*))ValueCollection_GetEnumerator_m988596833_gshared)(__this, method)
 // System.Int32 System.Collections.Generic.Dictionary`2/ValueCollection<System.Object,System.Int32>::get_Count()
 extern "C"  int32_t ValueCollection_get_Count_m4142113966_gshared (ValueCollection_t804593373 * __this, const MethodInfo* method);
 #define ValueCollection_get_Count_m4142113966(__this, method) ((  int32_t (*) (ValueCollection_t804593373 *, const MethodInfo*))ValueCollection_get_Count_m4142113966_gshared)(__this, method)

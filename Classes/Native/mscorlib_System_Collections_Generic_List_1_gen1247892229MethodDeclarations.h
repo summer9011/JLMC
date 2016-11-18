@@ -1,0 +1,96 @@
+﻿#pragma once
+
+#include "il2cpp-config.h"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+#include <stdint.h>
+#include <assert.h>
+#include <exception>
+
+
+#include "codegen/il2cpp-codegen.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen4114307779MethodDeclarations.h"
+
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::.ctor()
+#define List_1__ctor_m4144921101(__this, method) ((  void (*) (List_1_t1247892229 *, const MethodInfo*))List_1__ctor_m2985490295_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::.ctor(System.Collections.Generic.IEnumerable`1<T>)
+#define List_1__ctor_m670898289(__this, ___collection, method) ((  void (*) (List_1_t1247892229 *, Il2CppObject*, const MethodInfo*))List_1__ctor_m454375187_gshared)(__this, ___collection, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::.ctor(System.Int32)
+#define List_1__ctor_m3253131687(__this, ___capacity, method) ((  void (*) (List_1_t1247892229 *, int32_t, const MethodInfo*))List_1__ctor_m136460305_gshared)(__this, ___capacity, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::.cctor()
+#define List_1__cctor_m2159562697(__this /* static, unused */, method) ((  void (*) (Il2CppObject * /* static, unused */, const MethodInfo*))List_1__cctor_m138621019_gshared)(__this /* static, unused */, method)
+// System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+#define List_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_m1460021042(__this, method) ((  Il2CppObject* (*) (List_1_t1247892229 *, const MethodInfo*))List_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_m154161632_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+#define List_1_System_Collections_ICollection_CopyTo_m1750839120(__this, ___array, ___arrayIndex, method) ((  void (*) (List_1_t1247892229 *, Il2CppArray *, int32_t, const MethodInfo*))List_1_System_Collections_ICollection_CopyTo_m2020941110_gshared)(__this, ___array, ___arrayIndex, method)
+// System.Collections.IEnumerator System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::System.Collections.IEnumerable.GetEnumerator()
+#define List_1_System_Collections_IEnumerable_GetEnumerator_m1395696227(__this, method) ((  Il2CppObject * (*) (List_1_t1247892229 *, const MethodInfo*))List_1_System_Collections_IEnumerable_GetEnumerator_m3552870393_gshared)(__this, method)
+// System.Int32 System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::System.Collections.IList.Add(System.Object)
+#define List_1_System_Collections_IList_Add_m3131389764(__this, ___item, method) ((  int32_t (*) (List_1_t1247892229 *, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_Add_m1765626550_gshared)(__this, ___item, method)
+// System.Boolean System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::System.Collections.IList.Contains(System.Object)
+#define List_1_System_Collections_IList_Contains_m3314610178(__this, ___item, method) ((  bool (*) (List_1_t1247892229 *, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_Contains_m149594880_gshared)(__this, ___item, method)
+// System.Int32 System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::System.Collections.IList.IndexOf(System.Object)
+#define List_1_System_Collections_IList_IndexOf_m1456359246(__this, ___item, method) ((  int32_t (*) (List_1_t1247892229 *, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_IndexOf_m406088260_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::System.Collections.IList.Insert(System.Int32,System.Object)
+#define List_1_System_Collections_IList_Insert_m2010885531(__this, ___index, ___item, method) ((  void (*) (List_1_t1247892229 *, int32_t, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_Insert_m3961795241_gshared)(__this, ___index, ___item, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::System.Collections.IList.Remove(System.Object)
+#define List_1_System_Collections_IList_Remove_m3938462883(__this, ___item, method) ((  void (*) (List_1_t1247892229 *, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_Remove_m3415450529_gshared)(__this, ___item, method)
+// System.Boolean System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::System.Collections.Generic.ICollection<T>.get_IsReadOnly()
+#define List_1_System_Collections_Generic_ICollectionU3CTU3E_get_IsReadOnly_m3849589319(__this, method) ((  bool (*) (List_1_t1247892229 *, const MethodInfo*))List_1_System_Collections_Generic_ICollectionU3CTU3E_get_IsReadOnly_m2131934397_gshared)(__this, method)
+// System.Object System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::System.Collections.ICollection.get_SyncRoot()
+#define List_1_System_Collections_ICollection_get_SyncRoot_m4147010106(__this, method) ((  Il2CppObject * (*) (List_1_t1247892229 *, const MethodInfo*))List_1_System_Collections_ICollection_get_SyncRoot_m1594235606_gshared)(__this, method)
+// System.Object System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::System.Collections.IList.get_Item(System.Int32)
+#define List_1_System_Collections_IList_get_Item_m2299481575(__this, ___index, method) ((  Il2CppObject * (*) (List_1_t1247892229 *, int32_t, const MethodInfo*))List_1_System_Collections_IList_get_Item_m936612973_gshared)(__this, ___index, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::System.Collections.IList.set_Item(System.Int32,System.Object)
+#define List_1_System_Collections_IList_set_Item_m1767130134(__this, ___index, ___value, method) ((  void (*) (List_1_t1247892229 *, int32_t, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_set_Item_m162109184_gshared)(__this, ___index, ___value, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::Add(T)
+#define List_1_Add_m1058793735(__this, ___item, method) ((  void (*) (List_1_t1247892229 *, ImageTrackerBaseBehaviour_t2136520886 *, const MethodInfo*))List_1_Add_m4157722533_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::GrowIfNeeded(System.Int32)
+#define List_1_GrowIfNeeded_m3561448962(__this, ___newCount, method) ((  void (*) (List_1_t1247892229 *, int32_t, const MethodInfo*))List_1_GrowIfNeeded_m185971996_gshared)(__this, ___newCount, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::AddCollection(System.Collections.Generic.ICollection`1<T>)
+#define List_1_AddCollection_m3560681770(__this, ___collection, method) ((  void (*) (List_1_t1247892229 *, Il2CppObject*, const MethodInfo*))List_1_AddCollection_m1580067148_gshared)(__this, ___collection, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::AddEnumerable(System.Collections.Generic.IEnumerable`1<T>)
+#define List_1_AddEnumerable_m2717092666(__this, ___enumerable, method) ((  void (*) (List_1_t1247892229 *, Il2CppObject*, const MethodInfo*))List_1_AddEnumerable_m2489692396_gshared)(__this, ___enumerable, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::Clear()
+#define List_1_Clear_m1391838995(__this, method) ((  void (*) (List_1_t1247892229 *, const MethodInfo*))List_1_Clear_m4254626809_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::Contains(T)
+#define List_1_Contains_m1174516121(__this, ___item, method) ((  bool (*) (List_1_t1247892229 *, ImageTrackerBaseBehaviour_t2136520886 *, const MethodInfo*))List_1_Contains_m2577748987_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::CopyTo(T[],System.Int32)
+#define List_1_CopyTo_m3023890267(__this, ___array, ___arrayIndex, method) ((  void (*) (List_1_t1247892229 *, ImageTrackerBaseBehaviourU5BU5D_t1602564019*, int32_t, const MethodInfo*))List_1_CopyTo_m1758262197_gshared)(__this, ___array, ___arrayIndex, method)
+// System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::GetEnumerator()
+#define List_1_GetEnumerator_m4187970870(__this, method) ((  Enumerator_t1508890349  (*) (List_1_t1247892229 *, const MethodInfo*))List_1_GetEnumerator_m3294992758_gshared)(__this, method)
+// System.Int32 System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::IndexOf(T)
+#define List_1_IndexOf_m3136944335(__this, ___item, method) ((  int32_t (*) (List_1_t1247892229 *, ImageTrackerBaseBehaviour_t2136520886 *, const MethodInfo*))List_1_IndexOf_m2070479489_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::Shift(System.Int32,System.Int32)
+#define List_1_Shift_m2740497196(__this, ___start, ___delta, method) ((  void (*) (List_1_t1247892229 *, int32_t, int32_t, const MethodInfo*))List_1_Shift_m3137156970_gshared)(__this, ___start, ___delta, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::CheckIndex(System.Int32)
+#define List_1_CheckIndex_m3030992291(__this, ___index, method) ((  void (*) (List_1_t1247892229 *, int32_t, const MethodInfo*))List_1_CheckIndex_m524615377_gshared)(__this, ___index, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::Insert(System.Int32,T)
+#define List_1_Insert_m3851779706(__this, ___index, ___item, method) ((  void (*) (List_1_t1247892229 *, int32_t, ImageTrackerBaseBehaviour_t2136520886 *, const MethodInfo*))List_1_Insert_m11735664_gshared)(__this, ___index, ___item, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::CheckCollection(System.Collections.Generic.IEnumerable`1<T>)
+#define List_1_CheckCollection_m531727897(__this, ___collection, method) ((  void (*) (List_1_t1247892229 *, Il2CppObject*, const MethodInfo*))List_1_CheckCollection_m3968030679_gshared)(__this, ___collection, method)
+// System.Boolean System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::Remove(T)
+#define List_1_Remove_m2594605268(__this, ___item, method) ((  bool (*) (List_1_t1247892229 *, ImageTrackerBaseBehaviour_t2136520886 *, const MethodInfo*))List_1_Remove_m1271859478_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::RemoveAt(System.Int32)
+#define List_1_RemoveAt_m350616102(__this, ___index, method) ((  void (*) (List_1_t1247892229 *, int32_t, const MethodInfo*))List_1_RemoveAt_m3615096820_gshared)(__this, ___index, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::Sort()
+#define List_1_Sort_m2620014538(__this, method) ((  void (*) (List_1_t1247892229 *, const MethodInfo*))List_1_Sort_m554162636_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::Sort(System.Comparison`1<T>)
+#define List_1_Sort_m881868225(__this, ___comparison, method) ((  void (*) (List_1_t1247892229 *, Comparison_1_t1973103366 *, const MethodInfo*))List_1_Sort_m785723827_gshared)(__this, ___comparison, method)
+// T[] System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::ToArray()
+#define List_1_ToArray_m4876605(__this, method) ((  ImageTrackerBaseBehaviourU5BU5D_t1602564019* (*) (List_1_t1247892229 *, const MethodInfo*))List_1_ToArray_m546658539_gshared)(__this, method)
+// System.Int32 System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::get_Capacity()
+#define List_1_get_Capacity_m3927008797(__this, method) ((  int32_t (*) (List_1_t1247892229 *, const MethodInfo*))List_1_get_Capacity_m3133733835_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::set_Capacity(System.Int32)
+#define List_1_set_Capacity_m3232035754(__this, ___value, method) ((  void (*) (List_1_t1247892229 *, int32_t, const MethodInfo*))List_1_set_Capacity_m491101164_gshared)(__this, ___value, method)
+// System.Int32 System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::get_Count()
+#define List_1_get_Count_m3839098804(__this, method) ((  int32_t (*) (List_1_t1247892229 *, const MethodInfo*))List_1_get_Count_m2375293942_gshared)(__this, method)
+// T System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::get_Item(System.Int32)
+#define List_1_get_Item_m3339633970(__this, ___index, method) ((  ImageTrackerBaseBehaviour_t2136520886 * (*) (List_1_t1247892229 *, int32_t, const MethodInfo*))List_1_get_Item_m1354830498_gshared)(__this, ___index, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.ImageTrackerBaseBehaviour>::set_Item(System.Int32,T)
+#define List_1_set_Item_m1848263567(__this, ___index, ___value, method) ((  void (*) (List_1_t1247892229 *, int32_t, ImageTrackerBaseBehaviour_t2136520886 *, const MethodInfo*))List_1_set_Item_m4128108021_gshared)(__this, ___index, ___value, method)

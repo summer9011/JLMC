@@ -36,6 +36,12 @@ public:
 	String_t* ___Main_0;
 	// System.String AndroidNativeFunction::Mybag
 	String_t* ___Mybag_1;
+	// System.String AndroidNativeFunction::PoiElfId
+	String_t* ___PoiElfId_2;
+	// System.String AndroidNativeFunction::UserId
+	String_t* ___UserId_3;
+	// System.String AndroidNativeFunction::BackMain
+	String_t* ___BackMain_4;
 
 public:
 	inline static int32_t get_offset_of_Main_0() { return static_cast<int32_t>(offsetof(AndroidNativeFunction_t2651783020_StaticFields, ___Main_0)); }
@@ -54,6 +60,33 @@ public:
 	{
 		___Mybag_1 = value;
 		Il2CppCodeGenWriteBarrier(&___Mybag_1, value);
+	}
+
+	inline static int32_t get_offset_of_PoiElfId_2() { return static_cast<int32_t>(offsetof(AndroidNativeFunction_t2651783020_StaticFields, ___PoiElfId_2)); }
+	inline String_t* get_PoiElfId_2() const { return ___PoiElfId_2; }
+	inline String_t** get_address_of_PoiElfId_2() { return &___PoiElfId_2; }
+	inline void set_PoiElfId_2(String_t* value)
+	{
+		___PoiElfId_2 = value;
+		Il2CppCodeGenWriteBarrier(&___PoiElfId_2, value);
+	}
+
+	inline static int32_t get_offset_of_UserId_3() { return static_cast<int32_t>(offsetof(AndroidNativeFunction_t2651783020_StaticFields, ___UserId_3)); }
+	inline String_t* get_UserId_3() const { return ___UserId_3; }
+	inline String_t** get_address_of_UserId_3() { return &___UserId_3; }
+	inline void set_UserId_3(String_t* value)
+	{
+		___UserId_3 = value;
+		Il2CppCodeGenWriteBarrier(&___UserId_3, value);
+	}
+
+	inline static int32_t get_offset_of_BackMain_4() { return static_cast<int32_t>(offsetof(AndroidNativeFunction_t2651783020_StaticFields, ___BackMain_4)); }
+	inline String_t* get_BackMain_4() const { return ___BackMain_4; }
+	inline String_t** get_address_of_BackMain_4() { return &___BackMain_4; }
+	inline void set_BackMain_4(String_t* value)
+	{
+		___BackMain_4 = value;
+		Il2CppCodeGenWriteBarrier(&___BackMain_4, value);
 	}
 };
 

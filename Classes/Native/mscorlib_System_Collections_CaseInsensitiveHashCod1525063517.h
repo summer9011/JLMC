@@ -30,16 +30,16 @@ struct  CaseInsensitiveHashCodeProvider_t1525063517  : public Il2CppObject
 {
 public:
 	// System.Globalization.TextInfo System.Collections.CaseInsensitiveHashCodeProvider::m_text
-	TextInfo_t2905364611 * ___m_text_2;
+	TextInfo_t2905364611 * ___m_text_3;
 
 public:
-	inline static int32_t get_offset_of_m_text_2() { return static_cast<int32_t>(offsetof(CaseInsensitiveHashCodeProvider_t1525063517, ___m_text_2)); }
-	inline TextInfo_t2905364611 * get_m_text_2() const { return ___m_text_2; }
-	inline TextInfo_t2905364611 ** get_address_of_m_text_2() { return &___m_text_2; }
-	inline void set_m_text_2(TextInfo_t2905364611 * value)
+	inline static int32_t get_offset_of_m_text_3() { return static_cast<int32_t>(offsetof(CaseInsensitiveHashCodeProvider_t1525063517, ___m_text_3)); }
+	inline TextInfo_t2905364611 * get_m_text_3() const { return ___m_text_3; }
+	inline TextInfo_t2905364611 ** get_address_of_m_text_3() { return &___m_text_3; }
+	inline void set_m_text_3(TextInfo_t2905364611 * value)
 	{
-		___m_text_2 = value;
-		Il2CppCodeGenWriteBarrier(&___m_text_2, value);
+		___m_text_3 = value;
+		Il2CppCodeGenWriteBarrier(&___m_text_3, value);
 	}
 };
 
@@ -48,8 +48,10 @@ struct CaseInsensitiveHashCodeProvider_t1525063517_StaticFields
 public:
 	// System.Collections.CaseInsensitiveHashCodeProvider System.Collections.CaseInsensitiveHashCodeProvider::singletonInvariant
 	CaseInsensitiveHashCodeProvider_t1525063517 * ___singletonInvariant_0;
+	// System.Collections.CaseInsensitiveHashCodeProvider System.Collections.CaseInsensitiveHashCodeProvider::singleton
+	CaseInsensitiveHashCodeProvider_t1525063517 * ___singleton_1;
 	// System.Object System.Collections.CaseInsensitiveHashCodeProvider::sync
-	Il2CppObject * ___sync_1;
+	Il2CppObject * ___sync_2;
 
 public:
 	inline static int32_t get_offset_of_singletonInvariant_0() { return static_cast<int32_t>(offsetof(CaseInsensitiveHashCodeProvider_t1525063517_StaticFields, ___singletonInvariant_0)); }
@@ -61,13 +63,22 @@ public:
 		Il2CppCodeGenWriteBarrier(&___singletonInvariant_0, value);
 	}
 
-	inline static int32_t get_offset_of_sync_1() { return static_cast<int32_t>(offsetof(CaseInsensitiveHashCodeProvider_t1525063517_StaticFields, ___sync_1)); }
-	inline Il2CppObject * get_sync_1() const { return ___sync_1; }
-	inline Il2CppObject ** get_address_of_sync_1() { return &___sync_1; }
-	inline void set_sync_1(Il2CppObject * value)
+	inline static int32_t get_offset_of_singleton_1() { return static_cast<int32_t>(offsetof(CaseInsensitiveHashCodeProvider_t1525063517_StaticFields, ___singleton_1)); }
+	inline CaseInsensitiveHashCodeProvider_t1525063517 * get_singleton_1() const { return ___singleton_1; }
+	inline CaseInsensitiveHashCodeProvider_t1525063517 ** get_address_of_singleton_1() { return &___singleton_1; }
+	inline void set_singleton_1(CaseInsensitiveHashCodeProvider_t1525063517 * value)
 	{
-		___sync_1 = value;
-		Il2CppCodeGenWriteBarrier(&___sync_1, value);
+		___singleton_1 = value;
+		Il2CppCodeGenWriteBarrier(&___singleton_1, value);
+	}
+
+	inline static int32_t get_offset_of_sync_2() { return static_cast<int32_t>(offsetof(CaseInsensitiveHashCodeProvider_t1525063517_StaticFields, ___sync_2)); }
+	inline Il2CppObject * get_sync_2() const { return ___sync_2; }
+	inline Il2CppObject ** get_address_of_sync_2() { return &___sync_2; }
+	inline void set_sync_2(Il2CppObject * value)
+	{
+		___sync_2 = value;
+		Il2CppCodeGenWriteBarrier(&___sync_2, value);
 	}
 };
 

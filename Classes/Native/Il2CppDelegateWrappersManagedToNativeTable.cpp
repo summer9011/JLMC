@@ -60,10 +60,15 @@ extern "C" void pinvoke_delegate_wrapper_BannerWasLoadedDelegate_t695519647 ();
 extern "C" void pinvoke_delegate_wrapper_InterstitialWasLoadedDelegate_t1387600605 ();
 extern "C" void pinvoke_delegate_wrapper_InterstitialWasViewedDelegate_t1070559180 ();
 extern "C" void pinvoke_delegate_wrapper_ReapplyDrivenProperties_t2486462500 ();
+extern "C" void pinvoke_delegate_wrapper_LogFunc_t2891211276 ();
+extern "C" void pinvoke_delegate_wrapper_LogFunc_t2891211277 ();
+extern "C" void pinvoke_delegate_wrapper_TargetLoadCallbackC_t2114246551 ();
+extern "C" void pinvoke_delegate_wrapper_CallBack_t1186946879 ();
+extern "C" void pinvoke_delegate_wrapper_AssetHandle_t296746218 ();
+extern "C" void pinvoke_delegate_wrapper_AssetHandleKey_t2677463335 ();
 extern "C" void pinvoke_delegate_wrapper_Callback_t1186947871 ();
 extern "C" void pinvoke_delegate_wrapper_LoadFunction_t3586463936 ();
 extern "C" void pinvoke_delegate_wrapper_OnLocalizeNotification_t470835809 ();
-extern "C" void pinvoke_delegate_wrapper__postData_t645335225 ();
 extern "C" void pinvoke_delegate_wrapper_OnFinished_t2353230625 ();
 extern "C" void pinvoke_delegate_wrapper_OnFinished_t2353230626 ();
 extern "C" void pinvoke_delegate_wrapper_BoolDelegate_t173576552 ();
@@ -99,7 +104,7 @@ extern "C" void pinvoke_delegate_wrapper_Validate_t2842189766 ();
 extern "C" void pinvoke_delegate_wrapper_HitCheck_t104249537 ();
 extern "C" void pinvoke_delegate_wrapper_OnDimensionsChanged_t3856657164 ();
 extern "C" void pinvoke_delegate_wrapper_OnInitializeItem_t1517718524 ();
-extern const methodPointerType g_DelegateWrappersManagedToNative[88] = 
+extern const methodPointerType g_DelegateWrappersManagedToNative[93] = 
 {
 	pinvoke_delegate_wrapper_PrimalityTest_t1115858239,
 	pinvoke_delegate_wrapper_KeyGeneratedEventHandler_t1529204744,
@@ -150,10 +155,15 @@ extern const methodPointerType g_DelegateWrappersManagedToNative[88] =
 	pinvoke_delegate_wrapper_InterstitialWasLoadedDelegate_t1387600605,
 	pinvoke_delegate_wrapper_InterstitialWasViewedDelegate_t1070559180,
 	pinvoke_delegate_wrapper_ReapplyDrivenProperties_t2486462500,
+	pinvoke_delegate_wrapper_LogFunc_t2891211276,
+	pinvoke_delegate_wrapper_LogFunc_t2891211277,
+	pinvoke_delegate_wrapper_TargetLoadCallbackC_t2114246551,
+	pinvoke_delegate_wrapper_CallBack_t1186946879,
+	pinvoke_delegate_wrapper_AssetHandle_t296746218,
+	pinvoke_delegate_wrapper_AssetHandleKey_t2677463335,
 	pinvoke_delegate_wrapper_Callback_t1186947871,
 	pinvoke_delegate_wrapper_LoadFunction_t3586463936,
 	pinvoke_delegate_wrapper_OnLocalizeNotification_t470835809,
-	pinvoke_delegate_wrapper__postData_t645335225,
 	pinvoke_delegate_wrapper_OnFinished_t2353230625,
 	pinvoke_delegate_wrapper_OnFinished_t2353230626,
 	pinvoke_delegate_wrapper_BoolDelegate_t173576552,

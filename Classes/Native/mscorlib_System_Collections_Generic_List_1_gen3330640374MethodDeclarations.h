@@ -1,0 +1,96 @@
+﻿#pragma once
+
+#include "il2cpp-config.h"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+#include <stdint.h>
+#include <assert.h>
+#include <exception>
+
+
+#include "codegen/il2cpp-codegen.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen1055719215MethodDeclarations.h"
+
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::.ctor()
+#define List_1__ctor_m985512551(__this, method) ((  void (*) (List_1_t3330640374 *, const MethodInfo*))List_1__ctor_m3395850371_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::.ctor(System.Collections.Generic.IEnumerable`1<T>)
+#define List_1__ctor_m1420533103(__this, ___collection, method) ((  void (*) (List_1_t3330640374 *, Il2CppObject*, const MethodInfo*))List_1__ctor_m1780749362_gshared)(__this, ___collection, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::.ctor(System.Int32)
+#define List_1__ctor_m1837351821(__this, ___capacity, method) ((  void (*) (List_1_t3330640374 *, int32_t, const MethodInfo*))List_1__ctor_m766591248_gshared)(__this, ___capacity, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::.cctor()
+#define List_1__cctor_m257301599(__this /* static, unused */, method) ((  void (*) (Il2CppObject * /* static, unused */, const MethodInfo*))List_1__cctor_m1434641296_gshared)(__this /* static, unused */, method)
+// System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+#define List_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_m297964262(__this, method) ((  Il2CppObject* (*) (List_1_t3330640374 *, const MethodInfo*))List_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_m3796738611_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+#define List_1_System_Collections_ICollection_CopyTo_m258615600(__this, ___array, ___arrayIndex, method) ((  void (*) (List_1_t3330640374 *, Il2CppArray *, int32_t, const MethodInfo*))List_1_System_Collections_ICollection_CopyTo_m2576612807_gshared)(__this, ___array, ___arrayIndex, method)
+// System.Collections.IEnumerator System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::System.Collections.IEnumerable.GetEnumerator()
+#define List_1_System_Collections_IEnumerable_GetEnumerator_m3861219061(__this, method) ((  Il2CppObject * (*) (List_1_t3330640374 *, const MethodInfo*))List_1_System_Collections_IEnumerable_GetEnumerator_m1432929454_gshared)(__this, method)
+// System.Int32 System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::System.Collections.IList.Add(System.Object)
+#define List_1_System_Collections_IList_Add_m2149301872(__this, ___item, method) ((  int32_t (*) (List_1_t3330640374 *, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_Add_m247045711_gshared)(__this, ___item, method)
+// System.Boolean System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::System.Collections.IList.Contains(System.Object)
+#define List_1_System_Collections_IList_Contains_m754347142(__this, ___item, method) ((  bool (*) (List_1_t3330640374 *, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_Contains_m2105487823_gshared)(__this, ___item, method)
+// System.Int32 System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::System.Collections.IList.IndexOf(System.Object)
+#define List_1_System_Collections_IList_IndexOf_m1997598942(__this, ___item, method) ((  int32_t (*) (List_1_t3330640374 *, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_IndexOf_m1189944129_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::System.Collections.IList.Insert(System.Int32,System.Object)
+#define List_1_System_Collections_IList_Insert_m3864901093(__this, ___index, ___item, method) ((  void (*) (List_1_t3330640374 *, int32_t, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_Insert_m628911364_gshared)(__this, ___index, ___item, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::System.Collections.IList.Remove(System.Object)
+#define List_1_System_Collections_IList_Remove_m1493540805(__this, ___item, method) ((  void (*) (List_1_t3330640374 *, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_Remove_m1225249762_gshared)(__this, ___item, method)
+// System.Boolean System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::System.Collections.Generic.ICollection<T>.get_IsReadOnly()
+#define List_1_System_Collections_Generic_ICollectionU3CTU3E_get_IsReadOnly_m1957437849(__this, method) ((  bool (*) (List_1_t3330640374 *, const MethodInfo*))List_1_System_Collections_Generic_ICollectionU3CTU3E_get_IsReadOnly_m1135493682_gshared)(__this, method)
+// System.Object System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::System.Collections.ICollection.get_SyncRoot()
+#define List_1_System_Collections_ICollection_get_SyncRoot_m2424989008(__this, method) ((  Il2CppObject * (*) (List_1_t3330640374 *, const MethodInfo*))List_1_System_Collections_ICollection_get_SyncRoot_m3129004603_gshared)(__this, method)
+// System.Object System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::System.Collections.IList.get_Item(System.Int32)
+#define List_1_System_Collections_IList_get_Item_m511199625(__this, ___index, method) ((  Il2CppObject * (*) (List_1_t3330640374 *, int32_t, const MethodInfo*))List_1_System_Collections_IList_get_Item_m2016766510_gshared)(__this, ___index, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::System.Collections.IList.set_Item(System.Int32,System.Object)
+#define List_1_System_Collections_IList_set_Item_m1496900698(__this, ___index, ___value, method) ((  void (*) (List_1_t3330640374 *, int32_t, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_set_Item_m2688890277_gshared)(__this, ___index, ___value, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::Add(T)
+#define List_1_Add_m1760513601(__this, ___item, method) ((  void (*) (List_1_t3330640374 *, KeyValuePair_2_t4219269031 , const MethodInfo*))List_1_Add_m2976622552_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::GrowIfNeeded(System.Int32)
+#define List_1_GrowIfNeeded_m2169324674(__this, ___newCount, method) ((  void (*) (List_1_t3330640374 *, int32_t, const MethodInfo*))List_1_GrowIfNeeded_m3802131643_gshared)(__this, ___newCount, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::AddCollection(System.Collections.Generic.ICollection`1<T>)
+#define List_1_AddCollection_m1632443826(__this, ___collection, method) ((  void (*) (List_1_t3330640374 *, Il2CppObject*, const MethodInfo*))List_1_AddCollection_m1517435899_gshared)(__this, ___collection, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::AddEnumerable(System.Collections.Generic.IEnumerable`1<T>)
+#define List_1_AddEnumerable_m1868851922(__this, ___enumerable, method) ((  void (*) (List_1_t3330640374 *, Il2CppObject*, const MethodInfo*))List_1_AddEnumerable_m1675544139_gshared)(__this, ___enumerable, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::Clear()
+#define List_1_Clear_m3898810997(__this, method) ((  void (*) (List_1_t3330640374 *, const MethodInfo*))List_1_Clear_m4050912532_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::Contains(T)
+#define List_1_Contains_m3532719007(__this, ___item, method) ((  bool (*) (List_1_t3330640374 *, KeyValuePair_2_t4219269031 , const MethodInfo*))List_1_Contains_m540253150_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::CopyTo(T[],System.Int32)
+#define List_1_CopyTo_m1633641233(__this, ___array, ___arrayIndex, method) ((  void (*) (List_1_t3330640374 *, KeyValuePair_2U5BU5D_t2157883870*, int32_t, const MethodInfo*))List_1_CopyTo_m2558127868_gshared)(__this, ___array, ___arrayIndex, method)
+// System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::GetEnumerator()
+#define List_1_GetEnumerator_m3163292302(__this, method) ((  Enumerator_t3591638494  (*) (List_1_t3330640374 *, const MethodInfo*))List_1_GetEnumerator_m4207298099_gshared)(__this, method)
+// System.Int32 System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::IndexOf(T)
+#define List_1_IndexOf_m3540226301(__this, ___item, method) ((  int32_t (*) (List_1_t3330640374 *, KeyValuePair_2_t4219269031 , const MethodInfo*))List_1_IndexOf_m151931218_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::Shift(System.Int32,System.Int32)
+#define List_1_Shift_m1248150564(__this, ___start, ___delta, method) ((  void (*) (List_1_t3330640374 *, int32_t, int32_t, const MethodInfo*))List_1_Shift_m90124003_gshared)(__this, ___start, ___delta, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::CheckIndex(System.Int32)
+#define List_1_CheckIndex_m1050380301(__this, ___index, method) ((  void (*) (List_1_t3330640374 *, int32_t, const MethodInfo*))List_1_CheckIndex_m922099068_gshared)(__this, ___index, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::Insert(System.Int32,T)
+#define List_1_Insert_m1463808778(__this, ___index, ___item, method) ((  void (*) (List_1_t3330640374 *, int32_t, KeyValuePair_2_t4219269031 , const MethodInfo*))List_1_Insert_m2036500065_gshared)(__this, ___index, ___item, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::CheckCollection(System.Collections.Generic.IEnumerable`1<T>)
+#define List_1_CheckCollection_m1482546515(__this, ___collection, method) ((  void (*) (List_1_t3330640374 *, Il2CppObject*, const MethodInfo*))List_1_CheckCollection_m478305602_gshared)(__this, ___collection, method)
+// System.Boolean System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::Remove(T)
+#define List_1_Remove_m2294494716(__this, ___item, method) ((  bool (*) (List_1_t3330640374 *, KeyValuePair_2_t4219269031 , const MethodInfo*))List_1_Remove_m4074802193_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::RemoveAt(System.Int32)
+#define List_1_RemoveAt_m1817811886(__this, ___index, method) ((  void (*) (List_1_t3330640374 *, int32_t, const MethodInfo*))List_1_RemoveAt_m4120265373_gshared)(__this, ___index, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::Sort()
+#define List_1_Sort_m2731089766(__this, method) ((  void (*) (List_1_t3330640374 *, const MethodInfo*))List_1_Sort_m2868944585_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::Sort(System.Comparison`1<T>)
+#define List_1_Sort_m4115227831(__this, ___comparison, method) ((  void (*) (List_1_t3330640374 *, Comparison_1_t4055851511 *, const MethodInfo*))List_1_Sort_m4142558040_gshared)(__this, ___comparison, method)
+// T[] System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::ToArray()
+#define List_1_ToArray_m3801620303(__this, method) ((  KeyValuePair_2U5BU5D_t2157883870* (*) (List_1_t3330640374 *, const MethodInfo*))List_1_ToArray_m3936280286_gshared)(__this, method)
+// System.Int32 System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::get_Capacity()
+#define List_1_get_Capacity_m3442478503(__this, method) ((  int32_t (*) (List_1_t3330640374 *, const MethodInfo*))List_1_get_Capacity_m115729064_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::set_Capacity(System.Int32)
+#define List_1_set_Capacity_m3660763794(__this, ___value, method) ((  void (*) (List_1_t3330640374 *, int32_t, const MethodInfo*))List_1_set_Capacity_m975330075_gshared)(__this, ___value, method)
+// System.Int32 System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::get_Count()
+#define List_1_get_Count_m2074184400(__this, method) ((  int32_t (*) (List_1_t3330640374 *, const MethodInfo*))List_1_get_Count_m1224543263_gshared)(__this, method)
+// T System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::get_Item(System.Int32)
+#define List_1_get_Item_m3215066792(__this, ___index, method) ((  KeyValuePair_2_t4219269031  (*) (List_1_t3330640374 *, int32_t, const MethodInfo*))List_1_get_Item_m16937777_gshared)(__this, ___index, method)
+// System.Void System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<EasyAR.ImageTargetBaseBehaviour,EasyAR.AugmentedTarget>>::set_Item(System.Int32,T)
+#define List_1_set_Item_m1244080953(__this, ___index, ___value, method) ((  void (*) (List_1_t3330640374 *, int32_t, KeyValuePair_2_t4219269031 , const MethodInfo*))List_1_set_Item_m1452453998_gshared)(__this, ___index, ___value, method)

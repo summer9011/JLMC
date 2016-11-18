@@ -81,6 +81,8 @@ extern "C"  bool Int32_ProcessTrailingWhitespace_m2812079777 (Il2CppObject * __t
 extern "C"  bool Int32_Parse_m753946802 (Il2CppObject * __this /* static, unused */, String_t* ___s, bool ___tryParse, int32_t* ___result, Exception_t1145979430 ** ___exc, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Int32::Parse(System.String,System.IFormatProvider)
 extern "C"  int32_t Int32_Parse_m4134638052 (Il2CppObject * __this /* static, unused */, String_t* ___s, Il2CppObject * ___provider, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 System.Int32::Parse(System.String,System.Globalization.NumberStyles)
+extern "C"  int32_t Int32_Parse_m837442623 (Il2CppObject * __this /* static, unused */, String_t* ___s, int32_t ___style, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Int32::CheckStyle(System.Globalization.NumberStyles,System.Boolean,System.Exception&)
 extern "C"  bool Int32_CheckStyle_m772978766 (Il2CppObject * __this /* static, unused */, int32_t ___style, bool ___tryParse, Exception_t1145979430 ** ___exc, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Int32::JumpOverWhite(System.Int32&,System.String,System.Boolean,System.Boolean,System.Exception&)

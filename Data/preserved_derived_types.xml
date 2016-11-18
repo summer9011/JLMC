@@ -1,5 +1,14 @@
 <linker>
 <assembly fullname="Assembly-CSharp">
+<type fullname="EasyAR.AugmenterBehaviour" preserve="all"/>
+<type fullname="EasyAR.BarCodeScannerBehaviour" preserve="all"/>
+<type fullname="EasyAR.CameraDeviceBehaviour" preserve="all"/>
+<type fullname="EasyAR.EasyARBehaviour" preserve="all"/>
+<type fullname="EasyAR.ImageTargetBehaviour" preserve="all"/>
+<type fullname="EasyAR.ImageTrackerBehaviour" preserve="all"/>
+<type fullname="EasyAR.RealityPlaneBehaviour" preserve="all"/>
+<type fullname="EasyAR.RenderCameraBehaviour" preserve="all"/>
+<type fullname="EasyAR.VideoPlayerBehaviour" preserve="all"/>
 <type fullname="EquipItems" preserve="all"/>
 <type fullname="EquipRandomItem" preserve="all"/>
 <type fullname="UICursor" preserve="all"/>
@@ -118,18 +127,38 @@
 <type fullname="UITexture" preserve="all"/>
 <type fullname="UITooltip" preserve="all"/>
 <type fullname="UIViewport" preserve="all"/>
+<type fullname="CatchMain" preserve="all"/>
+<type fullname="CatchQuan" preserve="all"/>
+<type fullname="ScenceCamera" preserve="all"/>
+<type fullname="AssetLoad" preserve="all"/>
 <type fullname="DontDestroy" preserve="all"/>
-<type fullname="HttpClient" preserve="all"/>
-<type fullname="LoadAssetsManager" preserve="all"/>
-<type fullname="LoadScene" preserve="all"/>
-<type fullname="LoadingManager" preserve="all"/>
-<type fullname="MySprite" preserve="all"/>
+<type fullname="FilesManager" preserve="all"/>
 <type fullname="NativeMessageReceive" preserve="all"/>
-<type fullname="NetworkControl" preserve="all"/>
-<type fullname="UpdateManager" preserve="all"/>
+<type fullname="GroupPhotoMain" preserve="all"/>
+<type fullname="MobileCamera" preserve="all"/>
+<type fullname="MySpriteItem" preserve="all"/>
+<type fullname="MySpriteMain" preserve="all"/>
+<type fullname="GiftsItem" preserve="all"/>
+<type fullname="GoodsItem" preserve="all"/>
+<type fullname="GoodsMain" preserve="all"/>
+<type fullname="MySpriteDecMain" preserve="all"/>
+<type fullname="UIList" preserve="all"/>
 <type fullname="UIControlCatch" preserve="all"/>
 <type fullname="UIControlGroupPhoto" preserve="all"/>
 <type fullname="UIControlMySpirit" preserve="all"/>
 <type fullname="UIControlMySpriteDec" preserve="all"/>
+<type fullname="test" preserve="all"/>
+</assembly>
+<assembly fullname="EasyAR.Unity">
+<type fullname="EasyAR.AugmenterBaseBehaviour" preserve="all"/>
+<type fullname="EasyAR.BarCodeScannerBaseBehaviour" preserve="all"/>
+<type fullname="EasyAR.CameraDeviceBaseBehaviour" preserve="all"/>
+<type fullname="EasyAR.DeviceAbstractBehaviour" preserve="all"/>
+<type fullname="EasyAR.DeviceUserAbstractBehaviour" preserve="all"/>
+<type fullname="EasyAR.ImageTargetBaseBehaviour" preserve="all"/>
+<type fullname="EasyAR.ImageTrackerBaseBehaviour" preserve="all"/>
+<type fullname="EasyAR.RealityPlaneBaseBehaviour" preserve="all"/>
+<type fullname="EasyAR.RenderCameraBaseBehaviour" preserve="all"/>
+<type fullname="EasyAR.VideoPlayerBaseBehaviour" preserve="all"/>
 </assembly>
 </linker>

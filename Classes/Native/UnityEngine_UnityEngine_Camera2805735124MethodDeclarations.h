@@ -25,6 +25,7 @@ struct GameObject_t1366199518;
 #include "UnityEngine_UnityEngine_TransparencySortMode3370932088.h"
 #include "UnityEngine_UnityEngine_Color2250949164.h"
 #include "UnityEngine_UnityEngine_Rect2553848979.h"
+#include "UnityEngine_UnityEngine_Matrix4x41261955742.h"
 #include "UnityEngine_UnityEngine_CameraClearFlags1019831134.h"
 #include "UnityEngine_UnityEngine_Vector3465617797.h"
 #include "UnityEngine_UnityEngine_Camera2805735124.h"
@@ -59,6 +60,8 @@ extern "C"  void Camera_set_transparencySortMode_m1713712844 (Camera_t2805735124
 extern "C"  float Camera_get_depth_m1329692468 (Camera_t2805735124 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Camera::set_depth(System.Single)
 extern "C"  void Camera_set_depth_m1570376177 (Camera_t2805735124 * __this, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Camera::set_aspect(System.Single)
+extern "C"  void Camera_set_aspect_m792328692 (Camera_t2805735124 * __this, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Camera::get_cullingMask()
 extern "C"  int32_t Camera_get_cullingMask_m73686965 (Camera_t2805735124 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Camera::set_cullingMask(System.Int32)
@@ -85,6 +88,14 @@ extern "C"  Rect_t2553848979  Camera_get_pixelRect_m2084185953 (Camera_t28057351
 extern "C"  void Camera_INTERNAL_get_pixelRect_m1785951490 (Camera_t2805735124 * __this, Rect_t2553848979 * ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.RenderTexture UnityEngine.Camera::get_targetTexture()
 extern "C"  RenderTexture_t1605280484 * Camera_get_targetTexture_m705925974 (Camera_t2805735124 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Matrix4x4 UnityEngine.Camera::get_projectionMatrix()
+extern "C"  Matrix4x4_t1261955742  Camera_get_projectionMatrix_m2365994324 (Camera_t2805735124 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Camera::set_projectionMatrix(UnityEngine.Matrix4x4)
+extern "C"  void Camera_set_projectionMatrix_m2059836755 (Camera_t2805735124 * __this, Matrix4x4_t1261955742  ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Camera::INTERNAL_get_projectionMatrix(UnityEngine.Matrix4x4&)
+extern "C"  void Camera_INTERNAL_get_projectionMatrix_m3593932001 (Camera_t2805735124 * __this, Matrix4x4_t1261955742 * ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Camera::INTERNAL_set_projectionMatrix(UnityEngine.Matrix4x4&)
+extern "C"  void Camera_INTERNAL_set_projectionMatrix_m179473573 (Camera_t2805735124 * __this, Matrix4x4_t1261955742 * ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.CameraClearFlags UnityEngine.Camera::get_clearFlags()
 extern "C"  int32_t Camera_get_clearFlags_m1743144302 (Camera_t2805735124 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Camera::set_clearFlags(UnityEngine.CameraClearFlags)

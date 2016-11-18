@@ -19,8 +19,14 @@ struct ByteU5BU5D_t3835026402;
 
 // System.Byte[] Mono.Security.BitConverterLE::GetUIntBytes(System.Byte*)
 extern "C"  ByteU5BU5D_t3835026402* BitConverterLE_GetUIntBytes_m3774691861 (Il2CppObject * __this /* static, unused */, uint8_t* ___bytes, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Byte[] Mono.Security.BitConverterLE::GetULongBytes(System.Byte*)
+extern "C"  ByteU5BU5D_t3835026402* BitConverterLE_GetULongBytes_m337364860 (Il2CppObject * __this /* static, unused */, uint8_t* ___bytes, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Byte[] Mono.Security.BitConverterLE::GetBytes(System.Int32)
 extern "C"  ByteU5BU5D_t3835026402* BitConverterLE_GetBytes_m10699861 (Il2CppObject * __this /* static, unused */, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Byte[] Mono.Security.BitConverterLE::GetBytes(System.Single)
+extern "C"  ByteU5BU5D_t3835026402* BitConverterLE_GetBytes_m1483254029 (Il2CppObject * __this /* static, unused */, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Byte[] Mono.Security.BitConverterLE::GetBytes(System.Double)
+extern "C"  ByteU5BU5D_t3835026402* BitConverterLE_GetBytes_m1611992252 (Il2CppObject * __this /* static, unused */, double ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Mono.Security.BitConverterLE::UShortFromBytes(System.Byte*,System.Byte[],System.Int32)
 extern "C"  void BitConverterLE_UShortFromBytes_m2795078058 (Il2CppObject * __this /* static, unused */, uint8_t* ___dst, ByteU5BU5D_t3835026402* ___src, int32_t ___startIndex, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Mono.Security.BitConverterLE::UIntFromBytes(System.Byte*,System.Byte[],System.Int32)

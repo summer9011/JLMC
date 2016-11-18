@@ -82,6 +82,8 @@ struct AudioListener_t2109973415;
 struct Sprite_t1118776648;
 // UnityEngine.Font
 struct Font_t2560754878;
+// UnityEngine.AssetBundle
+struct AssetBundle_t945621937;
 
 #include "mscorlib_System_Array4136897760.h"
 #include "UnityEngine_UnityEngine_Object1181371020.h"
@@ -110,6 +112,7 @@ struct Font_t2560754878;
 #include "UnityEngine_UnityEngine_Rigidbody2D2088154582.h"
 #include "UnityEngine_UnityEngine_Collider2D445179443.h"
 #include "UnityEngine_UnityEngine_ContactPoint2D15882733.h"
+#include "UnityEngine_UnityEngine_WebCamDevice138406174.h"
 #include "UnityEngine_UnityEngine_GUILayoutOption2722935253.h"
 #include "UnityEngine_UnityEngine_GUILayoutUtility_LayoutCac4083183608.h"
 #include "UnityEngine_UnityEngine_GUILayoutEntry561867040.h"
@@ -130,6 +133,7 @@ struct Font_t2560754878;
 #include "UnityEngine_UnityEngine_AudioListener2109973415.h"
 #include "UnityEngine_UnityEngine_Sprite1118776648.h"
 #include "UnityEngine_UnityEngine_Font2560754878.h"
+#include "UnityEngine_UnityEngine_AssetBundle945621937.h"
 
 #pragma once
 // UnityEngine.Object[]
@@ -571,6 +575,20 @@ public:
 		m_Items[index] = value;
 	}
 };
+// UnityEngine.WebCamDevice[]
+struct WebCamDeviceU5BU5D_t1870489771  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) WebCamDevice_t138406174  m_Items[1];
+
+public:
+	inline WebCamDevice_t138406174  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline WebCamDevice_t138406174 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, WebCamDevice_t138406174  value)
+	{
+		m_Items[index] = value;
+	}
+};
 // UnityEngine.GUILayoutOption[]
 struct GUILayoutOptionU5BU5D_t1445391160  : public Il2CppArray
 {
@@ -892,6 +910,21 @@ public:
 	inline Font_t2560754878 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline Font_t2560754878 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, Font_t2560754878 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// UnityEngine.AssetBundle[]
+struct AssetBundleU5BU5D_t3755541100  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) AssetBundle_t945621937 * m_Items[1];
+
+public:
+	inline AssetBundle_t945621937 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline AssetBundle_t945621937 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, AssetBundle_t945621937 * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);

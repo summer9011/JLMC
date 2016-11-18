@@ -14,6 +14,7 @@
 
 
 #include "codegen/il2cpp-codegen.h"
+#include "UnityEngine_UnityEngine_ScreenOrientation2442911283.h"
 
 // System.Int32 UnityEngine.Screen::get_width()
 extern "C"  int32_t Screen_get_width_m41137238 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -21,3 +22,5 @@ extern "C"  int32_t Screen_get_width_m41137238 (Il2CppObject * __this /* static,
 extern "C"  int32_t Screen_get_height_m1051800773 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Screen::get_dpi()
 extern "C"  float Screen_get_dpi_m3345126327 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.ScreenOrientation UnityEngine.Screen::get_orientation()
+extern "C"  int32_t Screen_get_orientation_m879255848 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;

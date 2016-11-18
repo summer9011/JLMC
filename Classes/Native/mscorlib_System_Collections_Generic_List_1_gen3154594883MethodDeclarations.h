@@ -14,6 +14,8 @@
 
 // System.Collections.Generic.List`1<System.Reflection.CustomAttributeTypedArgument>
 struct List_1_t3154594883;
+// System.Collections.Generic.IEnumerable`1<System.Reflection.CustomAttributeTypedArgument>
+struct IEnumerable_1_t3411613936;
 // System.Collections.Generic.IEnumerator`1<System.Reflection.CustomAttributeTypedArgument>
 struct IEnumerator_1_t2345064500;
 // System.Array
@@ -22,6 +24,8 @@ struct Il2CppArray;
 struct IEnumerator_t3037427797;
 // System.Object
 struct Il2CppObject;
+// System.Collections.Generic.ICollection`1<System.Reflection.CustomAttributeTypedArgument>
+struct ICollection_1_t2938428322;
 // System.Reflection.CustomAttributeTypedArgument[]
 struct CustomAttributeTypedArgumentU5BU5D_t3469124541;
 // System.Comparison`1<System.Reflection.CustomAttributeTypedArgument>
@@ -36,6 +40,9 @@ struct Comparison_1_t3879806020;
 // System.Void System.Collections.Generic.List`1<System.Reflection.CustomAttributeTypedArgument>::.ctor()
 extern "C"  void List_1__ctor_m2672294496_gshared (List_1_t3154594883 * __this, const MethodInfo* method);
 #define List_1__ctor_m2672294496(__this, method) ((  void (*) (List_1_t3154594883 *, const MethodInfo*))List_1__ctor_m2672294496_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1<System.Reflection.CustomAttributeTypedArgument>::.ctor(System.Collections.Generic.IEnumerable`1<T>)
+extern "C"  void List_1__ctor_m388665447_gshared (List_1_t3154594883 * __this, Il2CppObject* ___collection, const MethodInfo* method);
+#define List_1__ctor_m388665447(__this, ___collection, method) ((  void (*) (List_1_t3154594883 *, Il2CppObject*, const MethodInfo*))List_1__ctor_m388665447_gshared)(__this, ___collection, method)
 // System.Void System.Collections.Generic.List`1<System.Reflection.CustomAttributeTypedArgument>::.ctor(System.Int32)
 extern "C"  void List_1__ctor_m1374227281_gshared (List_1_t3154594883 * __this, int32_t ___capacity, const MethodInfo* method);
 #define List_1__ctor_m1374227281(__this, ___capacity, method) ((  void (*) (List_1_t3154594883 *, int32_t, const MethodInfo*))List_1__ctor_m1374227281_gshared)(__this, ___capacity, method)
@@ -84,6 +91,12 @@ extern "C"  void List_1_Add_m943275925_gshared (List_1_t3154594883 * __this, Cus
 // System.Void System.Collections.Generic.List`1<System.Reflection.CustomAttributeTypedArgument>::GrowIfNeeded(System.Int32)
 extern "C"  void List_1_GrowIfNeeded_m1253877786_gshared (List_1_t3154594883 * __this, int32_t ___newCount, const MethodInfo* method);
 #define List_1_GrowIfNeeded_m1253877786(__this, ___newCount, method) ((  void (*) (List_1_t3154594883 *, int32_t, const MethodInfo*))List_1_GrowIfNeeded_m1253877786_gshared)(__this, ___newCount, method)
+// System.Void System.Collections.Generic.List`1<System.Reflection.CustomAttributeTypedArgument>::AddCollection(System.Collections.Generic.ICollection`1<T>)
+extern "C"  void List_1_AddCollection_m3411511922_gshared (List_1_t3154594883 * __this, Il2CppObject* ___collection, const MethodInfo* method);
+#define List_1_AddCollection_m3411511922(__this, ___collection, method) ((  void (*) (List_1_t3154594883 *, Il2CppObject*, const MethodInfo*))List_1_AddCollection_m3411511922_gshared)(__this, ___collection, method)
+// System.Void System.Collections.Generic.List`1<System.Reflection.CustomAttributeTypedArgument>::AddEnumerable(System.Collections.Generic.IEnumerable`1<T>)
+extern "C"  void List_1_AddEnumerable_m1315238882_gshared (List_1_t3154594883 * __this, Il2CppObject* ___enumerable, const MethodInfo* method);
+#define List_1_AddEnumerable_m1315238882(__this, ___enumerable, method) ((  void (*) (List_1_t3154594883 *, Il2CppObject*, const MethodInfo*))List_1_AddEnumerable_m1315238882_gshared)(__this, ___enumerable, method)
 // System.Void System.Collections.Generic.List`1<System.Reflection.CustomAttributeTypedArgument>::Clear()
 extern "C"  void List_1_Clear_m4218787945_gshared (List_1_t3154594883 * __this, const MethodInfo* method);
 #define List_1_Clear_m4218787945(__this, method) ((  void (*) (List_1_t3154594883 *, const MethodInfo*))List_1_Clear_m4218787945_gshared)(__this, method)
@@ -108,6 +121,9 @@ extern "C"  void List_1_CheckIndex_m2515123737_gshared (List_1_t3154594883 * __t
 // System.Void System.Collections.Generic.List`1<System.Reflection.CustomAttributeTypedArgument>::Insert(System.Int32,T)
 extern "C"  void List_1_Insert_m3381965982_gshared (List_1_t3154594883 * __this, int32_t ___index, CustomAttributeTypedArgument_t4043223540  ___item, const MethodInfo* method);
 #define List_1_Insert_m3381965982(__this, ___index, ___item, method) ((  void (*) (List_1_t3154594883 *, int32_t, CustomAttributeTypedArgument_t4043223540 , const MethodInfo*))List_1_Insert_m3381965982_gshared)(__this, ___index, ___item, method)
+// System.Void System.Collections.Generic.List`1<System.Reflection.CustomAttributeTypedArgument>::CheckCollection(System.Collections.Generic.IEnumerable`1<T>)
+extern "C"  void List_1_CheckCollection_m2608305187_gshared (List_1_t3154594883 * __this, Il2CppObject* ___collection, const MethodInfo* method);
+#define List_1_CheckCollection_m2608305187(__this, ___collection, method) ((  void (*) (List_1_t3154594883 *, Il2CppObject*, const MethodInfo*))List_1_CheckCollection_m2608305187_gshared)(__this, ___collection, method)
 // System.Boolean System.Collections.Generic.List`1<System.Reflection.CustomAttributeTypedArgument>::Remove(T)
 extern "C"  bool List_1_Remove_m2218182224_gshared (List_1_t3154594883 * __this, CustomAttributeTypedArgument_t4043223540  ___item, const MethodInfo* method);
 #define List_1_Remove_m2218182224(__this, ___item, method) ((  bool (*) (List_1_t3154594883 *, CustomAttributeTypedArgument_t4043223540 , const MethodInfo*))List_1_Remove_m2218182224_gshared)(__this, ___item, method)

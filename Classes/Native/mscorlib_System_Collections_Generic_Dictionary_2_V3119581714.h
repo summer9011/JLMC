@@ -21,14 +21,14 @@
 #endif
 
 // System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Object,System.Boolean>
-struct  Enumerator_t3119581714 
+struct  Enumerator_t3119581716 
 {
 public:
 	// System.Collections.Generic.Dictionary`2/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator::host_enumerator
 	Enumerator_t3119581715  ___host_enumerator_0;
 
 public:
-	inline static int32_t get_offset_of_host_enumerator_0() { return static_cast<int32_t>(offsetof(Enumerator_t3119581714, ___host_enumerator_0)); }
+	inline static int32_t get_offset_of_host_enumerator_0() { return static_cast<int32_t>(offsetof(Enumerator_t3119581716, ___host_enumerator_0)); }
 	inline Enumerator_t3119581715  get_host_enumerator_0() const { return ___host_enumerator_0; }
 	inline Enumerator_t3119581715 * get_address_of_host_enumerator_0() { return &___host_enumerator_0; }
 	inline void set_host_enumerator_0(Enumerator_t3119581715  value)

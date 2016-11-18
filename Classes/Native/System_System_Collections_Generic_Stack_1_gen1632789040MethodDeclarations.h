@@ -26,6 +26,8 @@
 #define Stack_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_m1427431327(__this, method) ((  Il2CppObject* (*) (Stack_1_t1632789040 *, const MethodInfo*))Stack_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_m680979874_gshared)(__this, method)
 // System.Collections.IEnumerator System.Collections.Generic.Stack`1<System.Type>::System.Collections.IEnumerable.GetEnumerator()
 #define Stack_1_System_Collections_IEnumerable_GetEnumerator_m2728837580(__this, method) ((  Il2CppObject * (*) (Stack_1_t1632789040 *, const MethodInfo*))Stack_1_System_Collections_IEnumerable_GetEnumerator_m3875192475_gshared)(__this, method)
+// T System.Collections.Generic.Stack`1<System.Type>::Peek()
+#define Stack_1_Peek_m736531919(__this, method) ((  Type_t * (*) (Stack_1_t1632789040 *, const MethodInfo*))Stack_1_Peek_m1548778538_gshared)(__this, method)
 // T System.Collections.Generic.Stack`1<System.Type>::Pop()
 #define Stack_1_Pop_m685736912(__this, method) ((  Type_t * (*) (Stack_1_t1632789040 *, const MethodInfo*))Stack_1_Pop_m535185982_gshared)(__this, method)
 // System.Void System.Collections.Generic.Stack`1<System.Type>::Push(T)

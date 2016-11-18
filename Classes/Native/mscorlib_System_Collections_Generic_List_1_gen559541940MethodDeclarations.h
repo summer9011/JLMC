@@ -14,6 +14,8 @@
 
 // System.Collections.Generic.List`1<System.Int32>
 struct List_1_t559541940;
+// System.Collections.Generic.IEnumerable`1<System.Int32>
+struct IEnumerable_1_t816560993;
 // System.Collections.Generic.IEnumerator`1<System.Int32>
 struct IEnumerator_1_t4044978853;
 // System.Array
@@ -22,6 +24,8 @@ struct Il2CppArray;
 struct IEnumerator_t3037427797;
 // System.Object
 struct Il2CppObject;
+// System.Collections.Generic.ICollection`1<System.Int32>
+struct ICollection_1_t343375379;
 // System.Int32[]
 struct Int32U5BU5D_t3315407976;
 // System.Comparison`1<System.Int32>
@@ -35,6 +39,9 @@ struct Comparison_1_t1284753077;
 // System.Void System.Collections.Generic.List`1<System.Int32>::.ctor()
 extern "C"  void List_1__ctor_m3311112068_gshared (List_1_t559541940 * __this, const MethodInfo* method);
 #define List_1__ctor_m3311112068(__this, method) ((  void (*) (List_1_t559541940 *, const MethodInfo*))List_1__ctor_m3311112068_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1<System.Int32>::.ctor(System.Collections.Generic.IEnumerable`1<T>)
+extern "C"  void List_1__ctor_m87208054_gshared (List_1_t559541940 * __this, Il2CppObject* ___collection, const MethodInfo* method);
+#define List_1__ctor_m87208054(__this, ___collection, method) ((  void (*) (List_1_t559541940 *, Il2CppObject*, const MethodInfo*))List_1__ctor_m87208054_gshared)(__this, ___collection, method)
 // System.Void System.Collections.Generic.List`1<System.Int32>::.ctor(System.Int32)
 extern "C"  void List_1__ctor_m2475747412_gshared (List_1_t559541940 * __this, int32_t ___capacity, const MethodInfo* method);
 #define List_1__ctor_m2475747412(__this, ___capacity, method) ((  void (*) (List_1_t559541940 *, int32_t, const MethodInfo*))List_1__ctor_m2475747412_gshared)(__this, ___capacity, method)
@@ -83,6 +90,12 @@ extern "C"  void List_1_Add_m2689397844_gshared (List_1_t559541940 * __this, int
 // System.Void System.Collections.Generic.List`1<System.Int32>::GrowIfNeeded(System.Int32)
 extern "C"  void List_1_GrowIfNeeded_m2986672263_gshared (List_1_t559541940 * __this, int32_t ___newCount, const MethodInfo* method);
 #define List_1_GrowIfNeeded_m2986672263(__this, ___newCount, method) ((  void (*) (List_1_t559541940 *, int32_t, const MethodInfo*))List_1_GrowIfNeeded_m2986672263_gshared)(__this, ___newCount, method)
+// System.Void System.Collections.Generic.List`1<System.Int32>::AddCollection(System.Collections.Generic.ICollection`1<T>)
+extern "C"  void List_1_AddCollection_m389745455_gshared (List_1_t559541940 * __this, Il2CppObject* ___collection, const MethodInfo* method);
+#define List_1_AddCollection_m389745455(__this, ___collection, method) ((  void (*) (List_1_t559541940 *, Il2CppObject*, const MethodInfo*))List_1_AddCollection_m389745455_gshared)(__this, ___collection, method)
+// System.Void System.Collections.Generic.List`1<System.Int32>::AddEnumerable(System.Collections.Generic.IEnumerable`1<T>)
+extern "C"  void List_1_AddEnumerable_m1869508559_gshared (List_1_t559541940 * __this, Il2CppObject* ___enumerable, const MethodInfo* method);
+#define List_1_AddEnumerable_m1869508559(__this, ___enumerable, method) ((  void (*) (List_1_t559541940 *, Il2CppObject*, const MethodInfo*))List_1_AddEnumerable_m1869508559_gshared)(__this, ___enumerable, method)
 // System.Void System.Collections.Generic.List`1<System.Int32>::Clear()
 extern "C"  void List_1_Clear_m935484424_gshared (List_1_t559541940 * __this, const MethodInfo* method);
 #define List_1_Clear_m935484424(__this, method) ((  void (*) (List_1_t559541940 *, const MethodInfo*))List_1_Clear_m935484424_gshared)(__this, method)
@@ -107,6 +120,9 @@ extern "C"  void List_1_CheckIndex_m3609163576_gshared (List_1_t559541940 * __th
 // System.Void System.Collections.Generic.List`1<System.Int32>::Insert(System.Int32,T)
 extern "C"  void List_1_Insert_m2493743341_gshared (List_1_t559541940 * __this, int32_t ___index, int32_t ___item, const MethodInfo* method);
 #define List_1_Insert_m2493743341(__this, ___index, ___item, method) ((  void (*) (List_1_t559541940 *, int32_t, int32_t, const MethodInfo*))List_1_Insert_m2493743341_gshared)(__this, ___index, ___item, method)
+// System.Void System.Collections.Generic.List`1<System.Int32>::CheckCollection(System.Collections.Generic.IEnumerable`1<T>)
+extern "C"  void List_1_CheckCollection_m2486007558_gshared (List_1_t559541940 * __this, Il2CppObject* ___collection, const MethodInfo* method);
+#define List_1_CheckCollection_m2486007558(__this, ___collection, method) ((  void (*) (List_1_t559541940 *, Il2CppObject*, const MethodInfo*))List_1_CheckCollection_m2486007558_gshared)(__this, ___collection, method)
 // System.Boolean System.Collections.Generic.List`1<System.Int32>::Remove(T)
 extern "C"  bool List_1_Remove_m2616693989_gshared (List_1_t559541940 * __this, int32_t ___item, const MethodInfo* method);
 #define List_1_Remove_m2616693989(__this, ___item, method) ((  bool (*) (List_1_t559541940 *, int32_t, const MethodInfo*))List_1_Remove_m2616693989_gshared)(__this, ___item, method)

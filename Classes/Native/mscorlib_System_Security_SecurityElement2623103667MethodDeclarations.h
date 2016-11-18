@@ -16,6 +16,8 @@
 struct SecurityElement_t2623103667;
 // System.String
 struct String_t;
+// System.Collections.Hashtable
+struct Hashtable_t1312997718;
 // System.Collections.ArrayList
 struct ArrayList_t1468494371;
 // System.Text.StringBuilder
@@ -34,10 +36,14 @@ extern "C"  void SecurityElement__ctor_m1988489885 (SecurityElement_t2623103667 
 extern "C"  void SecurityElement__ctor_m3543712927 (SecurityElement_t2623103667 * __this, String_t* ___tag, String_t* ___text, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Security.SecurityElement::.cctor()
 extern "C"  void SecurityElement__cctor_m256761998 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Collections.Hashtable System.Security.SecurityElement::get_Attributes()
+extern "C"  Hashtable_t1312997718 * SecurityElement_get_Attributes_m3244705680 (SecurityElement_t2623103667 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.ArrayList System.Security.SecurityElement::get_Children()
 extern "C"  ArrayList_t1468494371 * SecurityElement_get_Children_m38620993 (SecurityElement_t2623103667 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Security.SecurityElement::get_Tag()
 extern "C"  String_t* SecurityElement_get_Tag_m3790054077 (SecurityElement_t2623103667 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.Security.SecurityElement::get_Text()
+extern "C"  String_t* SecurityElement_get_Text_m1078237722 (SecurityElement_t2623103667 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Security.SecurityElement::set_Text(System.String)
 extern "C"  void SecurityElement_set_Text_m2410443257 (SecurityElement_t2623103667 * __this, String_t* ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Security.SecurityElement::AddAttribute(System.String,System.String)
@@ -48,6 +54,8 @@ extern "C"  void SecurityElement_AddChild_m4178544467 (SecurityElement_t26231036
 extern "C"  String_t* SecurityElement_Escape_m677416717 (Il2CppObject * __this /* static, unused */, String_t* ___str, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Security.SecurityElement::Unescape(System.String)
 extern "C"  String_t* SecurityElement_Unescape_m1089723634 (Il2CppObject * __this /* static, unused */, String_t* ___str, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Security.SecurityElement System.Security.SecurityElement::FromString(System.String)
+extern "C"  SecurityElement_t2623103667 * SecurityElement_FromString_m1991100724 (Il2CppObject * __this /* static, unused */, String_t* ___xml, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Security.SecurityElement::IsValidAttributeName(System.String)
 extern "C"  bool SecurityElement_IsValidAttributeName_m2201790420 (Il2CppObject * __this /* static, unused */, String_t* ___name, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Security.SecurityElement::IsValidAttributeValue(System.String)

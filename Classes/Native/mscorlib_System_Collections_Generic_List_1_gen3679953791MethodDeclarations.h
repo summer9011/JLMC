@@ -1,0 +1,96 @@
+﻿#pragma once
+
+#include "il2cpp-config.h"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+#include <stdint.h>
+#include <assert.h>
+#include <exception>
+
+
+#include "codegen/il2cpp-codegen.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen4114307779MethodDeclarations.h"
+
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::.ctor()
+#define List_1__ctor_m2503600879(__this, method) ((  void (*) (List_1_t3679953791 *, const MethodInfo*))List_1__ctor_m2985490295_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::.ctor(System.Collections.Generic.IEnumerable`1<T>)
+#define List_1__ctor_m3875959743(__this, ___collection, method) ((  void (*) (List_1_t3679953791 *, Il2CppObject*, const MethodInfo*))List_1__ctor_m454375187_gshared)(__this, ___collection, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::.ctor(System.Int32)
+#define List_1__ctor_m3817179745(__this, ___capacity, method) ((  void (*) (List_1_t3679953791 *, int32_t, const MethodInfo*))List_1__ctor_m136460305_gshared)(__this, ___capacity, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::.cctor()
+#define List_1__cctor_m1453986559(__this /* static, unused */, method) ((  void (*) (Il2CppObject * /* static, unused */, const MethodInfo*))List_1__cctor_m138621019_gshared)(__this /* static, unused */, method)
+// System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+#define List_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_m1525472752(__this, method) ((  Il2CppObject* (*) (List_1_t3679953791 *, const MethodInfo*))List_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_m154161632_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+#define List_1_System_Collections_ICollection_CopyTo_m1460859482(__this, ___array, ___arrayIndex, method) ((  void (*) (List_1_t3679953791 *, Il2CppArray *, int32_t, const MethodInfo*))List_1_System_Collections_ICollection_CopyTo_m2020941110_gshared)(__this, ___array, ___arrayIndex, method)
+// System.Collections.IEnumerator System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::System.Collections.IEnumerable.GetEnumerator()
+#define List_1_System_Collections_IEnumerable_GetEnumerator_m269142133(__this, method) ((  Il2CppObject * (*) (List_1_t3679953791 *, const MethodInfo*))List_1_System_Collections_IEnumerable_GetEnumerator_m3552870393_gshared)(__this, method)
+// System.Int32 System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::System.Collections.IList.Add(System.Object)
+#define List_1_System_Collections_IList_Add_m1093545326(__this, ___item, method) ((  int32_t (*) (List_1_t3679953791 *, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_Add_m1765626550_gshared)(__this, ___item, method)
+// System.Boolean System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::System.Collections.IList.Contains(System.Object)
+#define List_1_System_Collections_IList_Contains_m2735549764(__this, ___item, method) ((  bool (*) (List_1_t3679953791 *, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_Contains_m149594880_gshared)(__this, ___item, method)
+// System.Int32 System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::System.Collections.IList.IndexOf(System.Object)
+#define List_1_System_Collections_IList_IndexOf_m2494011452(__this, ___item, method) ((  int32_t (*) (List_1_t3679953791 *, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_IndexOf_m406088260_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::System.Collections.IList.Insert(System.Int32,System.Object)
+#define List_1_System_Collections_IList_Insert_m1207893121(__this, ___index, ___item, method) ((  void (*) (List_1_t3679953791 *, int32_t, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_Insert_m3961795241_gshared)(__this, ___index, ___item, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::System.Collections.IList.Remove(System.Object)
+#define List_1_System_Collections_IList_Remove_m768560273(__this, ___item, method) ((  void (*) (List_1_t3679953791 *, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_Remove_m3415450529_gshared)(__this, ___item, method)
+// System.Boolean System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::System.Collections.Generic.ICollection<T>.get_IsReadOnly()
+#define List_1_System_Collections_Generic_ICollectionU3CTU3E_get_IsReadOnly_m783142213(__this, method) ((  bool (*) (List_1_t3679953791 *, const MethodInfo*))List_1_System_Collections_Generic_ICollectionU3CTU3E_get_IsReadOnly_m2131934397_gshared)(__this, method)
+// System.Object System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::System.Collections.ICollection.get_SyncRoot()
+#define List_1_System_Collections_ICollection_get_SyncRoot_m3892179316(__this, method) ((  Il2CppObject * (*) (List_1_t3679953791 *, const MethodInfo*))List_1_System_Collections_ICollection_get_SyncRoot_m1594235606_gshared)(__this, method)
+// System.Object System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::System.Collections.IList.get_Item(System.Int32)
+#define List_1_System_Collections_IList_get_Item_m3586240817(__this, ___index, method) ((  Il2CppObject * (*) (List_1_t3679953791 *, int32_t, const MethodInfo*))List_1_System_Collections_IList_get_Item_m936612973_gshared)(__this, ___index, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::System.Collections.IList.set_Item(System.Int32,System.Object)
+#define List_1_System_Collections_IList_set_Item_m1983130496(__this, ___index, ___value, method) ((  void (*) (List_1_t3679953791 *, int32_t, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_set_Item_m162109184_gshared)(__this, ___index, ___value, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::Add(T)
+#define List_1_Add_m2887203629(__this, ___item, method) ((  void (*) (List_1_t3679953791 *, CameraDeviceBaseBehaviour_t273615152 *, const MethodInfo*))List_1_Add_m4157722533_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::GrowIfNeeded(System.Int32)
+#define List_1_GrowIfNeeded_m3331458488(__this, ___newCount, method) ((  void (*) (List_1_t3679953791 *, int32_t, const MethodInfo*))List_1_GrowIfNeeded_m185971996_gshared)(__this, ___newCount, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::AddCollection(System.Collections.Generic.ICollection`1<T>)
+#define List_1_AddCollection_m1814195336(__this, ___collection, method) ((  void (*) (List_1_t3679953791 *, Il2CppObject*, const MethodInfo*))List_1_AddCollection_m1580067148_gshared)(__this, ___collection, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::AddEnumerable(System.Collections.Generic.IEnumerable`1<T>)
+#define List_1_AddEnumerable_m3550805160(__this, ___enumerable, method) ((  void (*) (List_1_t3679953791 *, Il2CppObject*, const MethodInfo*))List_1_AddEnumerable_m2489692396_gshared)(__this, ___enumerable, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::Clear()
+#define List_1_Clear_m2485116849(__this, method) ((  void (*) (List_1_t3679953791 *, const MethodInfo*))List_1_Clear_m4254626809_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::Contains(T)
+#define List_1_Contains_m119633823(__this, ___item, method) ((  bool (*) (List_1_t3679953791 *, CameraDeviceBaseBehaviour_t273615152 *, const MethodInfo*))List_1_Contains_m2577748987_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::CopyTo(T[],System.Int32)
+#define List_1_CopyTo_m3447324565(__this, ___array, ___arrayIndex, method) ((  void (*) (List_1_t3679953791 *, CameraDeviceBaseBehaviourU5BU5D_t810368017*, int32_t, const MethodInfo*))List_1_CopyTo_m1758262197_gshared)(__this, ___array, ___arrayIndex, method)
+// System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::GetEnumerator()
+#define List_1_GetEnumerator_m3037046114(__this, method) ((  Enumerator_t3940951911  (*) (List_1_t3679953791 *, const MethodInfo*))List_1_GetEnumerator_m3294992758_gshared)(__this, method)
+// System.Int32 System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::IndexOf(T)
+#define List_1_IndexOf_m3429305573(__this, ___item, method) ((  int32_t (*) (List_1_t3679953791 *, CameraDeviceBaseBehaviour_t273615152 *, const MethodInfo*))List_1_IndexOf_m2070479489_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::Shift(System.Int32,System.Int32)
+#define List_1_Shift_m1885134590(__this, ___start, ___delta, method) ((  void (*) (List_1_t3679953791 *, int32_t, int32_t, const MethodInfo*))List_1_Shift_m3137156970_gshared)(__this, ___start, ___delta, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::CheckIndex(System.Int32)
+#define List_1_CheckIndex_m3067607977(__this, ___index, method) ((  void (*) (List_1_t3679953791 *, int32_t, const MethodInfo*))List_1_CheckIndex_m524615377_gshared)(__this, ___index, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::Insert(System.Int32,T)
+#define List_1_Insert_m1973144976(__this, ___index, ___item, method) ((  void (*) (List_1_t3679953791 *, int32_t, CameraDeviceBaseBehaviour_t273615152 *, const MethodInfo*))List_1_Insert_m11735664_gshared)(__this, ___index, ___item, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::CheckCollection(System.Collections.Generic.IEnumerable`1<T>)
+#define List_1_CheckCollection_m4120446611(__this, ___collection, method) ((  void (*) (List_1_t3679953791 *, Il2CppObject*, const MethodInfo*))List_1_CheckCollection_m3968030679_gshared)(__this, ___collection, method)
+// System.Boolean System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::Remove(T)
+#define List_1_Remove_m1908376646(__this, ___item, method) ((  bool (*) (List_1_t3679953791 *, CameraDeviceBaseBehaviour_t273615152 *, const MethodInfo*))List_1_Remove_m1271859478_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::RemoveAt(System.Int32)
+#define List_1_RemoveAt_m3445304676(__this, ___index, method) ((  void (*) (List_1_t3679953791 *, int32_t, const MethodInfo*))List_1_RemoveAt_m3615096820_gshared)(__this, ___index, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::Sort()
+#define List_1_Sort_m328093052(__this, method) ((  void (*) (List_1_t3679953791 *, const MethodInfo*))List_1_Sort_m554162636_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::Sort(System.Comparison`1<T>)
+#define List_1_Sort_m4287420151(__this, ___comparison, method) ((  void (*) (List_1_t3679953791 *, Comparison_1_t110197632 *, const MethodInfo*))List_1_Sort_m785723827_gshared)(__this, ___comparison, method)
+// T[] System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::ToArray()
+#define List_1_ToArray_m1894172435(__this, method) ((  CameraDeviceBaseBehaviourU5BU5D_t810368017* (*) (List_1_t3679953791 *, const MethodInfo*))List_1_ToArray_m546658539_gshared)(__this, method)
+// System.Int32 System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::get_Capacity()
+#define List_1_get_Capacity_m190496207(__this, method) ((  int32_t (*) (List_1_t3679953791 *, const MethodInfo*))List_1_get_Capacity_m3133733835_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::set_Capacity(System.Int32)
+#define List_1_set_Capacity_m838798632(__this, ___value, method) ((  void (*) (List_1_t3679953791 *, int32_t, const MethodInfo*))List_1_set_Capacity_m491101164_gshared)(__this, ___value, method)
+// System.Int32 System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::get_Count()
+#define List_1_get_Count_m2800271310(__this, method) ((  int32_t (*) (List_1_t3679953791 *, const MethodInfo*))List_1_get_Count_m2375293942_gshared)(__this, method)
+// T System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::get_Item(System.Int32)
+#define List_1_get_Item_m689491872(__this, ___index, method) ((  CameraDeviceBaseBehaviour_t273615152 * (*) (List_1_t3679953791 *, int32_t, const MethodInfo*))List_1_get_Item_m1354830498_gshared)(__this, ___index, method)
+// System.Void System.Collections.Generic.List`1<EasyAR.CameraDeviceBaseBehaviour>::set_Item(System.Int32,T)
+#define List_1_set_Item_m4100284917(__this, ___index, ___value, method) ((  void (*) (List_1_t3679953791 *, int32_t, CameraDeviceBaseBehaviour_t273615152 *, const MethodInfo*))List_1_set_Item_m4128108021_gshared)(__this, ___index, ___value, method)

@@ -27,6 +27,8 @@ struct  DontDestroy_t3901757661  : public MonoBehaviour_t774292115
 public:
 	// UnityEngine.GameObject DontDestroy::model
 	GameObject_t1366199518 * ___model_2;
+	// UnityEngine.GameObject DontDestroy::Scenceimage
+	GameObject_t1366199518 * ___Scenceimage_3;
 
 public:
 	inline static int32_t get_offset_of_model_2() { return static_cast<int32_t>(offsetof(DontDestroy_t3901757661, ___model_2)); }
@@ -36,6 +38,15 @@ public:
 	{
 		___model_2 = value;
 		Il2CppCodeGenWriteBarrier(&___model_2, value);
+	}
+
+	inline static int32_t get_offset_of_Scenceimage_3() { return static_cast<int32_t>(offsetof(DontDestroy_t3901757661, ___Scenceimage_3)); }
+	inline GameObject_t1366199518 * get_Scenceimage_3() const { return ___Scenceimage_3; }
+	inline GameObject_t1366199518 ** get_address_of_Scenceimage_3() { return &___Scenceimage_3; }
+	inline void set_Scenceimage_3(GameObject_t1366199518 * value)
+	{
+		___Scenceimage_3 = value;
+		Il2CppCodeGenWriteBarrier(&___Scenceimage_3, value);
 	}
 };
 

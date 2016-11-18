@@ -30,6 +30,8 @@ struct IEnumerator_t3037427797;
 struct IEnumerator_1_t2681414261;
 // System.Collections.IDictionaryEnumerator
 struct IDictionaryEnumerator_t1087952561;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.Object,System.Boolean>
+struct KeyCollection_t3386461049;
 // System.Collections.Generic.Dictionary`2/ValueCollection<System.Object,System.Boolean>
 struct ValueCollection_t2499617345;
 
@@ -120,6 +122,9 @@ extern "C"  void Dictionary_2_CopyToCheck_m1638253305_gshared (Dictionary_2_t152
 // System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Object,System.Boolean>::make_pair(TKey,TValue)
 extern "C"  KeyValuePair_2_t84606005  Dictionary_2_make_pair_m394533803_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * ___key, bool ___value, const MethodInfo* method);
 #define Dictionary_2_make_pair_m394533803(__this /* static, unused */, ___key, ___value, method) ((  KeyValuePair_2_t84606005  (*) (Il2CppObject * /* static, unused */, Il2CppObject *, bool, const MethodInfo*))Dictionary_2_make_pair_m394533803_gshared)(__this /* static, unused */, ___key, ___value, method)
+// TKey System.Collections.Generic.Dictionary`2<System.Object,System.Boolean>::pick_key(TKey,TValue)
+extern "C"  Il2CppObject * Dictionary_2_pick_key_m61873811_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * ___key, bool ___value, const MethodInfo* method);
+#define Dictionary_2_pick_key_m61873811(__this /* static, unused */, ___key, ___value, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, Il2CppObject *, bool, const MethodInfo*))Dictionary_2_pick_key_m61873811_gshared)(__this /* static, unused */, ___key, ___value, method)
 // TValue System.Collections.Generic.Dictionary`2<System.Object,System.Boolean>::pick_value(TKey,TValue)
 extern "C"  bool Dictionary_2_pick_value_m4072431859_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * ___key, bool ___value, const MethodInfo* method);
 #define Dictionary_2_pick_value_m4072431859(__this /* static, unused */, ___key, ___value, method) ((  bool (*) (Il2CppObject * /* static, unused */, Il2CppObject *, bool, const MethodInfo*))Dictionary_2_pick_value_m4072431859_gshared)(__this /* static, unused */, ___key, ___value, method)
@@ -153,6 +158,9 @@ extern "C"  bool Dictionary_2_Remove_m1947153975_gshared (Dictionary_2_t15272856
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Boolean>::TryGetValue(TKey,TValue&)
 extern "C"  bool Dictionary_2_TryGetValue_m1169378642_gshared (Dictionary_2_t1527285693 * __this, Il2CppObject * ___key, bool* ___value, const MethodInfo* method);
 #define Dictionary_2_TryGetValue_m1169378642(__this, ___key, ___value, method) ((  bool (*) (Dictionary_2_t1527285693 *, Il2CppObject *, bool*, const MethodInfo*))Dictionary_2_TryGetValue_m1169378642_gshared)(__this, ___key, ___value, method)
+// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Object,System.Boolean>::get_Keys()
+extern "C"  KeyCollection_t3386461049 * Dictionary_2_get_Keys_m18937401_gshared (Dictionary_2_t1527285693 * __this, const MethodInfo* method);
+#define Dictionary_2_get_Keys_m18937401(__this, method) ((  KeyCollection_t3386461049 * (*) (Dictionary_2_t1527285693 *, const MethodInfo*))Dictionary_2_get_Keys_m18937401_gshared)(__this, method)
 // System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Object,System.Boolean>::get_Values()
 extern "C"  ValueCollection_t2499617345 * Dictionary_2_get_Values_m1102170553_gshared (Dictionary_2_t1527285693 * __this, const MethodInfo* method);
 #define Dictionary_2_get_Values_m1102170553(__this, method) ((  ValueCollection_t2499617345 * (*) (Dictionary_2_t1527285693 *, const MethodInfo*))Dictionary_2_get_Values_m1102170553_gshared)(__this, method)

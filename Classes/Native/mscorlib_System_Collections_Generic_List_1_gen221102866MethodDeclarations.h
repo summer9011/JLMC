@@ -1,0 +1,96 @@
+﻿#pragma once
+
+#include "il2cpp-config.h"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+#include <stdint.h>
+#include <assert.h>
+#include <exception>
+
+
+#include "codegen/il2cpp-codegen.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen4114307779MethodDeclarations.h"
+
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::.ctor()
+#define List_1__ctor_m4258835462(__this, method) ((  void (*) (List_1_t221102866 *, const MethodInfo*))List_1__ctor_m2985490295_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::.ctor(System.Collections.Generic.IEnumerable`1<T>)
+#define List_1__ctor_m2666012220(__this, ___collection, method) ((  void (*) (List_1_t221102866 *, Il2CppObject*, const MethodInfo*))List_1__ctor_m454375187_gshared)(__this, ___collection, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::.ctor(System.Int32)
+#define List_1__ctor_m300127922(__this, ___capacity, method) ((  void (*) (List_1_t221102866 *, int32_t, const MethodInfo*))List_1__ctor_m136460305_gshared)(__this, ___capacity, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::.cctor()
+#define List_1__cctor_m1790754322(__this /* static, unused */, method) ((  void (*) (Il2CppObject * /* static, unused */, const MethodInfo*))List_1__cctor_m138621019_gshared)(__this /* static, unused */, method)
+// System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.List`1<LitJson.JSONNode>::System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+#define List_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_m1745419977(__this, method) ((  Il2CppObject* (*) (List_1_t221102866 *, const MethodInfo*))List_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_m154161632_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+#define List_1_System_Collections_ICollection_CopyTo_m4272682945(__this, ___array, ___arrayIndex, method) ((  void (*) (List_1_t221102866 *, Il2CppArray *, int32_t, const MethodInfo*))List_1_System_Collections_ICollection_CopyTo_m2020941110_gshared)(__this, ___array, ___arrayIndex, method)
+// System.Collections.IEnumerator System.Collections.Generic.List`1<LitJson.JSONNode>::System.Collections.IEnumerable.GetEnumerator()
+#define List_1_System_Collections_IEnumerable_GetEnumerator_m4246732768(__this, method) ((  Il2CppObject * (*) (List_1_t221102866 *, const MethodInfo*))List_1_System_Collections_IEnumerable_GetEnumerator_m3552870393_gshared)(__this, method)
+// System.Int32 System.Collections.Generic.List`1<LitJson.JSONNode>::System.Collections.IList.Add(System.Object)
+#define List_1_System_Collections_IList_Add_m2282135129(__this, ___item, method) ((  int32_t (*) (List_1_t221102866 *, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_Add_m1765626550_gshared)(__this, ___item, method)
+// System.Boolean System.Collections.Generic.List`1<LitJson.JSONNode>::System.Collections.IList.Contains(System.Object)
+#define List_1_System_Collections_IList_Contains_m2571043153(__this, ___item, method) ((  bool (*) (List_1_t221102866 *, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_Contains_m149594880_gshared)(__this, ___item, method)
+// System.Int32 System.Collections.Generic.List`1<LitJson.JSONNode>::System.Collections.IList.IndexOf(System.Object)
+#define List_1_System_Collections_IList_IndexOf_m855975267(__this, ___item, method) ((  int32_t (*) (List_1_t221102866 *, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_IndexOf_m406088260_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::System.Collections.IList.Insert(System.Int32,System.Object)
+#define List_1_System_Collections_IList_Insert_m1398951418(__this, ___index, ___item, method) ((  void (*) (List_1_t221102866 *, int32_t, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_Insert_m3961795241_gshared)(__this, ___index, ___item, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::System.Collections.IList.Remove(System.Object)
+#define List_1_System_Collections_IList_Remove_m2221920320(__this, ___item, method) ((  void (*) (List_1_t221102866 *, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_Remove_m3415450529_gshared)(__this, ___item, method)
+// System.Boolean System.Collections.Generic.List`1<LitJson.JSONNode>::System.Collections.Generic.ICollection<T>.get_IsReadOnly()
+#define List_1_System_Collections_Generic_ICollectionU3CTU3E_get_IsReadOnly_m864260760(__this, method) ((  bool (*) (List_1_t221102866 *, const MethodInfo*))List_1_System_Collections_Generic_ICollectionU3CTU3E_get_IsReadOnly_m2131934397_gshared)(__this, method)
+// System.Object System.Collections.Generic.List`1<LitJson.JSONNode>::System.Collections.ICollection.get_SyncRoot()
+#define List_1_System_Collections_ICollection_get_SyncRoot_m1883250789(__this, method) ((  Il2CppObject * (*) (List_1_t221102866 *, const MethodInfo*))List_1_System_Collections_ICollection_get_SyncRoot_m1594235606_gshared)(__this, method)
+// System.Object System.Collections.Generic.List`1<LitJson.JSONNode>::System.Collections.IList.get_Item(System.Int32)
+#define List_1_System_Collections_IList_get_Item_m880093944(__this, ___index, method) ((  Il2CppObject * (*) (List_1_t221102866 *, int32_t, const MethodInfo*))List_1_System_Collections_IList_get_Item_m936612973_gshared)(__this, ___index, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::System.Collections.IList.set_Item(System.Int32,System.Object)
+#define List_1_System_Collections_IList_set_Item_m3101417763(__this, ___index, ___value, method) ((  void (*) (List_1_t221102866 *, int32_t, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_set_Item_m162109184_gshared)(__this, ___index, ___value, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::Add(T)
+#define List_1_Add_m897100006(__this, ___item, method) ((  void (*) (List_1_t221102866 *, JSONNode_t1109731523 *, const MethodInfo*))List_1_Add_m4157722533_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::GrowIfNeeded(System.Int32)
+#define List_1_GrowIfNeeded_m545722609(__this, ___newCount, method) ((  void (*) (List_1_t221102866 *, int32_t, const MethodInfo*))List_1_GrowIfNeeded_m185971996_gshared)(__this, ___newCount, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::AddCollection(System.Collections.Generic.ICollection`1<T>)
+#define List_1_AddCollection_m394149441(__this, ___collection, method) ((  void (*) (List_1_t221102866 *, Il2CppObject*, const MethodInfo*))List_1_AddCollection_m1580067148_gshared)(__this, ___collection, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::AddEnumerable(System.Collections.Generic.IEnumerable`1<T>)
+#define List_1_AddEnumerable_m2395823201(__this, ___enumerable, method) ((  void (*) (List_1_t221102866 *, Il2CppObject*, const MethodInfo*))List_1_AddEnumerable_m2489692396_gshared)(__this, ___enumerable, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::Clear()
+#define List_1_Clear_m2815797610(__this, method) ((  void (*) (List_1_t221102866 *, const MethodInfo*))List_1_Clear_m4254626809_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.List`1<LitJson.JSONNode>::Contains(T)
+#define List_1_Contains_m132812680(__this, ___item, method) ((  bool (*) (List_1_t221102866 *, JSONNode_t1109731523 *, const MethodInfo*))List_1_Contains_m2577748987_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::CopyTo(T[],System.Int32)
+#define List_1_CopyTo_m553249926(__this, ___array, ___arrayIndex, method) ((  void (*) (List_1_t221102866 *, JSONNodeU5BU5D_t1006847186*, int32_t, const MethodInfo*))List_1_CopyTo_m1758262197_gshared)(__this, ___array, ___arrayIndex, method)
+// System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<LitJson.JSONNode>::GetEnumerator()
+#define List_1_GetEnumerator_m1627420207(__this, method) ((  Enumerator_t482100986  (*) (List_1_t221102866 *, const MethodInfo*))List_1_GetEnumerator_m3294992758_gshared)(__this, method)
+// System.Int32 System.Collections.Generic.List`1<LitJson.JSONNode>::IndexOf(T)
+#define List_1_IndexOf_m48853176(__this, ___item, method) ((  int32_t (*) (List_1_t221102866 *, JSONNode_t1109731523 *, const MethodInfo*))List_1_IndexOf_m2070479489_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::Shift(System.Int32,System.Int32)
+#define List_1_Shift_m927996325(__this, ___start, ___delta, method) ((  void (*) (List_1_t221102866 *, int32_t, int32_t, const MethodInfo*))List_1_Shift_m3137156970_gshared)(__this, ___start, ___delta, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::CheckIndex(System.Int32)
+#define List_1_CheckIndex_m407399746(__this, ___index, method) ((  void (*) (List_1_t221102866 *, int32_t, const MethodInfo*))List_1_CheckIndex_m524615377_gshared)(__this, ___index, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::Insert(System.Int32,T)
+#define List_1_Insert_m4020342595(__this, ___index, ___item, method) ((  void (*) (List_1_t221102866 *, int32_t, JSONNode_t1109731523 *, const MethodInfo*))List_1_Insert_m11735664_gshared)(__this, ___index, ___item, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::CheckCollection(System.Collections.Generic.IEnumerable`1<T>)
+#define List_1_CheckCollection_m2925876032(__this, ___collection, method) ((  void (*) (List_1_t221102866 *, Il2CppObject*, const MethodInfo*))List_1_CheckCollection_m3968030679_gshared)(__this, ___collection, method)
+// System.Boolean System.Collections.Generic.List`1<LitJson.JSONNode>::Remove(T)
+#define List_1_Remove_m568361727(__this, ___item, method) ((  bool (*) (List_1_t221102866 *, JSONNode_t1109731523 *, const MethodInfo*))List_1_Remove_m1271859478_gshared)(__this, ___item, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::RemoveAt(System.Int32)
+#define List_1_RemoveAt_m3559918167(__this, ___index, method) ((  void (*) (List_1_t221102866 *, int32_t, const MethodInfo*))List_1_RemoveAt_m3615096820_gshared)(__this, ___index, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::Sort()
+#define List_1_Sort_m2843963967(__this, method) ((  void (*) (List_1_t221102866 *, const MethodInfo*))List_1_Sort_m554162636_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::Sort(System.Comparison`1<T>)
+#define List_1_Sort_m2690209994(__this, ___comparison, method) ((  void (*) (List_1_t221102866 *, Comparison_1_t946314003 *, const MethodInfo*))List_1_Sort_m785723827_gshared)(__this, ___comparison, method)
+// T[] System.Collections.Generic.List`1<LitJson.JSONNode>::ToArray()
+#define List_1_ToArray_m16300720(__this, method) ((  JSONNodeU5BU5D_t1006847186* (*) (List_1_t221102866 *, const MethodInfo*))List_1_ToArray_m546658539_gshared)(__this, method)
+// System.Int32 System.Collections.Generic.List`1<LitJson.JSONNode>::get_Capacity()
+#define List_1_get_Capacity_m2176676006(__this, method) ((  int32_t (*) (List_1_t221102866 *, const MethodInfo*))List_1_get_Capacity_m3133733835_gshared)(__this, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::set_Capacity(System.Int32)
+#define List_1_set_Capacity_m2475697121(__this, ___value, method) ((  void (*) (List_1_t221102866 *, int32_t, const MethodInfo*))List_1_set_Capacity_m491101164_gshared)(__this, ___value, method)
+// System.Int32 System.Collections.Generic.List`1<LitJson.JSONNode>::get_Count()
+#define List_1_get_Count_m3140067769(__this, method) ((  int32_t (*) (List_1_t221102866 *, const MethodInfo*))List_1_get_Count_m2375293942_gshared)(__this, method)
+// T System.Collections.Generic.List`1<LitJson.JSONNode>::get_Item(System.Int32)
+#define List_1_get_Item_m4260156115(__this, ___index, method) ((  JSONNode_t1109731523 * (*) (List_1_t221102866 *, int32_t, const MethodInfo*))List_1_get_Item_m1354830498_gshared)(__this, ___index, method)
+// System.Void System.Collections.Generic.List`1<LitJson.JSONNode>::set_Item(System.Int32,T)
+#define List_1_set_Item_m13022340(__this, ___index, ___value, method) ((  void (*) (List_1_t221102866 *, int32_t, JSONNode_t1109731523 *, const MethodInfo*))List_1_set_Item_m4128108021_gshared)(__this, ___index, ___value, method)

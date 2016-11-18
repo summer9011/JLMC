@@ -72,6 +72,8 @@ extern "C"  bool Boolean_Equals_m294106711 (bool* __this, bool ___obj, const Met
 extern "C"  int32_t Boolean_GetHashCode_m1894638460 (bool* __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Boolean::Parse(System.String)
 extern "C"  bool Boolean_Parse_m3612710908 (Il2CppObject * __this /* static, unused */, String_t* ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Boolean::TryParse(System.String,System.Boolean&)
+extern "C"  bool Boolean_TryParse_m3918169608 (Il2CppObject * __this /* static, unused */, String_t* ___value, bool* ___result, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Boolean::ToString()
 extern "C"  String_t* Boolean_ToString_m1253164328 (bool* __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Boolean::ToString(System.IFormatProvider)
