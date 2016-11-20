@@ -234,7 +234,8 @@
     
     self.timeCountLabel = timeCountLabel;
     
-    self.timeCountLabel.text = @"00:00";
+    self.timeCountView.hidden = YES;
+    self.timeCountLabel.hidden = YES;
 }
 
 - (void)addMenu {

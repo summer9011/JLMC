@@ -7,9 +7,11 @@
 //
 
 #import "UserAnnoView.h"
+#import "UnityAppController.h"
 
 @interface UserAnnoView ()
 
+@property (nonatomic, strong) id <SDWebImageOperation> frameImgOperation;
 @property (nonatomic, strong) id <SDWebImageOperation> operation;
 
 @end
@@ -32,28 +34,52 @@
         [self setDefaultImage];
         
     } else {
-        if (self.operation) {
-            [self.operation cancel];
-            self.operation = nil;
+        if (self.frameImgOperation) {
+            [self.frameImgOperation cancel];
+            self.frameImgOperation = nil;
+            
+            if (self.operation) {
+                [self.operation cancel];
+                self.operation = nil;
+            }
         }
         
+        //68.5, 88
         __weak UserAnnoView *weakSelf = self;
         
-        self.operation = [[SDWebImageManager sharedManager] loadImageWithURL:[NSURL URLWithString:imageStr] options:SDWebImageRetryFailed progress:nil completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
-            if (finished) {
-                weakSelf.image = image;
+        self.frameImgOperation = [[SDWebImageManager sharedManager] loadImageWithURL:[NSURL URLWithString:GetAppController().loginUser.frameImg] options:SDWebImageRetryFailed progress:nil completed:^(UIImage * _Nullable frameImage, NSData * _Nullable frameData, NSError * _Nullable frameError, SDImageCacheType frameCacheType, BOOL frameFinished, NSURL * _Nullable frameImageURL) {
+            
+            weakSelf.operation = [[SDWebImageManager sharedManager] loadImageWithURL:[NSURL URLWithString:imageStr] options:SDWebImageRetryFailed progress:nil completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
+                
+                weakSelf.image = [weakSelf addAvatar:image toFrame:frameImage];
                 weakSelf.centerOffset = CGPointMake(0, 0 - weakSelf.image.size.height/2.f);
                 
                 weakSelf.operation = nil;
-            }
+            }];
         }];
+        
         
     }
 }
 
 - (void)setDefaultImage {
     self.image = [UIImage imageNamed:@"UserAnno"];
-    self.centerOffset = CGPointMake(0, -40);
+    self.centerOffset = CGPointMake(0, -44);
+}
+
+- (UIImage *)addAvatar:(UIImage *)avatar toFrame:(UIImage *)frameImg {
+    CGSize imgSize = CGSizeMake(68.5, 88);
+    
+    UIGraphicsBeginImageContext(imgSize);
+    
+    [frameImg drawInRect:CGRectMake(0, 0, imgSize.width, imgSize.height)];
+    [avatar drawInRect:CGRectMake(7.5, 7.5, imgSize.width - 15, imgSize.height - 15)];
+    
+    UIImage *resultImg = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return resultImg;
 }
 
 @end

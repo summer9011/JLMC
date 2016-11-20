@@ -19,7 +19,7 @@
 - (id)initWithAnnotation:(id<MAAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithAnnotation:annotation reuseIdentifier:reuseIdentifier];
     if (self) {
-        self.centerOffset = CGPointMake(0, -24);
+        
     }
     
     return self;

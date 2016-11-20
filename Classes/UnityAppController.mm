@@ -264,10 +264,6 @@ extern "C" void UnityRequestQuit()
     //加载配置信息
     [self loadConfig];
     
-    //获取缓存的步数进度
-    self.movementProgress = 0;
-    [self getStep];
-    
     self.nearbyElfArr = [NSMutableArray array];
     self.nearbyNormalSplyArr = [NSMutableArray array];
     self.nearbyPersonalSplyArr = [NSMutableArray array];
@@ -288,7 +284,7 @@ extern "C" void UnityRequestQuit()
 {
     ::printf("-> applicationWillEnterForeground()\n");
     
-    [self saveStep];
+    [[StepManager sharedManager] saveStep];
     
     // applicationWillEnterForeground: might sometimes arrive *before* actually initing unity (e.g. locking on startup)
     if(_unityAppReady)
@@ -302,7 +298,7 @@ extern "C" void UnityRequestQuit()
 {
     ::printf("-> applicationDidBecomeActive()\n");
     
-    [self getStep];
+    [[StepManager sharedManager] getStep];
     
     if(_snapshotView)
     {
@@ -370,7 +366,7 @@ extern "C" void UnityRequestQuit()
 {
     ::printf("-> applicationWillTerminate()\n");
     
-    [self saveStep];
+    [[StepManager sharedManager] saveStep];
     
     Profiler_UninitProfiler();
     UnityCleanup();
@@ -459,7 +455,7 @@ extern "C" void UnityRequestQuit()
 }
 
 - (void)startDailyStepCount {
-    
+    [[StepManager sharedManager] startWithDelegate:self];
 }
 
 - (void)loadData:(CLLocation *)location {
@@ -500,32 +496,17 @@ extern "C" void UnityRequestQuit()
         }
         
     }];
-}
-
-- (void)getStep {
-    NSDictionary *todayStepDic = [[NSUserDefaults standardUserDefaults] dictionaryForKey:UserDefaults_TodayStepPercent];
-    if (todayStepDic) {
-        NSDate *date = todayStepDic[UserDefaults_TodayStepPercent_Time];
-        NSDate *todayDate = [NSDate date];
-        
-        NSString *stepDateStr = [date.description substringWithRange:NSMakeRange(0, 10)];
-        NSString *todayDateStr = [todayDate.description substringWithRange:NSMakeRange(0, 10)];
-        
-        if ([todayDateStr isEqualToString:stepDateStr]) {
-            self.movementProgress = [todayStepDic[UserDefaults_TodayStepPercent_Percent] floatValue];
-        }
-        
-    }
-}
-
-- (void)saveStep {
-    NSDictionary *stepDic = @{
-                              UserDefaults_TodayStepPercent_Time: [NSDate date],
-                              UserDefaults_TodayStepPercent_Percent: @(self.movementProgress)
-                              };
     
-    [[NSUserDefaults standardUserDefaults] setObject:stepDic forKey:UserDefaults_TodayStepPercent];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+    if (GetAppController().loginUser && GetAppController().loginUser.userId > 0) {
+        [User getNearbyUserListWithUserId:GetAppController().loginUser.userId longitude:longitude latitude:latitude completeBlock:^(BOOL success, id response, NSString *errStr) {
+            if (success) {
+                [weakSelf.nearbyUserArr removeAllObjects];
+                [weakSelf.nearbyUserArr addObjectsFromArray:response];
+                
+                [[NSNotificationCenter defaultCenter] postNotificationName:Notification_NearbyUser object:nil];
+            }
+        }];
+    }
 }
 
 #pragma mark - CLLocationManagerDelegate
@@ -538,6 +519,18 @@ extern "C" void UnityRequestQuit()
 }
 
 #pragma mark - ShareViewDelegate
+
+#pragma mark - StepManagerDelegate
+
+- (void)didFailedLoadStep:(NSString *)errStr {
+    NSLog(@"StepManager didFailedLoadStep: %@", errStr);
+    
+    self.isLoadMovementError = YES;
+}
+
+- (void)didUpdateStep:(CGFloat)percent {
+    self.movementProgress = percent;
+}
 
 @end
 

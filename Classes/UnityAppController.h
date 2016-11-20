@@ -9,7 +9,7 @@
 @class UnityView;
 @class DisplayConnection;
 
-@interface UnityAppController : NSObject<UIApplicationDelegate, ShareViewDelegate, CLLocationManagerDelegate>
+@interface UnityAppController : NSObject<UIApplicationDelegate, ShareViewDelegate, StepManagerDelegate, CLLocationManagerDelegate>
 {
     UnityView*			_unityView;
     CADisplayLink*		_displayLink;
@@ -79,6 +79,8 @@
  运动进度 0.0～1.0
  */
 @property (nonatomic, assign) CGFloat                       movementProgress;
+
+@property (nonatomic, assign) BOOL                          isLoadMovementError;
 
 /**
  定位Manager

@@ -116,6 +116,8 @@
 		6E88A3491DD9EA3D0006104C /* ChooseCartoonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E88A3471DD9EA3D0006104C /* ChooseCartoonVC.xib */; };
 		6E88A34D1DD9EB760006104C /* CartoonAvatarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E88A34B1DD9EB760006104C /* CartoonAvatarCell.m */; };
 		6E88A34E1DD9EB760006104C /* CartoonAvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E88A34C1DD9EB760006104C /* CartoonAvatarCell.xib */; };
+		6E9202101DE1C13600785B0E /* StepManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E92020F1DE1C13600785B0E /* StepManager.m */; };
+		6E9202131DE1D72E00785B0E /* VHSSteps.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9202121DE1D72E00785B0E /* VHSSteps.m */; };
 		6E9503231DDB362500692605 /* ConfrimBuyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9503211DDB362500692605 /* ConfrimBuyCell.m */; };
 		6E9503241DDB362500692605 /* ConfrimBuyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E9503221DDB362500692605 /* ConfrimBuyCell.xib */; };
 		6E9503271DDB364200692605 /* ConfrimBuyTotalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9503261DDB364200692605 /* ConfrimBuyTotalView.m */; };
@@ -509,6 +511,10 @@
 		6E88A34A1DD9EB760006104C /* CartoonAvatarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartoonAvatarCell.h; sourceTree = "<group>"; };
 		6E88A34B1DD9EB760006104C /* CartoonAvatarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartoonAvatarCell.m; sourceTree = "<group>"; };
 		6E88A34C1DD9EB760006104C /* CartoonAvatarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartoonAvatarCell.xib; sourceTree = "<group>"; };
+		6E92020E1DE1C13600785B0E /* StepManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepManager.h; sourceTree = "<group>"; };
+		6E92020F1DE1C13600785B0E /* StepManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepManager.m; sourceTree = "<group>"; };
+		6E9202111DE1D72E00785B0E /* VHSSteps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VHSSteps.h; sourceTree = "<group>"; };
+		6E9202121DE1D72E00785B0E /* VHSSteps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VHSSteps.m; sourceTree = "<group>"; };
 		6E9503201DDB362500692605 /* ConfrimBuyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfrimBuyCell.h; sourceTree = "<group>"; };
 		6E9503211DDB362500692605 /* ConfrimBuyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfrimBuyCell.m; sourceTree = "<group>"; };
 		6E9503221DDB362500692605 /* ConfrimBuyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfrimBuyCell.xib; sourceTree = "<group>"; };
@@ -1443,6 +1449,10 @@
 				6E3C13271DC773FE00912F7D /* Config.m */,
 				6E3C13291DC77DA900912F7D /* FileManager.h */,
 				6E3C132A1DC77DA900912F7D /* FileManager.m */,
+				6E92020E1DE1C13600785B0E /* StepManager.h */,
+				6E92020F1DE1C13600785B0E /* StepManager.m */,
+				6E9202111DE1D72E00785B0E /* VHSSteps.h */,
+				6E9202121DE1D72E00785B0E /* VHSSteps.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -2115,6 +2125,7 @@
 				6E9C86A51DC2FE09005AF102 /* MJRefreshNormalHeader.m in Sources */,
 				1859EA9B19214E7B0022C3D3 /* MetalHelper.mm in Sources */,
 				6E5F7D221DDAB6DC00A28655 /* RechargeVC.m in Sources */,
+				6E9202131DE1D72E00785B0E /* VHSSteps.m in Sources */,
 				6E9503411DDCA60300692605 /* ElfAnnoView.m in Sources */,
 				6E9C86A81DC2FE09005AF102 /* MJRefreshConst.m in Sources */,
 				6E5F7D101DDAB4A100A28655 /* GoodDetailVC.m in Sources */,
@@ -2164,6 +2175,7 @@
 				6E484D4F1DDC1C6400174A02 /* UIView+SDExtension.m in Sources */,
 				6EA9B4931DBB1FED00206E4E /* ForgetPwdVC.m in Sources */,
 				8AF7755D1799329100341121 /* LifeCycleListener.mm in Sources */,
+				6E9202101DE1C13600785B0E /* StepManager.m in Sources */,
 				6E8701181DBB844200FE7691 /* AboutVC.m in Sources */,
 				8A5C1492174E662D0006EB36 /* RenderPluginDelegate.mm in Sources */,
 				6E9C869E1DC2FE09005AF102 /* MJRefreshAutoGifFooter.m in Sources */,

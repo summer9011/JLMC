@@ -11,38 +11,47 @@
 
 static NSString *UserStoreKey       =   @"UserStoreKey";
 
-static NSString *CoderKeyUserId     =   @"CoderKeyUserId";
 static NSString *CoderKeyLoginname  =   @"CoderKeyLoginname";
+static NSString *CoderKeyUserId     =   @"CoderKeyUserId";
 static NSString *CoderKeyAvatar     =   @"CoderKeyAvatar";
+static NSString *CoderKeyFrameImg   =   @"CoderKeyFrameImg";
 static NSString *CoderKeySex        =   @"CoderKeySex";
 static NSString *CoderKeyAge        =   @"CoderKeyAge";
 static NSString *CoderKeyNickname   =   @"CoderKeyNickname";
 static NSString *CoderKeyStatus     =   @"CoderKeyStatus";
 static NSString *CoderKeyToken      =   @"CoderKeyToken";
 static NSString *CoderKeyCoins      =   @"CoderKeyCoins";
+static NSString *CoderKeyLockCoins  =   @"CoderKeyLockCoins";
+static NSString *CoderKeyAuthStatus =   @"CoderKeyAuthStatus";
 
 @implementation User
 
-@synthesize userId = _userId;
 @synthesize loginname = _loginname;
+@synthesize userId = _userId;
 @synthesize avatar = _avatar;
+@synthesize frameImg = _frameImg;
 @synthesize sex = _sex;
 @synthesize age = _age;
 @synthesize nickname = _nickname;
 @synthesize status = _status;
 @synthesize token = _token;
 @synthesize coins = _coins;
+@synthesize lockCoins = _lockCoins;
+@synthesize authStatus = _authStatus;
 
 - (void)dealloc {
-    self.userId = 0;
     self.loginname = nil;
+    self.userId = 0;
     self.avatar = nil;
+    self.frameImg = nil;
     self.sex = nil;
     self.age = 0;
     self.nickname = nil;
     self.status = nil;
     self.token = nil;
     self.coins = 0;
+    self.lockCoins = 0;
+    self.authStatus = nil;
 }
 
 + (void)loadUserFromFile {
@@ -187,19 +196,25 @@ static NSString *CoderKeyCoins      =   @"CoderKeyCoins";
     [[SessionNetwork defaultNetwork] getURL:@"/user/getUserInfo" params:params completePercent:nil success:^(id response) {
         User *loginUser = [[User alloc] init];
         
-        loginUser.userId = [response[@"userId"] integerValue];
         loginUser.loginname = [NSString stringWithFormat:@"%@", response[@"loginname"]];
+        loginUser.userId = [response[@"userId"] integerValue];
         loginUser.avatar = [NSString stringWithFormat:@"%@", response[@"avatar"]];
+        loginUser.frameImg = [NSString stringWithFormat:@"%@", response[@"frameImg"]];
         loginUser.sex = [NSString stringWithFormat:@"%@", response[@"sex"]];
         loginUser.age = [response[@"age"] integerValue];
         loginUser.nickname = [NSString stringWithFormat:@"%@", response[@"nickname"]];
         loginUser.status = [NSString stringWithFormat:@"%@", response[@"status"]];
         loginUser.token = [NSString stringWithFormat:@"%@", response[@"token"]];
         loginUser.coins = [response[@"coins"] integerValue];
+        loginUser.lockCoins = [response[@"lockCoins"] integerValue];
+        loginUser.authStatus = [NSString stringWithFormat:@"%@", response[@"authStatus"]];
+        loginUser.walkSteps = [response[@"walkSteps"] integerValue];
+        loginUser.totalElfCount = [response[@"totalElfCount"] integerValue];
         
         appController.loginUser = loginUser;
         
         [User saveUserToFile];
+        [[StepManager sharedManager] refreshStep:loginUser.walkSteps];
         
         if (complete) {
             complete(YES, nil, nil);
@@ -264,6 +279,28 @@ static NSString *CoderKeyCoins      =   @"CoderKeyCoins";
     }];
 }
 
++ (void)submitExtraUserInfoWithUserId:(NSUInteger)userId walkSteps:(NSUInteger)walkSteps city:(NSString *)city longitude:(NSString *)longitude latitude:(NSString *)latitude completeBlock:(UserCompleteBlock)complete {
+    NSDictionary *params = @{
+                             @"userId": @(userId),
+                             @"walkSteps": @(walkSteps),
+                             @"city": city,
+                             @"lng": longitude,
+                             @"lat": latitude
+                             };
+    
+    [[SessionNetwork defaultNetwork] postURL:@"/user/submitExtraUserInfo" params:params completePercent:nil success:^(id response) {
+        if (complete) {
+            complete(YES, nil, nil);
+        }
+        
+    } failure:^(NSUInteger errorCode, NSString *errorMsg) {
+        if (complete) {
+            complete(NO, nil, errorMsg);
+        }
+    }];
+    
+}
+
 + (void)forgotPwdWithPhone:(NSString *)phone newPwd:(NSString *)newPwd verifyCode:(NSString *)verifyCode completeBlock:(UserCompleteBlock)complete {
     NSDictionary *params = @{
                              @"loginname": phone,
@@ -313,6 +350,25 @@ static NSString *CoderKeyCoins      =   @"CoderKeyCoins";
     [[SessionNetwork defaultNetwork] getURL:@"/user/getRealNameAuthInfo" params:params completePercent:nil success:^(id response) {
         if (complete) {
             complete(YES, response, nil);
+        }
+        
+    } failure:^(NSUInteger errorCode, NSString *errorMsg) {
+        if (complete) {
+            complete(NO, nil, errorMsg);
+        }
+    }];
+}
+
++ (void)getNearbyUserListWithUserId:(NSUInteger)userId longitude:(NSString *)longitude latitude:(NSString *)latitude completeBlock:(UserCompleteBlock)complete {
+    NSDictionary *params = @{
+                             @"userId": @(userId),
+                             @"lng": longitude,
+                             @"lat": latitude
+                             };
+    
+    [[SessionNetwork defaultNetwork] getURL:@"/user/getNearbyUserList" params:params completePercent:nil success:^(id response) {
+        if (complete) {
+            complete(YES, response[@"list"], nil);
         }
         
     } failure:^(NSUInteger errorCode, NSString *errorMsg) {
@@ -379,6 +435,42 @@ static NSString *CoderKeyCoins      =   @"CoderKeyCoins";
                              };
     
     [[SessionNetwork defaultNetwork] postURL:@"/user/useCoupon" params:params completePercent:nil success:^(id response) {
+        if (complete) {
+            complete(YES, nil, nil);
+        }
+        
+    } failure:^(NSUInteger errorCode, NSString *errorMsg) {
+        if (complete) {
+            complete(NO, nil, errorMsg);
+        }
+    }];
+}
+
++ (void)getStepsGiftListWithUserId:(NSUInteger)userId walkSteps:(NSUInteger)walkSteps completeBlock:(UserCompleteBlock)complete {
+    NSDictionary *params = @{
+                             @"userId": @(userId),
+                             @"walkSteps": @(walkSteps)
+                             };
+    
+    [[SessionNetwork defaultNetwork] getURL:@"/user/getStepsGiftList" params:params completePercent:nil success:^(id response) {
+        if (complete) {
+            complete(YES, response[@"list"], nil);
+        }
+        
+    } failure:^(NSUInteger errorCode, NSString *errorMsg) {
+        if (complete) {
+            complete(NO, nil, errorMsg);
+        }
+    }];
+}
+
++ (void)receiveStepsGiftWithUserId:(NSUInteger)userId level:(NSUInteger)level completeBlock:(UserCompleteBlock)complete {
+    NSDictionary *params = @{
+                             @"userId": @(userId),
+                             @"level": @(level)
+                             };
+    
+    [[SessionNetwork defaultNetwork] postURL:@"/user/receiveStepsGift" params:params completePercent:nil success:^(id response) {
         if (complete) {
             complete(YES, nil, nil);
         }
@@ -464,15 +556,18 @@ static NSString *CoderKeyCoins      =   @"CoderKeyCoins";
 #pragma mark - NSCoding
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
-    [aCoder encodeInteger:self.userId forKey:CoderKeyUserId];
     [aCoder encodeObject:self.loginname forKey:CoderKeyLoginname];
+    [aCoder encodeInteger:self.userId forKey:CoderKeyUserId];
     [aCoder encodeObject:self.avatar forKey:CoderKeyAvatar];
+    [aCoder encodeObject:self.frameImg forKey:CoderKeyFrameImg];
     [aCoder encodeObject:self.sex forKey:CoderKeySex];
     [aCoder encodeInteger:self.age forKey:CoderKeyAge];
     [aCoder encodeObject:self.nickname forKey:CoderKeyNickname];
     [aCoder encodeObject:self.status forKey:CoderKeyStatus];
     [aCoder encodeObject:self.token forKey:CoderKeyToken];
     [aCoder encodeInteger:self.coins forKey:CoderKeyCoins];
+    [aCoder encodeInteger:self.lockCoins forKey:CoderKeyLockCoins];
+    [aCoder encodeObject:self.authStatus forKey:CoderKeyAuthStatus];
     
 }
 
@@ -482,15 +577,18 @@ static NSString *CoderKeyCoins      =   @"CoderKeyCoins";
             return self;
         }
         
-        self.userId = [aDecoder decodeIntegerForKey:CoderKeyUserId];
         self.loginname = [aDecoder decodeObjectForKey:CoderKeyLoginname];
+        self.userId = [aDecoder decodeIntegerForKey:CoderKeyUserId];
         self.avatar = [aDecoder decodeObjectForKey:CoderKeyAvatar];
+        self.frameImg = [aDecoder decodeObjectForKey:CoderKeyFrameImg];
         self.sex = [aDecoder decodeObjectForKey:CoderKeySex];
         self.age = [aDecoder decodeIntegerForKey:CoderKeyAge];
         self.nickname = [aDecoder decodeObjectForKey:CoderKeyNickname];
         self.status = [aDecoder decodeObjectForKey:CoderKeyStatus];
         self.token = [aDecoder decodeObjectForKey:CoderKeyToken];
         self.coins = [aDecoder decodeIntegerForKey:CoderKeyCoins];
+        self.lockCoins = [aDecoder decodeIntegerForKey:CoderKeyLockCoins];
+        self.authStatus = [aDecoder decodeObjectForKey:CoderKeyAuthStatus];
         
     }
     

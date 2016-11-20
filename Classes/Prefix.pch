@@ -8,6 +8,7 @@
 
 //sdk
     #import <AMapFoundationKit/AMapFoundationKit.h>
+    #import <AMapSearchKit/AMapSearchKit.h>
     #import <MAMapKit/MAMapKit.h>
 
     #import <RongIMKit/RongIMKit.h>
@@ -24,6 +25,7 @@
     #import "ShareView.h"
 
 //Model
+    #import "StepManager.h"
     #import "FileManager.h"
     #import "User.h"
     #import "Config.h"
@@ -85,6 +87,7 @@
 
 #define UserDefaults_TodayStepPercent_Time @"UserDefaults_TodayStepPercent_Time"
 #define UserDefaults_TodayStepPercent_Percent @"UserDefaults_TodayStepPercent_Percent"
+#define UserDefaults_TodayStepPercent_Step @"UserDefaults_TodayStepPercent_Step"
 
 #define UserDefaults_Config @"UserDefaults_Config"
 

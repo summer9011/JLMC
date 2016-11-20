@@ -35,7 +35,7 @@
     self.title = @"附近玩家";
     
     [self addMapView];
-    
+    [self reloadNearbyUser];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -98,7 +98,7 @@
     for (NSDictionary *user in GetAppController().nearbyUserArr) {
         UserAnno *anno = [[UserAnno alloc] init];
         anno.coordinate = CLLocationCoordinate2DMake([user[@"lat"] doubleValue], [user[@"lng"] doubleValue]);
-        anno.title = [NSString stringWithFormat:@"%@", user[@"name"]];
+        anno.title = [NSString stringWithFormat:@"%@", user[@"userId"]];
         anno.userDic = user;
         
         [userAnnoArr addObject:anno];
@@ -155,7 +155,7 @@
         }
         
         UserAnno *userAnno = (UserAnno *)annotation;
-        annoView.imageStr = userAnno.userDic[@"image"];
+        annoView.imageStr = userAnno.userDic[@"avatar"];
         
         return annoView;
         
