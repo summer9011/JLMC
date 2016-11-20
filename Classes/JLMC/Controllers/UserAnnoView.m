@@ -73,7 +73,7 @@
     UIGraphicsBeginImageContext(imgSize);
     
     [frameImg drawInRect:CGRectMake(0, 0, imgSize.width, imgSize.height)];
-    [avatar drawInRect:CGRectMake(7.5, 7.5, imgSize.width - 15, imgSize.height - 15)];
+    [avatar drawInRect:CGRectMake(7, 7, imgSize.width - 13, imgSize.width - 13)];
     
     UIImage *resultImg = UIGraphicsGetImageFromCurrentImageContext();
     

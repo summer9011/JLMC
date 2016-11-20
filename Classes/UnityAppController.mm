@@ -426,6 +426,7 @@ extern "C" void UnityRequestQuit()
     self.nearbyCount ++;
     
     NSDictionary *configDic = [[NSUserDefaults standardUserDefaults] dictionaryForKey:UserDefaults_Config];
+    
     if (self.isStartLoad && self.nearbyCount >= [configDic[UserDefaults_Config_refreshInterval] integerValue] * 60) {
         if ([self.rootViewController isKindOfClass:[MapVC class]]) {
             MapVC *mapVC = (MapVC *)self.rootViewController;

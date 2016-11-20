@@ -368,7 +368,8 @@ static NSString *CoderKeyAuthStatus =   @"CoderKeyAuthStatus";
     
     [[SessionNetwork defaultNetwork] getURL:@"/user/getNearbyUserList" params:params completePercent:nil success:^(id response) {
         if (complete) {
-            complete(YES, response[@"list"], nil);
+            complete(YES, response, nil);
+//            complete(YES, response[@"list"], nil);
         }
         
     } failure:^(NSUInteger errorCode, NSString *errorMsg) {

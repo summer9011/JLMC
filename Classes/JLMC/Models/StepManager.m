@@ -71,6 +71,7 @@
     [self getStep];
     
     NSDictionary *configDic = [[NSUserDefaults standardUserDefaults] dictionaryForKey:UserDefaults_Config];
+    
     self.uploadTime = [configDic[UserDefaults_Config_stepsInterval] integerValue] * 60;
     self.syncCounter = 0;
     
@@ -111,6 +112,7 @@
     self.percent = 0;
     
     NSDictionary *todayStepDic = [[NSUserDefaults standardUserDefaults] dictionaryForKey:UserDefaults_TodayStepPercent];
+    
     if (todayStepDic) {
         NSDate *date = todayStepDic[UserDefaults_TodayStepPercent_Time];
         NSDate *todayDate = [NSDate date];
@@ -154,6 +156,8 @@
                                            
     self.totalStep += step;
     self.percent = self.totalStep/(CGFloat)todayTopSteps;
+    
+    NSLog(@"今日步数 totalStep %ld, percent %f", self.totalStep, self.percent);
     
     [self getStep];
 }

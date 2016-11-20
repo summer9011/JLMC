@@ -76,7 +76,7 @@
 	<key>NSContactsUsageDescription</key>
 	<string>此 App 需要您的同意才能读取通讯录信息</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>此 App 需要开启定位功能</string>
+	<string>此 App 需要您的同意才能一直使用定位功能</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>此 App 需要您的同意才能使用麦克风</string>
 	<key>NSPhotoLibraryUsageDescription</key>

@@ -48,6 +48,7 @@
 
 @property (nonatomic, weak) UIImageView     *timeCountView;
 @property (nonatomic, weak) CAShapeLayer    *circleLayer;
+@property (nonatomic, weak) UIView          *timeView;
 @property (nonatomic, weak) UILabel         *timeCountLabel;
 
 @property (nonatomic, weak) MAMapView       *mapView;
@@ -220,6 +221,8 @@
     
     [self.view addSubview:timeView];
     
+    self.timeView = timeView;
+    
     UIImageView *tmpImageView = [[UIImageView alloc] initWithFrame:timeView.bounds];
     tmpImageView.image = [UIImage imageNamed:@"SYTimeB"];
     
@@ -235,7 +238,7 @@
     self.timeCountLabel = timeCountLabel;
     
     self.timeCountView.hidden = YES;
-    self.timeCountLabel.hidden = YES;
+    self.timeView.hidden = YES;
 }
 
 - (void)addMenu {
