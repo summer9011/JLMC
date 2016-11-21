@@ -260,21 +260,14 @@ static NSString *CoderKeyAuthStatus =   @"CoderKeyAuthStatus";
                              };
     
     [[SessionNetwork defaultNetwork] postURL:@"/user/userInfoUpdate" params:params completePercent:nil success:^(id response) {
-        if ([type isEqualToString:UserInfoNickname]) {
-            appController.loginUser.nickname = value;
-        } else if ([type isEqualToString:UserInfoAge]) {
-            appController.loginUser.age = value;
-        } else if ([type isEqualToString:UserInfoSex]) {
-            appController.loginUser.sex = value;
-        } else if ([type isEqualToString:UserInfoAvatar]) {
-            appController.loginUser.avatar = value;
-        }
+        NSLog(@"更新用户信息成功 type %@, value %@", type, value);
         
-        [User saveUserToFile];
-        
-        if (complete) {
-            complete(YES, nil, nil);
-        }
+        [User getUserInfoWithUserId:appController.loginUser.userId completeBlock:^(BOOL success, id response, NSString *errStr) {
+            if (complete) {
+                complete(success, response, errStr);
+            }
+            
+        }];
         
     } failure:^(NSUInteger errorCode, NSString *errorMsg) {
         if (complete) {

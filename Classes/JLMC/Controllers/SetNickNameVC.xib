@@ -1,12 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetNickNameVC">
             <connections>
+                <outlet property="nicknameTextField" destination="lXi-BU-I7m" id="HtT-FG-Lrx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +19,56 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTS-os-DXd">
+                    <rect key="frame" x="0.0" y="74" width="375" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ef1-e9-36b">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                            <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="mkw-iP-HY2"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DLk-JM-dWr">
+                            <rect key="frame" x="0.0" y="49.5" width="375" height="0.5"/>
+                            <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="qpj-1N-xfQ"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入昵称" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lXi-BU-I7m">
+                            <rect key="frame" x="10" y="0.5" width="355" height="49"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="rUi-HH-Htt"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="DLk-JM-dWr" firstAttribute="leading" secondItem="KTS-os-DXd" secondAttribute="leading" id="3Dc-j1-5KO"/>
+                        <constraint firstItem="Ef1-e9-36b" firstAttribute="leading" secondItem="KTS-os-DXd" secondAttribute="leading" id="N4X-1H-GdW"/>
+                        <constraint firstAttribute="trailing" secondItem="DLk-JM-dWr" secondAttribute="trailing" id="Oqo-1N-jvu"/>
+                        <constraint firstAttribute="bottom" secondItem="DLk-JM-dWr" secondAttribute="bottom" id="PdD-m1-EF1"/>
+                        <constraint firstItem="DLk-JM-dWr" firstAttribute="top" secondItem="lXi-BU-I7m" secondAttribute="bottom" id="cZX-Bz-xpf"/>
+                        <constraint firstItem="lXi-BU-I7m" firstAttribute="leading" secondItem="KTS-os-DXd" secondAttribute="leading" constant="10" id="n2g-Hm-VfU"/>
+                        <constraint firstAttribute="trailing" secondItem="Ef1-e9-36b" secondAttribute="trailing" id="oFP-Ei-Bib"/>
+                        <constraint firstAttribute="height" constant="50" id="oW6-fr-Vi4"/>
+                        <constraint firstItem="lXi-BU-I7m" firstAttribute="top" secondItem="Ef1-e9-36b" secondAttribute="bottom" id="ogX-7F-VRC"/>
+                        <constraint firstItem="Ef1-e9-36b" firstAttribute="top" secondItem="KTS-os-DXd" secondAttribute="top" id="rRc-5P-cL5"/>
+                        <constraint firstAttribute="trailing" secondItem="lXi-BU-I7m" secondAttribute="trailing" constant="10" id="teu-kR-aPe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KTS-os-DXd" secondAttribute="trailing" id="4QF-Id-H4c"/>
+                <constraint firstItem="KTS-os-DXd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sES-HE-5Qr"/>
+                <constraint firstItem="KTS-os-DXd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="y9s-0a-zJg"/>
+            </constraints>
         </view>
     </objects>
 </document>

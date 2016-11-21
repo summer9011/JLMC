@@ -120,6 +120,8 @@
 		6E9202131DE1D72E00785B0E /* VHSSteps.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9202121DE1D72E00785B0E /* VHSSteps.m */; };
 		6E9202161DE327D800785B0E /* SAnno.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9202141DE327D800785B0E /* SAnno.png */; };
 		6E9202171DE327D800785B0E /* UserAnnoBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9202151DE327D800785B0E /* UserAnnoBack.png */; };
+		6E92021B1DE33D9300785B0E /* AvatarListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9202191DE33D9300785B0E /* AvatarListVC.m */; };
+		6E92021C1DE33D9300785B0E /* AvatarListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E92021A1DE33D9300785B0E /* AvatarListVC.xib */; };
 		6E9503231DDB362500692605 /* ConfrimBuyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9503211DDB362500692605 /* ConfrimBuyCell.m */; };
 		6E9503241DDB362500692605 /* ConfrimBuyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E9503221DDB362500692605 /* ConfrimBuyCell.xib */; };
 		6E9503271DDB364200692605 /* ConfrimBuyTotalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9503261DDB364200692605 /* ConfrimBuyTotalView.m */; };
@@ -519,6 +521,9 @@
 		6E9202121DE1D72E00785B0E /* VHSSteps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VHSSteps.m; sourceTree = "<group>"; };
 		6E9202141DE327D800785B0E /* SAnno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SAnno.png; sourceTree = "<group>"; };
 		6E9202151DE327D800785B0E /* UserAnnoBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UserAnnoBack.png; sourceTree = "<group>"; };
+		6E9202181DE33D9300785B0E /* AvatarListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarListVC.h; sourceTree = "<group>"; };
+		6E9202191DE33D9300785B0E /* AvatarListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarListVC.m; sourceTree = "<group>"; };
+		6E92021A1DE33D9300785B0E /* AvatarListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AvatarListVC.xib; sourceTree = "<group>"; };
 		6E9503201DDB362500692605 /* ConfrimBuyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfrimBuyCell.h; sourceTree = "<group>"; };
 		6E9503211DDB362500692605 /* ConfrimBuyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfrimBuyCell.m; sourceTree = "<group>"; };
 		6E9503221DDB362500692605 /* ConfrimBuyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfrimBuyCell.xib; sourceTree = "<group>"; };
@@ -1121,18 +1126,21 @@
 				6E87011A1DBB848700FE7691 /* MeVC.h */,
 				6E87011B1DBB848700FE7691 /* MeVC.m */,
 				6E87011C1DBB848700FE7691 /* MeVC.xib */,
-				6E8701221DBBAA1500FE7691 /* RealNameAuthVC.h */,
-				6E8701231DBBAA1500FE7691 /* RealNameAuthVC.m */,
-				6E8701241DBBAA1500FE7691 /* RealNameAuthVC.xib */,
-				6E8701271DBBAE0600FE7691 /* SetNickNameVC.h */,
-				6E8701281DBBAE0600FE7691 /* SetNickNameVC.m */,
-				6E8701291DBBAE0600FE7691 /* SetNickNameVC.xib */,
+				6E9202181DE33D9300785B0E /* AvatarListVC.h */,
+				6E9202191DE33D9300785B0E /* AvatarListVC.m */,
+				6E92021A1DE33D9300785B0E /* AvatarListVC.xib */,
 				6E88A3451DD9EA3D0006104C /* ChooseCartoonVC.h */,
 				6E88A3461DD9EA3D0006104C /* ChooseCartoonVC.m */,
 				6E88A3471DD9EA3D0006104C /* ChooseCartoonVC.xib */,
 				6E88A34A1DD9EB760006104C /* CartoonAvatarCell.h */,
 				6E88A34B1DD9EB760006104C /* CartoonAvatarCell.m */,
 				6E88A34C1DD9EB760006104C /* CartoonAvatarCell.xib */,
+				6E8701271DBBAE0600FE7691 /* SetNickNameVC.h */,
+				6E8701281DBBAE0600FE7691 /* SetNickNameVC.m */,
+				6E8701291DBBAE0600FE7691 /* SetNickNameVC.xib */,
+				6E8701221DBBAA1500FE7691 /* RealNameAuthVC.h */,
+				6E8701231DBBAA1500FE7691 /* RealNameAuthVC.m */,
+				6E8701241DBBAA1500FE7691 /* RealNameAuthVC.xib */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -2059,6 +2067,7 @@
 				6EA9B4941DBB1FED00206E4E /* ForgetPwdVC.xib in Resources */,
 				6EA9B4C11DBB259A00206E4E /* GameShopVC.xib in Resources */,
 				6E43A5E41DBF9316006549B4 /* Login.xcassets in Resources */,
+				6E92021C1DE33D9300785B0E /* AvatarListVC.xib in Resources */,
 				6E95033E1DDB597000692605 /* ShareView.xib in Resources */,
 				6EA9B4A11DBB213000206E4E /* ExchangeMarketVC.xib in Resources */,
 				6EA9AF181DB8978F00206E4E /* LoginVC.xib in Resources */,
@@ -2214,6 +2223,7 @@
 				B789480FACA8E9641029F964 /* Bulk_mscorlib_0.cpp in Sources */,
 				962F44FE8FDD77C656C8C5C0 /* Bulk_mscorlib_1.cpp in Sources */,
 				416348798030C311B658A617 /* Bulk_mscorlib_2.cpp in Sources */,
+				6E92021B1DE33D9300785B0E /* AvatarListVC.m in Sources */,
 				6E43A5E81DBFA486006549B4 /* MenuButton.m in Sources */,
 				6E5F7D271DDAB6EE00A28655 /* ConfrimRechargeVC.m in Sources */,
 				6E9503471DDCA83400692605 /* SupplyAnno.m in Sources */,

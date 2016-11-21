@@ -10,14 +10,13 @@
 
 #import "RealNameAuthVC.h"
 #import "SetNickNameVC.h"
+#import "AvatarListVC.h"
 
-#import "SheetListView.h"
+#import "UnityAppController.h"
 
-@interface MeVC () <SheetListDelegate>
+@interface MeVC ()
 
 @property (weak, nonatomic) IBOutlet UITableView *infoTable;
-
-@property (nonatomic, strong) SheetListView *sheetList;
 
 @end
 
@@ -38,6 +37,12 @@
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [self.infoTable reloadData];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -46,7 +51,7 @@
 #pragma mark - UITableViewDataSource, UITableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 7;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -58,19 +63,19 @@
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             
             cell.textLabel.text = @"头像";
-        }
-        
-        return cell;
-        
-    } else if (indexPath.row == 3) {
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"3DCell"];
-        if (cell == nil) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"3DCell"];
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             
-            cell.textLabel.text = @"3D形象";
+            CGRect screenRect = [UIScreen mainScreen].bounds;
+            
+            UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(CGRectGetWidth(screenRect) - 90 - 36, 10, 90, 90)];
+            imageView.tag = 10;
+            imageView.layer.masksToBounds = YES;
+            imageView.layer.cornerRadius = 45.f;
+            [cell.contentView addSubview:imageView];
+            
         }
+        
+        UIImageView *imageView = [cell.contentView viewWithTag:10];
+        [imageView sd_setImageWithURL:[NSURL URLWithString:GetAppController().loginUser.avatar]];
         
         return cell;
         
@@ -79,11 +84,10 @@
         if (cell == nil) {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"OtherCell"];
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             
             CGRect screenRect = [UIScreen mainScreen].bounds;
             
-            UIView *downLineView = [[UIView alloc] initWithFrame:CGRectMake(0, 64.5, CGRectGetWidth(screenRect), .5)];
+            UIView *downLineView = [[UIView alloc] initWithFrame:CGRectMake(0, 49.5, CGRectGetWidth(screenRect), .5)];
             downLineView.tag = 10;
             downLineView.backgroundColor = RGB(204, 204, 204);
             [cell.contentView addSubview:downLineView];
@@ -91,27 +95,51 @@
         }
         
         UIView *downLineView = [cell.contentView viewWithTag:10];
-        downLineView.hidden = !(indexPath.row == 6);
+        downLineView.hidden = !(indexPath.row == 4);
         
         if (indexPath.row == 1) {
+            cell.accessoryType = UITableViewCellAccessoryNone;
+            
             cell.textLabel.text = @"账号";
-            cell.detailTextLabel.text = @"";
+            cell.detailTextLabel.text = GetAppController().loginUser.loginname;
             
         } else if (indexPath.row == 2) {
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            
             cell.textLabel.text = @"昵称";
-            cell.detailTextLabel.text = @"";
+            cell.detailTextLabel.text = GetAppController().loginUser.nickname;
+            
+        } else if (indexPath.row == 3) {
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            
+            cell.textLabel.text = @"性别";
+            
+            if ([GetAppController().loginUser.sex isEqualToString:UserSexMale]) {
+                cell.detailTextLabel.text = @"男";
+            } else {
+                cell.detailTextLabel.text = @"女";
+            }
             
         } else if (indexPath.row == 4) {
-            cell.textLabel.text = @"年龄";
-            cell.detailTextLabel.text = @"";
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             
-        } else if (indexPath.row == 5) {
-            cell.textLabel.text = @"性别";
-            cell.detailTextLabel.text = @"";
-            
-        } else if (indexPath.row == 6) {
             cell.textLabel.text = @"实名认证";
-            cell.detailTextLabel.text = @"";
+            
+            if ([GetAppController().loginUser.authStatus isEqualToString:AuthStatusNosubmit]) {
+                cell.detailTextLabel.text = @"未提交";
+                
+            } else if ([GetAppController().loginUser.authStatus isEqualToString:AuthStatusPending]) {
+                cell.detailTextLabel.text = @"审核中";
+                
+            } else if ([GetAppController().loginUser.authStatus isEqualToString:AuthStatusSuccess]) {
+                cell.detailTextLabel.text = @"审核成功";
+                
+            } else if ([GetAppController().loginUser.authStatus isEqualToString:AuthStatusFail]) {
+                cell.detailTextLabel.text = @"审核失败";
+                
+            } else {
+                cell.detailTextLabel.text = @"";
+            }
             
         }
         
@@ -124,56 +152,34 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
-        return 125;
+        return 110;
         
     } else {
-        return 65;
+        return 50;
         
     }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
-        if (self.sheetList == nil) {
-            self.sheetList = [[SheetListView alloc] initWithDelegate:self buttonTitles:@"拍照", @"从手机相册选择", nil];
-        }
-        
-        [self.sheetList showIn:self.navigationController.view];
+        AvatarListVC *avatarListVC = [[AvatarListVC alloc] initWithNibName:@"AvatarListVC" bundle:nil];
+        [self.navigationController pushViewController:avatarListVC animated:YES];
         
     } else if (indexPath.row == 1) {
+        NSLog(@"账号");
+        
+    } else if (indexPath.row == 2) {
         SetNickNameVC *nickNameVC = [[SetNickNameVC alloc] initWithNibName:@"SetNickNameVC" bundle:nil];
         [self.navigationController pushViewController:nickNameVC animated:YES];
         
-    } else if (indexPath.row == 2) {
-        NSLog(@"昵称");
-        
     } else if (indexPath.row == 3) {
-        NSLog(@"3D形象");
-        
-    } else if (indexPath.row == 4) {
-        NSLog(@"年龄");
-        
-    } else if (indexPath.row == 5) {
         NSLog(@"性别");
         
-    } else if (indexPath.row == 6) {
+    } else if (indexPath.row == 4) {
         RealNameAuthVC *authVC = [[RealNameAuthVC alloc] initWithNibName:@"RealNameAuthVC" bundle:nil];
         [self.navigationController pushViewController:authVC animated:YES];
         
     }
-}
-
-#pragma mark - SheetListDelegate
-
-- (void)didSelectRow:(NSUInteger)index {
-    if (index == 1) {
-        NSLog(@"拍照");
-    }
-    
-    if (index == 2) {
-        NSLog(@"从手机相册选择");
-    }
-    
 }
 
 /*
