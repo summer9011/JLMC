@@ -118,6 +118,8 @@
 		6E88A34E1DD9EB760006104C /* CartoonAvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E88A34C1DD9EB760006104C /* CartoonAvatarCell.xib */; };
 		6E9202101DE1C13600785B0E /* StepManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E92020F1DE1C13600785B0E /* StepManager.m */; };
 		6E9202131DE1D72E00785B0E /* VHSSteps.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9202121DE1D72E00785B0E /* VHSSteps.m */; };
+		6E9202161DE327D800785B0E /* SAnno.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9202141DE327D800785B0E /* SAnno.png */; };
+		6E9202171DE327D800785B0E /* UserAnnoBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9202151DE327D800785B0E /* UserAnnoBack.png */; };
 		6E9503231DDB362500692605 /* ConfrimBuyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9503211DDB362500692605 /* ConfrimBuyCell.m */; };
 		6E9503241DDB362500692605 /* ConfrimBuyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E9503221DDB362500692605 /* ConfrimBuyCell.xib */; };
 		6E9503271DDB364200692605 /* ConfrimBuyTotalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9503261DDB364200692605 /* ConfrimBuyTotalView.m */; };
@@ -367,7 +369,7 @@
 		150041D8B1AAEC3502F06B15 /* Il2CppCodeRegistration.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCodeRegistration.cpp; path = Classes/Native/Il2CppCodeRegistration.cpp; sourceTree = SOURCE_ROOT; };
 		1859EA9A19214E7B0022C3D3 /* MetalHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MetalHelper.mm; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* Unity-Target-New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Unity-Target-New.app"; path = artest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* artest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = artest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22664DA3A36BAAA85E2F363A /* Bulk_mscorlib_0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_0.cpp; path = Classes/Native/Bulk_mscorlib_0.cpp; sourceTree = SOURCE_ROOT; };
 		266F4AEA87F419EAF3C854B8 /* Il2CppGenericInstDefinitions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppGenericInstDefinitions.cpp; path = Classes/Native/Il2CppGenericInstDefinitions.cpp; sourceTree = SOURCE_ROOT; };
 		299E41A7A537151914B7091E /* Bulk_mscorlib_4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_4.cpp; path = Classes/Native/Bulk_mscorlib_4.cpp; sourceTree = SOURCE_ROOT; };
@@ -515,6 +517,8 @@
 		6E92020F1DE1C13600785B0E /* StepManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepManager.m; sourceTree = "<group>"; };
 		6E9202111DE1D72E00785B0E /* VHSSteps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VHSSteps.h; sourceTree = "<group>"; };
 		6E9202121DE1D72E00785B0E /* VHSSteps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VHSSteps.m; sourceTree = "<group>"; };
+		6E9202141DE327D800785B0E /* SAnno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SAnno.png; sourceTree = "<group>"; };
+		6E9202151DE327D800785B0E /* UserAnnoBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UserAnnoBack.png; sourceTree = "<group>"; };
 		6E9503201DDB362500692605 /* ConfrimBuyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfrimBuyCell.h; sourceTree = "<group>"; };
 		6E9503211DDB362500692605 /* ConfrimBuyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfrimBuyCell.m; sourceTree = "<group>"; };
 		6E9503221DDB362500692605 /* ConfrimBuyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfrimBuyCell.xib; sourceTree = "<group>"; };
@@ -914,7 +918,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* Unity-Target-New.app */,
+				1D6058910D05DD3D006BFB54 /* artest.app */,
 				5623C57317FDCB0800090B9E /* Unity-iPhone Tests.xctest */,
 			);
 			name = Products;
@@ -1071,6 +1075,8 @@
 		6E43A5DF1DBF9316006549B4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6E9202141DE327D800785B0E /* SAnno.png */,
+				6E9202151DE327D800785B0E /* UserAnnoBack.png */,
 				6E43A5E01DBF9316006549B4 /* Common.xcassets */,
 				6E43A5E11DBF9316006549B4 /* Login.xcassets */,
 				6E43A5E21DBF9316006549B4 /* Main.xcassets */,
@@ -1924,7 +1930,7 @@
 			);
 			name = "Unity-iPhone";
 			productName = "iPhone-target";
-			productReference = 1D6058910D05DD3D006BFB54 /* Unity-Target-New.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* artest.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5623C57217FDCB0800090B9E /* Unity-iPhone Tests */ = {
@@ -2003,6 +2009,7 @@
 				6E5F7D111DDAB4A100A28655 /* GoodDetailVC.xib in Resources */,
 				6E87012B1DBBAE0600FE7691 /* SetNickNameVC.xib in Resources */,
 				6E9503241DDB362500692605 /* ConfrimBuyCell.xib in Resources */,
+				6E9202171DE327D800785B0E /* UserAnnoBack.png in Resources */,
 				6E9C86A71DC2FE09005AF102 /* MJRefresh.bundle in Resources */,
 				6EA9B42E1DB8EB8A00206E4E /* RCConfig.plist in Resources */,
 				6E9C86C21DC32274005AF102 /* AMap.bundle in Resources */,
@@ -2015,6 +2022,7 @@
 				6E8701261DBBAA1500FE7691 /* RealNameAuthVC.xib in Resources */,
 				6E5F7D1E1DDAB6A100A28655 /* ConfirmBuyVC.xib in Resources */,
 				6E0912B31DCF04B500C66E9E /* NearbyVC.xib in Resources */,
+				6E9202161DE327D800785B0E /* SAnno.png in Resources */,
 				6EA9B4BB1DBB250B00206E4E /* MyBackpackVC.xib in Resources */,
 				6E0912AE1DCF008400C66E9E /* MapAnno.xcassets in Resources */,
 				6EA9B42B1DB8EB8A00206E4E /* Emoji.plist in Resources */,
@@ -2333,7 +2341,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = MA4AJ762F2;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2435,7 +2443,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = MA4AJ762F2;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

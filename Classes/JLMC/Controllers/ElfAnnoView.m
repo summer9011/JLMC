@@ -10,6 +10,8 @@
 
 @interface ElfAnnoView ()
 
+@property (nonatomic, weak) UIImageView *elfImageView;
+
 @property (nonatomic, strong) id <SDWebImageOperation> operation;
 
 @end
@@ -19,10 +21,23 @@
 - (id)initWithAnnotation:(id<MAAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithAnnotation:annotation reuseIdentifier:reuseIdentifier];
     if (self) {
+        UIImageView *elfImageView = [[UIImageView alloc] init];
+        elfImageView.contentMode = UIViewContentModeScaleAspectFill;
+        [self addSubview:elfImageView];
+        
+        self.elfImageView = elfImageView;
+        
+        [self setDefaultImage];
         
     }
     
     return self;
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    self.elfImageView.frame = CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
 }
 
 - (void)setImageStr:(NSString *)imageStr {
@@ -37,13 +52,17 @@
     
     self.operation = [[SDWebImageManager sharedManager] loadImageWithURL:[NSURL URLWithString:imageStr] options:SDWebImageRetryFailed progress:nil completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
         if (finished) {
-            weakSelf.image = image;
-            weakSelf.centerOffset = CGPointMake(0, 0 - weakSelf.image.size.height/2.f);
+            weakSelf.elfImageView.image = image;
             
             weakSelf.operation = nil;
         }
     }];
     
+}
+
+- (void)setDefaultImage {
+    self.image = [UIImage imageNamed:@"SAnno"];
+    self.centerOffset = CGPointMake(0, -24);
 }
 
 @end

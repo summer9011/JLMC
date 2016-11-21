@@ -64,9 +64,14 @@ static NSString *APINamerealNameAuth    =       @"realNameAuth";    //API实名�
 @property (nonatomic, strong) NSString *avatar;
 
 /**
- 用户头像边框图片
+ 用户首页大头针头像图片URL
  */
-@property (nonatomic, strong) NSString *frameImg;
+@property (nonatomic, strong) NSString *pinAvatar;
+
+/**
+ 用户释放吸引类道具大头针头像图片URL
+ */
+@property (nonatomic, strong) NSString *magicAvatar;
 
 /**
  性别

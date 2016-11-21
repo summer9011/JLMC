@@ -54,7 +54,7 @@
     self.mapView.showsUserLocation = YES;
     self.mapView.userTrackingMode = MAUserTrackingModeFollow;
     
-    [self.mapView setZoomLevel:16.1 animated:YES];
+    [self.mapView setZoomLevel:18 animated:YES];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -141,7 +141,7 @@
             annoView = [[UserAnnoView alloc] initWithAnnotation:annotation reuseIdentifier:UserIdentifier];
         }
         
-        annoView.imageStr = GetAppController().loginUser.avatar;
+        annoView.imageStr = GetAppController().loginUser.pinAvatar;
         
         self.userLocationAnnotationView = annoView;
         
