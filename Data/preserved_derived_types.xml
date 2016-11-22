@@ -131,11 +131,10 @@
 <type fullname="CatchQuan" preserve="all"/>
 <type fullname="ScenceCamera" preserve="all"/>
 <type fullname="AssetLoad" preserve="all"/>
-<type fullname="DontDestroy" preserve="all"/>
 <type fullname="FilesManager" preserve="all"/>
 <type fullname="NativeMessageReceive" preserve="all"/>
 <type fullname="GroupPhotoMain" preserve="all"/>
-<type fullname="MobileCamera" preserve="all"/>
+<type fullname="Main" preserve="all"/>
 <type fullname="MySpriteItem" preserve="all"/>
 <type fullname="MySpriteMain" preserve="all"/>
 <type fullname="GiftsItem" preserve="all"/>

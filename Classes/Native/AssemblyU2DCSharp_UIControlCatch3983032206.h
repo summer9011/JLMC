@@ -33,6 +33,8 @@ public:
 	bool ___switchFlagOfScence_4;
 	// UnityEngine.GameObject UIControlCatch::mGameManager
 	GameObject_t1366199518 * ___mGameManager_5;
+	// UnityEngine.GameObject UIControlCatch::mCamera
+	GameObject_t1366199518 * ___mCamera_6;
 
 public:
 	inline static int32_t get_offset_of_switchFlagOfImage_2() { return static_cast<int32_t>(offsetof(UIControlCatch_t3983032206, ___switchFlagOfImage_2)); }
@@ -66,6 +68,15 @@ public:
 	{
 		___mGameManager_5 = value;
 		Il2CppCodeGenWriteBarrier(&___mGameManager_5, value);
+	}
+
+	inline static int32_t get_offset_of_mCamera_6() { return static_cast<int32_t>(offsetof(UIControlCatch_t3983032206, ___mCamera_6)); }
+	inline GameObject_t1366199518 * get_mCamera_6() const { return ___mCamera_6; }
+	inline GameObject_t1366199518 ** get_address_of_mCamera_6() { return &___mCamera_6; }
+	inline void set_mCamera_6(GameObject_t1366199518 * value)
+	{
+		___mCamera_6 = value;
+		Il2CppCodeGenWriteBarrier(&___mCamera_6, value);
 	}
 };
 

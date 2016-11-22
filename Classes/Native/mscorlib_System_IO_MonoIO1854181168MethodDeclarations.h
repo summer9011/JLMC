@@ -48,6 +48,8 @@ extern "C"  bool MonoIO_RemoveDirectory_m3495601603 (Il2CppObject * __this /* st
 extern "C"  StringU5BU5D_t3764931161* MonoIO_GetFileSystemEntries_m3422848968 (Il2CppObject * __this /* static, unused */, String_t* ___path, String_t* ___path_with_pattern, int32_t ___attrs, int32_t ___mask, int32_t* ___error, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.IO.MonoIO::GetCurrentDirectory(System.IO.MonoIOError&)
 extern "C"  String_t* MonoIO_GetCurrentDirectory_m1509324201 (Il2CppObject * __this /* static, unused */, int32_t* ___error, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.IO.MonoIO::CopyFile(System.String,System.String,System.Boolean,System.IO.MonoIOError&)
+extern "C"  bool MonoIO_CopyFile_m2961462354 (Il2CppObject * __this /* static, unused */, String_t* ___path, String_t* ___dest, bool ___overwrite, int32_t* ___error, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.IO.MonoIO::DeleteFile(System.String,System.IO.MonoIOError&)
 extern "C"  bool MonoIO_DeleteFile_m3273821223 (Il2CppObject * __this /* static, unused */, String_t* ___path, int32_t* ___error, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.IO.FileAttributes System.IO.MonoIO::GetFileAttributes(System.String,System.IO.MonoIOError&)

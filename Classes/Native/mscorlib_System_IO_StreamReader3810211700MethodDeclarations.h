@@ -38,6 +38,8 @@ extern "C"  void StreamReader__ctor_m1475856354 (StreamReader_t3810211700 * __th
 extern "C"  void StreamReader__ctor_m2654332332 (StreamReader_t3810211700 * __this, Stream_t2768948945 * ___stream, Encoding_t2125916575 * ___encoding, bool ___detectEncodingFromByteOrderMarks, int32_t ___bufferSize, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.StreamReader::.ctor(System.String)
 extern "C"  void StreamReader__ctor_m3454466728 (StreamReader_t3810211700 * __this, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.IO.StreamReader::.ctor(System.String,System.Text.Encoding)
+extern "C"  void StreamReader__ctor_m3499795391 (StreamReader_t3810211700 * __this, String_t* ___path, Encoding_t2125916575 * ___encoding, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.StreamReader::.ctor(System.String,System.Text.Encoding,System.Boolean,System.Int32)
 extern "C"  void StreamReader__ctor_m871771009 (StreamReader_t3810211700 * __this, String_t* ___path, Encoding_t2125916575 * ___encoding, bool ___detectEncodingFromByteOrderMarks, int32_t ___bufferSize, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.StreamReader::.cctor()

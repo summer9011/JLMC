@@ -20,8 +20,6 @@ struct String_t;
 struct SerializationInfo_t1029367511;
 // System.IO.DirectoryInfo
 struct DirectoryInfo_t2045585366;
-// System.IO.FileStream
-struct FileStream_t4109615879;
 
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_String1967731336.h"
@@ -42,9 +40,5 @@ extern "C"  String_t* FileInfo_get_Name_m506260294 (FileInfo_t2789094487 * __thi
 extern "C"  String_t* FileInfo_get_DirectoryName_m441515569 (FileInfo_t2789094487 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.IO.DirectoryInfo System.IO.FileInfo::get_Directory()
 extern "C"  DirectoryInfo_t2045585366 * FileInfo_get_Directory_m898581134 (FileInfo_t2789094487 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.IO.FileStream System.IO.FileInfo::Create()
-extern "C"  FileStream_t4109615879 * FileInfo_Create_m1139990289 (FileInfo_t2789094487 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void System.IO.FileInfo::Delete()
-extern "C"  void FileInfo_Delete_m1147453118 (FileInfo_t2789094487 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.IO.FileInfo::ToString()
 extern "C"  String_t* FileInfo_ToString_m2424440748 (FileInfo_t2789094487 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

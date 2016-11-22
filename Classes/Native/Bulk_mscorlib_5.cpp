@@ -24995,6 +24995,14 @@ extern "C"  bool HashAlgorithm_get_CanReuseTransform_m160024219 (HashAlgorithm_t
 		return (bool)1;
 	}
 }
+// System.Void System.Security.Cryptography.HashAlgorithm::Clear()
+extern "C"  void HashAlgorithm_Clear_m672070915 (HashAlgorithm_t3752677216 * __this, const MethodInfo* method)
+{
+	{
+		VirtActionInvoker1< bool >::Invoke(14 /* System.Void System.Security.Cryptography.HashAlgorithm::Dispose(System.Boolean) */, __this, (bool)1);
+		return;
+	}
+}
 // System.Byte[] System.Security.Cryptography.HashAlgorithm::ComputeHash(System.Byte[])
 extern TypeInfo* ArgumentNullException_t1144479314_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2713104920;
@@ -25134,6 +25142,73 @@ IL_0075:
 		VirtActionInvoker0::Invoke(13 /* System.Void System.Security.Cryptography.HashAlgorithm::Initialize() */, __this);
 		ByteU5BU5D_t3835026402* L_17 = __this->get_HashValue_0();
 		return L_17;
+	}
+}
+// System.Byte[] System.Security.Cryptography.HashAlgorithm::ComputeHash(System.IO.Stream)
+extern TypeInfo* ObjectDisposedException_t1071470440_il2cpp_TypeInfo_var;
+extern TypeInfo* ByteU5BU5D_t3835026402_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2666337689;
+extern const uint32_t HashAlgorithm_ComputeHash_m595824264_MetadataUsageId;
+extern "C"  ByteU5BU5D_t3835026402* HashAlgorithm_ComputeHash_m595824264 (HashAlgorithm_t3752677216 * __this, Stream_t2768948945 * ___inputStream, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (HashAlgorithm_ComputeHash_m595824264_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	ByteU5BU5D_t3835026402* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		bool L_0 = __this->get_disposed_3();
+		if (!L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		ObjectDisposedException_t1071470440 * L_1 = (ObjectDisposedException_t1071470440 *)il2cpp_codegen_object_new(ObjectDisposedException_t1071470440_il2cpp_TypeInfo_var);
+		ObjectDisposedException__ctor_m3156784572(L_1, _stringLiteral2666337689, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0016:
+	{
+		V_0 = ((ByteU5BU5D_t3835026402*)SZArrayNew(ByteU5BU5D_t3835026402_il2cpp_TypeInfo_var, (uint32_t)((int32_t)4096)));
+		Stream_t2768948945 * L_2 = ___inputStream;
+		ByteU5BU5D_t3835026402* L_3 = V_0;
+		NullCheck(L_2);
+		int32_t L_4 = VirtFuncInvoker3< int32_t, ByteU5BU5D_t3835026402*, int32_t, int32_t >::Invoke(14 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_2, L_3, 0, ((int32_t)4096));
+		V_1 = L_4;
+		goto IL_004b;
+	}
+
+IL_0034:
+	{
+		ByteU5BU5D_t3835026402* L_5 = V_0;
+		int32_t L_6 = V_1;
+		VirtActionInvoker3< ByteU5BU5D_t3835026402*, int32_t, int32_t >::Invoke(10 /* System.Void System.Security.Cryptography.HashAlgorithm::HashCore(System.Byte[],System.Int32,System.Int32) */, __this, L_5, 0, L_6);
+		Stream_t2768948945 * L_7 = ___inputStream;
+		ByteU5BU5D_t3835026402* L_8 = V_0;
+		NullCheck(L_7);
+		int32_t L_9 = VirtFuncInvoker3< int32_t, ByteU5BU5D_t3835026402*, int32_t, int32_t >::Invoke(14 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_7, L_8, 0, ((int32_t)4096));
+		V_1 = L_9;
+	}
+
+IL_004b:
+	{
+		int32_t L_10 = V_1;
+		if ((((int32_t)L_10) > ((int32_t)0)))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		ByteU5BU5D_t3835026402* L_11 = VirtFuncInvoker0< ByteU5BU5D_t3835026402* >::Invoke(11 /* System.Byte[] System.Security.Cryptography.HashAlgorithm::HashFinal() */, __this);
+		__this->set_HashValue_0(L_11);
+		VirtActionInvoker0::Invoke(13 /* System.Void System.Security.Cryptography.HashAlgorithm::Initialize() */, __this);
+		ByteU5BU5D_t3835026402* L_12 = __this->get_HashValue_0();
+		return L_12;
 	}
 }
 // System.Security.Cryptography.HashAlgorithm System.Security.Cryptography.HashAlgorithm::Create(System.String)

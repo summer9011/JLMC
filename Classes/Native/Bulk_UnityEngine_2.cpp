@@ -7336,37 +7336,6 @@ extern "C"  void Texture2D_Apply_m3543341930 (Texture2D_t3575456220 * __this, co
 		return;
 	}
 }
-// System.Void UnityEngine.Texture2D::ReadPixels(UnityEngine.Rect,System.Int32,System.Int32)
-extern "C"  void Texture2D_ReadPixels_m1120832672 (Texture2D_t3575456220 * __this, Rect_t2553848979  ___source, int32_t ___destX, int32_t ___destY, const MethodInfo* method)
-{
-	bool V_0 = false;
-	{
-		V_0 = (bool)1;
-		int32_t L_0 = ___destX;
-		int32_t L_1 = ___destY;
-		bool L_2 = V_0;
-		Texture2D_INTERNAL_CALL_ReadPixels_m1476963500(NULL /*static, unused*/, __this, (&___source), L_0, L_1, L_2, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.Texture2D::INTERNAL_CALL_ReadPixels(UnityEngine.Texture2D,UnityEngine.Rect&,System.Int32,System.Int32,System.Boolean)
-extern "C"  void Texture2D_INTERNAL_CALL_ReadPixels_m1476963500 (Il2CppObject * __this /* static, unused */, Texture2D_t3575456220 * ___self, Rect_t2553848979 * ___source, int32_t ___destX, int32_t ___destY, bool ___recalculateMipMaps, const MethodInfo* method)
-{
-	typedef void (*Texture2D_INTERNAL_CALL_ReadPixels_m1476963500_ftn) (Texture2D_t3575456220 *, Rect_t2553848979 *, int32_t, int32_t, bool);
-	static Texture2D_INTERNAL_CALL_ReadPixels_m1476963500_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Texture2D_INTERNAL_CALL_ReadPixels_m1476963500_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Texture2D::INTERNAL_CALL_ReadPixels(UnityEngine.Texture2D,UnityEngine.Rect&,System.Int32,System.Int32,System.Boolean)");
-	_il2cpp_icall_func(___self, ___source, ___destX, ___destY, ___recalculateMipMaps);
-}
-// System.Byte[] UnityEngine.Texture2D::EncodeToPNG()
-extern "C"  ByteU5BU5D_t3835026402* Texture2D_EncodeToPNG_m2680110528 (Texture2D_t3575456220 * __this, const MethodInfo* method)
-{
-	typedef ByteU5BU5D_t3835026402* (*Texture2D_EncodeToPNG_m2680110528_ftn) (Texture2D_t3575456220 *);
-	static Texture2D_EncodeToPNG_m2680110528_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Texture2D_EncodeToPNG_m2680110528_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Texture2D::EncodeToPNG()");
-	return _il2cpp_icall_func(__this);
-}
 // System.Single UnityEngine.Time::get_time()
 extern "C"  float Time_get_time_m2216684562 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -8430,6 +8399,15 @@ extern "C"  int32_t Transform_get_childCount_m881385315 (Transform_t224878301 * 
 	_il2cpp_icall_func = (Transform_get_childCount_m881385315_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Transform::get_childCount()");
 	return _il2cpp_icall_func(__this);
 }
+// UnityEngine.Transform UnityEngine.Transform::Find(System.String)
+extern "C"  Transform_t224878301 * Transform_Find_m3323476454 (Transform_t224878301 * __this, String_t* ___name, const MethodInfo* method)
+{
+	typedef Transform_t224878301 * (*Transform_Find_m3323476454_ftn) (Transform_t224878301 *, String_t*);
+	static Transform_Find_m3323476454_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Transform_Find_m3323476454_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Transform::Find(System.String)");
+	return _il2cpp_icall_func(__this, ___name);
+}
 // UnityEngine.Vector3 UnityEngine.Transform::get_lossyScale()
 extern "C"  Vector3_t465617797  Transform_get_lossyScale_m1638545862 (Transform_t224878301 * __this, const MethodInfo* method)
 {
@@ -8467,6 +8445,15 @@ extern "C"  void Transform_set_hasChanged_m2322582363 (Transform_t224878301 * __
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Transform_set_hasChanged_m2322582363_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Transform::set_hasChanged(System.Boolean)");
 	_il2cpp_icall_func(__this, ___value);
+}
+// UnityEngine.Transform UnityEngine.Transform::FindChild(System.String)
+extern "C"  Transform_t224878301 * Transform_FindChild_m2677714886 (Transform_t224878301 * __this, String_t* ___name, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___name;
+		Transform_t224878301 * L_1 = Transform_Find_m3323476454(__this, L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
 }
 // System.Collections.IEnumerator UnityEngine.Transform::GetEnumerator()
 extern TypeInfo* Enumerator_t3188879111_il2cpp_TypeInfo_var;
@@ -10319,25 +10306,6 @@ extern "C"  void WebCamTexture__ctor_m4161111579 (WebCamTexture_t4098188425 * __
 		return;
 	}
 }
-// System.Void UnityEngine.WebCamTexture::.ctor()
-extern TypeInfo* String_t_il2cpp_TypeInfo_var;
-extern const uint32_t WebCamTexture__ctor_m1125343005_MetadataUsageId;
-extern "C"  void WebCamTexture__ctor_m1125343005 (WebCamTexture_t4098188425 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (WebCamTexture__ctor_m1125343005_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		Texture__ctor_m4198984292(__this, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_0 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
-		WebCamTexture_Internal_CreateWebCamTexture_m1601948981(NULL /*static, unused*/, __this, L_0, 0, 0, 0, /*hidden argument*/NULL);
-		return;
-	}
-}
 // System.Void UnityEngine.WebCamTexture::Internal_CreateWebCamTexture(UnityEngine.WebCamTexture,System.String,System.Int32,System.Int32,System.Int32)
 extern "C"  void WebCamTexture_Internal_CreateWebCamTexture_m1601948981 (Il2CppObject * __this /* static, unused */, WebCamTexture_t4098188425 * ___self, String_t* ___scriptingDevice, int32_t ___requestedWidth, int32_t ___requestedHeight, int32_t ___maxFramerate, const MethodInfo* method)
 {
@@ -10362,23 +10330,6 @@ extern "C"  void WebCamTexture_INTERNAL_CALL_Play_m3743409567 (Il2CppObject * __
 	static WebCamTexture_INTERNAL_CALL_Play_m3743409567_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (WebCamTexture_INTERNAL_CALL_Play_m3743409567_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WebCamTexture::INTERNAL_CALL_Play(UnityEngine.WebCamTexture)");
-	_il2cpp_icall_func(___self);
-}
-// System.Void UnityEngine.WebCamTexture::Pause()
-extern "C"  void WebCamTexture_Pause_m3196941407 (WebCamTexture_t4098188425 * __this, const MethodInfo* method)
-{
-	{
-		WebCamTexture_INTERNAL_CALL_Pause_m2875494765(NULL /*static, unused*/, __this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.WebCamTexture::INTERNAL_CALL_Pause(UnityEngine.WebCamTexture)
-extern "C"  void WebCamTexture_INTERNAL_CALL_Pause_m2875494765 (Il2CppObject * __this /* static, unused */, WebCamTexture_t4098188425 * ___self, const MethodInfo* method)
-{
-	typedef void (*WebCamTexture_INTERNAL_CALL_Pause_m2875494765_ftn) (WebCamTexture_t4098188425 *);
-	static WebCamTexture_INTERNAL_CALL_Pause_m2875494765_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (WebCamTexture_INTERNAL_CALL_Pause_m2875494765_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WebCamTexture::INTERNAL_CALL_Pause(UnityEngine.WebCamTexture)");
 	_il2cpp_icall_func(___self);
 }
 // System.Void UnityEngine.WebCamTexture::Stop()
@@ -10415,15 +10366,6 @@ extern "C"  WebCamDeviceU5BU5D_t1870489771* WebCamTexture_get_devices_m413752480
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (WebCamTexture_get_devices_m4137524804_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WebCamTexture::get_devices()");
 	return _il2cpp_icall_func();
-}
-// System.Int32 UnityEngine.WebCamTexture::get_videoRotationAngle()
-extern "C"  int32_t WebCamTexture_get_videoRotationAngle_m1556283588 (WebCamTexture_t4098188425 * __this, const MethodInfo* method)
-{
-	typedef int32_t (*WebCamTexture_get_videoRotationAngle_m1556283588_ftn) (WebCamTexture_t4098188425 *);
-	static WebCamTexture_get_videoRotationAngle_m1556283588_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (WebCamTexture_get_videoRotationAngle_m1556283588_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WebCamTexture::get_videoRotationAngle()");
-	return _il2cpp_icall_func(__this);
 }
 // System.Void UnityEngine.WrapperlessIcall::.ctor()
 extern "C"  void WrapperlessIcall__ctor_m4149541650 (WrapperlessIcall_t1871166592 * __this, const MethodInfo* method)
@@ -10788,15 +10730,6 @@ extern "C"  ByteU5BU5D_t3835026402* WWW_get_bytes_m420718112 (WWW_t3146501818 * 
 	static WWW_get_bytes_m420718112_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (WWW_get_bytes_m420718112_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WWW::get_bytes()");
-	return _il2cpp_icall_func(__this);
-}
-// System.Int32 UnityEngine.WWW::get_size()
-extern "C"  int32_t WWW_get_size_m4107261770 (WWW_t3146501818 * __this, const MethodInfo* method)
-{
-	typedef int32_t (*WWW_get_size_m4107261770_ftn) (WWW_t3146501818 *);
-	static WWW_get_size_m4107261770_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (WWW_get_size_m4107261770_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WWW::get_size()");
 	return _il2cpp_icall_func(__this);
 }
 // System.String UnityEngine.WWW::get_error()

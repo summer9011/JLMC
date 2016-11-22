@@ -168,6 +168,7 @@ UnityEngine.Camera::set_orthographicSize
 UnityEngine.Camera::set_transparencySortMode
 UnityEngine.Camera::get_main
 UnityEngine.Camera::get_clearFlags
+UnityEngine.Camera::get_allCameras
 UnityEngine.Camera::INTERNAL_CALL_RaycastTry
 UnityEngine.Camera::INTERNAL_CALL_RaycastTry2D
 UnityEngine.Camera::get_targetTexture
@@ -324,6 +325,7 @@ UnityEngine.GUIUtility::set_systemCopyBuffer
 UnityEngine.GUIUtility::Internal_GetDefaultSkin
 UnityEngine.Gyroscope::INTERNAL_CALL_attitude_Internal
 UnityEngine.Gyroscope::setEnabled_Internal
+UnityEngine.Gyroscope::setUpdateInterval_Internal
 UnityEngine.Input::GetKeyDownInt
 UnityEngine.Input::GetKeyInt
 UnityEngine.Input::GetKeyUpInt
@@ -337,6 +339,7 @@ UnityEngine.Input::get_compositionString
 UnityEngine.Input::get_inputString
 UnityEngine.Input::INTERNAL_get_mousePosition
 UnityEngine.Input::INTERNAL_set_compositionCursorPos
+UnityEngine.Input::set_compensateSensors
 UnityEngine.Input::set_imeCompositionMode
 UnityEngine.Input::get_deviceOrientation
 UnityEngine.Input::GetTouch
@@ -494,6 +497,7 @@ UnityEngine.Renderer::get_material
 UnityEngine.Renderer::get_sharedMaterial
 UnityEngine.RenderTexture::Internal_GetHeight
 UnityEngine.RenderTexture::Internal_GetWidth
+UnityEngine.Resources::UnloadUnusedAssets
 UnityEngine.Resources::GetBuiltinResource
 UnityEngine.Resources::Load
 UnityEngine.Resources::FindObjectsOfTypeAll
@@ -555,9 +559,7 @@ UnityEngine.Texture::Internal_GetWidth
 UnityEngine.Texture::GetNativeTexturePtr
 UnityEngine.Texture::set_filterMode
 UnityEngine.Texture::set_wrapMode
-UnityEngine.Texture2D::EncodeToPNG
 UnityEngine.Texture2D::Apply
-UnityEngine.Texture2D::INTERNAL_CALL_ReadPixels
 UnityEngine.Texture2D::INTERNAL_CALL_SetPixel
 UnityEngine.Texture2D::Internal_Create
 UnityEngine.Time::get_frameCount
@@ -598,19 +600,17 @@ UnityEngine.Transform::INTERNAL_set_rotation
 UnityEngine.Transform::SetParent
 UnityEngine.Transform::set_hasChanged
 UnityEngine.Transform::set_parentInternal
+UnityEngine.Transform::Find
 UnityEngine.Transform::GetChild
 UnityEngine.Transform::get_parentInternal
 UnityEngine.UnhandledExceptionHandler::NativeUnhandledExceptionHandler
 UnityEngine.WebCamTexture::get_isPlaying
-UnityEngine.WebCamTexture::get_videoRotationAngle
-UnityEngine.WebCamTexture::INTERNAL_CALL_Pause
 UnityEngine.WebCamTexture::INTERNAL_CALL_Play
 UnityEngine.WebCamTexture::INTERNAL_CALL_Stop
 UnityEngine.WebCamTexture::Internal_CreateWebCamTexture
 UnityEngine.WebCamTexture::get_devices
 UnityEngine.WWW::get_isDone
 UnityEngine.WWW::get_bytes
-UnityEngine.WWW::get_size
 UnityEngine.WWW::get_error
 UnityEngine.WWW::get_responseHeadersString
 UnityEngine.WWW::DestroyWWW
