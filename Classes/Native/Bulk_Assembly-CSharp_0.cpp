@@ -24447,35 +24447,35 @@ extern "C"  bool U3COnExtractResourceU3Ec__Iterator12_MoveNext_m751081387 (U3COn
 		}
 		if (L_1 == 1)
 		{
-			goto IL_0172;
+			goto IL_014a;
 		}
 		if (L_1 == 2)
 		{
-			goto IL_01b0;
+			goto IL_0188;
 		}
 		if (L_1 == 3)
 		{
-			goto IL_01de;
+			goto IL_01b6;
 		}
 		if (L_1 == 4)
 		{
-			goto IL_0341;
+			goto IL_0319;
 		}
 		if (L_1 == 5)
 		{
-			goto IL_03a9;
+			goto IL_0381;
 		}
 		if (L_1 == 6)
 		{
-			goto IL_03f2;
+			goto IL_03ca;
 		}
 		if (L_1 == 7)
 		{
-			goto IL_0470;
+			goto IL_0448;
 		}
 	}
 	{
-		goto IL_0482;
+		goto IL_045a;
 	}
 
 IL_0039:
@@ -24484,400 +24484,384 @@ IL_0039:
 		__this->set_U3CdataPathU3E__0_0(L_2);
 		String_t* L_3 = Util_AppContentPath_m1235347183(NULL /*static, unused*/, /*hidden argument*/NULL);
 		__this->set_U3CstreamPathU3E__1_1(L_3);
-		String_t* L_4 = __this->get_U3CdataPathU3E__0_0();
-		bool L_5 = Directory_Exists_m2663601042(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
-		if (!L_5)
-		{
-			goto IL_006b;
-		}
-	}
-	{
-		String_t* L_6 = __this->get_U3CdataPathU3E__0_0();
-		Directory_Delete_m1706845570(NULL /*static, unused*/, L_6, (bool)1, /*hidden argument*/NULL);
-	}
-
-IL_006b:
-	{
-		String_t* L_7 = __this->get_U3CdataPathU3E__0_0();
-		Directory_CreateDirectory_m3561886598(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
-		String_t* L_8 = __this->get_U3CstreamPathU3E__1_1();
-		StringU5BU5D_t3764931161* L_9 = ((StringU5BU5D_t3764931161*)SZArrayNew(StringU5BU5D_t3764931161_il2cpp_TypeInfo_var, (uint32_t)1));
+		String_t* L_4 = __this->get_U3CstreamPathU3E__1_1();
+		StringU5BU5D_t3764931161* L_5 = ((StringU5BU5D_t3764931161*)SZArrayNew(StringU5BU5D_t3764931161_il2cpp_TypeInfo_var, (uint32_t)1));
 		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
-		String_t* L_10 = ((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->get_ResourceID_1();
+		String_t* L_6 = ((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->get_ResourceID_1();
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_11 = String_Concat_m612901809(NULL /*static, unused*/, _stringLiteral3645068937, L_10, _stringLiteral3900477622, /*hidden argument*/NULL);
-		NullCheck(L_9);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_9, 0);
-		ArrayElementTypeCheck (L_9, L_11);
-		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_11);
-		String_t* L_12 = Util_getPath_m768332143(NULL /*static, unused*/, L_8, L_9, /*hidden argument*/NULL);
-		__this->set_U3CinfileU3E__2_2(L_12);
-		String_t* L_13 = __this->get_U3CdataPathU3E__0_0();
-		StringU5BU5D_t3764931161* L_14 = ((StringU5BU5D_t3764931161*)SZArrayNew(StringU5BU5D_t3764931161_il2cpp_TypeInfo_var, (uint32_t)1));
-		String_t* L_15 = ((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->get_ResourceID_1();
-		String_t* L_16 = String_Concat_m612901809(NULL /*static, unused*/, _stringLiteral3645068937, L_15, _stringLiteral3900477622, /*hidden argument*/NULL);
-		NullCheck(L_14);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_14, 0);
-		ArrayElementTypeCheck (L_14, L_16);
-		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_16);
-		String_t* L_17 = Util_getPath_m768332143(NULL /*static, unused*/, L_13, L_14, /*hidden argument*/NULL);
-		__this->set_U3CoutfileU3E__3_3(L_17);
-		String_t* L_18 = __this->get_U3CdataPathU3E__0_0();
-		StringU5BU5D_t3764931161* L_19 = ((StringU5BU5D_t3764931161*)SZArrayNew(StringU5BU5D_t3764931161_il2cpp_TypeInfo_var, (uint32_t)1));
-		NullCheck(L_19);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_19, 0);
-		ArrayElementTypeCheck (L_19, _stringLiteral2752721179);
-		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral2752721179);
-		String_t* L_20 = Util_getPath_m768332143(NULL /*static, unused*/, L_18, L_19, /*hidden argument*/NULL);
-		__this->set_U3CtempfileU3E__4_4(L_20);
-		String_t* L_21 = __this->get_U3CoutfileU3E__3_3();
-		bool L_22 = File_Exists_m1685968367(NULL /*static, unused*/, L_21, /*hidden argument*/NULL);
-		if (!L_22)
+		String_t* L_7 = String_Concat_m612901809(NULL /*static, unused*/, _stringLiteral3645068937, L_6, _stringLiteral3900477622, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, 0);
+		ArrayElementTypeCheck (L_5, L_7);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_7);
+		String_t* L_8 = Util_getPath_m768332143(NULL /*static, unused*/, L_4, L_5, /*hidden argument*/NULL);
+		__this->set_U3CinfileU3E__2_2(L_8);
+		String_t* L_9 = __this->get_U3CdataPathU3E__0_0();
+		StringU5BU5D_t3764931161* L_10 = ((StringU5BU5D_t3764931161*)SZArrayNew(StringU5BU5D_t3764931161_il2cpp_TypeInfo_var, (uint32_t)1));
+		String_t* L_11 = ((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->get_ResourceID_1();
+		String_t* L_12 = String_Concat_m612901809(NULL /*static, unused*/, _stringLiteral3645068937, L_11, _stringLiteral3900477622, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_10, 0);
+		ArrayElementTypeCheck (L_10, L_12);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_12);
+		String_t* L_13 = Util_getPath_m768332143(NULL /*static, unused*/, L_9, L_10, /*hidden argument*/NULL);
+		__this->set_U3CoutfileU3E__3_3(L_13);
+		String_t* L_14 = __this->get_U3CdataPathU3E__0_0();
+		StringU5BU5D_t3764931161* L_15 = ((StringU5BU5D_t3764931161*)SZArrayNew(StringU5BU5D_t3764931161_il2cpp_TypeInfo_var, (uint32_t)1));
+		NullCheck(L_15);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_15, 0);
+		ArrayElementTypeCheck (L_15, _stringLiteral2752721179);
+		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral2752721179);
+		String_t* L_16 = Util_getPath_m768332143(NULL /*static, unused*/, L_14, L_15, /*hidden argument*/NULL);
+		__this->set_U3CtempfileU3E__4_4(L_16);
+		String_t* L_17 = __this->get_U3CoutfileU3E__3_3();
+		bool L_18 = File_Exists_m1685968367(NULL /*static, unused*/, L_17, /*hidden argument*/NULL);
+		if (!L_18)
 		{
-			goto IL_010d;
+			goto IL_00e5;
 		}
 	}
 	{
-		String_t* L_23 = __this->get_U3CoutfileU3E__3_3();
-		File_Delete_m2115477556(NULL /*static, unused*/, L_23, /*hidden argument*/NULL);
+		String_t* L_19 = __this->get_U3CoutfileU3E__3_3();
+		File_Delete_m2115477556(NULL /*static, unused*/, L_19, /*hidden argument*/NULL);
 	}
 
-IL_010d:
+IL_00e5:
 	{
-		String_t* L_24 = __this->get_U3CtempfileU3E__4_4();
-		bool L_25 = File_Exists_m1685968367(NULL /*static, unused*/, L_24, /*hidden argument*/NULL);
-		if (!L_25)
+		String_t* L_20 = __this->get_U3CtempfileU3E__4_4();
+		bool L_21 = File_Exists_m1685968367(NULL /*static, unused*/, L_20, /*hidden argument*/NULL);
+		if (!L_21)
 		{
-			goto IL_0128;
+			goto IL_0100;
 		}
 	}
 	{
-		String_t* L_26 = __this->get_U3CtempfileU3E__4_4();
-		File_Delete_m2115477556(NULL /*static, unused*/, L_26, /*hidden argument*/NULL);
+		String_t* L_22 = __this->get_U3CtempfileU3E__4_4();
+		File_Delete_m2115477556(NULL /*static, unused*/, L_22, /*hidden argument*/NULL);
 	}
 
-IL_0128:
+IL_0100:
 	{
-		String_t* L_27 = __this->get_U3CinfileU3E__2_2();
+		String_t* L_23 = __this->get_U3CinfileU3E__2_2();
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_28 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral873677837, L_27, /*hidden argument*/NULL);
+		String_t* L_24 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral873677837, L_23, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
-		App_print_m929367453(NULL /*static, unused*/, L_28, /*hidden argument*/NULL);
-		int32_t L_29 = Application_get_platform_m3989224144(NULL /*static, unused*/, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_29) == ((uint32_t)((int32_t)11)))))
+		App_print_m929367453(NULL /*static, unused*/, L_24, /*hidden argument*/NULL);
+		int32_t L_25 = Application_get_platform_m3989224144(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_25) == ((uint32_t)((int32_t)11)))))
 		{
-			goto IL_01b5;
+			goto IL_018d;
 		}
 	}
 	{
-		String_t* L_30 = __this->get_U3CinfileU3E__2_2();
-		WWW_t3146501818 * L_31 = (WWW_t3146501818 *)il2cpp_codegen_object_new(WWW_t3146501818_il2cpp_TypeInfo_var);
-		WWW__ctor_m2024029190(L_31, L_30, /*hidden argument*/NULL);
-		__this->set_U3CwwwU3E__5_5(L_31);
-		WWW_t3146501818 * L_32 = __this->get_U3CwwwU3E__5_5();
-		__this->set_U24current_11(L_32);
+		String_t* L_26 = __this->get_U3CinfileU3E__2_2();
+		WWW_t3146501818 * L_27 = (WWW_t3146501818 *)il2cpp_codegen_object_new(WWW_t3146501818_il2cpp_TypeInfo_var);
+		WWW__ctor_m2024029190(L_27, L_26, /*hidden argument*/NULL);
+		__this->set_U3CwwwU3E__5_5(L_27);
+		WWW_t3146501818 * L_28 = __this->get_U3CwwwU3E__5_5();
+		__this->set_U24current_11(L_28);
 		__this->set_U24PC_10(1);
-		goto IL_0484;
+		goto IL_045c;
 	}
 
-IL_0172:
+IL_014a:
 	{
-		WWW_t3146501818 * L_33 = __this->get_U3CwwwU3E__5_5();
-		NullCheck(L_33);
-		bool L_34 = WWW_get_isDone_m3240254121(L_33, /*hidden argument*/NULL);
-		if (!L_34)
+		WWW_t3146501818 * L_29 = __this->get_U3CwwwU3E__5_5();
+		NullCheck(L_29);
+		bool L_30 = WWW_get_isDone_m3240254121(L_29, /*hidden argument*/NULL);
+		if (!L_30)
 		{
-			goto IL_0198;
+			goto IL_0170;
 		}
 	}
 	{
-		String_t* L_35 = __this->get_U3CtempfileU3E__4_4();
-		WWW_t3146501818 * L_36 = __this->get_U3CwwwU3E__5_5();
-		NullCheck(L_36);
-		ByteU5BU5D_t3835026402* L_37 = WWW_get_bytes_m420718112(L_36, /*hidden argument*/NULL);
-		File_WriteAllBytes_m677793349(NULL /*static, unused*/, L_35, L_37, /*hidden argument*/NULL);
+		String_t* L_31 = __this->get_U3CtempfileU3E__4_4();
+		WWW_t3146501818 * L_32 = __this->get_U3CwwwU3E__5_5();
+		NullCheck(L_32);
+		ByteU5BU5D_t3835026402* L_33 = WWW_get_bytes_m420718112(L_32, /*hidden argument*/NULL);
+		File_WriteAllBytes_m677793349(NULL /*static, unused*/, L_31, L_33, /*hidden argument*/NULL);
 	}
 
-IL_0198:
+IL_0170:
 	{
-		int32_t L_38 = 0;
-		Il2CppObject * L_39 = Box(Int32_t1448170597_il2cpp_TypeInfo_var, &L_38);
-		__this->set_U24current_11(L_39);
+		int32_t L_34 = 0;
+		Il2CppObject * L_35 = Box(Int32_t1448170597_il2cpp_TypeInfo_var, &L_34);
+		__this->set_U24current_11(L_35);
 		__this->set_U24PC_10(2);
-		goto IL_0484;
+		goto IL_045c;
 	}
 
-IL_01b0:
+IL_0188:
 	{
-		goto IL_01c7;
+		goto IL_019f;
 	}
 
-IL_01b5:
+IL_018d:
 	{
-		String_t* L_40 = __this->get_U3CinfileU3E__2_2();
-		String_t* L_41 = __this->get_U3CtempfileU3E__4_4();
-		File_Copy_m1439309123(NULL /*static, unused*/, L_40, L_41, (bool)1, /*hidden argument*/NULL);
+		String_t* L_36 = __this->get_U3CinfileU3E__2_2();
+		String_t* L_37 = __this->get_U3CtempfileU3E__4_4();
+		File_Copy_m1439309123(NULL /*static, unused*/, L_36, L_37, (bool)1, /*hidden argument*/NULL);
 	}
 
-IL_01c7:
+IL_019f:
 	{
-		WaitForEndOfFrame_t2828800938 * L_42 = (WaitForEndOfFrame_t2828800938 *)il2cpp_codegen_object_new(WaitForEndOfFrame_t2828800938_il2cpp_TypeInfo_var);
-		WaitForEndOfFrame__ctor_m3062480170(L_42, /*hidden argument*/NULL);
-		__this->set_U24current_11(L_42);
+		WaitForEndOfFrame_t2828800938 * L_38 = (WaitForEndOfFrame_t2828800938 *)il2cpp_codegen_object_new(WaitForEndOfFrame_t2828800938_il2cpp_TypeInfo_var);
+		WaitForEndOfFrame__ctor_m3062480170(L_38, /*hidden argument*/NULL);
+		__this->set_U24current_11(L_38);
 		__this->set_U24PC_10(3);
-		goto IL_0484;
+		goto IL_045c;
 	}
 
-IL_01de:
+IL_01b6:
 	{
-		String_t* L_43 = __this->get_U3CtempfileU3E__4_4();
-		String_t* L_44 = File_ReadAllText_m1018286608(NULL /*static, unused*/, L_43, /*hidden argument*/NULL);
+		String_t* L_39 = __this->get_U3CtempfileU3E__4_4();
+		String_t* L_40 = File_ReadAllText_m1018286608(NULL /*static, unused*/, L_39, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
-		App_print_m929367453(NULL /*static, unused*/, L_44, /*hidden argument*/NULL);
-		String_t* L_45 = __this->get_U3CtempfileU3E__4_4();
-		String_t* L_46 = File_ReadAllText_m1018286608(NULL /*static, unused*/, L_45, /*hidden argument*/NULL);
-		JSONNode_t1109731523 * L_47 = JSONNode_Parse_m3062827811(NULL /*static, unused*/, L_46, /*hidden argument*/NULL);
-		__this->set_U3CfileJsonU3E__6_6(L_47);
+		App_print_m929367453(NULL /*static, unused*/, L_40, /*hidden argument*/NULL);
+		String_t* L_41 = __this->get_U3CtempfileU3E__4_4();
+		String_t* L_42 = File_ReadAllText_m1018286608(NULL /*static, unused*/, L_41, /*hidden argument*/NULL);
+		JSONNode_t1109731523 * L_43 = JSONNode_Parse_m3062827811(NULL /*static, unused*/, L_42, /*hidden argument*/NULL);
+		__this->set_U3CfileJsonU3E__6_6(L_43);
 		__this->set_U3CiU3E__7_7(0);
-		goto IL_0400;
+		goto IL_03d8;
 	}
 
-IL_0210:
+IL_01e8:
 	{
-		String_t* L_48 = __this->get_U3CstreamPathU3E__1_1();
-		StringU5BU5D_t3764931161* L_49 = ((StringU5BU5D_t3764931161*)SZArrayNew(StringU5BU5D_t3764931161_il2cpp_TypeInfo_var, (uint32_t)2));
-		JSONNode_t1109731523 * L_50 = __this->get_U3CfileJsonU3E__6_6();
-		int32_t L_51 = __this->get_U3CiU3E__7_7();
-		NullCheck(L_50);
-		JSONNode_t1109731523 * L_52 = VirtFuncInvoker1< JSONNode_t1109731523 *, int32_t >::Invoke(5 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.Int32) */, L_50, L_51);
+		String_t* L_44 = __this->get_U3CstreamPathU3E__1_1();
+		StringU5BU5D_t3764931161* L_45 = ((StringU5BU5D_t3764931161*)SZArrayNew(StringU5BU5D_t3764931161_il2cpp_TypeInfo_var, (uint32_t)2));
+		JSONNode_t1109731523 * L_46 = __this->get_U3CfileJsonU3E__6_6();
+		int32_t L_47 = __this->get_U3CiU3E__7_7();
+		NullCheck(L_46);
+		JSONNode_t1109731523 * L_48 = VirtFuncInvoker1< JSONNode_t1109731523 *, int32_t >::Invoke(5 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.Int32) */, L_46, L_47);
+		NullCheck(L_48);
+		JSONNode_t1109731523 * L_49 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_48, _stringLiteral2375273309);
+		String_t* L_50 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_49, /*hidden argument*/NULL);
+		NullCheck(L_45);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_45, 0);
+		ArrayElementTypeCheck (L_45, L_50);
+		(L_45)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_50);
+		StringU5BU5D_t3764931161* L_51 = L_45;
+		JSONNode_t1109731523 * L_52 = __this->get_U3CfileJsonU3E__6_6();
+		int32_t L_53 = __this->get_U3CiU3E__7_7();
 		NullCheck(L_52);
-		JSONNode_t1109731523 * L_53 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_52, _stringLiteral2375273309);
-		String_t* L_54 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_53, /*hidden argument*/NULL);
-		NullCheck(L_49);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_49, 0);
-		ArrayElementTypeCheck (L_49, L_54);
-		(L_49)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_54);
-		StringU5BU5D_t3764931161* L_55 = L_49;
-		JSONNode_t1109731523 * L_56 = __this->get_U3CfileJsonU3E__6_6();
-		int32_t L_57 = __this->get_U3CiU3E__7_7();
-		NullCheck(L_56);
-		JSONNode_t1109731523 * L_58 = VirtFuncInvoker1< JSONNode_t1109731523 *, int32_t >::Invoke(5 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.Int32) */, L_56, L_57);
-		NullCheck(L_58);
-		JSONNode_t1109731523 * L_59 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_58, _stringLiteral298699373);
-		String_t* L_60 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_59, /*hidden argument*/NULL);
-		NullCheck(L_55);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_55, 1);
-		ArrayElementTypeCheck (L_55, L_60);
-		(L_55)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_60);
-		String_t* L_61 = Util_getPath_m768332143(NULL /*static, unused*/, L_48, L_55, /*hidden argument*/NULL);
-		__this->set_U3CinfileU3E__2_2(L_61);
-		String_t* L_62 = __this->get_U3CdataPathU3E__0_0();
-		StringU5BU5D_t3764931161* L_63 = ((StringU5BU5D_t3764931161*)SZArrayNew(StringU5BU5D_t3764931161_il2cpp_TypeInfo_var, (uint32_t)2));
-		JSONNode_t1109731523 * L_64 = __this->get_U3CfileJsonU3E__6_6();
-		int32_t L_65 = __this->get_U3CiU3E__7_7();
-		NullCheck(L_64);
-		JSONNode_t1109731523 * L_66 = VirtFuncInvoker1< JSONNode_t1109731523 *, int32_t >::Invoke(5 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.Int32) */, L_64, L_65);
+		JSONNode_t1109731523 * L_54 = VirtFuncInvoker1< JSONNode_t1109731523 *, int32_t >::Invoke(5 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.Int32) */, L_52, L_53);
+		NullCheck(L_54);
+		JSONNode_t1109731523 * L_55 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_54, _stringLiteral298699373);
+		String_t* L_56 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_55, /*hidden argument*/NULL);
+		NullCheck(L_51);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_51, 1);
+		ArrayElementTypeCheck (L_51, L_56);
+		(L_51)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_56);
+		String_t* L_57 = Util_getPath_m768332143(NULL /*static, unused*/, L_44, L_51, /*hidden argument*/NULL);
+		__this->set_U3CinfileU3E__2_2(L_57);
+		String_t* L_58 = __this->get_U3CdataPathU3E__0_0();
+		StringU5BU5D_t3764931161* L_59 = ((StringU5BU5D_t3764931161*)SZArrayNew(StringU5BU5D_t3764931161_il2cpp_TypeInfo_var, (uint32_t)2));
+		JSONNode_t1109731523 * L_60 = __this->get_U3CfileJsonU3E__6_6();
+		int32_t L_61 = __this->get_U3CiU3E__7_7();
+		NullCheck(L_60);
+		JSONNode_t1109731523 * L_62 = VirtFuncInvoker1< JSONNode_t1109731523 *, int32_t >::Invoke(5 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.Int32) */, L_60, L_61);
+		NullCheck(L_62);
+		JSONNode_t1109731523 * L_63 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_62, _stringLiteral2375273309);
+		String_t* L_64 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_63, /*hidden argument*/NULL);
+		NullCheck(L_59);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_59, 0);
+		ArrayElementTypeCheck (L_59, L_64);
+		(L_59)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_64);
+		StringU5BU5D_t3764931161* L_65 = L_59;
+		JSONNode_t1109731523 * L_66 = __this->get_U3CfileJsonU3E__6_6();
+		int32_t L_67 = __this->get_U3CiU3E__7_7();
 		NullCheck(L_66);
-		JSONNode_t1109731523 * L_67 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_66, _stringLiteral2375273309);
-		String_t* L_68 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_67, /*hidden argument*/NULL);
-		NullCheck(L_63);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_63, 0);
-		ArrayElementTypeCheck (L_63, L_68);
-		(L_63)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_68);
-		StringU5BU5D_t3764931161* L_69 = L_63;
-		JSONNode_t1109731523 * L_70 = __this->get_U3CfileJsonU3E__6_6();
-		int32_t L_71 = __this->get_U3CiU3E__7_7();
-		NullCheck(L_70);
-		JSONNode_t1109731523 * L_72 = VirtFuncInvoker1< JSONNode_t1109731523 *, int32_t >::Invoke(5 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.Int32) */, L_70, L_71);
-		NullCheck(L_72);
-		JSONNode_t1109731523 * L_73 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_72, _stringLiteral298699373);
-		String_t* L_74 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_73, /*hidden argument*/NULL);
-		NullCheck(L_69);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_69, 1);
-		ArrayElementTypeCheck (L_69, L_74);
-		(L_69)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_74);
-		String_t* L_75 = Util_getPath_m768332143(NULL /*static, unused*/, L_62, L_69, /*hidden argument*/NULL);
-		__this->set_U3CoutfileU3E__3_3(L_75);
-		String_t* L_76 = __this->get_U3CinfileU3E__2_2();
+		JSONNode_t1109731523 * L_68 = VirtFuncInvoker1< JSONNode_t1109731523 *, int32_t >::Invoke(5 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.Int32) */, L_66, L_67);
+		NullCheck(L_68);
+		JSONNode_t1109731523 * L_69 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_68, _stringLiteral298699373);
+		String_t* L_70 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_69, /*hidden argument*/NULL);
+		NullCheck(L_65);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_65, 1);
+		ArrayElementTypeCheck (L_65, L_70);
+		(L_65)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_70);
+		String_t* L_71 = Util_getPath_m768332143(NULL /*static, unused*/, L_58, L_65, /*hidden argument*/NULL);
+		__this->set_U3CoutfileU3E__3_3(L_71);
+		String_t* L_72 = __this->get_U3CinfileU3E__2_2();
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_77 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral873677837, L_76, /*hidden argument*/NULL);
+		String_t* L_73 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral873677837, L_72, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
-		App_print_m929367453(NULL /*static, unused*/, L_77, /*hidden argument*/NULL);
-		String_t* L_78 = __this->get_U3CoutfileU3E__3_3();
+		App_print_m929367453(NULL /*static, unused*/, L_73, /*hidden argument*/NULL);
+		String_t* L_74 = __this->get_U3CoutfileU3E__3_3();
 		IL2CPP_RUNTIME_CLASS_INIT(Path_t1235027244_il2cpp_TypeInfo_var);
-		String_t* L_79 = Path_GetDirectoryName_m260633861(NULL /*static, unused*/, L_78, /*hidden argument*/NULL);
-		__this->set_U3CdirU3E__8_8(L_79);
-		String_t* L_80 = __this->get_U3CdirU3E__8_8();
-		bool L_81 = Directory_Exists_m2663601042(NULL /*static, unused*/, L_80, /*hidden argument*/NULL);
-		if (L_81)
+		String_t* L_75 = Path_GetDirectoryName_m260633861(NULL /*static, unused*/, L_74, /*hidden argument*/NULL);
+		__this->set_U3CdirU3E__8_8(L_75);
+		String_t* L_76 = __this->get_U3CdirU3E__8_8();
+		bool L_77 = Directory_Exists_m2663601042(NULL /*static, unused*/, L_76, /*hidden argument*/NULL);
+		if (L_77)
 		{
-			goto IL_030c;
+			goto IL_02e4;
 		}
 	}
 	{
-		String_t* L_82 = __this->get_U3CdirU3E__8_8();
-		Directory_CreateDirectory_m3561886598(NULL /*static, unused*/, L_82, /*hidden argument*/NULL);
+		String_t* L_78 = __this->get_U3CdirU3E__8_8();
+		Directory_CreateDirectory_m3561886598(NULL /*static, unused*/, L_78, /*hidden argument*/NULL);
 	}
 
-IL_030c:
+IL_02e4:
 	{
-		int32_t L_83 = Application_get_platform_m3989224144(NULL /*static, unused*/, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_83) == ((uint32_t)((int32_t)11)))))
+		int32_t L_79 = Application_get_platform_m3989224144(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_79) == ((uint32_t)((int32_t)11)))))
 		{
-			goto IL_03ae;
+			goto IL_0386;
 		}
 	}
 	{
-		String_t* L_84 = __this->get_U3CinfileU3E__2_2();
-		WWW_t3146501818 * L_85 = (WWW_t3146501818 *)il2cpp_codegen_object_new(WWW_t3146501818_il2cpp_TypeInfo_var);
-		WWW__ctor_m2024029190(L_85, L_84, /*hidden argument*/NULL);
-		__this->set_U3CwwwU3E__9_9(L_85);
-		WWW_t3146501818 * L_86 = __this->get_U3CwwwU3E__9_9();
-		__this->set_U24current_11(L_86);
+		String_t* L_80 = __this->get_U3CinfileU3E__2_2();
+		WWW_t3146501818 * L_81 = (WWW_t3146501818 *)il2cpp_codegen_object_new(WWW_t3146501818_il2cpp_TypeInfo_var);
+		WWW__ctor_m2024029190(L_81, L_80, /*hidden argument*/NULL);
+		__this->set_U3CwwwU3E__9_9(L_81);
+		WWW_t3146501818 * L_82 = __this->get_U3CwwwU3E__9_9();
+		__this->set_U24current_11(L_82);
 		__this->set_U24PC_10(4);
-		goto IL_0484;
+		goto IL_045c;
 	}
 
-IL_0341:
+IL_0319:
 	{
-		WWW_t3146501818 * L_87 = __this->get_U3CwwwU3E__9_9();
-		NullCheck(L_87);
-		bool L_88 = WWW_get_isDone_m3240254121(L_87, /*hidden argument*/NULL);
-		if (!L_88)
+		WWW_t3146501818 * L_83 = __this->get_U3CwwwU3E__9_9();
+		NullCheck(L_83);
+		bool L_84 = WWW_get_isDone_m3240254121(L_83, /*hidden argument*/NULL);
+		if (!L_84)
 		{
-			goto IL_0381;
+			goto IL_0359;
 		}
 	}
 	{
+		WWW_t3146501818 * L_85 = __this->get_U3CwwwU3E__9_9();
+		NullCheck(L_85);
+		String_t* L_86 = WWW_get_error_m3092701216(L_85, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_87 = String_IsNullOrEmpty_m2802126737(NULL /*static, unused*/, L_86, /*hidden argument*/NULL);
+		if (!L_87)
+		{
+			goto IL_0359;
+		}
+	}
+	{
+		String_t* L_88 = __this->get_U3CoutfileU3E__3_3();
 		WWW_t3146501818 * L_89 = __this->get_U3CwwwU3E__9_9();
 		NullCheck(L_89);
-		String_t* L_90 = WWW_get_error_m3092701216(L_89, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_91 = String_IsNullOrEmpty_m2802126737(NULL /*static, unused*/, L_90, /*hidden argument*/NULL);
-		if (!L_91)
-		{
-			goto IL_0381;
-		}
+		ByteU5BU5D_t3835026402* L_90 = WWW_get_bytes_m420718112(L_89, /*hidden argument*/NULL);
+		File_WriteAllBytes_m677793349(NULL /*static, unused*/, L_88, L_90, /*hidden argument*/NULL);
+		goto IL_0369;
 	}
+
+IL_0359:
 	{
-		String_t* L_92 = __this->get_U3CoutfileU3E__3_3();
-		WWW_t3146501818 * L_93 = __this->get_U3CwwwU3E__9_9();
-		NullCheck(L_93);
-		ByteU5BU5D_t3835026402* L_94 = WWW_get_bytes_m420718112(L_93, /*hidden argument*/NULL);
-		File_WriteAllBytes_m677793349(NULL /*static, unused*/, L_92, L_94, /*hidden argument*/NULL);
-		goto IL_0391;
+		WWW_t3146501818 * L_91 = __this->get_U3CwwwU3E__9_9();
+		NullCheck(L_91);
+		String_t* L_92 = WWW_get_error_m3092701216(L_91, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
+		App_print_m929367453(NULL /*static, unused*/, L_92, /*hidden argument*/NULL);
+	}
+
+IL_0369:
+	{
+		int32_t L_93 = 0;
+		Il2CppObject * L_94 = Box(Int32_t1448170597_il2cpp_TypeInfo_var, &L_93);
+		__this->set_U24current_11(L_94);
+		__this->set_U24PC_10(5);
+		goto IL_045c;
 	}
 
 IL_0381:
 	{
-		WWW_t3146501818 * L_95 = __this->get_U3CwwwU3E__9_9();
-		NullCheck(L_95);
-		String_t* L_96 = WWW_get_error_m3092701216(L_95, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
-		App_print_m929367453(NULL /*static, unused*/, L_96, /*hidden argument*/NULL);
+		goto IL_03b3;
 	}
 
-IL_0391:
+IL_0386:
 	{
-		int32_t L_97 = 0;
-		Il2CppObject * L_98 = Box(Int32_t1448170597_il2cpp_TypeInfo_var, &L_97);
-		__this->set_U24current_11(L_98);
-		__this->set_U24PC_10(5);
-		goto IL_0484;
+		String_t* L_95 = __this->get_U3CoutfileU3E__3_3();
+		bool L_96 = File_Exists_m1685968367(NULL /*static, unused*/, L_95, /*hidden argument*/NULL);
+		if (!L_96)
+		{
+			goto IL_03a1;
+		}
+	}
+	{
+		String_t* L_97 = __this->get_U3CoutfileU3E__3_3();
+		File_Delete_m2115477556(NULL /*static, unused*/, L_97, /*hidden argument*/NULL);
 	}
 
-IL_03a9:
+IL_03a1:
 	{
-		goto IL_03db;
-	}
-
-IL_03ae:
-	{
+		String_t* L_98 = __this->get_U3CinfileU3E__2_2();
 		String_t* L_99 = __this->get_U3CoutfileU3E__3_3();
-		bool L_100 = File_Exists_m1685968367(NULL /*static, unused*/, L_99, /*hidden argument*/NULL);
-		if (!L_100)
-		{
-			goto IL_03c9;
-		}
-	}
-	{
-		String_t* L_101 = __this->get_U3CoutfileU3E__3_3();
-		File_Delete_m2115477556(NULL /*static, unused*/, L_101, /*hidden argument*/NULL);
+		File_Copy_m1439309123(NULL /*static, unused*/, L_98, L_99, (bool)1, /*hidden argument*/NULL);
 	}
 
-IL_03c9:
+IL_03b3:
 	{
-		String_t* L_102 = __this->get_U3CinfileU3E__2_2();
-		String_t* L_103 = __this->get_U3CoutfileU3E__3_3();
-		File_Copy_m1439309123(NULL /*static, unused*/, L_102, L_103, (bool)1, /*hidden argument*/NULL);
-	}
-
-IL_03db:
-	{
-		WaitForEndOfFrame_t2828800938 * L_104 = (WaitForEndOfFrame_t2828800938 *)il2cpp_codegen_object_new(WaitForEndOfFrame_t2828800938_il2cpp_TypeInfo_var);
-		WaitForEndOfFrame__ctor_m3062480170(L_104, /*hidden argument*/NULL);
-		__this->set_U24current_11(L_104);
+		WaitForEndOfFrame_t2828800938 * L_100 = (WaitForEndOfFrame_t2828800938 *)il2cpp_codegen_object_new(WaitForEndOfFrame_t2828800938_il2cpp_TypeInfo_var);
+		WaitForEndOfFrame__ctor_m3062480170(L_100, /*hidden argument*/NULL);
+		__this->set_U24current_11(L_100);
 		__this->set_U24PC_10(6);
-		goto IL_0484;
+		goto IL_045c;
 	}
 
-IL_03f2:
+IL_03ca:
 	{
-		int32_t L_105 = __this->get_U3CiU3E__7_7();
-		__this->set_U3CiU3E__7_7(((int32_t)((int32_t)L_105+(int32_t)1)));
+		int32_t L_101 = __this->get_U3CiU3E__7_7();
+		__this->set_U3CiU3E__7_7(((int32_t)((int32_t)L_101+(int32_t)1)));
 	}
 
-IL_0400:
+IL_03d8:
 	{
-		int32_t L_106 = __this->get_U3CiU3E__7_7();
-		JSONNode_t1109731523 * L_107 = __this->get_U3CfileJsonU3E__6_6();
-		NullCheck(L_107);
-		int32_t L_108 = VirtFuncInvoker0< int32_t >::Invoke(11 /* System.Int32 LitJson.JSONNode::get_Count() */, L_107);
-		if ((((int32_t)L_106) < ((int32_t)L_108)))
+		int32_t L_102 = __this->get_U3CiU3E__7_7();
+		JSONNode_t1109731523 * L_103 = __this->get_U3CfileJsonU3E__6_6();
+		NullCheck(L_103);
+		int32_t L_104 = VirtFuncInvoker0< int32_t >::Invoke(11 /* System.Int32 LitJson.JSONNode::get_Count() */, L_103);
+		if ((((int32_t)L_102) < ((int32_t)L_104)))
 		{
-			goto IL_0210;
+			goto IL_01e8;
 		}
 	}
 	{
-		String_t* L_109 = __this->get_U3CtempfileU3E__4_4();
-		String_t* L_110 = __this->get_U3CdataPathU3E__0_0();
-		StringU5BU5D_t3764931161* L_111 = ((StringU5BU5D_t3764931161*)SZArrayNew(StringU5BU5D_t3764931161_il2cpp_TypeInfo_var, (uint32_t)1));
+		String_t* L_105 = __this->get_U3CtempfileU3E__4_4();
+		String_t* L_106 = __this->get_U3CdataPathU3E__0_0();
+		StringU5BU5D_t3764931161* L_107 = ((StringU5BU5D_t3764931161*)SZArrayNew(StringU5BU5D_t3764931161_il2cpp_TypeInfo_var, (uint32_t)1));
 		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
-		String_t* L_112 = ((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->get_ResourceID_1();
+		String_t* L_108 = ((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->get_ResourceID_1();
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_113 = String_Concat_m612901809(NULL /*static, unused*/, _stringLiteral3645068937, L_112, _stringLiteral3900477622, /*hidden argument*/NULL);
-		NullCheck(L_111);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_111, 0);
-		ArrayElementTypeCheck (L_111, L_113);
-		(L_111)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_113);
-		String_t* L_114 = Util_getPath_m768332143(NULL /*static, unused*/, L_110, L_111, /*hidden argument*/NULL);
-		File_Copy_m1439309123(NULL /*static, unused*/, L_109, L_114, (bool)1, /*hidden argument*/NULL);
+		String_t* L_109 = String_Concat_m612901809(NULL /*static, unused*/, _stringLiteral3645068937, L_108, _stringLiteral3900477622, /*hidden argument*/NULL);
+		NullCheck(L_107);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_107, 0);
+		ArrayElementTypeCheck (L_107, L_109);
+		(L_107)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_109);
+		String_t* L_110 = Util_getPath_m768332143(NULL /*static, unused*/, L_106, L_107, /*hidden argument*/NULL);
+		File_Copy_m1439309123(NULL /*static, unused*/, L_105, L_110, (bool)1, /*hidden argument*/NULL);
 		App_print_m929367453(NULL /*static, unused*/, _stringLiteral2984315116, /*hidden argument*/NULL);
-		WaitForSeconds_t1717981302 * L_115 = (WaitForSeconds_t1717981302 *)il2cpp_codegen_object_new(WaitForSeconds_t1717981302_il2cpp_TypeInfo_var);
-		WaitForSeconds__ctor_m1990515539(L_115, (0.1f), /*hidden argument*/NULL);
-		__this->set_U24current_11(L_115);
+		WaitForSeconds_t1717981302 * L_111 = (WaitForSeconds_t1717981302 *)il2cpp_codegen_object_new(WaitForSeconds_t1717981302_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m1990515539(L_111, (0.1f), /*hidden argument*/NULL);
+		__this->set_U24current_11(L_111);
 		__this->set_U24PC_10(7);
-		goto IL_0484;
+		goto IL_045c;
 	}
 
-IL_0470:
+IL_0448:
 	{
-		Main_t2809994845 * L_116 = __this->get_U3CU3Ef__this_12();
-		NullCheck(L_116);
-		Main_EndCheckExtractResource_m3056340468(L_116, /*hidden argument*/NULL);
+		Main_t2809994845 * L_112 = __this->get_U3CU3Ef__this_12();
+		NullCheck(L_112);
+		Main_EndCheckExtractResource_m3056340468(L_112, /*hidden argument*/NULL);
 		__this->set_U24PC_10((-1));
 	}
 
-IL_0482:
+IL_045a:
 	{
 		return (bool)0;
 	}
 
-IL_0484:
+IL_045c:
 	{
 		return (bool)1;
 	}
-	// Dead block : IL_0486: ldloc.1
+	// Dead block : IL_045e: ldloc.1
 }
 // System.Void Main/<OnExtractResource>c__Iterator12::Dispose()
 extern "C"  void U3COnExtractResourceU3Ec__Iterator12_Dispose_m38830262 (U3COnExtractResourceU3Ec__Iterator12_t1706261718 * __this, const MethodInfo* method)

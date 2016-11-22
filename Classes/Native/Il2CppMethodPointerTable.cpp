@@ -2291,16 +2291,10 @@ extern "C" void BinaryWriter_Write_m2521294184 ();
 extern "C" void BinaryWriter_Write7BitEncodedInt_m3318776584 ();
 extern "C" void Directory_CreateDirectory_m3561886598 ();
 extern "C" void Directory_CreateDirectoriesInternal_m2817848291 ();
-extern "C" void Directory_Delete_m1547264965 ();
-extern "C" void Directory_RecursiveDelete_m159261495 ();
-extern "C" void Directory_Delete_m1706845570 ();
 extern "C" void Directory_Exists_m2663601042 ();
 extern "C" void Directory_GetCurrentDirectory_m44486537 ();
-extern "C" void Directory_GetDirectories_m527106846 ();
-extern "C" void Directory_GetDirectories_m2887060534 ();
 extern "C" void Directory_GetFiles_m3775562030 ();
 extern "C" void Directory_GetFiles_m4036267478 ();
-extern "C" void Directory_CheckPathExceptions_m1248317183 ();
 extern "C" void Directory_GetFileSystemEntries_m2720389648 ();
 extern "C" void DirectoryInfo__ctor_m3750996792 ();
 extern "C" void DirectoryInfo__ctor_m404287517 ();
@@ -2437,7 +2431,6 @@ extern "C" void MonoIO__cctor_m2398680849 ();
 extern "C" void MonoIO_GetException_m2577367044 ();
 extern "C" void MonoIO_GetException_m957022672 ();
 extern "C" void MonoIO_CreateDirectory_m379525469 ();
-extern "C" void MonoIO_RemoveDirectory_m3495601603 ();
 extern "C" void MonoIO_GetFileSystemEntries_m3422848968 ();
 extern "C" void MonoIO_GetCurrentDirectory_m1509324201 ();
 extern "C" void MonoIO_CopyFile_m2961462354 ();
@@ -2447,7 +2440,6 @@ extern "C" void MonoIO_GetFileType_m3310262429 ();
 extern "C" void MonoIO_Exists_m3221338122 ();
 extern "C" void MonoIO_ExistsFile_m1421941572 ();
 extern "C" void MonoIO_ExistsDirectory_m3152546909 ();
-extern "C" void MonoIO_ExistsSymlink_m2976617763 ();
 extern "C" void MonoIO_GetFileStat_m3146995842 ();
 extern "C" void MonoIO_Open_m435295363 ();
 extern "C" void MonoIO_Close_m3214088140 ();
@@ -12612,7 +12604,7 @@ extern "C" void WindowAutoYaw_Update_m166965108 ();
 extern "C" void WindowDragTilt__ctor_m2212893564 ();
 extern "C" void WindowDragTilt_OnEnable_m2676420184 ();
 extern "C" void WindowDragTilt_Update_m38197995 ();
-extern const methodPointerType g_MethodPointers[12601] = 
+extern const methodPointerType g_MethodPointers[12593] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -14894,16 +14886,10 @@ extern const methodPointerType g_MethodPointers[12601] =
 	BinaryWriter_Write7BitEncodedInt_m3318776584,
 	Directory_CreateDirectory_m3561886598,
 	Directory_CreateDirectoriesInternal_m2817848291,
-	Directory_Delete_m1547264965,
-	Directory_RecursiveDelete_m159261495,
-	Directory_Delete_m1706845570,
 	Directory_Exists_m2663601042,
 	Directory_GetCurrentDirectory_m44486537,
-	Directory_GetDirectories_m527106846,
-	Directory_GetDirectories_m2887060534,
 	Directory_GetFiles_m3775562030,
 	Directory_GetFiles_m4036267478,
-	Directory_CheckPathExceptions_m1248317183,
 	Directory_GetFileSystemEntries_m2720389648,
 	DirectoryInfo__ctor_m3750996792,
 	DirectoryInfo__ctor_m404287517,
@@ -15040,7 +15026,6 @@ extern const methodPointerType g_MethodPointers[12601] =
 	MonoIO_GetException_m2577367044,
 	MonoIO_GetException_m957022672,
 	MonoIO_CreateDirectory_m379525469,
-	MonoIO_RemoveDirectory_m3495601603,
 	MonoIO_GetFileSystemEntries_m3422848968,
 	MonoIO_GetCurrentDirectory_m1509324201,
 	MonoIO_CopyFile_m2961462354,
@@ -15050,7 +15035,6 @@ extern const methodPointerType g_MethodPointers[12601] =
 	MonoIO_Exists_m3221338122,
 	MonoIO_ExistsFile_m1421941572,
 	MonoIO_ExistsDirectory_m3152546909,
-	MonoIO_ExistsSymlink_m2976617763,
 	MonoIO_GetFileStat_m3146995842,
 	MonoIO_Open_m435295363,
 	MonoIO_Close_m3214088140,
