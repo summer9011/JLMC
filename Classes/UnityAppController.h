@@ -62,9 +62,6 @@
 @property (nonatomic, retain) id							renderDelegate;
 @property (nonatomic, copy)									void(^quitHandler)();
 
-
-@property (nonatomic, weak) UIViewController                *tmpUnityVC;
-
 /**
  登录用户
  */

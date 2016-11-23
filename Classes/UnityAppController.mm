@@ -622,7 +622,7 @@ extern "C" long	LoginUserId() {
 extern "C" void	DidLaunchOver() {
     NSLog(@"闪屏结束");
     
-    GetAppController().tmpUnityVC = GetAppController().rootViewController;
+    NSLog(@"rootViewController %@", GetAppController().rootViewController);
     
     UnityPause(YES);
     
@@ -642,15 +642,16 @@ extern "C" void	DidLaunchOver() {
         tmpVC = [[MapVC alloc] initWithNibName:@"MapVC" bundle:nil];
     }
     
-    GetAppController().window.rootViewController = tmpVC;
-    [GetAppController().window makeKeyAndVisible];
+    [[[UnityGetMainWindow() rootViewController] view] setHidden: YES];
+    [UnityGetMainWindow() setRootViewController:tmpVC];
+    [UnityGetMainWindow() makeKeyAndVisible];
 }
 
 //触发返回
 extern "C" void DidBackAction(const char* viewName) {
     NSLog(@"触发返回");
     
-    [GetAppController().tmpUnityVC.navigationController dismissViewControllerAnimated:YES completion:nil];
+    [GetAppController().rootViewController.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
 //进入我的背包

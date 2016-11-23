@@ -12,6 +12,13 @@
 @interface UIViewController (Hud)
 
 /**
+ 显示进度
+
+ @param msg 进度信息
+ */
+- (void)hud_showPercent:(NSString *)msg;
+
+/**
  正在加载中
  
  @param msg 提示文字

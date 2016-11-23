@@ -25,20 +25,34 @@
     return view;
 }
 
+- (MBProgressHUD *)hudForView {
+    MBProgressHUD *hud = [MBProgressHUD HUDForView:[self viewForShowHud]];
+    if (hud == nil) {
+        hud = [MBProgressHUD showHUDAddedTo:[self viewForShowHud] animated:YES];
+    }
+    
+    return hud;
+}
+
+- (void)hud_showPercent:(NSString *)msg {
+    MBProgressHUD *hud = [self hudForView];
+    hud.label.text = msg;
+}
+
 - (void)hud_showLoadingWithMsg:(NSString *)msg {
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[self viewForShowHud] animated:YES];
+    MBProgressHUD *hud = [self hudForView];
     hud.label.text = msg;
 }
 
 - (void)hud_hideLoadingWithSuccessMsg:(NSString *)msg {
-    MBProgressHUD *hud = [MBProgressHUD HUDForView:[self viewForShowHud]];
+    MBProgressHUD *hud = [self hudForView];
     hud.label.text = msg;
     
     [hud hideAnimated:YES afterDelay:HudDelayDuration];
 }
 
 - (void)hud_hideLoadingWithErrorMsg:(NSString *)msg {
-    MBProgressHUD *hud = [MBProgressHUD HUDForView:[self viewForShowHud]];
+    MBProgressHUD *hud = [self hudForView];
     hud.label.text = msg;
     
     [hud hideAnimated:YES afterDelay:HudDelayDuration];
@@ -50,14 +64,14 @@
 }
 
 - (void)hud_showSuccessWithMsg:(NSString *)msg {
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[self viewForShowHud] animated:YES];
+    MBProgressHUD *hud = [self hudForView];
     hud.label.text = msg;
     
     [hud hideAnimated:YES afterDelay:HudDelayDuration];
 }
 
 - (void)hud_showErrorWithMsg:(NSString *)msg {
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[self viewForShowHud] animated:YES];
+    MBProgressHUD *hud = [self hudForView];
     hud.label.text = msg;
     
     [hud hideAnimated:YES afterDelay:HudDelayDuration];

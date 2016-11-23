@@ -7,10 +7,11 @@
 //
 
 #import "AvatarListVC.h"
+#import "UnityAppController.h"
 
 #import "ChooseCartoonVC.h"
 
-@interface AvatarListVC () <UIImagePickerControllerDelegate>
+@interface AvatarListVC () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -122,10 +123,22 @@
         [self.navigationController pushViewController:chooseCartoonVC animated:YES];
         
     } else if (indexPath.row == 2) {
-        
+        if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
+            self.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+            [self presentViewController:self.imagePickerController animated:YES completion:nil];
+            
+        } else {
+            [self hud_showErrorWithMsg:@"不支持相册"];
+        }
         
     } else if (indexPath.row == 3) {
-        
+        if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+            self.imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+            [self presentViewController:self.imagePickerController animated:YES completion:nil];
+            
+        } else {
+            [self hud_showErrorWithMsg:@"不支持摄像头"];
+        }
         
     }
 }
@@ -133,11 +146,51 @@
 #pragma mark - UIImagePickerControllerDelegate
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
+    NSLog(@"info %@", info);
     
+    UIImage *editedImage = info[UIImagePickerControllerEditedImage];
+    
+    [picker hud_showLoadingWithMsg:@"正在上传..."];
+    
+    [[SessionNetwork defaultNetwork] aliyuOSS_putImage:editedImage completePercent:^(CGFloat percent) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [picker hud_showPercent:[NSString stringWithFormat:@"正在上传... %.2f%%", percent * 100]];
+        });
+        
+    } success:^(id response) {
+        NSLog(@"response %@", response);
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [picker hud_showPercent:@"正在同步到服务器..."];
+            
+            [User userInfoUpdateWithUserId:GetAppController().loginUser.userId type:UserInfoAvatar value:response completeBlock:^(BOOL success, id response, NSString *errStr) {
+                if (success) {
+                    [picker hud_hideQuick];
+                    
+                    [picker dismissViewControllerAnimated:YES completion:nil];
+                    
+                } else {
+                    [picker hud_hideLoadingWithErrorMsg:errStr];
+                }
+            }];
+        });
+        
+    } failure:^(NSUInteger errorCode, NSString *errorMsg) {
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [picker hud_hideLoadingWithErrorMsg:errorMsg];
+        });
+    }];
 }
 
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+- (UIImagePickerController *)imagePickerController {
+    if (_imagePickerController == nil) {
+        _imagePickerController = [[UIImagePickerController alloc] init];
+        _imagePickerController.delegate = self;
+        _imagePickerController.allowsEditing = YES;
+    }
     
+    return _imagePickerController;
 }
 
 /*

@@ -446,13 +446,18 @@
         }
             break;
         case MenuItemSpirit: {
+//            UnityPause(NO);
+//            UnitySendMessage(UnityObj, UnityMethod, UnityMySpirit);
+//            BaseNaviVC *naviVC = [[BaseNaviVC alloc] initWithRootViewController:GetAppController().rootViewController];
+//            [naviVC setNavigationBarHidden:YES];
+//            [self presentViewController:naviVC animated:YES completion:nil];
+            
+            [UnityGetMainWindow() setRootViewController:GetAppController().rootViewController];
+            
+            [[[UnityGetMainWindow() rootViewController] view] setHidden:NO];
+            [UnityGetMainWindow() makeKeyAndVisible];
             UnityPause(NO);
             
-            UnitySendMessage(UnityObj, UnityMethod, UnityMySpirit);
-            
-            BaseNaviVC *naviVC = [[BaseNaviVC alloc] initWithRootViewController:GetAppController().tmpUnityVC];
-            [naviVC setNavigationBarHidden:YES];
-            [self presentViewController:naviVC animated:YES completion:nil];
         }
             break;
         case MenuItemMyBag: {
@@ -578,11 +583,11 @@
         if ([elfAnno.elfDic[@"canCatch"] boolValue]) {
             self.selectedElfId = [elfAnno.elfDic[@"poiElfId"] integerValue];
             
-            UnityPause(NO);
+//            UnityPause(NO);
+
+//            UnitySendMessage(UnityObj, UnityMethod, UnityMyCatch);
             
-            UnitySendMessage(UnityObj, UnityMethod, UnityMyCatch);
-            
-            BaseNaviVC *naviVC = [[BaseNaviVC alloc] initWithRootViewController:GetAppController().tmpUnityVC];
+            BaseNaviVC *naviVC = [[BaseNaviVC alloc] initWithRootViewController:GetAppController().rootViewController];
             [naviVC setNavigationBarHidden:YES];
             [self presentViewController:naviVC animated:YES completion:nil];
         }
