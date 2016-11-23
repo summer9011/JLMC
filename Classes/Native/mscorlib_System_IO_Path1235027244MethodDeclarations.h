@@ -22,8 +22,6 @@ struct CharU5BU5D_t1685951112;
 
 // System.Void System.IO.Path::.cctor()
 extern "C"  void Path__cctor_m3685888661 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String System.IO.Path::ChangeExtension(System.String,System.String)
-extern "C"  String_t* Path_ChangeExtension_m4087688358 (Il2CppObject * __this /* static, unused */, String_t* ___path, String_t* ___extension, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.IO.Path::Combine(System.String,System.String)
 extern "C"  String_t* Path_Combine_m3185811654 (Il2CppObject * __this /* static, unused */, String_t* ___path1, String_t* ___path2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.IO.Path::CleanPath(System.String)
@@ -34,8 +32,6 @@ extern "C"  String_t* Path_GetDirectoryName_m260633861 (Il2CppObject * __this /*
 extern "C"  String_t* Path_GetExtension_m740668066 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.IO.Path::GetFileName(System.String)
 extern "C"  String_t* Path_GetFileName_m893210218 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String System.IO.Path::GetFileNameWithoutExtension(System.String)
-extern "C"  String_t* Path_GetFileNameWithoutExtension_m2541641063 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.IO.Path::GetFullPath(System.String)
 extern "C"  String_t* Path_GetFullPath_m840307057 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.IO.Path::WindowsDriveAdjustment(System.String)

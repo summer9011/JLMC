@@ -13,8 +13,6 @@
 #include <limits>
 #include <assert.h>
 
-// UIDragDropRoot
-struct UIDragDropRoot_t997512525;
 // UIDraggableCamera
 struct UIDraggableCamera_t2562792962;
 // UnityEngine.Camera
@@ -254,34 +252,34 @@ struct Paragraph_t3320658422;
 struct Validate_t2842189766;
 // UIToggledComponents
 struct UIToggledComponents_t1876468998;
+// UIToggledObjects
+struct UIToggledObjects_t3646139686;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array4136897760.h"
-#include "AssemblyU2DCSharp_UIDragDropRoot997512525.h"
-#include "AssemblyU2DCSharp_UIDragDropRoot997512525MethodDeclarations.h"
-#include "mscorlib_System_Void2799814243.h"
-#include "UnityEngine_UnityEngine_MonoBehaviour774292115MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Component1078601330MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Transform224878301.h"
-#include "UnityEngine_UnityEngine_Object1181371020MethodDeclarations.h"
-#include "mscorlib_System_Boolean3143194569.h"
-#include "UnityEngine_UnityEngine_Object1181371020.h"
 #include "AssemblyU2DCSharp_UIDraggableCamera2562792962.h"
 #include "AssemblyU2DCSharp_UIDraggableCamera2562792962MethodDeclarations.h"
+#include "mscorlib_System_Void2799814243.h"
 #include "UnityEngine_UnityEngine_Vector2465617798MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_MonoBehaviour774292115MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Vector2465617798.h"
 #include "AssemblyU2DCSharp_UIDragObject_DragEffect4041293165.h"
+#include "mscorlib_System_Boolean3143194569.h"
 #include "mscorlib_System_Single1791520093.h"
+#include "UnityEngine_UnityEngine_Component1078601330MethodDeclarations.h"
 #include "AssemblyU2DCSharp_NGUITools2004302824MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Object1181371020MethodDeclarations.h"
 #include "mscorlib_System_String1967731336MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Debug12548584MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Behaviour1547659088MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Camera2805735124.h"
 #include "UnityEngine_UnityEngine_Component1078601330.h"
+#include "UnityEngine_UnityEngine_Transform224878301.h"
 #include "UnityEngine_UnityEngine_GameObject1366199518.h"
 #include "AssemblyU2DCSharp_UIRoot389944298.h"
 #include "AssemblyU2DCSharp_NGUITools2004302824.h"
+#include "UnityEngine_UnityEngine_Object1181371020.h"
 #include "mscorlib_System_String1967731336.h"
 #include "mscorlib_System_Object707969140.h"
 #include "UnityEngine_UnityEngine_Vector3465617797.h"
@@ -717,6 +715,10 @@ struct UIToggledComponents_t1876468998;
 #include "UnityEngine_UnityEngine_MonoBehaviour774292115.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen4180630754.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen4180630754MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UIToggledObjects3646139686.h"
+#include "AssemblyU2DCSharp_UIToggledObjects3646139686MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen477570861.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen477570861MethodDeclarations.h"
 
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m2721246802_gshared (Component_t1078601330 * __this, const MethodInfo* method);
@@ -883,60 +885,6 @@ extern "C"  ObjectU5BU5D_t3632007997* Component_GetComponentsInChildren_TisIl2Cp
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UIDragDropRoot::.ctor()
-extern "C"  void UIDragDropRoot__ctor_m3749173908 (UIDragDropRoot_t997512525 * __this, const MethodInfo* method)
-{
-	{
-		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UIDragDropRoot::OnEnable()
-extern TypeInfo* UIDragDropRoot_t997512525_il2cpp_TypeInfo_var;
-extern const uint32_t UIDragDropRoot_OnEnable_m3324100684_MetadataUsageId;
-extern "C"  void UIDragDropRoot_OnEnable_m3324100684 (UIDragDropRoot_t997512525 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (UIDragDropRoot_OnEnable_m3324100684_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		Transform_t224878301 * L_0 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		((UIDragDropRoot_t997512525_StaticFields*)UIDragDropRoot_t997512525_il2cpp_TypeInfo_var->static_fields)->set_root_2(L_0);
-		return;
-	}
-}
-// System.Void UIDragDropRoot::OnDisable()
-extern TypeInfo* UIDragDropRoot_t997512525_il2cpp_TypeInfo_var;
-extern const uint32_t UIDragDropRoot_OnDisable_m2277512289_MetadataUsageId;
-extern "C"  void UIDragDropRoot_OnDisable_m2277512289 (UIDragDropRoot_t997512525 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (UIDragDropRoot_OnDisable_m2277512289_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		Transform_t224878301 * L_0 = ((UIDragDropRoot_t997512525_StaticFields*)UIDragDropRoot_t997512525_il2cpp_TypeInfo_var->static_fields)->get_root_2();
-		Transform_t224878301 * L_1 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		bool L_2 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
-		if (!L_2)
-		{
-			goto IL_001b;
-		}
-	}
-	{
-		((UIDragDropRoot_t997512525_StaticFields*)UIDragDropRoot_t997512525_il2cpp_TypeInfo_var->static_fields)->set_root_2((Transform_t224878301 *)NULL);
-	}
-
-IL_001b:
-	{
-		return;
-	}
-}
 // System.Void UIDraggableCamera::.ctor()
 extern "C"  void UIDraggableCamera__ctor_m2834373395 (UIDraggableCamera_t2562792962 * __this, const MethodInfo* method)
 {
@@ -55628,6 +55576,223 @@ IL_006f:
 	}
 
 IL_0080:
+	{
+		return;
+	}
+}
+// System.Void UIToggledObjects::.ctor()
+extern "C"  void UIToggledObjects__ctor_m369011267 (UIToggledObjects_t3646139686 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UIToggledObjects::Awake()
+extern TypeInfo* Callback_t1186947871_il2cpp_TypeInfo_var;
+extern TypeInfo* EventDelegate_t3496309181_il2cpp_TypeInfo_var;
+extern const MethodInfo* Component_GetComponent_TisUIToggle_t3036740318_m3387835937_MethodInfo_var;
+extern const MethodInfo* UIToggledObjects_Toggle_m447336589_MethodInfo_var;
+extern const uint32_t UIToggledObjects_Awake_m4034682646_MetadataUsageId;
+extern "C"  void UIToggledObjects_Awake_m4034682646 (UIToggledObjects_t3646139686 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UIToggledObjects_Awake_m4034682646_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	UIToggle_t3036740318 * V_0 = NULL;
+	{
+		GameObject_t1366199518 * L_0 = __this->get_target_4();
+		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1181371020 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_006f;
+		}
+	}
+	{
+		List_1_t477570861 * L_2 = __this->get_activate_2();
+		NullCheck(L_2);
+		int32_t L_3 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.GameObject>::get_Count() */, L_2);
+		if (L_3)
+		{
+			goto IL_0068;
+		}
+	}
+	{
+		List_1_t477570861 * L_4 = __this->get_deactivate_3();
+		NullCheck(L_4);
+		int32_t L_5 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.GameObject>::get_Count() */, L_4);
+		if (L_5)
+		{
+			goto IL_0068;
+		}
+	}
+	{
+		bool L_6 = __this->get_inverse_5();
+		if (!L_6)
+		{
+			goto IL_0052;
+		}
+	}
+	{
+		List_1_t477570861 * L_7 = __this->get_deactivate_3();
+		GameObject_t1366199518 * L_8 = __this->get_target_4();
+		NullCheck(L_7);
+		VirtActionInvoker1< GameObject_t1366199518 * >::Invoke(19 /* System.Void System.Collections.Generic.List`1<UnityEngine.GameObject>::Add(!0) */, L_7, L_8);
+		goto IL_0063;
+	}
+
+IL_0052:
+	{
+		List_1_t477570861 * L_9 = __this->get_activate_2();
+		GameObject_t1366199518 * L_10 = __this->get_target_4();
+		NullCheck(L_9);
+		VirtActionInvoker1< GameObject_t1366199518 * >::Invoke(19 /* System.Void System.Collections.Generic.List`1<UnityEngine.GameObject>::Add(!0) */, L_9, L_10);
+	}
+
+IL_0063:
+	{
+		goto IL_006f;
+	}
+
+IL_0068:
+	{
+		__this->set_target_4((GameObject_t1366199518 *)NULL);
+	}
+
+IL_006f:
+	{
+		UIToggle_t3036740318 * L_11 = Component_GetComponent_TisUIToggle_t3036740318_m3387835937(__this, /*hidden argument*/Component_GetComponent_TisUIToggle_t3036740318_m3387835937_MethodInfo_var);
+		V_0 = L_11;
+		UIToggle_t3036740318 * L_12 = V_0;
+		NullCheck(L_12);
+		List_1_t2607680524 * L_13 = L_12->get_onChange_11();
+		IntPtr_t L_14;
+		L_14.set_m_value_0((void*)UIToggledObjects_Toggle_m447336589_MethodInfo_var);
+		Callback_t1186947871 * L_15 = (Callback_t1186947871 *)il2cpp_codegen_object_new(Callback_t1186947871_il2cpp_TypeInfo_var);
+		Callback__ctor_m2698878814(L_15, __this, L_14, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(EventDelegate_t3496309181_il2cpp_TypeInfo_var);
+		EventDelegate_Add_m1442761525(NULL /*static, unused*/, L_13, L_15, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UIToggledObjects::Toggle()
+extern TypeInfo* UIToggle_t3036740318_il2cpp_TypeInfo_var;
+extern const uint32_t UIToggledObjects_Toggle_m447336589_MetadataUsageId;
+extern "C"  void UIToggledObjects_Toggle_m447336589 (UIToggledObjects_t3646139686 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UIToggledObjects_Toggle_m447336589_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	bool V_0 = false;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UIToggle_t3036740318_il2cpp_TypeInfo_var);
+		UIToggle_t3036740318 * L_0 = ((UIToggle_t3036740318_StaticFields*)UIToggle_t3036740318_il2cpp_TypeInfo_var->static_fields)->get_current_3();
+		NullCheck(L_0);
+		bool L_1 = UIToggle_get_value_m472932827(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		bool L_2 = Behaviour_get_enabled_m4079055610(__this, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_0077;
+		}
+	}
+	{
+		V_1 = 0;
+		goto IL_0034;
+	}
+
+IL_001d:
+	{
+		List_1_t477570861 * L_3 = __this->get_activate_2();
+		int32_t L_4 = V_1;
+		NullCheck(L_3);
+		GameObject_t1366199518 * L_5 = VirtFuncInvoker1< GameObject_t1366199518 *, int32_t >::Invoke(28 /* !0 System.Collections.Generic.List`1<UnityEngine.GameObject>::get_Item(System.Int32) */, L_3, L_4);
+		bool L_6 = V_0;
+		UIToggledObjects_Set_m670897138(__this, L_5, L_6, /*hidden argument*/NULL);
+		int32_t L_7 = V_1;
+		V_1 = ((int32_t)((int32_t)L_7+(int32_t)1));
+	}
+
+IL_0034:
+	{
+		int32_t L_8 = V_1;
+		List_1_t477570861 * L_9 = __this->get_activate_2();
+		NullCheck(L_9);
+		int32_t L_10 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.GameObject>::get_Count() */, L_9);
+		if ((((int32_t)L_8) < ((int32_t)L_10)))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		V_2 = 0;
+		goto IL_0066;
+	}
+
+IL_004c:
+	{
+		List_1_t477570861 * L_11 = __this->get_deactivate_3();
+		int32_t L_12 = V_2;
+		NullCheck(L_11);
+		GameObject_t1366199518 * L_13 = VirtFuncInvoker1< GameObject_t1366199518 *, int32_t >::Invoke(28 /* !0 System.Collections.Generic.List`1<UnityEngine.GameObject>::get_Item(System.Int32) */, L_11, L_12);
+		bool L_14 = V_0;
+		UIToggledObjects_Set_m670897138(__this, L_13, (bool)((((int32_t)L_14) == ((int32_t)0))? 1 : 0), /*hidden argument*/NULL);
+		int32_t L_15 = V_2;
+		V_2 = ((int32_t)((int32_t)L_15+(int32_t)1));
+	}
+
+IL_0066:
+	{
+		int32_t L_16 = V_2;
+		List_1_t477570861 * L_17 = __this->get_deactivate_3();
+		NullCheck(L_17);
+		int32_t L_18 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.GameObject>::get_Count() */, L_17);
+		if ((((int32_t)L_16) < ((int32_t)L_18)))
+		{
+			goto IL_004c;
+		}
+	}
+
+IL_0077:
+	{
+		return;
+	}
+}
+// System.Void UIToggledObjects::Set(UnityEngine.GameObject,System.Boolean)
+extern TypeInfo* NGUITools_t2004302824_il2cpp_TypeInfo_var;
+extern const uint32_t UIToggledObjects_Set_m670897138_MetadataUsageId;
+extern "C"  void UIToggledObjects_Set_m670897138 (UIToggledObjects_t3646139686 * __this, GameObject_t1366199518 * ___go, bool ___state, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UIToggledObjects_Set_m670897138_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		GameObject_t1366199518 * L_0 = ___go;
+		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1181371020 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		GameObject_t1366199518 * L_2 = ___go;
+		bool L_3 = ___state;
+		IL2CPP_RUNTIME_CLASS_INIT(NGUITools_t2004302824_il2cpp_TypeInfo_var);
+		NGUITools_SetActive_m1246261882(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
+	}
+
+IL_0013:
 	{
 		return;
 	}

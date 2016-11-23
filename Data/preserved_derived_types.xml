@@ -131,7 +131,6 @@
 <type fullname="CatchQuan" preserve="all"/>
 <type fullname="ScenceCamera" preserve="all"/>
 <type fullname="AssetLoad" preserve="all"/>
-<type fullname="FilesManager" preserve="all"/>
 <type fullname="NativeMessageReceive" preserve="all"/>
 <type fullname="GroupPhotoMain" preserve="all"/>
 <type fullname="Main" preserve="all"/>

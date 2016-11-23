@@ -171,8 +171,6 @@ struct Type_t;
 struct ExampleDragDropItem_t1791695386;
 // ExampleDragDropSurface
 struct ExampleDragDropSurface_t2585250672;
-// FilesManager
-struct FilesManager_t2291984574;
 // Gift
 struct Gift_t450896550;
 // LitJson.JSONNode
@@ -291,6 +289,8 @@ struct U3CFeedElfU3Ec__Iterator16_t2563472091;
 struct U3CgetSpriteDecU3Ec__Iterator15_t3069165090;
 // MySpriteDecMain/<hasGift>c__Iterator17
 struct U3ChasGiftU3Ec__Iterator17_t2630678013;
+// MySpriteDetail
+struct MySpriteDetail_t913424694;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -605,11 +605,6 @@ struct U3ChasGiftU3Ec__Iterator17_t2630678013;
 #include "UnityEngine_UnityEngine_Quaternion83606849.h"
 #include "AssemblyU2DCSharp_UIDragDropItem4109477862.h"
 #include "AssemblyU2DCSharp_ExampleDragDropSurface2585250672MethodDeclarations.h"
-#include "AssemblyU2DCSharp_FilesManager2291984574.h"
-#include "AssemblyU2DCSharp_FilesManager2291984574MethodDeclarations.h"
-#include "mscorlib_System_IO_Directory3403651264MethodDeclarations.h"
-#include "mscorlib_System_IO_Path1235027244MethodDeclarations.h"
-#include "mscorlib_System_IO_DirectoryInfo2045585366.h"
 #include "AssemblyU2DCSharp_Gift450896550.h"
 #include "AssemblyU2DCSharp_Gift450896550MethodDeclarations.h"
 #include "AssemblyU2DCSharp_GiftsItem1274332604.h"
@@ -730,7 +725,9 @@ struct U3ChasGiftU3Ec__Iterator17_t2630678013;
 #include "System_System_Collections_Generic_Stack_1_gen2664683090.h"
 #include "mscorlib_System_Globalization_NumberStyles579844343.h"
 #include "mscorlib_System_IO_FileInfo2789094487MethodDeclarations.h"
+#include "mscorlib_System_IO_Directory3403651264MethodDeclarations.h"
 #include "mscorlib_System_IO_FileInfo2789094487.h"
+#include "mscorlib_System_IO_DirectoryInfo2045585366.h"
 #include "mscorlib_System_IO_FileSystemInfo2997061660MethodDeclarations.h"
 #include "mscorlib_System_IO_FileSystemInfo2997061660.h"
 #include "mscorlib_System_IO_MemoryStream1215391928MethodDeclarations.h"
@@ -763,6 +760,7 @@ struct U3ChasGiftU3Ec__Iterator17_t2630678013;
 #include "AssemblyU2DCSharp_SceneName904752595.h"
 #include "AssemblyU2DCSharp_SceneName904752595MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_WaitForEndOfFrame2828800938MethodDeclarations.h"
+#include "mscorlib_System_IO_Path1235027244MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_WaitForSeconds1717981302MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_WaitForEndOfFrame2828800938.h"
 #include "UnityEngine_UnityEngine_WaitForSeconds1717981302.h"
@@ -3322,10 +3320,8 @@ extern "C"  void App__ctor_m2732637238 (App_t821575015 * __this, const MethodInf
 }
 // System.Void App::.cctor()
 extern TypeInfo* App_t821575015_il2cpp_TypeInfo_var;
-extern TypeInfo* String_t_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral372029325;
 extern Il2CppCodeGenString* _stringLiteral2422737152;
-extern Il2CppCodeGenString* _stringLiteral372029315;
 extern const uint32_t App__cctor_m3548506933_MetadataUsageId;
 extern "C"  void App__cctor_m3548506933 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -3338,17 +3334,9 @@ extern "C"  void App__cctor_m3548506933 (Il2CppObject * __this /* static, unused
 	{
 		((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->set_isDeBug_0((bool)1);
 		((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->set_ResourceID_1(_stringLiteral372029325);
-		bool L_0 = Application_get_isMobilePlatform_m1067527467(NULL /*static, unused*/, /*hidden argument*/NULL);
-		((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->set_isMobile_2(L_0);
-		((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->set_instance_4((App_t821575015 *)NULL);
+		((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->set_isDebugOnMobile_2((bool)1);
 		((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->set_MoxingPath_6(_stringLiteral2422737152);
-		String_t* L_1 = Application_get_persistentDataPath_m3129298355(NULL /*static, unused*/, /*hidden argument*/NULL);
-		((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->set_path_7(L_1);
-		String_t* L_2 = Application_get_streamingAssetsPath_m8890645(NULL /*static, unused*/, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_3 = String_Concat_m2596409543(NULL /*static, unused*/, L_2, _stringLiteral372029315, /*hidden argument*/NULL);
-		((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->set_stream_8(L_3);
-		((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->set_currSpriteGetid_9(((int32_t)11));
+		((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->set_currSpriteGetid_7(((int32_t)11));
 		return;
 	}
 }
@@ -3579,7 +3567,7 @@ IL_0021:
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
-		Dictionary_2_t4260152181 * L_9 = ((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__switchU24map5_11();
+		Dictionary_2_t4260152181 * L_9 = ((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__switchU24map5_9();
 		if (L_9)
 		{
 			goto IL_00a5;
@@ -3603,13 +3591,13 @@ IL_0021:
 		VirtActionInvoker2< String_t*, int32_t >::Invoke(26 /* System.Void System.Collections.Generic.Dictionary`2<System.String,System.Int32>::Add(!0,!1) */, L_14, _stringLiteral2181695930, 3);
 		Dictionary_2_t4260152181 * L_15 = V_2;
 		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
-		((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->set_U3CU3Ef__switchU24map5_11(L_15);
+		((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->set_U3CU3Ef__switchU24map5_9(L_15);
 	}
 
 IL_00a5:
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
-		Dictionary_2_t4260152181 * L_16 = ((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__switchU24map5_11();
+		Dictionary_2_t4260152181 * L_16 = ((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__switchU24map5_9();
 		String_t* L_17 = V_1;
 		NullCheck(L_16);
 		bool L_18 = VirtFuncInvoker2< bool, String_t*, int32_t* >::Invoke(31 /* System.Boolean System.Collections.Generic.Dictionary`2<System.String,System.Int32>::TryGetValue(!0,!1&) */, L_16, L_17, (&V_3));
@@ -11128,403 +11116,6 @@ extern "C"  void ExampleDragDropSurface__ctor_m1975051895 (ExampleDragDropSurfac
 		return;
 	}
 }
-// System.Void FilesManager::.ctor()
-extern "C"  void FilesManager__ctor_m1563510825 (FilesManager_t2291984574 * __this, const MethodInfo* method)
-{
-	{
-		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void FilesManager::Awake()
-extern TypeInfo* App_t821575015_il2cpp_TypeInfo_var;
-extern TypeInfo* String_t_il2cpp_TypeInfo_var;
-extern TypeInfo* Debug_t12548584_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral4066964962;
-extern const uint32_t FilesManager_Awake_m929401470_MetadataUsageId;
-extern "C"  void FilesManager_Awake_m929401470 (FilesManager_t2291984574 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (FilesManager_Awake_m929401470_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
-		String_t* L_0 = ((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->get_path_7();
-		__this->set_MarksDirectory_2(L_0);
-		String_t* L_1 = __this->get_MarksDirectory_2();
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral4066964962, L_1, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t12548584_il2cpp_TypeInfo_var);
-		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Collections.Generic.Dictionary`2<System.String,System.String> FilesManager::GetDirectoryName_FileDic_All()
-extern TypeInfo* Dictionary_2_t484745624_il2cpp_TypeInfo_var;
-extern const MethodInfo* Dictionary_2__ctor_m760167321_MethodInfo_var;
-extern const uint32_t FilesManager_GetDirectoryName_FileDic_All_m1605010202_MetadataUsageId;
-extern "C"  Dictionary_2_t484745624 * FilesManager_GetDirectoryName_FileDic_All_m1605010202 (FilesManager_t2291984574 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (FilesManager_GetDirectoryName_FileDic_All_m1605010202_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		String_t* L_0 = __this->get_MarksDirectory_2();
-		bool L_1 = Directory_Exists_m2663601042(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		if (L_1)
-		{
-			goto IL_0016;
-		}
-	}
-	{
-		Dictionary_2_t484745624 * L_2 = (Dictionary_2_t484745624 *)il2cpp_codegen_object_new(Dictionary_2_t484745624_il2cpp_TypeInfo_var);
-		Dictionary_2__ctor_m760167321(L_2, /*hidden argument*/Dictionary_2__ctor_m760167321_MethodInfo_var);
-		return L_2;
-	}
-
-IL_0016:
-	{
-		String_t* L_3 = __this->get_MarksDirectory_2();
-		Dictionary_2_t484745624 * L_4 = FilesManager_GetAllImagesFiles_m94196845(__this, L_3, /*hidden argument*/NULL);
-		return L_4;
-	}
-}
-// System.Collections.Generic.Dictionary`2<System.String,System.String> FilesManager::GetAllImagesFiles(System.String)
-extern TypeInfo* Dictionary_2_t484745624_il2cpp_TypeInfo_var;
-extern TypeInfo* Path_t1235027244_il2cpp_TypeInfo_var;
-extern TypeInfo* String_t_il2cpp_TypeInfo_var;
-extern const MethodInfo* Dictionary_2__ctor_m760167321_MethodInfo_var;
-extern Il2CppCodeGenString* _stringLiteral3356760195;
-extern Il2CppCodeGenString* _stringLiteral3887652441;
-extern Il2CppCodeGenString* _stringLiteral3282854815;
-extern const uint32_t FilesManager_GetAllImagesFiles_m94196845_MetadataUsageId;
-extern "C"  Dictionary_2_t484745624 * FilesManager_GetAllImagesFiles_m94196845 (FilesManager_t2291984574 * __this, String_t* ___path, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (FilesManager_GetAllImagesFiles_m94196845_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	Dictionary_2_t484745624 * V_0 = NULL;
-	String_t* V_1 = NULL;
-	StringU5BU5D_t3764931161* V_2 = NULL;
-	int32_t V_3 = 0;
-	{
-		Dictionary_2_t484745624 * L_0 = (Dictionary_2_t484745624 *)il2cpp_codegen_object_new(Dictionary_2_t484745624_il2cpp_TypeInfo_var);
-		Dictionary_2__ctor_m760167321(L_0, /*hidden argument*/Dictionary_2__ctor_m760167321_MethodInfo_var);
-		V_0 = L_0;
-		String_t* L_1 = ___path;
-		StringU5BU5D_t3764931161* L_2 = Directory_GetFiles_m3775562030(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
-		V_2 = L_2;
-		V_3 = 0;
-		goto IL_0068;
-	}
-
-IL_0014:
-	{
-		StringU5BU5D_t3764931161* L_3 = V_2;
-		int32_t L_4 = V_3;
-		NullCheck(L_3);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_4);
-		int32_t L_5 = L_4;
-		V_1 = ((L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5)));
-		String_t* L_6 = V_1;
-		IL2CPP_RUNTIME_CLASS_INIT(Path_t1235027244_il2cpp_TypeInfo_var);
-		String_t* L_7 = Path_GetExtension_m740668066(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_8 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_7, _stringLiteral3356760195, /*hidden argument*/NULL);
-		if (L_8)
-		{
-			goto IL_0057;
-		}
-	}
-	{
-		String_t* L_9 = V_1;
-		IL2CPP_RUNTIME_CLASS_INIT(Path_t1235027244_il2cpp_TypeInfo_var);
-		String_t* L_10 = Path_GetExtension_m740668066(NULL /*static, unused*/, L_9, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_11 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_10, _stringLiteral3887652441, /*hidden argument*/NULL);
-		if (L_11)
-		{
-			goto IL_0057;
-		}
-	}
-	{
-		String_t* L_12 = V_1;
-		IL2CPP_RUNTIME_CLASS_INIT(Path_t1235027244_il2cpp_TypeInfo_var);
-		String_t* L_13 = Path_GetExtension_m740668066(NULL /*static, unused*/, L_12, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_14 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_13, _stringLiteral3282854815, /*hidden argument*/NULL);
-		if (!L_14)
-		{
-			goto IL_0064;
-		}
-	}
-
-IL_0057:
-	{
-		Dictionary_2_t484745624 * L_15 = V_0;
-		String_t* L_16 = V_1;
-		IL2CPP_RUNTIME_CLASS_INIT(Path_t1235027244_il2cpp_TypeInfo_var);
-		String_t* L_17 = Path_GetFileNameWithoutExtension_m2541641063(NULL /*static, unused*/, L_16, /*hidden argument*/NULL);
-		String_t* L_18 = V_1;
-		NullCheck(L_15);
-		VirtActionInvoker2< String_t*, String_t* >::Invoke(26 /* System.Void System.Collections.Generic.Dictionary`2<System.String,System.String>::Add(!0,!1) */, L_15, L_17, L_18);
-	}
-
-IL_0064:
-	{
-		int32_t L_19 = V_3;
-		V_3 = ((int32_t)((int32_t)L_19+(int32_t)1));
-	}
-
-IL_0068:
-	{
-		int32_t L_20 = V_3;
-		StringU5BU5D_t3764931161* L_21 = V_2;
-		NullCheck(L_21);
-		if ((((int32_t)L_20) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_21)->max_length)))))))
-		{
-			goto IL_0014;
-		}
-	}
-	{
-		Dictionary_2_t484745624 * L_22 = V_0;
-		return L_22;
-	}
-}
-// System.Collections.Generic.Dictionary`2<System.String,System.String> FilesManager::GetDirectoryName_FileDic(System.String,System.String)
-extern TypeInfo* String_t_il2cpp_TypeInfo_var;
-extern TypeInfo* Dictionary_2_t484745624_il2cpp_TypeInfo_var;
-extern const MethodInfo* Dictionary_2__ctor_m760167321_MethodInfo_var;
-extern Il2CppCodeGenString* _stringLiteral372029315;
-extern const uint32_t FilesManager_GetDirectoryName_FileDic_m1953023208_MetadataUsageId;
-extern "C"  Dictionary_2_t484745624 * FilesManager_GetDirectoryName_FileDic_m1953023208 (FilesManager_t2291984574 * __this, String_t* ___dic, String_t* ___fileName, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (FilesManager_GetDirectoryName_FileDic_m1953023208_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	String_t* V_0 = NULL;
-	{
-		String_t* L_0 = __this->get_MarksDirectory_2();
-		String_t* L_1 = ___dic;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_2 = String_Concat_m612901809(NULL /*static, unused*/, L_0, _stringLiteral372029315, L_1, /*hidden argument*/NULL);
-		V_0 = L_2;
-		String_t* L_3 = V_0;
-		bool L_4 = Directory_Exists_m2663601042(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
-		if (L_4)
-		{
-			goto IL_0023;
-		}
-	}
-	{
-		Dictionary_2_t484745624 * L_5 = (Dictionary_2_t484745624 *)il2cpp_codegen_object_new(Dictionary_2_t484745624_il2cpp_TypeInfo_var);
-		Dictionary_2__ctor_m760167321(L_5, /*hidden argument*/Dictionary_2__ctor_m760167321_MethodInfo_var);
-		return L_5;
-	}
-
-IL_0023:
-	{
-		String_t* L_6 = V_0;
-		String_t* L_7 = ___fileName;
-		Dictionary_2_t484745624 * L_8 = FilesManager_getImageFile_m854015874(__this, L_6, L_7, /*hidden argument*/NULL);
-		return L_8;
-	}
-}
-// System.Collections.Generic.Dictionary`2<System.String,System.String> FilesManager::getImageFile(System.String,System.String)
-extern TypeInfo* Dictionary_2_t484745624_il2cpp_TypeInfo_var;
-extern TypeInfo* Path_t1235027244_il2cpp_TypeInfo_var;
-extern const MethodInfo* Dictionary_2__ctor_m760167321_MethodInfo_var;
-extern const uint32_t FilesManager_getImageFile_m854015874_MetadataUsageId;
-extern "C"  Dictionary_2_t484745624 * FilesManager_getImageFile_m854015874 (FilesManager_t2291984574 * __this, String_t* ___path, String_t* ___fileName, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (FilesManager_getImageFile_m854015874_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	Dictionary_2_t484745624 * V_0 = NULL;
-	String_t* V_1 = NULL;
-	StringU5BU5D_t3764931161* V_2 = NULL;
-	int32_t V_3 = 0;
-	{
-		Dictionary_2_t484745624 * L_0 = (Dictionary_2_t484745624 *)il2cpp_codegen_object_new(Dictionary_2_t484745624_il2cpp_TypeInfo_var);
-		Dictionary_2__ctor_m760167321(L_0, /*hidden argument*/Dictionary_2__ctor_m760167321_MethodInfo_var);
-		V_0 = L_0;
-		String_t* L_1 = ___path;
-		StringU5BU5D_t3764931161* L_2 = Directory_GetFiles_m3775562030(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
-		V_2 = L_2;
-		V_3 = 0;
-		goto IL_003a;
-	}
-
-IL_0014:
-	{
-		StringU5BU5D_t3764931161* L_3 = V_2;
-		int32_t L_4 = V_3;
-		NullCheck(L_3);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_4);
-		int32_t L_5 = L_4;
-		V_1 = ((L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5)));
-		String_t* L_6 = V_1;
-		IL2CPP_RUNTIME_CLASS_INIT(Path_t1235027244_il2cpp_TypeInfo_var);
-		String_t* L_7 = Path_GetFileName_m893210218(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
-		String_t* L_8 = ___fileName;
-		NullCheck(L_7);
-		bool L_9 = String_Equals_m2633592423(L_7, L_8, /*hidden argument*/NULL);
-		if (!L_9)
-		{
-			goto IL_0036;
-		}
-	}
-	{
-		Dictionary_2_t484745624 * L_10 = V_0;
-		String_t* L_11 = V_1;
-		IL2CPP_RUNTIME_CLASS_INIT(Path_t1235027244_il2cpp_TypeInfo_var);
-		String_t* L_12 = Path_GetFileNameWithoutExtension_m2541641063(NULL /*static, unused*/, L_11, /*hidden argument*/NULL);
-		String_t* L_13 = V_1;
-		NullCheck(L_10);
-		VirtActionInvoker2< String_t*, String_t* >::Invoke(26 /* System.Void System.Collections.Generic.Dictionary`2<System.String,System.String>::Add(!0,!1) */, L_10, L_12, L_13);
-	}
-
-IL_0036:
-	{
-		int32_t L_14 = V_3;
-		V_3 = ((int32_t)((int32_t)L_14+(int32_t)1));
-	}
-
-IL_003a:
-	{
-		int32_t L_15 = V_3;
-		StringU5BU5D_t3764931161* L_16 = V_2;
-		NullCheck(L_16);
-		if ((((int32_t)L_15) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_16)->max_length)))))))
-		{
-			goto IL_0014;
-		}
-	}
-	{
-		Dictionary_2_t484745624 * L_17 = V_0;
-		return L_17;
-	}
-}
-// System.Boolean FilesManager::isExists(System.String,System.String)
-extern TypeInfo* Path_t1235027244_il2cpp_TypeInfo_var;
-extern const uint32_t FilesManager_isExists_m1085975267_MetadataUsageId;
-extern "C"  bool FilesManager_isExists_m1085975267 (FilesManager_t2291984574 * __this, String_t* ___path, String_t* ___fileName, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (FilesManager_isExists_m1085975267_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	String_t* V_0 = NULL;
-	StringU5BU5D_t3764931161* V_1 = NULL;
-	int32_t V_2 = 0;
-	{
-		String_t* L_0 = ___path;
-		StringU5BU5D_t3764931161* L_1 = Directory_GetFiles_m3775562030(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		V_1 = L_1;
-		V_2 = 0;
-		goto IL_0029;
-	}
-
-IL_000e:
-	{
-		StringU5BU5D_t3764931161* L_2 = V_1;
-		int32_t L_3 = V_2;
-		NullCheck(L_2);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_2, L_3);
-		int32_t L_4 = L_3;
-		V_0 = ((L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4)));
-		String_t* L_5 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(Path_t1235027244_il2cpp_TypeInfo_var);
-		String_t* L_6 = Path_GetFileName_m893210218(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
-		String_t* L_7 = ___fileName;
-		NullCheck(L_6);
-		bool L_8 = String_Equals_m2633592423(L_6, L_7, /*hidden argument*/NULL);
-		if (!L_8)
-		{
-			goto IL_0025;
-		}
-	}
-	{
-		return (bool)1;
-	}
-
-IL_0025:
-	{
-		int32_t L_9 = V_2;
-		V_2 = ((int32_t)((int32_t)L_9+(int32_t)1));
-	}
-
-IL_0029:
-	{
-		int32_t L_10 = V_2;
-		StringU5BU5D_t3764931161* L_11 = V_1;
-		NullCheck(L_11);
-		if ((((int32_t)L_10) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_11)->max_length)))))))
-		{
-			goto IL_000e;
-		}
-	}
-	{
-		return (bool)0;
-	}
-}
-// System.String FilesManager::getPath(System.String)
-extern TypeInfo* String_t_il2cpp_TypeInfo_var;
-extern TypeInfo* Debug_t12548584_il2cpp_TypeInfo_var;
-extern const uint32_t FilesManager_getPath_m897015337_MetadataUsageId;
-extern "C"  String_t* FilesManager_getPath_m897015337 (FilesManager_t2291984574 * __this, String_t* ___dic, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (FilesManager_getPath_m897015337_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	String_t* V_0 = NULL;
-	{
-		String_t* L_0 = __this->get_MarksDirectory_2();
-		String_t* L_1 = ___dic;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_2 = String_Concat_m2596409543(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
-		V_0 = L_2;
-		String_t* L_3 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t12548584_il2cpp_TypeInfo_var);
-		Debug_Log_m920475918(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
-		String_t* L_4 = V_0;
-		bool L_5 = Directory_Exists_m2663601042(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
-		if (L_5)
-		{
-			goto IL_0025;
-		}
-	}
-	{
-		String_t* L_6 = V_0;
-		Directory_CreateDirectory_m3561886598(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
-	}
-
-IL_0025:
-	{
-		String_t* L_7 = V_0;
-		return L_7;
-	}
-}
 // System.Void Gift::.ctor(LitJson.JSONNode)
 extern TypeInfo* Gift_t450896550_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral250974973;
@@ -12447,7 +12038,7 @@ extern "C"  void GroupPhotoMain_Start_m87173375 (GroupPhotoMain_t323661952 * __t
 		NullCheck(L_1);
 		AssetLoad_add_AssetHandleEventKey_m2835403566(L_1, L_3, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
-		int32_t L_4 = ((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->get_currSpriteGetid_9();
+		int32_t L_4 = ((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->get_currSpriteGetid_7();
 		Il2CppObject * L_5 = GroupPhotoMain_getSpriteDec_m2342646629(__this, L_4, /*hidden argument*/NULL);
 		MonoBehaviour_StartCoroutine_m2470621050(__this, L_5, /*hidden argument*/NULL);
 		return;
@@ -16347,7 +15938,7 @@ IL_0023:
 		List_1_t221102866 * L_3 = L_2->get_m_List_0();
 		NullCheck(L_3);
 		Enumerator_t482100986  L_4 = List_1_GetEnumerator_m1627420207(L_3, /*hidden argument*/List_1_GetEnumerator_m1627420207_MethodInfo_var);
-		__this->set_U3CU24s_33U3E__0_0(L_4);
+		__this->set_U3CU24s_27U3E__0_0(L_4);
 		V_0 = ((int32_t)-3);
 	}
 
@@ -16369,7 +15960,7 @@ IL_0048:
 
 IL_004d:
 		{
-			Enumerator_t482100986 * L_6 = __this->get_address_of_U3CU24s_33U3E__0_0();
+			Enumerator_t482100986 * L_6 = __this->get_address_of_U3CU24s_27U3E__0_0();
 			JSONNode_t1109731523 * L_7 = Enumerator_get_Current_m1258072827(L_6, /*hidden argument*/Enumerator_get_Current_m1258072827_MethodInfo_var);
 			__this->set_U3CNU3E__1_1(L_7);
 			JSONNode_t1109731523 * L_8 = __this->get_U3CNU3E__1_1();
@@ -16381,7 +15972,7 @@ IL_004d:
 
 IL_0078:
 		{
-			Enumerator_t482100986 * L_9 = __this->get_address_of_U3CU24s_33U3E__0_0();
+			Enumerator_t482100986 * L_9 = __this->get_address_of_U3CU24s_27U3E__0_0();
 			bool L_10 = Enumerator_MoveNext_m1378877343(L_9, /*hidden argument*/Enumerator_MoveNext_m1378877343_MethodInfo_var);
 			if (L_10)
 			{
@@ -16417,7 +16008,7 @@ IL_0090:
 
 IL_0091:
 		{
-			Enumerator_t482100986  L_12 = __this->get_U3CU24s_33U3E__0_0();
+			Enumerator_t482100986  L_12 = __this->get_U3CU24s_27U3E__0_0();
 			Enumerator_t482100986  L_13 = L_12;
 			Il2CppObject * L_14 = Box(Enumerator_t482100986_il2cpp_TypeInfo_var, &L_13);
 			NullCheck((Il2CppObject *)L_14);
@@ -16498,7 +16089,7 @@ IL_0021:
 
 FINALLY_0026:
 	{ // begin finally (depth: 1)
-		Enumerator_t482100986  L_2 = __this->get_U3CU24s_33U3E__0_0();
+		Enumerator_t482100986  L_2 = __this->get_U3CU24s_27U3E__0_0();
 		Enumerator_t482100986  L_3 = L_2;
 		Il2CppObject * L_4 = Box(Enumerator_t482100986_il2cpp_TypeInfo_var, &L_3);
 		NullCheck((Il2CppObject *)L_4);
@@ -16607,7 +16198,7 @@ IL_0023:
 		List_1_t221102866 * L_3 = L_2->get_m_List_0();
 		NullCheck(L_3);
 		Enumerator_t482100986  L_4 = List_1_GetEnumerator_m1627420207(L_3, /*hidden argument*/List_1_GetEnumerator_m1627420207_MethodInfo_var);
-		__this->set_U3CU24s_34U3E__0_0(L_4);
+		__this->set_U3CU24s_28U3E__0_0(L_4);
 		V_0 = ((int32_t)-3);
 	}
 
@@ -16629,7 +16220,7 @@ IL_0048:
 
 IL_004d:
 		{
-			Enumerator_t482100986 * L_6 = __this->get_address_of_U3CU24s_34U3E__0_0();
+			Enumerator_t482100986 * L_6 = __this->get_address_of_U3CU24s_28U3E__0_0();
 			JSONNode_t1109731523 * L_7 = Enumerator_get_Current_m1258072827(L_6, /*hidden argument*/Enumerator_get_Current_m1258072827_MethodInfo_var);
 			__this->set_U3CNU3E__1_1(L_7);
 			JSONNode_t1109731523 * L_8 = __this->get_U3CNU3E__1_1();
@@ -16641,7 +16232,7 @@ IL_004d:
 
 IL_0078:
 		{
-			Enumerator_t482100986 * L_9 = __this->get_address_of_U3CU24s_34U3E__0_0();
+			Enumerator_t482100986 * L_9 = __this->get_address_of_U3CU24s_28U3E__0_0();
 			bool L_10 = Enumerator_MoveNext_m1378877343(L_9, /*hidden argument*/Enumerator_MoveNext_m1378877343_MethodInfo_var);
 			if (L_10)
 			{
@@ -16677,7 +16268,7 @@ IL_0090:
 
 IL_0091:
 		{
-			Enumerator_t482100986  L_12 = __this->get_U3CU24s_34U3E__0_0();
+			Enumerator_t482100986  L_12 = __this->get_U3CU24s_28U3E__0_0();
 			Enumerator_t482100986  L_13 = L_12;
 			Il2CppObject * L_14 = Box(Enumerator_t482100986_il2cpp_TypeInfo_var, &L_13);
 			NullCheck((Il2CppObject *)L_14);
@@ -16758,7 +16349,7 @@ IL_0021:
 
 FINALLY_0026:
 	{ // begin finally (depth: 1)
-		Enumerator_t482100986  L_2 = __this->get_U3CU24s_34U3E__0_0();
+		Enumerator_t482100986  L_2 = __this->get_U3CU24s_28U3E__0_0();
 		Enumerator_t482100986  L_3 = L_2;
 		Il2CppObject * L_4 = Box(Enumerator_t482100986_il2cpp_TypeInfo_var, &L_3);
 		NullCheck((Il2CppObject *)L_4);
@@ -17848,7 +17439,7 @@ IL_0023:
 		Dictionary_2_t3921713107 * L_3 = L_2->get_m_Dict_0();
 		NullCheck(L_3);
 		Enumerator_t1219041832  L_4 = Dictionary_2_GetEnumerator_m2651300697(L_3, /*hidden argument*/Dictionary_2_GetEnumerator_m2651300697_MethodInfo_var);
-		__this->set_U3CU24s_37U3E__0_0(L_4);
+		__this->set_U3CU24s_31U3E__0_0(L_4);
 		V_0 = ((int32_t)-3);
 	}
 
@@ -17870,7 +17461,7 @@ IL_0048:
 
 IL_004d:
 		{
-			Enumerator_t1219041832 * L_6 = __this->get_address_of_U3CU24s_37U3E__0_0();
+			Enumerator_t1219041832 * L_6 = __this->get_address_of_U3CU24s_31U3E__0_0();
 			KeyValuePair_2_t2479033419  L_7 = Enumerator_get_Current_m703407157(L_6, /*hidden argument*/Enumerator_get_Current_m703407157_MethodInfo_var);
 			__this->set_U3CNU3E__1_1(L_7);
 			KeyValuePair_2_t2479033419 * L_8 = __this->get_address_of_U3CNU3E__1_1();
@@ -17883,7 +17474,7 @@ IL_004d:
 
 IL_007d:
 		{
-			Enumerator_t1219041832 * L_10 = __this->get_address_of_U3CU24s_37U3E__0_0();
+			Enumerator_t1219041832 * L_10 = __this->get_address_of_U3CU24s_31U3E__0_0();
 			bool L_11 = Enumerator_MoveNext_m1724992706(L_10, /*hidden argument*/Enumerator_MoveNext_m1724992706_MethodInfo_var);
 			if (L_11)
 			{
@@ -17919,7 +17510,7 @@ IL_0095:
 
 IL_0096:
 		{
-			Enumerator_t1219041832  L_13 = __this->get_U3CU24s_37U3E__0_0();
+			Enumerator_t1219041832  L_13 = __this->get_U3CU24s_31U3E__0_0();
 			Enumerator_t1219041832  L_14 = L_13;
 			Il2CppObject * L_15 = Box(Enumerator_t1219041832_il2cpp_TypeInfo_var, &L_14);
 			NullCheck((Il2CppObject *)L_15);
@@ -18000,7 +17591,7 @@ IL_0021:
 
 FINALLY_0026:
 	{ // begin finally (depth: 1)
-		Enumerator_t1219041832  L_2 = __this->get_U3CU24s_37U3E__0_0();
+		Enumerator_t1219041832  L_2 = __this->get_U3CU24s_31U3E__0_0();
 		Enumerator_t1219041832  L_3 = L_2;
 		Il2CppObject * L_4 = Box(Enumerator_t1219041832_il2cpp_TypeInfo_var, &L_3);
 		NullCheck((Il2CppObject *)L_4);
@@ -18110,7 +17701,7 @@ IL_0023:
 		Dictionary_2_t3921713107 * L_3 = L_2->get_m_Dict_0();
 		NullCheck(L_3);
 		Enumerator_t1219041832  L_4 = Dictionary_2_GetEnumerator_m2651300697(L_3, /*hidden argument*/Dictionary_2_GetEnumerator_m2651300697_MethodInfo_var);
-		__this->set_U3CU24s_38U3E__0_0(L_4);
+		__this->set_U3CU24s_32U3E__0_0(L_4);
 		V_0 = ((int32_t)-3);
 	}
 
@@ -18132,7 +17723,7 @@ IL_0048:
 
 IL_004d:
 		{
-			Enumerator_t1219041832 * L_6 = __this->get_address_of_U3CU24s_38U3E__0_0();
+			Enumerator_t1219041832 * L_6 = __this->get_address_of_U3CU24s_32U3E__0_0();
 			KeyValuePair_2_t2479033419  L_7 = Enumerator_get_Current_m703407157(L_6, /*hidden argument*/Enumerator_get_Current_m703407157_MethodInfo_var);
 			__this->set_U3CNU3E__1_1(L_7);
 			KeyValuePair_2_t2479033419  L_8 = __this->get_U3CNU3E__1_1();
@@ -18146,7 +17737,7 @@ IL_004d:
 
 IL_007d:
 		{
-			Enumerator_t1219041832 * L_11 = __this->get_address_of_U3CU24s_38U3E__0_0();
+			Enumerator_t1219041832 * L_11 = __this->get_address_of_U3CU24s_32U3E__0_0();
 			bool L_12 = Enumerator_MoveNext_m1724992706(L_11, /*hidden argument*/Enumerator_MoveNext_m1724992706_MethodInfo_var);
 			if (L_12)
 			{
@@ -18182,7 +17773,7 @@ IL_0095:
 
 IL_0096:
 		{
-			Enumerator_t1219041832  L_14 = __this->get_U3CU24s_38U3E__0_0();
+			Enumerator_t1219041832  L_14 = __this->get_U3CU24s_32U3E__0_0();
 			Enumerator_t1219041832  L_15 = L_14;
 			Il2CppObject * L_16 = Box(Enumerator_t1219041832_il2cpp_TypeInfo_var, &L_15);
 			NullCheck((Il2CppObject *)L_16);
@@ -18263,7 +17854,7 @@ IL_0021:
 
 FINALLY_0026:
 	{ // begin finally (depth: 1)
-		Enumerator_t1219041832  L_2 = __this->get_U3CU24s_38U3E__0_0();
+		Enumerator_t1219041832  L_2 = __this->get_U3CU24s_32U3E__0_0();
 		Enumerator_t1219041832  L_3 = L_2;
 		Il2CppObject * L_4 = Box(Enumerator_t1219041832_il2cpp_TypeInfo_var, &L_3);
 		NullCheck((Il2CppObject *)L_4);
@@ -21521,7 +21112,7 @@ IL_0023:
 		Il2CppObject* L_3 = VirtFuncInvoker0< Il2CppObject* >::Invoke(16 /* System.Collections.Generic.IEnumerable`1<LitJson.JSONNode> LitJson.JSONNode::get_Childs() */, L_2);
 		NullCheck(L_3);
 		Il2CppObject* L_4 = InterfaceFuncInvoker0< Il2CppObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<!0> System.Collections.Generic.IEnumerable`1<LitJson.JSONNode>::GetEnumerator() */, IEnumerable_1_t478121919_il2cpp_TypeInfo_var, L_3);
-		__this->set_U3CU24s_29U3E__0_0(L_4);
+		__this->set_U3CU24s_23U3E__0_0(L_4);
 		V_0 = ((int32_t)-3);
 	}
 
@@ -21543,7 +21134,7 @@ IL_0048:
 
 IL_004d:
 		{
-			Il2CppObject* L_6 = __this->get_U3CU24s_29U3E__0_0();
+			Il2CppObject* L_6 = __this->get_U3CU24s_23U3E__0_0();
 			NullCheck(L_6);
 			JSONNode_t1109731523 * L_7 = InterfaceFuncInvoker0< JSONNode_t1109731523 * >::Invoke(0 /* !0 System.Collections.Generic.IEnumerator`1<LitJson.JSONNode>::get_Current() */, IEnumerator_1_t3706539779_il2cpp_TypeInfo_var, L_6);
 			__this->set_U3CCU3E__1_1(L_7);
@@ -21552,7 +21143,7 @@ IL_004d:
 			Il2CppObject* L_9 = JSONNode_get_DeepChilds_m1744532611(L_8, /*hidden argument*/NULL);
 			NullCheck(L_9);
 			Il2CppObject* L_10 = InterfaceFuncInvoker0< Il2CppObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<!0> System.Collections.Generic.IEnumerable`1<LitJson.JSONNode>::GetEnumerator() */, IEnumerable_1_t478121919_il2cpp_TypeInfo_var, L_9);
-			__this->set_U3CU24s_30U3E__2_2(L_10);
+			__this->set_U3CU24s_24U3E__2_2(L_10);
 			V_0 = ((int32_t)-3);
 		}
 
@@ -21574,7 +21165,7 @@ IL_0083:
 
 IL_0088:
 			{
-				Il2CppObject* L_12 = __this->get_U3CU24s_30U3E__2_2();
+				Il2CppObject* L_12 = __this->get_U3CU24s_24U3E__2_2();
 				NullCheck(L_12);
 				JSONNode_t1109731523 * L_13 = InterfaceFuncInvoker0< JSONNode_t1109731523 * >::Invoke(0 /* !0 System.Collections.Generic.IEnumerator`1<LitJson.JSONNode>::get_Current() */, IEnumerator_1_t3706539779_il2cpp_TypeInfo_var, L_12);
 				__this->set_U3CDU3E__3_3(L_13);
@@ -21587,7 +21178,7 @@ IL_0088:
 
 IL_00b3:
 			{
-				Il2CppObject* L_15 = __this->get_U3CU24s_30U3E__2_2();
+				Il2CppObject* L_15 = __this->get_U3CU24s_24U3E__2_2();
 				NullCheck(L_15);
 				bool L_16 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t3037427797_il2cpp_TypeInfo_var, L_15);
 				if (L_16)
@@ -21624,7 +21215,7 @@ IL_00cb:
 
 IL_00cc:
 			{
-				Il2CppObject* L_18 = __this->get_U3CU24s_30U3E__2_2();
+				Il2CppObject* L_18 = __this->get_U3CU24s_24U3E__2_2();
 				if (L_18)
 				{
 					goto IL_00d5;
@@ -21638,7 +21229,7 @@ IL_00d4:
 
 IL_00d5:
 			{
-				Il2CppObject* L_19 = __this->get_U3CU24s_30U3E__2_2();
+				Il2CppObject* L_19 = __this->get_U3CU24s_24U3E__2_2();
 				NullCheck(L_19);
 				InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t1786818228_il2cpp_TypeInfo_var, L_19);
 				IL2CPP_END_FINALLY(200)
@@ -21653,7 +21244,7 @@ IL_00d5:
 
 IL_00e1:
 		{
-			Il2CppObject* L_20 = __this->get_U3CU24s_29U3E__0_0();
+			Il2CppObject* L_20 = __this->get_U3CU24s_23U3E__0_0();
 			NullCheck(L_20);
 			bool L_21 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t3037427797_il2cpp_TypeInfo_var, L_20);
 			if (L_21)
@@ -21690,7 +21281,7 @@ IL_00f9:
 
 IL_00fa:
 		{
-			Il2CppObject* L_23 = __this->get_U3CU24s_29U3E__0_0();
+			Il2CppObject* L_23 = __this->get_U3CU24s_23U3E__0_0();
 			if (L_23)
 			{
 				goto IL_0103;
@@ -21704,7 +21295,7 @@ IL_0102:
 
 IL_0103:
 		{
-			Il2CppObject* L_24 = __this->get_U3CU24s_29U3E__0_0();
+			Il2CppObject* L_24 = __this->get_U3CU24s_23U3E__0_0();
 			NullCheck(L_24);
 			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t1786818228_il2cpp_TypeInfo_var, L_24);
 			IL2CPP_END_FINALLY(246)
@@ -21785,7 +21376,7 @@ IL_0021:
 FINALLY_0026:
 		{ // begin finally (depth: 2)
 			{
-				Il2CppObject* L_2 = __this->get_U3CU24s_30U3E__2_2();
+				Il2CppObject* L_2 = __this->get_U3CU24s_24U3E__2_2();
 				if (L_2)
 				{
 					goto IL_002f;
@@ -21799,7 +21390,7 @@ IL_002e:
 
 IL_002f:
 			{
-				Il2CppObject* L_3 = __this->get_U3CU24s_30U3E__2_2();
+				Il2CppObject* L_3 = __this->get_U3CU24s_24U3E__2_2();
 				NullCheck(L_3);
 				InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t1786818228_il2cpp_TypeInfo_var, L_3);
 				IL2CPP_END_FINALLY(38)
@@ -21825,7 +21416,7 @@ IL_003b:
 FINALLY_0040:
 	{ // begin finally (depth: 1)
 		{
-			Il2CppObject* L_4 = __this->get_U3CU24s_29U3E__0_0();
+			Il2CppObject* L_4 = __this->get_U3CU24s_23U3E__0_0();
 			if (L_4)
 			{
 				goto IL_0049;
@@ -21839,7 +21430,7 @@ IL_0048:
 
 IL_0049:
 		{
-			Il2CppObject* L_5 = __this->get_U3CU24s_29U3E__0_0();
+			Il2CppObject* L_5 = __this->get_U3CU24s_23U3E__0_0();
 			NullCheck(L_5);
 			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t1786818228_il2cpp_TypeInfo_var, L_5);
 			IL2CPP_END_FINALLY(64)
@@ -24354,11 +23945,11 @@ extern "C"  void Main_EndCheckExtractResource_m3056340468 (Main_t2809994845 * __
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
-		bool L_0 = ((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->get_isMobile_2();
+		bool L_0 = ((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->get_isDebugOnMobile_2();
 		bool L_1 = L_0;
 		Il2CppObject * L_2 = Box(Boolean_t3143194569_il2cpp_TypeInfo_var, &L_1);
 		App_print_m929367453(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		bool L_3 = ((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->get_isMobile_2();
+		bool L_3 = ((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->get_isDebugOnMobile_2();
 		if (!L_3)
 		{
 			goto IL_0023;
@@ -25124,7 +24715,7 @@ extern "C"  void MySpriteDecMain_Start_m1751040031 (MySpriteDecMain_t1599878596 
 		NullCheck(L_7);
 		GameObject_SetActive_m2887581199(L_7, (bool)0, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
-		int32_t L_8 = ((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->get_currSpriteGetid_9();
+		int32_t L_8 = ((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->get_currSpriteGetid_7();
 		Il2CppObject * L_9 = MySpriteDecMain_getSpriteDec_m157070453(__this, L_8, /*hidden argument*/NULL);
 		MonoBehaviour_StartCoroutine_m2470621050(__this, L_9, /*hidden argument*/NULL);
 		return;
@@ -26031,6 +25622,328 @@ extern "C"  void U3ChasGiftU3Ec__Iterator17_Reset_m1938641324 (U3ChasGiftU3Ec__I
 		NotSupportedException_t3178859535 * L_0 = (NotSupportedException_t3178859535 *)il2cpp_codegen_object_new(NotSupportedException_t3178859535_il2cpp_TypeInfo_var);
 		NotSupportedException__ctor_m3232764727(L_0, /*hidden argument*/NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
+	}
+}
+// System.Void MySpriteDetail::.ctor(LitJson.JSONNode)
+extern Il2CppCodeGenString* _stringLiteral694212447;
+extern Il2CppCodeGenString* _stringLiteral2328218955;
+extern Il2CppCodeGenString* _stringLiteral1561396403;
+extern Il2CppCodeGenString* _stringLiteral2671152607;
+extern Il2CppCodeGenString* _stringLiteral1594891052;
+extern Il2CppCodeGenString* _stringLiteral1959740304;
+extern Il2CppCodeGenString* _stringLiteral97231906;
+extern Il2CppCodeGenString* _stringLiteral946039168;
+extern const uint32_t MySpriteDetail__ctor_m1298661322_MetadataUsageId;
+extern "C"  void MySpriteDetail__ctor_m1298661322 (MySpriteDetail_t913424694 * __this, JSONNode_t1109731523 * ___jsonNode, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (MySpriteDetail__ctor_m1298661322_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		JSONNode_t1109731523 * L_0 = ___jsonNode;
+		NullCheck(L_0);
+		JSONNode_t1109731523 * L_1 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_0, _stringLiteral694212447);
+		String_t* L_2 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		__this->set_getid_0(L_2);
+		JSONNode_t1109731523 * L_3 = ___jsonNode;
+		NullCheck(L_3);
+		JSONNode_t1109731523 * L_4 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_3, _stringLiteral2328218955);
+		String_t* L_5 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		__this->set_name_1(L_5);
+		JSONNode_t1109731523 * L_6 = ___jsonNode;
+		NullCheck(L_6);
+		JSONNode_t1109731523 * L_7 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_6, _stringLiteral1561396403);
+		String_t* L_8 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
+		__this->set_image_2(L_8);
+		JSONNode_t1109731523 * L_9 = ___jsonNode;
+		NullCheck(L_9);
+		JSONNode_t1109731523 * L_10 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_9, _stringLiteral2671152607);
+		String_t* L_11 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_10, /*hidden argument*/NULL);
+		__this->set_attr_3(L_11);
+		JSONNode_t1109731523 * L_12 = ___jsonNode;
+		NullCheck(L_12);
+		JSONNode_t1109731523 * L_13 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_12, _stringLiteral1594891052);
+		String_t* L_14 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_13, /*hidden argument*/NULL);
+		__this->set_level_4(L_14);
+		JSONNode_t1109731523 * L_15 = ___jsonNode;
+		NullCheck(L_15);
+		JSONNode_t1109731523 * L_16 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_15, _stringLiteral1959740304);
+		String_t* L_17 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_16, /*hidden argument*/NULL);
+		__this->set_status_5(L_17);
+		JSONNode_t1109731523 * L_18 = ___jsonNode;
+		NullCheck(L_18);
+		JSONNode_t1109731523 * L_19 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_18, _stringLiteral97231906);
+		String_t* L_20 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_19, /*hidden argument*/NULL);
+		__this->set_energy_6(L_20);
+		JSONNode_t1109731523 * L_21 = ___jsonNode;
+		NullCheck(L_21);
+		JSONNode_t1109731523 * L_22 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_21, _stringLiteral946039168);
+		String_t* L_23 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_22, /*hidden argument*/NULL);
+		MySpriteDetail_set_LevelEnergy_m478443490(__this, L_23, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.String MySpriteDetail::get_Getid()
+extern "C"  String_t* MySpriteDetail_get_Getid_m1547184296 (MySpriteDetail_t913424694 * __this, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = __this->get_getid_0();
+		return L_0;
+	}
+}
+// System.Void MySpriteDetail::set_Getid(System.String)
+extern "C"  void MySpriteDetail_set_Getid_m4001898551 (MySpriteDetail_t913424694 * __this, String_t* ___value, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___value;
+		__this->set_getid_0(L_0);
+		return;
+	}
+}
+// System.String MySpriteDetail::get_Name()
+extern "C"  String_t* MySpriteDetail_get_Name_m1146069234 (MySpriteDetail_t913424694 * __this, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = __this->get_name_1();
+		return L_0;
+	}
+}
+// System.Void MySpriteDetail::set_Name(System.String)
+extern "C"  void MySpriteDetail_set_Name_m2431658231 (MySpriteDetail_t913424694 * __this, String_t* ___value, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___value;
+		__this->set_name_1(L_0);
+		return;
+	}
+}
+// System.String MySpriteDetail::get_Image()
+extern "C"  String_t* MySpriteDetail_get_Image_m51263176 (MySpriteDetail_t913424694 * __this, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = __this->get_image_2();
+		return L_0;
+	}
+}
+// System.Void MySpriteDetail::set_Image(System.String)
+extern "C"  void MySpriteDetail_set_Image_m2162613651 (MySpriteDetail_t913424694 * __this, String_t* ___value, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___value;
+		__this->set_image_2(L_0);
+		return;
+	}
+}
+// System.String MySpriteDetail::get_Attr()
+extern "C"  String_t* MySpriteDetail_get_Attr_m902932858 (MySpriteDetail_t913424694 * __this, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = __this->get_attr_3();
+		return L_0;
+	}
+}
+// System.Void MySpriteDetail::set_Attr(System.String)
+extern "C"  void MySpriteDetail_set_Attr_m3434217155 (MySpriteDetail_t913424694 * __this, String_t* ___value, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___value;
+		__this->set_attr_3(L_0);
+		return;
+	}
+}
+// System.String MySpriteDetail::get_Level()
+extern "C"  String_t* MySpriteDetail_get_Level_m3953128181 (MySpriteDetail_t913424694 * __this, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = __this->get_level_4();
+		return L_0;
+	}
+}
+// System.Void MySpriteDetail::set_Level(System.String)
+extern "C"  void MySpriteDetail_set_Level_m1869080282 (MySpriteDetail_t913424694 * __this, String_t* ___value, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___value;
+		__this->set_level_4(L_0);
+		return;
+	}
+}
+// System.String MySpriteDetail::get_Status()
+extern "C"  String_t* MySpriteDetail_get_Status_m2828130379 (MySpriteDetail_t913424694 * __this, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = __this->get_status_5();
+		return L_0;
+	}
+}
+// System.Void MySpriteDetail::set_Status(System.String)
+extern "C"  void MySpriteDetail_set_Status_m2114540528 (MySpriteDetail_t913424694 * __this, String_t* ___value, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___value;
+		__this->set_status_5(L_0);
+		return;
+	}
+}
+// System.String MySpriteDetail::get_Energy()
+extern "C"  String_t* MySpriteDetail_get_Energy_m3614728625 (MySpriteDetail_t913424694 * __this, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = __this->get_energy_6();
+		return L_0;
+	}
+}
+// System.Void MySpriteDetail::set_Energy(System.String)
+extern "C"  void MySpriteDetail_set_Energy_m3014530262 (MySpriteDetail_t913424694 * __this, String_t* ___value, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___value;
+		__this->set_energy_6(L_0);
+		return;
+	}
+}
+// System.String MySpriteDetail::get_LevelEnergy()
+extern "C"  String_t* MySpriteDetail_get_LevelEnergy_m183083575 (MySpriteDetail_t913424694 * __this, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = __this->get_levelEnergy_7();
+		return L_0;
+	}
+}
+// System.Void MySpriteDetail::set_LevelEnergy(System.String)
+extern "C"  void MySpriteDetail_set_LevelEnergy_m478443490 (MySpriteDetail_t913424694 * __this, String_t* ___value, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___value;
+		__this->set_levelEnergy_7(L_0);
+		return;
+	}
+}
+// System.String MySpriteDetail::getNextLevel(System.String)
+extern TypeInfo* MySpriteDetail_t913424694_il2cpp_TypeInfo_var;
+extern TypeInfo* Dictionary_2_t4260152181_il2cpp_TypeInfo_var;
+extern const MethodInfo* Dictionary_2__ctor_m2118310873_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1858828593;
+extern Il2CppCodeGenString* _stringLiteral4069481018;
+extern Il2CppCodeGenString* _stringLiteral1131258640;
+extern Il2CppCodeGenString* _stringLiteral3618241751;
+extern const uint32_t MySpriteDetail_getNextLevel_m3239383159_MetadataUsageId;
+extern "C"  String_t* MySpriteDetail_getNextLevel_m3239383159 (MySpriteDetail_t913424694 * __this, String_t* ___level, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (MySpriteDetail_getNextLevel_m3239383159_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	String_t* V_0 = NULL;
+	String_t* V_1 = NULL;
+	Dictionary_2_t4260152181 * V_2 = NULL;
+	int32_t V_3 = 0;
+	{
+		String_t* L_0 = ___level;
+		V_0 = L_0;
+		String_t* L_1 = ___level;
+		V_1 = L_1;
+		String_t* L_2 = V_1;
+		if (!L_2)
+		{
+			goto IL_00aa;
+		}
+	}
+	{
+		Dictionary_2_t4260152181 * L_3 = ((MySpriteDetail_t913424694_StaticFields*)MySpriteDetail_t913424694_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__switchU24map6_8();
+		if (L_3)
+		{
+			goto IL_0051;
+		}
+	}
+	{
+		Dictionary_2_t4260152181 * L_4 = (Dictionary_2_t4260152181 *)il2cpp_codegen_object_new(Dictionary_2_t4260152181_il2cpp_TypeInfo_var);
+		Dictionary_2__ctor_m2118310873(L_4, 4, /*hidden argument*/Dictionary_2__ctor_m2118310873_MethodInfo_var);
+		V_2 = L_4;
+		Dictionary_2_t4260152181 * L_5 = V_2;
+		NullCheck(L_5);
+		VirtActionInvoker2< String_t*, int32_t >::Invoke(26 /* System.Void System.Collections.Generic.Dictionary`2<System.String,System.Int32>::Add(!0,!1) */, L_5, _stringLiteral1858828593, 0);
+		Dictionary_2_t4260152181 * L_6 = V_2;
+		NullCheck(L_6);
+		VirtActionInvoker2< String_t*, int32_t >::Invoke(26 /* System.Void System.Collections.Generic.Dictionary`2<System.String,System.Int32>::Add(!0,!1) */, L_6, _stringLiteral4069481018, 1);
+		Dictionary_2_t4260152181 * L_7 = V_2;
+		NullCheck(L_7);
+		VirtActionInvoker2< String_t*, int32_t >::Invoke(26 /* System.Void System.Collections.Generic.Dictionary`2<System.String,System.Int32>::Add(!0,!1) */, L_7, _stringLiteral1131258640, 2);
+		Dictionary_2_t4260152181 * L_8 = V_2;
+		NullCheck(L_8);
+		VirtActionInvoker2< String_t*, int32_t >::Invoke(26 /* System.Void System.Collections.Generic.Dictionary`2<System.String,System.Int32>::Add(!0,!1) */, L_8, _stringLiteral3618241751, 3);
+		Dictionary_2_t4260152181 * L_9 = V_2;
+		((MySpriteDetail_t913424694_StaticFields*)MySpriteDetail_t913424694_il2cpp_TypeInfo_var->static_fields)->set_U3CU3Ef__switchU24map6_8(L_9);
+	}
+
+IL_0051:
+	{
+		Dictionary_2_t4260152181 * L_10 = ((MySpriteDetail_t913424694_StaticFields*)MySpriteDetail_t913424694_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__switchU24map6_8();
+		String_t* L_11 = V_1;
+		NullCheck(L_10);
+		bool L_12 = VirtFuncInvoker2< bool, String_t*, int32_t* >::Invoke(31 /* System.Boolean System.Collections.Generic.Dictionary`2<System.String,System.Int32>::TryGetValue(!0,!1&) */, L_10, L_11, (&V_3));
+		if (!L_12)
+		{
+			goto IL_00aa;
+		}
+	}
+	{
+		int32_t L_13 = V_3;
+		if (L_13 == 0)
+		{
+			goto IL_007e;
+		}
+		if (L_13 == 1)
+		{
+			goto IL_0089;
+		}
+		if (L_13 == 2)
+		{
+			goto IL_0094;
+		}
+		if (L_13 == 3)
+		{
+			goto IL_009f;
+		}
+	}
+	{
+		goto IL_00aa;
+	}
+
+IL_007e:
+	{
+		V_0 = _stringLiteral4069481018;
+		goto IL_00aa;
+	}
+
+IL_0089:
+	{
+		V_0 = _stringLiteral1131258640;
+		goto IL_00aa;
+	}
+
+IL_0094:
+	{
+		V_0 = _stringLiteral3618241751;
+		goto IL_00aa;
+	}
+
+IL_009f:
+	{
+		V_0 = _stringLiteral3618241751;
+		goto IL_00aa;
+	}
+
+IL_00aa:
+	{
+		String_t* L_14 = V_0;
+		return L_14;
 	}
 }
 #ifdef __clang__

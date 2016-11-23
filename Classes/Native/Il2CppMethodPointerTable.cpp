@@ -2293,7 +2293,6 @@ extern "C" void Directory_CreateDirectory_m3561886598 ();
 extern "C" void Directory_CreateDirectoriesInternal_m2817848291 ();
 extern "C" void Directory_Exists_m2663601042 ();
 extern "C" void Directory_GetCurrentDirectory_m44486537 ();
-extern "C" void Directory_GetFiles_m3775562030 ();
 extern "C" void Directory_GetFiles_m4036267478 ();
 extern "C" void Directory_GetFileSystemEntries_m2720389648 ();
 extern "C" void DirectoryInfo__ctor_m3750996792 ();
@@ -2470,13 +2469,11 @@ extern "C" void NullStream_SetLength_m702387196 ();
 extern "C" void NullStream_Write_m3213413592 ();
 extern "C" void NullStream_WriteByte_m2351908684 ();
 extern "C" void Path__cctor_m3685888661 ();
-extern "C" void Path_ChangeExtension_m4087688358 ();
 extern "C" void Path_Combine_m3185811654 ();
 extern "C" void Path_CleanPath_m2294719205 ();
 extern "C" void Path_GetDirectoryName_m260633861 ();
 extern "C" void Path_GetExtension_m740668066 ();
 extern "C" void Path_GetFileName_m893210218 ();
-extern "C" void Path_GetFileNameWithoutExtension_m2541641063 ();
 extern "C" void Path_GetFullPath_m840307057 ();
 extern "C" void Path_WindowsDriveAdjustment_m1548620993 ();
 extern "C" void Path_InsecureGetFullPath_m2635272425 ();
@@ -7747,7 +7744,6 @@ extern "C" void AnimatorTransitionInfo_get_exit_m3018502934 ();
 extern "C" void Application_get_isPlaying_m4091950718 ();
 extern "C" void Application_get_isEditor_m2474583393 ();
 extern "C" void Application_get_platform_m3989224144 ();
-extern "C" void Application_get_isMobilePlatform_m1067527467 ();
 extern "C" void Application_get_streamingAssetsPath_m8890645 ();
 extern "C" void Application_get_persistentDataPath_m3129298355 ();
 extern "C" void Application_OpenURL_m3882634228 ();
@@ -10400,14 +10396,6 @@ extern "C" void Parameter_get_type_m2764483855 ();
 extern "C" void ExampleDragDropItem__ctor_m1958504303 ();
 extern "C" void ExampleDragDropItem_OnDragDropRelease_m2144503792 ();
 extern "C" void ExampleDragDropSurface__ctor_m1975051895 ();
-extern "C" void FilesManager__ctor_m1563510825 ();
-extern "C" void FilesManager_Awake_m929401470 ();
-extern "C" void FilesManager_GetDirectoryName_FileDic_All_m1605010202 ();
-extern "C" void FilesManager_GetAllImagesFiles_m94196845 ();
-extern "C" void FilesManager_GetDirectoryName_FileDic_m1953023208 ();
-extern "C" void FilesManager_getImageFile_m854015874 ();
-extern "C" void FilesManager_isExists_m1085975267 ();
-extern "C" void FilesManager_getPath_m897015337 ();
 extern "C" void Gift__ctor_m2714229274 ();
 extern "C" void Gift_get_GoodsId_m2067560930 ();
 extern "C" void Gift_set_GoodsId_m1748829741 ();
@@ -12604,7 +12592,7 @@ extern "C" void WindowAutoYaw_Update_m166965108 ();
 extern "C" void WindowDragTilt__ctor_m2212893564 ();
 extern "C" void WindowDragTilt_OnEnable_m2676420184 ();
 extern "C" void WindowDragTilt_Update_m38197995 ();
-extern const methodPointerType g_MethodPointers[12593] = 
+extern const methodPointerType g_MethodPointers[12581] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -14888,7 +14876,6 @@ extern const methodPointerType g_MethodPointers[12593] =
 	Directory_CreateDirectoriesInternal_m2817848291,
 	Directory_Exists_m2663601042,
 	Directory_GetCurrentDirectory_m44486537,
-	Directory_GetFiles_m3775562030,
 	Directory_GetFiles_m4036267478,
 	Directory_GetFileSystemEntries_m2720389648,
 	DirectoryInfo__ctor_m3750996792,
@@ -15065,13 +15052,11 @@ extern const methodPointerType g_MethodPointers[12593] =
 	NullStream_Write_m3213413592,
 	NullStream_WriteByte_m2351908684,
 	Path__cctor_m3685888661,
-	Path_ChangeExtension_m4087688358,
 	Path_Combine_m3185811654,
 	Path_CleanPath_m2294719205,
 	Path_GetDirectoryName_m260633861,
 	Path_GetExtension_m740668066,
 	Path_GetFileName_m893210218,
-	Path_GetFileNameWithoutExtension_m2541641063,
 	Path_GetFullPath_m840307057,
 	Path_WindowsDriveAdjustment_m1548620993,
 	Path_InsecureGetFullPath_m2635272425,
@@ -20342,7 +20327,6 @@ extern const methodPointerType g_MethodPointers[12593] =
 	Application_get_isPlaying_m4091950718,
 	Application_get_isEditor_m2474583393,
 	Application_get_platform_m3989224144,
-	Application_get_isMobilePlatform_m1067527467,
 	Application_get_streamingAssetsPath_m8890645,
 	Application_get_persistentDataPath_m3129298355,
 	Application_OpenURL_m3882634228,
@@ -22995,14 +22979,6 @@ extern const methodPointerType g_MethodPointers[12593] =
 	ExampleDragDropItem__ctor_m1958504303,
 	ExampleDragDropItem_OnDragDropRelease_m2144503792,
 	ExampleDragDropSurface__ctor_m1975051895,
-	FilesManager__ctor_m1563510825,
-	FilesManager_Awake_m929401470,
-	FilesManager_GetDirectoryName_FileDic_All_m1605010202,
-	FilesManager_GetAllImagesFiles_m94196845,
-	FilesManager_GetDirectoryName_FileDic_m1953023208,
-	FilesManager_getImageFile_m854015874,
-	FilesManager_isExists_m1085975267,
-	FilesManager_getPath_m897015337,
 	Gift__ctor_m2714229274,
 	Gift_get_GoodsId_m2067560930,
 	Gift_set_GoodsId_m1748829741,

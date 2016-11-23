@@ -31,8 +31,6 @@ extern "C"  DirectoryInfo_t2045585366 * Directory_CreateDirectoriesInternal_m281
 extern "C"  bool Directory_Exists_m2663601042 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.IO.Directory::GetCurrentDirectory()
 extern "C"  String_t* Directory_GetCurrentDirectory_m44486537 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String[] System.IO.Directory::GetFiles(System.String)
-extern "C"  StringU5BU5D_t3764931161* Directory_GetFiles_m3775562030 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String[] System.IO.Directory::GetFiles(System.String,System.String)
 extern "C"  StringU5BU5D_t3764931161* Directory_GetFiles_m4036267478 (Il2CppObject * __this /* static, unused */, String_t* ___path, String_t* ___searchPattern, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String[] System.IO.Directory::GetFileSystemEntries(System.String,System.String,System.IO.FileAttributes,System.IO.FileAttributes)

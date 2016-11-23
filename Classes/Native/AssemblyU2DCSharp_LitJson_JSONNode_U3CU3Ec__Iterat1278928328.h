@@ -27,12 +27,12 @@ struct JSONNode_t1109731523;
 struct  U3CU3Ec__IteratorC_t1278928328  : public Il2CppObject
 {
 public:
-	// System.Collections.Generic.IEnumerator`1<LitJson.JSONNode> LitJson.JSONNode/<>c__IteratorC::<$s_29>__0
-	Il2CppObject* ___U3CU24s_29U3E__0_0;
+	// System.Collections.Generic.IEnumerator`1<LitJson.JSONNode> LitJson.JSONNode/<>c__IteratorC::<$s_23>__0
+	Il2CppObject* ___U3CU24s_23U3E__0_0;
 	// LitJson.JSONNode LitJson.JSONNode/<>c__IteratorC::<C>__1
 	JSONNode_t1109731523 * ___U3CCU3E__1_1;
-	// System.Collections.Generic.IEnumerator`1<LitJson.JSONNode> LitJson.JSONNode/<>c__IteratorC::<$s_30>__2
-	Il2CppObject* ___U3CU24s_30U3E__2_2;
+	// System.Collections.Generic.IEnumerator`1<LitJson.JSONNode> LitJson.JSONNode/<>c__IteratorC::<$s_24>__2
+	Il2CppObject* ___U3CU24s_24U3E__2_2;
 	// LitJson.JSONNode LitJson.JSONNode/<>c__IteratorC::<D>__3
 	JSONNode_t1109731523 * ___U3CDU3E__3_3;
 	// System.Int32 LitJson.JSONNode/<>c__IteratorC::$PC
@@ -43,13 +43,13 @@ public:
 	JSONNode_t1109731523 * ___U3CU3Ef__this_6;
 
 public:
-	inline static int32_t get_offset_of_U3CU24s_29U3E__0_0() { return static_cast<int32_t>(offsetof(U3CU3Ec__IteratorC_t1278928328, ___U3CU24s_29U3E__0_0)); }
-	inline Il2CppObject* get_U3CU24s_29U3E__0_0() const { return ___U3CU24s_29U3E__0_0; }
-	inline Il2CppObject** get_address_of_U3CU24s_29U3E__0_0() { return &___U3CU24s_29U3E__0_0; }
-	inline void set_U3CU24s_29U3E__0_0(Il2CppObject* value)
+	inline static int32_t get_offset_of_U3CU24s_23U3E__0_0() { return static_cast<int32_t>(offsetof(U3CU3Ec__IteratorC_t1278928328, ___U3CU24s_23U3E__0_0)); }
+	inline Il2CppObject* get_U3CU24s_23U3E__0_0() const { return ___U3CU24s_23U3E__0_0; }
+	inline Il2CppObject** get_address_of_U3CU24s_23U3E__0_0() { return &___U3CU24s_23U3E__0_0; }
+	inline void set_U3CU24s_23U3E__0_0(Il2CppObject* value)
 	{
-		___U3CU24s_29U3E__0_0 = value;
-		Il2CppCodeGenWriteBarrier(&___U3CU24s_29U3E__0_0, value);
+		___U3CU24s_23U3E__0_0 = value;
+		Il2CppCodeGenWriteBarrier(&___U3CU24s_23U3E__0_0, value);
 	}
 
 	inline static int32_t get_offset_of_U3CCU3E__1_1() { return static_cast<int32_t>(offsetof(U3CU3Ec__IteratorC_t1278928328, ___U3CCU3E__1_1)); }
@@ -61,13 +61,13 @@ public:
 		Il2CppCodeGenWriteBarrier(&___U3CCU3E__1_1, value);
 	}
 
-	inline static int32_t get_offset_of_U3CU24s_30U3E__2_2() { return static_cast<int32_t>(offsetof(U3CU3Ec__IteratorC_t1278928328, ___U3CU24s_30U3E__2_2)); }
-	inline Il2CppObject* get_U3CU24s_30U3E__2_2() const { return ___U3CU24s_30U3E__2_2; }
-	inline Il2CppObject** get_address_of_U3CU24s_30U3E__2_2() { return &___U3CU24s_30U3E__2_2; }
-	inline void set_U3CU24s_30U3E__2_2(Il2CppObject* value)
+	inline static int32_t get_offset_of_U3CU24s_24U3E__2_2() { return static_cast<int32_t>(offsetof(U3CU3Ec__IteratorC_t1278928328, ___U3CU24s_24U3E__2_2)); }
+	inline Il2CppObject* get_U3CU24s_24U3E__2_2() const { return ___U3CU24s_24U3E__2_2; }
+	inline Il2CppObject** get_address_of_U3CU24s_24U3E__2_2() { return &___U3CU24s_24U3E__2_2; }
+	inline void set_U3CU24s_24U3E__2_2(Il2CppObject* value)
 	{
-		___U3CU24s_30U3E__2_2 = value;
-		Il2CppCodeGenWriteBarrier(&___U3CU24s_30U3E__2_2, value);
+		___U3CU24s_24U3E__2_2 = value;
+		Il2CppCodeGenWriteBarrier(&___U3CU24s_24U3E__2_2, value);
 	}
 
 	inline static int32_t get_offset_of_U3CDU3E__3_3() { return static_cast<int32_t>(offsetof(U3CU3Ec__IteratorC_t1278928328, ___U3CDU3E__3_3)); }

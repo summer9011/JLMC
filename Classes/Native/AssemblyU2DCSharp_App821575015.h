@@ -65,22 +65,18 @@ public:
 	bool ___isDeBug_0;
 	// System.String App::ResourceID
 	String_t* ___ResourceID_1;
-	// System.Boolean App::isMobile
-	bool ___isMobile_2;
+	// System.Boolean App::isDebugOnMobile
+	bool ___isDebugOnMobile_2;
 	// App App::instance
 	App_t821575015 * ___instance_4;
 	// System.String App::MoxingPath
 	String_t* ___MoxingPath_6;
-	// System.String App::path
-	String_t* ___path_7;
-	// System.String App::stream
-	String_t* ___stream_8;
 	// System.Int32 App::currSpriteGetid
-	int32_t ___currSpriteGetid_9;
+	int32_t ___currSpriteGetid_7;
 	// MySpriteDetail App::mMySpriteDetail
-	MySpriteDetail_t913424694 * ___mMySpriteDetail_10;
+	MySpriteDetail_t913424694 * ___mMySpriteDetail_8;
 	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> App::<>f__switch$map5
-	Dictionary_2_t4260152181 * ___U3CU3Ef__switchU24map5_11;
+	Dictionary_2_t4260152181 * ___U3CU3Ef__switchU24map5_9;
 
 public:
 	inline static int32_t get_offset_of_isDeBug_0() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___isDeBug_0)); }
@@ -100,12 +96,12 @@ public:
 		Il2CppCodeGenWriteBarrier(&___ResourceID_1, value);
 	}
 
-	inline static int32_t get_offset_of_isMobile_2() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___isMobile_2)); }
-	inline bool get_isMobile_2() const { return ___isMobile_2; }
-	inline bool* get_address_of_isMobile_2() { return &___isMobile_2; }
-	inline void set_isMobile_2(bool value)
+	inline static int32_t get_offset_of_isDebugOnMobile_2() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___isDebugOnMobile_2)); }
+	inline bool get_isDebugOnMobile_2() const { return ___isDebugOnMobile_2; }
+	inline bool* get_address_of_isDebugOnMobile_2() { return &___isDebugOnMobile_2; }
+	inline void set_isDebugOnMobile_2(bool value)
 	{
-		___isMobile_2 = value;
+		___isDebugOnMobile_2 = value;
 	}
 
 	inline static int32_t get_offset_of_instance_4() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___instance_4)); }
@@ -126,48 +122,30 @@ public:
 		Il2CppCodeGenWriteBarrier(&___MoxingPath_6, value);
 	}
 
-	inline static int32_t get_offset_of_path_7() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___path_7)); }
-	inline String_t* get_path_7() const { return ___path_7; }
-	inline String_t** get_address_of_path_7() { return &___path_7; }
-	inline void set_path_7(String_t* value)
+	inline static int32_t get_offset_of_currSpriteGetid_7() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___currSpriteGetid_7)); }
+	inline int32_t get_currSpriteGetid_7() const { return ___currSpriteGetid_7; }
+	inline int32_t* get_address_of_currSpriteGetid_7() { return &___currSpriteGetid_7; }
+	inline void set_currSpriteGetid_7(int32_t value)
 	{
-		___path_7 = value;
-		Il2CppCodeGenWriteBarrier(&___path_7, value);
+		___currSpriteGetid_7 = value;
 	}
 
-	inline static int32_t get_offset_of_stream_8() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___stream_8)); }
-	inline String_t* get_stream_8() const { return ___stream_8; }
-	inline String_t** get_address_of_stream_8() { return &___stream_8; }
-	inline void set_stream_8(String_t* value)
+	inline static int32_t get_offset_of_mMySpriteDetail_8() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___mMySpriteDetail_8)); }
+	inline MySpriteDetail_t913424694 * get_mMySpriteDetail_8() const { return ___mMySpriteDetail_8; }
+	inline MySpriteDetail_t913424694 ** get_address_of_mMySpriteDetail_8() { return &___mMySpriteDetail_8; }
+	inline void set_mMySpriteDetail_8(MySpriteDetail_t913424694 * value)
 	{
-		___stream_8 = value;
-		Il2CppCodeGenWriteBarrier(&___stream_8, value);
+		___mMySpriteDetail_8 = value;
+		Il2CppCodeGenWriteBarrier(&___mMySpriteDetail_8, value);
 	}
 
-	inline static int32_t get_offset_of_currSpriteGetid_9() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___currSpriteGetid_9)); }
-	inline int32_t get_currSpriteGetid_9() const { return ___currSpriteGetid_9; }
-	inline int32_t* get_address_of_currSpriteGetid_9() { return &___currSpriteGetid_9; }
-	inline void set_currSpriteGetid_9(int32_t value)
+	inline static int32_t get_offset_of_U3CU3Ef__switchU24map5_9() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___U3CU3Ef__switchU24map5_9)); }
+	inline Dictionary_2_t4260152181 * get_U3CU3Ef__switchU24map5_9() const { return ___U3CU3Ef__switchU24map5_9; }
+	inline Dictionary_2_t4260152181 ** get_address_of_U3CU3Ef__switchU24map5_9() { return &___U3CU3Ef__switchU24map5_9; }
+	inline void set_U3CU3Ef__switchU24map5_9(Dictionary_2_t4260152181 * value)
 	{
-		___currSpriteGetid_9 = value;
-	}
-
-	inline static int32_t get_offset_of_mMySpriteDetail_10() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___mMySpriteDetail_10)); }
-	inline MySpriteDetail_t913424694 * get_mMySpriteDetail_10() const { return ___mMySpriteDetail_10; }
-	inline MySpriteDetail_t913424694 ** get_address_of_mMySpriteDetail_10() { return &___mMySpriteDetail_10; }
-	inline void set_mMySpriteDetail_10(MySpriteDetail_t913424694 * value)
-	{
-		___mMySpriteDetail_10 = value;
-		Il2CppCodeGenWriteBarrier(&___mMySpriteDetail_10, value);
-	}
-
-	inline static int32_t get_offset_of_U3CU3Ef__switchU24map5_11() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___U3CU3Ef__switchU24map5_11)); }
-	inline Dictionary_2_t4260152181 * get_U3CU3Ef__switchU24map5_11() const { return ___U3CU3Ef__switchU24map5_11; }
-	inline Dictionary_2_t4260152181 ** get_address_of_U3CU3Ef__switchU24map5_11() { return &___U3CU3Ef__switchU24map5_11; }
-	inline void set_U3CU3Ef__switchU24map5_11(Dictionary_2_t4260152181 * value)
-	{
-		___U3CU3Ef__switchU24map5_11 = value;
-		Il2CppCodeGenWriteBarrier(&___U3CU3Ef__switchU24map5_11, value);
+		___U3CU3Ef__switchU24map5_9 = value;
+		Il2CppCodeGenWriteBarrier(&___U3CU3Ef__switchU24map5_9, value);
 	}
 };
 

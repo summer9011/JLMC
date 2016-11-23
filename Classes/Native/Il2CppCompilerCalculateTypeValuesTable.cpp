@@ -1180,7 +1180,6 @@
 #include "AssemblyU2DCSharp_App_U3CBackSceneAsynU3Ec__Iterat2507346868.h"
 #include "AssemblyU2DCSharp_AssetLoad3126280200.h"
 #include "AssemblyU2DCSharp_AssetLoad_U3CLoadAssetBundleU3Ec_886092718.h"
-#include "AssemblyU2DCSharp_FilesManager2291984574.h"
 #include "AssemblyU2DCSharp_Gift450896550.h"
 #include "AssemblyU2DCSharp_GoodDetail1652464060.h"
 #include "AssemblyU2DCSharp_MySpriteDetail913424694.h"
@@ -1697,7 +1696,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[7814] = 
+extern const int32_t g_FieldOffsetTable[7811] = 
 {
 	0,
 	0,
@@ -9281,16 +9280,14 @@ extern const int32_t g_FieldOffsetTable[7814] =
 	AndroidNativeFunction_t2651783020_StaticFields::get_offset_of_CatchId_5(),
 	App_t821575015_StaticFields::get_offset_of_isDeBug_0(),
 	App_t821575015_StaticFields::get_offset_of_ResourceID_1(),
-	App_t821575015_StaticFields::get_offset_of_isMobile_2(),
+	App_t821575015_StaticFields::get_offset_of_isDebugOnMobile_2(),
 	App_t821575015::get_offset_of_sceneNameStack_3(),
 	App_t821575015_StaticFields::get_offset_of_instance_4(),
 	App_t821575015::get_offset_of_LASTSCENCENAME_5(),
 	App_t821575015_StaticFields::get_offset_of_MoxingPath_6(),
-	App_t821575015_StaticFields::get_offset_of_path_7(),
-	App_t821575015_StaticFields::get_offset_of_stream_8(),
-	App_t821575015_StaticFields::get_offset_of_currSpriteGetid_9(),
-	App_t821575015_StaticFields::get_offset_of_mMySpriteDetail_10(),
-	App_t821575015_StaticFields::get_offset_of_U3CU3Ef__switchU24map5_11(),
+	App_t821575015_StaticFields::get_offset_of_currSpriteGetid_7(),
+	App_t821575015_StaticFields::get_offset_of_mMySpriteDetail_8(),
+	App_t821575015_StaticFields::get_offset_of_U3CU3Ef__switchU24map5_9(),
 	U3CLoadSceneAsyn1U3Ec__Iterator8_t2760203109::get_offset_of_context_0(),
 	U3CLoadSceneAsyn1U3Ec__Iterator8_t2760203109::get_offset_of_sceneName_1(),
 	U3CLoadSceneAsyn1U3Ec__Iterator8_t2760203109::get_offset_of_U3CaoU3E__0_2(),
@@ -9325,7 +9322,6 @@ extern const int32_t g_FieldOffsetTable[7814] =
 	U3CLoadAssetBundleU3Ec__IteratorA_t886092718::get_offset_of_U3CU24U3EassetName_10(),
 	U3CLoadAssetBundleU3Ec__IteratorA_t886092718::get_offset_of_U3CU24U3Ekey_11(),
 	U3CLoadAssetBundleU3Ec__IteratorA_t886092718::get_offset_of_U3CU3Ef__this_12(),
-	FilesManager_t2291984574::get_offset_of_MarksDirectory_2(),
 	Gift_t450896550_StaticFields::get_offset_of_goodsId_0(),
 	Gift_t450896550_StaticFields::get_offset_of_count_1(),
 	Gift_t450896550_StaticFields::get_offset_of_name_2(),
@@ -9362,31 +9358,31 @@ extern const int32_t g_FieldOffsetTable[7814] =
 	0,
 	U3CU3Ec__IteratorB_t4007811683::get_offset_of_U24PC_0(),
 	U3CU3Ec__IteratorB_t4007811683::get_offset_of_U24current_1(),
-	U3CU3Ec__IteratorC_t1278928328::get_offset_of_U3CU24s_29U3E__0_0(),
+	U3CU3Ec__IteratorC_t1278928328::get_offset_of_U3CU24s_23U3E__0_0(),
 	U3CU3Ec__IteratorC_t1278928328::get_offset_of_U3CCU3E__1_1(),
-	U3CU3Ec__IteratorC_t1278928328::get_offset_of_U3CU24s_30U3E__2_2(),
+	U3CU3Ec__IteratorC_t1278928328::get_offset_of_U3CU24s_24U3E__2_2(),
 	U3CU3Ec__IteratorC_t1278928328::get_offset_of_U3CDU3E__3_3(),
 	U3CU3Ec__IteratorC_t1278928328::get_offset_of_U24PC_4(),
 	U3CU3Ec__IteratorC_t1278928328::get_offset_of_U24current_5(),
 	U3CU3Ec__IteratorC_t1278928328::get_offset_of_U3CU3Ef__this_6(),
 	JSONArray_t3951369664::get_offset_of_m_List_0(),
-	U3CU3Ec__IteratorD_t875643801::get_offset_of_U3CU24s_33U3E__0_0(),
+	U3CU3Ec__IteratorD_t875643801::get_offset_of_U3CU24s_27U3E__0_0(),
 	U3CU3Ec__IteratorD_t875643801::get_offset_of_U3CNU3E__1_1(),
 	U3CU3Ec__IteratorD_t875643801::get_offset_of_U24PC_2(),
 	U3CU3Ec__IteratorD_t875643801::get_offset_of_U24current_3(),
 	U3CU3Ec__IteratorD_t875643801::get_offset_of_U3CU3Ef__this_4(),
-	U3CGetEnumeratorU3Ec__IteratorE_t561422588::get_offset_of_U3CU24s_34U3E__0_0(),
+	U3CGetEnumeratorU3Ec__IteratorE_t561422588::get_offset_of_U3CU24s_28U3E__0_0(),
 	U3CGetEnumeratorU3Ec__IteratorE_t561422588::get_offset_of_U3CNU3E__1_1(),
 	U3CGetEnumeratorU3Ec__IteratorE_t561422588::get_offset_of_U24PC_2(),
 	U3CGetEnumeratorU3Ec__IteratorE_t561422588::get_offset_of_U24current_3(),
 	U3CGetEnumeratorU3Ec__IteratorE_t561422588::get_offset_of_U3CU3Ef__this_4(),
 	JSONClass_t3507943507::get_offset_of_m_Dict_0(),
-	U3CU3Ec__IteratorF_t2038443215::get_offset_of_U3CU24s_37U3E__0_0(),
+	U3CU3Ec__IteratorF_t2038443215::get_offset_of_U3CU24s_31U3E__0_0(),
 	U3CU3Ec__IteratorF_t2038443215::get_offset_of_U3CNU3E__1_1(),
 	U3CU3Ec__IteratorF_t2038443215::get_offset_of_U24PC_2(),
 	U3CU3Ec__IteratorF_t2038443215::get_offset_of_U24current_3(),
 	U3CU3Ec__IteratorF_t2038443215::get_offset_of_U3CU3Ef__this_4(),
-	U3CGetEnumeratorU3Ec__Iterator10_t791194656::get_offset_of_U3CU24s_38U3E__0_0(),
+	U3CGetEnumeratorU3Ec__Iterator10_t791194656::get_offset_of_U3CU24s_32U3E__0_0(),
 	U3CGetEnumeratorU3Ec__Iterator10_t791194656::get_offset_of_U3CNU3E__1_1(),
 	U3CGetEnumeratorU3Ec__Iterator10_t791194656::get_offset_of_U24PC_2(),
 	U3CGetEnumeratorU3Ec__Iterator10_t791194656::get_offset_of_U24current_3(),
@@ -9517,7 +9513,7 @@ extern const int32_t g_FieldOffsetTable[7814] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1845] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1844] = 
 {
 	sizeof (U3CModuleU3E_t3783534214), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -11316,7 +11312,6 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1845] =
 	sizeof (AssetHandleKey_t2677463335), sizeof(methodPointerType), 0, 0,
 	sizeof (AssetHandle_t296746218), sizeof(methodPointerType), 0, 0,
 	sizeof (U3CLoadAssetBundleU3Ec__IteratorA_t886092718), -1, 0, 0,
-	sizeof (FilesManager_t2291984574), -1, 0, 0,
 	sizeof (Gift_t450896550), -1, sizeof(Gift_t450896550_StaticFields), 0,
 	sizeof (GoodDetail_t1652464060), -1, 0, 0,
 	sizeof (IOSNativeFunction_t3033620758), -1, 0, 0,

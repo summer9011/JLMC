@@ -13,12 +13,6 @@
 #include <limits>
 #include <assert.h>
 
-// MySpriteDetail
-struct MySpriteDetail_t913424694;
-// LitJson.JSONNode
-struct JSONNode_t1109731523;
-// System.String
-struct String_t;
 // MySpriteItem
 struct MySpriteItem_t3317553624;
 // UILabel
@@ -29,6 +23,8 @@ struct Il2CppObject;
 struct AssetLoad_t3126280200;
 // UnityEngine.GameObject
 struct GameObject_t1366199518;
+// System.String
+struct String_t;
 // UIControlMySpirit
 struct UIControlMySpirit_t24001844;
 // MySpriteMain
@@ -318,26 +314,19 @@ struct UIDragDropItem_t4109477862;
 struct UIDragScrollView_t2942595320;
 // UIDragDropItem/<EnableDragScrollView>c__Iterator1
 struct U3CEnableDragScrollViewU3Ec__Iterator1_t3046221413;
+// UIDragDropRoot
+struct UIDragDropRoot_t997512525;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array4136897760.h"
-#include "AssemblyU2DCSharp_MySpriteDetail913424694.h"
-#include "AssemblyU2DCSharp_MySpriteDetail913424694MethodDeclarations.h"
-#include "AssemblyU2DCSharp_LitJson_JSONNode1109731523.h"
-#include "mscorlib_System_Void2799814243.h"
-#include "mscorlib_System_Object707969140MethodDeclarations.h"
-#include "AssemblyU2DCSharp_LitJson_JSONNode1109731523MethodDeclarations.h"
-#include "mscorlib_System_String1967731336.h"
-#include "mscorlib_System_Collections_Generic_Dictionary_2_g4260152181MethodDeclarations.h"
-#include "mscorlib_System_Collections_Generic_Dictionary_2_g4260152181.h"
-#include "mscorlib_System_Int321448170597.h"
-#include "mscorlib_System_Boolean3143194569.h"
 #include "AssemblyU2DCSharp_MySpriteItem3317553624.h"
 #include "AssemblyU2DCSharp_MySpriteItem3317553624MethodDeclarations.h"
+#include "mscorlib_System_Void2799814243.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour774292115MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_GameObject1366199518MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Component1078601330MethodDeclarations.h"
+#include "AssemblyU2DCSharp_MySpriteDetail913424694MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UILabel1795115428MethodDeclarations.h"
 #include "AssemblyU2DCSharp_AssetLoad_AssetHandleKey2677463335MethodDeclarations.h"
 #include "AssemblyU2DCSharp_AssetLoad3126280200MethodDeclarations.h"
@@ -347,8 +336,10 @@ struct U3CEnableDragScrollViewU3Ec__Iterator1_t3046221413;
 #include "mscorlib_System_String1967731336MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Transform224878301MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Object1181371020MethodDeclarations.h"
+#include "mscorlib_System_String1967731336.h"
 #include "UnityEngine_UnityEngine_GameObject1366199518.h"
 #include "AssemblyU2DCSharp_UILabel1795115428.h"
+#include "AssemblyU2DCSharp_MySpriteDetail913424694.h"
 #include "AssemblyU2DCSharp_AssetLoad3126280200.h"
 #include "AssemblyU2DCSharp_AssetLoad_AssetHandleKey2677463335.h"
 #include "mscorlib_System_Object707969140.h"
@@ -361,12 +352,14 @@ struct U3CEnableDragScrollViewU3Ec__Iterator1_t3046221413;
 #include "UnityEngine_UnityEngine_Transform224878301.h"
 #include "UnityEngine_UnityEngine_Coroutine3261918659.h"
 #include "UnityEngine_UnityEngine_Vector3465617797MethodDeclarations.h"
+#include "mscorlib_System_Boolean3143194569.h"
 #include "mscorlib_System_Char3633234117.h"
 #include "UnityEngine_UnityEngine_Object1181371020.h"
 #include "UnityEngine_UnityEngine_Vector3465617797.h"
 #include "mscorlib_System_Single1791520093.h"
 #include "mscorlib_System_Int321448170597MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UIControlMySpirit24001844MethodDeclarations.h"
+#include "mscorlib_System_Int321448170597.h"
 #include "AssemblyU2DCSharp_UIControlMySpirit24001844.h"
 #include "AssemblyU2DCSharp_MySpriteMain1885725518.h"
 #include "AssemblyU2DCSharp_MySpriteMain1885725518MethodDeclarations.h"
@@ -379,19 +372,24 @@ struct U3CEnableDragScrollViewU3Ec__Iterator1_t3046221413;
 #include "UnityEngine_UnityEngine_Resources3616872916MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UIGrid2420180906.h"
 #include "AssemblyU2DCSharp_UIGrid2420180906MethodDeclarations.h"
+#include "mscorlib_System_Object707969140MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_ge484745624MethodDeclarations.h"
 #include "mscorlib_System_Int64688655712MethodDeclarations.h"
 #include "AssemblyU2DCSharp_API3691620896MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_WWW3146501818MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Debug12548584MethodDeclarations.h"
+#include "AssemblyU2DCSharp_LitJson_JSONNode1109731523MethodDeclarations.h"
 #include "mscorlib_System_UInt323922122178.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_ge484745624.h"
 #include "AssemblyU2DCSharp_API3691620896.h"
 #include "UnityEngine_UnityEngine_WWW3146501818.h"
+#include "AssemblyU2DCSharp_LitJson_JSONNode1109731523.h"
 #include "mscorlib_System_NotSupportedException3178859535MethodDeclarations.h"
 #include "mscorlib_System_NotSupportedException3178859535.h"
 #include "AssemblyU2DCSharp_NativeMessageReceive1973460195.h"
 #include "AssemblyU2DCSharp_NativeMessageReceive1973460195MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_g4260152181MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_g4260152181.h"
 #include "AssemblyU2DCSharp_SceneName904752595.h"
 #include "AssemblyU2DCSharp_SceneName904752595MethodDeclarations.h"
 #include "AssemblyU2DCSharp_NGUIDebug1735550160.h"
@@ -1120,328 +1118,6 @@ extern "C"  Il2CppObject * NGUITools_FindInParents_TisIl2CppObject_m3357916574_g
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void MySpriteDetail::.ctor(LitJson.JSONNode)
-extern Il2CppCodeGenString* _stringLiteral694212447;
-extern Il2CppCodeGenString* _stringLiteral2328218955;
-extern Il2CppCodeGenString* _stringLiteral1561396403;
-extern Il2CppCodeGenString* _stringLiteral2671152607;
-extern Il2CppCodeGenString* _stringLiteral1594891052;
-extern Il2CppCodeGenString* _stringLiteral1959740304;
-extern Il2CppCodeGenString* _stringLiteral97231906;
-extern Il2CppCodeGenString* _stringLiteral946039168;
-extern const uint32_t MySpriteDetail__ctor_m1298661322_MetadataUsageId;
-extern "C"  void MySpriteDetail__ctor_m1298661322 (MySpriteDetail_t913424694 * __this, JSONNode_t1109731523 * ___jsonNode, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MySpriteDetail__ctor_m1298661322_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		JSONNode_t1109731523 * L_0 = ___jsonNode;
-		NullCheck(L_0);
-		JSONNode_t1109731523 * L_1 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_0, _stringLiteral694212447);
-		String_t* L_2 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
-		__this->set_getid_0(L_2);
-		JSONNode_t1109731523 * L_3 = ___jsonNode;
-		NullCheck(L_3);
-		JSONNode_t1109731523 * L_4 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_3, _stringLiteral2328218955);
-		String_t* L_5 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
-		__this->set_name_1(L_5);
-		JSONNode_t1109731523 * L_6 = ___jsonNode;
-		NullCheck(L_6);
-		JSONNode_t1109731523 * L_7 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_6, _stringLiteral1561396403);
-		String_t* L_8 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
-		__this->set_image_2(L_8);
-		JSONNode_t1109731523 * L_9 = ___jsonNode;
-		NullCheck(L_9);
-		JSONNode_t1109731523 * L_10 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_9, _stringLiteral2671152607);
-		String_t* L_11 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_10, /*hidden argument*/NULL);
-		__this->set_attr_3(L_11);
-		JSONNode_t1109731523 * L_12 = ___jsonNode;
-		NullCheck(L_12);
-		JSONNode_t1109731523 * L_13 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_12, _stringLiteral1594891052);
-		String_t* L_14 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_13, /*hidden argument*/NULL);
-		__this->set_level_4(L_14);
-		JSONNode_t1109731523 * L_15 = ___jsonNode;
-		NullCheck(L_15);
-		JSONNode_t1109731523 * L_16 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_15, _stringLiteral1959740304);
-		String_t* L_17 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_16, /*hidden argument*/NULL);
-		__this->set_status_5(L_17);
-		JSONNode_t1109731523 * L_18 = ___jsonNode;
-		NullCheck(L_18);
-		JSONNode_t1109731523 * L_19 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_18, _stringLiteral97231906);
-		String_t* L_20 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_19, /*hidden argument*/NULL);
-		__this->set_energy_6(L_20);
-		JSONNode_t1109731523 * L_21 = ___jsonNode;
-		NullCheck(L_21);
-		JSONNode_t1109731523 * L_22 = VirtFuncInvoker1< JSONNode_t1109731523 *, String_t* >::Invoke(7 /* LitJson.JSONNode LitJson.JSONNode::get_Item(System.String) */, L_21, _stringLiteral946039168);
-		String_t* L_23 = JSONNode_op_Implicit_m1626457581(NULL /*static, unused*/, L_22, /*hidden argument*/NULL);
-		MySpriteDetail_set_LevelEnergy_m478443490(__this, L_23, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.String MySpriteDetail::get_Getid()
-extern "C"  String_t* MySpriteDetail_get_Getid_m1547184296 (MySpriteDetail_t913424694 * __this, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = __this->get_getid_0();
-		return L_0;
-	}
-}
-// System.Void MySpriteDetail::set_Getid(System.String)
-extern "C"  void MySpriteDetail_set_Getid_m4001898551 (MySpriteDetail_t913424694 * __this, String_t* ___value, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = ___value;
-		__this->set_getid_0(L_0);
-		return;
-	}
-}
-// System.String MySpriteDetail::get_Name()
-extern "C"  String_t* MySpriteDetail_get_Name_m1146069234 (MySpriteDetail_t913424694 * __this, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = __this->get_name_1();
-		return L_0;
-	}
-}
-// System.Void MySpriteDetail::set_Name(System.String)
-extern "C"  void MySpriteDetail_set_Name_m2431658231 (MySpriteDetail_t913424694 * __this, String_t* ___value, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = ___value;
-		__this->set_name_1(L_0);
-		return;
-	}
-}
-// System.String MySpriteDetail::get_Image()
-extern "C"  String_t* MySpriteDetail_get_Image_m51263176 (MySpriteDetail_t913424694 * __this, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = __this->get_image_2();
-		return L_0;
-	}
-}
-// System.Void MySpriteDetail::set_Image(System.String)
-extern "C"  void MySpriteDetail_set_Image_m2162613651 (MySpriteDetail_t913424694 * __this, String_t* ___value, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = ___value;
-		__this->set_image_2(L_0);
-		return;
-	}
-}
-// System.String MySpriteDetail::get_Attr()
-extern "C"  String_t* MySpriteDetail_get_Attr_m902932858 (MySpriteDetail_t913424694 * __this, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = __this->get_attr_3();
-		return L_0;
-	}
-}
-// System.Void MySpriteDetail::set_Attr(System.String)
-extern "C"  void MySpriteDetail_set_Attr_m3434217155 (MySpriteDetail_t913424694 * __this, String_t* ___value, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = ___value;
-		__this->set_attr_3(L_0);
-		return;
-	}
-}
-// System.String MySpriteDetail::get_Level()
-extern "C"  String_t* MySpriteDetail_get_Level_m3953128181 (MySpriteDetail_t913424694 * __this, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = __this->get_level_4();
-		return L_0;
-	}
-}
-// System.Void MySpriteDetail::set_Level(System.String)
-extern "C"  void MySpriteDetail_set_Level_m1869080282 (MySpriteDetail_t913424694 * __this, String_t* ___value, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = ___value;
-		__this->set_level_4(L_0);
-		return;
-	}
-}
-// System.String MySpriteDetail::get_Status()
-extern "C"  String_t* MySpriteDetail_get_Status_m2828130379 (MySpriteDetail_t913424694 * __this, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = __this->get_status_5();
-		return L_0;
-	}
-}
-// System.Void MySpriteDetail::set_Status(System.String)
-extern "C"  void MySpriteDetail_set_Status_m2114540528 (MySpriteDetail_t913424694 * __this, String_t* ___value, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = ___value;
-		__this->set_status_5(L_0);
-		return;
-	}
-}
-// System.String MySpriteDetail::get_Energy()
-extern "C"  String_t* MySpriteDetail_get_Energy_m3614728625 (MySpriteDetail_t913424694 * __this, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = __this->get_energy_6();
-		return L_0;
-	}
-}
-// System.Void MySpriteDetail::set_Energy(System.String)
-extern "C"  void MySpriteDetail_set_Energy_m3014530262 (MySpriteDetail_t913424694 * __this, String_t* ___value, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = ___value;
-		__this->set_energy_6(L_0);
-		return;
-	}
-}
-// System.String MySpriteDetail::get_LevelEnergy()
-extern "C"  String_t* MySpriteDetail_get_LevelEnergy_m183083575 (MySpriteDetail_t913424694 * __this, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = __this->get_levelEnergy_7();
-		return L_0;
-	}
-}
-// System.Void MySpriteDetail::set_LevelEnergy(System.String)
-extern "C"  void MySpriteDetail_set_LevelEnergy_m478443490 (MySpriteDetail_t913424694 * __this, String_t* ___value, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = ___value;
-		__this->set_levelEnergy_7(L_0);
-		return;
-	}
-}
-// System.String MySpriteDetail::getNextLevel(System.String)
-extern TypeInfo* MySpriteDetail_t913424694_il2cpp_TypeInfo_var;
-extern TypeInfo* Dictionary_2_t4260152181_il2cpp_TypeInfo_var;
-extern const MethodInfo* Dictionary_2__ctor_m2118310873_MethodInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1858828593;
-extern Il2CppCodeGenString* _stringLiteral4069481018;
-extern Il2CppCodeGenString* _stringLiteral1131258640;
-extern Il2CppCodeGenString* _stringLiteral3618241751;
-extern const uint32_t MySpriteDetail_getNextLevel_m3239383159_MetadataUsageId;
-extern "C"  String_t* MySpriteDetail_getNextLevel_m3239383159 (MySpriteDetail_t913424694 * __this, String_t* ___level, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MySpriteDetail_getNextLevel_m3239383159_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	String_t* V_0 = NULL;
-	String_t* V_1 = NULL;
-	Dictionary_2_t4260152181 * V_2 = NULL;
-	int32_t V_3 = 0;
-	{
-		String_t* L_0 = ___level;
-		V_0 = L_0;
-		String_t* L_1 = ___level;
-		V_1 = L_1;
-		String_t* L_2 = V_1;
-		if (!L_2)
-		{
-			goto IL_00aa;
-		}
-	}
-	{
-		Dictionary_2_t4260152181 * L_3 = ((MySpriteDetail_t913424694_StaticFields*)MySpriteDetail_t913424694_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__switchU24map6_8();
-		if (L_3)
-		{
-			goto IL_0051;
-		}
-	}
-	{
-		Dictionary_2_t4260152181 * L_4 = (Dictionary_2_t4260152181 *)il2cpp_codegen_object_new(Dictionary_2_t4260152181_il2cpp_TypeInfo_var);
-		Dictionary_2__ctor_m2118310873(L_4, 4, /*hidden argument*/Dictionary_2__ctor_m2118310873_MethodInfo_var);
-		V_2 = L_4;
-		Dictionary_2_t4260152181 * L_5 = V_2;
-		NullCheck(L_5);
-		VirtActionInvoker2< String_t*, int32_t >::Invoke(26 /* System.Void System.Collections.Generic.Dictionary`2<System.String,System.Int32>::Add(!0,!1) */, L_5, _stringLiteral1858828593, 0);
-		Dictionary_2_t4260152181 * L_6 = V_2;
-		NullCheck(L_6);
-		VirtActionInvoker2< String_t*, int32_t >::Invoke(26 /* System.Void System.Collections.Generic.Dictionary`2<System.String,System.Int32>::Add(!0,!1) */, L_6, _stringLiteral4069481018, 1);
-		Dictionary_2_t4260152181 * L_7 = V_2;
-		NullCheck(L_7);
-		VirtActionInvoker2< String_t*, int32_t >::Invoke(26 /* System.Void System.Collections.Generic.Dictionary`2<System.String,System.Int32>::Add(!0,!1) */, L_7, _stringLiteral1131258640, 2);
-		Dictionary_2_t4260152181 * L_8 = V_2;
-		NullCheck(L_8);
-		VirtActionInvoker2< String_t*, int32_t >::Invoke(26 /* System.Void System.Collections.Generic.Dictionary`2<System.String,System.Int32>::Add(!0,!1) */, L_8, _stringLiteral3618241751, 3);
-		Dictionary_2_t4260152181 * L_9 = V_2;
-		((MySpriteDetail_t913424694_StaticFields*)MySpriteDetail_t913424694_il2cpp_TypeInfo_var->static_fields)->set_U3CU3Ef__switchU24map6_8(L_9);
-	}
-
-IL_0051:
-	{
-		Dictionary_2_t4260152181 * L_10 = ((MySpriteDetail_t913424694_StaticFields*)MySpriteDetail_t913424694_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__switchU24map6_8();
-		String_t* L_11 = V_1;
-		NullCheck(L_10);
-		bool L_12 = VirtFuncInvoker2< bool, String_t*, int32_t* >::Invoke(31 /* System.Boolean System.Collections.Generic.Dictionary`2<System.String,System.Int32>::TryGetValue(!0,!1&) */, L_10, L_11, (&V_3));
-		if (!L_12)
-		{
-			goto IL_00aa;
-		}
-	}
-	{
-		int32_t L_13 = V_3;
-		if (L_13 == 0)
-		{
-			goto IL_007e;
-		}
-		if (L_13 == 1)
-		{
-			goto IL_0089;
-		}
-		if (L_13 == 2)
-		{
-			goto IL_0094;
-		}
-		if (L_13 == 3)
-		{
-			goto IL_009f;
-		}
-	}
-	{
-		goto IL_00aa;
-	}
-
-IL_007e:
-	{
-		V_0 = _stringLiteral4069481018;
-		goto IL_00aa;
-	}
-
-IL_0089:
-	{
-		V_0 = _stringLiteral1131258640;
-		goto IL_00aa;
-	}
-
-IL_0094:
-	{
-		V_0 = _stringLiteral3618241751;
-		goto IL_00aa;
-	}
-
-IL_009f:
-	{
-		V_0 = _stringLiteral3618241751;
-		goto IL_00aa;
-	}
-
-IL_00aa:
-	{
-		String_t* L_14 = V_0;
-		return L_14;
-	}
-}
 // System.Void MySpriteItem::.ctor()
 extern "C"  void MySpriteItem__ctor_m1304189523 (MySpriteItem_t3317553624 * __this, const MethodInfo* method)
 {
@@ -1635,7 +1311,7 @@ extern "C"  void MySpriteItem_Onclick_m3983269170 (MySpriteItem_t3317553624 * __
 		String_t* L_1 = MySpriteDetail_get_Getid_m1547184296(L_0, /*hidden argument*/NULL);
 		int32_t L_2 = Int32_Parse_m3683414232(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
-		((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->set_currSpriteGetid_9(L_2);
+		((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->set_currSpriteGetid_7(L_2);
 		GameObject_t1366199518 * L_3 = __this->get_UIControl_4();
 		NullCheck(L_3);
 		UIControlMySpirit_t24001844 * L_4 = GameObject_GetComponent_TisUIControlMySpirit_t24001844_m3674211665(L_3, /*hidden argument*/GameObject_GetComponent_TisUIControlMySpirit_t24001844_m3674211665_MethodInfo_var);
@@ -2108,7 +1784,6 @@ extern TypeInfo* Dictionary_2_t4260152181_il2cpp_TypeInfo_var;
 extern TypeInfo* SceneName_t904752595_il2cpp_TypeInfo_var;
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
 extern const MethodInfo* Dictionary_2__ctor_m2118310873_MethodInfo_var;
-extern Il2CppCodeGenString* _stringLiteral7190591;
 extern Il2CppCodeGenString* _stringLiteral2544205101;
 extern Il2CppCodeGenString* _stringLiteral3322376157;
 extern Il2CppCodeGenString* _stringLiteral4032010767;
@@ -2121,33 +1796,26 @@ extern "C"  void NativeMessageReceive_MessagesReceive_m3776591799 (NativeMessage
 		il2cpp_codegen_initialize_method (NativeMessageReceive_MessagesReceive_m3776591799_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
-	GameObject_t1366199518 * V_0 = NULL;
+	String_t* V_0 = NULL;
 	String_t* V_1 = NULL;
 	String_t* V_2 = NULL;
-	String_t* V_3 = NULL;
-	Dictionary_2_t4260152181 * V_4 = NULL;
-	int32_t V_5 = 0;
+	Dictionary_2_t4260152181 * V_3 = NULL;
+	int32_t V_4 = 0;
 	{
 		String_t* L_0 = ___arg;
 		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
 		App_print_m929367453(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		GameObject_t1366199518 * L_1 = GameObject_Find_m836511350(NULL /*static, unused*/, _stringLiteral7190591, /*hidden argument*/NULL);
-		V_0 = L_1;
-		GameObject_t1366199518 * L_2 = V_0;
-		bool L_3 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_2, (Object_t1181371020 *)NULL, /*hidden argument*/NULL);
-		if (!L_3)
-		{
-			goto IL_0024;
-		}
-	}
-	{
-		GameObject_t1366199518 * L_4 = V_0;
-		NullCheck(L_4);
-		GameObject_SetActive_m2887581199(L_4, (bool)1, /*hidden argument*/NULL);
-	}
-
-IL_0024:
-	{
+		String_t* L_1 = ___arg;
+		CharU5BU5D_t1685951112* L_2 = ((CharU5BU5D_t1685951112*)SZArrayNew(CharU5BU5D_t1685951112_il2cpp_TypeInfo_var, (uint32_t)1));
+		NullCheck(L_2);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_2, 0);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (uint16_t)((int32_t)35));
+		NullCheck(L_1);
+		StringU5BU5D_t3764931161* L_3 = String_Split_m3326265864(L_1, L_2, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, 0);
+		int32_t L_4 = 0;
+		V_0 = ((L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_4)));
 		String_t* L_5 = ___arg;
 		CharU5BU5D_t1685951112* L_6 = ((CharU5BU5D_t1685951112*)SZArrayNew(CharU5BU5D_t1685951112_il2cpp_TypeInfo_var, (uint32_t)1));
 		NullCheck(L_6);
@@ -2156,115 +1824,108 @@ IL_0024:
 		NullCheck(L_5);
 		StringU5BU5D_t3764931161* L_7 = String_Split_m3326265864(L_5, L_6, /*hidden argument*/NULL);
 		NullCheck(L_7);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, 0);
-		int32_t L_8 = 0;
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, 1);
+		int32_t L_8 = 1;
 		V_1 = ((L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_8)));
-		String_t* L_9 = ___arg;
-		CharU5BU5D_t1685951112* L_10 = ((CharU5BU5D_t1685951112*)SZArrayNew(CharU5BU5D_t1685951112_il2cpp_TypeInfo_var, (uint32_t)1));
-		NullCheck(L_10);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_10, 0);
-		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(0), (uint16_t)((int32_t)35));
-		NullCheck(L_9);
-		StringU5BU5D_t3764931161* L_11 = String_Split_m3326265864(L_9, L_10, /*hidden argument*/NULL);
-		NullCheck(L_11);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_11, 1);
-		int32_t L_12 = 1;
-		V_2 = ((L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_12)));
-		String_t* L_13 = V_2;
-		V_3 = L_13;
-		String_t* L_14 = V_3;
-		if (!L_14)
+		String_t* L_9 = V_0;
+		App_print_m929367453(NULL /*static, unused*/, L_9, /*hidden argument*/NULL);
+		String_t* L_10 = V_1;
+		App_print_m929367453(NULL /*static, unused*/, L_10, /*hidden argument*/NULL);
+		String_t* L_11 = V_1;
+		V_2 = L_11;
+		String_t* L_12 = V_2;
+		if (!L_12)
 		{
-			goto IL_00e5;
+			goto IL_00cf;
 		}
 	}
 	{
-		Dictionary_2_t4260152181 * L_15 = ((NativeMessageReceive_t1973460195_StaticFields*)NativeMessageReceive_t1973460195_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__switchU24map7_2();
-		if (L_15)
+		Dictionary_2_t4260152181 * L_13 = ((NativeMessageReceive_t1973460195_StaticFields*)NativeMessageReceive_t1973460195_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__switchU24map7_2();
+		if (L_13)
 		{
-			goto IL_0087;
+			goto IL_0071;
 		}
 	}
 	{
-		Dictionary_2_t4260152181 * L_16 = (Dictionary_2_t4260152181 *)il2cpp_codegen_object_new(Dictionary_2_t4260152181_il2cpp_TypeInfo_var);
-		Dictionary_2__ctor_m2118310873(L_16, 2, /*hidden argument*/Dictionary_2__ctor_m2118310873_MethodInfo_var);
-		V_4 = L_16;
-		Dictionary_2_t4260152181 * L_17 = V_4;
-		NullCheck(L_17);
-		VirtActionInvoker2< String_t*, int32_t >::Invoke(26 /* System.Void System.Collections.Generic.Dictionary`2<System.String,System.Int32>::Add(!0,!1) */, L_17, _stringLiteral2544205101, 0);
-		Dictionary_2_t4260152181 * L_18 = V_4;
+		Dictionary_2_t4260152181 * L_14 = (Dictionary_2_t4260152181 *)il2cpp_codegen_object_new(Dictionary_2_t4260152181_il2cpp_TypeInfo_var);
+		Dictionary_2__ctor_m2118310873(L_14, 2, /*hidden argument*/Dictionary_2__ctor_m2118310873_MethodInfo_var);
+		V_3 = L_14;
+		Dictionary_2_t4260152181 * L_15 = V_3;
+		NullCheck(L_15);
+		VirtActionInvoker2< String_t*, int32_t >::Invoke(26 /* System.Void System.Collections.Generic.Dictionary`2<System.String,System.Int32>::Add(!0,!1) */, L_15, _stringLiteral2544205101, 0);
+		Dictionary_2_t4260152181 * L_16 = V_3;
+		NullCheck(L_16);
+		VirtActionInvoker2< String_t*, int32_t >::Invoke(26 /* System.Void System.Collections.Generic.Dictionary`2<System.String,System.Int32>::Add(!0,!1) */, L_16, _stringLiteral3322376157, 1);
+		Dictionary_2_t4260152181 * L_17 = V_3;
+		((NativeMessageReceive_t1973460195_StaticFields*)NativeMessageReceive_t1973460195_il2cpp_TypeInfo_var->static_fields)->set_U3CU3Ef__switchU24map7_2(L_17);
+	}
+
+IL_0071:
+	{
+		Dictionary_2_t4260152181 * L_18 = ((NativeMessageReceive_t1973460195_StaticFields*)NativeMessageReceive_t1973460195_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__switchU24map7_2();
+		String_t* L_19 = V_2;
 		NullCheck(L_18);
-		VirtActionInvoker2< String_t*, int32_t >::Invoke(26 /* System.Void System.Collections.Generic.Dictionary`2<System.String,System.Int32>::Add(!0,!1) */, L_18, _stringLiteral3322376157, 1);
-		Dictionary_2_t4260152181 * L_19 = V_4;
-		((NativeMessageReceive_t1973460195_StaticFields*)NativeMessageReceive_t1973460195_il2cpp_TypeInfo_var->static_fields)->set_U3CU3Ef__switchU24map7_2(L_19);
+		bool L_20 = VirtFuncInvoker2< bool, String_t*, int32_t* >::Invoke(31 /* System.Boolean System.Collections.Generic.Dictionary`2<System.String,System.Int32>::TryGetValue(!0,!1&) */, L_18, L_19, (&V_4));
+		if (!L_20)
+		{
+			goto IL_00cf;
+		}
+	}
+	{
+		int32_t L_21 = V_4;
+		if (!L_21)
+		{
+			goto IL_0097;
+		}
+	}
+	{
+		int32_t L_22 = V_4;
+		if ((((int32_t)L_22) == ((int32_t)1)))
+		{
+			goto IL_00b3;
+		}
+	}
+	{
+		goto IL_00cf;
 	}
 
-IL_0087:
-	{
-		Dictionary_2_t4260152181 * L_20 = ((NativeMessageReceive_t1973460195_StaticFields*)NativeMessageReceive_t1973460195_il2cpp_TypeInfo_var->static_fields)->get_U3CU3Ef__switchU24map7_2();
-		String_t* L_21 = V_3;
-		NullCheck(L_20);
-		bool L_22 = VirtFuncInvoker2< bool, String_t*, int32_t* >::Invoke(31 /* System.Boolean System.Collections.Generic.Dictionary`2<System.String,System.Int32>::TryGetValue(!0,!1&) */, L_20, L_21, (&V_5));
-		if (!L_22)
-		{
-			goto IL_00e5;
-		}
-	}
-	{
-		int32_t L_23 = V_5;
-		if (!L_23)
-		{
-			goto IL_00ad;
-		}
-	}
-	{
-		int32_t L_24 = V_5;
-		if ((((int32_t)L_24) == ((int32_t)1)))
-		{
-			goto IL_00c9;
-		}
-	}
-	{
-		goto IL_00e5;
-	}
-
-IL_00ad:
+IL_0097:
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
-		App_t821575015 * L_25 = App_getInstance_m830484687(NULL /*static, unused*/, /*hidden argument*/NULL);
-		String_t* L_26 = V_1;
+		App_t821575015 * L_23 = App_getInstance_m830484687(NULL /*static, unused*/, /*hidden argument*/NULL);
+		String_t* L_24 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(SceneName_t904752595_il2cpp_TypeInfo_var);
-		String_t* L_27 = ((SceneName_t904752595_StaticFields*)SceneName_t904752595_il2cpp_TypeInfo_var->static_fields)->get_MySpirit_2();
-		NullCheck(L_25);
-		Il2CppObject * L_28 = App_LoadSceneAsyn1_m3759058960(L_25, L_26, L_27, /*hidden argument*/NULL);
-		MonoBehaviour_StartCoroutine_m2470621050(__this, L_28, /*hidden argument*/NULL);
-		goto IL_00fa;
+		String_t* L_25 = ((SceneName_t904752595_StaticFields*)SceneName_t904752595_il2cpp_TypeInfo_var->static_fields)->get_MySpirit_2();
+		NullCheck(L_23);
+		Il2CppObject * L_26 = App_LoadSceneAsyn1_m3759058960(L_23, L_24, L_25, /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2470621050(__this, L_26, /*hidden argument*/NULL);
+		goto IL_00e4;
 	}
 
-IL_00c9:
+IL_00b3:
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
-		App_t821575015 * L_29 = App_getInstance_m830484687(NULL /*static, unused*/, /*hidden argument*/NULL);
-		String_t* L_30 = V_1;
+		App_t821575015 * L_27 = App_getInstance_m830484687(NULL /*static, unused*/, /*hidden argument*/NULL);
+		String_t* L_28 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(SceneName_t904752595_il2cpp_TypeInfo_var);
-		String_t* L_31 = ((SceneName_t904752595_StaticFields*)SceneName_t904752595_il2cpp_TypeInfo_var->static_fields)->get_Catch_4();
-		NullCheck(L_29);
-		Il2CppObject * L_32 = App_LoadSceneAsyn1_m3759058960(L_29, L_30, L_31, /*hidden argument*/NULL);
-		MonoBehaviour_StartCoroutine_m2470621050(__this, L_32, /*hidden argument*/NULL);
-		goto IL_00fa;
+		String_t* L_29 = ((SceneName_t904752595_StaticFields*)SceneName_t904752595_il2cpp_TypeInfo_var->static_fields)->get_Catch_4();
+		NullCheck(L_27);
+		Il2CppObject * L_30 = App_LoadSceneAsyn1_m3759058960(L_27, L_28, L_29, /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2470621050(__this, L_30, /*hidden argument*/NULL);
+		goto IL_00e4;
 	}
 
-IL_00e5:
+IL_00cf:
 	{
-		String_t* L_33 = ___arg;
+		String_t* L_31 = ___arg;
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_34 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral4032010767, L_33, /*hidden argument*/NULL);
+		String_t* L_32 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral4032010767, L_31, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
-		App_print_m929367453(NULL /*static, unused*/, L_34, /*hidden argument*/NULL);
-		goto IL_00fa;
+		App_print_m929367453(NULL /*static, unused*/, L_32, /*hidden argument*/NULL);
+		goto IL_00e4;
 	}
 
-IL_00fa:
+IL_00e4:
 	{
 		return;
 	}
@@ -52692,6 +52353,60 @@ extern "C"  void U3CEnableDragScrollViewU3Ec__Iterator1_Reset_m1790517898 (U3CEn
 		NotSupportedException_t3178859535 * L_0 = (NotSupportedException_t3178859535 *)il2cpp_codegen_object_new(NotSupportedException_t3178859535_il2cpp_TypeInfo_var);
 		NotSupportedException__ctor_m3232764727(L_0, /*hidden argument*/NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
+	}
+}
+// System.Void UIDragDropRoot::.ctor()
+extern "C"  void UIDragDropRoot__ctor_m3749173908 (UIDragDropRoot_t997512525 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UIDragDropRoot::OnEnable()
+extern TypeInfo* UIDragDropRoot_t997512525_il2cpp_TypeInfo_var;
+extern const uint32_t UIDragDropRoot_OnEnable_m3324100684_MetadataUsageId;
+extern "C"  void UIDragDropRoot_OnEnable_m3324100684 (UIDragDropRoot_t997512525 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UIDragDropRoot_OnEnable_m3324100684_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Transform_t224878301 * L_0 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		((UIDragDropRoot_t997512525_StaticFields*)UIDragDropRoot_t997512525_il2cpp_TypeInfo_var->static_fields)->set_root_2(L_0);
+		return;
+	}
+}
+// System.Void UIDragDropRoot::OnDisable()
+extern TypeInfo* UIDragDropRoot_t997512525_il2cpp_TypeInfo_var;
+extern const uint32_t UIDragDropRoot_OnDisable_m2277512289_MetadataUsageId;
+extern "C"  void UIDragDropRoot_OnDisable_m2277512289 (UIDragDropRoot_t997512525 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UIDragDropRoot_OnDisable_m2277512289_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Transform_t224878301 * L_0 = ((UIDragDropRoot_t997512525_StaticFields*)UIDragDropRoot_t997512525_il2cpp_TypeInfo_var->static_fields)->get_root_2();
+		Transform_t224878301 * L_1 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		bool L_2 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		((UIDragDropRoot_t997512525_StaticFields*)UIDragDropRoot_t997512525_il2cpp_TypeInfo_var->static_fields)->set_root_2((Transform_t224878301 *)NULL);
+	}
+
+IL_001b:
+	{
+		return;
 	}
 }
 #ifdef __clang__
