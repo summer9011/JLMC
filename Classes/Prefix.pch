@@ -61,7 +61,7 @@
 
 #define AliyunOSS_Key @"LTAIifKTW6pWHHbb"
 #define AliyunOSS_Secret @"XC43Rv4xq1gc06pcv69XXjr2FNxhTe"
-#define AliyunOSS_Endpoint @"elf-pictures.oss-cn-hangzhou.aliyuncs.com"
+#define AliyunOSS_Endpoint @"oss-cn-hangzhou.aliyuncs.com"
 #define AliyunOSS_Bucket @"elf-pictures"
 
 #define WeChat_AppID @"wxdcfc4fcdf5140d6f"
@@ -110,4 +110,6 @@
 #define Notification_NearbySupply @"Notification_NearbySupply"
 #define Notification_NearbyPersonalSupply @"Notification_NearbyPersonalSupply"
 #define Notification_NearbyUser @"Notification_NearbyUser"
+#define Notification_UserAnno @"Notification_UserAnno"
+#define Notification_NearbyUserAnno @"Notification_NearbyUserAnno"
 

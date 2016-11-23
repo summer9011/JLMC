@@ -622,10 +622,6 @@ extern "C" long	LoginUserId() {
 extern "C" void	DidLaunchOver() {
     NSLog(@"闪屏结束");
     
-    NSLog(@"rootViewController %@", GetAppController().rootViewController);
-    
-    UnityPause(YES);
-    
     UIViewController *tmpVC;
     
     //加载用户模型
@@ -642,9 +638,10 @@ extern "C" void	DidLaunchOver() {
         tmpVC = [[MapVC alloc] initWithNibName:@"MapVC" bundle:nil];
     }
     
-    [[[UnityGetMainWindow() rootViewController] view] setHidden: YES];
     [UnityGetMainWindow() setRootViewController:tmpVC];
     [UnityGetMainWindow() makeKeyAndVisible];
+    
+    UnityPause(YES);
 }
 
 //触发返回

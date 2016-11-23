@@ -146,40 +146,40 @@
 #pragma mark - UIImagePickerControllerDelegate
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
-    NSLog(@"info %@", info);
-    
     UIImage *editedImage = info[UIImagePickerControllerEditedImage];
     
-    [picker hud_showLoadingWithMsg:@"正在上传..."];
+    __weak AvatarListVC *weakSelf = self;
     
-    [[SessionNetwork defaultNetwork] aliyuOSS_putImage:editedImage completePercent:^(CGFloat percent) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [picker hud_showPercent:[NSString stringWithFormat:@"正在上传... %.2f%%", percent * 100]];
-        });
+    [picker dismissViewControllerAnimated:YES completion:^{
         
-    } success:^(id response) {
-        NSLog(@"response %@", response);
+        [weakSelf hud_showLoadingWithMsg:@"正在上传..."];
         
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [picker hud_showPercent:@"正在同步到服务器..."];
+        [[SessionNetwork defaultNetwork] aliyuOSS_putImage:editedImage completePercent:^(CGFloat percent) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [weakSelf hud_showPercent:[NSString stringWithFormat:@"正在上传... %.2f%%", percent * 100]];
+            });
             
-            [User userInfoUpdateWithUserId:GetAppController().loginUser.userId type:UserInfoAvatar value:response completeBlock:^(BOOL success, id response, NSString *errStr) {
-                if (success) {
-                    [picker hud_hideQuick];
-                    
-                    [picker dismissViewControllerAnimated:YES completion:nil];
-                    
-                } else {
-                    [picker hud_hideLoadingWithErrorMsg:errStr];
-                }
-            }];
-        });
-        
-    } failure:^(NSUInteger errorCode, NSString *errorMsg) {
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [picker hud_hideLoadingWithErrorMsg:errorMsg];
-        });
+        } success:^(id response) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [weakSelf hud_showPercent:@"正在同步到服务器..."];
+                
+                [User userInfoUpdateWithUserId:GetAppController().loginUser.userId type:UserInfoAvatar value:response completeBlock:^(BOOL success, id response, NSString *errStr) {
+                    if (success) {
+                        [weakSelf hud_hideLoadingWithSuccessMsg:@"上传成功"];
+                        [weakSelf.navigationController popViewControllerAnimated:YES];
+                        
+                    } else {
+                        [weakSelf hud_hideLoadingWithErrorMsg:errStr];
+                    }
+                }];
+            });
+            
+        } failure:^(NSUInteger errorCode, NSString *errorMsg) {
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [weakSelf hud_hideLoadingWithErrorMsg:errorMsg];
+            });
+        }];
     }];
 }
 

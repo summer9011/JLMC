@@ -22,6 +22,8 @@
 @property (nonatomic, weak) MAMapView       *mapView;
 @property (nonatomic, strong) MAAnnotationView *userLocationAnnotationView;
 
+@property (nonatomic, assign) BOOL needReloadUserAnno;
+
 @end
 
 @implementation NearbyVC
@@ -31,8 +33,11 @@
     // Do any additional setup after loading the view from its nib.
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadNearbyUser) name:Notification_NearbyUser object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadUserAnno) name:Notification_NearbyUserAnno object:nil];
     
     self.title = @"附近玩家";
+    
+    self.needReloadUserAnno = NO;
     
     [self addMapView];
     [self reloadNearbyUser];
@@ -45,6 +50,11 @@
     
     if (self.mapView) {
         self.mapView.delegate = self;
+        
+        if (self.needReloadUserAnno && self.userLocationAnnotationView) {
+            self.needReloadUserAnno = NO;
+            [self mapView:self.mapView viewForAnnotation:self.userLocationAnnotationView.annotation];
+        }
     }
 }
 
@@ -79,6 +89,7 @@
     self.mapView = nil;
     
     [[NSNotificationCenter defaultCenter] removeObserver:self name:Notification_NearbyUser object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:Notification_NearbyUserAnno object:nil];
 }
 
 - (void)addMapView {
@@ -132,6 +143,10 @@
     
     [self.mapView removeAnnotations:removeArr];
     [self.mapView addAnnotations:userAnnoArr];
+}
+
+- (void)reloadUserAnno {
+    self.needReloadUserAnno = YES;
 }
 
 #pragma mark - MAMapViewDelegate

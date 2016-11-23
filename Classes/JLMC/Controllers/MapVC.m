@@ -55,6 +55,8 @@
 @property (nonatomic, weak) MAMapView       *mapView;
 @property (nonatomic, strong) MAAnnotationView *userLocationAnnotationView;
 
+@property (nonatomic, assign) BOOL needReloadUserAnno;
+
 @end
 
 @implementation MapVC
@@ -67,12 +69,14 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadNearbyElf) name:Notification_NearbyElf object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadNearbySupply) name:Notification_NearbySupply object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadNearbyPersonalSupply) name:Notification_NearbyPersonalSupply object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadUserAnno) name:Notification_UserAnno object:nil];
     
     [GetAppController() addObserver:self forKeyPath:@"haveNearbyPlayer" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
     [GetAppController() addObserver:self forKeyPath:@"movementProgress" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
     
     self.userLocation = nil;
     self.selectedElfId = 0;
+    self.needReloadUserAnno = NO;
     
     [self addMapView];
     [self addMovement];
@@ -97,6 +101,11 @@
     
     if (self.mapView) {
         self.mapView.delegate = self;
+        
+        if (self.needReloadUserAnno && self.userLocationAnnotationView) {
+            self.needReloadUserAnno = NO;
+            [self mapView:self.mapView viewForAnnotation:self.userLocationAnnotationView.annotation];
+        }
     }
 }
 
@@ -134,6 +143,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:Notification_NearbyElf object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:Notification_NearbySupply object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:Notification_NearbyPersonalSupply object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:Notification_UserAnno object:nil];
     
     [GetAppController() removeObserver:self forKeyPath:@"haveNearbyPlayer"];
     [GetAppController() removeObserver:self forKeyPath:@"movementProgress"];
@@ -394,6 +404,10 @@
     
 }
 
+- (void)reloadUserAnno {
+    self.needReloadUserAnno = YES;
+}
+
 - (void)reloadMovement {
     CGFloat layerWidth = CGRectGetWidth(self.movementView.frame) * GetAppController().movementProgress;
     self.progressLayer.bounds = CGRectMake(self.progressLayer.bounds.origin.x, self.progressLayer.bounds.origin.y, layerWidth, self.progressLayer.bounds.size.height);
@@ -446,17 +460,12 @@
         }
             break;
         case MenuItemSpirit: {
-//            UnityPause(NO);
-//            UnitySendMessage(UnityObj, UnityMethod, UnityMySpirit);
-//            BaseNaviVC *naviVC = [[BaseNaviVC alloc] initWithRootViewController:GetAppController().rootViewController];
-//            [naviVC setNavigationBarHidden:YES];
-//            [self presentViewController:naviVC animated:YES completion:nil];
-            
-            [UnityGetMainWindow() setRootViewController:GetAppController().rootViewController];
-            
-            [[[UnityGetMainWindow() rootViewController] view] setHidden:NO];
-            [UnityGetMainWindow() makeKeyAndVisible];
             UnityPause(NO);
+            UnitySendMessage(UnityObj, UnityMethod, UnityMySpirit);
+            
+            BaseNaviVC *naviVC = [[BaseNaviVC alloc] initWithRootViewController:GetAppController().rootViewController];
+            [naviVC setNavigationBarHidden:YES];
+            [self presentViewController:naviVC animated:YES completion:nil];
             
         }
             break;
@@ -583,9 +592,9 @@
         if ([elfAnno.elfDic[@"canCatch"] boolValue]) {
             self.selectedElfId = [elfAnno.elfDic[@"poiElfId"] integerValue];
             
-//            UnityPause(NO);
+            UnityPause(NO);
 
-//            UnitySendMessage(UnityObj, UnityMethod, UnityMyCatch);
+            UnitySendMessage(UnityObj, UnityMethod, UnityMyCatch);
             
             BaseNaviVC *naviVC = [[BaseNaviVC alloc] initWithRootViewController:GetAppController().rootViewController];
             [naviVC setNavigationBarHidden:YES];
@@ -619,6 +628,7 @@
         
     } else if ([keyPath isEqualToString:@"movementProgress"]) {
         [self reloadMovement];
+        
     }
     
 }
