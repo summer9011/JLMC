@@ -90,13 +90,11 @@ UnityEngine.Animator::StringToHash
 UnityEngine.Animator::Play
 UnityEngine.Animator::Update
 UnityEngine.Animator::GetCurrentAnimatorStateInfo
-UnityEngine.Application::HasUserAuthorization
 UnityEngine.Application::get_isEditor
 UnityEngine.Application::get_isPlaying
 UnityEngine.Application::get_persistentDataPath
 UnityEngine.Application::get_streamingAssetsPath
 UnityEngine.Application::OpenURL
-UnityEngine.Application::RequestUserAuthorization
 UnityEngine.Application::get_platform
 UnityEngine.AssetBundle::Unload
 UnityEngine.AssetBundle::LoadAsset_Internal
@@ -604,11 +602,6 @@ UnityEngine.Transform::Find
 UnityEngine.Transform::GetChild
 UnityEngine.Transform::get_parentInternal
 UnityEngine.UnhandledExceptionHandler::NativeUnhandledExceptionHandler
-UnityEngine.WebCamTexture::get_isPlaying
-UnityEngine.WebCamTexture::INTERNAL_CALL_Play
-UnityEngine.WebCamTexture::INTERNAL_CALL_Stop
-UnityEngine.WebCamTexture::Internal_CreateWebCamTexture
-UnityEngine.WebCamTexture::get_devices
 UnityEngine.WWW::get_isDone
 UnityEngine.WWW::get_bytes
 UnityEngine.WWW::get_error

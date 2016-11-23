@@ -85,9 +85,6 @@ struct Object_t1181371020;
 struct Object_t1181371020_marshaled_pinvoke;
 // UnityEngine.Animator
 struct Animator_t2442207934;
-// UnityEngine.AsyncOperation
-struct AsyncOperation_t471317734;
-struct AsyncOperation_t471317734_marshaled_pinvoke;
 // UnityEngine.Application/LogCallback
 struct LogCallback_t3945898503;
 // UnityEngine.AssemblyIsEditorAssembly
@@ -101,6 +98,9 @@ struct AssetBundleRequest_t3328028148;
 struct AssetBundleRequest_t3328028148_marshaled_pinvoke;
 // UnityEngine.Object[]
 struct ObjectU5BU5D_t2631032261;
+// UnityEngine.AsyncOperation
+struct AsyncOperation_t471317734;
+struct AsyncOperation_t471317734_marshaled_pinvoke;
 // System.Type[]
 struct TypeU5BU5D_t2442356668;
 // UnityEngine.AudioClip
@@ -317,8 +317,6 @@ struct ScrollViewState_t1564593597;
 #include "UnityEngine_UnityEngine_LogType3079013523.h"
 #include "UnityEngine_UnityEngine_Application_LogCallback3945898503MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Application_LogCallback3945898503.h"
-#include "UnityEngine_UnityEngine_UserAuthorization3879940717.h"
-#include "UnityEngine_UnityEngine_AsyncOperation471317734.h"
 #include "UnityEngine_UnityEngine_SceneManagement_SceneManage834387985MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SceneManagement_LoadSceneM1598875467.h"
 #include "UnityEngine_UnityEngine_AssemblyIsEditorAssembly451463918.h"
@@ -334,6 +332,7 @@ struct ScrollViewState_t1564593597;
 #include "UnityEngine_UnityEngine_AsyncOperation471317734MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_AssetBundleRequest3328028148.h"
 #include "UnityEngine_UnityEngine_AssetBundleRequest3328028148MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_AsyncOperation471317734.h"
 #include "UnityEngine_UnityEngine_YieldInstruction1518686560MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_AttributeHelperEngine2090506847.h"
 #include "UnityEngine_UnityEngine_AttributeHelperEngine2090506847MethodDeclarations.h"
@@ -8545,24 +8544,6 @@ IL_0030:
 	{
 		return;
 	}
-}
-// UnityEngine.AsyncOperation UnityEngine.Application::RequestUserAuthorization(UnityEngine.UserAuthorization)
-extern "C"  AsyncOperation_t471317734 * Application_RequestUserAuthorization_m2712302050 (Il2CppObject * __this /* static, unused */, int32_t ___mode, const MethodInfo* method)
-{
-	typedef AsyncOperation_t471317734 * (*Application_RequestUserAuthorization_m2712302050_ftn) (int32_t);
-	static Application_RequestUserAuthorization_m2712302050_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Application_RequestUserAuthorization_m2712302050_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::RequestUserAuthorization(UnityEngine.UserAuthorization)");
-	return _il2cpp_icall_func(___mode);
-}
-// System.Boolean UnityEngine.Application::HasUserAuthorization(UnityEngine.UserAuthorization)
-extern "C"  bool Application_HasUserAuthorization_m3858687304 (Il2CppObject * __this /* static, unused */, int32_t ___mode, const MethodInfo* method)
-{
-	typedef bool (*Application_HasUserAuthorization_m3858687304_ftn) (int32_t);
-	static Application_HasUserAuthorization_m3858687304_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Application_HasUserAuthorization_m3858687304_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::HasUserAuthorization(UnityEngine.UserAuthorization)");
-	return _il2cpp_icall_func(___mode);
 }
 // System.Void UnityEngine.Application::LoadLevel(System.String)
 extern "C"  void Application_LoadLevel_m393995325 (Il2CppObject * __this /* static, unused */, String_t* ___name, const MethodInfo* method)

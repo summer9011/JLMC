@@ -135,10 +135,6 @@ struct WaitForFixedUpdate_t3011942582;
 // UnityEngine.WaitForSeconds
 struct WaitForSeconds_t1717981302;
 struct WaitForSeconds_t1717981302_marshaled_pinvoke;
-// UnityEngine.WebCamTexture
-struct WebCamTexture_t4098188425;
-// UnityEngine.WebCamDevice[]
-struct WebCamDeviceU5BU5D_t1870489771;
 // UnityEngine.WrapperlessIcall
 struct WrapperlessIcall_t1871166592;
 // UnityEngine.WritableAttribute
@@ -386,8 +382,6 @@ struct TypeInferenceRuleAttribute_t2532277353;
 #include "mscorlib_System_Runtime_Serialization_StreamingCon3848318932.h"
 #include "UnityEngine_UnityEngine_UnityString2421250917.h"
 #include "UnityEngine_UnityEngine_UnityString2421250917MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_UserAuthorization3879940717.h"
-#include "UnityEngine_UnityEngine_UserAuthorization3879940717MethodDeclarations.h"
 #include "mscorlib_System_Single1791520093MethodDeclarations.h"
 #include "mscorlib_System_IndexOutOfRangeException2471718156MethodDeclarations.h"
 #include "mscorlib_System_IndexOutOfRangeException2471718156.h"
@@ -400,10 +394,6 @@ struct TypeInferenceRuleAttribute_t2532277353;
 #include "UnityEngine_UnityEngine_WaitForFixedUpdate3011942582MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_WaitForSeconds1717981302.h"
 #include "UnityEngine_UnityEngine_WaitForSeconds1717981302MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_WebCamDevice138406174.h"
-#include "UnityEngine_UnityEngine_WebCamDevice138406174MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_WebCamTexture4098188425.h"
-#include "UnityEngine_UnityEngine_WebCamTexture4098188425MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_WrapperlessIcall1871166592.h"
 #include "UnityEngine_UnityEngine_WrapperlessIcall1871166592MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_WritableAttribute379027929.h"
@@ -10247,125 +10237,6 @@ extern "C" void WaitForSeconds_t1717981302_marshal_com_back(const WaitForSeconds
 // Conversion method for clean up from marshalling of: UnityEngine.WaitForSeconds
 extern "C" void WaitForSeconds_t1717981302_marshal_com_cleanup(WaitForSeconds_t1717981302_marshaled_com& marshaled)
 {
-}
-// System.String UnityEngine.WebCamDevice::get_name()
-extern "C"  String_t* WebCamDevice_get_name_m1117076425 (WebCamDevice_t138406174 * __this, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = __this->get_m_Name_0();
-		return L_0;
-	}
-}
-// Conversion methods for marshalling of: UnityEngine.WebCamDevice
-extern "C" void WebCamDevice_t138406174_marshal_pinvoke(const WebCamDevice_t138406174& unmarshaled, WebCamDevice_t138406174_marshaled_pinvoke& marshaled)
-{
-	marshaled.___m_Name_0 = il2cpp_codegen_marshal_string(unmarshaled.get_m_Name_0());
-	marshaled.___m_Flags_1 = unmarshaled.get_m_Flags_1();
-}
-extern "C" void WebCamDevice_t138406174_marshal_pinvoke_back(const WebCamDevice_t138406174_marshaled_pinvoke& marshaled, WebCamDevice_t138406174& unmarshaled)
-{
-	unmarshaled.set_m_Name_0(il2cpp_codegen_marshal_string_result(marshaled.___m_Name_0));
-	int32_t unmarshaled_m_Flags_temp = 0;
-	unmarshaled_m_Flags_temp = marshaled.___m_Flags_1;
-	unmarshaled.set_m_Flags_1(unmarshaled_m_Flags_temp);
-}
-// Conversion method for clean up from marshalling of: UnityEngine.WebCamDevice
-extern "C" void WebCamDevice_t138406174_marshal_pinvoke_cleanup(WebCamDevice_t138406174_marshaled_pinvoke& marshaled)
-{
-	il2cpp_codegen_marshal_free(marshaled.___m_Name_0);
-	marshaled.___m_Name_0 = NULL;
-}
-// Conversion methods for marshalling of: UnityEngine.WebCamDevice
-extern "C" void WebCamDevice_t138406174_marshal_com(const WebCamDevice_t138406174& unmarshaled, WebCamDevice_t138406174_marshaled_com& marshaled)
-{
-	marshaled.___m_Name_0 = il2cpp_codegen_marshal_bstring(unmarshaled.get_m_Name_0());
-	marshaled.___m_Flags_1 = unmarshaled.get_m_Flags_1();
-}
-extern "C" void WebCamDevice_t138406174_marshal_com_back(const WebCamDevice_t138406174_marshaled_com& marshaled, WebCamDevice_t138406174& unmarshaled)
-{
-	unmarshaled.set_m_Name_0(il2cpp_codegen_marshal_bstring_result(marshaled.___m_Name_0));
-	int32_t unmarshaled_m_Flags_temp = 0;
-	unmarshaled_m_Flags_temp = marshaled.___m_Flags_1;
-	unmarshaled.set_m_Flags_1(unmarshaled_m_Flags_temp);
-}
-// Conversion method for clean up from marshalling of: UnityEngine.WebCamDevice
-extern "C" void WebCamDevice_t138406174_marshal_com_cleanup(WebCamDevice_t138406174_marshaled_com& marshaled)
-{
-	il2cpp_codegen_marshal_free_bstring(marshaled.___m_Name_0);
-	marshaled.___m_Name_0 = NULL;
-}
-// System.Void UnityEngine.WebCamTexture::.ctor(System.String,System.Int32,System.Int32)
-extern "C"  void WebCamTexture__ctor_m4161111579 (WebCamTexture_t4098188425 * __this, String_t* ___deviceName, int32_t ___requestedWidth, int32_t ___requestedHeight, const MethodInfo* method)
-{
-	{
-		Texture__ctor_m4198984292(__this, /*hidden argument*/NULL);
-		String_t* L_0 = ___deviceName;
-		int32_t L_1 = ___requestedWidth;
-		int32_t L_2 = ___requestedHeight;
-		WebCamTexture_Internal_CreateWebCamTexture_m1601948981(NULL /*static, unused*/, __this, L_0, L_1, L_2, 0, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.WebCamTexture::Internal_CreateWebCamTexture(UnityEngine.WebCamTexture,System.String,System.Int32,System.Int32,System.Int32)
-extern "C"  void WebCamTexture_Internal_CreateWebCamTexture_m1601948981 (Il2CppObject * __this /* static, unused */, WebCamTexture_t4098188425 * ___self, String_t* ___scriptingDevice, int32_t ___requestedWidth, int32_t ___requestedHeight, int32_t ___maxFramerate, const MethodInfo* method)
-{
-	typedef void (*WebCamTexture_Internal_CreateWebCamTexture_m1601948981_ftn) (WebCamTexture_t4098188425 *, String_t*, int32_t, int32_t, int32_t);
-	static WebCamTexture_Internal_CreateWebCamTexture_m1601948981_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (WebCamTexture_Internal_CreateWebCamTexture_m1601948981_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WebCamTexture::Internal_CreateWebCamTexture(UnityEngine.WebCamTexture,System.String,System.Int32,System.Int32,System.Int32)");
-	_il2cpp_icall_func(___self, ___scriptingDevice, ___requestedWidth, ___requestedHeight, ___maxFramerate);
-}
-// System.Void UnityEngine.WebCamTexture::Play()
-extern "C"  void WebCamTexture_Play_m1997372813 (WebCamTexture_t4098188425 * __this, const MethodInfo* method)
-{
-	{
-		WebCamTexture_INTERNAL_CALL_Play_m3743409567(NULL /*static, unused*/, __this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.WebCamTexture::INTERNAL_CALL_Play(UnityEngine.WebCamTexture)
-extern "C"  void WebCamTexture_INTERNAL_CALL_Play_m3743409567 (Il2CppObject * __this /* static, unused */, WebCamTexture_t4098188425 * ___self, const MethodInfo* method)
-{
-	typedef void (*WebCamTexture_INTERNAL_CALL_Play_m3743409567_ftn) (WebCamTexture_t4098188425 *);
-	static WebCamTexture_INTERNAL_CALL_Play_m3743409567_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (WebCamTexture_INTERNAL_CALL_Play_m3743409567_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WebCamTexture::INTERNAL_CALL_Play(UnityEngine.WebCamTexture)");
-	_il2cpp_icall_func(___self);
-}
-// System.Void UnityEngine.WebCamTexture::Stop()
-extern "C"  void WebCamTexture_Stop_m4045220381 (WebCamTexture_t4098188425 * __this, const MethodInfo* method)
-{
-	{
-		WebCamTexture_INTERNAL_CALL_Stop_m3253711615(NULL /*static, unused*/, __this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.WebCamTexture::INTERNAL_CALL_Stop(UnityEngine.WebCamTexture)
-extern "C"  void WebCamTexture_INTERNAL_CALL_Stop_m3253711615 (Il2CppObject * __this /* static, unused */, WebCamTexture_t4098188425 * ___self, const MethodInfo* method)
-{
-	typedef void (*WebCamTexture_INTERNAL_CALL_Stop_m3253711615_ftn) (WebCamTexture_t4098188425 *);
-	static WebCamTexture_INTERNAL_CALL_Stop_m3253711615_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (WebCamTexture_INTERNAL_CALL_Stop_m3253711615_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WebCamTexture::INTERNAL_CALL_Stop(UnityEngine.WebCamTexture)");
-	_il2cpp_icall_func(___self);
-}
-// System.Boolean UnityEngine.WebCamTexture::get_isPlaying()
-extern "C"  bool WebCamTexture_get_isPlaying_m1392703560 (WebCamTexture_t4098188425 * __this, const MethodInfo* method)
-{
-	typedef bool (*WebCamTexture_get_isPlaying_m1392703560_ftn) (WebCamTexture_t4098188425 *);
-	static WebCamTexture_get_isPlaying_m1392703560_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (WebCamTexture_get_isPlaying_m1392703560_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WebCamTexture::get_isPlaying()");
-	return _il2cpp_icall_func(__this);
-}
-// UnityEngine.WebCamDevice[] UnityEngine.WebCamTexture::get_devices()
-extern "C"  WebCamDeviceU5BU5D_t1870489771* WebCamTexture_get_devices_m4137524804 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
-{
-	typedef WebCamDeviceU5BU5D_t1870489771* (*WebCamTexture_get_devices_m4137524804_ftn) ();
-	static WebCamTexture_get_devices_m4137524804_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (WebCamTexture_get_devices_m4137524804_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.WebCamTexture::get_devices()");
-	return _il2cpp_icall_func();
 }
 // System.Void UnityEngine.WrapperlessIcall::.ctor()
 extern "C"  void WrapperlessIcall__ctor_m4149541650 (WrapperlessIcall_t1871166592 * __this, const MethodInfo* method)

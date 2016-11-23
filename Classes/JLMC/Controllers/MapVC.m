@@ -105,12 +105,12 @@
     self.mapView.showsUserLocation = YES;
     self.mapView.userTrackingMode = MAUserTrackingModeFollow;
     
-    NSDictionary *configDic = [[NSUserDefaults standardUserDefaults] dictionaryForKey:UserDefaults_Config];
-    if (configDic[UserDefaults_Config_minZoomLevel]) {
-        [self.mapView setZoomLevel:[configDic[UserDefaults_Config_defaultZoomLevel] floatValue] animated:YES];
-    } else {
+//    NSDictionary *configDic = [[NSUserDefaults standardUserDefaults] dictionaryForKey:UserDefaults_Config];
+//    if (configDic[UserDefaults_Config_defaultZoomLevel]) {
+//        [self.mapView setZoomLevel:[configDic[UserDefaults_Config_defaultZoomLevel] floatValue] animated:YES];
+//    } else {
         [self.mapView setZoomLevel:18 animated:YES];
-    }
+//    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -145,7 +145,7 @@
     mapView.delegate = self;
     mapView.showsCompass = NO;
     mapView.showsScale = NO;
-    mapView.scrollEnabled = NO;
+//    mapView.scrollEnabled = NO;
     mapView.rotateCameraEnabled = NO;
     mapView.allowsBackgroundLocationUpdates = YES;
     mapView.customizeUserLocationAccuracyCircleRepresentation = YES;
@@ -157,11 +157,11 @@
         mapView.minZoomLevel = 16;
     }
     
-    if (configDic[UserDefaults_Config_maxZoomLevel]) {
-        mapView.maxZoomLevel = [configDic[UserDefaults_Config_maxZoomLevel] floatValue];
-    } else {
+//    if (configDic[UserDefaults_Config_maxZoomLevel]) {
+//        mapView.maxZoomLevel = [configDic[UserDefaults_Config_maxZoomLevel] floatValue];
+//    } else {
         mapView.maxZoomLevel = 19;
-    }
+//    }
     
     [self.view addSubview:mapView];
     
@@ -309,6 +309,15 @@
     if (iconArr != nil) {
         [self.menuBtn sd_setImageWithURL:[NSURL URLWithString:iconArr[0][@"icon"]] forState:UIControlStateNormal];
         [self.nearbyBtn sd_setImageWithURL:[NSURL URLWithString:iconArr[1][@"icon"]] forState:UIControlStateNormal];
+        
+        self.menuBtn.imageEdgeInsets = UIEdgeInsetsZero;
+        self.nearbyBtn.imageEdgeInsets = UIEdgeInsetsZero;
+        
+        self.menuBtn.imageView.frame = CGRectMake(0, 0, CGRectGetWidth(self.menuBtn.frame), CGRectGetHeight(self.menuBtn.frame));
+        self.nearbyBtn.imageView.frame = CGRectMake(0, 0, CGRectGetWidth(self.nearbyBtn.frame), CGRectGetHeight(self.nearbyBtn.frame));
+        
+//        [self.menuBtn setImage:[UIImage imageNamed:@"SyMenuIcon"] forState:UIControlStateNormal];
+//        [self.nearbyBtn setImage:[UIImage imageNamed:@"StNearbyIcon"] forState:UIControlStateNormal];
         
         [[MenuView sharedMenuView] reloadIcons:[iconArr subarrayWithRange:NSMakeRange(2, iconArr.count - 2)]];
     } else {

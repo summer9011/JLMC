@@ -157,8 +157,6 @@ struct IEnumerator_1_t3062426054;
 struct IEnumerator_1_t3062426053;
 // System.Collections.Generic.IEnumerator`1<UnityEngine.Vector4>
 struct IEnumerator_1_t3062426052;
-// System.Collections.Generic.IEnumerator`1<UnityEngine.WebCamDevice>
-struct IEnumerator_1_t2735214430;
 // System.Collections.Generic.List`1<System.Object>
 struct List_1_t4114307779;
 // System.Collections.ObjectModel.ReadOnlyCollection`1<System.Object>
@@ -289,8 +287,6 @@ struct Vector2U5BU5D_t1383993251;
 struct Vector3U5BU5D_t897805512;
 // UnityEngine.Vector4[]
 struct Vector4U5BU5D_t411617773;
-// UnityEngine.WebCamDevice[]
-struct WebCamDeviceU5BU5D_t1870489771;
 // System.Comparison`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>
 struct Comparison_1_t1780930352;
 // System.Comparison`1<System.Int32>
@@ -473,7 +469,6 @@ struct Converter_2_t4179763568;
 #include "UnityEngine_UnityEngine_Vector3465617797MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Vector4465617796.h"
 #include "UnityEngine_UnityEngine_Vector4465617796MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_WebCamDevice138406174.h"
 #include "mscorlib_System_NotSupportedException3178859535MethodDeclarations.h"
 #include "mscorlib_System_NotSupportedException3178859535.h"
 #include "System_Core_System_Linq_Enumerable643706207.h"
@@ -599,8 +594,6 @@ struct Converter_2_t4179763568;
 #include "mscorlib_System_Array_InternalEnumerator_1_gen3495499574MethodDeclarations.h"
 #include "mscorlib_System_Array_InternalEnumerator_1_gen3495499573.h"
 #include "mscorlib_System_Array_InternalEnumerator_1_gen3495499573MethodDeclarations.h"
-#include "mscorlib_System_Array_InternalEnumerator_1_gen3168287951.h"
-#include "mscorlib_System_Array_InternalEnumerator_1_gen3168287951MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen4114307779.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen4114307779MethodDeclarations.h"
 #include "mscorlib_System_Collections_ObjectModel_ReadOnlyCo3807552612.h"
@@ -1141,12 +1134,6 @@ extern "C"  bool Array_InternalArray__ICollection_Contains_TisVector4_t465617796
 // System.Void System.Array::GetGenericValueImpl<UnityEngine.Vector4>(System.Int32,!!0&)
 extern "C"  void Array_GetGenericValueImpl_TisVector4_t465617796_m870130081_gshared (Il2CppArray * __this, int32_t p0, Vector4_t465617796 * p1, const MethodInfo* method);
 #define Array_GetGenericValueImpl_TisVector4_t465617796_m870130081(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, Vector4_t465617796 *, const MethodInfo*))Array_GetGenericValueImpl_TisVector4_t465617796_m870130081_gshared)(__this, p0, p1, method)
-// System.Boolean System.Array::InternalArray__ICollection_Contains<UnityEngine.WebCamDevice>(T)
-extern "C"  bool Array_InternalArray__ICollection_Contains_TisWebCamDevice_t138406174_m1607011389_gshared (Il2CppArray * __this, WebCamDevice_t138406174  ___item, const MethodInfo* method);
-#define Array_InternalArray__ICollection_Contains_TisWebCamDevice_t138406174_m1607011389(__this, ___item, method) ((  bool (*) (Il2CppArray *, WebCamDevice_t138406174 , const MethodInfo*))Array_InternalArray__ICollection_Contains_TisWebCamDevice_t138406174_m1607011389_gshared)(__this, ___item, method)
-// System.Void System.Array::GetGenericValueImpl<UnityEngine.WebCamDevice>(System.Int32,!!0&)
-extern "C"  void Array_GetGenericValueImpl_TisWebCamDevice_t138406174_m1105084483_gshared (Il2CppArray * __this, int32_t p0, WebCamDevice_t138406174 * p1, const MethodInfo* method);
-#define Array_GetGenericValueImpl_TisWebCamDevice_t138406174_m1105084483(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, WebCamDevice_t138406174 *, const MethodInfo*))Array_GetGenericValueImpl_TisWebCamDevice_t138406174_m1105084483_gshared)(__this, p0, p1, method)
 // System.Boolean System.Array::InternalArray__ICollection_Remove<EasyAR.Vector2I>(T)
 extern "C"  bool Array_InternalArray__ICollection_Remove_TisVector2I_t2584456199_m2415967089_gshared (Il2CppArray * __this, Vector2I_t2584456199  ___item, const MethodInfo* method);
 #define Array_InternalArray__ICollection_Remove_TisVector2I_t2584456199_m2415967089(__this, ___item, method) ((  bool (*) (Il2CppArray *, Vector2I_t2584456199 , const MethodInfo*))Array_InternalArray__ICollection_Remove_TisVector2I_t2584456199_m2415967089_gshared)(__this, ___item, method)
@@ -1318,9 +1305,6 @@ extern "C"  bool Array_InternalArray__ICollection_Remove_TisVector3_t465617797_m
 // System.Boolean System.Array::InternalArray__ICollection_Remove<UnityEngine.Vector4>(T)
 extern "C"  bool Array_InternalArray__ICollection_Remove_TisVector4_t465617796_m3881492104_gshared (Il2CppArray * __this, Vector4_t465617796  ___item, const MethodInfo* method);
 #define Array_InternalArray__ICollection_Remove_TisVector4_t465617796_m3881492104(__this, ___item, method) ((  bool (*) (Il2CppArray *, Vector4_t465617796 , const MethodInfo*))Array_InternalArray__ICollection_Remove_TisVector4_t465617796_m3881492104_gshared)(__this, ___item, method)
-// System.Boolean System.Array::InternalArray__ICollection_Remove<UnityEngine.WebCamDevice>(T)
-extern "C"  bool Array_InternalArray__ICollection_Remove_TisWebCamDevice_t138406174_m3449855242_gshared (Il2CppArray * __this, WebCamDevice_t138406174  ___item, const MethodInfo* method);
-#define Array_InternalArray__ICollection_Remove_TisWebCamDevice_t138406174_m3449855242(__this, ___item, method) ((  bool (*) (Il2CppArray *, WebCamDevice_t138406174 , const MethodInfo*))Array_InternalArray__ICollection_Remove_TisWebCamDevice_t138406174_m3449855242_gshared)(__this, ___item, method)
 // System.Boolean System.Array::TrueForAll<System.Object>(T[],System.Predicate`1<T>)
 extern "C"  bool Array_TrueForAll_TisIl2CppObject_m3052765269_gshared (Il2CppObject * __this /* static, unused */, ObjectU5BU5D_t3632007997* ___array, Predicate_1_t4115352452 * ___match, const MethodInfo* method);
 #define Array_TrueForAll_TisIl2CppObject_m3052765269(__this /* static, unused */, ___array, ___match, method) ((  bool (*) (Il2CppObject * /* static, unused */, ObjectU5BU5D_t3632007997*, Predicate_1_t4115352452 *, const MethodInfo*))Array_TrueForAll_TisIl2CppObject_m3052765269_gshared)(__this /* static, unused */, ___array, ___match, method)
@@ -1507,9 +1491,6 @@ extern "C"  Il2CppObject* Array_InternalArray__IEnumerable_GetEnumerator_TisVect
 // System.Collections.Generic.IEnumerator`1<T> System.Array::InternalArray__IEnumerable_GetEnumerator<UnityEngine.Vector4>()
 extern "C"  Il2CppObject* Array_InternalArray__IEnumerable_GetEnumerator_TisVector4_t465617796_m829381058_gshared (Il2CppArray * __this, const MethodInfo* method);
 #define Array_InternalArray__IEnumerable_GetEnumerator_TisVector4_t465617796_m829381058(__this, method) ((  Il2CppObject* (*) (Il2CppArray *, const MethodInfo*))Array_InternalArray__IEnumerable_GetEnumerator_TisVector4_t465617796_m829381058_gshared)(__this, method)
-// System.Collections.Generic.IEnumerator`1<T> System.Array::InternalArray__IEnumerable_GetEnumerator<UnityEngine.WebCamDevice>()
-extern "C"  Il2CppObject* Array_InternalArray__IEnumerable_GetEnumerator_TisWebCamDevice_t138406174_m532504824_gshared (Il2CppArray * __this, const MethodInfo* method);
-#define Array_InternalArray__IEnumerable_GetEnumerator_TisWebCamDevice_t138406174_m532504824(__this, method) ((  Il2CppObject* (*) (Il2CppArray *, const MethodInfo*))Array_InternalArray__IEnumerable_GetEnumerator_TisWebCamDevice_t138406174_m532504824_gshared)(__this, method)
 // System.Collections.Generic.List`1<TSource> System.Linq.Enumerable::ToList<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>)
 extern "C"  List_1_t4114307779 * Enumerable_ToList_TisIl2CppObject_m3749257689_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject* ___source, const MethodInfo* method);
 #define Enumerable_ToList_TisIl2CppObject_m3749257689(__this /* static, unused */, ___source, method) ((  List_1_t4114307779 * (*) (Il2CppObject * /* static, unused */, Il2CppObject*, const MethodInfo*))Enumerable_ToList_TisIl2CppObject_m3749257689_gshared)(__this /* static, unused */, ___source, method)
@@ -1771,9 +1752,6 @@ extern "C"  int32_t Array_InternalArray__IndexOf_TisVector3_t465617797_m39493115
 // System.Int32 System.Array::InternalArray__IndexOf<UnityEngine.Vector4>(T)
 extern "C"  int32_t Array_InternalArray__IndexOf_TisVector4_t465617796_m752986485_gshared (Il2CppArray * __this, Vector4_t465617796  ___item, const MethodInfo* method);
 #define Array_InternalArray__IndexOf_TisVector4_t465617796_m752986485(__this, ___item, method) ((  int32_t (*) (Il2CppArray *, Vector4_t465617796 , const MethodInfo*))Array_InternalArray__IndexOf_TisVector4_t465617796_m752986485_gshared)(__this, ___item, method)
-// System.Int32 System.Array::InternalArray__IndexOf<UnityEngine.WebCamDevice>(T)
-extern "C"  int32_t Array_InternalArray__IndexOf_TisWebCamDevice_t138406174_m3731052603_gshared (Il2CppArray * __this, WebCamDevice_t138406174  ___item, const MethodInfo* method);
-#define Array_InternalArray__IndexOf_TisWebCamDevice_t138406174_m3731052603(__this, ___item, method) ((  int32_t (*) (Il2CppArray *, WebCamDevice_t138406174 , const MethodInfo*))Array_InternalArray__IndexOf_TisWebCamDevice_t138406174_m3731052603_gshared)(__this, ___item, method)
 // System.Int32 System.Array::LastIndexOf<System.Object>(T[],T)
 extern "C"  int32_t Array_LastIndexOf_TisIl2CppObject_m1962410007_gshared (Il2CppObject * __this /* static, unused */, ObjectU5BU5D_t3632007997* ___array, Il2CppObject * ___value, const MethodInfo* method);
 #define Array_LastIndexOf_TisIl2CppObject_m1962410007(__this /* static, unused */, ___array, ___value, method) ((  int32_t (*) (Il2CppObject * /* static, unused */, ObjectU5BU5D_t3632007997*, Il2CppObject *, const MethodInfo*))Array_LastIndexOf_TisIl2CppObject_m1962410007_gshared)(__this /* static, unused */, ___array, ___value, method)
@@ -1984,9 +1962,6 @@ extern "C"  void Array_InternalArray__ICollection_Add_TisVector3_t465617797_m698
 // System.Void System.Array::InternalArray__ICollection_Add<UnityEngine.Vector4>(T)
 extern "C"  void Array_InternalArray__ICollection_Add_TisVector4_t465617796_m698578249_gshared (Il2CppArray * __this, Vector4_t465617796  ___item, const MethodInfo* method);
 #define Array_InternalArray__ICollection_Add_TisVector4_t465617796_m698578249(__this, ___item, method) ((  void (*) (Il2CppArray *, Vector4_t465617796 , const MethodInfo*))Array_InternalArray__ICollection_Add_TisVector4_t465617796_m698578249_gshared)(__this, ___item, method)
-// System.Void System.Array::InternalArray__ICollection_Add<UnityEngine.WebCamDevice>(T)
-extern "C"  void Array_InternalArray__ICollection_Add_TisWebCamDevice_t138406174_m2493280539_gshared (Il2CppArray * __this, WebCamDevice_t138406174  ___item, const MethodInfo* method);
-#define Array_InternalArray__ICollection_Add_TisWebCamDevice_t138406174_m2493280539(__this, ___item, method) ((  void (*) (Il2CppArray *, WebCamDevice_t138406174 , const MethodInfo*))Array_InternalArray__ICollection_Add_TisWebCamDevice_t138406174_m2493280539_gshared)(__this, ___item, method)
 // System.Void System.Array::InternalArray__ICollection_CopyTo<EasyAR.Vector2I>(T[],System.Int32)
 extern "C"  void Array_InternalArray__ICollection_CopyTo_TisVector2I_t2584456199_m2699162834_gshared (Il2CppArray * __this, Vector2IU5BU5D_t3987642366* ___array, int32_t ___index, const MethodInfo* method);
 #define Array_InternalArray__ICollection_CopyTo_TisVector2I_t2584456199_m2699162834(__this, ___array, ___index, method) ((  void (*) (Il2CppArray *, Vector2IU5BU5D_t3987642366*, int32_t, const MethodInfo*))Array_InternalArray__ICollection_CopyTo_TisVector2I_t2584456199_m2699162834_gshared)(__this, ___array, ___index, method)
@@ -2158,9 +2133,6 @@ extern "C"  void Array_InternalArray__ICollection_CopyTo_TisVector3_t465617797_m
 // System.Void System.Array::InternalArray__ICollection_CopyTo<UnityEngine.Vector4>(T[],System.Int32)
 extern "C"  void Array_InternalArray__ICollection_CopyTo_TisVector4_t465617796_m3540791817_gshared (Il2CppArray * __this, Vector4U5BU5D_t411617773* ___array, int32_t ___index, const MethodInfo* method);
 #define Array_InternalArray__ICollection_CopyTo_TisVector4_t465617796_m3540791817(__this, ___array, ___index, method) ((  void (*) (Il2CppArray *, Vector4U5BU5D_t411617773*, int32_t, const MethodInfo*))Array_InternalArray__ICollection_CopyTo_TisVector4_t465617796_m3540791817_gshared)(__this, ___array, ___index, method)
-// System.Void System.Array::InternalArray__ICollection_CopyTo<UnityEngine.WebCamDevice>(T[],System.Int32)
-extern "C"  void Array_InternalArray__ICollection_CopyTo_TisWebCamDevice_t138406174_m2858310527_gshared (Il2CppArray * __this, WebCamDeviceU5BU5D_t1870489771* ___array, int32_t ___index, const MethodInfo* method);
-#define Array_InternalArray__ICollection_CopyTo_TisWebCamDevice_t138406174_m2858310527(__this, ___array, ___index, method) ((  void (*) (Il2CppArray *, WebCamDeviceU5BU5D_t1870489771*, int32_t, const MethodInfo*))Array_InternalArray__ICollection_CopyTo_TisWebCamDevice_t138406174_m2858310527_gshared)(__this, ___array, ___index, method)
 // System.Void System.Array::InternalArray__Insert<EasyAR.Vector2I>(System.Int32,T)
 extern "C"  void Array_InternalArray__Insert_TisVector2I_t2584456199_m2081131289_gshared (Il2CppArray * __this, int32_t ___index, Vector2I_t2584456199  ___item, const MethodInfo* method);
 #define Array_InternalArray__Insert_TisVector2I_t2584456199_m2081131289(__this, ___index, ___item, method) ((  void (*) (Il2CppArray *, int32_t, Vector2I_t2584456199 , const MethodInfo*))Array_InternalArray__Insert_TisVector2I_t2584456199_m2081131289_gshared)(__this, ___index, ___item, method)
@@ -2332,9 +2304,6 @@ extern "C"  void Array_InternalArray__Insert_TisVector3_t465617797_m3407722073_g
 // System.Void System.Array::InternalArray__Insert<UnityEngine.Vector4>(System.Int32,T)
 extern "C"  void Array_InternalArray__Insert_TisVector4_t465617796_m1643342708_gshared (Il2CppArray * __this, int32_t ___index, Vector4_t465617796  ___item, const MethodInfo* method);
 #define Array_InternalArray__Insert_TisVector4_t465617796_m1643342708(__this, ___index, ___item, method) ((  void (*) (Il2CppArray *, int32_t, Vector4_t465617796 , const MethodInfo*))Array_InternalArray__Insert_TisVector4_t465617796_m1643342708_gshared)(__this, ___index, ___item, method)
-// System.Void System.Array::InternalArray__Insert<UnityEngine.WebCamDevice>(System.Int32,T)
-extern "C"  void Array_InternalArray__Insert_TisWebCamDevice_t138406174_m2710654568_gshared (Il2CppArray * __this, int32_t ___index, WebCamDevice_t138406174  ___item, const MethodInfo* method);
-#define Array_InternalArray__Insert_TisWebCamDevice_t138406174_m2710654568(__this, ___index, ___item, method) ((  void (*) (Il2CppArray *, int32_t, WebCamDevice_t138406174 , const MethodInfo*))Array_InternalArray__Insert_TisWebCamDevice_t138406174_m2710654568_gshared)(__this, ___index, ___item, method)
 // System.Void System.Array::InternalArray__set_Item<EasyAR.Vector2I>(System.Int32,T)
 extern "C"  void Array_InternalArray__set_Item_TisVector2I_t2584456199_m3764411448_gshared (Il2CppArray * __this, int32_t ___index, Vector2I_t2584456199  ___item, const MethodInfo* method);
 #define Array_InternalArray__set_Item_TisVector2I_t2584456199_m3764411448(__this, ___index, ___item, method) ((  void (*) (Il2CppArray *, int32_t, Vector2I_t2584456199 , const MethodInfo*))Array_InternalArray__set_Item_TisVector2I_t2584456199_m3764411448_gshared)(__this, ___index, ___item, method)
@@ -2677,12 +2646,6 @@ extern "C"  void Array_InternalArray__set_Item_TisVector4_t465617796_m3878172417
 // System.Void System.Array::SetGenericValueImpl<UnityEngine.Vector4>(System.Int32,!!0&)
 extern "C"  void Array_SetGenericValueImpl_TisVector4_t465617796_m435545565_gshared (Il2CppArray * __this, int32_t p0, Vector4_t465617796 * p1, const MethodInfo* method);
 #define Array_SetGenericValueImpl_TisVector4_t465617796_m435545565(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, Vector4_t465617796 *, const MethodInfo*))Array_SetGenericValueImpl_TisVector4_t465617796_m435545565_gshared)(__this, p0, p1, method)
-// System.Void System.Array::InternalArray__set_Item<UnityEngine.WebCamDevice>(System.Int32,T)
-extern "C"  void Array_InternalArray__set_Item_TisWebCamDevice_t138406174_m3691520747_gshared (Il2CppArray * __this, int32_t ___index, WebCamDevice_t138406174  ___item, const MethodInfo* method);
-#define Array_InternalArray__set_Item_TisWebCamDevice_t138406174_m3691520747(__this, ___index, ___item, method) ((  void (*) (Il2CppArray *, int32_t, WebCamDevice_t138406174 , const MethodInfo*))Array_InternalArray__set_Item_TisWebCamDevice_t138406174_m3691520747_gshared)(__this, ___index, ___item, method)
-// System.Void System.Array::SetGenericValueImpl<UnityEngine.WebCamDevice>(System.Int32,!!0&)
-extern "C"  void Array_SetGenericValueImpl_TisWebCamDevice_t138406174_m3200363271_gshared (Il2CppArray * __this, int32_t p0, WebCamDevice_t138406174 * p1, const MethodInfo* method);
-#define Array_SetGenericValueImpl_TisWebCamDevice_t138406174_m3200363271(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, WebCamDevice_t138406174 *, const MethodInfo*))Array_SetGenericValueImpl_TisWebCamDevice_t138406174_m3200363271_gshared)(__this, p0, p1, method)
 // System.Void System.Array::qsort<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>(K[],V[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<K>)
 extern "C"  void Array_qsort_TisKeyValuePair_2_t1944347872_TisKeyValuePair_2_t1944347872_m2356159533_gshared (Il2CppObject * __this /* static, unused */, KeyValuePair_2U5BU5D_t2935491489* ___keys, KeyValuePair_2U5BU5D_t2935491489* ___items, int32_t ___low0, int32_t ___high0, Il2CppObject* ___comparer, const MethodInfo* method);
 #define Array_qsort_TisKeyValuePair_2_t1944347872_TisKeyValuePair_2_t1944347872_m2356159533(__this /* static, unused */, ___keys, ___items, ___low0, ___high0, ___comparer, method) ((  void (*) (Il2CppObject * /* static, unused */, KeyValuePair_2U5BU5D_t2935491489*, KeyValuePair_2U5BU5D_t2935491489*, int32_t, int32_t, Il2CppObject*, const MethodInfo*))Array_qsort_TisKeyValuePair_2_t1944347872_TisKeyValuePair_2_t1944347872_m2356159533_gshared)(__this /* static, unused */, ___keys, ___items, ___low0, ___high0, ___comparer, method)
@@ -3195,9 +3158,6 @@ extern "C"  Vector3_t465617797  Array_InternalArray__get_Item_TisVector3_t465617
 // T System.Array::InternalArray__get_Item<UnityEngine.Vector4>(System.Int32)
 extern "C"  Vector4_t465617796  Array_InternalArray__get_Item_TisVector4_t465617796_m3866288892_gshared (Il2CppArray * __this, int32_t ___index, const MethodInfo* method);
 #define Array_InternalArray__get_Item_TisVector4_t465617796_m3866288892(__this, ___index, method) ((  Vector4_t465617796  (*) (Il2CppArray *, int32_t, const MethodInfo*))Array_InternalArray__get_Item_TisVector4_t465617796_m3866288892_gshared)(__this, ___index, method)
-// T System.Array::InternalArray__get_Item<UnityEngine.WebCamDevice>(System.Int32)
-extern "C"  WebCamDevice_t138406174  Array_InternalArray__get_Item_TisWebCamDevice_t138406174_m919931200_gshared (Il2CppArray * __this, int32_t ___index, const MethodInfo* method);
-#define Array_InternalArray__get_Item_TisWebCamDevice_t138406174_m919931200(__this, ___index, method) ((  WebCamDevice_t138406174  (*) (Il2CppArray *, int32_t, const MethodInfo*))Array_InternalArray__get_Item_TisWebCamDevice_t138406174_m919931200_gshared)(__this, ___index, method)
 // T UITweener::Begin<System.Object>(UnityEngine.GameObject,System.Single)
 extern "C"  Il2CppObject * UITweener_Begin_TisIl2CppObject_m726876902_gshared (Il2CppObject * __this /* static, unused */, GameObject_t1366199518 * ___go, float ___duration, const MethodInfo* method);
 #define UITweener_Begin_TisIl2CppObject_m726876902(__this /* static, unused */, ___go, ___duration, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, GameObject_t1366199518 *, float, const MethodInfo*))UITweener_Begin_TisIl2CppObject_m726876902_gshared)(__this /* static, unused */, ___go, ___duration, method)
@@ -10659,102 +10619,6 @@ IL_006b:
 		return (bool)0;
 	}
 }
-// System.Boolean System.Array::InternalArray__ICollection_Contains<UnityEngine.WebCamDevice>(T)
-// System.Boolean System.Array::InternalArray__ICollection_Contains<UnityEngine.WebCamDevice>(T)
-extern TypeInfo* RankException_t2896918200_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral3431013888;
-extern const uint32_t Array_InternalArray__ICollection_Contains_TisWebCamDevice_t138406174_m1607011389_MetadataUsageId;
-extern "C"  bool Array_InternalArray__ICollection_Contains_TisWebCamDevice_t138406174_m1607011389_gshared (Il2CppArray * __this, WebCamDevice_t138406174  ___item, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Array_InternalArray__ICollection_Contains_TisWebCamDevice_t138406174_m1607011389_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	int32_t V_0 = 0;
-	int32_t V_1 = 0;
-	WebCamDevice_t138406174  V_2;
-	memset(&V_2, 0, sizeof(V_2));
-	{
-		NullCheck((Il2CppArray *)__this);
-		int32_t L_0 = Array_get_Rank_m3837250695((Il2CppArray *)__this, /*hidden argument*/NULL);
-		if ((((int32_t)L_0) <= ((int32_t)1)))
-		{
-			goto IL_001c;
-		}
-	}
-	{
-		String_t* L_1 = Locale_GetText_m1954433032(NULL /*static, unused*/, (String_t*)_stringLiteral3431013888, /*hidden argument*/NULL);
-		RankException_t2896918200 * L_2 = (RankException_t2896918200 *)il2cpp_codegen_object_new(RankException_t2896918200_il2cpp_TypeInfo_var);
-		RankException__ctor_m998508686(L_2, (String_t*)L_1, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
-	}
-
-IL_001c:
-	{
-		NullCheck((Il2CppArray *)__this);
-		int32_t L_3 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
-		V_0 = (int32_t)L_3;
-		V_1 = (int32_t)0;
-		goto IL_006b;
-	}
-
-IL_002a:
-	{
-		int32_t L_4 = V_1;
-		NullCheck((Il2CppArray *)__this);
-		ArrayGetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_4, (WebCamDevice_t138406174 *)(&V_2));
-		goto IL_004d;
-	}
-	{
-		goto IL_004b;
-	}
-	{
-		return (bool)1;
-	}
-
-IL_004b:
-	{
-		return (bool)0;
-	}
-
-IL_004d:
-	{
-		WebCamDevice_t138406174  L_7 = V_2;
-		WebCamDevice_t138406174  L_8 = L_7;
-		Il2CppObject * L_9 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_8);
-		Il2CppObject * L_10 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), (&___item));
-		NullCheck((Il2CppObject *)L_10);
-		bool L_11 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, (Il2CppObject *)L_10, (Il2CppObject *)L_9);
-		if (!L_11)
-		{
-			goto IL_0067;
-		}
-	}
-	{
-		return (bool)1;
-	}
-
-IL_0067:
-	{
-		int32_t L_12 = V_1;
-		V_1 = (int32_t)((int32_t)((int32_t)L_12+(int32_t)1));
-	}
-
-IL_006b:
-	{
-		int32_t L_13 = V_1;
-		int32_t L_14 = V_0;
-		if ((((int32_t)L_13) < ((int32_t)L_14)))
-		{
-			goto IL_002a;
-		}
-	}
-	{
-		return (bool)0;
-	}
-}
 // System.Boolean System.Array::InternalArray__ICollection_Remove<EasyAR.Vector2I>(T)
 // System.Boolean System.Array::InternalArray__ICollection_Remove<EasyAR.Vector2I>(T)
 extern TypeInfo* NotSupportedException_t3178859535_il2cpp_TypeInfo_var;
@@ -11838,25 +11702,6 @@ extern "C"  bool Array_InternalArray__ICollection_Remove_TisVector4_t465617796_m
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
 	}
 }
-// System.Boolean System.Array::InternalArray__ICollection_Remove<UnityEngine.WebCamDevice>(T)
-// System.Boolean System.Array::InternalArray__ICollection_Remove<UnityEngine.WebCamDevice>(T)
-extern TypeInfo* NotSupportedException_t3178859535_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1461460571;
-extern const uint32_t Array_InternalArray__ICollection_Remove_TisWebCamDevice_t138406174_m3449855242_MetadataUsageId;
-extern "C"  bool Array_InternalArray__ICollection_Remove_TisWebCamDevice_t138406174_m3449855242_gshared (Il2CppArray * __this, WebCamDevice_t138406174  ___item, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Array_InternalArray__ICollection_Remove_TisWebCamDevice_t138406174_m3449855242_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		NotSupportedException_t3178859535 * L_0 = (NotSupportedException_t3178859535 *)il2cpp_codegen_object_new(NotSupportedException_t3178859535_il2cpp_TypeInfo_var);
-		NotSupportedException__ctor_m836173213(L_0, (String_t*)_stringLiteral1461460571, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
 // System.Boolean System.Array::TrueForAll<System.Object>(T[],System.Predicate`1<T>)
 // System.Boolean System.Array::TrueForAll<System.Object>(T[],System.Predicate`1<T>)
 extern TypeInfo* ArgumentNullException_t1144479314_il2cpp_TypeInfo_var;
@@ -12779,19 +12624,6 @@ extern "C"  Il2CppObject* Array_InternalArray__IEnumerable_GetEnumerator_TisVect
 		memset(&L_0, 0, sizeof(L_0));
 		((  void (*) (InternalEnumerator_1_t3495499573 *, Il2CppArray *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1)->method)(&L_0, (Il2CppArray *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1));
 		InternalEnumerator_1_t3495499573  L_1 = L_0;
-		Il2CppObject * L_2 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_1);
-		return (Il2CppObject*)L_2;
-	}
-}
-// System.Collections.Generic.IEnumerator`1<T> System.Array::InternalArray__IEnumerable_GetEnumerator<UnityEngine.WebCamDevice>()
-// System.Collections.Generic.IEnumerator`1<T> System.Array::InternalArray__IEnumerable_GetEnumerator<UnityEngine.WebCamDevice>()
-extern "C"  Il2CppObject* Array_InternalArray__IEnumerable_GetEnumerator_TisWebCamDevice_t138406174_m532504824_gshared (Il2CppArray * __this, const MethodInfo* method)
-{
-	{
-		InternalEnumerator_1_t3168287951  L_0;
-		memset(&L_0, 0, sizeof(L_0));
-		((  void (*) (InternalEnumerator_1_t3168287951 *, Il2CppArray *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1)->method)(&L_0, (Il2CppArray *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1));
-		InternalEnumerator_1_t3168287951  L_1 = L_0;
 		Il2CppObject * L_2 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_1);
 		return (Il2CppObject*)L_2;
 	}
@@ -21195,112 +21027,6 @@ IL_0083:
 		return ((int32_t)((int32_t)L_19-(int32_t)1));
 	}
 }
-// System.Int32 System.Array::InternalArray__IndexOf<UnityEngine.WebCamDevice>(T)
-// System.Int32 System.Array::InternalArray__IndexOf<UnityEngine.WebCamDevice>(T)
-extern TypeInfo* RankException_t2896918200_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral3431013888;
-extern const uint32_t Array_InternalArray__IndexOf_TisWebCamDevice_t138406174_m3731052603_MetadataUsageId;
-extern "C"  int32_t Array_InternalArray__IndexOf_TisWebCamDevice_t138406174_m3731052603_gshared (Il2CppArray * __this, WebCamDevice_t138406174  ___item, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Array_InternalArray__IndexOf_TisWebCamDevice_t138406174_m3731052603_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	int32_t V_0 = 0;
-	int32_t V_1 = 0;
-	WebCamDevice_t138406174  V_2;
-	memset(&V_2, 0, sizeof(V_2));
-	{
-		NullCheck((Il2CppArray *)__this);
-		int32_t L_0 = Array_get_Rank_m3837250695((Il2CppArray *)__this, /*hidden argument*/NULL);
-		if ((((int32_t)L_0) <= ((int32_t)1)))
-		{
-			goto IL_001c;
-		}
-	}
-	{
-		String_t* L_1 = Locale_GetText_m1954433032(NULL /*static, unused*/, (String_t*)_stringLiteral3431013888, /*hidden argument*/NULL);
-		RankException_t2896918200 * L_2 = (RankException_t2896918200 *)il2cpp_codegen_object_new(RankException_t2896918200_il2cpp_TypeInfo_var);
-		RankException__ctor_m998508686(L_2, (String_t*)L_1, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
-	}
-
-IL_001c:
-	{
-		NullCheck((Il2CppArray *)__this);
-		int32_t L_3 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
-		V_0 = (int32_t)L_3;
-		V_1 = (int32_t)0;
-		goto IL_0083;
-	}
-
-IL_002a:
-	{
-		int32_t L_4 = V_1;
-		NullCheck((Il2CppArray *)__this);
-		ArrayGetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_4, (WebCamDevice_t138406174 *)(&V_2));
-		goto IL_005d;
-	}
-	{
-		goto IL_0053;
-	}
-	{
-		int32_t L_7 = V_1;
-		NullCheck((Il2CppArray *)__this);
-		int32_t L_8 = Array_GetLowerBound_m3733237204((Il2CppArray *)__this, (int32_t)0, /*hidden argument*/NULL);
-		return ((int32_t)((int32_t)L_7+(int32_t)L_8));
-	}
-
-IL_0053:
-	{
-		NullCheck((Il2CppArray *)__this);
-		int32_t L_9 = Array_GetLowerBound_m3733237204((Il2CppArray *)__this, (int32_t)0, /*hidden argument*/NULL);
-		return ((int32_t)((int32_t)L_9-(int32_t)1));
-	}
-
-IL_005d:
-	{
-		WebCamDevice_t138406174  L_10 = ___item;
-		WebCamDevice_t138406174  L_11 = L_10;
-		Il2CppObject * L_12 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_11);
-		Il2CppObject * L_13 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), (&V_2));
-		NullCheck((Il2CppObject *)L_13);
-		bool L_14 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, (Il2CppObject *)L_13, (Il2CppObject *)L_12);
-		if (!L_14)
-		{
-			goto IL_007f;
-		}
-	}
-	{
-		int32_t L_15 = V_1;
-		NullCheck((Il2CppArray *)__this);
-		int32_t L_16 = Array_GetLowerBound_m3733237204((Il2CppArray *)__this, (int32_t)0, /*hidden argument*/NULL);
-		return ((int32_t)((int32_t)L_15+(int32_t)L_16));
-	}
-
-IL_007f:
-	{
-		int32_t L_17 = V_1;
-		V_1 = (int32_t)((int32_t)((int32_t)L_17+(int32_t)1));
-	}
-
-IL_0083:
-	{
-		int32_t L_18 = V_1;
-		int32_t L_19 = V_0;
-		if ((((int32_t)L_18) < ((int32_t)L_19)))
-		{
-			goto IL_002a;
-		}
-	}
-	{
-		NullCheck((Il2CppArray *)__this);
-		int32_t L_20 = Array_GetLowerBound_m3733237204((Il2CppArray *)__this, (int32_t)0, /*hidden argument*/NULL);
-		return ((int32_t)((int32_t)L_20-(int32_t)1));
-	}
-}
 // System.Int32 System.Array::LastIndexOf<System.Object>(T[],T)
 // System.Int32 System.Array::LastIndexOf<System.Object>(T[],T)
 extern TypeInfo* ArgumentNullException_t1144479314_il2cpp_TypeInfo_var;
@@ -21997,7 +21723,6 @@ IL_003e:
 // System.Void System.Array::GetGenericValueImpl<UnityEngine.Vector2>(System.Int32,T&)
 // System.Void System.Array::GetGenericValueImpl<UnityEngine.Vector3>(System.Int32,T&)
 // System.Void System.Array::GetGenericValueImpl<UnityEngine.Vector4>(System.Int32,T&)
-// System.Void System.Array::GetGenericValueImpl<UnityEngine.WebCamDevice>(System.Int32,T&)
 // System.Void System.Array::InternalArray__ICollection_Add<EasyAR.Vector2I>(T)
 // System.Void System.Array::InternalArray__ICollection_Add<EasyAR.Vector2I>(T)
 extern TypeInfo* NotSupportedException_t3178859535_il2cpp_TypeInfo_var;
@@ -23073,25 +22798,6 @@ extern "C"  void Array_InternalArray__ICollection_Add_TisVector4_t465617796_m698
 	if (!s_Il2CppMethodIntialized)
 	{
 		il2cpp_codegen_initialize_method (Array_InternalArray__ICollection_Add_TisVector4_t465617796_m698578249_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		NotSupportedException_t3178859535 * L_0 = (NotSupportedException_t3178859535 *)il2cpp_codegen_object_new(NotSupportedException_t3178859535_il2cpp_TypeInfo_var);
-		NotSupportedException__ctor_m836173213(L_0, (String_t*)_stringLiteral1461460571, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Void System.Array::InternalArray__ICollection_Add<UnityEngine.WebCamDevice>(T)
-// System.Void System.Array::InternalArray__ICollection_Add<UnityEngine.WebCamDevice>(T)
-extern TypeInfo* NotSupportedException_t3178859535_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1461460571;
-extern const uint32_t Array_InternalArray__ICollection_Add_TisWebCamDevice_t138406174_m2493280539_MetadataUsageId;
-extern "C"  void Array_InternalArray__ICollection_Add_TisWebCamDevice_t138406174_m2493280539_gshared (Il2CppArray * __this, WebCamDevice_t138406174  ___item, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Array_InternalArray__ICollection_Add_TisWebCamDevice_t138406174_m2493280539_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -29655,121 +29361,6 @@ IL_008d:
 		return;
 	}
 }
-// System.Void System.Array::InternalArray__ICollection_CopyTo<UnityEngine.WebCamDevice>(T[],System.Int32)
-// System.Void System.Array::InternalArray__ICollection_CopyTo<UnityEngine.WebCamDevice>(T[],System.Int32)
-extern TypeInfo* ArgumentNullException_t1144479314_il2cpp_TypeInfo_var;
-extern TypeInfo* RankException_t2896918200_il2cpp_TypeInfo_var;
-extern TypeInfo* ArgumentException_t2320721629_il2cpp_TypeInfo_var;
-extern TypeInfo* ArgumentOutOfRangeException_t1666784219_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1185213181;
-extern Il2CppCodeGenString* _stringLiteral3431013888;
-extern Il2CppCodeGenString* _stringLiteral2724855293;
-extern Il2CppCodeGenString* _stringLiteral1460639766;
-extern Il2CppCodeGenString* _stringLiteral2072701712;
-extern const uint32_t Array_InternalArray__ICollection_CopyTo_TisWebCamDevice_t138406174_m2858310527_MetadataUsageId;
-extern "C"  void Array_InternalArray__ICollection_CopyTo_TisWebCamDevice_t138406174_m2858310527_gshared (Il2CppArray * __this, WebCamDeviceU5BU5D_t1870489771* ___array, int32_t ___index, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Array_InternalArray__ICollection_CopyTo_TisWebCamDevice_t138406174_m2858310527_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		WebCamDeviceU5BU5D_t1870489771* L_0 = ___array;
-		if (L_0)
-		{
-			goto IL_0011;
-		}
-	}
-	{
-		ArgumentNullException_t1144479314 * L_1 = (ArgumentNullException_t1144479314 *)il2cpp_codegen_object_new(ArgumentNullException_t1144479314_il2cpp_TypeInfo_var);
-		ArgumentNullException__ctor_m3380712306(L_1, (String_t*)_stringLiteral1185213181, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
-	}
-
-IL_0011:
-	{
-		NullCheck((Il2CppArray *)__this);
-		int32_t L_2 = Array_get_Rank_m3837250695((Il2CppArray *)__this, /*hidden argument*/NULL);
-		if ((((int32_t)L_2) <= ((int32_t)1)))
-		{
-			goto IL_002d;
-		}
-	}
-	{
-		String_t* L_3 = Locale_GetText_m1954433032(NULL /*static, unused*/, (String_t*)_stringLiteral3431013888, /*hidden argument*/NULL);
-		RankException_t2896918200 * L_4 = (RankException_t2896918200 *)il2cpp_codegen_object_new(RankException_t2896918200_il2cpp_TypeInfo_var);
-		RankException__ctor_m998508686(L_4, (String_t*)L_3, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4);
-	}
-
-IL_002d:
-	{
-		int32_t L_5 = ___index;
-		NullCheck((Il2CppArray *)__this);
-		int32_t L_6 = Array_GetLength_m2083296647((Il2CppArray *)__this, (int32_t)0, /*hidden argument*/NULL);
-		WebCamDeviceU5BU5D_t1870489771* L_7 = ___array;
-		NullCheck((Il2CppArray *)(Il2CppArray *)L_7);
-		int32_t L_8 = Array_GetLowerBound_m3733237204((Il2CppArray *)(Il2CppArray *)L_7, (int32_t)0, /*hidden argument*/NULL);
-		WebCamDeviceU5BU5D_t1870489771* L_9 = ___array;
-		NullCheck((Il2CppArray *)(Il2CppArray *)L_9);
-		int32_t L_10 = Array_GetLength_m2083296647((Il2CppArray *)(Il2CppArray *)L_9, (int32_t)0, /*hidden argument*/NULL);
-		if ((((int32_t)((int32_t)((int32_t)L_5+(int32_t)L_6))) <= ((int32_t)((int32_t)((int32_t)L_8+(int32_t)L_10)))))
-		{
-			goto IL_0055;
-		}
-	}
-	{
-		ArgumentException_t2320721629 * L_11 = (ArgumentException_t2320721629 *)il2cpp_codegen_object_new(ArgumentException_t2320721629_il2cpp_TypeInfo_var);
-		ArgumentException__ctor_m3739475201(L_11, (String_t*)_stringLiteral2724855293, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_11);
-	}
-
-IL_0055:
-	{
-		WebCamDeviceU5BU5D_t1870489771* L_12 = ___array;
-		NullCheck((Il2CppArray *)(Il2CppArray *)L_12);
-		int32_t L_13 = Array_get_Rank_m3837250695((Il2CppArray *)(Il2CppArray *)L_12, /*hidden argument*/NULL);
-		if ((((int32_t)L_13) <= ((int32_t)1)))
-		{
-			goto IL_0071;
-		}
-	}
-	{
-		String_t* L_14 = Locale_GetText_m1954433032(NULL /*static, unused*/, (String_t*)_stringLiteral3431013888, /*hidden argument*/NULL);
-		RankException_t2896918200 * L_15 = (RankException_t2896918200 *)il2cpp_codegen_object_new(RankException_t2896918200_il2cpp_TypeInfo_var);
-		RankException__ctor_m998508686(L_15, (String_t*)L_14, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_15);
-	}
-
-IL_0071:
-	{
-		int32_t L_16 = ___index;
-		if ((((int32_t)L_16) >= ((int32_t)0)))
-		{
-			goto IL_008d;
-		}
-	}
-	{
-		String_t* L_17 = Locale_GetText_m1954433032(NULL /*static, unused*/, (String_t*)_stringLiteral2072701712, /*hidden argument*/NULL);
-		ArgumentOutOfRangeException_t1666784219 * L_18 = (ArgumentOutOfRangeException_t1666784219 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t1666784219_il2cpp_TypeInfo_var);
-		ArgumentOutOfRangeException__ctor_m4234257711(L_18, (String_t*)_stringLiteral1460639766, (String_t*)L_17, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_18);
-	}
-
-IL_008d:
-	{
-		NullCheck((Il2CppArray *)__this);
-		int32_t L_19 = Array_GetLowerBound_m3733237204((Il2CppArray *)__this, (int32_t)0, /*hidden argument*/NULL);
-		WebCamDeviceU5BU5D_t1870489771* L_20 = ___array;
-		int32_t L_21 = ___index;
-		NullCheck((Il2CppArray *)__this);
-		int32_t L_22 = Array_GetLength_m2083296647((Il2CppArray *)__this, (int32_t)0, /*hidden argument*/NULL);
-		Array_Copy_m3808317496(NULL /*static, unused*/, (Il2CppArray *)__this, (int32_t)L_19, (Il2CppArray *)(Il2CppArray *)L_20, (int32_t)L_21, (int32_t)L_22, /*hidden argument*/NULL);
-		return;
-	}
-}
 // System.Void System.Array::InternalArray__Insert<EasyAR.Vector2I>(System.Int32,T)
 // System.Void System.Array::InternalArray__Insert<EasyAR.Vector2I>(System.Int32,T)
 extern TypeInfo* NotSupportedException_t3178859535_il2cpp_TypeInfo_var;
@@ -30845,25 +30436,6 @@ extern "C"  void Array_InternalArray__Insert_TisVector4_t465617796_m1643342708_g
 	if (!s_Il2CppMethodIntialized)
 	{
 		il2cpp_codegen_initialize_method (Array_InternalArray__Insert_TisVector4_t465617796_m1643342708_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		NotSupportedException_t3178859535 * L_0 = (NotSupportedException_t3178859535 *)il2cpp_codegen_object_new(NotSupportedException_t3178859535_il2cpp_TypeInfo_var);
-		NotSupportedException__ctor_m836173213(L_0, (String_t*)_stringLiteral1461460571, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
-	}
-}
-// System.Void System.Array::InternalArray__Insert<UnityEngine.WebCamDevice>(System.Int32,T)
-// System.Void System.Array::InternalArray__Insert<UnityEngine.WebCamDevice>(System.Int32,T)
-extern TypeInfo* NotSupportedException_t3178859535_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1461460571;
-extern const uint32_t Array_InternalArray__Insert_TisWebCamDevice_t138406174_m2710654568_MetadataUsageId;
-extern "C"  void Array_InternalArray__Insert_TisWebCamDevice_t138406174_m2710654568_gshared (Il2CppArray * __this, int32_t ___index, WebCamDevice_t138406174  ___item, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Array_InternalArray__Insert_TisWebCamDevice_t138406174_m2710654568_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -34290,66 +33862,6 @@ IL_002e:
 		return;
 	}
 }
-// System.Void System.Array::InternalArray__set_Item<UnityEngine.WebCamDevice>(System.Int32,T)
-// System.Void System.Array::InternalArray__set_Item<UnityEngine.WebCamDevice>(System.Int32,T)
-extern TypeInfo* ArgumentOutOfRangeException_t1666784219_il2cpp_TypeInfo_var;
-extern TypeInfo* ObjectU5BU5D_t3632007997_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1460639766;
-extern const uint32_t Array_InternalArray__set_Item_TisWebCamDevice_t138406174_m3691520747_MetadataUsageId;
-extern "C"  void Array_InternalArray__set_Item_TisWebCamDevice_t138406174_m3691520747_gshared (Il2CppArray * __this, int32_t ___index, WebCamDevice_t138406174  ___item, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Array_InternalArray__set_Item_TisWebCamDevice_t138406174_m3691520747_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	ObjectU5BU5D_t3632007997* V_0 = NULL;
-	{
-		int32_t L_0 = ___index;
-		NullCheck((Il2CppArray *)__this);
-		int32_t L_1 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
-		{
-			goto IL_0017;
-		}
-	}
-	{
-		ArgumentOutOfRangeException_t1666784219 * L_2 = (ArgumentOutOfRangeException_t1666784219 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t1666784219_il2cpp_TypeInfo_var);
-		ArgumentOutOfRangeException__ctor_m1595007065(L_2, (String_t*)_stringLiteral1460639766, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
-	}
-
-IL_0017:
-	{
-		V_0 = (ObjectU5BU5D_t3632007997*)((ObjectU5BU5D_t3632007997*)IsInst(__this, ObjectU5BU5D_t3632007997_il2cpp_TypeInfo_var));
-		ObjectU5BU5D_t3632007997* L_3 = V_0;
-		if (!L_3)
-		{
-			goto IL_002e;
-		}
-	}
-	{
-		ObjectU5BU5D_t3632007997* L_4 = V_0;
-		int32_t L_5 = ___index;
-		WebCamDevice_t138406174  L_6 = ___item;
-		WebCamDevice_t138406174  L_7 = L_6;
-		Il2CppObject * L_8 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_7);
-		NullCheck(L_4);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
-		ArrayElementTypeCheck (L_4, L_8);
-		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Il2CppObject *)L_8);
-		return;
-	}
-
-IL_002e:
-	{
-		int32_t L_9 = ___index;
-		NullCheck((Il2CppArray *)__this);
-		ArraySetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_9, (WebCamDevice_t138406174 *)(&___item));
-		return;
-	}
-}
 // System.Void System.Array::qsort<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>(K[],V[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<K>)
 // System.Void System.Array::qsort<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>(K[],V[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<K>)
 extern "C"  void Array_qsort_TisKeyValuePair_2_t1944347872_TisKeyValuePair_2_t1944347872_m2356159533_gshared (Il2CppObject * __this /* static, unused */, KeyValuePair_2U5BU5D_t2935491489* ___keys, KeyValuePair_2U5BU5D_t2935491489* ___items, int32_t ___low0, int32_t ___high0, Il2CppObject* ___comparer, const MethodInfo* method)
@@ -36778,7 +36290,6 @@ IL_0028:
 // System.Void System.Array::SetGenericValueImpl<UnityEngine.Vector2>(System.Int32,T&)
 // System.Void System.Array::SetGenericValueImpl<UnityEngine.Vector3>(System.Int32,T&)
 // System.Void System.Array::SetGenericValueImpl<UnityEngine.Vector4>(System.Int32,T&)
-// System.Void System.Array::SetGenericValueImpl<UnityEngine.WebCamDevice>(System.Int32,T&)
 // System.Void System.Array::Sort<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>(TKey[],TValue[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<TKey>)
 // System.Void System.Array::Sort<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>(TKey[],TValue[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<TKey>)
 extern TypeInfo* ArgumentNullException_t1144479314_il2cpp_TypeInfo_var;
@@ -45783,45 +45294,6 @@ IL_0017:
 		NullCheck((Il2CppArray *)__this);
 		ArrayGetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_3, (Vector4_t465617796 *)(&V_0));
 		Vector4_t465617796  L_4 = V_0;
-		return L_4;
-	}
-}
-// T System.Array::InternalArray__get_Item<UnityEngine.WebCamDevice>(System.Int32)
-// T System.Array::InternalArray__get_Item<UnityEngine.WebCamDevice>(System.Int32)
-extern TypeInfo* ArgumentOutOfRangeException_t1666784219_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1460639766;
-extern const uint32_t Array_InternalArray__get_Item_TisWebCamDevice_t138406174_m919931200_MetadataUsageId;
-extern "C"  WebCamDevice_t138406174  Array_InternalArray__get_Item_TisWebCamDevice_t138406174_m919931200_gshared (Il2CppArray * __this, int32_t ___index, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Array_InternalArray__get_Item_TisWebCamDevice_t138406174_m919931200_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	WebCamDevice_t138406174  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	{
-		int32_t L_0 = ___index;
-		NullCheck((Il2CppArray *)__this);
-		int32_t L_1 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
-		{
-			goto IL_0017;
-		}
-	}
-	{
-		ArgumentOutOfRangeException_t1666784219 * L_2 = (ArgumentOutOfRangeException_t1666784219 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t1666784219_il2cpp_TypeInfo_var);
-		ArgumentOutOfRangeException__ctor_m1595007065(L_2, (String_t*)_stringLiteral1460639766, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
-	}
-
-IL_0017:
-	{
-		int32_t L_3 = ___index;
-		NullCheck((Il2CppArray *)__this);
-		ArrayGetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_3, (WebCamDevice_t138406174 *)(&V_0));
-		WebCamDevice_t138406174  L_4 = V_0;
 		return L_4;
 	}
 }

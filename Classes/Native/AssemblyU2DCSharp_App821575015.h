@@ -35,8 +35,6 @@ struct  App_t821575015  : public Il2CppObject
 public:
 	// System.Collections.Stack App::sceneNameStack
 	Stack_t3925292378 * ___sceneNameStack_3;
-	// System.String App::LASTSCENCENAME
-	String_t* ___LASTSCENCENAME_5;
 
 public:
 	inline static int32_t get_offset_of_sceneNameStack_3() { return static_cast<int32_t>(offsetof(App_t821575015, ___sceneNameStack_3)); }
@@ -46,15 +44,6 @@ public:
 	{
 		___sceneNameStack_3 = value;
 		Il2CppCodeGenWriteBarrier(&___sceneNameStack_3, value);
-	}
-
-	inline static int32_t get_offset_of_LASTSCENCENAME_5() { return static_cast<int32_t>(offsetof(App_t821575015, ___LASTSCENCENAME_5)); }
-	inline String_t* get_LASTSCENCENAME_5() const { return ___LASTSCENCENAME_5; }
-	inline String_t** get_address_of_LASTSCENCENAME_5() { return &___LASTSCENCENAME_5; }
-	inline void set_LASTSCENCENAME_5(String_t* value)
-	{
-		___LASTSCENCENAME_5 = value;
-		Il2CppCodeGenWriteBarrier(&___LASTSCENCENAME_5, value);
 	}
 };
 
@@ -70,13 +59,13 @@ public:
 	// App App::instance
 	App_t821575015 * ___instance_4;
 	// System.String App::MoxingPath
-	String_t* ___MoxingPath_6;
+	String_t* ___MoxingPath_5;
 	// System.Int32 App::currSpriteGetid
-	int32_t ___currSpriteGetid_7;
+	int32_t ___currSpriteGetid_6;
 	// MySpriteDetail App::mMySpriteDetail
-	MySpriteDetail_t913424694 * ___mMySpriteDetail_8;
+	MySpriteDetail_t913424694 * ___mMySpriteDetail_7;
 	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> App::<>f__switch$map5
-	Dictionary_2_t4260152181 * ___U3CU3Ef__switchU24map5_9;
+	Dictionary_2_t4260152181 * ___U3CU3Ef__switchU24map5_8;
 
 public:
 	inline static int32_t get_offset_of_isDeBug_0() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___isDeBug_0)); }
@@ -113,39 +102,39 @@ public:
 		Il2CppCodeGenWriteBarrier(&___instance_4, value);
 	}
 
-	inline static int32_t get_offset_of_MoxingPath_6() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___MoxingPath_6)); }
-	inline String_t* get_MoxingPath_6() const { return ___MoxingPath_6; }
-	inline String_t** get_address_of_MoxingPath_6() { return &___MoxingPath_6; }
-	inline void set_MoxingPath_6(String_t* value)
+	inline static int32_t get_offset_of_MoxingPath_5() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___MoxingPath_5)); }
+	inline String_t* get_MoxingPath_5() const { return ___MoxingPath_5; }
+	inline String_t** get_address_of_MoxingPath_5() { return &___MoxingPath_5; }
+	inline void set_MoxingPath_5(String_t* value)
 	{
-		___MoxingPath_6 = value;
-		Il2CppCodeGenWriteBarrier(&___MoxingPath_6, value);
+		___MoxingPath_5 = value;
+		Il2CppCodeGenWriteBarrier(&___MoxingPath_5, value);
 	}
 
-	inline static int32_t get_offset_of_currSpriteGetid_7() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___currSpriteGetid_7)); }
-	inline int32_t get_currSpriteGetid_7() const { return ___currSpriteGetid_7; }
-	inline int32_t* get_address_of_currSpriteGetid_7() { return &___currSpriteGetid_7; }
-	inline void set_currSpriteGetid_7(int32_t value)
+	inline static int32_t get_offset_of_currSpriteGetid_6() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___currSpriteGetid_6)); }
+	inline int32_t get_currSpriteGetid_6() const { return ___currSpriteGetid_6; }
+	inline int32_t* get_address_of_currSpriteGetid_6() { return &___currSpriteGetid_6; }
+	inline void set_currSpriteGetid_6(int32_t value)
 	{
-		___currSpriteGetid_7 = value;
+		___currSpriteGetid_6 = value;
 	}
 
-	inline static int32_t get_offset_of_mMySpriteDetail_8() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___mMySpriteDetail_8)); }
-	inline MySpriteDetail_t913424694 * get_mMySpriteDetail_8() const { return ___mMySpriteDetail_8; }
-	inline MySpriteDetail_t913424694 ** get_address_of_mMySpriteDetail_8() { return &___mMySpriteDetail_8; }
-	inline void set_mMySpriteDetail_8(MySpriteDetail_t913424694 * value)
+	inline static int32_t get_offset_of_mMySpriteDetail_7() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___mMySpriteDetail_7)); }
+	inline MySpriteDetail_t913424694 * get_mMySpriteDetail_7() const { return ___mMySpriteDetail_7; }
+	inline MySpriteDetail_t913424694 ** get_address_of_mMySpriteDetail_7() { return &___mMySpriteDetail_7; }
+	inline void set_mMySpriteDetail_7(MySpriteDetail_t913424694 * value)
 	{
-		___mMySpriteDetail_8 = value;
-		Il2CppCodeGenWriteBarrier(&___mMySpriteDetail_8, value);
+		___mMySpriteDetail_7 = value;
+		Il2CppCodeGenWriteBarrier(&___mMySpriteDetail_7, value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3Ef__switchU24map5_9() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___U3CU3Ef__switchU24map5_9)); }
-	inline Dictionary_2_t4260152181 * get_U3CU3Ef__switchU24map5_9() const { return ___U3CU3Ef__switchU24map5_9; }
-	inline Dictionary_2_t4260152181 ** get_address_of_U3CU3Ef__switchU24map5_9() { return &___U3CU3Ef__switchU24map5_9; }
-	inline void set_U3CU3Ef__switchU24map5_9(Dictionary_2_t4260152181 * value)
+	inline static int32_t get_offset_of_U3CU3Ef__switchU24map5_8() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___U3CU3Ef__switchU24map5_8)); }
+	inline Dictionary_2_t4260152181 * get_U3CU3Ef__switchU24map5_8() const { return ___U3CU3Ef__switchU24map5_8; }
+	inline Dictionary_2_t4260152181 ** get_address_of_U3CU3Ef__switchU24map5_8() { return &___U3CU3Ef__switchU24map5_8; }
+	inline void set_U3CU3Ef__switchU24map5_8(Dictionary_2_t4260152181 * value)
 	{
-		___U3CU3Ef__switchU24map5_9 = value;
-		Il2CppCodeGenWriteBarrier(&___U3CU3Ef__switchU24map5_9, value);
+		___U3CU3Ef__switchU24map5_8 = value;
+		Il2CppCodeGenWriteBarrier(&___U3CU3Ef__switchU24map5_8, value);
 	}
 };
 

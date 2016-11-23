@@ -1,4 +1,4 @@
-//Generated on : 2016/11/22 18:37:09
+//Generated on : 2016/11/23 13:11:15
 void RegisterAllStrippedInternalCalls()
 {
 	//Start Registrations for type : UnityEngine.AndroidJNI
@@ -399,10 +399,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Application
 
-		//System.Boolean UnityEngine.Application::HasUserAuthorization(UnityEngine.UserAuthorization)
-		void Register_UnityEngine_Application_HasUserAuthorization();
-		Register_UnityEngine_Application_HasUserAuthorization();
-
 		//System.Boolean UnityEngine.Application::get_isEditor()
 		void Register_UnityEngine_Application_get_isEditor();
 		Register_UnityEngine_Application_get_isEditor();
@@ -422,10 +418,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Application::OpenURL(System.String)
 		void Register_UnityEngine_Application_OpenURL();
 		Register_UnityEngine_Application_OpenURL();
-
-		//UnityEngine.AsyncOperation UnityEngine.Application::RequestUserAuthorization(UnityEngine.UserAuthorization)
-		void Register_UnityEngine_Application_RequestUserAuthorization();
-		Register_UnityEngine_Application_RequestUserAuthorization();
 
 		//UnityEngine.RuntimePlatform UnityEngine.Application::get_platform()
 		void Register_UnityEngine_Application_get_platform();
@@ -2760,30 +2752,6 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_UnhandledExceptionHandler_NativeUnhandledExceptionHandler();
 
 	//End Registrations for type : UnityEngine.UnhandledExceptionHandler
-
-	//Start Registrations for type : UnityEngine.WebCamTexture
-
-		//System.Boolean UnityEngine.WebCamTexture::get_isPlaying()
-		void Register_UnityEngine_WebCamTexture_get_isPlaying();
-		Register_UnityEngine_WebCamTexture_get_isPlaying();
-
-		//System.Void UnityEngine.WebCamTexture::INTERNAL_CALL_Play(UnityEngine.WebCamTexture)
-		void Register_UnityEngine_WebCamTexture_INTERNAL_CALL_Play();
-		Register_UnityEngine_WebCamTexture_INTERNAL_CALL_Play();
-
-		//System.Void UnityEngine.WebCamTexture::INTERNAL_CALL_Stop(UnityEngine.WebCamTexture)
-		void Register_UnityEngine_WebCamTexture_INTERNAL_CALL_Stop();
-		Register_UnityEngine_WebCamTexture_INTERNAL_CALL_Stop();
-
-		//System.Void UnityEngine.WebCamTexture::Internal_CreateWebCamTexture(UnityEngine.WebCamTexture,System.String,System.Int32,System.Int32,System.Int32)
-		void Register_UnityEngine_WebCamTexture_Internal_CreateWebCamTexture();
-		Register_UnityEngine_WebCamTexture_Internal_CreateWebCamTexture();
-
-		//UnityEngine.WebCamDevice[] UnityEngine.WebCamTexture::get_devices()
-		void Register_UnityEngine_WebCamTexture_get_devices();
-		Register_UnityEngine_WebCamTexture_get_devices();
-
-	//End Registrations for type : UnityEngine.WebCamTexture
 
 	//Start Registrations for type : UnityEngine.WWW
 

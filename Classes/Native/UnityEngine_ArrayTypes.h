@@ -112,7 +112,6 @@ struct AssetBundle_t945621937;
 #include "UnityEngine_UnityEngine_Rigidbody2D2088154582.h"
 #include "UnityEngine_UnityEngine_Collider2D445179443.h"
 #include "UnityEngine_UnityEngine_ContactPoint2D15882733.h"
-#include "UnityEngine_UnityEngine_WebCamDevice138406174.h"
 #include "UnityEngine_UnityEngine_GUILayoutOption2722935253.h"
 #include "UnityEngine_UnityEngine_GUILayoutUtility_LayoutCac4083183608.h"
 #include "UnityEngine_UnityEngine_GUILayoutEntry561867040.h"
@@ -571,20 +570,6 @@ public:
 	inline ContactPoint2D_t15882733  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline ContactPoint2D_t15882733 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, ContactPoint2D_t15882733  value)
-	{
-		m_Items[index] = value;
-	}
-};
-// UnityEngine.WebCamDevice[]
-struct WebCamDeviceU5BU5D_t1870489771  : public Il2CppArray
-{
-public:
-	ALIGN_TYPE (8) WebCamDevice_t138406174  m_Items[1];
-
-public:
-	inline WebCamDevice_t138406174  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
-	inline WebCamDevice_t138406174 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
-	inline void SetAt(il2cpp_array_size_t index, WebCamDevice_t138406174  value)
 	{
 		m_Items[index] = value;
 	}

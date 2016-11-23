@@ -288,7 +288,6 @@ struct CustomAttributeTypedArgumentU5BU5D_t3469124541;
 #include "UnityEngine_UnityEngine_jvalue1704362840.h"
 #include "UnityEngine_UnityEngine_Keyframe3291899437.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter3695722656.h"
-#include "UnityEngine_UnityEngine_WebCamDevice138406174.h"
 #include "Mono_Security_Mono_Security_Protocol_Tls_Handshake2011017009.h"
 #include "mscorlib_System_Runtime_Serialization_Formatters_B3714971315.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_Ke367756264.h"
@@ -7299,13 +7298,6 @@ void* RuntimeInvoker_Il2CppObject_Int32_t1448170597_Il2CppObject_Il2CppObject (c
 	return ret;
 }
 
-void* RuntimeInvoker_Void_t2799814243_Il2CppObject_Il2CppObject_Int32_t1448170597_Int32_t1448170597_Int32_t1448170597 (const MethodInfo* method, void* obj, void** args)
-{
-	typedef void (*Func)(void* obj, Il2CppObject * p1, Il2CppObject * p2, int32_t p3, int32_t p4, int32_t p5, const MethodInfo* method);
-	((Func)method->method)(obj, (Il2CppObject *)args[0], (Il2CppObject *)args[1], *((int32_t*)args[2]), *((int32_t*)args[3]), *((int32_t*)args[4]), method);
-	return NULL;
-}
-
 void* RuntimeInvoker_SendMessageOptions_t1278148394 (const MethodInfo* method, void* obj, void** args)
 {
 	typedef int32_t (*Func)(void* obj, const MethodInfo* method);
@@ -9329,13 +9321,6 @@ void* RuntimeInvoker_Boolean_t3143194569_Vector4_t465617796 (const MethodInfo* m
 	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
 }
 
-void* RuntimeInvoker_Boolean_t3143194569_WebCamDevice_t138406174 (const MethodInfo* method, void* obj, void** args)
-{
-	typedef bool (*Func)(void* obj, WebCamDevice_t138406174  p1, const MethodInfo* method);
-	bool ret = ((Func)method->method)(obj, *((WebCamDevice_t138406174 *)args[0]), method);
-	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
-}
-
 void* RuntimeInvoker_Int32_t1448170597_Il2CppObject_Int32_t1448170597_Int32_t1448170597_Int32_t1448170597_Il2CppObject (const MethodInfo* method, void* obj, void** args)
 {
 	typedef int32_t (*Func)(void* obj, Il2CppObject * p1, int32_t p2, int32_t p3, int32_t p4, Il2CppObject * p5, const MethodInfo* method);
@@ -9658,13 +9643,6 @@ void* RuntimeInvoker_Int32_t1448170597_Vector4_t465617796 (const MethodInfo* met
 	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
 }
 
-void* RuntimeInvoker_Int32_t1448170597_WebCamDevice_t138406174 (const MethodInfo* method, void* obj, void** args)
-{
-	typedef int32_t (*Func)(void* obj, WebCamDevice_t138406174  p1, const MethodInfo* method);
-	int32_t ret = ((Func)method->method)(obj, *((WebCamDevice_t138406174 *)args[0]), method);
-	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
-}
-
 void* RuntimeInvoker_Void_t2799814243_TableRange_t736649775 (const MethodInfo* method, void* obj, void** args)
 {
 	typedef void (*Func)(void* obj, TableRange_t736649775  p1, const MethodInfo* method);
@@ -9858,13 +9836,6 @@ void* RuntimeInvoker_Void_t2799814243_GcAchievementData_t3695722656 (const Metho
 {
 	typedef void (*Func)(void* obj, GcAchievementData_t3695722656  p1, const MethodInfo* method);
 	((Func)method->method)(obj, *((GcAchievementData_t3695722656 *)args[0]), method);
-	return NULL;
-}
-
-void* RuntimeInvoker_Void_t2799814243_WebCamDevice_t138406174 (const MethodInfo* method, void* obj, void** args)
-{
-	typedef void (*Func)(void* obj, WebCamDevice_t138406174  p1, const MethodInfo* method);
-	((Func)method->method)(obj, *((WebCamDevice_t138406174 *)args[0]), method);
 	return NULL;
 }
 
@@ -10138,13 +10109,6 @@ void* RuntimeInvoker_Void_t2799814243_Int32_t1448170597_Vector3_t465617797 (cons
 {
 	typedef void (*Func)(void* obj, int32_t p1, Vector3_t465617797  p2, const MethodInfo* method);
 	((Func)method->method)(obj, *((int32_t*)args[0]), *((Vector3_t465617797 *)args[1]), method);
-	return NULL;
-}
-
-void* RuntimeInvoker_Void_t2799814243_Int32_t1448170597_WebCamDevice_t138406174 (const MethodInfo* method, void* obj, void** args)
-{
-	typedef void (*Func)(void* obj, int32_t p1, WebCamDevice_t138406174  p2, const MethodInfo* method);
-	((Func)method->method)(obj, *((int32_t*)args[0]), *((WebCamDevice_t138406174 *)args[1]), method);
 	return NULL;
 }
 
@@ -10446,13 +10410,6 @@ void* RuntimeInvoker_GcScoreData_t297249143_Int32_t1448170597 (const MethodInfo*
 {
 	typedef GcScoreData_t297249143  (*Func)(void* obj, int32_t p1, const MethodInfo* method);
 	GcScoreData_t297249143  ret = ((Func)method->method)(obj, *((int32_t*)args[0]), method);
-	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
-}
-
-void* RuntimeInvoker_WebCamDevice_t138406174_Int32_t1448170597 (const MethodInfo* method, void* obj, void** args)
-{
-	typedef WebCamDevice_t138406174  (*Func)(void* obj, int32_t p1, const MethodInfo* method);
-	WebCamDevice_t138406174  ret = ((Func)method->method)(obj, *((int32_t*)args[0]), method);
 	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
 }
 
@@ -10789,13 +10746,6 @@ void* RuntimeInvoker_GcScoreData_t297249143 (const MethodInfo* method, void* obj
 {
 	typedef GcScoreData_t297249143  (*Func)(void* obj, const MethodInfo* method);
 	GcScoreData_t297249143  ret = ((Func)method->method)(obj, method);
-	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
-}
-
-void* RuntimeInvoker_WebCamDevice_t138406174 (const MethodInfo* method, void* obj, void** args)
-{
-	typedef WebCamDevice_t138406174  (*Func)(void* obj, const MethodInfo* method);
-	WebCamDevice_t138406174  ret = ((Func)method->method)(obj, method);
 	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
 }
 
@@ -11156,7 +11106,7 @@ void* RuntimeInvoker_Boolean_t3143194569_Nullable_1_t99296144 (const MethodInfo*
 	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
 }
 
-extern const InvokerMethod g_Il2CppInvokerPointers[1550] = 
+extern const InvokerMethod g_Il2CppInvokerPointers[1543] = 
 {
 	RuntimeInvoker_Void_t2799814243,
 	RuntimeInvoker_Boolean_t3143194569_Il2CppObject,
@@ -12157,7 +12107,6 @@ extern const InvokerMethod g_Il2CppInvokerPointers[1550] =
 	RuntimeInvoker_Il2CppObject_Vector2U26_t3963109994_Int32_t1448170597_Single_t1791520093_Single_t1791520093,
 	RuntimeInvoker_Il2CppObject_SByte_t3834651180_Il2CppObject_Il2CppObject,
 	RuntimeInvoker_Il2CppObject_Int32_t1448170597_Il2CppObject_Il2CppObject,
-	RuntimeInvoker_Void_t2799814243_Il2CppObject_Il2CppObject_Int32_t1448170597_Int32_t1448170597_Int32_t1448170597,
 	RuntimeInvoker_SendMessageOptions_t1278148394,
 	RuntimeInvoker_AnimatorStateInfo_t3342076411,
 	RuntimeInvoker_AnimatorClipInfo_t2190311602,
@@ -12447,7 +12396,6 @@ extern const InvokerMethod g_Il2CppInvokerPointers[1550] =
 	RuntimeInvoker_Boolean_t3143194569_GcAchievementData_t3695722656,
 	RuntimeInvoker_Boolean_t3143194569_GcScoreData_t297249143,
 	RuntimeInvoker_Boolean_t3143194569_Vector4_t465617796,
-	RuntimeInvoker_Boolean_t3143194569_WebCamDevice_t138406174,
 	RuntimeInvoker_Int32_t1448170597_Il2CppObject_Int32_t1448170597_Int32_t1448170597_Int32_t1448170597_Il2CppObject,
 	RuntimeInvoker_Int32_t1448170597_KeyValuePair_2_t1944347872_KeyValuePair_2_t1944347872_Il2CppObject,
 	RuntimeInvoker_Int32_t1448170597_Int32_t1448170597_Int32_t1448170597_Il2CppObject,
@@ -12494,7 +12442,6 @@ extern const InvokerMethod g_Il2CppInvokerPointers[1550] =
 	RuntimeInvoker_Int32_t1448170597_GcAchievementData_t3695722656,
 	RuntimeInvoker_Int32_t1448170597_GcScoreData_t297249143,
 	RuntimeInvoker_Int32_t1448170597_Vector4_t465617796,
-	RuntimeInvoker_Int32_t1448170597_WebCamDevice_t138406174,
 	RuntimeInvoker_Void_t2799814243_TableRange_t736649775,
 	RuntimeInvoker_Void_t2799814243_DictionaryEntry_t1445113794,
 	RuntimeInvoker_Void_t2799814243_KeyValuePair_2_t1627747851,
@@ -12523,7 +12470,6 @@ extern const InvokerMethod g_Il2CppInvokerPointers[1550] =
 	RuntimeInvoker_Void_t2799814243_RaycastHit_t317570005,
 	RuntimeInvoker_Void_t2799814243_HitInfo_t2547655281,
 	RuntimeInvoker_Void_t2799814243_GcAchievementData_t3695722656,
-	RuntimeInvoker_Void_t2799814243_WebCamDevice_t138406174,
 	RuntimeInvoker_Void_t2799814243_Int32_t1448170597_Vector2I_t2584456199,
 	RuntimeInvoker_Void_t2799814243_Int32_t1448170597_TableRange_t736649775,
 	RuntimeInvoker_Void_t2799814243_Int32_t1448170597_DictionaryEntry_t1445113794,
@@ -12563,7 +12509,6 @@ extern const InvokerMethod g_Il2CppInvokerPointers[1550] =
 	RuntimeInvoker_Void_t2799814243_Int32_t1448170597_GcScoreData_t297249143,
 	RuntimeInvoker_Void_t2799814243_Int32_t1448170597_Vector2_t465617798,
 	RuntimeInvoker_Void_t2799814243_Int32_t1448170597_Vector3_t465617797,
-	RuntimeInvoker_Void_t2799814243_Int32_t1448170597_WebCamDevice_t138406174,
 	RuntimeInvoker_Void_t2799814243_KeyValuePair_2U5BU5DU26_t2833366791_Int32_t1448170597,
 	RuntimeInvoker_Void_t2799814243_KeyValuePair_2U5BU5DU26_t2833366791_Int32_t1448170597_Int32_t1448170597,
 	RuntimeInvoker_Void_t2799814243_Int32U5BU5DU26_t3503894488_Int32_t1448170597,
@@ -12607,7 +12552,6 @@ extern const InvokerMethod g_Il2CppInvokerPointers[1550] =
 	RuntimeInvoker_HitInfo_t2547655281_Int32_t1448170597,
 	RuntimeInvoker_GcAchievementData_t3695722656_Int32_t1448170597,
 	RuntimeInvoker_GcScoreData_t297249143_Int32_t1448170597,
-	RuntimeInvoker_WebCamDevice_t138406174_Int32_t1448170597,
 	RuntimeInvoker_KeyValuePair_2_t1944347872_Il2CppObject_Int32_t1448170597_Int32_t1448170597,
 	RuntimeInvoker_FadeEntry_t1015115370,
 	RuntimeInvoker_DepthEntry_t2425649371,
@@ -12656,7 +12600,6 @@ extern const InvokerMethod g_Il2CppInvokerPointers[1550] =
 	RuntimeInvoker_HitInfo_t2547655281,
 	RuntimeInvoker_GcAchievementData_t3695722656,
 	RuntimeInvoker_GcScoreData_t297249143,
-	RuntimeInvoker_WebCamDevice_t138406174,
 	RuntimeInvoker_Int32_t1448170597_KeyValuePair_2_t1944347872_KeyValuePair_2_t1944347872,
 	RuntimeInvoker_Int32_t1448170597_DateTimeOffset_t2056561247_DateTimeOffset_t2056561247,
 	RuntimeInvoker_Int32_t1448170597_Guid_t756539922_Guid_t756539922,

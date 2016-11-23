@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Privacy - Motion Usage Description</key>
-	<string>此 App 需要您的同意才能使用计步工具</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -81,6 +79,8 @@
 	<string>此 App 需要您的同意才能使用麦克风</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>此 App 需要您的同意才能读取照片信息</string>
+	<key>Privacy - Motion Usage Description</key>
+	<string>此 App 需要您的同意才能使用计步工具</string>
 	<key>UIApplicationExitsOnSuspend</key>
 	<false/>
 	<key>UIBackgroundModes</key>

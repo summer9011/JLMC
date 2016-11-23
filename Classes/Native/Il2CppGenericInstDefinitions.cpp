@@ -587,9 +587,6 @@ extern const Il2CppGenericInst GenInst_Collider2D_t445179443_0_0_0 = { 1, GenIns
 extern const Il2CppType ContactPoint2D_t15882733_0_0_0;
 static const Il2CppType* GenInst_ContactPoint2D_t15882733_0_0_0_Types[] = { &ContactPoint2D_t15882733_0_0_0 };
 extern const Il2CppGenericInst GenInst_ContactPoint2D_t15882733_0_0_0 = { 1, GenInst_ContactPoint2D_t15882733_0_0_0_Types };
-extern const Il2CppType WebCamDevice_t138406174_0_0_0;
-static const Il2CppType* GenInst_WebCamDevice_t138406174_0_0_0_Types[] = { &WebCamDevice_t138406174_0_0_0 };
-extern const Il2CppGenericInst GenInst_WebCamDevice_t138406174_0_0_0 = { 1, GenInst_WebCamDevice_t138406174_0_0_0_Types };
 extern const Il2CppType Font_t2560754878_0_0_0;
 static const Il2CppType* GenInst_Font_t2560754878_0_0_0_Types[] = { &Font_t2560754878_0_0_0 };
 extern const Il2CppGenericInst GenInst_Font_t2560754878_0_0_0 = { 1, GenInst_Font_t2560754878_0_0_0_Types };
@@ -1589,7 +1586,7 @@ static const Il2CppType* GenInst_KeyValuePair_2_t2684549329_0_0_0_Il2CppObject_0
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2684549329_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t2684549329_0_0_0_Il2CppObject_0_0_0_Types };
 static const Il2CppType* GenInst_KeyValuePair_2_t1944347872_0_0_0_Il2CppObject_0_0_0_Types[] = { &KeyValuePair_2_t1944347872_0_0_0, &Il2CppObject_0_0_0 };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t1944347872_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t1944347872_0_0_0_Il2CppObject_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[555] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[554] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t1448170597_0_0_0,
@@ -1790,7 +1787,6 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[555] =
 	&GenInst_Rigidbody2D_t2088154582_0_0_0,
 	&GenInst_Collider2D_t445179443_0_0_0,
 	&GenInst_ContactPoint2D_t15882733_0_0_0,
-	&GenInst_WebCamDevice_t138406174_0_0_0,
 	&GenInst_Font_t2560754878_0_0_0,
 	&GenInst_GUILayoutOption_t2722935253_0_0_0,
 	&GenInst_Int32_t1448170597_0_0_0_LayoutCache_t4083183608_0_0_0,
