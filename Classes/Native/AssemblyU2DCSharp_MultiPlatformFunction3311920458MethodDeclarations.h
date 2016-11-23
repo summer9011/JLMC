@@ -32,5 +32,3 @@ extern "C"  void MultiPlatformFunction_ShowShareView_m4126028352 (Il2CppObject *
 extern "C"  int64_t MultiPlatformFunction_getUserId_m1450868088 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int64 MultiPlatformFunction::getPoiElfId()
 extern "C"  int64_t MultiPlatformFunction_getPoiElfId_m2286234302 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int64 MultiPlatformFunction::getCatchId()
-extern "C"  int64_t MultiPlatformFunction_getCatchId_m1840281110 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;

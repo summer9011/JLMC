@@ -28,8 +28,8 @@ struct JSONArray_t3951369664;
 struct  U3CU3Ec__IteratorD_t875643801  : public Il2CppObject
 {
 public:
-	// System.Collections.Generic.List`1/Enumerator<LitJson.JSONNode> LitJson.JSONArray/<>c__IteratorD::<$s_27>__0
-	Enumerator_t482100986  ___U3CU24s_27U3E__0_0;
+	// System.Collections.Generic.List`1/Enumerator<LitJson.JSONNode> LitJson.JSONArray/<>c__IteratorD::<$s_33>__0
+	Enumerator_t482100986  ___U3CU24s_33U3E__0_0;
 	// LitJson.JSONNode LitJson.JSONArray/<>c__IteratorD::<N>__1
 	JSONNode_t1109731523 * ___U3CNU3E__1_1;
 	// System.Int32 LitJson.JSONArray/<>c__IteratorD::$PC
@@ -40,12 +40,12 @@ public:
 	JSONArray_t3951369664 * ___U3CU3Ef__this_4;
 
 public:
-	inline static int32_t get_offset_of_U3CU24s_27U3E__0_0() { return static_cast<int32_t>(offsetof(U3CU3Ec__IteratorD_t875643801, ___U3CU24s_27U3E__0_0)); }
-	inline Enumerator_t482100986  get_U3CU24s_27U3E__0_0() const { return ___U3CU24s_27U3E__0_0; }
-	inline Enumerator_t482100986 * get_address_of_U3CU24s_27U3E__0_0() { return &___U3CU24s_27U3E__0_0; }
-	inline void set_U3CU24s_27U3E__0_0(Enumerator_t482100986  value)
+	inline static int32_t get_offset_of_U3CU24s_33U3E__0_0() { return static_cast<int32_t>(offsetof(U3CU3Ec__IteratorD_t875643801, ___U3CU24s_33U3E__0_0)); }
+	inline Enumerator_t482100986  get_U3CU24s_33U3E__0_0() const { return ___U3CU24s_33U3E__0_0; }
+	inline Enumerator_t482100986 * get_address_of_U3CU24s_33U3E__0_0() { return &___U3CU24s_33U3E__0_0; }
+	inline void set_U3CU24s_33U3E__0_0(Enumerator_t482100986  value)
 	{
-		___U3CU24s_27U3E__0_0 = value;
+		___U3CU24s_33U3E__0_0 = value;
 	}
 
 	inline static int32_t get_offset_of_U3CNU3E__1_1() { return static_cast<int32_t>(offsetof(U3CU3Ec__IteratorD_t875643801, ___U3CNU3E__1_1)); }

@@ -808,13 +808,9 @@ extern "C" void BitConverter_AmILittleEndian_m2716658112 ();
 extern "C" void BitConverter_DoubleWordsAreSwapped_m2697726202 ();
 extern "C" void BitConverter_DoubleToInt64Bits_m3672024538 ();
 extern "C" void BitConverter_GetBytes_m252990073 ();
-extern "C" void BitConverter_GetBytes_m1583172484 ();
 extern "C" void BitConverter_GetBytes_m4115681617 ();
 extern "C" void BitConverter_PutBytes_m1441606178 ();
 extern "C" void BitConverter_ToInt64_m1329623425 ();
-extern "C" void BitConverter_ToUInt16_m2715119381 ();
-extern "C" void BitConverter_ToUInt32_m4153360341 ();
-extern "C" void BitConverter_ToUInt64_m2584075445 ();
 extern "C" void BitConverter_ToString_m927173850 ();
 extern "C" void BitConverter_ToString_m2246696988 ();
 extern "C" void Boolean__cctor_m1656420992 ();
@@ -1414,9 +1410,7 @@ extern "C" void Convert_ToSingle_m3854923273 ();
 extern "C" void Convert_ToSingle_m2156102599 ();
 extern "C" void Convert_ToSingle_m2579590104 ();
 extern "C" void Convert_ToSingle_m2438427605 ();
-extern "C" void Convert_ToSingle_m4204747369 ();
 extern "C" void Convert_ToSingle_m1901383565 ();
-extern "C" void Convert_ToString_m3884855475 ();
 extern "C" void Convert_ToString_m2915777777 ();
 extern "C" void Convert_ToString_m2031270637 ();
 extern "C" void Convert_ToUInt16_m1043031438 ();
@@ -1464,10 +1458,6 @@ extern "C" void Convert_ToUInt64_m827571497 ();
 extern "C" void Convert_ToUInt64_m1896191125 ();
 extern "C" void Convert_ToUInt64_m345450801 ();
 extern "C" void Convert_ChangeType_m1630780412 ();
-extern "C" void Convert_EndianSwap_m975554045 ();
-extern "C" void Convert_ConvertToBase2_m3975215197 ();
-extern "C" void Convert_ConvertToBase8_m2900884003 ();
-extern "C" void Convert_ConvertToBase16_m201400146 ();
 extern "C" void Convert_ToType_m1408903144 ();
 extern "C" void CultureAwareComparer__ctor_m3785348999 ();
 extern "C" void CultureAwareComparer_Compare_m2587353351 ();
@@ -1895,9 +1885,6 @@ extern "C" void FlagsAttribute__ctor_m1848108622 ();
 extern "C" void FormatException__ctor_m3521145315 ();
 extern "C" void FormatException__ctor_m1466217969 ();
 extern "C" void FormatException__ctor_m3740644286 ();
-extern "C" void GC_get_MaxGeneration_m1986243316 ();
-extern "C" void GC_InternalCollect_m479047119 ();
-extern "C" void GC_Collect_m2249328497 ();
 extern "C" void GC_SuppressFinalize_m953228702 ();
 extern "C" void Calendar__ctor_m1687153432 ();
 extern "C" void Calendar_Clone_m3159430630 ();
@@ -2293,6 +2280,7 @@ extern "C" void Directory_CreateDirectory_m3561886598 ();
 extern "C" void Directory_CreateDirectoriesInternal_m2817848291 ();
 extern "C" void Directory_Exists_m2663601042 ();
 extern "C" void Directory_GetCurrentDirectory_m44486537 ();
+extern "C" void Directory_GetFiles_m3775562030 ();
 extern "C" void Directory_GetFiles_m4036267478 ();
 extern "C" void Directory_GetFileSystemEntries_m2720389648 ();
 extern "C" void DirectoryInfo__ctor_m3750996792 ();
@@ -2309,19 +2297,15 @@ extern "C" void DirectoryNotFoundException__ctor_m3713860966 ();
 extern "C" void DirectoryNotFoundException__ctor_m1117392681 ();
 extern "C" void EndOfStreamException__ctor_m2877696588 ();
 extern "C" void EndOfStreamException__ctor_m4268387737 ();
-extern "C" void File_Copy_m1439309123 ();
 extern "C" void File_Create_m1378973685 ();
 extern "C" void File_Create_m3510380080 ();
 extern "C" void File_Delete_m2115477556 ();
 extern "C" void File_Exists_m1685968367 ();
-extern "C" void File_GetAttributes_m633222855 ();
 extern "C" void File_Open_m1543461971 ();
 extern "C" void File_OpenRead_m132329087 ();
 extern "C" void File_OpenText_m4058508963 ();
 extern "C" void File_OpenWrite_m3037731260 ();
 extern "C" void File_ReadAllBytes_m4085527721 ();
-extern "C" void File_ReadAllText_m1018286608 ();
-extern "C" void File_ReadAllText_m1182037563 ();
 extern "C" void File_WriteAllBytes_m677793349 ();
 extern "C" void FileInfo__ctor_m2605645233 ();
 extern "C" void FileInfo__ctor_m2015269278 ();
@@ -2330,6 +2314,7 @@ extern "C" void FileInfo_get_Exists_m1446268948 ();
 extern "C" void FileInfo_get_Name_m506260294 ();
 extern "C" void FileInfo_get_DirectoryName_m441515569 ();
 extern "C" void FileInfo_get_Directory_m898581134 ();
+extern "C" void FileInfo_Create_m1139990289 ();
 extern "C" void FileInfo_ToString_m2424440748 ();
 extern "C" void FileNotFoundException__ctor_m594134677 ();
 extern "C" void FileNotFoundException__ctor_m1531555541 ();
@@ -2338,7 +2323,6 @@ extern "C" void FileNotFoundException_get_Message_m2810461004 ();
 extern "C" void FileNotFoundException_GetObjectData_m3405690481 ();
 extern "C" void FileNotFoundException_ToString_m614787994 ();
 extern "C" void FileStream__ctor_m3026076202 ();
-extern "C" void FileStream__ctor_m785772645 ();
 extern "C" void FileStream__ctor_m572813458 ();
 extern "C" void FileStream__ctor_m3699774824 ();
 extern "C" void FileStream__ctor_m2737324509 ();
@@ -2432,11 +2416,9 @@ extern "C" void MonoIO_GetException_m957022672 ();
 extern "C" void MonoIO_CreateDirectory_m379525469 ();
 extern "C" void MonoIO_GetFileSystemEntries_m3422848968 ();
 extern "C" void MonoIO_GetCurrentDirectory_m1509324201 ();
-extern "C" void MonoIO_CopyFile_m2961462354 ();
 extern "C" void MonoIO_DeleteFile_m3273821223 ();
 extern "C" void MonoIO_GetFileAttributes_m2061483138 ();
 extern "C" void MonoIO_GetFileType_m3310262429 ();
-extern "C" void MonoIO_Exists_m3221338122 ();
 extern "C" void MonoIO_ExistsFile_m1421941572 ();
 extern "C" void MonoIO_ExistsDirectory_m3152546909 ();
 extern "C" void MonoIO_GetFileStat_m3146995842 ();
@@ -2469,11 +2451,13 @@ extern "C" void NullStream_SetLength_m702387196 ();
 extern "C" void NullStream_Write_m3213413592 ();
 extern "C" void NullStream_WriteByte_m2351908684 ();
 extern "C" void Path__cctor_m3685888661 ();
+extern "C" void Path_ChangeExtension_m4087688358 ();
 extern "C" void Path_Combine_m3185811654 ();
 extern "C" void Path_CleanPath_m2294719205 ();
 extern "C" void Path_GetDirectoryName_m260633861 ();
 extern "C" void Path_GetExtension_m740668066 ();
 extern "C" void Path_GetFileName_m893210218 ();
+extern "C" void Path_GetFileNameWithoutExtension_m2541641063 ();
 extern "C" void Path_GetFullPath_m840307057 ();
 extern "C" void Path_WindowsDriveAdjustment_m1548620993 ();
 extern "C" void Path_InsecureGetFullPath_m2635272425 ();
@@ -2515,7 +2499,6 @@ extern "C" void StreamReader__ctor_m1780435609 ();
 extern "C" void StreamReader__ctor_m1475856354 ();
 extern "C" void StreamReader__ctor_m2654332332 ();
 extern "C" void StreamReader__ctor_m3454466728 ();
-extern "C" void StreamReader__ctor_m3499795391 ();
 extern "C" void StreamReader__ctor_m871771009 ();
 extern "C" void StreamReader__cctor_m1829179037 ();
 extern "C" void StreamReader_Initialize_m1533993200 ();
@@ -2651,8 +2634,6 @@ extern "C" void Math_Max_m2671311541 ();
 extern "C" void Math_Min_m4290821911 ();
 extern "C" void Math_Round_m565516458 ();
 extern "C" void Math_Round_m2632426160 ();
-extern "C" void Math_Round_m3846462091 ();
-extern "C" void Math_Round2_m3834966382 ();
 extern "C" void Math_Sin_m2320256962 ();
 extern "C" void Math_Cos_m43596019 ();
 extern "C" void Math_Atan_m2820982624 ();
@@ -4349,10 +4330,8 @@ extern "C" void DSASignatureFormatter_SetKey_m3396422838 ();
 extern "C" void HashAlgorithm__ctor_m3777008390 ();
 extern "C" void HashAlgorithm_System_IDisposable_Dispose_m2106335965 ();
 extern "C" void HashAlgorithm_get_CanReuseTransform_m160024219 ();
-extern "C" void HashAlgorithm_Clear_m672070915 ();
 extern "C" void HashAlgorithm_ComputeHash_m3637856778 ();
 extern "C" void HashAlgorithm_ComputeHash_m3945506296 ();
-extern "C" void HashAlgorithm_ComputeHash_m595824264 ();
 extern "C" void HashAlgorithm_Create_m1224939073 ();
 extern "C" void HashAlgorithm_get_Hash_m931854461 ();
 extern "C" void HashAlgorithm_get_HashSize_m2625667696 ();
@@ -4900,7 +4879,6 @@ extern "C" void String_LastIndexOf_m554153234 ();
 extern "C" void String_LastIndexOf_m290475879 ();
 extern "C" void String_Contains_m4017059963 ();
 extern "C" void String_IsNullOrEmpty_m2802126737 ();
-extern "C" void String_PadLeft_m1726975163 ();
 extern "C" void String_PadRight_m1043573208 ();
 extern "C" void String_StartsWith_m1841920685 ();
 extern "C" void String_Replace_m534438427 ();
@@ -7748,6 +7726,8 @@ extern "C" void Application_get_streamingAssetsPath_m8890645 ();
 extern "C" void Application_get_persistentDataPath_m3129298355 ();
 extern "C" void Application_OpenURL_m3882634228 ();
 extern "C" void Application_CallLogCallback_m3408386792 ();
+extern "C" void Application_RequestUserAuthorization_m2712302050 ();
+extern "C" void Application_HasUserAuthorization_m3858687304 ();
 extern "C" void Application_LoadLevel_m393995325 ();
 extern "C" void LogCallback__ctor_m898185969 ();
 extern "C" void LogCallback_Invoke_m3921378796 ();
@@ -7897,7 +7877,6 @@ extern "C" void Camera_INTERNAL_CALL_ScreenToViewportPoint_m529506484 ();
 extern "C" void Camera_ScreenPointToRay_m614889538 ();
 extern "C" void Camera_INTERNAL_CALL_ScreenPointToRay_m2752248646 ();
 extern "C" void Camera_get_main_m475173995 ();
-extern "C" void Camera_get_allCameras_m1343394249 ();
 extern "C" void Camera_get_allCamerasCount_m989474043 ();
 extern "C" void Camera_GetAllCameras_m2922515227 ();
 extern "C" void Camera_FireOnPreCull_m1679634170 ();
@@ -8169,7 +8148,6 @@ extern "C" void GameObject_Internal_AddComponentWithType_m214735204 ();
 extern "C" void GameObject_AddComponent_m3757565614 ();
 extern "C" void GameObject_Internal_CreateGameObject_m3428198595 ();
 extern "C" void GameObject_Find_m836511350 ();
-extern "C" void GameObject_get_gameObject_m3662236595 ();
 extern "C" void GL_SetRevertBackfacing_m3387974638 ();
 extern "C" void GL_InvalidateState_m3232431926 ();
 extern "C" void GL_IssuePluginEvent_m993229995 ();
@@ -8471,10 +8449,8 @@ extern "C" void Gyroscope__ctor_m1250646805 ();
 extern "C" void Gyroscope_attitude_Internal_m1839122405 ();
 extern "C" void Gyroscope_INTERNAL_CALL_attitude_Internal_m2763981553 ();
 extern "C" void Gyroscope_setEnabled_Internal_m881641045 ();
-extern "C" void Gyroscope_setUpdateInterval_Internal_m2222351378 ();
 extern "C" void Gyroscope_get_attitude_m3665233473 ();
 extern "C" void Gyroscope_set_enabled_m487023127 ();
-extern "C" void Gyroscope_set_updateInterval_m3271568822 ();
 extern "C" void HideInInspector__ctor_m2243513849 ();
 extern "C" void HostData__ctor_m3658760313 ();
 extern "C" void HostData_get_useNat_m913506468 ();
@@ -8508,7 +8484,6 @@ extern "C" void Input_GetKeyInt_m4143570188 ();
 extern "C" void Input_GetKeyUpInt_m2486491081 ();
 extern "C" void Input_GetKeyDownInt_m2930607648 ();
 extern "C" void Input_GetAxis_m2098048324 ();
-extern "C" void Input_set_compensateSensors_m952058409 ();
 extern "C" void Input_get_gyro_m4027090408 ();
 extern "C" void Input_GetKey_m3849524999 ();
 extern "C" void Input_GetKeyDown_m1771960377 ();
@@ -8949,7 +8924,6 @@ extern "C" void Resources_FindObjectsOfTypeAll_m3365744935 ();
 extern "C" void Resources_Load_m2041782325 ();
 extern "C" void Resources_Load_m243305716 ();
 extern "C" void Resources_GetBuiltinResource_m582410469 ();
-extern "C" void Resources_UnloadUnusedAssets_m2770025609 ();
 extern "C" void Rigidbody_set_useGravity_m2606656539 ();
 extern "C" void Rigidbody_set_isKinematic_m738793415 ();
 extern "C" void Rigidbody_get_rotation_m4203325509 ();
@@ -9204,6 +9178,9 @@ extern "C" void Texture2D_SetPixel_m609991514 ();
 extern "C" void Texture2D_INTERNAL_CALL_SetPixel_m3139530413 ();
 extern "C" void Texture2D_Apply_m3753817130 ();
 extern "C" void Texture2D_Apply_m3543341930 ();
+extern "C" void Texture2D_ReadPixels_m1120832672 ();
+extern "C" void Texture2D_INTERNAL_CALL_ReadPixels_m1476963500 ();
+extern "C" void Texture2D_EncodeToPNG_m2680110528 ();
 extern "C" void Time_get_time_m2216684562 ();
 extern "C" void Time_get_deltaTime_m2233168104 ();
 extern "C" void Time_get_unscaledTime_m862335845 ();
@@ -9271,12 +9248,10 @@ extern "C" void Transform_TransformPoint_m3936139914 ();
 extern "C" void Transform_InverseTransformPoint_m2648491174 ();
 extern "C" void Transform_INTERNAL_CALL_InverseTransformPoint_m69330567 ();
 extern "C" void Transform_get_childCount_m881385315 ();
-extern "C" void Transform_Find_m3323476454 ();
 extern "C" void Transform_get_lossyScale_m1638545862 ();
 extern "C" void Transform_INTERNAL_get_lossyScale_m3027364225 ();
 extern "C" void Transform_get_hasChanged_m4220930228 ();
 extern "C" void Transform_set_hasChanged_m2322582363 ();
-extern "C" void Transform_FindChild_m2677714886 ();
 extern "C" void Transform_GetEnumerator_m3479720613 ();
 extern "C" void Transform_GetChild_m3838588184 ();
 extern "C" void Enumerator__ctor_m147705785 ();
@@ -9364,6 +9339,19 @@ extern "C" void Vector4_op_Implicit_m2625404180 ();
 extern "C" void WaitForEndOfFrame__ctor_m3062480170 ();
 extern "C" void WaitForFixedUpdate__ctor_m3781413380 ();
 extern "C" void WaitForSeconds__ctor_m1990515539 ();
+extern "C" void WebCamDevice_get_name_m1117076425 ();
+extern "C" void WebCamTexture__ctor_m4161111579 ();
+extern "C" void WebCamTexture__ctor_m1125343005 ();
+extern "C" void WebCamTexture_Internal_CreateWebCamTexture_m1601948981 ();
+extern "C" void WebCamTexture_Play_m1997372813 ();
+extern "C" void WebCamTexture_INTERNAL_CALL_Play_m3743409567 ();
+extern "C" void WebCamTexture_Pause_m3196941407 ();
+extern "C" void WebCamTexture_INTERNAL_CALL_Pause_m2875494765 ();
+extern "C" void WebCamTexture_Stop_m4045220381 ();
+extern "C" void WebCamTexture_INTERNAL_CALL_Stop_m3253711615 ();
+extern "C" void WebCamTexture_get_isPlaying_m1392703560 ();
+extern "C" void WebCamTexture_get_devices_m4137524804 ();
+extern "C" void WebCamTexture_get_videoRotationAngle_m1556283588 ();
 extern "C" void WrapperlessIcall__ctor_m4149541650 ();
 extern "C" void WritableAttribute__ctor_m761932763 ();
 extern "C" void WWW__ctor_m2024029190 ();
@@ -9378,6 +9366,7 @@ extern "C" void WWW_get_text_m1558985139 ();
 extern "C" void WWW_get_DefaultEncoding_m1497697991 ();
 extern "C" void WWW_GetTextEncoder_m1231410509 ();
 extern "C" void WWW_get_bytes_m420718112 ();
+extern "C" void WWW_get_size_m4107261770 ();
 extern "C" void WWW_get_error_m3092701216 ();
 extern "C" void WWW_GetTexture_m2539490669 ();
 extern "C" void WWW_get_texture_m1121178301 ();
@@ -10201,6 +10190,8 @@ extern "C" void App_getInstance_m830484687 ();
 extern "C" void App_print_m929367453 ();
 extern "C" void App_LoadSceneAsyn1_m3759058960 ();
 extern "C" void App_BackSceneAsyn_m1177134798 ();
+extern "C" void App_getResoucesPath_m3009697037 ();
+extern "C" void App_ResoucesToSD_m2299081323 ();
 extern "C" void U3CBackSceneAsynU3Ec__Iterator8__ctor_m2011170298 ();
 extern "C" void U3CBackSceneAsynU3Ec__Iterator8_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2413107860 ();
 extern "C" void U3CBackSceneAsynU3Ec__Iterator8_System_Collections_IEnumerator_get_Current_m3125610860 ();
@@ -10213,6 +10204,12 @@ extern "C" void U3CLoadSceneAsyn1U3Ec__Iterator7_System_Collections_IEnumerator_
 extern "C" void U3CLoadSceneAsyn1U3Ec__Iterator7_MoveNext_m3987917807 ();
 extern "C" void U3CLoadSceneAsyn1U3Ec__Iterator7_Dispose_m2220886448 ();
 extern "C" void U3CLoadSceneAsyn1U3Ec__Iterator7_Reset_m451557750 ();
+extern "C" void U3CResoucesToSDU3Ec__Iterator9__ctor_m3428604384 ();
+extern "C" void U3CResoucesToSDU3Ec__Iterator9_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2681724208 ();
+extern "C" void U3CResoucesToSDU3Ec__Iterator9_System_Collections_IEnumerator_get_Current_m862304312 ();
+extern "C" void U3CResoucesToSDU3Ec__Iterator9_MoveNext_m3896947404 ();
+extern "C" void U3CResoucesToSDU3Ec__Iterator9_Dispose_m354574071 ();
+extern "C" void U3CResoucesToSDU3Ec__Iterator9_Reset_m2634845841 ();
 extern "C" void AssetLoad__ctor_m3320956641 ();
 extern "C" void AssetLoad_add_AssetHandleEventKey_m2835403566 ();
 extern "C" void AssetLoad_remove_AssetHandleEventKey_m3253926185 ();
@@ -10221,12 +10218,12 @@ extern "C" void AssetLoad_remove_AssetHandleEvent_m2843883265 ();
 extern "C" void AssetLoad_getAssetBundleLoadGameObjectKey_m1705268248 ();
 extern "C" void AssetLoad_LoadMoxingAsset_m1281910273 ();
 extern "C" void AssetLoad_LoadAssetBundle_m2520296427 ();
-extern "C" void U3CLoadAssetBundleU3Ec__Iterator9__ctor_m3725592212 ();
-extern "C" void U3CLoadAssetBundleU3Ec__Iterator9_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m288659122 ();
-extern "C" void U3CLoadAssetBundleU3Ec__Iterator9_System_Collections_IEnumerator_get_Current_m715613530 ();
-extern "C" void U3CLoadAssetBundleU3Ec__Iterator9_MoveNext_m1621806132 ();
-extern "C" void U3CLoadAssetBundleU3Ec__Iterator9_Dispose_m200225777 ();
-extern "C" void U3CLoadAssetBundleU3Ec__Iterator9_Reset_m1032507199 ();
+extern "C" void U3CLoadAssetBundleU3Ec__IteratorA__ctor_m3716604252 ();
+extern "C" void U3CLoadAssetBundleU3Ec__IteratorA_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m142711850 ();
+extern "C" void U3CLoadAssetBundleU3Ec__IteratorA_System_Collections_IEnumerator_get_Current_m2484385426 ();
+extern "C" void U3CLoadAssetBundleU3Ec__IteratorA_MoveNext_m3578168620 ();
+extern "C" void U3CLoadAssetBundleU3Ec__IteratorA_Dispose_m4199461113 ();
+extern "C" void U3CLoadAssetBundleU3Ec__IteratorA_Reset_m1023527191 ();
 extern "C" void AssetHandle__ctor_m1395921724 ();
 extern "C" void AssetHandle_Invoke_m533199168 ();
 extern "C" void AssetHandle_BeginInvoke_m1284049671 ();
@@ -10280,31 +10277,21 @@ extern "C" void ByteReader_ReadCSV_m2109224118 ();
 extern "C" void CatchMain__ctor_m3862448549 ();
 extern "C" void CatchMain_Start_m2596118261 ();
 extern "C" void CatchMain_Update_m3719098128 ();
-extern "C" void CatchMain_Reflush_m4047287092 ();
 extern "C" void CatchMain_getElfDetail_m2759569749 ();
 extern "C" void CatchMain_showSprite_m3175677687 ();
 extern "C" void CatchMain_LoadMoxing_m588119131 ();
-extern "C" void CatchMain_Catch_m2184648878 ();
-extern "C" void CatchMain_CatchElf_m3383424987 ();
-extern "C" void U3CCatchElfU3Ec__Iterator6__ctor_m676623365 ();
-extern "C" void U3CCatchElfU3Ec__Iterator6_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3832767235 ();
-extern "C" void U3CCatchElfU3Ec__Iterator6_System_Collections_IEnumerator_get_Current_m1808170187 ();
-extern "C" void U3CCatchElfU3Ec__Iterator6_MoveNext_m3861419891 ();
-extern "C" void U3CCatchElfU3Ec__Iterator6_Dispose_m1213223810 ();
-extern "C" void U3CCatchElfU3Ec__Iterator6_Reset_m4139640204 ();
 extern "C" void U3CgetElfDetailU3Ec__Iterator5__ctor_m3250029848 ();
 extern "C" void U3CgetElfDetailU3Ec__Iterator5_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m775820692 ();
 extern "C" void U3CgetElfDetailU3Ec__Iterator5_System_Collections_IEnumerator_get_Current_m4271539084 ();
 extern "C" void U3CgetElfDetailU3Ec__Iterator5_MoveNext_m1680347072 ();
 extern "C" void U3CgetElfDetailU3Ec__Iterator5_Dispose_m84043355 ();
 extern "C" void U3CgetElfDetailU3Ec__Iterator5_Reset_m399541249 ();
-extern "C" void CatchQuan__ctor_m3077239245 ();
-extern "C" void CatchQuan_Start_m1650798917 ();
-extern "C" void CatchQuan_Update_m3724688896 ();
-extern "C" void CatchQuan_Stop_m3808169805 ();
 extern "C" void ChatInput__ctor_m1480987787 ();
 extern "C" void ChatInput_Start_m688725295 ();
 extern "C" void ChatInput_OnSubmit_m3270837380 ();
+extern "C" void DontDestroy__ctor_m3000043898 ();
+extern "C" void DontDestroy_Start_m155584994 ();
+extern "C" void DontDestroy_Update_m3766316197 ();
 extern "C" void DownloadTexture__ctor_m4256533714 ();
 extern "C" void DownloadTexture_Start_m3662460050 ();
 extern "C" void DownloadTexture_OnDestroy_m458497715 ();
@@ -10385,6 +10372,14 @@ extern "C" void Parameter_get_type_m2764483855 ();
 extern "C" void ExampleDragDropItem__ctor_m1958504303 ();
 extern "C" void ExampleDragDropItem_OnDragDropRelease_m2144503792 ();
 extern "C" void ExampleDragDropSurface__ctor_m1975051895 ();
+extern "C" void FilesManager__ctor_m1563510825 ();
+extern "C" void FilesManager_Awake_m929401470 ();
+extern "C" void FilesManager_GetDirectoryName_FileDic_All_m1605010202 ();
+extern "C" void FilesManager_GetAllImagesFiles_m94196845 ();
+extern "C" void FilesManager_GetDirectoryName_FileDic_m1953023208 ();
+extern "C" void FilesManager_getImageFile_m854015874 ();
+extern "C" void FilesManager_isExists_m1085975267 ();
+extern "C" void FilesManager_getPath_m897015337 ();
 extern "C" void Gift__ctor_m2714229274 ();
 extern "C" void Gift_get_GoodsId_m2067560930 ();
 extern "C" void Gift_set_GoodsId_m1748829741 ();
@@ -10421,12 +10416,12 @@ extern "C" void GoodsMain_Start_m2920005822 ();
 extern "C" void GoodsMain_Update_m2989688601 ();
 extern "C" void GoodsMain_getGoodsList_m2123492436 ();
 extern "C" void GoodsMain_AddGoodsItem_m3945403756 ();
-extern "C" void U3CgetGoodsListU3Ec__Iterator13__ctor_m3802415580 ();
-extern "C" void U3CgetGoodsListU3Ec__Iterator13_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2870415030 ();
-extern "C" void U3CgetGoodsListU3Ec__Iterator13_System_Collections_IEnumerator_get_Current_m3110571486 ();
-extern "C" void U3CgetGoodsListU3Ec__Iterator13_MoveNext_m337929360 ();
-extern "C" void U3CgetGoodsListU3Ec__Iterator13_Dispose_m2248480821 ();
-extern "C" void U3CgetGoodsListU3Ec__Iterator13_Reset_m4260185543 ();
+extern "C" void U3CgetGoodsListU3Ec__Iterator15__ctor_m3799908702 ();
+extern "C" void U3CgetGoodsListU3Ec__Iterator15_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3995800700 ();
+extern "C" void U3CgetGoodsListU3Ec__Iterator15_System_Collections_IEnumerator_get_Current_m2441688740 ();
+extern "C" void U3CgetGoodsListU3Ec__Iterator15_MoveNext_m2376166962 ();
+extern "C" void U3CgetGoodsListU3Ec__Iterator15_Dispose_m2165327091 ();
+extern "C" void U3CgetGoodsListU3Ec__Iterator15_Reset_m4257674177 ();
 extern "C" void GroupPhotoMain__ctor_m3019532147 ();
 extern "C" void GroupPhotoMain_Start_m87173375 ();
 extern "C" void GroupPhotoMain_Update_m1472078498 ();
@@ -10434,12 +10429,12 @@ extern "C" void GroupPhotoMain_TakePhoto_m774785105 ();
 extern "C" void GroupPhotoMain_getSpriteDec_m2342646629 ();
 extern "C" void GroupPhotoMain_showDec_m1888690952 ();
 extern "C" void GroupPhotoMain_show3D_m1514065097 ();
-extern "C" void U3CgetSpriteDecU3Ec__Iterator10__ctor_m1486475959 ();
-extern "C" void U3CgetSpriteDecU3Ec__Iterator10_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m4011274285 ();
-extern "C" void U3CgetSpriteDecU3Ec__Iterator10_System_Collections_IEnumerator_get_Current_m3883798581 ();
-extern "C" void U3CgetSpriteDecU3Ec__Iterator10_MoveNext_m149200249 ();
-extern "C" void U3CgetSpriteDecU3Ec__Iterator10_Dispose_m3713323372 ();
-extern "C" void U3CgetSpriteDecU3Ec__Iterator10_Reset_m657234806 ();
+extern "C" void U3CgetSpriteDecU3Ec__Iterator11__ctor_m3395303260 ();
+extern "C" void U3CgetSpriteDecU3Ec__Iterator11_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1411292392 ();
+extern "C" void U3CgetSpriteDecU3Ec__Iterator11_System_Collections_IEnumerator_get_Current_m4105950448 ();
+extern "C" void U3CgetSpriteDecU3Ec__Iterator11_MoveNext_m1362262328 ();
+extern "C" void U3CgetSpriteDecU3Ec__Iterator11_Dispose_m390524977 ();
+extern "C" void U3CgetSpriteDecU3Ec__Iterator11_Reset_m2566062107 ();
 extern "C" void InvAttachmentPoint__ctor_m2204608127 ();
 extern "C" void InvAttachmentPoint_Attach_m3836457771 ();
 extern "C" void InvBaseItem__ctor_m3845987572 ();
@@ -10482,7 +10477,6 @@ extern "C" void IOSNativeFunction_DidLaunchOver_m2408072219 ();
 extern "C" void IOSNativeFunction_DidBackAction_m97715759 ();
 extern "C" void IOSNativeFunction_LoginUserId_m3777548647 ();
 extern "C" void IOSNativeFunction_getPoiElfId_m3947210306 ();
-extern "C" void IOSNativeFunction_getCatchId_m2473514654 ();
 extern "C" void LagPosition__ctor_m3228986234 ();
 extern "C" void LagPosition_OnRepositionEnd_m1556513694 ();
 extern "C" void LagPosition_Interpolate_m3587740054 ();
@@ -10516,20 +10510,20 @@ extern "C" void JSONArray_GetEnumerator_m1688162689 ();
 extern "C" void JSONArray_ToString_m3743404074 ();
 extern "C" void JSONArray_ToString_m3377806804 ();
 extern "C" void JSONArray_Serialize_m1935290006 ();
-extern "C" void U3CU3Ec__IteratorC__ctor_m558397030 ();
-extern "C" void U3CU3Ec__IteratorC_System_Collections_Generic_IEnumeratorU3CLitJson_JSONNodeU3E_get_Current_m3791790015 ();
-extern "C" void U3CU3Ec__IteratorC_System_Collections_IEnumerator_get_Current_m3939571390 ();
-extern "C" void U3CU3Ec__IteratorC_System_Collections_IEnumerable_GetEnumerator_m3634268299 ();
-extern "C" void U3CU3Ec__IteratorC_System_Collections_Generic_IEnumerableU3CLitJson_JSONNodeU3E_GetEnumerator_m566008024 ();
-extern "C" void U3CU3Ec__IteratorC_MoveNext_m2070887726 ();
-extern "C" void U3CU3Ec__IteratorC_Dispose_m1323013117 ();
-extern "C" void U3CU3Ec__IteratorC_Reset_m4054426663 ();
-extern "C" void U3CGetEnumeratorU3Ec__IteratorD__ctor_m6146815 ();
-extern "C" void U3CGetEnumeratorU3Ec__IteratorD_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3190119045 ();
-extern "C" void U3CGetEnumeratorU3Ec__IteratorD_System_Collections_IEnumerator_get_Current_m92416157 ();
-extern "C" void U3CGetEnumeratorU3Ec__IteratorD_MoveNext_m1492582589 ();
-extern "C" void U3CGetEnumeratorU3Ec__IteratorD_Dispose_m1163148708 ();
-extern "C" void U3CGetEnumeratorU3Ec__IteratorD_Reset_m2458064754 ();
+extern "C" void U3CU3Ec__IteratorD__ctor_m1600113581 ();
+extern "C" void U3CU3Ec__IteratorD_System_Collections_Generic_IEnumeratorU3CLitJson_JSONNodeU3E_get_Current_m3602580742 ();
+extern "C" void U3CU3Ec__IteratorD_System_Collections_IEnumerator_get_Current_m2767759215 ();
+extern "C" void U3CU3Ec__IteratorD_System_Collections_IEnumerable_GetEnumerator_m3961566032 ();
+extern "C" void U3CU3Ec__IteratorD_System_Collections_Generic_IEnumerableU3CLitJson_JSONNodeU3E_GetEnumerator_m1921487097 ();
+extern "C" void U3CU3Ec__IteratorD_MoveNext_m1719103727 ();
+extern "C" void U3CU3Ec__IteratorD_Dispose_m2247474400 ();
+extern "C" void U3CU3Ec__IteratorD_Reset_m3558650390 ();
+extern "C" void U3CGetEnumeratorU3Ec__IteratorE__ctor_m9632704 ();
+extern "C" void U3CGetEnumeratorU3Ec__IteratorE_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1951667942 ();
+extern "C" void U3CGetEnumeratorU3Ec__IteratorE_System_Collections_IEnumerator_get_Current_m3034549630 ();
+extern "C" void U3CGetEnumeratorU3Ec__IteratorE_MoveNext_m3513697688 ();
+extern "C" void U3CGetEnumeratorU3Ec__IteratorE_Dispose_m1277902213 ();
+extern "C" void U3CGetEnumeratorU3Ec__IteratorE_Reset_m2461542195 ();
 extern "C" void JSONClass__ctor_m3719998694 ();
 extern "C" void JSONClass_get_Item_m404722800 ();
 extern "C" void JSONClass_set_Item_m1962860503 ();
@@ -10545,22 +10539,22 @@ extern "C" void JSONClass_GetEnumerator_m3310636512 ();
 extern "C" void JSONClass_ToString_m3201577129 ();
 extern "C" void JSONClass_ToString_m1224664875 ();
 extern "C" void JSONClass_Serialize_m791146507 ();
-extern "C" void U3CU3Ec__IteratorE__ctor_m3502766639 ();
-extern "C" void U3CU3Ec__IteratorE_System_Collections_Generic_IEnumeratorU3CLitJson_JSONNodeU3E_get_Current_m1809337074 ();
-extern "C" void U3CU3Ec__IteratorE_System_Collections_IEnumerator_get_Current_m4238899721 ();
-extern "C" void U3CU3Ec__IteratorE_System_Collections_IEnumerable_GetEnumerator_m639051368 ();
-extern "C" void U3CU3Ec__IteratorE_System_Collections_Generic_IEnumerableU3CLitJson_JSONNodeU3E_GetEnumerator_m2686353467 ();
-extern "C" void U3CU3Ec__IteratorE_MoveNext_m1727805261 ();
-extern "C" void U3CU3Ec__IteratorE_Dispose_m1960902296 ();
-extern "C" void U3CU3Ec__IteratorE_Reset_m2426117518 ();
-extern "C" void U3CGetEnumeratorU3Ec__IteratorF__ctor_m3829549684 ();
-extern "C" void U3CGetEnumeratorU3Ec__IteratorF_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1091044530 ();
-extern "C" void U3CGetEnumeratorU3Ec__IteratorF_System_Collections_IEnumerator_get_Current_m1827459930 ();
-extern "C" void U3CGetEnumeratorU3Ec__IteratorF_MoveNext_m3455610324 ();
-extern "C" void U3CGetEnumeratorU3Ec__IteratorF_Dispose_m2906372433 ();
-extern "C" void U3CGetEnumeratorU3Ec__IteratorF_Reset_m42330079 ();
-extern "C" void U3CRemoveU3Ec__AnonStorey17__ctor_m3430336966 ();
-extern "C" void U3CRemoveU3Ec__AnonStorey17_U3CU3Em__4_m1942725035 ();
+extern "C" void U3CU3Ec__IteratorF__ctor_m539608478 ();
+extern "C" void U3CU3Ec__IteratorF_System_Collections_Generic_IEnumeratorU3CLitJson_JSONNodeU3E_get_Current_m3440085297 ();
+extern "C" void U3CU3Ec__IteratorF_System_Collections_IEnumerator_get_Current_m3895968442 ();
+extern "C" void U3CU3Ec__IteratorF_System_Collections_IEnumerable_GetEnumerator_m3162745637 ();
+extern "C" void U3CU3Ec__IteratorF_System_Collections_Generic_IEnumerableU3CLitJson_JSONNodeU3E_GetEnumerator_m3690273884 ();
+extern "C" void U3CU3Ec__IteratorF_MoveNext_m1081912590 ();
+extern "C" void U3CU3Ec__IteratorF_Dispose_m2666889811 ();
+extern "C" void U3CU3Ec__IteratorF_Reset_m351890301 ();
+extern "C" void U3CGetEnumeratorU3Ec__Iterator10__ctor_m2514092317 ();
+extern "C" void U3CGetEnumeratorU3Ec__Iterator10_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1077148043 ();
+extern "C" void U3CGetEnumeratorU3Ec__Iterator10_System_Collections_IEnumerator_get_Current_m769035795 ();
+extern "C" void U3CGetEnumeratorU3Ec__Iterator10_MoveNext_m4182078395 ();
+extern "C" void U3CGetEnumeratorU3Ec__Iterator10_Dispose_m1669330874 ();
+extern "C" void U3CGetEnumeratorU3Ec__Iterator10_Reset_m1071778420 ();
+extern "C" void U3CRemoveU3Ec__AnonStorey19__ctor_m3432278340 ();
+extern "C" void U3CRemoveU3Ec__AnonStorey19_U3CU3Em__4_m159002785 ();
 extern "C" void JSONData__ctor_m3158925766 ();
 extern "C" void JSONData__ctor_m2182288549 ();
 extern "C" void JSONData__ctor_m1044359630 ();
@@ -10645,14 +10639,6 @@ extern "C" void JSONNode_op_Implicit_m3873055849 ();
 extern "C" void JSONNode_op_Implicit_m1626457581 ();
 extern "C" void JSONNode_op_Equality_m2293470393 ();
 extern "C" void JSONNode_op_Inequality_m394651268 ();
-extern "C" void U3CU3Ec__IteratorA__ctor_m963364601 ();
-extern "C" void U3CU3Ec__IteratorA_System_Collections_Generic_IEnumeratorU3CLitJson_JSONNodeU3E_get_Current_m1362380412 ();
-extern "C" void U3CU3Ec__IteratorA_System_Collections_IEnumerator_get_Current_m2094439295 ();
-extern "C" void U3CU3Ec__IteratorA_System_Collections_IEnumerable_GetEnumerator_m90900374 ();
-extern "C" void U3CU3Ec__IteratorA_System_Collections_Generic_IEnumerableU3CLitJson_JSONNodeU3E_GetEnumerator_m1763135265 ();
-extern "C" void U3CU3Ec__IteratorA_MoveNext_m763596939 ();
-extern "C" void U3CU3Ec__IteratorA_Dispose_m1402461558 ();
-extern "C" void U3CU3Ec__IteratorA_Reset_m3354472356 ();
 extern "C" void U3CU3Ec__IteratorB__ctor_m960014012 ();
 extern "C" void U3CU3Ec__IteratorB_System_Collections_Generic_IEnumeratorU3CLitJson_JSONNodeU3E_get_Current_m941985623 ();
 extern "C" void U3CU3Ec__IteratorB_System_Collections_IEnumerator_get_Current_m2714198942 ();
@@ -10661,6 +10647,14 @@ extern "C" void U3CU3Ec__IteratorB_System_Collections_Generic_IEnumerableU3CLitJ
 extern "C" void U3CU3Ec__IteratorB_MoveNext_m726133040 ();
 extern "C" void U3CU3Ec__IteratorB_Dispose_m1292307989 ();
 extern "C" void U3CU3Ec__IteratorB_Reset_m3351134439 ();
+extern "C" void U3CU3Ec__IteratorC__ctor_m961128059 ();
+extern "C" void U3CU3Ec__IteratorC_System_Collections_Generic_IEnumeratorU3CLitJson_JSONNodeU3E_get_Current_m390369458 ();
+extern "C" void U3CU3Ec__IteratorC_System_Collections_IEnumerator_get_Current_m1560101181 ();
+extern "C" void U3CU3Ec__IteratorC_System_Collections_IEnumerable_GetEnumerator_m2781726432 ();
+extern "C" void U3CU3Ec__IteratorC_System_Collections_Generic_IEnumerableU3CLitJson_JSONNodeU3E_GetEnumerator_m1043122731 ();
+extern "C" void U3CU3Ec__IteratorC_MoveNext_m1539885397 ();
+extern "C" void U3CU3Ec__IteratorC_Dispose_m1329073716 ();
+extern "C" void U3CU3Ec__IteratorC_Reset_m3352248486 ();
 extern "C" void LoadLevelOnClick__ctor_m2820126616 ();
 extern "C" void LoadLevelOnClick_OnClick_m931326351 ();
 extern "C" void Localization__cctor_m3948752887 ();
@@ -10698,20 +10692,25 @@ extern "C" void OnLocalizeNotification_EndInvoke_m2103749816 ();
 extern "C" void LookAtTarget__ctor_m1782423158 ();
 extern "C" void LookAtTarget_Start_m3161776094 ();
 extern "C" void LookAtTarget_LateUpdate_m4028316217 ();
-extern "C" void Main__ctor_m325986520 ();
-extern "C" void Main_Start_m2091519880 ();
-extern "C" void Main_Update_m2467676297 ();
-extern "C" void Main_Init_m3676319408 ();
-extern "C" void Main_CheckExtractResource_m1914041381 ();
-extern "C" void Main_OnExtractResource_m2207995706 ();
-extern "C" void Main_EndCheckExtractResource_m3056340468 ();
-extern "C" void U3COnExtractResourceU3Ec__Iterator11__ctor_m2508251932 ();
-extern "C" void U3COnExtractResourceU3Ec__Iterator11_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3224051582 ();
-extern "C" void U3COnExtractResourceU3Ec__Iterator11_System_Collections_IEnumerator_get_Current_m2071007718 ();
-extern "C" void U3COnExtractResourceU3Ec__Iterator11_MoveNext_m713617488 ();
-extern "C" void U3COnExtractResourceU3Ec__Iterator11_Dispose_m80195925 ();
-extern "C" void U3COnExtractResourceU3Ec__Iterator11_Reset_m2975756519 ();
 extern "C" void Md5_getMD5_m3939554658 ();
+extern "C" void MobileCamera__ctor_m2518008908 ();
+extern "C" void MobileCamera_OpenCamera1_m600628334 ();
+extern "C" void MobileCamera_StartCamera_m1114364079 ();
+extern "C" void MobileCamera_StopCamera_m1231741343 ();
+extern "C" void MobileCamera_TakePhoto_m1540666055 ();
+extern "C" void MobileCamera_TakePhotoWaitForEndOfFrame_m4284801308 ();
+extern "C" void U3COpenCamera1U3Ec__Iterator12__ctor_m718261821 ();
+extern "C" void U3COpenCamera1U3Ec__Iterator12_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1194918575 ();
+extern "C" void U3COpenCamera1U3Ec__Iterator12_System_Collections_IEnumerator_get_Current_m1399712855 ();
+extern "C" void U3COpenCamera1U3Ec__Iterator12_MoveNext_m483379899 ();
+extern "C" void U3COpenCamera1U3Ec__Iterator12_Dispose_m2363080662 ();
+extern "C" void U3COpenCamera1U3Ec__Iterator12_Reset_m3752844824 ();
+extern "C" void U3CTakePhotoWaitForEndOfFrameU3Ec__Iterator13__ctor_m3998151698 ();
+extern "C" void U3CTakePhotoWaitForEndOfFrameU3Ec__Iterator13_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1034391730 ();
+extern "C" void U3CTakePhotoWaitForEndOfFrameU3Ec__Iterator13_System_Collections_IEnumerator_get_Current_m1539542442 ();
+extern "C" void U3CTakePhotoWaitForEndOfFrameU3Ec__Iterator13_MoveNext_m701564726 ();
+extern "C" void U3CTakePhotoWaitForEndOfFrameU3Ec__Iterator13_Dispose_m4159381851 ();
+extern "C" void U3CTakePhotoWaitForEndOfFrameU3Ec__Iterator13_Reset_m4181267889 ();
 extern "C" void MultiPlatformFunction_BackMainView_m1979900736 ();
 extern "C" void MultiPlatformFunction_MainView_m3696830901 ();
 extern "C" void MultiPlatformFunction_MyBagView_m1849393712 ();
@@ -10719,7 +10718,6 @@ extern "C" void MultiPlatformFunction_ShopView_m1363455076 ();
 extern "C" void MultiPlatformFunction_ShowShareView_m4126028352 ();
 extern "C" void MultiPlatformFunction_getUserId_m1450868088 ();
 extern "C" void MultiPlatformFunction_getPoiElfId_m2286234302 ();
-extern "C" void MultiPlatformFunction_getCatchId_m1840281110 ();
 extern "C" void MySpriteDecMain__ctor_m2452720187 ();
 extern "C" void MySpriteDecMain_Start_m1751040031 ();
 extern "C" void MySpriteDecMain_Update_m2317288166 ();
@@ -10729,24 +10727,24 @@ extern "C" void MySpriteDecMain_show3D_m3039705925 ();
 extern "C" void MySpriteDecMain_UseGood_m2854545972 ();
 extern "C" void MySpriteDecMain_FeedElf_m29369785 ();
 extern "C" void MySpriteDecMain_hasGift_m577953203 ();
-extern "C" void U3CFeedElfU3Ec__Iterator15__ctor_m3993048964 ();
-extern "C" void U3CFeedElfU3Ec__Iterator15_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1434117992 ();
-extern "C" void U3CFeedElfU3Ec__Iterator15_System_Collections_IEnumerator_get_Current_m3722910000 ();
-extern "C" void U3CFeedElfU3Ec__Iterator15_MoveNext_m402356624 ();
-extern "C" void U3CFeedElfU3Ec__Iterator15_Dispose_m610852089 ();
-extern "C" void U3CFeedElfU3Ec__Iterator15_Reset_m3193601939 ();
-extern "C" void U3CgetSpriteDecU3Ec__Iterator14__ctor_m2337574979 ();
-extern "C" void U3CgetSpriteDecU3Ec__Iterator14_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m596188329 ();
-extern "C" void U3CgetSpriteDecU3Ec__Iterator14_System_Collections_IEnumerator_get_Current_m1360016145 ();
-extern "C" void U3CgetSpriteDecU3Ec__Iterator14_MoveNext_m1322489993 ();
-extern "C" void U3CgetSpriteDecU3Ec__Iterator14_Dispose_m584766432 ();
-extern "C" void U3CgetSpriteDecU3Ec__Iterator14_Reset_m1139754958 ();
-extern "C" void U3ChasGiftU3Ec__Iterator16__ctor_m1575387654 ();
-extern "C" void U3ChasGiftU3Ec__Iterator16_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1269785566 ();
-extern "C" void U3ChasGiftU3Ec__Iterator16_System_Collections_IEnumerator_get_Current_m4105535766 ();
-extern "C" void U3ChasGiftU3Ec__Iterator16_MoveNext_m2911857134 ();
-extern "C" void U3ChasGiftU3Ec__Iterator16_Dispose_m3501973021 ();
-extern "C" void U3ChasGiftU3Ec__Iterator16_Reset_m129519495 ();
+extern "C" void U3CFeedElfU3Ec__Iterator17__ctor_m1953256250 ();
+extern "C" void U3CFeedElfU3Ec__Iterator17_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2886310258 ();
+extern "C" void U3CFeedElfU3Ec__Iterator17_System_Collections_IEnumerator_get_Current_m2812031034 ();
+extern "C" void U3CFeedElfU3Ec__Iterator17_MoveNext_m2270790030 ();
+extern "C" void U3CFeedElfU3Ec__Iterator17_Dispose_m477001731 ();
+extern "C" void U3CFeedElfU3Ec__Iterator17_Reset_m2781983689 ();
+extern "C" void U3CgetSpriteDecU3Ec__Iterator16__ctor_m2335338437 ();
+extern "C" void U3CgetSpriteDecU3Ec__Iterator16_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2852013159 ();
+extern "C" void U3CgetSpriteDecU3Ec__Iterator16_System_Collections_IEnumerator_get_Current_m753720271 ();
+extern "C" void U3CgetSpriteDecU3Ec__Iterator16_MoveNext_m3037432915 ();
+extern "C" void U3CgetSpriteDecU3Ec__Iterator16_Dispose_m511378590 ();
+extern "C" void U3CgetSpriteDecU3Ec__Iterator16_Reset_m1137531088 ();
+extern "C" void U3ChasGiftU3Ec__Iterator18__ctor_m3143519016 ();
+extern "C" void U3ChasGiftU3Ec__Iterator18_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m137562660 ();
+extern "C" void U3ChasGiftU3Ec__Iterator18_System_Collections_IEnumerator_get_Current_m2936737372 ();
+extern "C" void U3ChasGiftU3Ec__Iterator18_MoveNext_m2783976688 ();
+extern "C" void U3ChasGiftU3Ec__Iterator18_Dispose_m3609199339 ();
+extern "C" void U3ChasGiftU3Ec__Iterator18_Reset_m290865745 ();
 extern "C" void MySpriteDetail__ctor_m1298661322 ();
 extern "C" void MySpriteDetail_get_Getid_m1547184296 ();
 extern "C" void MySpriteDetail_set_Getid_m4001898551 ();
@@ -10774,12 +10772,12 @@ extern "C" void MySpriteMain_Start_m3369590137 ();
 extern "C" void MySpriteMain_Update_m3462658384 ();
 extern "C" void MySpriteMain_getSpriteList_m3253826042 ();
 extern "C" void MySpriteMain_AddItem_m518685105 ();
-extern "C" void U3CgetSpriteListU3Ec__Iterator12__ctor_m3884075151 ();
-extern "C" void U3CgetSpriteListU3Ec__Iterator12_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1015667509 ();
-extern "C" void U3CgetSpriteListU3Ec__Iterator12_System_Collections_IEnumerator_get_Current_m3979482061 ();
-extern "C" void U3CgetSpriteListU3Ec__Iterator12_MoveNext_m2993021197 ();
-extern "C" void U3CgetSpriteListU3Ec__Iterator12_Dispose_m3022337364 ();
-extern "C" void U3CgetSpriteListU3Ec__Iterator12_Reset_m3911598946 ();
+extern "C" void U3CgetSpriteListU3Ec__Iterator14__ctor_m3877095189 ();
+extern "C" void U3CgetSpriteListU3Ec__Iterator14_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1345580407 ();
+extern "C" void U3CgetSpriteListU3Ec__Iterator14_System_Collections_IEnumerator_get_Current_m3944400655 ();
+extern "C" void U3CgetSpriteListU3Ec__Iterator14_MoveNext_m3966766403 ();
+extern "C" void U3CgetSpriteListU3Ec__Iterator14_Dispose_m2792407950 ();
+extern "C" void U3CgetSpriteListU3Ec__Iterator14_Reset_m3904639840 ();
 extern "C" void NativeMessageReceive__ctor_m4200248166 ();
 extern "C" void NativeMessageReceive_Start_m2510235682 ();
 extern "C" void NativeMessageReceive_Update_m3406222031 ();
@@ -11002,6 +11000,18 @@ extern "C" void PropertyReference_Convert_m928640624 ();
 extern "C" void RealTime__ctor_m2996256456 ();
 extern "C" void RealTime_get_time_m1640926644 ();
 extern "C" void RealTime_get_deltaTime_m3155952374 ();
+extern "C" void ScenceCamera__ctor_m2992023043 ();
+extern "C" void ScenceCamera_Start_m135224415 ();
+extern "C" void ScenceCamera_OpenARScence_m1786663425 ();
+extern "C" void ScenceCamera_OpenScence_m3992957084 ();
+extern "C" void ScenceCamera_OpenCamera_m3478947486 ();
+extern "C" void ScenceCamera_StopCamera_m3559801926 ();
+extern "C" void U3COpenCameraU3Ec__Iterator6__ctor_m3088062432 ();
+extern "C" void U3COpenCameraU3Ec__Iterator6_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m345684506 ();
+extern "C" void U3COpenCameraU3Ec__Iterator6_System_Collections_IEnumerator_get_Current_m3402302850 ();
+extern "C" void U3COpenCameraU3Ec__Iterator6_MoveNext_m4251908724 ();
+extern "C" void U3COpenCameraU3Ec__Iterator6_Dispose_m801279619 ();
+extern "C" void U3COpenCameraU3Ec__Iterator6_Reset_m2799936981 ();
 extern "C" void SceneName__cctor_m438612273 ();
 extern "C" void SetColorOnSelection__ctor_m4075942549 ();
 extern "C" void SetColorOnSelection_SetSpriteBySelection_m1143474113 ();
@@ -12542,26 +12552,6 @@ extern "C" void OnInitializeItem__ctor_m2088558765 ();
 extern "C" void OnInitializeItem_Invoke_m286694789 ();
 extern "C" void OnInitializeItem_BeginInvoke_m3324777424 ();
 extern "C" void OnInitializeItem_EndInvoke_m1518335515 ();
-extern "C" void Util__ctor_m4057728895 ();
-extern "C" void Util_Int_m1940878508 ();
-extern "C" void Util_Float_m384058171 ();
-extern "C" void Util_Long_m3043782926 ();
-extern "C" void Util_Random_m795277406 ();
-extern "C" void Util_Random_m3528967036 ();
-extern "C" void Util_GetTime_m340464637 ();
-extern "C" void Util_Child_m2407020348 ();
-extern "C" void Util_Child_m2643664811 ();
-extern "C" void Util_Peer_m4208645612 ();
-extern "C" void Util_Peer_m4094088039 ();
-extern "C" void Util_md5_m1926908646 ();
-extern "C" void Util_md5file_m2373070344 ();
-extern "C" void Util_ClearChild_m3680164619 ();
-extern "C" void Util_ClearMemory_m711361399 ();
-extern "C" void Util_get_DataPath_m1063176272 ();
-extern "C" void Util_getPath_m768332143 ();
-extern "C" void Util_AppContentPath_m1235347183 ();
-extern "C" void Util_AddComponent_m1646763000 ();
-extern "C" void Util_LoadPrefab_m4153806222 ();
 extern "C" void WindowAutoYaw__ctor_m3664152079 ();
 extern "C" void WindowAutoYaw_OnDisable_m78959674 ();
 extern "C" void WindowAutoYaw_OnEnable_m1880722571 ();
@@ -12569,7 +12559,7 @@ extern "C" void WindowAutoYaw_Update_m166965108 ();
 extern "C" void WindowDragTilt__ctor_m2212893564 ();
 extern "C" void WindowDragTilt_OnEnable_m2676420184 ();
 extern "C" void WindowDragTilt_Update_m38197995 ();
-extern const methodPointerType g_MethodPointers[12558] = 
+extern const methodPointerType g_MethodPointers[12548] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -13368,13 +13358,9 @@ extern const methodPointerType g_MethodPointers[12558] =
 	BitConverter_DoubleWordsAreSwapped_m2697726202,
 	BitConverter_DoubleToInt64Bits_m3672024538,
 	BitConverter_GetBytes_m252990073,
-	BitConverter_GetBytes_m1583172484,
 	BitConverter_GetBytes_m4115681617,
 	BitConverter_PutBytes_m1441606178,
 	BitConverter_ToInt64_m1329623425,
-	BitConverter_ToUInt16_m2715119381,
-	BitConverter_ToUInt32_m4153360341,
-	BitConverter_ToUInt64_m2584075445,
 	BitConverter_ToString_m927173850,
 	BitConverter_ToString_m2246696988,
 	Boolean__cctor_m1656420992,
@@ -13974,9 +13960,7 @@ extern const methodPointerType g_MethodPointers[12558] =
 	Convert_ToSingle_m2156102599,
 	Convert_ToSingle_m2579590104,
 	Convert_ToSingle_m2438427605,
-	Convert_ToSingle_m4204747369,
 	Convert_ToSingle_m1901383565,
-	Convert_ToString_m3884855475,
 	Convert_ToString_m2915777777,
 	Convert_ToString_m2031270637,
 	Convert_ToUInt16_m1043031438,
@@ -14024,10 +14008,6 @@ extern const methodPointerType g_MethodPointers[12558] =
 	Convert_ToUInt64_m1896191125,
 	Convert_ToUInt64_m345450801,
 	Convert_ChangeType_m1630780412,
-	Convert_EndianSwap_m975554045,
-	Convert_ConvertToBase2_m3975215197,
-	Convert_ConvertToBase8_m2900884003,
-	Convert_ConvertToBase16_m201400146,
 	Convert_ToType_m1408903144,
 	CultureAwareComparer__ctor_m3785348999,
 	CultureAwareComparer_Compare_m2587353351,
@@ -14455,9 +14435,6 @@ extern const methodPointerType g_MethodPointers[12558] =
 	FormatException__ctor_m3521145315,
 	FormatException__ctor_m1466217969,
 	FormatException__ctor_m3740644286,
-	GC_get_MaxGeneration_m1986243316,
-	GC_InternalCollect_m479047119,
-	GC_Collect_m2249328497,
 	GC_SuppressFinalize_m953228702,
 	Calendar__ctor_m1687153432,
 	Calendar_Clone_m3159430630,
@@ -14853,6 +14830,7 @@ extern const methodPointerType g_MethodPointers[12558] =
 	Directory_CreateDirectoriesInternal_m2817848291,
 	Directory_Exists_m2663601042,
 	Directory_GetCurrentDirectory_m44486537,
+	Directory_GetFiles_m3775562030,
 	Directory_GetFiles_m4036267478,
 	Directory_GetFileSystemEntries_m2720389648,
 	DirectoryInfo__ctor_m3750996792,
@@ -14869,19 +14847,15 @@ extern const methodPointerType g_MethodPointers[12558] =
 	DirectoryNotFoundException__ctor_m1117392681,
 	EndOfStreamException__ctor_m2877696588,
 	EndOfStreamException__ctor_m4268387737,
-	File_Copy_m1439309123,
 	File_Create_m1378973685,
 	File_Create_m3510380080,
 	File_Delete_m2115477556,
 	File_Exists_m1685968367,
-	File_GetAttributes_m633222855,
 	File_Open_m1543461971,
 	File_OpenRead_m132329087,
 	File_OpenText_m4058508963,
 	File_OpenWrite_m3037731260,
 	File_ReadAllBytes_m4085527721,
-	File_ReadAllText_m1018286608,
-	File_ReadAllText_m1182037563,
 	File_WriteAllBytes_m677793349,
 	FileInfo__ctor_m2605645233,
 	FileInfo__ctor_m2015269278,
@@ -14890,6 +14864,7 @@ extern const methodPointerType g_MethodPointers[12558] =
 	FileInfo_get_Name_m506260294,
 	FileInfo_get_DirectoryName_m441515569,
 	FileInfo_get_Directory_m898581134,
+	FileInfo_Create_m1139990289,
 	FileInfo_ToString_m2424440748,
 	FileNotFoundException__ctor_m594134677,
 	FileNotFoundException__ctor_m1531555541,
@@ -14898,7 +14873,6 @@ extern const methodPointerType g_MethodPointers[12558] =
 	FileNotFoundException_GetObjectData_m3405690481,
 	FileNotFoundException_ToString_m614787994,
 	FileStream__ctor_m3026076202,
-	FileStream__ctor_m785772645,
 	FileStream__ctor_m572813458,
 	FileStream__ctor_m3699774824,
 	FileStream__ctor_m2737324509,
@@ -14992,11 +14966,9 @@ extern const methodPointerType g_MethodPointers[12558] =
 	MonoIO_CreateDirectory_m379525469,
 	MonoIO_GetFileSystemEntries_m3422848968,
 	MonoIO_GetCurrentDirectory_m1509324201,
-	MonoIO_CopyFile_m2961462354,
 	MonoIO_DeleteFile_m3273821223,
 	MonoIO_GetFileAttributes_m2061483138,
 	MonoIO_GetFileType_m3310262429,
-	MonoIO_Exists_m3221338122,
 	MonoIO_ExistsFile_m1421941572,
 	MonoIO_ExistsDirectory_m3152546909,
 	MonoIO_GetFileStat_m3146995842,
@@ -15029,11 +15001,13 @@ extern const methodPointerType g_MethodPointers[12558] =
 	NullStream_Write_m3213413592,
 	NullStream_WriteByte_m2351908684,
 	Path__cctor_m3685888661,
+	Path_ChangeExtension_m4087688358,
 	Path_Combine_m3185811654,
 	Path_CleanPath_m2294719205,
 	Path_GetDirectoryName_m260633861,
 	Path_GetExtension_m740668066,
 	Path_GetFileName_m893210218,
+	Path_GetFileNameWithoutExtension_m2541641063,
 	Path_GetFullPath_m840307057,
 	Path_WindowsDriveAdjustment_m1548620993,
 	Path_InsecureGetFullPath_m2635272425,
@@ -15075,7 +15049,6 @@ extern const methodPointerType g_MethodPointers[12558] =
 	StreamReader__ctor_m1475856354,
 	StreamReader__ctor_m2654332332,
 	StreamReader__ctor_m3454466728,
-	StreamReader__ctor_m3499795391,
 	StreamReader__ctor_m871771009,
 	StreamReader__cctor_m1829179037,
 	StreamReader_Initialize_m1533993200,
@@ -15211,8 +15184,6 @@ extern const methodPointerType g_MethodPointers[12558] =
 	Math_Min_m4290821911,
 	Math_Round_m565516458,
 	Math_Round_m2632426160,
-	Math_Round_m3846462091,
-	Math_Round2_m3834966382,
 	Math_Sin_m2320256962,
 	Math_Cos_m43596019,
 	Math_Atan_m2820982624,
@@ -16909,10 +16880,8 @@ extern const methodPointerType g_MethodPointers[12558] =
 	HashAlgorithm__ctor_m3777008390,
 	HashAlgorithm_System_IDisposable_Dispose_m2106335965,
 	HashAlgorithm_get_CanReuseTransform_m160024219,
-	HashAlgorithm_Clear_m672070915,
 	HashAlgorithm_ComputeHash_m3637856778,
 	HashAlgorithm_ComputeHash_m3945506296,
-	HashAlgorithm_ComputeHash_m595824264,
 	HashAlgorithm_Create_m1224939073,
 	HashAlgorithm_get_Hash_m931854461,
 	HashAlgorithm_get_HashSize_m2625667696,
@@ -17460,7 +17429,6 @@ extern const methodPointerType g_MethodPointers[12558] =
 	String_LastIndexOf_m290475879,
 	String_Contains_m4017059963,
 	String_IsNullOrEmpty_m2802126737,
-	String_PadLeft_m1726975163,
 	String_PadRight_m1043573208,
 	String_StartsWith_m1841920685,
 	String_Replace_m534438427,
@@ -20308,6 +20276,8 @@ extern const methodPointerType g_MethodPointers[12558] =
 	Application_get_persistentDataPath_m3129298355,
 	Application_OpenURL_m3882634228,
 	Application_CallLogCallback_m3408386792,
+	Application_RequestUserAuthorization_m2712302050,
+	Application_HasUserAuthorization_m3858687304,
 	Application_LoadLevel_m393995325,
 	LogCallback__ctor_m898185969,
 	LogCallback_Invoke_m3921378796,
@@ -20457,7 +20427,6 @@ extern const methodPointerType g_MethodPointers[12558] =
 	Camera_ScreenPointToRay_m614889538,
 	Camera_INTERNAL_CALL_ScreenPointToRay_m2752248646,
 	Camera_get_main_m475173995,
-	Camera_get_allCameras_m1343394249,
 	Camera_get_allCamerasCount_m989474043,
 	Camera_GetAllCameras_m2922515227,
 	Camera_FireOnPreCull_m1679634170,
@@ -20729,7 +20698,6 @@ extern const methodPointerType g_MethodPointers[12558] =
 	GameObject_AddComponent_m3757565614,
 	GameObject_Internal_CreateGameObject_m3428198595,
 	GameObject_Find_m836511350,
-	GameObject_get_gameObject_m3662236595,
 	GL_SetRevertBackfacing_m3387974638,
 	GL_InvalidateState_m3232431926,
 	GL_IssuePluginEvent_m993229995,
@@ -21031,10 +20999,8 @@ extern const methodPointerType g_MethodPointers[12558] =
 	Gyroscope_attitude_Internal_m1839122405,
 	Gyroscope_INTERNAL_CALL_attitude_Internal_m2763981553,
 	Gyroscope_setEnabled_Internal_m881641045,
-	Gyroscope_setUpdateInterval_Internal_m2222351378,
 	Gyroscope_get_attitude_m3665233473,
 	Gyroscope_set_enabled_m487023127,
-	Gyroscope_set_updateInterval_m3271568822,
 	HideInInspector__ctor_m2243513849,
 	HostData__ctor_m3658760313,
 	HostData_get_useNat_m913506468,
@@ -21068,7 +21034,6 @@ extern const methodPointerType g_MethodPointers[12558] =
 	Input_GetKeyUpInt_m2486491081,
 	Input_GetKeyDownInt_m2930607648,
 	Input_GetAxis_m2098048324,
-	Input_set_compensateSensors_m952058409,
 	Input_get_gyro_m4027090408,
 	Input_GetKey_m3849524999,
 	Input_GetKeyDown_m1771960377,
@@ -21509,7 +21474,6 @@ extern const methodPointerType g_MethodPointers[12558] =
 	Resources_Load_m2041782325,
 	Resources_Load_m243305716,
 	Resources_GetBuiltinResource_m582410469,
-	Resources_UnloadUnusedAssets_m2770025609,
 	Rigidbody_set_useGravity_m2606656539,
 	Rigidbody_set_isKinematic_m738793415,
 	Rigidbody_get_rotation_m4203325509,
@@ -21764,6 +21728,9 @@ extern const methodPointerType g_MethodPointers[12558] =
 	Texture2D_INTERNAL_CALL_SetPixel_m3139530413,
 	Texture2D_Apply_m3753817130,
 	Texture2D_Apply_m3543341930,
+	Texture2D_ReadPixels_m1120832672,
+	Texture2D_INTERNAL_CALL_ReadPixels_m1476963500,
+	Texture2D_EncodeToPNG_m2680110528,
 	Time_get_time_m2216684562,
 	Time_get_deltaTime_m2233168104,
 	Time_get_unscaledTime_m862335845,
@@ -21831,12 +21798,10 @@ extern const methodPointerType g_MethodPointers[12558] =
 	Transform_InverseTransformPoint_m2648491174,
 	Transform_INTERNAL_CALL_InverseTransformPoint_m69330567,
 	Transform_get_childCount_m881385315,
-	Transform_Find_m3323476454,
 	Transform_get_lossyScale_m1638545862,
 	Transform_INTERNAL_get_lossyScale_m3027364225,
 	Transform_get_hasChanged_m4220930228,
 	Transform_set_hasChanged_m2322582363,
-	Transform_FindChild_m2677714886,
 	Transform_GetEnumerator_m3479720613,
 	Transform_GetChild_m3838588184,
 	Enumerator__ctor_m147705785,
@@ -21924,6 +21889,19 @@ extern const methodPointerType g_MethodPointers[12558] =
 	WaitForEndOfFrame__ctor_m3062480170,
 	WaitForFixedUpdate__ctor_m3781413380,
 	WaitForSeconds__ctor_m1990515539,
+	WebCamDevice_get_name_m1117076425,
+	WebCamTexture__ctor_m4161111579,
+	WebCamTexture__ctor_m1125343005,
+	WebCamTexture_Internal_CreateWebCamTexture_m1601948981,
+	WebCamTexture_Play_m1997372813,
+	WebCamTexture_INTERNAL_CALL_Play_m3743409567,
+	WebCamTexture_Pause_m3196941407,
+	WebCamTexture_INTERNAL_CALL_Pause_m2875494765,
+	WebCamTexture_Stop_m4045220381,
+	WebCamTexture_INTERNAL_CALL_Stop_m3253711615,
+	WebCamTexture_get_isPlaying_m1392703560,
+	WebCamTexture_get_devices_m4137524804,
+	WebCamTexture_get_videoRotationAngle_m1556283588,
 	WrapperlessIcall__ctor_m4149541650,
 	WritableAttribute__ctor_m761932763,
 	WWW__ctor_m2024029190,
@@ -21938,6 +21916,7 @@ extern const methodPointerType g_MethodPointers[12558] =
 	WWW_get_DefaultEncoding_m1497697991,
 	WWW_GetTextEncoder_m1231410509,
 	WWW_get_bytes_m420718112,
+	WWW_get_size_m4107261770,
 	WWW_get_error_m3092701216,
 	WWW_GetTexture_m2539490669,
 	WWW_get_texture_m1121178301,
@@ -22761,6 +22740,8 @@ extern const methodPointerType g_MethodPointers[12558] =
 	App_print_m929367453,
 	App_LoadSceneAsyn1_m3759058960,
 	App_BackSceneAsyn_m1177134798,
+	App_getResoucesPath_m3009697037,
+	App_ResoucesToSD_m2299081323,
 	U3CBackSceneAsynU3Ec__Iterator8__ctor_m2011170298,
 	U3CBackSceneAsynU3Ec__Iterator8_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2413107860,
 	U3CBackSceneAsynU3Ec__Iterator8_System_Collections_IEnumerator_get_Current_m3125610860,
@@ -22773,6 +22754,12 @@ extern const methodPointerType g_MethodPointers[12558] =
 	U3CLoadSceneAsyn1U3Ec__Iterator7_MoveNext_m3987917807,
 	U3CLoadSceneAsyn1U3Ec__Iterator7_Dispose_m2220886448,
 	U3CLoadSceneAsyn1U3Ec__Iterator7_Reset_m451557750,
+	U3CResoucesToSDU3Ec__Iterator9__ctor_m3428604384,
+	U3CResoucesToSDU3Ec__Iterator9_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2681724208,
+	U3CResoucesToSDU3Ec__Iterator9_System_Collections_IEnumerator_get_Current_m862304312,
+	U3CResoucesToSDU3Ec__Iterator9_MoveNext_m3896947404,
+	U3CResoucesToSDU3Ec__Iterator9_Dispose_m354574071,
+	U3CResoucesToSDU3Ec__Iterator9_Reset_m2634845841,
 	AssetLoad__ctor_m3320956641,
 	AssetLoad_add_AssetHandleEventKey_m2835403566,
 	AssetLoad_remove_AssetHandleEventKey_m3253926185,
@@ -22781,12 +22768,12 @@ extern const methodPointerType g_MethodPointers[12558] =
 	AssetLoad_getAssetBundleLoadGameObjectKey_m1705268248,
 	AssetLoad_LoadMoxingAsset_m1281910273,
 	AssetLoad_LoadAssetBundle_m2520296427,
-	U3CLoadAssetBundleU3Ec__Iterator9__ctor_m3725592212,
-	U3CLoadAssetBundleU3Ec__Iterator9_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m288659122,
-	U3CLoadAssetBundleU3Ec__Iterator9_System_Collections_IEnumerator_get_Current_m715613530,
-	U3CLoadAssetBundleU3Ec__Iterator9_MoveNext_m1621806132,
-	U3CLoadAssetBundleU3Ec__Iterator9_Dispose_m200225777,
-	U3CLoadAssetBundleU3Ec__Iterator9_Reset_m1032507199,
+	U3CLoadAssetBundleU3Ec__IteratorA__ctor_m3716604252,
+	U3CLoadAssetBundleU3Ec__IteratorA_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m142711850,
+	U3CLoadAssetBundleU3Ec__IteratorA_System_Collections_IEnumerator_get_Current_m2484385426,
+	U3CLoadAssetBundleU3Ec__IteratorA_MoveNext_m3578168620,
+	U3CLoadAssetBundleU3Ec__IteratorA_Dispose_m4199461113,
+	U3CLoadAssetBundleU3Ec__IteratorA_Reset_m1023527191,
 	AssetHandle__ctor_m1395921724,
 	AssetHandle_Invoke_m533199168,
 	AssetHandle_BeginInvoke_m1284049671,
@@ -22840,31 +22827,21 @@ extern const methodPointerType g_MethodPointers[12558] =
 	CatchMain__ctor_m3862448549,
 	CatchMain_Start_m2596118261,
 	CatchMain_Update_m3719098128,
-	CatchMain_Reflush_m4047287092,
 	CatchMain_getElfDetail_m2759569749,
 	CatchMain_showSprite_m3175677687,
 	CatchMain_LoadMoxing_m588119131,
-	CatchMain_Catch_m2184648878,
-	CatchMain_CatchElf_m3383424987,
-	U3CCatchElfU3Ec__Iterator6__ctor_m676623365,
-	U3CCatchElfU3Ec__Iterator6_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3832767235,
-	U3CCatchElfU3Ec__Iterator6_System_Collections_IEnumerator_get_Current_m1808170187,
-	U3CCatchElfU3Ec__Iterator6_MoveNext_m3861419891,
-	U3CCatchElfU3Ec__Iterator6_Dispose_m1213223810,
-	U3CCatchElfU3Ec__Iterator6_Reset_m4139640204,
 	U3CgetElfDetailU3Ec__Iterator5__ctor_m3250029848,
 	U3CgetElfDetailU3Ec__Iterator5_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m775820692,
 	U3CgetElfDetailU3Ec__Iterator5_System_Collections_IEnumerator_get_Current_m4271539084,
 	U3CgetElfDetailU3Ec__Iterator5_MoveNext_m1680347072,
 	U3CgetElfDetailU3Ec__Iterator5_Dispose_m84043355,
 	U3CgetElfDetailU3Ec__Iterator5_Reset_m399541249,
-	CatchQuan__ctor_m3077239245,
-	CatchQuan_Start_m1650798917,
-	CatchQuan_Update_m3724688896,
-	CatchQuan_Stop_m3808169805,
 	ChatInput__ctor_m1480987787,
 	ChatInput_Start_m688725295,
 	ChatInput_OnSubmit_m3270837380,
+	DontDestroy__ctor_m3000043898,
+	DontDestroy_Start_m155584994,
+	DontDestroy_Update_m3766316197,
 	DownloadTexture__ctor_m4256533714,
 	DownloadTexture_Start_m3662460050,
 	DownloadTexture_OnDestroy_m458497715,
@@ -22945,6 +22922,14 @@ extern const methodPointerType g_MethodPointers[12558] =
 	ExampleDragDropItem__ctor_m1958504303,
 	ExampleDragDropItem_OnDragDropRelease_m2144503792,
 	ExampleDragDropSurface__ctor_m1975051895,
+	FilesManager__ctor_m1563510825,
+	FilesManager_Awake_m929401470,
+	FilesManager_GetDirectoryName_FileDic_All_m1605010202,
+	FilesManager_GetAllImagesFiles_m94196845,
+	FilesManager_GetDirectoryName_FileDic_m1953023208,
+	FilesManager_getImageFile_m854015874,
+	FilesManager_isExists_m1085975267,
+	FilesManager_getPath_m897015337,
 	Gift__ctor_m2714229274,
 	Gift_get_GoodsId_m2067560930,
 	Gift_set_GoodsId_m1748829741,
@@ -22981,12 +22966,12 @@ extern const methodPointerType g_MethodPointers[12558] =
 	GoodsMain_Update_m2989688601,
 	GoodsMain_getGoodsList_m2123492436,
 	GoodsMain_AddGoodsItem_m3945403756,
-	U3CgetGoodsListU3Ec__Iterator13__ctor_m3802415580,
-	U3CgetGoodsListU3Ec__Iterator13_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2870415030,
-	U3CgetGoodsListU3Ec__Iterator13_System_Collections_IEnumerator_get_Current_m3110571486,
-	U3CgetGoodsListU3Ec__Iterator13_MoveNext_m337929360,
-	U3CgetGoodsListU3Ec__Iterator13_Dispose_m2248480821,
-	U3CgetGoodsListU3Ec__Iterator13_Reset_m4260185543,
+	U3CgetGoodsListU3Ec__Iterator15__ctor_m3799908702,
+	U3CgetGoodsListU3Ec__Iterator15_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3995800700,
+	U3CgetGoodsListU3Ec__Iterator15_System_Collections_IEnumerator_get_Current_m2441688740,
+	U3CgetGoodsListU3Ec__Iterator15_MoveNext_m2376166962,
+	U3CgetGoodsListU3Ec__Iterator15_Dispose_m2165327091,
+	U3CgetGoodsListU3Ec__Iterator15_Reset_m4257674177,
 	GroupPhotoMain__ctor_m3019532147,
 	GroupPhotoMain_Start_m87173375,
 	GroupPhotoMain_Update_m1472078498,
@@ -22994,12 +22979,12 @@ extern const methodPointerType g_MethodPointers[12558] =
 	GroupPhotoMain_getSpriteDec_m2342646629,
 	GroupPhotoMain_showDec_m1888690952,
 	GroupPhotoMain_show3D_m1514065097,
-	U3CgetSpriteDecU3Ec__Iterator10__ctor_m1486475959,
-	U3CgetSpriteDecU3Ec__Iterator10_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m4011274285,
-	U3CgetSpriteDecU3Ec__Iterator10_System_Collections_IEnumerator_get_Current_m3883798581,
-	U3CgetSpriteDecU3Ec__Iterator10_MoveNext_m149200249,
-	U3CgetSpriteDecU3Ec__Iterator10_Dispose_m3713323372,
-	U3CgetSpriteDecU3Ec__Iterator10_Reset_m657234806,
+	U3CgetSpriteDecU3Ec__Iterator11__ctor_m3395303260,
+	U3CgetSpriteDecU3Ec__Iterator11_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1411292392,
+	U3CgetSpriteDecU3Ec__Iterator11_System_Collections_IEnumerator_get_Current_m4105950448,
+	U3CgetSpriteDecU3Ec__Iterator11_MoveNext_m1362262328,
+	U3CgetSpriteDecU3Ec__Iterator11_Dispose_m390524977,
+	U3CgetSpriteDecU3Ec__Iterator11_Reset_m2566062107,
 	InvAttachmentPoint__ctor_m2204608127,
 	InvAttachmentPoint_Attach_m3836457771,
 	InvBaseItem__ctor_m3845987572,
@@ -23042,7 +23027,6 @@ extern const methodPointerType g_MethodPointers[12558] =
 	IOSNativeFunction_DidBackAction_m97715759,
 	IOSNativeFunction_LoginUserId_m3777548647,
 	IOSNativeFunction_getPoiElfId_m3947210306,
-	IOSNativeFunction_getCatchId_m2473514654,
 	LagPosition__ctor_m3228986234,
 	LagPosition_OnRepositionEnd_m1556513694,
 	LagPosition_Interpolate_m3587740054,
@@ -23076,20 +23060,20 @@ extern const methodPointerType g_MethodPointers[12558] =
 	JSONArray_ToString_m3743404074,
 	JSONArray_ToString_m3377806804,
 	JSONArray_Serialize_m1935290006,
-	U3CU3Ec__IteratorC__ctor_m558397030,
-	U3CU3Ec__IteratorC_System_Collections_Generic_IEnumeratorU3CLitJson_JSONNodeU3E_get_Current_m3791790015,
-	U3CU3Ec__IteratorC_System_Collections_IEnumerator_get_Current_m3939571390,
-	U3CU3Ec__IteratorC_System_Collections_IEnumerable_GetEnumerator_m3634268299,
-	U3CU3Ec__IteratorC_System_Collections_Generic_IEnumerableU3CLitJson_JSONNodeU3E_GetEnumerator_m566008024,
-	U3CU3Ec__IteratorC_MoveNext_m2070887726,
-	U3CU3Ec__IteratorC_Dispose_m1323013117,
-	U3CU3Ec__IteratorC_Reset_m4054426663,
-	U3CGetEnumeratorU3Ec__IteratorD__ctor_m6146815,
-	U3CGetEnumeratorU3Ec__IteratorD_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3190119045,
-	U3CGetEnumeratorU3Ec__IteratorD_System_Collections_IEnumerator_get_Current_m92416157,
-	U3CGetEnumeratorU3Ec__IteratorD_MoveNext_m1492582589,
-	U3CGetEnumeratorU3Ec__IteratorD_Dispose_m1163148708,
-	U3CGetEnumeratorU3Ec__IteratorD_Reset_m2458064754,
+	U3CU3Ec__IteratorD__ctor_m1600113581,
+	U3CU3Ec__IteratorD_System_Collections_Generic_IEnumeratorU3CLitJson_JSONNodeU3E_get_Current_m3602580742,
+	U3CU3Ec__IteratorD_System_Collections_IEnumerator_get_Current_m2767759215,
+	U3CU3Ec__IteratorD_System_Collections_IEnumerable_GetEnumerator_m3961566032,
+	U3CU3Ec__IteratorD_System_Collections_Generic_IEnumerableU3CLitJson_JSONNodeU3E_GetEnumerator_m1921487097,
+	U3CU3Ec__IteratorD_MoveNext_m1719103727,
+	U3CU3Ec__IteratorD_Dispose_m2247474400,
+	U3CU3Ec__IteratorD_Reset_m3558650390,
+	U3CGetEnumeratorU3Ec__IteratorE__ctor_m9632704,
+	U3CGetEnumeratorU3Ec__IteratorE_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1951667942,
+	U3CGetEnumeratorU3Ec__IteratorE_System_Collections_IEnumerator_get_Current_m3034549630,
+	U3CGetEnumeratorU3Ec__IteratorE_MoveNext_m3513697688,
+	U3CGetEnumeratorU3Ec__IteratorE_Dispose_m1277902213,
+	U3CGetEnumeratorU3Ec__IteratorE_Reset_m2461542195,
 	JSONClass__ctor_m3719998694,
 	JSONClass_get_Item_m404722800,
 	JSONClass_set_Item_m1962860503,
@@ -23105,22 +23089,22 @@ extern const methodPointerType g_MethodPointers[12558] =
 	JSONClass_ToString_m3201577129,
 	JSONClass_ToString_m1224664875,
 	JSONClass_Serialize_m791146507,
-	U3CU3Ec__IteratorE__ctor_m3502766639,
-	U3CU3Ec__IteratorE_System_Collections_Generic_IEnumeratorU3CLitJson_JSONNodeU3E_get_Current_m1809337074,
-	U3CU3Ec__IteratorE_System_Collections_IEnumerator_get_Current_m4238899721,
-	U3CU3Ec__IteratorE_System_Collections_IEnumerable_GetEnumerator_m639051368,
-	U3CU3Ec__IteratorE_System_Collections_Generic_IEnumerableU3CLitJson_JSONNodeU3E_GetEnumerator_m2686353467,
-	U3CU3Ec__IteratorE_MoveNext_m1727805261,
-	U3CU3Ec__IteratorE_Dispose_m1960902296,
-	U3CU3Ec__IteratorE_Reset_m2426117518,
-	U3CGetEnumeratorU3Ec__IteratorF__ctor_m3829549684,
-	U3CGetEnumeratorU3Ec__IteratorF_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1091044530,
-	U3CGetEnumeratorU3Ec__IteratorF_System_Collections_IEnumerator_get_Current_m1827459930,
-	U3CGetEnumeratorU3Ec__IteratorF_MoveNext_m3455610324,
-	U3CGetEnumeratorU3Ec__IteratorF_Dispose_m2906372433,
-	U3CGetEnumeratorU3Ec__IteratorF_Reset_m42330079,
-	U3CRemoveU3Ec__AnonStorey17__ctor_m3430336966,
-	U3CRemoveU3Ec__AnonStorey17_U3CU3Em__4_m1942725035,
+	U3CU3Ec__IteratorF__ctor_m539608478,
+	U3CU3Ec__IteratorF_System_Collections_Generic_IEnumeratorU3CLitJson_JSONNodeU3E_get_Current_m3440085297,
+	U3CU3Ec__IteratorF_System_Collections_IEnumerator_get_Current_m3895968442,
+	U3CU3Ec__IteratorF_System_Collections_IEnumerable_GetEnumerator_m3162745637,
+	U3CU3Ec__IteratorF_System_Collections_Generic_IEnumerableU3CLitJson_JSONNodeU3E_GetEnumerator_m3690273884,
+	U3CU3Ec__IteratorF_MoveNext_m1081912590,
+	U3CU3Ec__IteratorF_Dispose_m2666889811,
+	U3CU3Ec__IteratorF_Reset_m351890301,
+	U3CGetEnumeratorU3Ec__Iterator10__ctor_m2514092317,
+	U3CGetEnumeratorU3Ec__Iterator10_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1077148043,
+	U3CGetEnumeratorU3Ec__Iterator10_System_Collections_IEnumerator_get_Current_m769035795,
+	U3CGetEnumeratorU3Ec__Iterator10_MoveNext_m4182078395,
+	U3CGetEnumeratorU3Ec__Iterator10_Dispose_m1669330874,
+	U3CGetEnumeratorU3Ec__Iterator10_Reset_m1071778420,
+	U3CRemoveU3Ec__AnonStorey19__ctor_m3432278340,
+	U3CRemoveU3Ec__AnonStorey19_U3CU3Em__4_m159002785,
 	JSONData__ctor_m3158925766,
 	JSONData__ctor_m2182288549,
 	JSONData__ctor_m1044359630,
@@ -23205,14 +23189,6 @@ extern const methodPointerType g_MethodPointers[12558] =
 	JSONNode_op_Implicit_m1626457581,
 	JSONNode_op_Equality_m2293470393,
 	JSONNode_op_Inequality_m394651268,
-	U3CU3Ec__IteratorA__ctor_m963364601,
-	U3CU3Ec__IteratorA_System_Collections_Generic_IEnumeratorU3CLitJson_JSONNodeU3E_get_Current_m1362380412,
-	U3CU3Ec__IteratorA_System_Collections_IEnumerator_get_Current_m2094439295,
-	U3CU3Ec__IteratorA_System_Collections_IEnumerable_GetEnumerator_m90900374,
-	U3CU3Ec__IteratorA_System_Collections_Generic_IEnumerableU3CLitJson_JSONNodeU3E_GetEnumerator_m1763135265,
-	U3CU3Ec__IteratorA_MoveNext_m763596939,
-	U3CU3Ec__IteratorA_Dispose_m1402461558,
-	U3CU3Ec__IteratorA_Reset_m3354472356,
 	U3CU3Ec__IteratorB__ctor_m960014012,
 	U3CU3Ec__IteratorB_System_Collections_Generic_IEnumeratorU3CLitJson_JSONNodeU3E_get_Current_m941985623,
 	U3CU3Ec__IteratorB_System_Collections_IEnumerator_get_Current_m2714198942,
@@ -23221,6 +23197,14 @@ extern const methodPointerType g_MethodPointers[12558] =
 	U3CU3Ec__IteratorB_MoveNext_m726133040,
 	U3CU3Ec__IteratorB_Dispose_m1292307989,
 	U3CU3Ec__IteratorB_Reset_m3351134439,
+	U3CU3Ec__IteratorC__ctor_m961128059,
+	U3CU3Ec__IteratorC_System_Collections_Generic_IEnumeratorU3CLitJson_JSONNodeU3E_get_Current_m390369458,
+	U3CU3Ec__IteratorC_System_Collections_IEnumerator_get_Current_m1560101181,
+	U3CU3Ec__IteratorC_System_Collections_IEnumerable_GetEnumerator_m2781726432,
+	U3CU3Ec__IteratorC_System_Collections_Generic_IEnumerableU3CLitJson_JSONNodeU3E_GetEnumerator_m1043122731,
+	U3CU3Ec__IteratorC_MoveNext_m1539885397,
+	U3CU3Ec__IteratorC_Dispose_m1329073716,
+	U3CU3Ec__IteratorC_Reset_m3352248486,
 	LoadLevelOnClick__ctor_m2820126616,
 	LoadLevelOnClick_OnClick_m931326351,
 	Localization__cctor_m3948752887,
@@ -23258,20 +23242,25 @@ extern const methodPointerType g_MethodPointers[12558] =
 	LookAtTarget__ctor_m1782423158,
 	LookAtTarget_Start_m3161776094,
 	LookAtTarget_LateUpdate_m4028316217,
-	Main__ctor_m325986520,
-	Main_Start_m2091519880,
-	Main_Update_m2467676297,
-	Main_Init_m3676319408,
-	Main_CheckExtractResource_m1914041381,
-	Main_OnExtractResource_m2207995706,
-	Main_EndCheckExtractResource_m3056340468,
-	U3COnExtractResourceU3Ec__Iterator11__ctor_m2508251932,
-	U3COnExtractResourceU3Ec__Iterator11_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3224051582,
-	U3COnExtractResourceU3Ec__Iterator11_System_Collections_IEnumerator_get_Current_m2071007718,
-	U3COnExtractResourceU3Ec__Iterator11_MoveNext_m713617488,
-	U3COnExtractResourceU3Ec__Iterator11_Dispose_m80195925,
-	U3COnExtractResourceU3Ec__Iterator11_Reset_m2975756519,
 	Md5_getMD5_m3939554658,
+	MobileCamera__ctor_m2518008908,
+	MobileCamera_OpenCamera1_m600628334,
+	MobileCamera_StartCamera_m1114364079,
+	MobileCamera_StopCamera_m1231741343,
+	MobileCamera_TakePhoto_m1540666055,
+	MobileCamera_TakePhotoWaitForEndOfFrame_m4284801308,
+	U3COpenCamera1U3Ec__Iterator12__ctor_m718261821,
+	U3COpenCamera1U3Ec__Iterator12_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1194918575,
+	U3COpenCamera1U3Ec__Iterator12_System_Collections_IEnumerator_get_Current_m1399712855,
+	U3COpenCamera1U3Ec__Iterator12_MoveNext_m483379899,
+	U3COpenCamera1U3Ec__Iterator12_Dispose_m2363080662,
+	U3COpenCamera1U3Ec__Iterator12_Reset_m3752844824,
+	U3CTakePhotoWaitForEndOfFrameU3Ec__Iterator13__ctor_m3998151698,
+	U3CTakePhotoWaitForEndOfFrameU3Ec__Iterator13_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1034391730,
+	U3CTakePhotoWaitForEndOfFrameU3Ec__Iterator13_System_Collections_IEnumerator_get_Current_m1539542442,
+	U3CTakePhotoWaitForEndOfFrameU3Ec__Iterator13_MoveNext_m701564726,
+	U3CTakePhotoWaitForEndOfFrameU3Ec__Iterator13_Dispose_m4159381851,
+	U3CTakePhotoWaitForEndOfFrameU3Ec__Iterator13_Reset_m4181267889,
 	MultiPlatformFunction_BackMainView_m1979900736,
 	MultiPlatformFunction_MainView_m3696830901,
 	MultiPlatformFunction_MyBagView_m1849393712,
@@ -23279,7 +23268,6 @@ extern const methodPointerType g_MethodPointers[12558] =
 	MultiPlatformFunction_ShowShareView_m4126028352,
 	MultiPlatformFunction_getUserId_m1450868088,
 	MultiPlatformFunction_getPoiElfId_m2286234302,
-	MultiPlatformFunction_getCatchId_m1840281110,
 	MySpriteDecMain__ctor_m2452720187,
 	MySpriteDecMain_Start_m1751040031,
 	MySpriteDecMain_Update_m2317288166,
@@ -23289,24 +23277,24 @@ extern const methodPointerType g_MethodPointers[12558] =
 	MySpriteDecMain_UseGood_m2854545972,
 	MySpriteDecMain_FeedElf_m29369785,
 	MySpriteDecMain_hasGift_m577953203,
-	U3CFeedElfU3Ec__Iterator15__ctor_m3993048964,
-	U3CFeedElfU3Ec__Iterator15_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1434117992,
-	U3CFeedElfU3Ec__Iterator15_System_Collections_IEnumerator_get_Current_m3722910000,
-	U3CFeedElfU3Ec__Iterator15_MoveNext_m402356624,
-	U3CFeedElfU3Ec__Iterator15_Dispose_m610852089,
-	U3CFeedElfU3Ec__Iterator15_Reset_m3193601939,
-	U3CgetSpriteDecU3Ec__Iterator14__ctor_m2337574979,
-	U3CgetSpriteDecU3Ec__Iterator14_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m596188329,
-	U3CgetSpriteDecU3Ec__Iterator14_System_Collections_IEnumerator_get_Current_m1360016145,
-	U3CgetSpriteDecU3Ec__Iterator14_MoveNext_m1322489993,
-	U3CgetSpriteDecU3Ec__Iterator14_Dispose_m584766432,
-	U3CgetSpriteDecU3Ec__Iterator14_Reset_m1139754958,
-	U3ChasGiftU3Ec__Iterator16__ctor_m1575387654,
-	U3ChasGiftU3Ec__Iterator16_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1269785566,
-	U3ChasGiftU3Ec__Iterator16_System_Collections_IEnumerator_get_Current_m4105535766,
-	U3ChasGiftU3Ec__Iterator16_MoveNext_m2911857134,
-	U3ChasGiftU3Ec__Iterator16_Dispose_m3501973021,
-	U3ChasGiftU3Ec__Iterator16_Reset_m129519495,
+	U3CFeedElfU3Ec__Iterator17__ctor_m1953256250,
+	U3CFeedElfU3Ec__Iterator17_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2886310258,
+	U3CFeedElfU3Ec__Iterator17_System_Collections_IEnumerator_get_Current_m2812031034,
+	U3CFeedElfU3Ec__Iterator17_MoveNext_m2270790030,
+	U3CFeedElfU3Ec__Iterator17_Dispose_m477001731,
+	U3CFeedElfU3Ec__Iterator17_Reset_m2781983689,
+	U3CgetSpriteDecU3Ec__Iterator16__ctor_m2335338437,
+	U3CgetSpriteDecU3Ec__Iterator16_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2852013159,
+	U3CgetSpriteDecU3Ec__Iterator16_System_Collections_IEnumerator_get_Current_m753720271,
+	U3CgetSpriteDecU3Ec__Iterator16_MoveNext_m3037432915,
+	U3CgetSpriteDecU3Ec__Iterator16_Dispose_m511378590,
+	U3CgetSpriteDecU3Ec__Iterator16_Reset_m1137531088,
+	U3ChasGiftU3Ec__Iterator18__ctor_m3143519016,
+	U3ChasGiftU3Ec__Iterator18_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m137562660,
+	U3ChasGiftU3Ec__Iterator18_System_Collections_IEnumerator_get_Current_m2936737372,
+	U3ChasGiftU3Ec__Iterator18_MoveNext_m2783976688,
+	U3ChasGiftU3Ec__Iterator18_Dispose_m3609199339,
+	U3ChasGiftU3Ec__Iterator18_Reset_m290865745,
 	MySpriteDetail__ctor_m1298661322,
 	MySpriteDetail_get_Getid_m1547184296,
 	MySpriteDetail_set_Getid_m4001898551,
@@ -23334,12 +23322,12 @@ extern const methodPointerType g_MethodPointers[12558] =
 	MySpriteMain_Update_m3462658384,
 	MySpriteMain_getSpriteList_m3253826042,
 	MySpriteMain_AddItem_m518685105,
-	U3CgetSpriteListU3Ec__Iterator12__ctor_m3884075151,
-	U3CgetSpriteListU3Ec__Iterator12_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1015667509,
-	U3CgetSpriteListU3Ec__Iterator12_System_Collections_IEnumerator_get_Current_m3979482061,
-	U3CgetSpriteListU3Ec__Iterator12_MoveNext_m2993021197,
-	U3CgetSpriteListU3Ec__Iterator12_Dispose_m3022337364,
-	U3CgetSpriteListU3Ec__Iterator12_Reset_m3911598946,
+	U3CgetSpriteListU3Ec__Iterator14__ctor_m3877095189,
+	U3CgetSpriteListU3Ec__Iterator14_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1345580407,
+	U3CgetSpriteListU3Ec__Iterator14_System_Collections_IEnumerator_get_Current_m3944400655,
+	U3CgetSpriteListU3Ec__Iterator14_MoveNext_m3966766403,
+	U3CgetSpriteListU3Ec__Iterator14_Dispose_m2792407950,
+	U3CgetSpriteListU3Ec__Iterator14_Reset_m3904639840,
 	NativeMessageReceive__ctor_m4200248166,
 	NativeMessageReceive_Start_m2510235682,
 	NativeMessageReceive_Update_m3406222031,
@@ -23562,6 +23550,18 @@ extern const methodPointerType g_MethodPointers[12558] =
 	RealTime__ctor_m2996256456,
 	RealTime_get_time_m1640926644,
 	RealTime_get_deltaTime_m3155952374,
+	ScenceCamera__ctor_m2992023043,
+	ScenceCamera_Start_m135224415,
+	ScenceCamera_OpenARScence_m1786663425,
+	ScenceCamera_OpenScence_m3992957084,
+	ScenceCamera_OpenCamera_m3478947486,
+	ScenceCamera_StopCamera_m3559801926,
+	U3COpenCameraU3Ec__Iterator6__ctor_m3088062432,
+	U3COpenCameraU3Ec__Iterator6_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m345684506,
+	U3COpenCameraU3Ec__Iterator6_System_Collections_IEnumerator_get_Current_m3402302850,
+	U3COpenCameraU3Ec__Iterator6_MoveNext_m4251908724,
+	U3COpenCameraU3Ec__Iterator6_Dispose_m801279619,
+	U3COpenCameraU3Ec__Iterator6_Reset_m2799936981,
 	SceneName__cctor_m438612273,
 	SetColorOnSelection__ctor_m4075942549,
 	SetColorOnSelection_SetSpriteBySelection_m1143474113,
@@ -25102,26 +25102,6 @@ extern const methodPointerType g_MethodPointers[12558] =
 	OnInitializeItem_Invoke_m286694789,
 	OnInitializeItem_BeginInvoke_m3324777424,
 	OnInitializeItem_EndInvoke_m1518335515,
-	Util__ctor_m4057728895,
-	Util_Int_m1940878508,
-	Util_Float_m384058171,
-	Util_Long_m3043782926,
-	Util_Random_m795277406,
-	Util_Random_m3528967036,
-	Util_GetTime_m340464637,
-	Util_Child_m2407020348,
-	Util_Child_m2643664811,
-	Util_Peer_m4208645612,
-	Util_Peer_m4094088039,
-	Util_md5_m1926908646,
-	Util_md5file_m2373070344,
-	Util_ClearChild_m3680164619,
-	Util_ClearMemory_m711361399,
-	Util_get_DataPath_m1063176272,
-	Util_getPath_m768332143,
-	Util_AppContentPath_m1235347183,
-	Util_AddComponent_m1646763000,
-	Util_LoadPrefab_m4153806222,
 	WindowAutoYaw__ctor_m3664152079,
 	WindowAutoYaw_OnDisable_m78959674,
 	WindowAutoYaw_OnEnable_m1880722571,

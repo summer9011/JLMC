@@ -48,8 +48,6 @@ public:
 	String_t* ___apiGift_6;
 	// System.String API::getNearbyElfDetail
 	String_t* ___getNearbyElfDetail_7;
-	// System.String API::catchElf
-	String_t* ___catchElf_8;
 
 public:
 	inline static int32_t get_offset_of_hostName_0() { return static_cast<int32_t>(offsetof(API_t3691620896_StaticFields, ___hostName_0)); }
@@ -122,15 +120,6 @@ public:
 	{
 		___getNearbyElfDetail_7 = value;
 		Il2CppCodeGenWriteBarrier(&___getNearbyElfDetail_7, value);
-	}
-
-	inline static int32_t get_offset_of_catchElf_8() { return static_cast<int32_t>(offsetof(API_t3691620896_StaticFields, ___catchElf_8)); }
-	inline String_t* get_catchElf_8() const { return ___catchElf_8; }
-	inline String_t** get_address_of_catchElf_8() { return &___catchElf_8; }
-	inline void set_catchElf_8(String_t* value)
-	{
-		___catchElf_8 = value;
-		Il2CppCodeGenWriteBarrier(&___catchElf_8, value);
 	}
 };
 

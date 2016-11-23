@@ -37,3 +37,7 @@ extern "C"  void App_print_m929367453 (Il2CppObject * __this /* static, unused *
 extern "C"  Il2CppObject * App_LoadSceneAsyn1_m3759058960 (App_t821575015 * __this, String_t* ___context, String_t* ___sceneName, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator App::BackSceneAsyn(System.String)
 extern "C"  Il2CppObject * App_BackSceneAsyn_m1177134798 (App_t821575015 * __this, String_t* ___context, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String App::getResoucesPath(System.String)
+extern "C"  String_t* App_getResoucesPath_m3009697037 (App_t821575015 * __this, String_t* ___item, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Collections.IEnumerator App::ResoucesToSD()
+extern "C"  Il2CppObject * App_ResoucesToSD_m2299081323 (App_t821575015 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

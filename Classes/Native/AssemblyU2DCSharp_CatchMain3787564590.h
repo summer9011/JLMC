@@ -31,10 +31,6 @@ public:
 	JSONNode_t1109731523 * ___detail_2;
 	// UnityEngine.GameObject CatchMain::MySprite3D
 	GameObject_t1366199518 * ___MySprite3D_3;
-	// UnityEngine.GameObject CatchMain::CatchQuan
-	GameObject_t1366199518 * ___CatchQuan_4;
-	// System.Int32 CatchMain::ScenceCode
-	int32_t ___ScenceCode_5;
 
 public:
 	inline static int32_t get_offset_of_detail_2() { return static_cast<int32_t>(offsetof(CatchMain_t3787564590, ___detail_2)); }
@@ -53,23 +49,6 @@ public:
 	{
 		___MySprite3D_3 = value;
 		Il2CppCodeGenWriteBarrier(&___MySprite3D_3, value);
-	}
-
-	inline static int32_t get_offset_of_CatchQuan_4() { return static_cast<int32_t>(offsetof(CatchMain_t3787564590, ___CatchQuan_4)); }
-	inline GameObject_t1366199518 * get_CatchQuan_4() const { return ___CatchQuan_4; }
-	inline GameObject_t1366199518 ** get_address_of_CatchQuan_4() { return &___CatchQuan_4; }
-	inline void set_CatchQuan_4(GameObject_t1366199518 * value)
-	{
-		___CatchQuan_4 = value;
-		Il2CppCodeGenWriteBarrier(&___CatchQuan_4, value);
-	}
-
-	inline static int32_t get_offset_of_ScenceCode_5() { return static_cast<int32_t>(offsetof(CatchMain_t3787564590, ___ScenceCode_5)); }
-	inline int32_t get_ScenceCode_5() const { return ___ScenceCode_5; }
-	inline int32_t* get_address_of_ScenceCode_5() { return &___ScenceCode_5; }
-	inline void set_ScenceCode_5(int32_t value)
-	{
-		___ScenceCode_5 = value;
 	}
 };
 

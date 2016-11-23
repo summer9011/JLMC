@@ -16,10 +16,10 @@ struct WWWForm_t986061696;
 struct WWW_t3146501818;
 // LitJson.JSONNode
 struct JSONNode_t1109731523;
+// UnityEngine.GameObject
+struct GameObject_t1366199518;
 // System.Object
 struct Il2CppObject;
-// MySpriteDecMain
-struct MySpriteDecMain_t1599878596;
 
 #include "mscorlib_System_Object707969140.h"
 
@@ -41,12 +41,12 @@ public:
 	JSONNode_t1109731523 * ___U3CjsonU3E__2_2;
 	// System.Int32 MySpriteDecMain/<hasGift>c__Iterator18::<i>__3
 	int32_t ___U3CiU3E__3_3;
+	// UnityEngine.GameObject MySpriteDecMain/<hasGift>c__Iterator18::<g>__4
+	GameObject_t1366199518 * ___U3CgU3E__4_4;
 	// System.Int32 MySpriteDecMain/<hasGift>c__Iterator18::$PC
-	int32_t ___U24PC_4;
+	int32_t ___U24PC_5;
 	// System.Object MySpriteDecMain/<hasGift>c__Iterator18::$current
-	Il2CppObject * ___U24current_5;
-	// MySpriteDecMain MySpriteDecMain/<hasGift>c__Iterator18::<>f__this
-	MySpriteDecMain_t1599878596 * ___U3CU3Ef__this_6;
+	Il2CppObject * ___U24current_6;
 
 public:
 	inline static int32_t get_offset_of_U3CformU3E__0_0() { return static_cast<int32_t>(offsetof(U3ChasGiftU3Ec__Iterator18_t1064594072, ___U3CformU3E__0_0)); }
@@ -84,30 +84,30 @@ public:
 		___U3CiU3E__3_3 = value;
 	}
 
-	inline static int32_t get_offset_of_U24PC_4() { return static_cast<int32_t>(offsetof(U3ChasGiftU3Ec__Iterator18_t1064594072, ___U24PC_4)); }
-	inline int32_t get_U24PC_4() const { return ___U24PC_4; }
-	inline int32_t* get_address_of_U24PC_4() { return &___U24PC_4; }
-	inline void set_U24PC_4(int32_t value)
+	inline static int32_t get_offset_of_U3CgU3E__4_4() { return static_cast<int32_t>(offsetof(U3ChasGiftU3Ec__Iterator18_t1064594072, ___U3CgU3E__4_4)); }
+	inline GameObject_t1366199518 * get_U3CgU3E__4_4() const { return ___U3CgU3E__4_4; }
+	inline GameObject_t1366199518 ** get_address_of_U3CgU3E__4_4() { return &___U3CgU3E__4_4; }
+	inline void set_U3CgU3E__4_4(GameObject_t1366199518 * value)
 	{
-		___U24PC_4 = value;
+		___U3CgU3E__4_4 = value;
+		Il2CppCodeGenWriteBarrier(&___U3CgU3E__4_4, value);
 	}
 
-	inline static int32_t get_offset_of_U24current_5() { return static_cast<int32_t>(offsetof(U3ChasGiftU3Ec__Iterator18_t1064594072, ___U24current_5)); }
-	inline Il2CppObject * get_U24current_5() const { return ___U24current_5; }
-	inline Il2CppObject ** get_address_of_U24current_5() { return &___U24current_5; }
-	inline void set_U24current_5(Il2CppObject * value)
+	inline static int32_t get_offset_of_U24PC_5() { return static_cast<int32_t>(offsetof(U3ChasGiftU3Ec__Iterator18_t1064594072, ___U24PC_5)); }
+	inline int32_t get_U24PC_5() const { return ___U24PC_5; }
+	inline int32_t* get_address_of_U24PC_5() { return &___U24PC_5; }
+	inline void set_U24PC_5(int32_t value)
 	{
-		___U24current_5 = value;
-		Il2CppCodeGenWriteBarrier(&___U24current_5, value);
+		___U24PC_5 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CU3Ef__this_6() { return static_cast<int32_t>(offsetof(U3ChasGiftU3Ec__Iterator18_t1064594072, ___U3CU3Ef__this_6)); }
-	inline MySpriteDecMain_t1599878596 * get_U3CU3Ef__this_6() const { return ___U3CU3Ef__this_6; }
-	inline MySpriteDecMain_t1599878596 ** get_address_of_U3CU3Ef__this_6() { return &___U3CU3Ef__this_6; }
-	inline void set_U3CU3Ef__this_6(MySpriteDecMain_t1599878596 * value)
+	inline static int32_t get_offset_of_U24current_6() { return static_cast<int32_t>(offsetof(U3ChasGiftU3Ec__Iterator18_t1064594072, ___U24current_6)); }
+	inline Il2CppObject * get_U24current_6() const { return ___U24current_6; }
+	inline Il2CppObject ** get_address_of_U24current_6() { return &___U24current_6; }
+	inline void set_U24current_6(Il2CppObject * value)
 	{
-		___U3CU3Ef__this_6 = value;
-		Il2CppCodeGenWriteBarrier(&___U3CU3Ef__this_6, value);
+		___U24current_6 = value;
+		Il2CppCodeGenWriteBarrier(&___U24current_6, value);
 	}
 };
 

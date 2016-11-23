@@ -220,8 +220,6 @@ extern "C"  int32_t String_LastIndexOf_m290475879 (String_t* __this, String_t* _
 extern "C"  bool String_Contains_m4017059963 (String_t* __this, String_t* ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.String::IsNullOrEmpty(System.String)
 extern "C"  bool String_IsNullOrEmpty_m2802126737 (Il2CppObject * __this /* static, unused */, String_t* ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String System.String::PadLeft(System.Int32,System.Char)
-extern "C"  String_t* String_PadLeft_m1726975163 (String_t* __this, int32_t ___totalWidth, uint16_t ___paddingChar, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.String::PadRight(System.Int32,System.Char)
 extern "C"  String_t* String_PadRight_m1043573208 (String_t* __this, int32_t ___totalWidth, uint16_t ___paddingChar, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.String::StartsWith(System.String)

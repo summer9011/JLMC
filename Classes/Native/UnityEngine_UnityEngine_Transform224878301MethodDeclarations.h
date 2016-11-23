@@ -14,8 +14,6 @@
 
 // UnityEngine.Transform
 struct Transform_t224878301;
-// System.String
-struct String_t;
 // System.Collections.IEnumerator
 struct IEnumerator_t3037427797;
 
@@ -24,7 +22,6 @@ struct IEnumerator_t3037427797;
 #include "UnityEngine_UnityEngine_Quaternion83606849.h"
 #include "UnityEngine_UnityEngine_Transform224878301.h"
 #include "UnityEngine_UnityEngine_Matrix4x41261955742.h"
-#include "mscorlib_System_String1967731336.h"
 
 // UnityEngine.Vector3 UnityEngine.Transform::get_position()
 extern "C"  Vector3_t465617797  Transform_get_position_m1104419803 (Transform_t224878301 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -106,8 +103,6 @@ extern "C"  Vector3_t465617797  Transform_InverseTransformPoint_m2648491174 (Tra
 extern "C"  void Transform_INTERNAL_CALL_InverseTransformPoint_m69330567 (Il2CppObject * __this /* static, unused */, Transform_t224878301 * ___self, Vector3_t465617797 * ___position, Vector3_t465617797 * ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Transform::get_childCount()
 extern "C"  int32_t Transform_get_childCount_m881385315 (Transform_t224878301 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.Transform UnityEngine.Transform::Find(System.String)
-extern "C"  Transform_t224878301 * Transform_Find_m3323476454 (Transform_t224878301 * __this, String_t* ___name, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Transform::get_lossyScale()
 extern "C"  Vector3_t465617797  Transform_get_lossyScale_m1638545862 (Transform_t224878301 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::INTERNAL_get_lossyScale(UnityEngine.Vector3&)
@@ -116,8 +111,6 @@ extern "C"  void Transform_INTERNAL_get_lossyScale_m3027364225 (Transform_t22487
 extern "C"  bool Transform_get_hasChanged_m4220930228 (Transform_t224878301 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::set_hasChanged(System.Boolean)
 extern "C"  void Transform_set_hasChanged_m2322582363 (Transform_t224878301 * __this, bool ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.Transform UnityEngine.Transform::FindChild(System.String)
-extern "C"  Transform_t224878301 * Transform_FindChild_m2677714886 (Transform_t224878301 * __this, String_t* ___name, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator UnityEngine.Transform::GetEnumerator()
 extern "C"  Il2CppObject * Transform_GetEnumerator_m3479720613 (Transform_t224878301 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Transform UnityEngine.Transform::GetChild(System.Int32)

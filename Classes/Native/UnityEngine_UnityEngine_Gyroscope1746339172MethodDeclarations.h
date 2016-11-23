@@ -26,11 +26,7 @@ extern "C"  Quaternion_t83606849  Gyroscope_attitude_Internal_m1839122405 (Il2Cp
 extern "C"  void Gyroscope_INTERNAL_CALL_attitude_Internal_m2763981553 (Il2CppObject * __this /* static, unused */, int32_t ___idx, Quaternion_t83606849 * ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Gyroscope::setEnabled_Internal(System.Int32,System.Boolean)
 extern "C"  void Gyroscope_setEnabled_Internal_m881641045 (Il2CppObject * __this /* static, unused */, int32_t ___idx, bool ___enabled, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Gyroscope::setUpdateInterval_Internal(System.Int32,System.Single)
-extern "C"  void Gyroscope_setUpdateInterval_Internal_m2222351378 (Il2CppObject * __this /* static, unused */, int32_t ___idx, float ___interval, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Quaternion UnityEngine.Gyroscope::get_attitude()
 extern "C"  Quaternion_t83606849  Gyroscope_get_attitude_m3665233473 (Gyroscope_t1746339172 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Gyroscope::set_enabled(System.Boolean)
 extern "C"  void Gyroscope_set_enabled_m487023127 (Gyroscope_t1746339172 * __this, bool ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Gyroscope::set_updateInterval(System.Single)
-extern "C"  void Gyroscope_set_updateInterval_m3271568822 (Gyroscope_t1746339172 * __this, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;

@@ -29,8 +29,8 @@ struct JSONClass_t3507943507;
 struct  U3CU3Ec__IteratorF_t2038443215  : public Il2CppObject
 {
 public:
-	// System.Collections.Generic.Dictionary`2/Enumerator<System.String,LitJson.JSONNode> LitJson.JSONClass/<>c__IteratorF::<$s_31>__0
-	Enumerator_t1219041832  ___U3CU24s_31U3E__0_0;
+	// System.Collections.Generic.Dictionary`2/Enumerator<System.String,LitJson.JSONNode> LitJson.JSONClass/<>c__IteratorF::<$s_37>__0
+	Enumerator_t1219041832  ___U3CU24s_37U3E__0_0;
 	// System.Collections.Generic.KeyValuePair`2<System.String,LitJson.JSONNode> LitJson.JSONClass/<>c__IteratorF::<N>__1
 	KeyValuePair_2_t2479033419  ___U3CNU3E__1_1;
 	// System.Int32 LitJson.JSONClass/<>c__IteratorF::$PC
@@ -41,12 +41,12 @@ public:
 	JSONClass_t3507943507 * ___U3CU3Ef__this_4;
 
 public:
-	inline static int32_t get_offset_of_U3CU24s_31U3E__0_0() { return static_cast<int32_t>(offsetof(U3CU3Ec__IteratorF_t2038443215, ___U3CU24s_31U3E__0_0)); }
-	inline Enumerator_t1219041832  get_U3CU24s_31U3E__0_0() const { return ___U3CU24s_31U3E__0_0; }
-	inline Enumerator_t1219041832 * get_address_of_U3CU24s_31U3E__0_0() { return &___U3CU24s_31U3E__0_0; }
-	inline void set_U3CU24s_31U3E__0_0(Enumerator_t1219041832  value)
+	inline static int32_t get_offset_of_U3CU24s_37U3E__0_0() { return static_cast<int32_t>(offsetof(U3CU3Ec__IteratorF_t2038443215, ___U3CU24s_37U3E__0_0)); }
+	inline Enumerator_t1219041832  get_U3CU24s_37U3E__0_0() const { return ___U3CU24s_37U3E__0_0; }
+	inline Enumerator_t1219041832 * get_address_of_U3CU24s_37U3E__0_0() { return &___U3CU24s_37U3E__0_0; }
+	inline void set_U3CU24s_37U3E__0_0(Enumerator_t1219041832  value)
 	{
-		___U3CU24s_31U3E__0_0 = value;
+		___U3CU24s_37U3E__0_0 = value;
 	}
 
 	inline static int32_t get_offset_of_U3CNU3E__1_1() { return static_cast<int32_t>(offsetof(U3CU3Ec__IteratorF_t2038443215, ___U3CNU3E__1_1)); }

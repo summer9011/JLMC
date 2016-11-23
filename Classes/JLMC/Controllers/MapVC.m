@@ -25,6 +25,7 @@
 #import "RankListVC.h"
 
 #import "MenuView.h"
+#import "MainBtnView.h"
 
 #import "SupplyDetailVC.h"
 
@@ -37,9 +38,9 @@
 
 @interface MapVC () <MenuViewDelegate, MAMapViewDelegate>
 
-@property (nonatomic, weak) UIButton        *menuBtn;
+@property (nonatomic, weak) MainBtnView        *menuBtn;
 
-@property (nonatomic, weak) UIButton        *nearbyBtn;
+@property (nonatomic, weak) MainBtnView        *nearbyBtn;
 @property (nonatomic, weak) UIView          *redPoint;
 
 @property (nonatomic, weak) UILabel         *movementLabel;
@@ -105,12 +106,12 @@
     self.mapView.showsUserLocation = YES;
     self.mapView.userTrackingMode = MAUserTrackingModeFollow;
     
-//    NSDictionary *configDic = [[NSUserDefaults standardUserDefaults] dictionaryForKey:UserDefaults_Config];
-//    if (configDic[UserDefaults_Config_defaultZoomLevel]) {
-//        [self.mapView setZoomLevel:[configDic[UserDefaults_Config_defaultZoomLevel] floatValue] animated:YES];
-//    } else {
+    NSDictionary *configDic = [[NSUserDefaults standardUserDefaults] dictionaryForKey:UserDefaults_Config];
+    if (configDic[UserDefaults_Config_defaultZoomLevel]) {
+        [self.mapView setZoomLevel:[configDic[UserDefaults_Config_defaultZoomLevel] floatValue] animated:YES];
+    } else {
         [self.mapView setZoomLevel:18 animated:YES];
-//    }
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -145,7 +146,7 @@
     mapView.delegate = self;
     mapView.showsCompass = NO;
     mapView.showsScale = NO;
-//    mapView.scrollEnabled = NO;
+    mapView.scrollEnabled = NO;
     mapView.rotateCameraEnabled = NO;
     mapView.allowsBackgroundLocationUpdates = YES;
     mapView.customizeUserLocationAccuracyCircleRepresentation = YES;
@@ -157,11 +158,11 @@
         mapView.minZoomLevel = 16;
     }
     
-//    if (configDic[UserDefaults_Config_maxZoomLevel]) {
-//        mapView.maxZoomLevel = [configDic[UserDefaults_Config_maxZoomLevel] floatValue];
-//    } else {
+    if (configDic[UserDefaults_Config_maxZoomLevel]) {
+        mapView.maxZoomLevel = [configDic[UserDefaults_Config_maxZoomLevel] floatValue];
+    } else {
         mapView.maxZoomLevel = 19;
-//    }
+    }
     
     [self.view addSubview:mapView];
     
@@ -262,15 +263,10 @@
 
 - (void)addMenu {
     CGRect screenRect = [UIScreen mainScreen].bounds;
-    CGFloat perSize = 100;
+    CGFloat perSize = 80;
     
-    UIButton *menuBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    menuBtn.frame = CGRectMake((CGRectGetWidth(screenRect) - perSize)/2.f, CGRectGetHeight(screenRect) - perSize, perSize, perSize);
-    menuBtn.adjustsImageWhenHighlighted = NO;
-    menuBtn.adjustsImageWhenDisabled = NO;
-    menuBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
-    [menuBtn addTarget:self action:@selector(showMenuList) forControlEvents:UIControlEventTouchUpInside];
-    
+    MainBtnView *menuBtn = [[MainBtnView alloc] initWithFrame:CGRectMake((CGRectGetWidth(screenRect) - perSize)/2.f, CGRectGetHeight(screenRect) - perSize - 10, perSize, perSize)];
+    [menuBtn addObject:self TouchUpInside:@selector(showMenuList)];
     [self.view addSubview:menuBtn];
     
     self.menuBtn = menuBtn;
@@ -280,15 +276,10 @@
     GetAppController().haveNearbyPlayer = NO;
     
     CGRect screenRect = [UIScreen mainScreen].bounds;
-    CGFloat perSize = 70;
+    CGFloat perSize = 50;
     
-    UIButton *nearbyBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    nearbyBtn.frame = CGRectMake(CGRectGetWidth(screenRect) - perSize - 10, CGRectGetHeight(screenRect) - perSize - 5, perSize, perSize);
-    nearbyBtn.adjustsImageWhenHighlighted = NO;
-    nearbyBtn.adjustsImageWhenDisabled = NO;
-    nearbyBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
-    [nearbyBtn addTarget:self action:@selector(showNearby) forControlEvents:UIControlEventTouchUpInside];
-    
+    MainBtnView *nearbyBtn = [[MainBtnView alloc] initWithFrame:CGRectMake(CGRectGetWidth(screenRect) - perSize - 10, CGRectGetHeight(screenRect) - perSize - 15, perSize, perSize)];
+    [nearbyBtn addObject:self TouchUpInside:@selector(showNearby)];
     [self.view addSubview:nearbyBtn];
     
     self.nearbyBtn = nearbyBtn;
@@ -307,22 +298,13 @@
     NSArray *iconArr = [Config getNewestLocalCacheIcons];
     
     if (iconArr != nil) {
-        [self.menuBtn sd_setImageWithURL:[NSURL URLWithString:iconArr[0][@"icon"]] forState:UIControlStateNormal];
-        [self.nearbyBtn sd_setImageWithURL:[NSURL URLWithString:iconArr[1][@"icon"]] forState:UIControlStateNormal];
-        
-        self.menuBtn.imageEdgeInsets = UIEdgeInsetsZero;
-        self.nearbyBtn.imageEdgeInsets = UIEdgeInsetsZero;
-        
-        self.menuBtn.imageView.frame = CGRectMake(0, 0, CGRectGetWidth(self.menuBtn.frame), CGRectGetHeight(self.menuBtn.frame));
-        self.nearbyBtn.imageView.frame = CGRectMake(0, 0, CGRectGetWidth(self.nearbyBtn.frame), CGRectGetHeight(self.nearbyBtn.frame));
-        
-//        [self.menuBtn setImage:[UIImage imageNamed:@"SyMenuIcon"] forState:UIControlStateNormal];
-//        [self.nearbyBtn setImage:[UIImage imageNamed:@"StNearbyIcon"] forState:UIControlStateNormal];
+        self.menuBtn.imageStr = iconArr[0][@"icon"];
+        self.nearbyBtn.imageStr = iconArr[1][@"icon"];
         
         [[MenuView sharedMenuView] reloadIcons:[iconArr subarrayWithRange:NSMakeRange(2, iconArr.count - 2)]];
     } else {
-        [self.menuBtn setImage:[UIImage imageNamed:@"SyMenuIcon"] forState:UIControlStateNormal];
-        [self.nearbyBtn setImage:[UIImage imageNamed:@"StNearbyIcon"] forState:UIControlStateNormal];
+        self.menuBtn.imageStr = @"SyMenuIcon";
+        self.nearbyBtn.imageStr = @"StNearbyIcon";
     }
 }
 

@@ -10,12 +10,12 @@
 
 #include <stdint.h>
 
-// System.String
-struct String_t;
 // System.Collections.Stack
 struct Stack_t3925292378;
 // App
 struct App_t821575015;
+// System.String
+struct String_t;
 // MySpriteDetail
 struct MySpriteDetail_t913424694;
 // System.Collections.Generic.Dictionary`2<System.String,System.Int32>
@@ -34,16 +34,27 @@ struct  App_t821575015  : public Il2CppObject
 {
 public:
 	// System.Collections.Stack App::sceneNameStack
-	Stack_t3925292378 * ___sceneNameStack_3;
+	Stack_t3925292378 * ___sceneNameStack_1;
+	// System.String App::LASTSCENCENAME
+	String_t* ___LASTSCENCENAME_3;
 
 public:
-	inline static int32_t get_offset_of_sceneNameStack_3() { return static_cast<int32_t>(offsetof(App_t821575015, ___sceneNameStack_3)); }
-	inline Stack_t3925292378 * get_sceneNameStack_3() const { return ___sceneNameStack_3; }
-	inline Stack_t3925292378 ** get_address_of_sceneNameStack_3() { return &___sceneNameStack_3; }
-	inline void set_sceneNameStack_3(Stack_t3925292378 * value)
+	inline static int32_t get_offset_of_sceneNameStack_1() { return static_cast<int32_t>(offsetof(App_t821575015, ___sceneNameStack_1)); }
+	inline Stack_t3925292378 * get_sceneNameStack_1() const { return ___sceneNameStack_1; }
+	inline Stack_t3925292378 ** get_address_of_sceneNameStack_1() { return &___sceneNameStack_1; }
+	inline void set_sceneNameStack_1(Stack_t3925292378 * value)
 	{
-		___sceneNameStack_3 = value;
-		Il2CppCodeGenWriteBarrier(&___sceneNameStack_3, value);
+		___sceneNameStack_1 = value;
+		Il2CppCodeGenWriteBarrier(&___sceneNameStack_1, value);
+	}
+
+	inline static int32_t get_offset_of_LASTSCENCENAME_3() { return static_cast<int32_t>(offsetof(App_t821575015, ___LASTSCENCENAME_3)); }
+	inline String_t* get_LASTSCENCENAME_3() const { return ___LASTSCENCENAME_3; }
+	inline String_t** get_address_of_LASTSCENCENAME_3() { return &___LASTSCENCENAME_3; }
+	inline void set_LASTSCENCENAME_3(String_t* value)
+	{
+		___LASTSCENCENAME_3 = value;
+		Il2CppCodeGenWriteBarrier(&___LASTSCENCENAME_3, value);
 	}
 };
 
@@ -52,20 +63,16 @@ struct App_t821575015_StaticFields
 public:
 	// System.Boolean App::isDeBug
 	bool ___isDeBug_0;
-	// System.String App::ResourceID
-	String_t* ___ResourceID_1;
-	// System.Boolean App::isDebugOnMobile
-	bool ___isDebugOnMobile_2;
 	// App App::instance
-	App_t821575015 * ___instance_4;
+	App_t821575015 * ___instance_2;
 	// System.String App::MoxingPath
-	String_t* ___MoxingPath_5;
+	String_t* ___MoxingPath_4;
 	// System.Int32 App::currSpriteGetid
-	int32_t ___currSpriteGetid_6;
+	int32_t ___currSpriteGetid_5;
 	// MySpriteDetail App::mMySpriteDetail
-	MySpriteDetail_t913424694 * ___mMySpriteDetail_7;
+	MySpriteDetail_t913424694 * ___mMySpriteDetail_6;
 	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> App::<>f__switch$map5
-	Dictionary_2_t4260152181 * ___U3CU3Ef__switchU24map5_8;
+	Dictionary_2_t4260152181 * ___U3CU3Ef__switchU24map5_7;
 
 public:
 	inline static int32_t get_offset_of_isDeBug_0() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___isDeBug_0)); }
@@ -76,65 +83,48 @@ public:
 		___isDeBug_0 = value;
 	}
 
-	inline static int32_t get_offset_of_ResourceID_1() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___ResourceID_1)); }
-	inline String_t* get_ResourceID_1() const { return ___ResourceID_1; }
-	inline String_t** get_address_of_ResourceID_1() { return &___ResourceID_1; }
-	inline void set_ResourceID_1(String_t* value)
+	inline static int32_t get_offset_of_instance_2() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___instance_2)); }
+	inline App_t821575015 * get_instance_2() const { return ___instance_2; }
+	inline App_t821575015 ** get_address_of_instance_2() { return &___instance_2; }
+	inline void set_instance_2(App_t821575015 * value)
 	{
-		___ResourceID_1 = value;
-		Il2CppCodeGenWriteBarrier(&___ResourceID_1, value);
+		___instance_2 = value;
+		Il2CppCodeGenWriteBarrier(&___instance_2, value);
 	}
 
-	inline static int32_t get_offset_of_isDebugOnMobile_2() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___isDebugOnMobile_2)); }
-	inline bool get_isDebugOnMobile_2() const { return ___isDebugOnMobile_2; }
-	inline bool* get_address_of_isDebugOnMobile_2() { return &___isDebugOnMobile_2; }
-	inline void set_isDebugOnMobile_2(bool value)
+	inline static int32_t get_offset_of_MoxingPath_4() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___MoxingPath_4)); }
+	inline String_t* get_MoxingPath_4() const { return ___MoxingPath_4; }
+	inline String_t** get_address_of_MoxingPath_4() { return &___MoxingPath_4; }
+	inline void set_MoxingPath_4(String_t* value)
 	{
-		___isDebugOnMobile_2 = value;
+		___MoxingPath_4 = value;
+		Il2CppCodeGenWriteBarrier(&___MoxingPath_4, value);
 	}
 
-	inline static int32_t get_offset_of_instance_4() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___instance_4)); }
-	inline App_t821575015 * get_instance_4() const { return ___instance_4; }
-	inline App_t821575015 ** get_address_of_instance_4() { return &___instance_4; }
-	inline void set_instance_4(App_t821575015 * value)
+	inline static int32_t get_offset_of_currSpriteGetid_5() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___currSpriteGetid_5)); }
+	inline int32_t get_currSpriteGetid_5() const { return ___currSpriteGetid_5; }
+	inline int32_t* get_address_of_currSpriteGetid_5() { return &___currSpriteGetid_5; }
+	inline void set_currSpriteGetid_5(int32_t value)
 	{
-		___instance_4 = value;
-		Il2CppCodeGenWriteBarrier(&___instance_4, value);
+		___currSpriteGetid_5 = value;
 	}
 
-	inline static int32_t get_offset_of_MoxingPath_5() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___MoxingPath_5)); }
-	inline String_t* get_MoxingPath_5() const { return ___MoxingPath_5; }
-	inline String_t** get_address_of_MoxingPath_5() { return &___MoxingPath_5; }
-	inline void set_MoxingPath_5(String_t* value)
+	inline static int32_t get_offset_of_mMySpriteDetail_6() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___mMySpriteDetail_6)); }
+	inline MySpriteDetail_t913424694 * get_mMySpriteDetail_6() const { return ___mMySpriteDetail_6; }
+	inline MySpriteDetail_t913424694 ** get_address_of_mMySpriteDetail_6() { return &___mMySpriteDetail_6; }
+	inline void set_mMySpriteDetail_6(MySpriteDetail_t913424694 * value)
 	{
-		___MoxingPath_5 = value;
-		Il2CppCodeGenWriteBarrier(&___MoxingPath_5, value);
+		___mMySpriteDetail_6 = value;
+		Il2CppCodeGenWriteBarrier(&___mMySpriteDetail_6, value);
 	}
 
-	inline static int32_t get_offset_of_currSpriteGetid_6() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___currSpriteGetid_6)); }
-	inline int32_t get_currSpriteGetid_6() const { return ___currSpriteGetid_6; }
-	inline int32_t* get_address_of_currSpriteGetid_6() { return &___currSpriteGetid_6; }
-	inline void set_currSpriteGetid_6(int32_t value)
+	inline static int32_t get_offset_of_U3CU3Ef__switchU24map5_7() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___U3CU3Ef__switchU24map5_7)); }
+	inline Dictionary_2_t4260152181 * get_U3CU3Ef__switchU24map5_7() const { return ___U3CU3Ef__switchU24map5_7; }
+	inline Dictionary_2_t4260152181 ** get_address_of_U3CU3Ef__switchU24map5_7() { return &___U3CU3Ef__switchU24map5_7; }
+	inline void set_U3CU3Ef__switchU24map5_7(Dictionary_2_t4260152181 * value)
 	{
-		___currSpriteGetid_6 = value;
-	}
-
-	inline static int32_t get_offset_of_mMySpriteDetail_7() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___mMySpriteDetail_7)); }
-	inline MySpriteDetail_t913424694 * get_mMySpriteDetail_7() const { return ___mMySpriteDetail_7; }
-	inline MySpriteDetail_t913424694 ** get_address_of_mMySpriteDetail_7() { return &___mMySpriteDetail_7; }
-	inline void set_mMySpriteDetail_7(MySpriteDetail_t913424694 * value)
-	{
-		___mMySpriteDetail_7 = value;
-		Il2CppCodeGenWriteBarrier(&___mMySpriteDetail_7, value);
-	}
-
-	inline static int32_t get_offset_of_U3CU3Ef__switchU24map5_8() { return static_cast<int32_t>(offsetof(App_t821575015_StaticFields, ___U3CU3Ef__switchU24map5_8)); }
-	inline Dictionary_2_t4260152181 * get_U3CU3Ef__switchU24map5_8() const { return ___U3CU3Ef__switchU24map5_8; }
-	inline Dictionary_2_t4260152181 ** get_address_of_U3CU3Ef__switchU24map5_8() { return &___U3CU3Ef__switchU24map5_8; }
-	inline void set_U3CU3Ef__switchU24map5_8(Dictionary_2_t4260152181 * value)
-	{
-		___U3CU3Ef__switchU24map5_8 = value;
-		Il2CppCodeGenWriteBarrier(&___U3CU3Ef__switchU24map5_8, value);
+		___U3CU3Ef__switchU24map5_7 = value;
+		Il2CppCodeGenWriteBarrier(&___U3CU3Ef__switchU24map5_7, value);
 	}
 };
 

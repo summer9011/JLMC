@@ -29,20 +29,12 @@ extern "C"  bool BitConverter_DoubleWordsAreSwapped_m2697726202 (Il2CppObject * 
 extern "C"  int64_t BitConverter_DoubleToInt64Bits_m3672024538 (Il2CppObject * __this /* static, unused */, double ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Byte[] System.BitConverter::GetBytes(System.Byte*,System.Int32)
 extern "C"  ByteU5BU5D_t3835026402* BitConverter_GetBytes_m252990073 (Il2CppObject * __this /* static, unused */, uint8_t* ___ptr, int32_t ___count, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Byte[] System.BitConverter::GetBytes(System.Int16)
-extern "C"  ByteU5BU5D_t3835026402* BitConverter_GetBytes_m1583172484 (Il2CppObject * __this /* static, unused */, int16_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Byte[] System.BitConverter::GetBytes(System.Double)
 extern "C"  ByteU5BU5D_t3835026402* BitConverter_GetBytes_m4115681617 (Il2CppObject * __this /* static, unused */, double ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.BitConverter::PutBytes(System.Byte*,System.Byte[],System.Int32,System.Int32)
 extern "C"  void BitConverter_PutBytes_m1441606178 (Il2CppObject * __this /* static, unused */, uint8_t* ___dst, ByteU5BU5D_t3835026402* ___src, int32_t ___start_index, int32_t ___count, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int64 System.BitConverter::ToInt64(System.Byte[],System.Int32)
 extern "C"  int64_t BitConverter_ToInt64_m1329623425 (Il2CppObject * __this /* static, unused */, ByteU5BU5D_t3835026402* ___value, int32_t ___startIndex, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.UInt16 System.BitConverter::ToUInt16(System.Byte[],System.Int32)
-extern "C"  uint16_t BitConverter_ToUInt16_m2715119381 (Il2CppObject * __this /* static, unused */, ByteU5BU5D_t3835026402* ___value, int32_t ___startIndex, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.UInt32 System.BitConverter::ToUInt32(System.Byte[],System.Int32)
-extern "C"  uint32_t BitConverter_ToUInt32_m4153360341 (Il2CppObject * __this /* static, unused */, ByteU5BU5D_t3835026402* ___value, int32_t ___startIndex, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.UInt64 System.BitConverter::ToUInt64(System.Byte[],System.Int32)
-extern "C"  uint64_t BitConverter_ToUInt64_m2584075445 (Il2CppObject * __this /* static, unused */, ByteU5BU5D_t3835026402* ___value, int32_t ___startIndex, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.BitConverter::ToString(System.Byte[])
 extern "C"  String_t* BitConverter_ToString_m927173850 (Il2CppObject * __this /* static, unused */, ByteU5BU5D_t3835026402* ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.BitConverter::ToString(System.Byte[],System.Int32,System.Int32)

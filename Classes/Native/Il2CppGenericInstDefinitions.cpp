@@ -587,6 +587,9 @@ extern const Il2CppGenericInst GenInst_Collider2D_t445179443_0_0_0 = { 1, GenIns
 extern const Il2CppType ContactPoint2D_t15882733_0_0_0;
 static const Il2CppType* GenInst_ContactPoint2D_t15882733_0_0_0_Types[] = { &ContactPoint2D_t15882733_0_0_0 };
 extern const Il2CppGenericInst GenInst_ContactPoint2D_t15882733_0_0_0 = { 1, GenInst_ContactPoint2D_t15882733_0_0_0_Types };
+extern const Il2CppType WebCamDevice_t138406174_0_0_0;
+static const Il2CppType* GenInst_WebCamDevice_t138406174_0_0_0_Types[] = { &WebCamDevice_t138406174_0_0_0 };
+extern const Il2CppGenericInst GenInst_WebCamDevice_t138406174_0_0_0 = { 1, GenInst_WebCamDevice_t138406174_0_0_0_Types };
 extern const Il2CppType Font_t2560754878_0_0_0;
 static const Il2CppType* GenInst_Font_t2560754878_0_0_0_Types[] = { &Font_t2560754878_0_0_0 };
 extern const Il2CppGenericInst GenInst_Font_t2560754878_0_0_0 = { 1, GenInst_Font_t2560754878_0_0_0_Types };
@@ -1362,21 +1365,6 @@ extern const Il2CppGenericInst GenInst_UITweener_Begin_m1126580952_gp_0_0_0_0 = 
 extern const Il2CppType AndroidNativeFunction_CallNativeFunctionForUnityPlayer_m1864003730_gp_0_0_0_0;
 static const Il2CppType* GenInst_AndroidNativeFunction_CallNativeFunctionForUnityPlayer_m1864003730_gp_0_0_0_0_Types[] = { &AndroidNativeFunction_CallNativeFunctionForUnityPlayer_m1864003730_gp_0_0_0_0 };
 extern const Il2CppGenericInst GenInst_AndroidNativeFunction_CallNativeFunctionForUnityPlayer_m1864003730_gp_0_0_0_0 = { 1, GenInst_AndroidNativeFunction_CallNativeFunctionForUnityPlayer_m1864003730_gp_0_0_0_0_Types };
-extern const Il2CppType Util_Get_m500622242_gp_0_0_0_0;
-static const Il2CppType* GenInst_Util_Get_m500622242_gp_0_0_0_0_Types[] = { &Util_Get_m500622242_gp_0_0_0_0 };
-extern const Il2CppGenericInst GenInst_Util_Get_m500622242_gp_0_0_0_0 = { 1, GenInst_Util_Get_m500622242_gp_0_0_0_0_Types };
-extern const Il2CppType Util_Get_m2411472863_gp_0_0_0_0;
-static const Il2CppType* GenInst_Util_Get_m2411472863_gp_0_0_0_0_Types[] = { &Util_Get_m2411472863_gp_0_0_0_0 };
-extern const Il2CppGenericInst GenInst_Util_Get_m2411472863_gp_0_0_0_0 = { 1, GenInst_Util_Get_m2411472863_gp_0_0_0_0_Types };
-extern const Il2CppType Util_Get_m1583742780_gp_0_0_0_0;
-static const Il2CppType* GenInst_Util_Get_m1583742780_gp_0_0_0_0_Types[] = { &Util_Get_m1583742780_gp_0_0_0_0 };
-extern const Il2CppGenericInst GenInst_Util_Get_m1583742780_gp_0_0_0_0 = { 1, GenInst_Util_Get_m1583742780_gp_0_0_0_0_Types };
-extern const Il2CppType Util_Add_m4140789957_gp_0_0_0_0;
-static const Il2CppType* GenInst_Util_Add_m4140789957_gp_0_0_0_0_Types[] = { &Util_Add_m4140789957_gp_0_0_0_0 };
-extern const Il2CppGenericInst GenInst_Util_Add_m4140789957_gp_0_0_0_0 = { 1, GenInst_Util_Add_m4140789957_gp_0_0_0_0_Types };
-extern const Il2CppType Util_Add_m3939757324_gp_0_0_0_0;
-static const Il2CppType* GenInst_Util_Add_m3939757324_gp_0_0_0_0_Types[] = { &Util_Add_m3939757324_gp_0_0_0_0 };
-extern const Il2CppGenericInst GenInst_Util_Add_m3939757324_gp_0_0_0_0 = { 1, GenInst_Util_Add_m3939757324_gp_0_0_0_0_Types };
 extern const Il2CppType GUILayer_t1686820861_0_0_0;
 static const Il2CppType* GenInst_GUILayer_t1686820861_0_0_0_Types[] = { &GUILayer_t1686820861_0_0_0 };
 extern const Il2CppGenericInst GenInst_GUILayer_t1686820861_0_0_0 = { 1, GenInst_GUILayer_t1686820861_0_0_0_Types };
@@ -1395,9 +1383,6 @@ extern const Il2CppGenericInst GenInst_ActiveAnimation_t4137610604_0_0_0 = { 1, 
 extern const Il2CppType AssetLoad_t3126280200_0_0_0;
 static const Il2CppType* GenInst_AssetLoad_t3126280200_0_0_0_Types[] = { &AssetLoad_t3126280200_0_0_0 };
 extern const Il2CppGenericInst GenInst_AssetLoad_t3126280200_0_0_0 = { 1, GenInst_AssetLoad_t3126280200_0_0_0_Types };
-extern const Il2CppType CatchQuan_t830316542_0_0_0;
-static const Il2CppType* GenInst_CatchQuan_t830316542_0_0_0_Types[] = { &CatchQuan_t830316542_0_0_0 };
-extern const Il2CppGenericInst GenInst_CatchQuan_t830316542_0_0_0 = { 1, GenInst_CatchQuan_t830316542_0_0_0_Types };
 extern const Il2CppType UIInput_t860674234_0_0_0;
 static const Il2CppType* GenInst_UIInput_t860674234_0_0_0_Types[] = { &UIInput_t860674234_0_0_0 };
 extern const Il2CppGenericInst GenInst_UIInput_t860674234_0_0_0 = { 1, GenInst_UIInput_t860674234_0_0_0_Types };
@@ -1419,6 +1404,9 @@ extern const Il2CppGenericInst GenInst_GoodsItem_t1184035003_0_0_0 = { 1, GenIns
 extern const Il2CppType UIGrid_t2420180906_0_0_0;
 static const Il2CppType* GenInst_UIGrid_t2420180906_0_0_0_Types[] = { &UIGrid_t2420180906_0_0_0 };
 extern const Il2CppGenericInst GenInst_UIGrid_t2420180906_0_0_0 = { 1, GenInst_UIGrid_t2420180906_0_0_0_Types };
+extern const Il2CppType MobileCamera_t1503681139_0_0_0;
+static const Il2CppType* GenInst_MobileCamera_t1503681139_0_0_0_Types[] = { &MobileCamera_t1503681139_0_0_0 };
+extern const Il2CppGenericInst GenInst_MobileCamera_t1503681139_0_0_0 = { 1, GenInst_MobileCamera_t1503681139_0_0_0_Types };
 extern const Il2CppType UIPopupList_t109953940_0_0_0;
 static const Il2CppType* GenInst_UIPopupList_t109953940_0_0_0_Types[] = { &UIPopupList_t109953940_0_0_0 };
 extern const Il2CppGenericInst GenInst_UIPopupList_t109953940_0_0_0 = { 1, GenInst_UIPopupList_t109953940_0_0_0_Types };
@@ -1518,9 +1506,6 @@ extern const Il2CppGenericInst GenInst_UIWrapContent_t1931723019_0_0_0 = { 1, Ge
 extern const Il2CppType UICenterOnChild_t1687745660_0_0_0;
 static const Il2CppType* GenInst_UICenterOnChild_t1687745660_0_0_0_Types[] = { &UICenterOnChild_t1687745660_0_0_0 };
 extern const Il2CppGenericInst GenInst_UICenterOnChild_t1687745660_0_0_0 = { 1, GenInst_UICenterOnChild_t1687745660_0_0_0_Types };
-extern const Il2CppType CatchMain_t3787564590_0_0_0;
-static const Il2CppType* GenInst_CatchMain_t3787564590_0_0_0_Types[] = { &CatchMain_t3787564590_0_0_0 };
-extern const Il2CppGenericInst GenInst_CatchMain_t3787564590_0_0_0 = { 1, GenInst_CatchMain_t3787564590_0_0_0_Types };
 extern const Il2CppType GroupPhotoMain_t323661952_0_0_0;
 static const Il2CppType* GenInst_GroupPhotoMain_t323661952_0_0_0_Types[] = { &GroupPhotoMain_t323661952_0_0_0 };
 extern const Il2CppGenericInst GenInst_GroupPhotoMain_t323661952_0_0_0 = { 1, GenInst_GroupPhotoMain_t323661952_0_0_0_Types };
@@ -1586,7 +1571,7 @@ static const Il2CppType* GenInst_KeyValuePair_2_t2684549329_0_0_0_Il2CppObject_0
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2684549329_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t2684549329_0_0_0_Il2CppObject_0_0_0_Types };
 static const Il2CppType* GenInst_KeyValuePair_2_t1944347872_0_0_0_Il2CppObject_0_0_0_Types[] = { &KeyValuePair_2_t1944347872_0_0_0, &Il2CppObject_0_0_0 };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t1944347872_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t1944347872_0_0_0_Il2CppObject_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[554] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[549] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t1448170597_0_0_0,
@@ -1787,6 +1772,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[554] =
 	&GenInst_Rigidbody2D_t2088154582_0_0_0,
 	&GenInst_Collider2D_t445179443_0_0_0,
 	&GenInst_ContactPoint2D_t15882733_0_0_0,
+	&GenInst_WebCamDevice_t138406174_0_0_0,
 	&GenInst_Font_t2560754878_0_0_0,
 	&GenInst_GUILayoutOption_t2722935253_0_0_0,
 	&GenInst_Int32_t1448170597_0_0_0_LayoutCache_t4083183608_0_0_0,
@@ -2062,18 +2048,12 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[554] =
 	&GenInst_NGUITools_ExecuteAll_m3760296385_gp_0_0_0_0,
 	&GenInst_UITweener_Begin_m1126580952_gp_0_0_0_0,
 	&GenInst_AndroidNativeFunction_CallNativeFunctionForUnityPlayer_m1864003730_gp_0_0_0_0,
-	&GenInst_Util_Get_m500622242_gp_0_0_0_0,
-	&GenInst_Util_Get_m2411472863_gp_0_0_0_0,
-	&GenInst_Util_Get_m1583742780_gp_0_0_0_0,
-	&GenInst_Util_Add_m4140789957_gp_0_0_0_0,
-	&GenInst_Util_Add_m3939757324_gp_0_0_0_0,
 	&GenInst_GUILayer_t1686820861_0_0_0,
 	&GenInst_Renderer_t2715231144_0_0_0,
 	&GenInst_MeshFilter_t3840334098_0_0_0,
 	&GenInst_TextMesh_t3293161711_0_0_0,
 	&GenInst_ActiveAnimation_t4137610604_0_0_0,
 	&GenInst_AssetLoad_t3126280200_0_0_0,
-	&GenInst_CatchQuan_t830316542_0_0_0,
 	&GenInst_UIInput_t860674234_0_0_0,
 	&GenInst_UITexture_t2537039969_0_0_0,
 	&GenInst_InvEquipment_t384603053_0_0_0,
@@ -2081,6 +2061,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[554] =
 	&GenInst_MySpriteDecMain_t1599878596_0_0_0,
 	&GenInst_GoodsItem_t1184035003_0_0_0,
 	&GenInst_UIGrid_t2420180906_0_0_0,
+	&GenInst_MobileCamera_t1503681139_0_0_0,
 	&GenInst_UIPopupList_t109953940_0_0_0,
 	&GenInst_TextAsset_t4025741140_0_0_0,
 	&GenInst_UIList_t3918749454_0_0_0,
@@ -2114,7 +2095,6 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[554] =
 	&GenInst_UI2DSprite_t1082505957_0_0_0,
 	&GenInst_UIWrapContent_t1931723019_0_0_0,
 	&GenInst_UICenterOnChild_t1687745660_0_0_0,
-	&GenInst_CatchMain_t3787564590_0_0_0,
 	&GenInst_GroupPhotoMain_t323661952_0_0_0,
 	&GenInst_UIDraggableCamera_t2562792962_0_0_0,
 	&GenInst_UIDragScrollView_t2942595320_0_0_0,
