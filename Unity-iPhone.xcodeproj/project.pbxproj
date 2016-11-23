@@ -252,6 +252,7 @@
 		6ED224561DC9864000E0FA36 /* Market.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED224551DC9864000E0FA36 /* Market.m */; };
 		6ED224591DC986AE00E0FA36 /* Spirit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED224581DC986AE00E0FA36 /* Spirit.m */; };
 		6ED2245C1DC98E6C00E0FA36 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2245B1DC98E6C00E0FA36 /* Order.m */; };
+		6EFDE1941DE539D100371336 /* Rank.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFDE1931DE539D100371336 /* Rank.m */; };
 		6F8441A3AE034BF704EEC2F9 /* Bulk_System.Core_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B4CDCB4B46F3407AA3DC9 /* Bulk_System.Core_0.cpp */; };
 		717D4A869B38093FC282D983 /* Il2CppGenericMethodPointerTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C234B01B6701C34DBC13A8E /* Il2CppGenericMethodPointerTable.cpp */; };
 		78CA4747B175BA3D53D8D0AD /* Il2CppMethodPointerTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07A3449C93D75A275DEA3533 /* Il2CppMethodPointerTable.cpp */; };
@@ -722,6 +723,8 @@
 		6ED224581DC986AE00E0FA36 /* Spirit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spirit.m; sourceTree = "<group>"; };
 		6ED2245A1DC98E6C00E0FA36 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
 		6ED2245B1DC98E6C00E0FA36 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
+		6EFDE1921DE539D100371336 /* Rank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rank.h; sourceTree = "<group>"; };
+		6EFDE1931DE539D100371336 /* Rank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rank.m; sourceTree = "<group>"; };
 		71E947D5AC8932897211D9CB /* LaunchScreen-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreen-iPad.png"; sourceTree = SOURCE_ROOT; };
 		775F4F4698FD165A4C24956A /* Bulk_Generics_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Generics_1.cpp; path = Classes/Native/Bulk_Generics_1.cpp; sourceTree = SOURCE_ROOT; };
 		7F36C10E13C5C673007FBDD9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -1461,6 +1464,8 @@
 				6ED224581DC986AE00E0FA36 /* Spirit.m */,
 				6E3C13261DC773FE00912F7D /* Config.h */,
 				6E3C13271DC773FE00912F7D /* Config.m */,
+				6EFDE1921DE539D100371336 /* Rank.h */,
+				6EFDE1931DE539D100371336 /* Rank.m */,
 				6E3C13291DC77DA900912F7D /* FileManager.h */,
 				6E3C132A1DC77DA900912F7D /* FileManager.m */,
 				6E92020E1DE1C13600785B0E /* StepManager.h */,
@@ -2163,6 +2168,7 @@
 				6E0912A51DCE200300C66E9E /* Bulk_Generics_5.cpp in Sources */,
 				6ED224591DC986AE00E0FA36 /* Spirit.m in Sources */,
 				8A851BAA16FB3AD000E911DB /* UnityAppController.mm in Sources */,
+				6EFDE1941DE539D100371336 /* Rank.m in Sources */,
 				6E9C86AC1DC2FE09005AF102 /* UIView+MJExtension.m in Sources */,
 				6E5F7D141DDAB66300A28655 /* BuyPopView.m in Sources */,
 				6EA9AF171DB8978F00206E4E /* LoginVC.m in Sources */,

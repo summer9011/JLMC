@@ -105,7 +105,12 @@
     self.mapView.showsUserLocation = YES;
     self.mapView.userTrackingMode = MAUserTrackingModeFollow;
     
-    [self.mapView setZoomLevel:18 animated:YES];
+    NSDictionary *configDic = [[NSUserDefaults standardUserDefaults] dictionaryForKey:UserDefaults_Config];
+    if (configDic[UserDefaults_Config_minZoomLevel]) {
+        [self.mapView setZoomLevel:[configDic[UserDefaults_Config_defaultZoomLevel] floatValue] animated:YES];
+    } else {
+        [self.mapView setZoomLevel:18 animated:YES];
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -140,9 +145,23 @@
     mapView.delegate = self;
     mapView.showsCompass = NO;
     mapView.showsScale = NO;
+    mapView.scrollEnabled = NO;
     mapView.rotateCameraEnabled = NO;
     mapView.allowsBackgroundLocationUpdates = YES;
     mapView.customizeUserLocationAccuracyCircleRepresentation = YES;
+    
+    NSDictionary *configDic = [[NSUserDefaults standardUserDefaults] dictionaryForKey:UserDefaults_Config];
+    if (configDic[UserDefaults_Config_minZoomLevel]) {
+        mapView.minZoomLevel = [configDic[UserDefaults_Config_minZoomLevel] floatValue];
+    } else {
+        mapView.minZoomLevel = 16;
+    }
+    
+    if (configDic[UserDefaults_Config_maxZoomLevel]) {
+        mapView.maxZoomLevel = [configDic[UserDefaults_Config_maxZoomLevel] floatValue];
+    } else {
+        mapView.maxZoomLevel = 19;
+    }
     
     [self.view addSubview:mapView];
     

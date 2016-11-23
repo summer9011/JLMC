@@ -96,6 +96,9 @@
 #define UserDefaults_Config_refreshDistance @"refreshDistance"
 #define UserDefaults_Config_stepsInterval @"stepsInterval"
 #define UserDefaults_Config_dailyTopSteps @"dailyTopSteps"
+#define UserDefaults_Config_defaultZoomLevel @"defaultZoomLevel"
+#define UserDefaults_Config_maxZoomLevel @"maxZoomLevel"
+#define UserDefaults_Config_minZoomLevel @"minZoomLevel"
 
 //Key - Notification
 #define Notification_LoadIcons @"Notification_LoadIcons"
