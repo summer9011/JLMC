@@ -14,15 +14,12 @@
 
 // UnityEngine.Texture2D
 struct Texture2D_t3575456220;
-// System.Byte[]
-struct ByteU5BU5D_t3835026402;
 
 #include "codegen/il2cpp-codegen.h"
 #include "UnityEngine_UnityEngine_TextureFormat3640027657.h"
 #include "UnityEngine_UnityEngine_Texture2D3575456220.h"
 #include "mscorlib_System_IntPtr3076297692.h"
 #include "UnityEngine_UnityEngine_Color2250949164.h"
-#include "UnityEngine_UnityEngine_Rect2553848979.h"
 
 // System.Void UnityEngine.Texture2D::.ctor(System.Int32,System.Int32)
 extern "C"  void Texture2D__ctor_m3598323350 (Texture2D_t3575456220 * __this, int32_t ___width, int32_t ___height, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -38,9 +35,3 @@ extern "C"  void Texture2D_INTERNAL_CALL_SetPixel_m3139530413 (Il2CppObject * __
 extern "C"  void Texture2D_Apply_m3753817130 (Texture2D_t3575456220 * __this, bool ___updateMipmaps, bool ___makeNoLongerReadable, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Texture2D::Apply()
 extern "C"  void Texture2D_Apply_m3543341930 (Texture2D_t3575456220 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Texture2D::ReadPixels(UnityEngine.Rect,System.Int32,System.Int32)
-extern "C"  void Texture2D_ReadPixels_m1120832672 (Texture2D_t3575456220 * __this, Rect_t2553848979  ___source, int32_t ___destX, int32_t ___destY, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Texture2D::INTERNAL_CALL_ReadPixels(UnityEngine.Texture2D,UnityEngine.Rect&,System.Int32,System.Int32,System.Boolean)
-extern "C"  void Texture2D_INTERNAL_CALL_ReadPixels_m1476963500 (Il2CppObject * __this /* static, unused */, Texture2D_t3575456220 * ___self, Rect_t2553848979 * ___source, int32_t ___destX, int32_t ___destY, bool ___recalculateMipMaps, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Byte[] UnityEngine.Texture2D::EncodeToPNG()
-extern "C"  ByteU5BU5D_t3835026402* Texture2D_EncodeToPNG_m2680110528 (Texture2D_t3575456220 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

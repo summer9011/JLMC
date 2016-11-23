@@ -693,7 +693,7 @@ extern "C" long	getPoiElfId() {
 }
 
 //获取抓捕器ID
-extern "C" long	getcatchId() {
+extern "C" long	getCatchId() {
     long catchId = 1;
     
     

@@ -8457,6 +8457,93 @@ extern "C"  int32_t Application_get_platform_m3989224144 (Il2CppObject * __this 
 	_il2cpp_icall_func = (Application_get_platform_m3989224144_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::get_platform()");
 	return _il2cpp_icall_func();
 }
+// System.Boolean UnityEngine.Application::get_isMobilePlatform()
+extern "C"  bool Application_get_isMobilePlatform_m1067527467 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = Application_get_platform_m3989224144(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_0 = L_0;
+		int32_t L_1 = V_0;
+		if (((int32_t)((int32_t)L_1-(int32_t)8)) == 0)
+		{
+			goto IL_0053;
+		}
+		if (((int32_t)((int32_t)L_1-(int32_t)8)) == 1)
+		{
+			goto IL_0055;
+		}
+		if (((int32_t)((int32_t)L_1-(int32_t)8)) == 2)
+		{
+			goto IL_0055;
+		}
+		if (((int32_t)((int32_t)L_1-(int32_t)8)) == 3)
+		{
+			goto IL_0053;
+		}
+		if (((int32_t)((int32_t)L_1-(int32_t)8)) == 4)
+		{
+			goto IL_0055;
+		}
+		if (((int32_t)((int32_t)L_1-(int32_t)8)) == 5)
+		{
+			goto IL_0055;
+		}
+		if (((int32_t)((int32_t)L_1-(int32_t)8)) == 6)
+		{
+			goto IL_0055;
+		}
+		if (((int32_t)((int32_t)L_1-(int32_t)8)) == 7)
+		{
+			goto IL_0055;
+		}
+		if (((int32_t)((int32_t)L_1-(int32_t)8)) == 8)
+		{
+			goto IL_0055;
+		}
+		if (((int32_t)((int32_t)L_1-(int32_t)8)) == 9)
+		{
+			goto IL_0055;
+		}
+		if (((int32_t)((int32_t)L_1-(int32_t)8)) == 10)
+		{
+			goto IL_0053;
+		}
+		if (((int32_t)((int32_t)L_1-(int32_t)8)) == 11)
+		{
+			goto IL_0053;
+		}
+		if (((int32_t)((int32_t)L_1-(int32_t)8)) == 12)
+		{
+			goto IL_0053;
+		}
+		if (((int32_t)((int32_t)L_1-(int32_t)8)) == 13)
+		{
+			goto IL_0053;
+		}
+		if (((int32_t)((int32_t)L_1-(int32_t)8)) == 14)
+		{
+			goto IL_0053;
+		}
+		if (((int32_t)((int32_t)L_1-(int32_t)8)) == 15)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		goto IL_0055;
+	}
+
+IL_0053:
+	{
+		return (bool)1;
+	}
+
+IL_0055:
+	{
+		return (bool)0;
+	}
+}
 // System.String UnityEngine.Application::get_streamingAssetsPath()
 extern "C"  String_t* Application_get_streamingAssetsPath_m8890645 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -10856,6 +10943,15 @@ extern "C"  Camera_t2805735124 * Camera_get_main_m475173995 (Il2CppObject * __th
 	static Camera_get_main_m475173995_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Camera_get_main_m475173995_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Camera::get_main()");
+	return _il2cpp_icall_func();
+}
+// UnityEngine.Camera[] UnityEngine.Camera::get_allCameras()
+extern "C"  CameraU5BU5D_t1727563613* Camera_get_allCameras_m1343394249 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef CameraU5BU5D_t1727563613* (*Camera_get_allCameras_m1343394249_ftn) ();
+	static Camera_get_allCameras_m1343394249_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Camera_get_allCameras_m1343394249_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Camera::get_allCameras()");
 	return _il2cpp_icall_func();
 }
 // System.Int32 UnityEngine.Camera::get_allCamerasCount()
@@ -15821,6 +15917,13 @@ extern "C"  GameObject_t1366199518 * GameObject_Find_m836511350 (Il2CppObject * 
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (GameObject_Find_m836511350_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::Find(System.String)");
 	return _il2cpp_icall_func(___name);
+}
+// UnityEngine.GameObject UnityEngine.GameObject::get_gameObject()
+extern "C"  GameObject_t1366199518 * GameObject_get_gameObject_m3662236595 (GameObject_t1366199518 * __this, const MethodInfo* method)
+{
+	{
+		return __this;
+	}
 }
 // System.Void UnityEngine.GL::SetRevertBackfacing(System.Boolean)
 extern "C"  void GL_SetRevertBackfacing_m3387974638 (Il2CppObject * __this /* static, unused */, bool ___revertBackFaces, const MethodInfo* method)

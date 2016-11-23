@@ -85,3 +85,5 @@ extern "C"  Component_t1078601330 * GameObject_AddComponent_m3757565614 (GameObj
 extern "C"  void GameObject_Internal_CreateGameObject_m3428198595 (Il2CppObject * __this /* static, unused */, GameObject_t1366199518 * ___mono, String_t* ___name, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.GameObject UnityEngine.GameObject::Find(System.String)
 extern "C"  GameObject_t1366199518 * GameObject_Find_m836511350 (Il2CppObject * __this /* static, unused */, String_t* ___name, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.GameObject UnityEngine.GameObject::get_gameObject()
+extern "C"  GameObject_t1366199518 * GameObject_get_gameObject_m3662236595 (GameObject_t1366199518 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

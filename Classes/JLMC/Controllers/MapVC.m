@@ -441,6 +441,7 @@
             UnitySendMessage(UnityObj, UnityMethod, UnityMySpirit);
             
             BaseNaviVC *naviVC = [[BaseNaviVC alloc] initWithRootViewController:GetAppController().tmpUnityVC];
+            [naviVC setNavigationBarHidden:YES];
             [self presentViewController:naviVC animated:YES completion:nil];
         }
             break;
@@ -572,6 +573,7 @@
             UnitySendMessage(UnityObj, UnityMethod, UnityMyCatch);
             
             BaseNaviVC *naviVC = [[BaseNaviVC alloc] initWithRootViewController:GetAppController().tmpUnityVC];
+            [naviVC setNavigationBarHidden:YES];
             [self presentViewController:naviVC animated:YES completion:nil];
         }
         
