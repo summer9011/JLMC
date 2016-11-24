@@ -1,4 +1,4 @@
-//Generated on : 2016/11/23 14:24:05
+//Generated on : 2016/11/24 17:38:21
 void RegisterAllStrippedInternalCalls()
 {
 	//Start Registrations for type : UnityEngine.AndroidJNI
@@ -399,10 +399,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Application
 
-		//System.Boolean UnityEngine.Application::HasUserAuthorization(UnityEngine.UserAuthorization)
-		void Register_UnityEngine_Application_HasUserAuthorization();
-		Register_UnityEngine_Application_HasUserAuthorization();
-
 		//System.Boolean UnityEngine.Application::get_isEditor()
 		void Register_UnityEngine_Application_get_isEditor();
 		Register_UnityEngine_Application_get_isEditor();
@@ -422,10 +418,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Application::OpenURL(System.String)
 		void Register_UnityEngine_Application_OpenURL();
 		Register_UnityEngine_Application_OpenURL();
-
-		//UnityEngine.AsyncOperation UnityEngine.Application::RequestUserAuthorization(UnityEngine.UserAuthorization)
-		void Register_UnityEngine_Application_RequestUserAuthorization();
-		Register_UnityEngine_Application_RequestUserAuthorization();
 
 		//UnityEngine.RuntimePlatform UnityEngine.Application::get_platform()
 		void Register_UnityEngine_Application_get_platform();
@@ -750,6 +742,10 @@ void RegisterAllStrippedInternalCalls()
 		//UnityEngine.CameraClearFlags UnityEngine.Camera::get_clearFlags()
 		void Register_UnityEngine_Camera_get_clearFlags();
 		Register_UnityEngine_Camera_get_clearFlags();
+
+		//UnityEngine.Camera[] UnityEngine.Camera::get_allCameras()
+		void Register_UnityEngine_Camera_get_allCameras();
+		Register_UnityEngine_Camera_get_allCameras();
 
 		//UnityEngine.GameObject UnityEngine.Camera::INTERNAL_CALL_RaycastTry(UnityEngine.Camera,UnityEngine.Ray&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
 		void Register_UnityEngine_Camera_INTERNAL_CALL_RaycastTry();
@@ -1459,6 +1455,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Gyroscope_setEnabled_Internal();
 		Register_UnityEngine_Gyroscope_setEnabled_Internal();
 
+		//System.Void UnityEngine.Gyroscope::setUpdateInterval_Internal(System.Int32,System.Single)
+		void Register_UnityEngine_Gyroscope_setUpdateInterval_Internal();
+		Register_UnityEngine_Gyroscope_setUpdateInterval_Internal();
+
 	//End Registrations for type : UnityEngine.Gyroscope
 
 	//Start Registrations for type : UnityEngine.Input
@@ -1514,6 +1514,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Input::INTERNAL_set_compositionCursorPos(UnityEngine.Vector2&)
 		void Register_UnityEngine_Input_INTERNAL_set_compositionCursorPos();
 		Register_UnityEngine_Input_INTERNAL_set_compositionCursorPos();
+
+		//System.Void UnityEngine.Input::set_compensateSensors(System.Boolean)
+		void Register_UnityEngine_Input_set_compensateSensors();
+		Register_UnityEngine_Input_set_compensateSensors();
 
 		//System.Void UnityEngine.Input::set_imeCompositionMode(UnityEngine.IMECompositionMode)
 		void Register_UnityEngine_Input_set_imeCompositionMode();
@@ -2247,6 +2251,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Resources
 
+		//UnityEngine.AsyncOperation UnityEngine.Resources::UnloadUnusedAssets()
+		void Register_UnityEngine_Resources_UnloadUnusedAssets();
+		Register_UnityEngine_Resources_UnloadUnusedAssets();
+
 		//UnityEngine.Object UnityEngine.Resources::GetBuiltinResource(System.Type,System.String)
 		void Register_UnityEngine_Resources_GetBuiltinResource();
 		Register_UnityEngine_Resources_GetBuiltinResource();
@@ -2547,17 +2555,9 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Texture2D
 
-		//System.Byte[] UnityEngine.Texture2D::EncodeToPNG()
-		void Register_UnityEngine_Texture2D_EncodeToPNG();
-		Register_UnityEngine_Texture2D_EncodeToPNG();
-
 		//System.Void UnityEngine.Texture2D::Apply(System.Boolean,System.Boolean)
 		void Register_UnityEngine_Texture2D_Apply();
 		Register_UnityEngine_Texture2D_Apply();
-
-		//System.Void UnityEngine.Texture2D::INTERNAL_CALL_ReadPixels(UnityEngine.Texture2D,UnityEngine.Rect&,System.Int32,System.Int32,System.Boolean)
-		void Register_UnityEngine_Texture2D_INTERNAL_CALL_ReadPixels();
-		Register_UnityEngine_Texture2D_INTERNAL_CALL_ReadPixels();
 
 		//System.Void UnityEngine.Texture2D::INTERNAL_CALL_SetPixel(UnityEngine.Texture2D,System.Int32,System.Int32,UnityEngine.Color&)
 		void Register_UnityEngine_Texture2D_INTERNAL_CALL_SetPixel();
@@ -2731,6 +2731,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Transform_set_parentInternal();
 		Register_UnityEngine_Transform_set_parentInternal();
 
+		//UnityEngine.Transform UnityEngine.Transform::Find(System.String)
+		void Register_UnityEngine_Transform_Find();
+		Register_UnityEngine_Transform_Find();
+
 		//UnityEngine.Transform UnityEngine.Transform::GetChild(System.Int32)
 		void Register_UnityEngine_Transform_GetChild();
 		Register_UnityEngine_Transform_GetChild();
@@ -2749,38 +2753,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.UnhandledExceptionHandler
 
-	//Start Registrations for type : UnityEngine.WebCamTexture
-
-		//System.Boolean UnityEngine.WebCamTexture::get_isPlaying()
-		void Register_UnityEngine_WebCamTexture_get_isPlaying();
-		Register_UnityEngine_WebCamTexture_get_isPlaying();
-
-		//System.Int32 UnityEngine.WebCamTexture::get_videoRotationAngle()
-		void Register_UnityEngine_WebCamTexture_get_videoRotationAngle();
-		Register_UnityEngine_WebCamTexture_get_videoRotationAngle();
-
-		//System.Void UnityEngine.WebCamTexture::INTERNAL_CALL_Pause(UnityEngine.WebCamTexture)
-		void Register_UnityEngine_WebCamTexture_INTERNAL_CALL_Pause();
-		Register_UnityEngine_WebCamTexture_INTERNAL_CALL_Pause();
-
-		//System.Void UnityEngine.WebCamTexture::INTERNAL_CALL_Play(UnityEngine.WebCamTexture)
-		void Register_UnityEngine_WebCamTexture_INTERNAL_CALL_Play();
-		Register_UnityEngine_WebCamTexture_INTERNAL_CALL_Play();
-
-		//System.Void UnityEngine.WebCamTexture::INTERNAL_CALL_Stop(UnityEngine.WebCamTexture)
-		void Register_UnityEngine_WebCamTexture_INTERNAL_CALL_Stop();
-		Register_UnityEngine_WebCamTexture_INTERNAL_CALL_Stop();
-
-		//System.Void UnityEngine.WebCamTexture::Internal_CreateWebCamTexture(UnityEngine.WebCamTexture,System.String,System.Int32,System.Int32,System.Int32)
-		void Register_UnityEngine_WebCamTexture_Internal_CreateWebCamTexture();
-		Register_UnityEngine_WebCamTexture_Internal_CreateWebCamTexture();
-
-		//UnityEngine.WebCamDevice[] UnityEngine.WebCamTexture::get_devices()
-		void Register_UnityEngine_WebCamTexture_get_devices();
-		Register_UnityEngine_WebCamTexture_get_devices();
-
-	//End Registrations for type : UnityEngine.WebCamTexture
-
 	//Start Registrations for type : UnityEngine.WWW
 
 		//System.Boolean UnityEngine.WWW::get_isDone()
@@ -2790,10 +2762,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Byte[] UnityEngine.WWW::get_bytes()
 		void Register_UnityEngine_WWW_get_bytes();
 		Register_UnityEngine_WWW_get_bytes();
-
-		//System.Int32 UnityEngine.WWW::get_size()
-		void Register_UnityEngine_WWW_get_size();
-		Register_UnityEngine_WWW_get_size();
 
 		//System.String UnityEngine.WWW::get_error()
 		void Register_UnityEngine_WWW_get_error();

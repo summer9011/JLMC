@@ -174,13 +174,13 @@ struct RenderTexture_t1605280484;
 struct RequireComponent_t3016279907;
 // UnityEngine.ResourceRequest
 struct ResourceRequest_t3074459938;
+// UnityEngine.AsyncOperation
+struct AsyncOperation_t471317734;
+struct AsyncOperation_t471317734_marshaled_pinvoke;
 // UnityEngine.Rigidbody
 struct Rigidbody_t1071364940;
 // UnityEngine.RPC
 struct RPC_t3549786392;
-// UnityEngine.AsyncOperation
-struct AsyncOperation_t471317734;
-struct AsyncOperation_t471317734_marshaled_pinvoke;
 // UnityEngine.ScriptableObject
 struct ScriptableObject_t496496229;
 struct ScriptableObject_t496496229_marshaled_pinvoke;
@@ -463,6 +463,7 @@ struct UsedByNativeCodeAttribute_t605300102;
 #include "UnityEngine_UnityEngine_AsyncOperation471317734MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Resources3616872916MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Resources3616872916.h"
+#include "UnityEngine_UnityEngine_AsyncOperation471317734.h"
 #include "UnityEngine_UnityEngine_Rigidbody1071364940.h"
 #include "UnityEngine_UnityEngine_Rigidbody1071364940MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Rigidbody2D2088154582.h"
@@ -475,7 +476,6 @@ struct UsedByNativeCodeAttribute_t605300102;
 #include "UnityEngine_UnityEngine_SceneManagement_LoadSceneM1598875467MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SceneManagement_SceneManage834387985.h"
 #include "UnityEngine_UnityEngine_SceneManagement_SceneManage834387985MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_AsyncOperation471317734.h"
 #include "UnityEngine_UnityEngine_Screen173559997.h"
 #include "UnityEngine_UnityEngine_ScreenOrientation2442911283.h"
 #include "UnityEngine_UnityEngine_ScreenOrientation2442911283MethodDeclarations.h"
@@ -10637,6 +10637,15 @@ extern "C"  void Gyroscope_setEnabled_Internal_m881641045 (Il2CppObject * __this
 	_il2cpp_icall_func = (Gyroscope_setEnabled_Internal_m881641045_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Gyroscope::setEnabled_Internal(System.Int32,System.Boolean)");
 	_il2cpp_icall_func(___idx, ___enabled);
 }
+// System.Void UnityEngine.Gyroscope::setUpdateInterval_Internal(System.Int32,System.Single)
+extern "C"  void Gyroscope_setUpdateInterval_Internal_m2222351378 (Il2CppObject * __this /* static, unused */, int32_t ___idx, float ___interval, const MethodInfo* method)
+{
+	typedef void (*Gyroscope_setUpdateInterval_Internal_m2222351378_ftn) (int32_t, float);
+	static Gyroscope_setUpdateInterval_Internal_m2222351378_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Gyroscope_setUpdateInterval_Internal_m2222351378_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Gyroscope::setUpdateInterval_Internal(System.Int32,System.Single)");
+	_il2cpp_icall_func(___idx, ___interval);
+}
 // UnityEngine.Quaternion UnityEngine.Gyroscope::get_attitude()
 extern "C"  Quaternion_t83606849  Gyroscope_get_attitude_m3665233473 (Gyroscope_t1746339172 * __this, const MethodInfo* method)
 {
@@ -10653,6 +10662,16 @@ extern "C"  void Gyroscope_set_enabled_m487023127 (Gyroscope_t1746339172 * __thi
 		int32_t L_0 = __this->get_m_GyroIndex_0();
 		bool L_1 = ___value;
 		Gyroscope_setEnabled_Internal_m881641045(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Gyroscope::set_updateInterval(System.Single)
+extern "C"  void Gyroscope_set_updateInterval_m3271568822 (Gyroscope_t1746339172 * __this, float ___value, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_m_GyroIndex_0();
+		float L_1 = ___value;
+		Gyroscope_setUpdateInterval_Internal_m2222351378(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -11214,6 +11233,15 @@ extern "C"  float Input_GetAxis_m2098048324 (Il2CppObject * __this /* static, un
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Input_GetAxis_m2098048324_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::GetAxis(System.String)");
 	return _il2cpp_icall_func(___axisName);
+}
+// System.Void UnityEngine.Input::set_compensateSensors(System.Boolean)
+extern "C"  void Input_set_compensateSensors_m952058409 (Il2CppObject * __this /* static, unused */, bool ___value, const MethodInfo* method)
+{
+	typedef void (*Input_set_compensateSensors_m952058409_ftn) (bool);
+	static Input_set_compensateSensors_m952058409_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Input_set_compensateSensors_m952058409_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::set_compensateSensors(System.Boolean)");
+	_il2cpp_icall_func(___value);
 }
 // UnityEngine.Gyroscope UnityEngine.Input::get_gyro()
 extern TypeInfo* Input_t4173266137_il2cpp_TypeInfo_var;
@@ -18965,6 +18993,15 @@ extern "C"  Object_t1181371020 * Resources_GetBuiltinResource_m582410469 (Il2Cpp
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Resources_GetBuiltinResource_m582410469_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Resources::GetBuiltinResource(System.Type,System.String)");
 	return _il2cpp_icall_func(___type, ___path);
+}
+// UnityEngine.AsyncOperation UnityEngine.Resources::UnloadUnusedAssets()
+extern "C"  AsyncOperation_t471317734 * Resources_UnloadUnusedAssets_m2770025609 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef AsyncOperation_t471317734 * (*Resources_UnloadUnusedAssets_m2770025609_ftn) ();
+	static Resources_UnloadUnusedAssets_m2770025609_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Resources_UnloadUnusedAssets_m2770025609_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Resources::UnloadUnusedAssets()");
+	return _il2cpp_icall_func();
 }
 // System.Void UnityEngine.Rigidbody::set_useGravity(System.Boolean)
 extern "C"  void Rigidbody_set_useGravity_m2606656539 (Rigidbody_t1071364940 * __this, bool ___value, const MethodInfo* method)

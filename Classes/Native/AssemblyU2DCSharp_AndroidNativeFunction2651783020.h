@@ -42,6 +42,10 @@ public:
 	String_t* ___UserId_3;
 	// System.String AndroidNativeFunction::BackMain
 	String_t* ___BackMain_4;
+	// System.String AndroidNativeFunction::CatchId
+	String_t* ___CatchId_5;
+	// System.String AndroidNativeFunction::Shop
+	String_t* ___Shop_6;
 
 public:
 	inline static int32_t get_offset_of_Main_0() { return static_cast<int32_t>(offsetof(AndroidNativeFunction_t2651783020_StaticFields, ___Main_0)); }
@@ -87,6 +91,24 @@ public:
 	{
 		___BackMain_4 = value;
 		Il2CppCodeGenWriteBarrier(&___BackMain_4, value);
+	}
+
+	inline static int32_t get_offset_of_CatchId_5() { return static_cast<int32_t>(offsetof(AndroidNativeFunction_t2651783020_StaticFields, ___CatchId_5)); }
+	inline String_t* get_CatchId_5() const { return ___CatchId_5; }
+	inline String_t** get_address_of_CatchId_5() { return &___CatchId_5; }
+	inline void set_CatchId_5(String_t* value)
+	{
+		___CatchId_5 = value;
+		Il2CppCodeGenWriteBarrier(&___CatchId_5, value);
+	}
+
+	inline static int32_t get_offset_of_Shop_6() { return static_cast<int32_t>(offsetof(AndroidNativeFunction_t2651783020_StaticFields, ___Shop_6)); }
+	inline String_t* get_Shop_6() const { return ___Shop_6; }
+	inline String_t** get_address_of_Shop_6() { return &___Shop_6; }
+	inline void set_Shop_6(String_t* value)
+	{
+		___Shop_6 = value;
+		Il2CppCodeGenWriteBarrier(&___Shop_6, value);
 	}
 };
 

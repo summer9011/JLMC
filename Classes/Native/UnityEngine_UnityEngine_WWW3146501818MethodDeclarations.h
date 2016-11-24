@@ -59,8 +59,6 @@ extern "C"  Encoding_t2125916575 * WWW_get_DefaultEncoding_m1497697991 (Il2CppOb
 extern "C"  Encoding_t2125916575 * WWW_GetTextEncoder_m1231410509 (WWW_t3146501818 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Byte[] UnityEngine.WWW::get_bytes()
 extern "C"  ByteU5BU5D_t3835026402* WWW_get_bytes_m420718112 (WWW_t3146501818 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 UnityEngine.WWW::get_size()
-extern "C"  int32_t WWW_get_size_m4107261770 (WWW_t3146501818 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String UnityEngine.WWW::get_error()
 extern "C"  String_t* WWW_get_error_m3092701216 (WWW_t3146501818 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Texture2D UnityEngine.WWW::GetTexture(System.Boolean)

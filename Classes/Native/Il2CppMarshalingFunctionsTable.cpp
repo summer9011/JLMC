@@ -347,9 +347,6 @@ extern "C" void Vector4_t465617796_marshal_pinvoke_cleanup ();
 extern "C" void WaitForSeconds_t1717981302_marshal_pinvoke ();
 extern "C" void WaitForSeconds_t1717981302_marshal_pinvoke_back ();
 extern "C" void WaitForSeconds_t1717981302_marshal_pinvoke_cleanup ();
-extern "C" void WebCamDevice_t138406174_marshal_pinvoke ();
-extern "C" void WebCamDevice_t138406174_marshal_pinvoke_back ();
-extern "C" void WebCamDevice_t138406174_marshal_pinvoke_cleanup ();
 extern "C" void YieldInstruction_t1518686560_marshal_pinvoke ();
 extern "C" void YieldInstruction_t1518686560_marshal_pinvoke_back ();
 extern "C" void YieldInstruction_t1518686560_marshal_pinvoke_cleanup ();
@@ -368,7 +365,7 @@ extern "C" void U24ArrayTypeU248_t3753532212_marshal_pinvoke_cleanup ();
 extern "C" void FadeEntry_t1015115370_marshal_pinvoke ();
 extern "C" void FadeEntry_t1015115370_marshal_pinvoke_back ();
 extern "C" void FadeEntry_t1015115370_marshal_pinvoke_cleanup ();
-extern const Il2CppMarshalingFunctions g_MarshalingFunctions[120] = 
+extern const Il2CppMarshalingFunctions g_MarshalingFunctions[119] = 
 {
 	{ U24ArrayTypeU241024_t2918369424_marshal_pinvoke, U24ArrayTypeU241024_t2918369424_marshal_pinvoke_back, U24ArrayTypeU241024_t2918369424_marshal_pinvoke_cleanup },
 	{ U24ArrayTypeU2412_t2275264244_marshal_pinvoke, U24ArrayTypeU2412_t2275264244_marshal_pinvoke_back, U24ArrayTypeU2412_t2275264244_marshal_pinvoke_cleanup },
@@ -482,7 +479,6 @@ extern const Il2CppMarshalingFunctions g_MarshalingFunctions[120] =
 	{ Vector3_t465617797_marshal_pinvoke, Vector3_t465617797_marshal_pinvoke_back, Vector3_t465617797_marshal_pinvoke_cleanup },
 	{ Vector4_t465617796_marshal_pinvoke, Vector4_t465617796_marshal_pinvoke_back, Vector4_t465617796_marshal_pinvoke_cleanup },
 	{ WaitForSeconds_t1717981302_marshal_pinvoke, WaitForSeconds_t1717981302_marshal_pinvoke_back, WaitForSeconds_t1717981302_marshal_pinvoke_cleanup },
-	{ WebCamDevice_t138406174_marshal_pinvoke, WebCamDevice_t138406174_marshal_pinvoke_back, WebCamDevice_t138406174_marshal_pinvoke_cleanup },
 	{ YieldInstruction_t1518686560_marshal_pinvoke, YieldInstruction_t1518686560_marshal_pinvoke_back, YieldInstruction_t1518686560_marshal_pinvoke_cleanup },
 	{ MathfInternal_t4176747441_marshal_pinvoke, MathfInternal_t4176747441_marshal_pinvoke_back, MathfInternal_t4176747441_marshal_pinvoke_cleanup },
 	{ Vector2I_t2584456199_marshal_pinvoke, Vector2I_t2584456199_marshal_pinvoke_back, Vector2I_t2584456199_marshal_pinvoke_cleanup },

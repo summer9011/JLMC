@@ -32,3 +32,5 @@ extern "C"  void IOSNativeFunction_DidBackAction_m97715759 (Il2CppObject * __thi
 extern "C"  int64_t IOSNativeFunction_LoginUserId_m3777548647 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int64 IOSNativeFunction::getPoiElfId()
 extern "C"  int64_t IOSNativeFunction_getPoiElfId_m3947210306 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int64 IOSNativeFunction::getCatchId()
+extern "C"  int64_t IOSNativeFunction_getCatchId_m2473514654 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;

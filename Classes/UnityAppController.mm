@@ -465,6 +465,10 @@ extern "C" void UnityRequestQuit()
     
     __weak UnityAppController *weakSelf = self;
     
+//    CLLocationCoordinate2D coor = [WGS84TOGCJ02 transformFromWGSToGCJ:location.coordinate];
+//    NSString *longitude = [NSString stringWithFormat:@"%f", coor.longitude];
+//    NSString *latitude = [NSString stringWithFormat:@"%f", coor.latitude];
+    
     NSString *longitude = [NSString stringWithFormat:@"%f", location.coordinate.longitude];
     NSString *latitude = [NSString stringWithFormat:@"%f", location.coordinate.latitude];
     

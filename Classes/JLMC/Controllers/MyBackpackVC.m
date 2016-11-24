@@ -26,6 +26,17 @@
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    if (self.navigationController.viewControllers.count > 1) {
+        UIViewController *tmpVC = self.navigationController.viewControllers[self.navigationController.viewControllers.count - 2];
+        if ([tmpVC isEqual:GetAppController().rootViewController]) {
+            [tmpVC.navigationController setNavigationBarHidden:YES animated:YES];
+        }
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

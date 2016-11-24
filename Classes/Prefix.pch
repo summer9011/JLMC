@@ -24,6 +24,8 @@
 
     #import "ShareView.h"
 
+    #import "WGS84TOGCJ02.h"
+
 //Model
     #import "StepManager.h"
     #import "FileManager.h"

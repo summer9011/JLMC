@@ -803,7 +803,6 @@
 #include "UnityEngine_UnityEngine_WWWTranscoder2498258237.h"
 #include "UnityEngine_UnityEngine_AsyncOperation471317734.h"
 #include "UnityEngine_UnityEngine_Application3439453659.h"
-#include "UnityEngine_UnityEngine_UserAuthorization3879940717.h"
 #include "UnityEngine_UnityEngine_Camera2805735124.h"
 #include "UnityEngine_UnityEngine_Debug12548584.h"
 #include "UnityEngine_UnityEngine_Display1982680307.h"
@@ -838,7 +837,6 @@
 #include "UnityEngine_UnityEngine_Collision2D2886048419.h"
 #include "UnityEngine_UnityEngine_AudioSettings3863939182.h"
 #include "UnityEngine_UnityEngine_AudioClip3927647597.h"
-#include "UnityEngine_UnityEngine_WebCamDevice138406174.h"
 #include "UnityEngine_UnityEngine_AnimationEventSource1918759814.h"
 #include "UnityEngine_UnityEngine_AnimationEvent637714523.h"
 #include "UnityEngine_UnityEngine_PlayMode2887175546.h"
@@ -1169,18 +1167,16 @@
 #include "AssemblyU2DCSharp_UIViewport1541362616.h"
 #include "AssemblyU2DCSharp_CatchMain3787564590.h"
 #include "AssemblyU2DCSharp_CatchMain_U3CgetElfDetailU3Ec__It193147870.h"
-#include "AssemblyU2DCSharp_ScenceCamera1317775166.h"
-#include "AssemblyU2DCSharp_ScenceCamera_U3COpenCameraU3Ec__2563167366.h"
+#include "AssemblyU2DCSharp_CatchMain_U3CCatchElfU3Ec__Itera1381196637.h"
+#include "AssemblyU2DCSharp_CatchQuan830316542.h"
 #include "AssemblyU2DCSharp_API3691620896.h"
 #include "AssemblyU2DCSharp_AndroidNativeFunction2651783020.h"
 #include "AssemblyU2DCSharp_App821575015.h"
 #include "AssemblyU2DCSharp_App_U3CLoadSceneAsyn1U3Ec__Itera2713148942.h"
 #include "AssemblyU2DCSharp_App_U3CBackSceneAsynU3Ec__Iterat2507346869.h"
-#include "AssemblyU2DCSharp_App_U3CResoucesToSDU3Ec__Iterato4054200587.h"
 #include "AssemblyU2DCSharp_AssetLoad3126280200.h"
-#include "AssemblyU2DCSharp_AssetLoad_U3CLoadAssetBundleU3Ec_886092718.h"
-#include "AssemblyU2DCSharp_DontDestroy3901757661.h"
-#include "AssemblyU2DCSharp_FilesManager2291984574.h"
+#include "AssemblyU2DCSharp_AssetLoad_U3CLoadAssetBundleU3Ec_886092774.h"
+#include "AssemblyU2DCSharp_AssetLoad_U3CDownLoadAssetU3Ec__3794644502.h"
 #include "AssemblyU2DCSharp_Gift450896550.h"
 #include "AssemblyU2DCSharp_GoodDetail1652464060.h"
 #include "AssemblyU2DCSharp_MySpriteDetail913424694.h"
@@ -1195,25 +1191,24 @@
 #include "AssemblyU2DCSharp_LitJson_JSONClass3507943507.h"
 #include "AssemblyU2DCSharp_LitJson_JSONClass_U3CU3Ec__Itera2038443215.h"
 #include "AssemblyU2DCSharp_LitJson_JSONClass_U3CGetEnumerato791194656.h"
-#include "AssemblyU2DCSharp_LitJson_JSONClass_U3CRemoveU3Ec_1128803949.h"
+#include "AssemblyU2DCSharp_LitJson_JSONClass_U3CRemoveU3Ec_1128803950.h"
 #include "AssemblyU2DCSharp_LitJson_JSONData1956706087.h"
 #include "AssemblyU2DCSharp_LitJson_JSONLazyCreator3650877441.h"
 #include "AssemblyU2DCSharp_GroupPhotoMain323661952.h"
 #include "AssemblyU2DCSharp_GroupPhotoMain_U3CgetSpriteDecU33069165086.h"
-#include "AssemblyU2DCSharp_MobileCamera1503681139.h"
-#include "AssemblyU2DCSharp_MobileCamera_U3COpenCamera1U3Ec_4199444246.h"
-#include "AssemblyU2DCSharp_MobileCamera_U3CTakePhotoWaitFor2376656531.h"
+#include "AssemblyU2DCSharp_Main2809994845.h"
+#include "AssemblyU2DCSharp_Main_U3COnExtractResourceU3Ec__I1706261718.h"
 #include "AssemblyU2DCSharp_MySpriteItem3317553624.h"
 #include "AssemblyU2DCSharp_MySpriteMain1885725518.h"
-#include "AssemblyU2DCSharp_MySpriteMain_U3CgetSpriteListU3E4208346345.h"
+#include "AssemblyU2DCSharp_MySpriteMain_U3CgetSpriteListU3E1835693350.h"
 #include "AssemblyU2DCSharp_GiftsItem1274332604.h"
 #include "AssemblyU2DCSharp_GoodsItem1184035003.h"
 #include "AssemblyU2DCSharp_GoodsMain2232523981.h"
-#include "AssemblyU2DCSharp_GoodsMain_U3CgetGoodsListU3Ec__I4048885933.h"
+#include "AssemblyU2DCSharp_GoodsMain_U3CgetGoodsListU3Ec__I4048885932.h"
 #include "AssemblyU2DCSharp_MySpriteDecMain1599878596.h"
-#include "AssemblyU2DCSharp_MySpriteDecMain_U3CgetSpriteDecU3069165087.h"
-#include "AssemblyU2DCSharp_MySpriteDecMain_U3CFeedElfU3Ec__I997388150.h"
-#include "AssemblyU2DCSharp_MySpriteDecMain_U3ChasGiftU3Ec__1064594072.h"
+#include "AssemblyU2DCSharp_MySpriteDecMain_U3CgetSpriteDecU3069165090.h"
+#include "AssemblyU2DCSharp_MySpriteDecMain_U3CFeedElfU3Ec__2563472091.h"
+#include "AssemblyU2DCSharp_MySpriteDecMain_U3ChasGiftU3Ec__2630678013.h"
 #include "AssemblyU2DCSharp_UIList3918749454.h"
 #include "AssemblyU2DCSharp_UIControlCatch3983032206.h"
 #include "AssemblyU2DCSharp_UIControlGroupPhoto3169531466.h"
@@ -1583,7 +1578,6 @@
 #include "UnityEngine_UnityEngine_AudioClip_PCMSetPositionCa2781450296.h"
 #include "UnityEngine_UnityEngine_AudioListener2109973415.h"
 #include "UnityEngine_UnityEngine_AudioSource585923902.h"
-#include "UnityEngine_UnityEngine_WebCamTexture4098188425.h"
 #include "UnityEngine_UnityEngine_AnimationClip56321445.h"
 #include "UnityEngine_UnityEngine_Animation3026096567.h"
 #include "UnityEngine_UnityEngine_AnimationState1861571064.h"
@@ -1682,10 +1676,10 @@
 #include "AssemblyU2DCSharp_AssetLoad_AssetHandleKey2677463335.h"
 #include "AssemblyU2DCSharp_AssetLoad_AssetHandle296746218.h"
 #include "AssemblyU2DCSharp_IOSNativeFunction3033620758.h"
-#include "AssemblyU2DCSharp_Md53859634764.h"
 #include "AssemblyU2DCSharp_MultiPlatformFunction3311920458.h"
 #include "AssemblyU2DCSharp_LitJson_JSONNode1109731523.h"
 #include "AssemblyU2DCSharp_LitJson_JSON3479527703.h"
+#include "AssemblyU2DCSharp_Util4006552276.h"
 #include "AssemblyU2DCSharp_test2695682768.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3438063658.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3753532211.h"
@@ -1697,7 +1691,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[7804] = 
+extern const int32_t g_FieldOffsetTable[7806] = 
 {
 	0,
 	0,
@@ -6396,9 +6390,6 @@ extern const int32_t g_FieldOffsetTable[7804] =
 	AsyncOperation_t471317734::get_offset_of_m_Ptr_0(),
 	Application_t3439453659_StaticFields::get_offset_of_s_LogCallbackHandler_0(),
 	Application_t3439453659_StaticFields::get_offset_of_s_LogCallbackHandlerThreaded_1(),
-	UserAuthorization_t3879940717::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
 	Camera_t2805735124_StaticFields::get_offset_of_onPreCull_2(),
 	Camera_t2805735124_StaticFields::get_offset_of_onPreRender_3(),
 	Camera_t2805735124_StaticFields::get_offset_of_onPostRender_4(),
@@ -6554,8 +6545,6 @@ extern const int32_t g_FieldOffsetTable[7804] =
 	AudioSettings_t3863939182_StaticFields::get_offset_of_OnAudioConfigurationChanged_0(),
 	AudioClip_t3927647597::get_offset_of_m_PCMReaderCallback_2(),
 	AudioClip_t3927647597::get_offset_of_m_PCMSetPositionCallback_3(),
-	WebCamDevice_t138406174::get_offset_of_m_Name_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	WebCamDevice_t138406174::get_offset_of_m_Flags_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	AnimationEventSource_t1918759814::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
@@ -9236,6 +9225,8 @@ extern const int32_t g_FieldOffsetTable[7804] =
 	UIViewport_t1541362616::get_offset_of_mCam_6(),
 	CatchMain_t3787564590::get_offset_of_detail_2(),
 	CatchMain_t3787564590::get_offset_of_MySprite3D_3(),
+	CatchMain_t3787564590::get_offset_of_CatchQuan_4(),
+	CatchMain_t3787564590::get_offset_of_ScenceCode_5(),
 	U3CgetElfDetailU3Ec__Iterator5_t193147870::get_offset_of_U3CargU3E__0_0(),
 	U3CgetElfDetailU3Ec__Iterator5_t193147870::get_offset_of_poiElfId_1(),
 	U3CgetElfDetailU3Ec__Iterator5_t193147870::get_offset_of_U3CwwwU3E__1_2(),
@@ -9243,13 +9234,18 @@ extern const int32_t g_FieldOffsetTable[7804] =
 	U3CgetElfDetailU3Ec__Iterator5_t193147870::get_offset_of_U24current_4(),
 	U3CgetElfDetailU3Ec__Iterator5_t193147870::get_offset_of_U3CU24U3EpoiElfId_5(),
 	U3CgetElfDetailU3Ec__Iterator5_t193147870::get_offset_of_U3CU3Ef__this_6(),
-	ScenceCamera_t1317775166::get_offset_of_bg_2(),
-	ScenceCamera_t1317775166::get_offset_of_mWebCamTexture_3(),
-	U3COpenCameraU3Ec__Iterator6_t2563167366::get_offset_of_U3CdevicesU3E__0_0(),
-	U3COpenCameraU3Ec__Iterator6_t2563167366::get_offset_of_U3CmWebCamTextureU3E__1_1(),
-	U3COpenCameraU3Ec__Iterator6_t2563167366::get_offset_of_U24PC_2(),
-	U3COpenCameraU3Ec__Iterator6_t2563167366::get_offset_of_U24current_3(),
-	U3COpenCameraU3Ec__Iterator6_t2563167366::get_offset_of_U3CU3Ef__this_4(),
+	U3CCatchElfU3Ec__Iterator6_t1381196637::get_offset_of_U3CformU3E__0_0(),
+	U3CCatchElfU3Ec__Iterator6_t1381196637::get_offset_of_aim_1(),
+	U3CCatchElfU3Ec__Iterator6_t1381196637::get_offset_of_U3CwwwU3E__1_2(),
+	U3CCatchElfU3Ec__Iterator6_t1381196637::get_offset_of_U3CjsonU3E__2_3(),
+	U3CCatchElfU3Ec__Iterator6_t1381196637::get_offset_of_U24PC_4(),
+	U3CCatchElfU3Ec__Iterator6_t1381196637::get_offset_of_U24current_5(),
+	U3CCatchElfU3Ec__Iterator6_t1381196637::get_offset_of_U3CU24U3Eaim_6(),
+	U3CCatchElfU3Ec__Iterator6_t1381196637::get_offset_of_U3CU3Ef__this_7(),
+	CatchQuan_t830316542::get_offset_of_speed_2(),
+	CatchQuan_t830316542::get_offset_of_tempScale_3(),
+	CatchQuan_t830316542::get_offset_of_isSouSuo_4(),
+	CatchQuan_t830316542::get_offset_of_isStop_5(),
 	API_t3691620896_StaticFields::get_offset_of_hostName_0(),
 	API_t3691620896_StaticFields::get_offset_of_port_1(),
 	API_t3691620896_StaticFields::get_offset_of_getOwnElfList_2(),
@@ -9258,19 +9254,23 @@ extern const int32_t g_FieldOffsetTable[7804] =
 	API_t3691620896_StaticFields::get_offset_of_feedElf_5(),
 	API_t3691620896_StaticFields::get_offset_of_apiGift_6(),
 	API_t3691620896_StaticFields::get_offset_of_getNearbyElfDetail_7(),
+	API_t3691620896_StaticFields::get_offset_of_catchElf_8(),
 	AndroidNativeFunction_t2651783020_StaticFields::get_offset_of_Main_0(),
 	AndroidNativeFunction_t2651783020_StaticFields::get_offset_of_Mybag_1(),
 	AndroidNativeFunction_t2651783020_StaticFields::get_offset_of_PoiElfId_2(),
 	AndroidNativeFunction_t2651783020_StaticFields::get_offset_of_UserId_3(),
 	AndroidNativeFunction_t2651783020_StaticFields::get_offset_of_BackMain_4(),
+	AndroidNativeFunction_t2651783020_StaticFields::get_offset_of_CatchId_5(),
+	AndroidNativeFunction_t2651783020_StaticFields::get_offset_of_Shop_6(),
 	App_t821575015_StaticFields::get_offset_of_isDeBug_0(),
-	App_t821575015::get_offset_of_sceneNameStack_1(),
-	App_t821575015_StaticFields::get_offset_of_instance_2(),
-	App_t821575015::get_offset_of_LASTSCENCENAME_3(),
-	App_t821575015_StaticFields::get_offset_of_MoxingPath_4(),
-	App_t821575015_StaticFields::get_offset_of_currSpriteGetid_5(),
-	App_t821575015_StaticFields::get_offset_of_mMySpriteDetail_6(),
-	App_t821575015_StaticFields::get_offset_of_U3CU3Ef__switchU24map5_7(),
+	App_t821575015_StaticFields::get_offset_of_ResourceID_1(),
+	App_t821575015_StaticFields::get_offset_of_isDebugOnMobile_2(),
+	App_t821575015::get_offset_of_sceneNameStack_3(),
+	App_t821575015_StaticFields::get_offset_of_instance_4(),
+	App_t821575015_StaticFields::get_offset_of_MoxingPath_5(),
+	App_t821575015_StaticFields::get_offset_of_currSpriteGetid_6(),
+	App_t821575015_StaticFields::get_offset_of_mMySpriteDetail_7(),
+	App_t821575015_StaticFields::get_offset_of_U3CU3Ef__switchU24map5_8(),
 	U3CLoadSceneAsyn1U3Ec__Iterator7_t2713148942::get_offset_of_context_0(),
 	U3CLoadSceneAsyn1U3Ec__Iterator7_t2713148942::get_offset_of_sceneName_1(),
 	U3CLoadSceneAsyn1U3Ec__Iterator7_t2713148942::get_offset_of_U3CaoU3E__0_2(),
@@ -9286,38 +9286,32 @@ extern const int32_t g_FieldOffsetTable[7804] =
 	U3CBackSceneAsynU3Ec__Iterator8_t2507346869::get_offset_of_U24current_4(),
 	U3CBackSceneAsynU3Ec__Iterator8_t2507346869::get_offset_of_U3CU24U3Econtext_5(),
 	U3CBackSceneAsynU3Ec__Iterator8_t2507346869::get_offset_of_U3CU3Ef__this_6(),
-	U3CResoucesToSDU3Ec__Iterator9_t4054200587::get_offset_of_U3CstreamingAssetsPathU3E__0_0(),
-	U3CResoucesToSDU3Ec__Iterator9_t4054200587::get_offset_of_U3CwwwU3E__1_1(),
-	U3CResoucesToSDU3Ec__Iterator9_t4054200587::get_offset_of_U3CfileJsonU3E__2_2(),
-	U3CResoucesToSDU3Ec__Iterator9_t4054200587::get_offset_of_U3CiU3E__3_3(),
-	U3CResoucesToSDU3Ec__Iterator9_t4054200587::get_offset_of_U3CwwwFileU3E__4_4(),
-	U3CResoucesToSDU3Ec__Iterator9_t4054200587::get_offset_of_U3CswU3E__5_5(),
-	U3CResoucesToSDU3Ec__Iterator9_t4054200587::get_offset_of_U3CtU3E__6_6(),
-	U3CResoucesToSDU3Ec__Iterator9_t4054200587::get_offset_of_U24PC_7(),
-	U3CResoucesToSDU3Ec__Iterator9_t4054200587::get_offset_of_U24current_8(),
-	U3CResoucesToSDU3Ec__Iterator9_t4054200587::get_offset_of_U3CU3Ef__this_9(),
 	AssetLoad_t3126280200::get_offset_of_MaxIEnumerator_2(),
 	AssetLoad_t3126280200::get_offset_of_AllAssetBundle_3(),
 	AssetLoad_t3126280200::get_offset_of_AllAssetBundleLoadGameObject_4(),
 	AssetLoad_t3126280200::get_offset_of_OnLoadAssetBundle_5(),
 	AssetLoad_t3126280200::get_offset_of_AssetHandleEventKey_6(),
 	AssetLoad_t3126280200::get_offset_of_AssetHandleEvent_7(),
-	U3CLoadAssetBundleU3Ec__IteratorA_t886092718::get_offset_of_path_0(),
-	U3CLoadAssetBundleU3Ec__IteratorA_t886092718::get_offset_of_U3CwwwU3E__0_1(),
-	U3CLoadAssetBundleU3Ec__IteratorA_t886092718::get_offset_of_U3CassetBundleU3E__1_2(),
-	U3CLoadAssetBundleU3Ec__IteratorA_t886092718::get_offset_of_U3CloadGameObjectU3E__2_3(),
-	U3CLoadAssetBundleU3Ec__IteratorA_t886092718::get_offset_of_assetName_4(),
-	U3CLoadAssetBundleU3Ec__IteratorA_t886092718::get_offset_of_U3CAssetBundleLoadGameObjectKeyU3E__3_5(),
-	U3CLoadAssetBundleU3Ec__IteratorA_t886092718::get_offset_of_key_6(),
-	U3CLoadAssetBundleU3Ec__IteratorA_t886092718::get_offset_of_U24PC_7(),
-	U3CLoadAssetBundleU3Ec__IteratorA_t886092718::get_offset_of_U24current_8(),
-	U3CLoadAssetBundleU3Ec__IteratorA_t886092718::get_offset_of_U3CU24U3Epath_9(),
-	U3CLoadAssetBundleU3Ec__IteratorA_t886092718::get_offset_of_U3CU24U3EassetName_10(),
-	U3CLoadAssetBundleU3Ec__IteratorA_t886092718::get_offset_of_U3CU24U3Ekey_11(),
-	U3CLoadAssetBundleU3Ec__IteratorA_t886092718::get_offset_of_U3CU3Ef__this_12(),
-	DontDestroy_t3901757661::get_offset_of_model_2(),
-	DontDestroy_t3901757661::get_offset_of_Scenceimage_3(),
-	FilesManager_t2291984574::get_offset_of_MarksDirectory_2(),
+	U3CLoadAssetBundleU3Ec__Iterator9_t886092774::get_offset_of_path_0(),
+	U3CLoadAssetBundleU3Ec__Iterator9_t886092774::get_offset_of_U3CwithoutFileHeadU3E__0_1(),
+	U3CLoadAssetBundleU3Ec__Iterator9_t886092774::get_offset_of_U3CwithFileHeadU3E__1_2(),
+	U3CLoadAssetBundleU3Ec__Iterator9_t886092774::get_offset_of_url_3(),
+	U3CLoadAssetBundleU3Ec__Iterator9_t886092774::get_offset_of_U3Cwww1U3E__2_4(),
+	U3CLoadAssetBundleU3Ec__Iterator9_t886092774::get_offset_of_U3CwwwU3E__3_5(),
+	U3CLoadAssetBundleU3Ec__Iterator9_t886092774::get_offset_of_U3CassetBundleU3E__4_6(),
+	U3CLoadAssetBundleU3Ec__Iterator9_t886092774::get_offset_of_U3CloadGameObjectU3E__5_7(),
+	U3CLoadAssetBundleU3Ec__Iterator9_t886092774::get_offset_of_assetName_8(),
+	U3CLoadAssetBundleU3Ec__Iterator9_t886092774::get_offset_of_U3CAssetBundleLoadGameObjectKeyU3E__6_9(),
+	U3CLoadAssetBundleU3Ec__Iterator9_t886092774::get_offset_of_key_10(),
+	U3CLoadAssetBundleU3Ec__Iterator9_t886092774::get_offset_of_U24PC_11(),
+	U3CLoadAssetBundleU3Ec__Iterator9_t886092774::get_offset_of_U24current_12(),
+	U3CLoadAssetBundleU3Ec__Iterator9_t886092774::get_offset_of_U3CU24U3Epath_13(),
+	U3CLoadAssetBundleU3Ec__Iterator9_t886092774::get_offset_of_U3CU24U3Eurl_14(),
+	U3CLoadAssetBundleU3Ec__Iterator9_t886092774::get_offset_of_U3CU24U3EassetName_15(),
+	U3CLoadAssetBundleU3Ec__Iterator9_t886092774::get_offset_of_U3CU24U3Ekey_16(),
+	U3CLoadAssetBundleU3Ec__Iterator9_t886092774::get_offset_of_U3CU3Ef__this_17(),
+	U3CDownLoadAssetU3Ec__IteratorA_t3794644502::get_offset_of_U24PC_0(),
+	U3CDownLoadAssetU3Ec__IteratorA_t3794644502::get_offset_of_U24current_1(),
 	Gift_t450896550_StaticFields::get_offset_of_goodsId_0(),
 	Gift_t450896550_StaticFields::get_offset_of_count_1(),
 	Gift_t450896550_StaticFields::get_offset_of_name_2(),
@@ -9338,8 +9332,7 @@ extern const int32_t g_FieldOffsetTable[7804] =
 	MySpriteDetail_t913424694::get_offset_of_energy_6(),
 	MySpriteDetail_t913424694::get_offset_of_levelEnergy_7(),
 	MySpriteDetail_t913424694_StaticFields::get_offset_of_U3CU3Ef__switchU24map6_8(),
-	NativeMessageReceive_t1973460195::get_offset_of_SceneLoadImage_2(),
-	NativeMessageReceive_t1973460195_StaticFields::get_offset_of_U3CU3Ef__switchU24map7_3(),
+	NativeMessageReceive_t1973460195_StaticFields::get_offset_of_U3CU3Ef__switchU24map7_2(),
 	SceneName_t904752595_StaticFields::get_offset_of_Loading_0(),
 	SceneName_t904752595_StaticFields::get_offset_of_GroupPhoto_1(),
 	SceneName_t904752595_StaticFields::get_offset_of_MySpirit_2(),
@@ -9355,36 +9348,36 @@ extern const int32_t g_FieldOffsetTable[7804] =
 	0,
 	U3CU3Ec__IteratorB_t4007811683::get_offset_of_U24PC_0(),
 	U3CU3Ec__IteratorB_t4007811683::get_offset_of_U24current_1(),
-	U3CU3Ec__IteratorC_t1278928328::get_offset_of_U3CU24s_29U3E__0_0(),
+	U3CU3Ec__IteratorC_t1278928328::get_offset_of_U3CU24s_23U3E__0_0(),
 	U3CU3Ec__IteratorC_t1278928328::get_offset_of_U3CCU3E__1_1(),
-	U3CU3Ec__IteratorC_t1278928328::get_offset_of_U3CU24s_30U3E__2_2(),
+	U3CU3Ec__IteratorC_t1278928328::get_offset_of_U3CU24s_24U3E__2_2(),
 	U3CU3Ec__IteratorC_t1278928328::get_offset_of_U3CDU3E__3_3(),
 	U3CU3Ec__IteratorC_t1278928328::get_offset_of_U24PC_4(),
 	U3CU3Ec__IteratorC_t1278928328::get_offset_of_U24current_5(),
 	U3CU3Ec__IteratorC_t1278928328::get_offset_of_U3CU3Ef__this_6(),
 	JSONArray_t3951369664::get_offset_of_m_List_0(),
-	U3CU3Ec__IteratorD_t875643801::get_offset_of_U3CU24s_33U3E__0_0(),
+	U3CU3Ec__IteratorD_t875643801::get_offset_of_U3CU24s_27U3E__0_0(),
 	U3CU3Ec__IteratorD_t875643801::get_offset_of_U3CNU3E__1_1(),
 	U3CU3Ec__IteratorD_t875643801::get_offset_of_U24PC_2(),
 	U3CU3Ec__IteratorD_t875643801::get_offset_of_U24current_3(),
 	U3CU3Ec__IteratorD_t875643801::get_offset_of_U3CU3Ef__this_4(),
-	U3CGetEnumeratorU3Ec__IteratorE_t561422588::get_offset_of_U3CU24s_34U3E__0_0(),
+	U3CGetEnumeratorU3Ec__IteratorE_t561422588::get_offset_of_U3CU24s_28U3E__0_0(),
 	U3CGetEnumeratorU3Ec__IteratorE_t561422588::get_offset_of_U3CNU3E__1_1(),
 	U3CGetEnumeratorU3Ec__IteratorE_t561422588::get_offset_of_U24PC_2(),
 	U3CGetEnumeratorU3Ec__IteratorE_t561422588::get_offset_of_U24current_3(),
 	U3CGetEnumeratorU3Ec__IteratorE_t561422588::get_offset_of_U3CU3Ef__this_4(),
 	JSONClass_t3507943507::get_offset_of_m_Dict_0(),
-	U3CU3Ec__IteratorF_t2038443215::get_offset_of_U3CU24s_37U3E__0_0(),
+	U3CU3Ec__IteratorF_t2038443215::get_offset_of_U3CU24s_31U3E__0_0(),
 	U3CU3Ec__IteratorF_t2038443215::get_offset_of_U3CNU3E__1_1(),
 	U3CU3Ec__IteratorF_t2038443215::get_offset_of_U24PC_2(),
 	U3CU3Ec__IteratorF_t2038443215::get_offset_of_U24current_3(),
 	U3CU3Ec__IteratorF_t2038443215::get_offset_of_U3CU3Ef__this_4(),
-	U3CGetEnumeratorU3Ec__Iterator10_t791194656::get_offset_of_U3CU24s_38U3E__0_0(),
+	U3CGetEnumeratorU3Ec__Iterator10_t791194656::get_offset_of_U3CU24s_32U3E__0_0(),
 	U3CGetEnumeratorU3Ec__Iterator10_t791194656::get_offset_of_U3CNU3E__1_1(),
 	U3CGetEnumeratorU3Ec__Iterator10_t791194656::get_offset_of_U24PC_2(),
 	U3CGetEnumeratorU3Ec__Iterator10_t791194656::get_offset_of_U24current_3(),
 	U3CGetEnumeratorU3Ec__Iterator10_t791194656::get_offset_of_U3CU3Ef__this_4(),
-	U3CRemoveU3Ec__AnonStorey19_t1128803949::get_offset_of_aNode_0(),
+	U3CRemoveU3Ec__AnonStorey18_t1128803950::get_offset_of_aNode_0(),
 	JSONData_t1956706087::get_offset_of_m_Data_0(),
 	JSONLazyCreator_t3650877441::get_offset_of_m_Node_0(),
 	JSONLazyCreator_t3650877441::get_offset_of_m_Key_1(),
@@ -9399,58 +9392,60 @@ extern const int32_t g_FieldOffsetTable[7804] =
 	U3CgetSpriteDecU3Ec__Iterator11_t3069165086::get_offset_of_U24current_5(),
 	U3CgetSpriteDecU3Ec__Iterator11_t3069165086::get_offset_of_U3CU24U3EgetId_6(),
 	U3CgetSpriteDecU3Ec__Iterator11_t3069165086::get_offset_of_U3CU3Ef__this_7(),
-	MobileCamera_t1503681139::get_offset_of_cameraTexture_2(),
-	MobileCamera_t1503681139::get_offset_of_cameraName_3(),
-	MobileCamera_t1503681139::get_offset_of_mUITexture_4(),
-	MobileCamera_t1503681139::get_offset_of_baseRotation_5(),
-	U3COpenCamera1U3Ec__Iterator12_t4199444246::get_offset_of_U3CdevicesU3E__0_0(),
-	U3COpenCamera1U3Ec__Iterator12_t4199444246::get_offset_of_U24PC_1(),
-	U3COpenCamera1U3Ec__Iterator12_t4199444246::get_offset_of_U24current_2(),
-	U3COpenCamera1U3Ec__Iterator12_t4199444246::get_offset_of_U3CU3Ef__this_3(),
-	U3CTakePhotoWaitForEndOfFrameU3Ec__Iterator13_t2376656531::get_offset_of_U3CtU3E__0_0(),
-	U3CTakePhotoWaitForEndOfFrameU3Ec__Iterator13_t2376656531::get_offset_of_U3CbyteTU3E__1_1(),
-	U3CTakePhotoWaitForEndOfFrameU3Ec__Iterator13_t2376656531::get_offset_of_U24PC_2(),
-	U3CTakePhotoWaitForEndOfFrameU3Ec__Iterator13_t2376656531::get_offset_of_U24current_3(),
-	U3CTakePhotoWaitForEndOfFrameU3Ec__Iterator13_t2376656531::get_offset_of_U3CU3Ef__this_4(),
+	Main_t2809994845::get_offset_of_mScenceLoadImage_2(),
+	U3COnExtractResourceU3Ec__Iterator12_t1706261718::get_offset_of_U3CdataPathU3E__0_0(),
+	U3COnExtractResourceU3Ec__Iterator12_t1706261718::get_offset_of_U3CstreamPathU3E__1_1(),
+	U3COnExtractResourceU3Ec__Iterator12_t1706261718::get_offset_of_U3CinfileU3E__2_2(),
+	U3COnExtractResourceU3Ec__Iterator12_t1706261718::get_offset_of_U3CoutfileU3E__3_3(),
+	U3COnExtractResourceU3Ec__Iterator12_t1706261718::get_offset_of_U3CtempfileU3E__4_4(),
+	U3COnExtractResourceU3Ec__Iterator12_t1706261718::get_offset_of_U3CwwwU3E__5_5(),
+	U3COnExtractResourceU3Ec__Iterator12_t1706261718::get_offset_of_U3CfileJsonU3E__6_6(),
+	U3COnExtractResourceU3Ec__Iterator12_t1706261718::get_offset_of_U3CiU3E__7_7(),
+	U3COnExtractResourceU3Ec__Iterator12_t1706261718::get_offset_of_U3CdirU3E__8_8(),
+	U3COnExtractResourceU3Ec__Iterator12_t1706261718::get_offset_of_U3CwwwU3E__9_9(),
+	U3COnExtractResourceU3Ec__Iterator12_t1706261718::get_offset_of_U24PC_10(),
+	U3COnExtractResourceU3Ec__Iterator12_t1706261718::get_offset_of_U24current_11(),
+	U3COnExtractResourceU3Ec__Iterator12_t1706261718::get_offset_of_U3CU3Ef__this_12(),
 	MySpriteItem_t3317553624::get_offset_of_gameManager_2(),
 	MySpriteItem_t3317553624::get_offset_of_mMySpriteDetail_3(),
 	MySpriteItem_t3317553624::get_offset_of_UIControl_4(),
 	MySpriteMain_t1885725518::get_offset_of_totalMySpriteDetail_2(),
-	MySpriteMain_t1885725518::get_offset_of_MaxIEnumerator_3(),
-	MySpriteMain_t1885725518::get_offset_of_currIEnumerator_4(),
-	U3CgetSpriteListU3Ec__Iterator14_t4208346345::get_offset_of_U3CargU3E__0_0(),
-	U3CgetSpriteListU3Ec__Iterator14_t4208346345::get_offset_of_userId_1(),
-	U3CgetSpriteListU3Ec__Iterator14_t4208346345::get_offset_of_pageIndex_2(),
-	U3CgetSpriteListU3Ec__Iterator14_t4208346345::get_offset_of_countPerPage_3(),
-	U3CgetSpriteListU3Ec__Iterator14_t4208346345::get_offset_of_U3CwwwU3E__1_4(),
-	U3CgetSpriteListU3Ec__Iterator14_t4208346345::get_offset_of_U3CjsonU3E__2_5(),
-	U3CgetSpriteListU3Ec__Iterator14_t4208346345::get_offset_of_U3CiU3E__3_6(),
-	U3CgetSpriteListU3Ec__Iterator14_t4208346345::get_offset_of_U24PC_7(),
-	U3CgetSpriteListU3Ec__Iterator14_t4208346345::get_offset_of_U24current_8(),
-	U3CgetSpriteListU3Ec__Iterator14_t4208346345::get_offset_of_U3CU24U3EuserId_9(),
-	U3CgetSpriteListU3Ec__Iterator14_t4208346345::get_offset_of_U3CU24U3EpageIndex_10(),
-	U3CgetSpriteListU3Ec__Iterator14_t4208346345::get_offset_of_U3CU24U3EcountPerPage_11(),
-	U3CgetSpriteListU3Ec__Iterator14_t4208346345::get_offset_of_U3CU3Ef__this_12(),
+	MySpriteMain_t1885725518::get_offset_of_mSceneLoadImage_3(),
+	MySpriteMain_t1885725518::get_offset_of_MaxIEnumerator_4(),
+	MySpriteMain_t1885725518::get_offset_of_currIEnumerator_5(),
+	U3CgetSpriteListU3Ec__Iterator13_t1835693350::get_offset_of_U3CargU3E__0_0(),
+	U3CgetSpriteListU3Ec__Iterator13_t1835693350::get_offset_of_userId_1(),
+	U3CgetSpriteListU3Ec__Iterator13_t1835693350::get_offset_of_pageIndex_2(),
+	U3CgetSpriteListU3Ec__Iterator13_t1835693350::get_offset_of_countPerPage_3(),
+	U3CgetSpriteListU3Ec__Iterator13_t1835693350::get_offset_of_U3CwwwU3E__1_4(),
+	U3CgetSpriteListU3Ec__Iterator13_t1835693350::get_offset_of_U3CjsonU3E__2_5(),
+	U3CgetSpriteListU3Ec__Iterator13_t1835693350::get_offset_of_U3CiU3E__3_6(),
+	U3CgetSpriteListU3Ec__Iterator13_t1835693350::get_offset_of_U24PC_7(),
+	U3CgetSpriteListU3Ec__Iterator13_t1835693350::get_offset_of_U24current_8(),
+	U3CgetSpriteListU3Ec__Iterator13_t1835693350::get_offset_of_U3CU24U3EuserId_9(),
+	U3CgetSpriteListU3Ec__Iterator13_t1835693350::get_offset_of_U3CU24U3EpageIndex_10(),
+	U3CgetSpriteListU3Ec__Iterator13_t1835693350::get_offset_of_U3CU24U3EcountPerPage_11(),
+	U3CgetSpriteListU3Ec__Iterator13_t1835693350::get_offset_of_U3CU3Ef__this_12(),
 	GiftsItem_t1274332604::get_offset_of_mGift_2(),
 	GiftsItem_t1274332604::get_offset_of_gameManager_3(),
 	GoodsItem_t1184035003::get_offset_of_mGoodDetail_2(),
 	GoodsItem_t1184035003::get_offset_of_gameManager_3(),
 	GoodsMain_t2232523981::get_offset_of_totalGoodDetail_2(),
-	U3CgetGoodsListU3Ec__Iterator15_t4048885933::get_offset_of_U3CargU3E__0_0(),
-	U3CgetGoodsListU3Ec__Iterator15_t4048885933::get_offset_of_userId_1(),
-	U3CgetGoodsListU3Ec__Iterator15_t4048885933::get_offset_of_pageIndex_2(),
-	U3CgetGoodsListU3Ec__Iterator15_t4048885933::get_offset_of_countPerPage_3(),
-	U3CgetGoodsListU3Ec__Iterator15_t4048885933::get_offset_of_type_4(),
-	U3CgetGoodsListU3Ec__Iterator15_t4048885933::get_offset_of_U3CwwwU3E__1_5(),
-	U3CgetGoodsListU3Ec__Iterator15_t4048885933::get_offset_of_U3CjsonU3E__2_6(),
-	U3CgetGoodsListU3Ec__Iterator15_t4048885933::get_offset_of_U3CiU3E__3_7(),
-	U3CgetGoodsListU3Ec__Iterator15_t4048885933::get_offset_of_U24PC_8(),
-	U3CgetGoodsListU3Ec__Iterator15_t4048885933::get_offset_of_U24current_9(),
-	U3CgetGoodsListU3Ec__Iterator15_t4048885933::get_offset_of_U3CU24U3EuserId_10(),
-	U3CgetGoodsListU3Ec__Iterator15_t4048885933::get_offset_of_U3CU24U3EpageIndex_11(),
-	U3CgetGoodsListU3Ec__Iterator15_t4048885933::get_offset_of_U3CU24U3EcountPerPage_12(),
-	U3CgetGoodsListU3Ec__Iterator15_t4048885933::get_offset_of_U3CU24U3Etype_13(),
-	U3CgetGoodsListU3Ec__Iterator15_t4048885933::get_offset_of_U3CU3Ef__this_14(),
+	U3CgetGoodsListU3Ec__Iterator14_t4048885932::get_offset_of_U3CargU3E__0_0(),
+	U3CgetGoodsListU3Ec__Iterator14_t4048885932::get_offset_of_userId_1(),
+	U3CgetGoodsListU3Ec__Iterator14_t4048885932::get_offset_of_pageIndex_2(),
+	U3CgetGoodsListU3Ec__Iterator14_t4048885932::get_offset_of_countPerPage_3(),
+	U3CgetGoodsListU3Ec__Iterator14_t4048885932::get_offset_of_type_4(),
+	U3CgetGoodsListU3Ec__Iterator14_t4048885932::get_offset_of_U3CwwwU3E__1_5(),
+	U3CgetGoodsListU3Ec__Iterator14_t4048885932::get_offset_of_U3CjsonU3E__2_6(),
+	U3CgetGoodsListU3Ec__Iterator14_t4048885932::get_offset_of_U3CiU3E__3_7(),
+	U3CgetGoodsListU3Ec__Iterator14_t4048885932::get_offset_of_U24PC_8(),
+	U3CgetGoodsListU3Ec__Iterator14_t4048885932::get_offset_of_U24current_9(),
+	U3CgetGoodsListU3Ec__Iterator14_t4048885932::get_offset_of_U3CU24U3EuserId_10(),
+	U3CgetGoodsListU3Ec__Iterator14_t4048885932::get_offset_of_U3CU24U3EpageIndex_11(),
+	U3CgetGoodsListU3Ec__Iterator14_t4048885932::get_offset_of_U3CU24U3EcountPerPage_12(),
+	U3CgetGoodsListU3Ec__Iterator14_t4048885932::get_offset_of_U3CU24U3Etype_13(),
+	U3CgetGoodsListU3Ec__Iterator14_t4048885932::get_offset_of_U3CU3Ef__this_14(),
 	MySpriteDecMain_t1599878596::get_offset_of_mMySpriteDetail_2(),
 	MySpriteDecMain_t1599878596::get_offset_of_gameManager_3(),
 	MySpriteDecMain_t1599878596::get_offset_of_mUIList_4(),
@@ -9458,30 +9453,30 @@ extern const int32_t g_FieldOffsetTable[7804] =
 	MySpriteDecMain_t1599878596::get_offset_of_totalGift_6(),
 	MySpriteDecMain_t1599878596::get_offset_of_Sprite3D_7(),
 	MySpriteDecMain_t1599878596::get_offset_of_GiftDialog_8(),
-	U3CgetSpriteDecU3Ec__Iterator16_t3069165087::get_offset_of_U3CargU3E__0_0(),
-	U3CgetSpriteDecU3Ec__Iterator16_t3069165087::get_offset_of_getId_1(),
-	U3CgetSpriteDecU3Ec__Iterator16_t3069165087::get_offset_of_U3CwwwU3E__1_2(),
-	U3CgetSpriteDecU3Ec__Iterator16_t3069165087::get_offset_of_U3CjsonU3E__2_3(),
-	U3CgetSpriteDecU3Ec__Iterator16_t3069165087::get_offset_of_U24PC_4(),
-	U3CgetSpriteDecU3Ec__Iterator16_t3069165087::get_offset_of_U24current_5(),
-	U3CgetSpriteDecU3Ec__Iterator16_t3069165087::get_offset_of_U3CU24U3EgetId_6(),
-	U3CgetSpriteDecU3Ec__Iterator16_t3069165087::get_offset_of_U3CU3Ef__this_7(),
-	U3CFeedElfU3Ec__Iterator17_t997388150::get_offset_of_U3CformU3E__0_0(),
-	U3CFeedElfU3Ec__Iterator17_t997388150::get_offset_of_id_1(),
-	U3CFeedElfU3Ec__Iterator17_t997388150::get_offset_of_U3CwwwU3E__1_2(),
-	U3CFeedElfU3Ec__Iterator17_t997388150::get_offset_of_U3CjsonU3E__2_3(),
-	U3CFeedElfU3Ec__Iterator17_t997388150::get_offset_of_U3CdebugU3E__3_4(),
-	U3CFeedElfU3Ec__Iterator17_t997388150::get_offset_of_U24PC_5(),
-	U3CFeedElfU3Ec__Iterator17_t997388150::get_offset_of_U24current_6(),
-	U3CFeedElfU3Ec__Iterator17_t997388150::get_offset_of_U3CU24U3Eid_7(),
-	U3CFeedElfU3Ec__Iterator17_t997388150::get_offset_of_U3CU3Ef__this_8(),
-	U3ChasGiftU3Ec__Iterator18_t1064594072::get_offset_of_U3CformU3E__0_0(),
-	U3ChasGiftU3Ec__Iterator18_t1064594072::get_offset_of_U3CwwwU3E__1_1(),
-	U3ChasGiftU3Ec__Iterator18_t1064594072::get_offset_of_U3CjsonU3E__2_2(),
-	U3ChasGiftU3Ec__Iterator18_t1064594072::get_offset_of_U3CiU3E__3_3(),
-	U3ChasGiftU3Ec__Iterator18_t1064594072::get_offset_of_U3CgU3E__4_4(),
-	U3ChasGiftU3Ec__Iterator18_t1064594072::get_offset_of_U24PC_5(),
-	U3ChasGiftU3Ec__Iterator18_t1064594072::get_offset_of_U24current_6(),
+	U3CgetSpriteDecU3Ec__Iterator15_t3069165090::get_offset_of_U3CargU3E__0_0(),
+	U3CgetSpriteDecU3Ec__Iterator15_t3069165090::get_offset_of_getId_1(),
+	U3CgetSpriteDecU3Ec__Iterator15_t3069165090::get_offset_of_U3CwwwU3E__1_2(),
+	U3CgetSpriteDecU3Ec__Iterator15_t3069165090::get_offset_of_U3CjsonU3E__2_3(),
+	U3CgetSpriteDecU3Ec__Iterator15_t3069165090::get_offset_of_U24PC_4(),
+	U3CgetSpriteDecU3Ec__Iterator15_t3069165090::get_offset_of_U24current_5(),
+	U3CgetSpriteDecU3Ec__Iterator15_t3069165090::get_offset_of_U3CU24U3EgetId_6(),
+	U3CgetSpriteDecU3Ec__Iterator15_t3069165090::get_offset_of_U3CU3Ef__this_7(),
+	U3CFeedElfU3Ec__Iterator16_t2563472091::get_offset_of_U3CformU3E__0_0(),
+	U3CFeedElfU3Ec__Iterator16_t2563472091::get_offset_of_id_1(),
+	U3CFeedElfU3Ec__Iterator16_t2563472091::get_offset_of_U3CwwwU3E__1_2(),
+	U3CFeedElfU3Ec__Iterator16_t2563472091::get_offset_of_U3CjsonU3E__2_3(),
+	U3CFeedElfU3Ec__Iterator16_t2563472091::get_offset_of_U3CdebugU3E__3_4(),
+	U3CFeedElfU3Ec__Iterator16_t2563472091::get_offset_of_U24PC_5(),
+	U3CFeedElfU3Ec__Iterator16_t2563472091::get_offset_of_U24current_6(),
+	U3CFeedElfU3Ec__Iterator16_t2563472091::get_offset_of_U3CU24U3Eid_7(),
+	U3CFeedElfU3Ec__Iterator16_t2563472091::get_offset_of_U3CU3Ef__this_8(),
+	U3ChasGiftU3Ec__Iterator17_t2630678013::get_offset_of_U3CformU3E__0_0(),
+	U3ChasGiftU3Ec__Iterator17_t2630678013::get_offset_of_U3CwwwU3E__1_1(),
+	U3ChasGiftU3Ec__Iterator17_t2630678013::get_offset_of_U3CjsonU3E__2_2(),
+	U3ChasGiftU3Ec__Iterator17_t2630678013::get_offset_of_U3CiU3E__3_3(),
+	U3ChasGiftU3Ec__Iterator17_t2630678013::get_offset_of_U3CgU3E__4_4(),
+	U3ChasGiftU3Ec__Iterator17_t2630678013::get_offset_of_U24PC_5(),
+	U3ChasGiftU3Ec__Iterator17_t2630678013::get_offset_of_U24current_6(),
 	UIList_t3918749454::get_offset_of_SpriteName_2(),
 	UIList_t3918749454::get_offset_of_Sprite3D_3(),
 	UIList_t3918749454::get_offset_of_JingduBar_4(),
@@ -9494,6 +9489,7 @@ extern const int32_t g_FieldOffsetTable[7804] =
 	UIControlCatch_t3983032206::get_offset_of_switchFlagOfName_3(),
 	UIControlCatch_t3983032206::get_offset_of_switchFlagOfScence_4(),
 	UIControlCatch_t3983032206::get_offset_of_mGameManager_5(),
+	UIControlCatch_t3983032206::get_offset_of_mCamera_6(),
 	UIControlGroupPhoto_t3169531466::get_offset_of_mGameManager_2(),
 	UIControlGroupPhoto_t3169531466::get_offset_of_mGroupPhotoMain_3(),
 	UIControlMySpirit_t24001844::get_offset_of_SceneLoadImage_2(),
@@ -9507,7 +9503,7 @@ extern const int32_t g_FieldOffsetTable[7804] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1845] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1839] = 
 {
 	sizeof (U3CModuleU3E_t3783534214), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -10774,7 +10770,6 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1845] =
 	sizeof (AsyncOperation_t471317734), sizeof(AsyncOperation_t471317734_marshaled_pinvoke), 0, 0,
 	sizeof (Application_t3439453659), -1, sizeof(Application_t3439453659_StaticFields), 0,
 	sizeof (LogCallback_t3945898503), sizeof(methodPointerType), 0, 0,
-	sizeof (UserAuthorization_t3879940717)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (Behaviour_t1547659088), -1, 0, 0,
 	sizeof (Camera_t2805735124), -1, sizeof(Camera_t2805735124_StaticFields), 0,
 	sizeof (CameraCallback_t3996121092), sizeof(methodPointerType), 0, 0,
@@ -10847,8 +10842,6 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1845] =
 	sizeof (PCMSetPositionCallback_t2781450296), sizeof(methodPointerType), 0, 0,
 	sizeof (AudioListener_t2109973415), -1, 0, 0,
 	sizeof (AudioSource_t585923902), -1, 0, 0,
-	sizeof (WebCamDevice_t138406174)+ sizeof (Il2CppObject), sizeof(WebCamDevice_t138406174_marshaled_pinvoke), 0, 0,
-	sizeof (WebCamTexture_t4098188425), -1, 0, 0,
 	sizeof (AnimationEventSource_t1918759814)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (AnimationEvent_t637714523), -1, 0, 0,
 	sizeof (AnimationClip_t56321445), -1, 0, 0,
@@ -11293,24 +11286,21 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1845] =
 	sizeof (UIViewport_t1541362616), -1, 0, 0,
 	sizeof (CatchMain_t3787564590), -1, 0, 0,
 	sizeof (U3CgetElfDetailU3Ec__Iterator5_t193147870), -1, 0, 0,
-	sizeof (ScenceCamera_t1317775166), -1, 0, 0,
-	sizeof (U3COpenCameraU3Ec__Iterator6_t2563167366), -1, 0, 0,
+	sizeof (U3CCatchElfU3Ec__Iterator6_t1381196637), -1, 0, 0,
+	sizeof (CatchQuan_t830316542), -1, 0, 0,
 	sizeof (API_t3691620896), -1, sizeof(API_t3691620896_StaticFields), 0,
 	sizeof (AndroidNativeFunction_t2651783020), -1, sizeof(AndroidNativeFunction_t2651783020_StaticFields), 0,
 	sizeof (App_t821575015), -1, sizeof(App_t821575015_StaticFields), 0,
 	sizeof (U3CLoadSceneAsyn1U3Ec__Iterator7_t2713148942), -1, 0, 0,
 	sizeof (U3CBackSceneAsynU3Ec__Iterator8_t2507346869), -1, 0, 0,
-	sizeof (U3CResoucesToSDU3Ec__Iterator9_t4054200587), -1, 0, 0,
 	sizeof (AssetLoad_t3126280200), -1, 0, 0,
 	sizeof (AssetHandleKey_t2677463335), sizeof(methodPointerType), 0, 0,
 	sizeof (AssetHandle_t296746218), sizeof(methodPointerType), 0, 0,
-	sizeof (U3CLoadAssetBundleU3Ec__IteratorA_t886092718), -1, 0, 0,
-	sizeof (DontDestroy_t3901757661), -1, 0, 0,
-	sizeof (FilesManager_t2291984574), -1, 0, 0,
+	sizeof (U3CLoadAssetBundleU3Ec__Iterator9_t886092774), -1, 0, 0,
+	sizeof (U3CDownLoadAssetU3Ec__IteratorA_t3794644502), -1, 0, 0,
 	sizeof (Gift_t450896550), -1, sizeof(Gift_t450896550_StaticFields), 0,
 	sizeof (GoodDetail_t1652464060), -1, 0, 0,
 	sizeof (IOSNativeFunction_t3033620758), -1, 0, 0,
-	sizeof (Md5_t3859634764), -1, 0, 0,
 	sizeof (MultiPlatformFunction_t3311920458), -1, 0, 0,
 	sizeof (MySpriteDetail_t913424694), -1, sizeof(MySpriteDetail_t913424694_StaticFields), 0,
 	sizeof (NativeMessageReceive_t1973460195), -1, sizeof(NativeMessageReceive_t1973460195_StaticFields), 0,
@@ -11325,26 +11315,26 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1845] =
 	sizeof (JSONClass_t3507943507), -1, 0, 0,
 	sizeof (U3CU3Ec__IteratorF_t2038443215), -1, 0, 0,
 	sizeof (U3CGetEnumeratorU3Ec__Iterator10_t791194656), -1, 0, 0,
-	sizeof (U3CRemoveU3Ec__AnonStorey19_t1128803949), -1, 0, 0,
+	sizeof (U3CRemoveU3Ec__AnonStorey18_t1128803950), -1, 0, 0,
 	sizeof (JSONData_t1956706087), -1, 0, 0,
 	sizeof (JSONLazyCreator_t3650877441), -1, 0, 0,
 	sizeof (JSON_t3479527703), -1, 0, 0,
+	sizeof (Util_t4006552276), -1, 0, 0,
 	sizeof (GroupPhotoMain_t323661952), -1, 0, 0,
 	sizeof (U3CgetSpriteDecU3Ec__Iterator11_t3069165086), -1, 0, 0,
-	sizeof (MobileCamera_t1503681139), -1, 0, 0,
-	sizeof (U3COpenCamera1U3Ec__Iterator12_t4199444246), -1, 0, 0,
-	sizeof (U3CTakePhotoWaitForEndOfFrameU3Ec__Iterator13_t2376656531), -1, 0, 0,
+	sizeof (Main_t2809994845), -1, 0, 0,
+	sizeof (U3COnExtractResourceU3Ec__Iterator12_t1706261718), -1, 0, 0,
 	sizeof (MySpriteItem_t3317553624), -1, 0, 0,
 	sizeof (MySpriteMain_t1885725518), -1, 0, 0,
-	sizeof (U3CgetSpriteListU3Ec__Iterator14_t4208346345), -1, 0, 0,
+	sizeof (U3CgetSpriteListU3Ec__Iterator13_t1835693350), -1, 0, 0,
 	sizeof (GiftsItem_t1274332604), -1, 0, 0,
 	sizeof (GoodsItem_t1184035003), -1, 0, 0,
 	sizeof (GoodsMain_t2232523981), -1, 0, 0,
-	sizeof (U3CgetGoodsListU3Ec__Iterator15_t4048885933), -1, 0, 0,
+	sizeof (U3CgetGoodsListU3Ec__Iterator14_t4048885932), -1, 0, 0,
 	sizeof (MySpriteDecMain_t1599878596), -1, 0, 0,
-	sizeof (U3CgetSpriteDecU3Ec__Iterator16_t3069165087), -1, 0, 0,
-	sizeof (U3CFeedElfU3Ec__Iterator17_t997388150), -1, 0, 0,
-	sizeof (U3ChasGiftU3Ec__Iterator18_t1064594072), -1, 0, 0,
+	sizeof (U3CgetSpriteDecU3Ec__Iterator15_t3069165090), -1, 0, 0,
+	sizeof (U3CFeedElfU3Ec__Iterator16_t2563472091), -1, 0, 0,
+	sizeof (U3ChasGiftU3Ec__Iterator17_t2630678013), -1, 0, 0,
 	sizeof (UIList_t3918749454), -1, 0, 0,
 	sizeof (UIControlCatch_t3983032206), -1, 0, 0,
 	sizeof (UIControlGroupPhoto_t3169531466), -1, 0, 0,
