@@ -53,7 +53,7 @@
 @property (nonatomic, weak) UILabel         *timeCountLabel;
 
 @property (nonatomic, weak) MAMapView       *mapView;
-@property (nonatomic, strong) MAAnnotationView *userLocationAnnotationView;
+@property (nonatomic, strong) UserAnnoView *userLocationAnnotationView;
 
 @property (nonatomic, assign) BOOL needReloadUserAnno;
 
@@ -104,7 +104,7 @@
         
         if (self.needReloadUserAnno && self.userLocationAnnotationView) {
             self.needReloadUserAnno = NO;
-            [self mapView:self.mapView viewForAnnotation:self.userLocationAnnotationView.annotation];
+            self.userLocationAnnotationView.imageStr = GetAppController().loginUser.pinAvatar;
         }
     }
 }

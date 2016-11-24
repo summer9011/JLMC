@@ -166,6 +166,10 @@
                 [User userInfoUpdateWithUserId:GetAppController().loginUser.userId type:UserInfoAvatar value:response completeBlock:^(BOOL success, id response, NSString *errStr) {
                     if (success) {
                         [weakSelf hud_hideLoadingWithSuccessMsg:@"上传成功"];
+                        
+                        [[NSNotificationCenter defaultCenter] postNotificationName:Notification_UserAnno object:nil];
+                        [[NSNotificationCenter defaultCenter] postNotificationName:Notification_NearbyUserAnno object:nil];
+                        
                         [weakSelf.navigationController popViewControllerAnimated:YES];
                         
                     } else {
