@@ -352,7 +352,9 @@
     [self.mapView removeAnnotations:removeArr];
     [self.mapView addAnnotations:elfAnnoArr];
     
-    [self.mapView selectAnnotation:self.mapView.userLocation animated:YES];
+    if (![self.mapView.selectedAnnotations containsObject:self.mapView.userLocation]) {
+        [self.mapView selectAnnotation:self.mapView.userLocation animated:YES];
+    }
 }
 
 - (void)reloadNearbySupply {
@@ -378,7 +380,9 @@
     [self.mapView removeAnnotations:removeArr];
     [self.mapView addAnnotations:supplyArr];
     
-    [self.mapView selectAnnotation:self.mapView.userLocation animated:YES];
+    if (![self.mapView.selectedAnnotations containsObject:self.mapView.userLocation]) {
+        [self.mapView selectAnnotation:self.mapView.userLocation animated:YES];
+    }
 }
 
 - (void)reloadNearbyPersonalSupply {
@@ -404,7 +408,9 @@
     [self.mapView removeAnnotations:removeArr];
     [self.mapView addAnnotations:personalSupplyArr];
     
-    [self.mapView selectAnnotation:self.mapView.userLocation animated:YES];
+    if (![self.mapView.selectedAnnotations containsObject:self.mapView.userLocation]) {
+        [self.mapView selectAnnotation:self.mapView.userLocation animated:YES];
+    }
 }
 
 - (void)reloadUserAnno {
@@ -581,17 +587,20 @@
         self.userLocation = userLocation.location;
         
         [self.mapView setCenterCoordinate:userLocation.location.coordinate animated:YES];
-        [self.mapView selectAnnotation:self.mapView.userLocation animated:YES];
+        if (![self.mapView.selectedAnnotations containsObject:self.mapView.userLocation]) {
+            [self.mapView selectAnnotation:self.mapView.userLocation animated:YES];
+        }
     }
 }
 
 - (void)mapView:(MAMapView *)mapView didSelectAnnotationView:(MAAnnotationView *)view {
-    [mapView deselectAnnotation:view.annotation animated:YES];
-    
-    NSLog(@"选中 annotation %@", view.annotation);
     
     if ([view.annotation isKindOfClass:[ElfAnno class]]) {
+        [mapView deselectAnnotation:view.annotation animated:YES];
+        
         ElfAnno *elfAnno = (ElfAnno *)view.annotation;
+        
+        NSLog(@"选中精灵 %@", elfAnno.elfDic);
         
         if ([elfAnno.elfDic[@"canCatch"] boolValue]) {
             self.selectedElfId = [elfAnno.elfDic[@"poiElfId"] integerValue];
@@ -607,7 +616,11 @@
         
         
     } else if ([view.annotation isKindOfClass:[SupplyAnno class]]) {
+        [mapView deselectAnnotation:view.annotation animated:YES];
+        
         SupplyAnno *supplyAnno = (SupplyAnno *)view.annotation;
+        
+        NSLog(@"选中补给站 %@", supplyAnno.supplyDic);
         
         if ([supplyAnno.supplyDic[@"canReceive"] boolValue]) {
             SupplyDetailVC *supplyVC = [[SupplyDetailVC alloc] initWithNibName:@"SupplyDetailVC" bundle:nil];

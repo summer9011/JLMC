@@ -144,7 +144,9 @@
     [self.mapView removeAnnotations:removeArr];
     [self.mapView addAnnotations:userAnnoArr];
     
-    [self.mapView selectAnnotation:self.mapView.userLocation animated:YES];
+    if (![self.mapView.selectedAnnotations containsObject:self.mapView.userLocation]) {
+        [self.mapView selectAnnotation:self.mapView.userLocation animated:YES];
+    }
 }
 
 - (void)reloadUserAnno {
@@ -203,19 +205,21 @@
 - (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation {
     if (updatingLocation && self.userLocationAnnotationView != nil) {
         [self.mapView setCenterCoordinate:userLocation.location.coordinate animated:YES];
-        [self.mapView selectAnnotation:self.mapView.userLocation animated:YES];
+        if (![self.mapView.selectedAnnotations containsObject:self.mapView.userLocation]) {
+            [self.mapView selectAnnotation:self.mapView.userLocation animated:YES];
+        }
     }
 }
 
 - (void)mapView:(MAMapView *)mapView didSelectAnnotationView:(MAAnnotationView *)view {
-    [mapView deselectAnnotation:view.annotation animated:YES];
     
-    NSLog(@"选中 annotation %@", view.annotation);
     
     if ([view.annotation isKindOfClass:[UserAnno class]]) {
+        [mapView deselectAnnotation:view.annotation animated:YES];
+        
         UserAnno *userAnno = (UserAnno *)view.annotation;
         
-        NSLog(@"进入User %@", userAnno.userDic);
+        NSLog(@"选中用户 %@", userAnno.userDic);
     }
 }
 

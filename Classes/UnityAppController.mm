@@ -463,14 +463,15 @@ extern "C" void UnityRequestQuit()
     self.isStartLoad = YES;
     self.nearbyCount = 0;
     
+    CLLocationCoordinate2D coor = location.coordinate;
+    if (![WGS84TOGCJ02 isLocationOutOfChina:location.coordinate]) {
+        coor = [WGS84TOGCJ02 transformFromWGSToGCJ:location.coordinate];
+    }
+    
     __weak UnityAppController *weakSelf = self;
     
-//    CLLocationCoordinate2D coor = [WGS84TOGCJ02 transformFromWGSToGCJ:location.coordinate];
-//    NSString *longitude = [NSString stringWithFormat:@"%f", coor.longitude];
-//    NSString *latitude = [NSString stringWithFormat:@"%f", coor.latitude];
-    
-    NSString *longitude = [NSString stringWithFormat:@"%f", location.coordinate.longitude];
-    NSString *latitude = [NSString stringWithFormat:@"%f", location.coordinate.latitude];
+    NSString *longitude = [NSString stringWithFormat:@"%f", coor.longitude];
+    NSString *latitude = [NSString stringWithFormat:@"%f", coor.latitude];
     
     [Spirit getNearbyElfListWithLongitude:longitude latitude:latitude completeBlock:^(BOOL success, id response, NSString *errStr) {
         if (success) {
@@ -519,8 +520,7 @@ extern "C" void UnityRequestQuit()
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
     [self loadData:locations.firstObject];
     
-    CLLocation *location = locations.firstObject;
-    NSLog(@"didUpdateLocations: longitude %f, latitude %f", location.coordinate.longitude, location.coordinate.latitude);
+    NSLog(@"didUpdateLocations: longitude %f, latitude %f", locations.firstObject.coordinate.longitude, locations.firstObject.coordinate.latitude);
 }
 
 #pragma mark - ShareViewDelegate
