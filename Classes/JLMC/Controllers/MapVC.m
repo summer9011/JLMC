@@ -352,6 +352,7 @@
     [self.mapView removeAnnotations:removeArr];
     [self.mapView addAnnotations:elfAnnoArr];
     
+    [self.mapView selectAnnotation:self.mapView.userLocation animated:YES];
 }
 
 - (void)reloadNearbySupply {
@@ -377,6 +378,7 @@
     [self.mapView removeAnnotations:removeArr];
     [self.mapView addAnnotations:supplyArr];
     
+    [self.mapView selectAnnotation:self.mapView.userLocation animated:YES];
 }
 
 - (void)reloadNearbyPersonalSupply {
@@ -402,6 +404,7 @@
     [self.mapView removeAnnotations:removeArr];
     [self.mapView addAnnotations:personalSupplyArr];
     
+    [self.mapView selectAnnotation:self.mapView.userLocation animated:YES];
 }
 
 - (void)reloadUserAnno {
@@ -578,6 +581,7 @@
         self.userLocation = userLocation.location;
         
         [self.mapView setCenterCoordinate:userLocation.location.coordinate animated:YES];
+        [self.mapView selectAnnotation:self.mapView.userLocation animated:YES];
     }
 }
 

@@ -143,6 +143,8 @@
     
     [self.mapView removeAnnotations:removeArr];
     [self.mapView addAnnotations:userAnnoArr];
+    
+    [self.mapView selectAnnotation:self.mapView.userLocation animated:YES];
 }
 
 - (void)reloadUserAnno {
@@ -201,6 +203,7 @@
 - (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation {
     if (updatingLocation && self.userLocationAnnotationView != nil) {
         [self.mapView setCenterCoordinate:userLocation.location.coordinate animated:YES];
+        [self.mapView selectAnnotation:self.mapView.userLocation animated:YES];
     }
 }
 

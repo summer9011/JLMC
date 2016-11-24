@@ -89,6 +89,11 @@ static NSString *CellIdentifier = @"CartoonAvatarCell";
         if (success) {
             [weakSelf hud_hideQuick];
             
+            if (!weakSelf.fromRegister) {
+                [[NSNotificationCenter defaultCenter] postNotificationName:Notification_UserAnno object:nil];
+                [[NSNotificationCenter defaultCenter] postNotificationName:Notification_NearbyUserAnno object:nil];
+            }
+            
             [weakSelf doBackAction];
             
         } else {
