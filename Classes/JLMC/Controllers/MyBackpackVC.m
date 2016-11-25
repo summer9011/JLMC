@@ -29,10 +29,11 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     
-    if (self.navigationController.viewControllers.count > 1) {
-        UIViewController *tmpVC = self.navigationController.viewControllers[self.navigationController.viewControllers.count - 2];
-        if ([tmpVC isEqual:GetAppController().rootViewController]) {
-            [tmpVC.navigationController setNavigationBarHidden:YES animated:YES];
+    if (self.navigationController.viewControllers.count > 0) {
+        UIViewController *tmp = self.navigationController.viewControllers.lastObject;
+        
+        if ([tmp isEqual:GetAppController().rootViewController]) {
+            [tmp.navigationController setNavigationBarHidden:YES animated:YES];
         }
     }
 }

@@ -8957,6 +8957,7 @@ extern "C" void Rigidbody_INTERNAL_get_rotation_m109669412 ();
 extern "C" void Rigidbody_MoveRotation_m3412525692 ();
 extern "C" void Rigidbody_INTERNAL_CALL_MoveRotation_m2205051919 ();
 extern "C" void RPC__ctor_m1432086380 ();
+extern "C" void SceneManager_LoadScene_m1619949821 ();
 extern "C" void SceneManager_LoadScene_m1386820036 ();
 extern "C" void SceneManager_LoadSceneAsync_m4130852156 ();
 extern "C" void SceneManager_LoadSceneAsync_m2648120039 ();
@@ -10200,6 +10201,7 @@ extern "C" void App__cctor_m3548506933 ();
 extern "C" void App_getInstance_m830484687 ();
 extern "C" void App_print_m929367453 ();
 extern "C" void App_LoadSceneAsyn1_m3759058960 ();
+extern "C" void App_LoadSceneAsyn2_m4251841257 ();
 extern "C" void App_BackSceneAsyn_m1177134798 ();
 extern "C" void U3CBackSceneAsynU3Ec__Iterator8__ctor_m2011170298 ();
 extern "C" void U3CBackSceneAsynU3Ec__Iterator8_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2413107860 ();
@@ -12576,7 +12578,7 @@ extern "C" void WindowAutoYaw_Update_m166965108 ();
 extern "C" void WindowDragTilt__ctor_m2212893564 ();
 extern "C" void WindowDragTilt_OnEnable_m2676420184 ();
 extern "C" void WindowDragTilt_Update_m38197995 ();
-extern const methodPointerType g_MethodPointers[12565] = 
+extern const methodPointerType g_MethodPointers[12567] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -21524,6 +21526,7 @@ extern const methodPointerType g_MethodPointers[12565] =
 	Rigidbody_MoveRotation_m3412525692,
 	Rigidbody_INTERNAL_CALL_MoveRotation_m2205051919,
 	RPC__ctor_m1432086380,
+	SceneManager_LoadScene_m1619949821,
 	SceneManager_LoadScene_m1386820036,
 	SceneManager_LoadSceneAsync_m4130852156,
 	SceneManager_LoadSceneAsync_m2648120039,
@@ -22767,6 +22770,7 @@ extern const methodPointerType g_MethodPointers[12565] =
 	App_getInstance_m830484687,
 	App_print_m929367453,
 	App_LoadSceneAsyn1_m3759058960,
+	App_LoadSceneAsyn2_m4251841257,
 	App_BackSceneAsyn_m1177134798,
 	U3CBackSceneAsynU3Ec__Iterator8__ctor_m2011170298,
 	U3CBackSceneAsynU3Ec__Iterator8_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2413107860,

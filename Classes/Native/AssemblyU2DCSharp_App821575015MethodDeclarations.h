@@ -35,5 +35,7 @@ extern "C"  App_t821575015 * App_getInstance_m830484687 (Il2CppObject * __this /
 extern "C"  void App_print_m929367453 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___oj, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator App::LoadSceneAsyn1(System.String,System.String)
 extern "C"  Il2CppObject * App_LoadSceneAsyn1_m3759058960 (App_t821575015 * __this, String_t* ___context, String_t* ___sceneName, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void App::LoadSceneAsyn2(System.String,System.String)
+extern "C"  void App_LoadSceneAsyn2_m4251841257 (App_t821575015 * __this, String_t* ___context, String_t* ___sceneName, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator App::BackSceneAsyn(System.String)
 extern "C"  Il2CppObject * App_BackSceneAsyn_m1177134798 (App_t821575015 * __this, String_t* ___context, const MethodInfo* method) IL2CPP_METHOD_ATTR;

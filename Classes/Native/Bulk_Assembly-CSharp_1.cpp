@@ -1835,7 +1835,7 @@ extern "C"  void NativeMessageReceive_MessagesReceive_m3776591799 (NativeMessage
 		String_t* L_12 = V_2;
 		if (!L_12)
 		{
-			goto IL_010e;
+			goto IL_0100;
 		}
 	}
 	{
@@ -1867,7 +1867,7 @@ IL_0071:
 		bool L_20 = VirtFuncInvoker2< bool, String_t*, int32_t* >::Invoke(31 /* System.Boolean System.Collections.Generic.Dictionary`2<System.String,System.Int32>::TryGetValue(!0,!1&) */, L_18, L_19, (&V_4));
 		if (!L_20)
 		{
-			goto IL_010e;
+			goto IL_0100;
 		}
 	}
 	{
@@ -1881,11 +1881,11 @@ IL_0071:
 		int32_t L_22 = V_4;
 		if ((((int32_t)L_22) == ((int32_t)1)))
 		{
-			goto IL_00dd;
+			goto IL_00d6;
 		}
 	}
 	{
-		goto IL_010e;
+		goto IL_0100;
 	}
 
 IL_0097:
@@ -1901,50 +1901,48 @@ IL_0097:
 		String_t* L_27 = V_0;
 		String_t* L_28 = ((SceneName_t904752595_StaticFields*)SceneName_t904752595_il2cpp_TypeInfo_var->static_fields)->get_MySpirit_2();
 		NullCheck(L_26);
-		Il2CppObject * L_29 = App_LoadSceneAsyn1_m3759058960(L_26, L_27, L_28, /*hidden argument*/NULL);
-		MonoBehaviour_StartCoroutine_m2470621050(__this, L_29, /*hidden argument*/NULL);
-		String_t* L_30 = V_0;
-		String_t* L_31 = ((SceneName_t904752595_StaticFields*)SceneName_t904752595_il2cpp_TypeInfo_var->static_fields)->get_MySpirit_2();
-		String_t* L_32 = String_Concat_m612901809(NULL /*static, unused*/, L_30, _stringLiteral1496915075, L_31, /*hidden argument*/NULL);
-		App_print_m929367453(NULL /*static, unused*/, L_32, /*hidden argument*/NULL);
-		goto IL_0123;
+		App_LoadSceneAsyn2_m4251841257(L_26, L_27, L_28, /*hidden argument*/NULL);
+		String_t* L_29 = V_0;
+		String_t* L_30 = ((SceneName_t904752595_StaticFields*)SceneName_t904752595_il2cpp_TypeInfo_var->static_fields)->get_MySpirit_2();
+		String_t* L_31 = String_Concat_m612901809(NULL /*static, unused*/, L_29, _stringLiteral1496915075, L_30, /*hidden argument*/NULL);
+		App_print_m929367453(NULL /*static, unused*/, L_31, /*hidden argument*/NULL);
+		goto IL_0115;
 	}
 
-IL_00dd:
+IL_00d6:
 	{
-		String_t* L_33 = V_0;
+		String_t* L_32 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(SceneName_t904752595_il2cpp_TypeInfo_var);
-		String_t* L_34 = ((SceneName_t904752595_StaticFields*)SceneName_t904752595_il2cpp_TypeInfo_var->static_fields)->get_Catch_4();
+		String_t* L_33 = ((SceneName_t904752595_StaticFields*)SceneName_t904752595_il2cpp_TypeInfo_var->static_fields)->get_Catch_4();
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_35 = String_Concat_m612901809(NULL /*static, unused*/, L_33, _stringLiteral1496915075, L_34, /*hidden argument*/NULL);
+		String_t* L_34 = String_Concat_m612901809(NULL /*static, unused*/, L_32, _stringLiteral1496915075, L_33, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
-		App_print_m929367453(NULL /*static, unused*/, L_35, /*hidden argument*/NULL);
-		App_t821575015 * L_36 = App_getInstance_m830484687(NULL /*static, unused*/, /*hidden argument*/NULL);
-		String_t* L_37 = V_0;
-		String_t* L_38 = ((SceneName_t904752595_StaticFields*)SceneName_t904752595_il2cpp_TypeInfo_var->static_fields)->get_Catch_4();
-		NullCheck(L_36);
-		Il2CppObject * L_39 = App_LoadSceneAsyn1_m3759058960(L_36, L_37, L_38, /*hidden argument*/NULL);
-		MonoBehaviour_StartCoroutine_m2470621050(__this, L_39, /*hidden argument*/NULL);
-		goto IL_0123;
+		App_print_m929367453(NULL /*static, unused*/, L_34, /*hidden argument*/NULL);
+		App_t821575015 * L_35 = App_getInstance_m830484687(NULL /*static, unused*/, /*hidden argument*/NULL);
+		String_t* L_36 = V_0;
+		String_t* L_37 = ((SceneName_t904752595_StaticFields*)SceneName_t904752595_il2cpp_TypeInfo_var->static_fields)->get_Catch_4();
+		NullCheck(L_35);
+		App_LoadSceneAsyn2_m4251841257(L_35, L_36, L_37, /*hidden argument*/NULL);
+		goto IL_0115;
 	}
 
-IL_010e:
+IL_0100:
 	{
-		String_t* L_40 = ___arg;
+		String_t* L_38 = ___arg;
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_41 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral4032010767, L_40, /*hidden argument*/NULL);
+		String_t* L_39 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral4032010767, L_38, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
-		App_print_m929367453(NULL /*static, unused*/, L_41, /*hidden argument*/NULL);
-		goto IL_0123;
+		App_print_m929367453(NULL /*static, unused*/, L_39, /*hidden argument*/NULL);
+		goto IL_0115;
 	}
 
-IL_0123:
+IL_0115:
 	{
 		return;
 	}
 }
 // System.Void NativeMessageReceive::Test()
-extern Il2CppCodeGenString* _stringLiteral2930341700;
+extern Il2CppCodeGenString* _stringLiteral4086329310;
 extern const uint32_t NativeMessageReceive_Test_m3031498452_MetadataUsageId;
 extern "C"  void NativeMessageReceive_Test_m3031498452 (NativeMessageReceive_t1973460195 * __this, const MethodInfo* method)
 {
@@ -1955,7 +1953,7 @@ extern "C"  void NativeMessageReceive_Test_m3031498452 (NativeMessageReceive_t19
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		NativeMessageReceive_MessagesReceive_m3776591799(__this, _stringLiteral2930341700, /*hidden argument*/NULL);
+		NativeMessageReceive_MessagesReceive_m3776591799(__this, _stringLiteral4086329310, /*hidden argument*/NULL);
 		return;
 	}
 }

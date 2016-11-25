@@ -385,11 +385,11 @@ struct MySpriteDetail_t913424694;
 #include "mscorlib_System_Collections_Stack3925292378.h"
 #include "AssemblyU2DCSharp_App_U3CLoadSceneAsyn1U3Ec__Itera2713148942MethodDeclarations.h"
 #include "AssemblyU2DCSharp_App_U3CLoadSceneAsyn1U3Ec__Itera2713148942.h"
+#include "UnityEngine_UnityEngine_SceneManagement_SceneManage834387985MethodDeclarations.h"
 #include "AssemblyU2DCSharp_App_U3CBackSceneAsynU3Ec__Iterat2507346869MethodDeclarations.h"
 #include "AssemblyU2DCSharp_App_U3CBackSceneAsynU3Ec__Iterat2507346869.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g4260152181MethodDeclarations.h"
 #include "AssemblyU2DCSharp_MultiPlatformFunction3311920458MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_SceneManagement_SceneManage834387985MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_AsyncOperation471317734MethodDeclarations.h"
 #include "mscorlib_System_UInt323922122178.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g4260152181.h"
@@ -3329,6 +3329,7 @@ extern "C"  void App__cctor_m3548506933 (Il2CppObject * __this /* static, unused
 		s_Il2CppMethodIntialized = true;
 	}
 	{
+		((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->set_isDeBug_0((bool)1);
 		((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->set_ResourceID_1(_stringLiteral372029325);
 		((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->set_MoxingPath_5(_stringLiteral2422737152);
 		((App_t821575015_StaticFields*)App_t821575015_il2cpp_TypeInfo_var->static_fields)->set_currSpriteGetid_6(((int32_t)11));
@@ -3436,6 +3437,19 @@ extern "C"  Il2CppObject * App_LoadSceneAsyn1_m3759058960 (App_t821575015 * __th
 		L_9->set_U3CU3Ef__this_7(__this);
 		U3CLoadSceneAsyn1U3Ec__Iterator7_t2713148942 * L_10 = V_0;
 		return L_10;
+	}
+}
+// System.Void App::LoadSceneAsyn2(System.String,System.String)
+extern "C"  void App_LoadSceneAsyn2_m4251841257 (App_t821575015 * __this, String_t* ___context, String_t* ___sceneName, const MethodInfo* method)
+{
+	{
+		Stack_t3925292378 * L_0 = __this->get_sceneNameStack_3();
+		String_t* L_1 = ___context;
+		NullCheck(L_0);
+		VirtActionInvoker1< Il2CppObject * >::Invoke(17 /* System.Void System.Collections.Stack::Push(System.Object) */, L_0, L_1);
+		String_t* L_2 = ___sceneName;
+		SceneManager_LoadScene_m1619949821(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		return;
 	}
 }
 // System.Collections.IEnumerator App::BackSceneAsyn(System.String)
@@ -3762,11 +3776,11 @@ extern "C"  bool U3CLoadSceneAsyn1U3Ec__Iterator7_MoveNext_m3987917807 (U3CLoadS
 		}
 		if (L_1 == 1)
 		{
-			goto IL_0094;
+			goto IL_009f;
 		}
 	}
 	{
-		goto IL_00a5;
+		goto IL_00b0;
 	}
 
 IL_0021:
@@ -3781,36 +3795,38 @@ IL_0021:
 		VirtActionInvoker1< Il2CppObject * >::Invoke(17 /* System.Void System.Collections.Stack::Push(System.Object) */, L_3, L_4);
 		App_print_m929367453(NULL /*static, unused*/, _stringLiteral71993654, /*hidden argument*/NULL);
 		String_t* L_5 = __this->get_sceneName_1();
-		AsyncOperation_t471317734 * L_6 = SceneManager_LoadSceneAsync_m4130852156(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
-		__this->set_U3CaoU3E__0_2(L_6);
+		SceneManager_LoadScene_m1619949821(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		String_t* L_6 = __this->get_sceneName_1();
+		AsyncOperation_t471317734 * L_7 = SceneManager_LoadSceneAsync_m4130852156(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
+		__this->set_U3CaoU3E__0_2(L_7);
 		App_print_m929367453(NULL /*static, unused*/, _stringLiteral1502599431, /*hidden argument*/NULL);
-		AsyncOperation_t471317734 * L_7 = __this->get_U3CaoU3E__0_2();
-		NullCheck(L_7);
-		AsyncOperation_set_allowSceneActivation_m3988498951(L_7, (bool)1, /*hidden argument*/NULL);
-		App_print_m929367453(NULL /*static, unused*/, _stringLiteral1696829803, /*hidden argument*/NULL);
 		AsyncOperation_t471317734 * L_8 = __this->get_U3CaoU3E__0_2();
-		__this->set_U24current_4(L_8);
+		NullCheck(L_8);
+		AsyncOperation_set_allowSceneActivation_m3988498951(L_8, (bool)1, /*hidden argument*/NULL);
+		App_print_m929367453(NULL /*static, unused*/, _stringLiteral1696829803, /*hidden argument*/NULL);
+		AsyncOperation_t471317734 * L_9 = __this->get_U3CaoU3E__0_2();
+		__this->set_U24current_4(L_9);
 		__this->set_U24PC_3(1);
-		goto IL_00a7;
+		goto IL_00b2;
 	}
 
-IL_0094:
+IL_009f:
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(App_t821575015_il2cpp_TypeInfo_var);
 		App_print_m929367453(NULL /*static, unused*/, _stringLiteral1884430554, /*hidden argument*/NULL);
 		__this->set_U24PC_3((-1));
 	}
 
-IL_00a5:
+IL_00b0:
 	{
 		return (bool)0;
 	}
 
-IL_00a7:
+IL_00b2:
 	{
 		return (bool)1;
 	}
-	// Dead block : IL_00a9: ldloc.1
+	// Dead block : IL_00b4: ldloc.1
 }
 // System.Void App/<LoadSceneAsyn1>c__Iterator7::Dispose()
 extern "C"  void U3CLoadSceneAsyn1U3Ec__Iterator7_Dispose_m2220886448 (U3CLoadSceneAsyn1U3Ec__Iterator7_t2713148942 * __this, const MethodInfo* method)
