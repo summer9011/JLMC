@@ -319,8 +319,6 @@
 		BE014FA1804C3580565B12F1 /* Bulk_mscorlib_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 299E41A7A537151914B7091E /* Bulk_mscorlib_4.cpp */; };
 		C2A344F691828A6CF5B3E5DC /* Bulk_mscorlib_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CD9405E8564D2F0137A6856 /* Bulk_mscorlib_7.cpp */; };
 		C670422CA7D33268947C4C66 /* Il2CppGenericInstDefinitions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 266F4AEA87F419EAF3C854B8 /* Il2CppGenericInstDefinitions.cpp */; };
-		CA9C4A5080DD6F07A9855DAA /* LaunchScreen-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 603A4374A13F1C25C89A014B /* LaunchScreen-iPad.xib */; };
-		CB2C47BEB355E5E4F437CBD2 /* LaunchScreen-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 71E947D5AC8932897211D9CB /* LaunchScreen-iPad.png */; };
 		D13745D8BF8A3D2219715004 /* UnityICallRegistration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12DF47F4874A550F97DC1A6D /* UnityICallRegistration.cpp */; };
 		D61247B6BD1C9B1B77D66981 /* LaunchScreen-iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53B7487DA91A696812D02FAD /* LaunchScreen-iPhone.xib */; };
 		D82DCFC30E8000A5005D6AD8 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = D82DCFBB0E8000A5005D6AD8 /* main.mm */; };
@@ -402,7 +400,6 @@
 		58E448CBB4F8E4C7A1A29380 /* Bulk_mscorlib_5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_5.cpp; path = Classes/Native/Bulk_mscorlib_5.cpp; sourceTree = SOURCE_ROOT; };
 		598F48CFAB8A878937D26667 /* Bulk_mscorlib_6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_mscorlib_6.cpp; path = Classes/Native/Bulk_mscorlib_6.cpp; sourceTree = SOURCE_ROOT; };
 		5DB2491EBFECAD6FA6C14E0B /* Bulk_System_0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_System_0.cpp; path = Classes/Native/Bulk_System_0.cpp; sourceTree = SOURCE_ROOT; };
-		603A4374A13F1C25C89A014B /* LaunchScreen-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "LaunchScreen-iPad.xib"; sourceTree = SOURCE_ROOT; };
 		66FF44409BF2D3056619C8F6 /* GenericMethods0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GenericMethods0.cpp; path = Classes/Native/GenericMethods0.cpp; sourceTree = SOURCE_ROOT; };
 		6E09129B1DCE200300C66E9E /* Bulk_Assembly-CSharp_0.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Bulk_Assembly-CSharp_0.cpp"; sourceTree = "<group>"; };
 		6E09129C1DCE200300C66E9E /* Bulk_Assembly-CSharp_1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Bulk_Assembly-CSharp_1.cpp"; sourceTree = "<group>"; };
@@ -731,7 +728,6 @@
 		6EFDE19B1DE57BE300371336 /* MainBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainBtnView.m; sourceTree = "<group>"; };
 		6EFDE21D1DE6E45C00371336 /* WGS84TOGCJ02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGS84TOGCJ02.h; sourceTree = "<group>"; };
 		6EFDE21E1DE6E45C00371336 /* WGS84TOGCJ02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGS84TOGCJ02.m; sourceTree = "<group>"; };
-		71E947D5AC8932897211D9CB /* LaunchScreen-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreen-iPad.png"; sourceTree = SOURCE_ROOT; };
 		775F4F4698FD165A4C24956A /* Bulk_Generics_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_Generics_1.cpp; path = Classes/Native/Bulk_Generics_1.cpp; sourceTree = SOURCE_ROOT; };
 		7F36C10E13C5C673007FBDD9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		7F36C10F13C5C673007FBDD9 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -954,8 +950,6 @@
 				53B7487DA91A696812D02FAD /* LaunchScreen-iPhone.xib */,
 				F6584BDAAB30473C712FC1A8 /* LaunchScreen-iPhonePortrait.png */,
 				8764487E838D4C704717A01A /* LaunchScreen-iPhoneLandscape.png */,
-				603A4374A13F1C25C89A014B /* LaunchScreen-iPad.xib */,
-				71E947D5AC8932897211D9CB /* LaunchScreen-iPad.png */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -1009,26 +1003,19 @@
 		2CAD4CF09E607DC7704A24F8 /* Native */ = {
 			isa = PBXGroup;
 			children = (
-				6E484ECD1DDEF2FF00174A02 /* Bulk_Assembly-CSharp_3.cpp */,
-				6E484ECE1DDEF2FF00174A02 /* Bulk_EasyAR.Unity_0.cpp */,
-				6E484ECF1DDEF2FF00174A02 /* Il2CppPInvokerWrapperTable.cpp */,
 				6E09129B1DCE200300C66E9E /* Bulk_Assembly-CSharp_0.cpp */,
 				6E09129C1DCE200300C66E9E /* Bulk_Assembly-CSharp_1.cpp */,
 				6E09129D1DCE200300C66E9E /* Bulk_Assembly-CSharp_2.cpp */,
-				6E09129E1DCE200300C66E9E /* Bulk_Generics_4.cpp */,
-				6E09129F1DCE200300C66E9E /* Bulk_Generics_5.cpp */,
-				6E0912A01DCE200300C66E9E /* Bulk_UnityEngine_2.cpp */,
+				6E484ECD1DDEF2FF00174A02 /* Bulk_Assembly-CSharp_3.cpp */,
+				6E484ECE1DDEF2FF00174A02 /* Bulk_EasyAR.Unity_0.cpp */,
 				ED9D4A029F1DC82E49F45E7D /* Bulk_Generics_0.cpp */,
 				775F4F4698FD165A4C24956A /* Bulk_Generics_1.cpp */,
 				D7E14E63BB26492C888CC3AF /* Bulk_Generics_2.cpp */,
 				007D4658839B35EA491ED880 /* Bulk_Generics_3.cpp */,
+				6E09129E1DCE200300C66E9E /* Bulk_Generics_4.cpp */,
+				6E09129F1DCE200300C66E9E /* Bulk_Generics_5.cpp */,
 				C18445B09E30D8D5B205AFC1 /* Bulk_Mono.Security_0.cpp */,
 				F2C649BC8C98858DCE9633EA /* Bulk_Mono.Security_1.cpp */,
-				0A2B4CDCB4B46F3407AA3DC9 /* Bulk_System.Core_0.cpp */,
-				5DB2491EBFECAD6FA6C14E0B /* Bulk_System_0.cpp */,
-				D60F47959E54304F88C78276 /* Bulk_System_1.cpp */,
-				E5CC4CEA81FC063E61911FD0 /* Bulk_UnityEngine_0.cpp */,
-				94C546DEBE3AFC4F031C8F43 /* Bulk_UnityEngine_1.cpp */,
 				22664DA3A36BAAA85E2F363A /* Bulk_mscorlib_0.cpp */,
 				53504D27B70D72B9257382E0 /* Bulk_mscorlib_1.cpp */,
 				13F54E0B8BB05F539E5FE0A8 /* Bulk_mscorlib_2.cpp */,
@@ -1037,6 +1024,12 @@
 				58E448CBB4F8E4C7A1A29380 /* Bulk_mscorlib_5.cpp */,
 				598F48CFAB8A878937D26667 /* Bulk_mscorlib_6.cpp */,
 				0CD9405E8564D2F0137A6856 /* Bulk_mscorlib_7.cpp */,
+				0A2B4CDCB4B46F3407AA3DC9 /* Bulk_System.Core_0.cpp */,
+				5DB2491EBFECAD6FA6C14E0B /* Bulk_System_0.cpp */,
+				D60F47959E54304F88C78276 /* Bulk_System_1.cpp */,
+				E5CC4CEA81FC063E61911FD0 /* Bulk_UnityEngine_0.cpp */,
+				94C546DEBE3AFC4F031C8F43 /* Bulk_UnityEngine_1.cpp */,
+				6E0912A01DCE200300C66E9E /* Bulk_UnityEngine_2.cpp */,
 				66FF44409BF2D3056619C8F6 /* GenericMethods0.cpp */,
 				02684ED69FAA8021068362A8 /* Il2CppAttributes.cpp */,
 				150041D8B1AAEC3502F06B15 /* Il2CppCodeRegistration.cpp */,
@@ -1052,6 +1045,7 @@
 				2F53461380DC7C9EB7059BBF /* Il2CppMetadataRegistration.cpp */,
 				D10C4AC8A8EA8C8B4BFAC1AD /* Il2CppMetadataUsage.cpp */,
 				07A3449C93D75A275DEA3533 /* Il2CppMethodPointerTable.cpp */,
+				6E484ECF1DDEF2FF00174A02 /* Il2CppPInvokerWrapperTable.cpp */,
 				8E5C444AA6F2AED605628F8D /* Il2CppTypeDefinitions.cpp */,
 				BEC14CCB9F9CFBCFC78301C3 /* UnityClassRegistration.cpp */,
 				12DF47F4874A550F97DC1A6D /* UnityICallRegistration.cpp */,
@@ -1923,13 +1917,13 @@
 		D8A1C7220E80637F000160D3 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				6E484ED31DDEF33800174A02 /* Plugins */,
 				AAC3E38B1A68945900F6174A /* RegisterFeatures.cpp */,
 				AAC3E38C1A68945900F6174A /* RegisterFeatures.h */,
 				D8A1C7240E80637F000160D3 /* RegisterMonoModules.cpp */,
 				D8A1C7250E80637F000160D3 /* RegisterMonoModules.h */,
 				03F528621B447098000F4FB8 /* Il2CppOptions.cpp */,
 				B6BA421C88DCA7959843096C /* libiPhone-lib.a */,
+				6E484ED31DDEF33800174A02 /* Plugins */,
 			);
 			path = Libraries;
 			sourceTree = SOURCE_ROOT;
@@ -1983,10 +1977,13 @@
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = MA4AJ762F2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
 							};
 							com.apple.Push = {
 								enabled = 1;
@@ -2076,7 +2073,6 @@
 				6EA9B47D1DB903C100206E4E /* read_me.txt in Resources */,
 				6E5F7D2D1DDAB7E800A28655 /* TypeView.xib in Resources */,
 				6E5F7D231DDAB6DC00A28655 /* RechargeVC.xib in Resources */,
-				CA9C4A5080DD6F07A9855DAA /* LaunchScreen-iPad.xib in Resources */,
 				6EA9B4301DB8EB8A00206E4E /* RongCloud.bundle in Resources */,
 				6E95032F1DDB3FF300692605 /* MyOrderCell.xib in Resources */,
 				6EA9B4941DBB1FED00206E4E /* ForgetPwdVC.xib in Resources */,
@@ -2088,7 +2084,6 @@
 				6EA9AF181DB8978F00206E4E /* LoginVC.xib in Resources */,
 				6E9503341DDB473C00692605 /* RechargeItemView.xib in Resources */,
 				6E484D541DDD3A3D00174A02 /* SupplyItemView.xib in Resources */,
-				CB2C47BEB355E5E4F437CBD2 /* LaunchScreen-iPad.png in Resources */,
 				6EA9B47E1DB903C100206E4E /* README.txt in Resources */,
 				6E5F7D981DDBFA3600A28655 /* SupplyDetailVC.xib in Resources */,
 				6EA9B3DF1DB8E21200206E4E /* Pingpp.bundle in Resources */,
@@ -2366,10 +2361,10 @@
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CODE_SIGN_ENTITLEMENTS = "Unity-iPhone/artest.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = MA4AJ762F2;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2442,11 +2437,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.merryart.playelves;
 				PRODUCT_NAME = artest;
-				PROVISIONING_PROFILE = "98dab7fb-e020-4fde-8e19-de514b39c61f";
-				PROVISIONING_PROFILE_SPECIFIER = playelvesInhouse;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				UNITY_RUNTIME_VERSION = 5.3.4f1;
 				UNITY_SCRIPTING_BACKEND = il2cpp;
 			};
@@ -2468,10 +2463,10 @@
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CODE_SIGN_ENTITLEMENTS = "Unity-iPhone/artest.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = MA4AJ762F2;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2541,11 +2536,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.merryart.playelves;
 				PRODUCT_NAME = artest;
-				PROVISIONING_PROFILE = "98dab7fb-e020-4fde-8e19-de514b39c61f";
-				PROVISIONING_PROFILE_SPECIFIER = playelvesInhouse;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				UNITY_RUNTIME_VERSION = 5.3.4f1;
 				UNITY_SCRIPTING_BACKEND = il2cpp;
 			};

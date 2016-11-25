@@ -94,7 +94,8 @@
 }
 
 - (void)doBackAction {
-    NSLog(@"请注册用户，否则无法使用");
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"App需要登陆后才能使用" delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
+    [alert show];
 }
 
 - (IBAction)tapOnView:(id)sender {

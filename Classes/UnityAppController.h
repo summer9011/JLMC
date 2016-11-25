@@ -116,6 +116,12 @@
  */
 @property (nonatomic, strong) NSMutableArray                *nearbyUserArr;
 
+
+@property (nonatomic, strong) NSURLSessionDataTask          *nearbyElfTask;
+@property (nonatomic, strong) NSURLSessionDataTask          *nearbyNormalSplyTask;
+@property (nonatomic, strong) NSURLSessionDataTask          *nearbyPersonalSplyTask;
+@property (nonatomic, strong) NSURLSessionDataTask          *nearbyUserTask;
+
 - (void)loadData:(CLLocation *)location;
 
 @end

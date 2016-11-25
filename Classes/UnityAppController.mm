@@ -468,12 +468,34 @@ extern "C" void UnityRequestQuit()
         coor = [WGS84TOGCJ02 transformFromWGSToGCJ:location.coordinate];
     }
     
+    if (self.nearbyElfTask) {
+        [[SessionNetwork defaultNetwork] cancelRequestTask:self.nearbyElfTask];
+        self.nearbyElfTask = nil;
+    }
+    
+    if (self.nearbyNormalSplyTask) {
+        [[SessionNetwork defaultNetwork] cancelRequestTask:self.nearbyNormalSplyTask];
+        self.nearbyNormalSplyTask = nil;
+    }
+    
+    if (self.nearbyPersonalSplyTask) {
+        [[SessionNetwork defaultNetwork] cancelRequestTask:self.nearbyPersonalSplyTask];
+        self.nearbyPersonalSplyTask = nil;
+    }
+    
+    if (self.nearbyUserTask) {
+        [[SessionNetwork defaultNetwork] cancelRequestTask:self.nearbyUserTask];
+        self.nearbyUserTask = nil;
+    }
+    
     __weak UnityAppController *weakSelf = self;
     
     NSString *longitude = [NSString stringWithFormat:@"%f", coor.longitude];
     NSString *latitude = [NSString stringWithFormat:@"%f", coor.latitude];
     
-    [Spirit getNearbyElfListWithLongitude:longitude latitude:latitude completeBlock:^(BOOL success, id response, NSString *errStr) {
+    self.nearbyElfTask = [Spirit getNearbyElfListWithLongitude:longitude latitude:latitude completeBlock:^(BOOL success, id response, NSString *errStr) {
+        weakSelf.nearbyElfTask = nil;
+        
         if (success) {
             [weakSelf.nearbyElfArr removeAllObjects];
             [weakSelf.nearbyElfArr addObjectsFromArray:response];
@@ -483,7 +505,9 @@ extern "C" void UnityRequestQuit()
         
     }];
     
-    [Spirit getNearbySupplyListWithLongitude:longitude latitude:latitude completeBlock:^(BOOL success, id response, NSString *errStr) {
+    self.nearbyNormalSplyTask = [Spirit getNearbySupplyListWithLongitude:longitude latitude:latitude completeBlock:^(BOOL success, id response, NSString *errStr) {
+        weakSelf.nearbyNormalSplyTask = nil;
+        
         if (success) {
             [weakSelf.nearbyNormalSplyArr removeAllObjects];
             [weakSelf.nearbyNormalSplyArr addObjectsFromArray:response];
@@ -493,7 +517,9 @@ extern "C" void UnityRequestQuit()
         
     }];
     
-    [Spirit getNearbyPersonalSupplyListWithLongitude:longitude latitude:latitude completeBlock:^(BOOL success, id response, NSString *errStr) {
+    self.nearbyPersonalSplyTask = [Spirit getNearbyPersonalSupplyListWithLongitude:longitude latitude:latitude completeBlock:^(BOOL success, id response, NSString *errStr) {
+        weakSelf.nearbyPersonalSplyTask = nil;
+        
         if (success) {
             [weakSelf.nearbyPersonalSplyArr removeAllObjects];
             [weakSelf.nearbyPersonalSplyArr addObjectsFromArray:response];
@@ -504,7 +530,9 @@ extern "C" void UnityRequestQuit()
     }];
     
     if (GetAppController().loginUser && GetAppController().loginUser.userId > 0) {
-        [User getNearbyUserListWithUserId:GetAppController().loginUser.userId longitude:longitude latitude:latitude completeBlock:^(BOOL success, id response, NSString *errStr) {
+        self.nearbyUserTask = [User getNearbyUserListWithUserId:GetAppController().loginUser.userId longitude:longitude latitude:latitude completeBlock:^(BOOL success, id response, NSString *errStr) {
+            weakSelf.nearbyUserTask = nil;
+            
             if (success) {
                 [weakSelf.nearbyUserArr removeAllObjects];
                 [weakSelf.nearbyUserArr addObjectsFromArray:response];

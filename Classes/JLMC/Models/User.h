@@ -252,7 +252,7 @@ static NSString *APINamerealNameAuth    =       @"realNameAuth";    //API实名�
  @param latitude 当前位置纬度
  @param complete 请求完成回调
  */
-+ (void)getNearbyUserListWithUserId:(NSUInteger)userId longitude:(NSString *)longitude latitude:(NSString *)latitude completeBlock:(UserCompleteBlock)complete;
++ (NSURLSessionDataTask *)getNearbyUserListWithUserId:(NSUInteger)userId longitude:(NSString *)longitude latitude:(NSString *)latitude completeBlock:(UserCompleteBlock)complete;
 
 /**
  获取系统中备选的人物卡通头像

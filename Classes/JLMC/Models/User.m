@@ -356,14 +356,14 @@ static NSString *CoderKeyAuthStatus =   @"CoderKeyAuthStatus";
     }];
 }
 
-+ (void)getNearbyUserListWithUserId:(NSUInteger)userId longitude:(NSString *)longitude latitude:(NSString *)latitude completeBlock:(UserCompleteBlock)complete {
++ (NSURLSessionDataTask *)getNearbyUserListWithUserId:(NSUInteger)userId longitude:(NSString *)longitude latitude:(NSString *)latitude completeBlock:(UserCompleteBlock)complete {
     NSDictionary *params = @{
                              @"userId": @(userId),
                              @"lng": longitude,
                              @"lat": latitude
                              };
     
-    [[SessionNetwork defaultNetwork] getURL:@"/user/getNearbyUserList" params:params completePercent:nil success:^(id response) {
+    NSURLSessionDataTask *task = [[SessionNetwork defaultNetwork] getURL:@"/user/getNearbyUserList" params:params completePercent:nil success:^(id response) {
         if (complete) {
             complete(YES, response, nil);
 //            complete(YES, response[@"list"], nil);
@@ -374,6 +374,8 @@ static NSString *CoderKeyAuthStatus =   @"CoderKeyAuthStatus";
             complete(NO, nil, errorMsg);
         }
     }];
+    
+    return task;
 }
 
 + (void)getCartoonImageListWithCompleteBlock:(UserCompleteBlock)complete {

@@ -25,7 +25,7 @@ static NSString *SupplyReceiveStatusReceived = @"received";
  @param latitude 纬度
  @param complete 请求完成回调
  */
-+ (void)getNearbySupplyListWithLongitude:(NSString *)longitude latitude:(NSString *)latitude completeBlock:(SpiritCompleteBlock)complete;
++ (NSURLSessionDataTask *)getNearbySupplyListWithLongitude:(NSString *)longitude latitude:(NSString *)latitude completeBlock:(SpiritCompleteBlock)complete;
 
 /**
  获取周边认领的补给站列表
@@ -34,7 +34,7 @@ static NSString *SupplyReceiveStatusReceived = @"received";
  @param latitude 纬度
  @param complete 请求完成回调
  */
-+ (void)getNearbyPersonalSupplyListWithLongitude:(NSString *)longitude latitude:(NSString *)latitude completeBlock:(SpiritCompleteBlock)complete;
++ (NSURLSessionDataTask *)getNearbyPersonalSupplyListWithLongitude:(NSString *)longitude latitude:(NSString *)latitude completeBlock:(SpiritCompleteBlock)complete;
 
 /**
  获取补给站详情
@@ -84,7 +84,7 @@ static NSString *SupplyReceiveStatusReceived = @"received";
  @param latitude 纬度
  @param complete 请求完成回调
  */
-+ (void)getNearbyElfListWithLongitude:(NSString *)longitude latitude:(NSString *)latitude completeBlock:(SpiritCompleteBlock)complete;
++ (NSURLSessionDataTask *)getNearbyElfListWithLongitude:(NSString *)longitude latitude:(NSString *)latitude completeBlock:(SpiritCompleteBlock)complete;
 
 /**
  获取附近精灵详情

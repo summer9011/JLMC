@@ -19,7 +19,7 @@
 #import <TTTAttributedLabel/TTTAttributedLabel.h>
 #import "NSString+Validate.h"
 
-@interface RegisterVC () <ChooseSexDelegate, TTTAttributedLabelDelegate, UIGestureRecognizerDelegate>
+@interface RegisterVC () <ChooseSexDelegate, TTTAttributedLabelDelegate, UIGestureRecognizerDelegate, UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
@@ -202,6 +202,8 @@
 }
 
 - (IBAction)doRegisterAction:(id)sender {
+    [self.view endEditing:YES];
+    
     if ([NSString isEmpty:self.phoneTextField.text]) {
         [self hud_showErrorWithMsg:@"手机号不能为空"];
         
@@ -248,29 +250,8 @@
         return;
     }
     
-    [self.view endEditing:YES];
-    [self hud_showErrorWithMsg:@"正在注册..."];
-    
-    __weak RegisterVC *weakSelf = self;
-    
-    [User registerWithPhone:self.phoneTextField.text
-                   password:self.passwordTextField.text
-                 verifyCode:self.tmpVerifyCode
-                   nickname:self.nicknameTextField.text
-                        sex:self.tmpSex completeBlock:^(BOOL success, id userId, NSString *errStr) {
-                            if (success) {
-                                [weakSelf hud_hideQuick];
-                                
-                                ChooseCartoonVC *chooseCartoonVC = [[ChooseCartoonVC alloc] initWithNibName:@"ChooseCartoonVC" bundle:nil];
-                                chooseCartoonVC.fromRegister = YES;
-                                
-                                [weakSelf.navigationController pushViewController:chooseCartoonVC animated:YES];
-                                
-                            } else {
-                                [weakSelf hud_hideLoadingWithErrorMsg:errStr];
-                            }
-                            
-                        }];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"注册完成后性别不可修改，是否注册? " delegate:self cancelButtonTitle:@"重新选择" otherButtonTitles:@"注册", nil];
+    [alert show];
 }
 
 #pragma mark - UITextFieldDelegate
@@ -305,6 +286,35 @@
 - (void)attributedLabel:(TTTAttributedLabel *)label didSelectLinkWithURL:(NSURL *)url {
     UserAgreementViewController *userAgreementVC = [[UserAgreementViewController alloc] initWithNibName:@"UserAgreementViewController" bundle:nil];
     [self.navigationController pushViewController:userAgreementVC animated:YES];
+}
+
+#pragma mark - UIAlertViewDelegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 1) {
+        [self hud_showErrorWithMsg:@"正在注册..."];
+        
+        __weak RegisterVC *weakSelf = self;
+        
+        [User registerWithPhone:self.phoneTextField.text
+                       password:self.passwordTextField.text
+                     verifyCode:self.tmpVerifyCode
+                       nickname:self.nicknameTextField.text
+                            sex:self.tmpSex completeBlock:^(BOOL success, id userId, NSString *errStr) {
+                                if (success) {
+                                    [weakSelf hud_hideQuick];
+                                    
+                                    ChooseCartoonVC *chooseCartoonVC = [[ChooseCartoonVC alloc] initWithNibName:@"ChooseCartoonVC" bundle:nil];
+                                    chooseCartoonVC.fromRegister = YES;
+                                    
+                                    [weakSelf.navigationController pushViewController:chooseCartoonVC animated:YES];
+                                    
+                                } else {
+                                    [weakSelf hud_hideLoadingWithErrorMsg:errStr];
+                                }
+                                
+                            }];
+    }
 }
 
 #pragma mark - Notification

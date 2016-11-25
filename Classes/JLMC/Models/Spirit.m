@@ -10,13 +10,13 @@
 
 @implementation Spirit
 
-+ (void)getNearbySupplyListWithLongitude:(NSString *)longitude latitude:(NSString *)latitude completeBlock:(SpiritCompleteBlock)complete {
++ (NSURLSessionDataTask *)getNearbySupplyListWithLongitude:(NSString *)longitude latitude:(NSString *)latitude completeBlock:(SpiritCompleteBlock)complete {
     NSDictionary *params = @{
                              @"lng": longitude,
                              @"lat": latitude
                              };
     
-    [[SessionNetwork defaultNetwork] getURL:@"/sply/getNearbySupplyList" params:params completePercent:nil success:^(id response) {
+    NSURLSessionDataTask *task = [[SessionNetwork defaultNetwork] getURL:@"/sply/getNearbySupplyList" params:params completePercent:nil success:^(id response) {
         if (complete) {
             complete(YES, response[@"list"], nil);
         }
@@ -26,15 +26,17 @@
             complete(NO, nil, errorMsg);
         }
     }];
+    
+    return task;
 }
 
-+ (void)getNearbyPersonalSupplyListWithLongitude:(NSString *)longitude latitude:(NSString *)latitude completeBlock:(SpiritCompleteBlock)complete {
++ (NSURLSessionDataTask *)getNearbyPersonalSupplyListWithLongitude:(NSString *)longitude latitude:(NSString *)latitude completeBlock:(SpiritCompleteBlock)complete {
     NSDictionary *params = @{
                              @"lng": longitude,
                              @"lat": latitude
                              };
     
-    [[SessionNetwork defaultNetwork] getURL:@"/sply/getNearbyPersonalSupplyList" params:params completePercent:nil success:^(id response) {
+    NSURLSessionDataTask *task = [[SessionNetwork defaultNetwork] getURL:@"/sply/getNearbyPersonalSupplyList" params:params completePercent:nil success:^(id response) {
         if (complete) {
             complete(YES, response[@"list"], nil);
         }
@@ -44,6 +46,8 @@
             complete(NO, nil, errorMsg);
         }
     }];
+    
+    return task;
 }
 
 + (void)getSupplyDetailWithUserId:(NSUInteger)userId splyId:(NSString *)splyId splyWeight:(NSString *)splyWeight completeBlock:(SpiritCompleteBlock)complete {
@@ -123,13 +127,13 @@
     }];
 }
 
-+ (void)getNearbyElfListWithLongitude:(NSString *)longitude latitude:(NSString *)latitude completeBlock:(SpiritCompleteBlock)complete {
++ (NSURLSessionDataTask *)getNearbyElfListWithLongitude:(NSString *)longitude latitude:(NSString *)latitude completeBlock:(SpiritCompleteBlock)complete {
     NSDictionary *params = @{
                              @"lng": longitude,
                              @"lat": latitude
                              };
     
-    [[SessionNetwork defaultNetwork] getURL:@"/elf/getNearbyElfList" params:params completePercent:nil success:^(id response) {
+    NSURLSessionDataTask *task = [[SessionNetwork defaultNetwork] getURL:@"/elf/getNearbyElfList" params:params completePercent:nil success:^(id response) {
         if (complete) {
             complete(YES, response[@"list"], nil);
         }
@@ -139,6 +143,8 @@
             complete(NO, nil, errorMsg);
         }
     }];
+    
+    return task;
 }
 
 + (void)getNearbyElfDetailWithPoiElfId:(NSUInteger)poiElfId completeBlock:(SpiritCompleteBlock)complete {
